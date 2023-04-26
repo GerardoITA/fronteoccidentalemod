@@ -1,0 +1,36 @@
+bookmarks = {
+	bookmark = {
+		name = "WACHT_BOOKMARK_NAME"
+		desc = "WACHT_BOOKMARK_DESC"
+		date = 1944.12.24.12
+		picture = "GFX_select_date_classified"
+		default_country = "AEF"
+		default = no
+		
+		"AEF"={
+			history = "AEF_WACHT_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"OKW"={
+			history = "GER_WACHT_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

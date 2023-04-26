@@ -1,0 +1,1887 @@
+characters={
+	AEF_COSSAC_organisation={
+		name=AEF_COSSAC_organisation
+		portraits={
+			civilian={
+				large="gfx/leaders/AEF/COSSAC.dds"
+			} 
+			army={ }
+}
+country_leader={
+			ideology=socialism
+			traits={ trait_cossac_leaderless }
+			expire="1947.1.1.1"
+			id=-1
+			desc=POLITICS_COSSAC_ORG_DESC
+		} }
+	AEF_dwight_d_eisenhower={
+		name=USA_dwight_d_eisenhower
+
+		portraits={
+			army={
+				#large=GFX_portrait_USA_dwight_d_eisenhower
+				large="gfx/leaders/AEF/eisenhower5.dds"
+					small="GFX_idea_dwight_eisenhower"
+			}
+			civilian={
+				large="gfx/leaders/AEF/eisenhower5.dds"
+			}
+			
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ supreme_commander }
+			expire="1947.1.1.1"
+			id=-1
+			desc=POLITICS_EISENHOWER_DESC
+		} 
+		field_marshal={
+			traits={ trait_cautious armor_officer politically_connected organizer logistics_wizard offensive_doctrine }
+			skill=6
+			attack_skill=6
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=602
+		}
+		advisor={
+			slot = army_chief
+			idea_token = dwight_eisenhower
+			allowed = {
+					original_tag = AEF
+				}
+				traits = {
+					army_chief_offensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+	}
+AEF_frederick_morgan={
+		name=ENG_frederick_morgan
+		portraits={
+			civilian={
+				large="gfx/leaders/AEF/Morgan.dds"
+			} 
+			army={
+			 small="gfx/interface/ideas/Morgan_Idea.dds" 
+			}
+			}
+country_leader={
+			ideology=liberalism
+			traits={ cossac }
+			expire="1947.1.1.1"
+			id=-1
+			desc=POLITICS_MORGAN_DESC
+		}
+
+advisor={	
+			slot = theorist
+			idea_token = frederick_morgan
+			ledger = army
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				cossac_advisor_trait
+			}
+			cost = 75
+			ai_will_do = {
+				factor = 1.000
+			}
+		
+		}
+		
+	}
+
+	AEF_alan_brooke={
+		name=ENG_alan_brooke
+		portraits={
+			army={
+				small="GFX_idea_alan_brooke"
+			}
+
+			army={
+				large=GFX_portrait_ENG_alan_brooke
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = alan_brooke
+			allowed = {
+				original_tag = AEF
+			}
+			
+			traits = {
+				army_chief_maneuver_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		}
+	AEF_charles_foulkes={
+		name=CAN_charles_foulkes
+		portraits={
+			army={
+				large="GFX_CAN_charles_foulkes"
+				small=GFX_portrait_CAN_charles_foulkes_small
+			}
+		}
+		field_marshal={
+			traits = { organizer desert_fox infantry_leader naval_invader }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 6
+		}
+	}
+	AEF_jean_de_lattre_de_tassigny={
+		name=FRA_jean_de_lattre_de_tassigny
+		portraits={
+			army={
+				large=GFX_portrait_FRA_jean_de_lattre_de_tassigny
+				small=GFX_portrait_FRA_jean_de_lattre_de_tassigny_small
+			}
+		}
+		field_marshal={
+			traits={ harsh_leader infantry_leader trickster inflexible_strategist }
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+AEF_charles_de_gaulle={
+		name=FRA_charles_de_gaulle
+		portraits={
+			army={
+				small="GFX_idea_charles_de_gaulle"
+				large="gfx/leaders/AEF/de_Gaulle.dds"
+				
+			}
+			civilian={
+				large="gfx/leaders/AEF/de_Gaulle.dds"
+			}
+}
+field_marshal={
+			traits = { trickster desert_fox panzer_leader skilled_staffer }
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id=0
+		}
+		
+	
+		advisor={
+			cost = 100
+			slot = political_advisor
+			idea_token = charles_de_gaulle
+			ledger = army
+			available = { NOT = { has_idea = de_gaulle_issue } } 
+			allowed = {
+				original_tag = AEF
+			}
+			
+			
+			traits = {
+				the_great_asparagus
+			}
+			ai_will_do = {
+				factor = 1.000
+				
+		} }}
+
+AEF_philippe_leclerc={
+		name=FRA_philippe_leclerc
+		portraits={
+			army={
+				small="GFX_idea_philippe_leclerc"
+			}
+			army={
+				large=GFX_portrait_FRA_philippe_leclerc
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = philippe_leclerc
+			ledger = army
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits={ organizer panzer_leader trickster  }
+			skill=5
+			attack_skill=5
+			defense_skill=5
+			planning_skill=6
+			logistics_skill=6
+			legacy_id=0
+		}
+	}
+	AEF_george_s_patton={
+		name=USA_george_s_patton
+		portraits={
+			army={
+				large="gfx/leaders/AEF/Patton.dds"
+			}
+			army={
+				small="GFX_idea_george_patton"
+			}
+		}
+		advisor={
+			cost = 150
+			
+			slot = high_command
+			idea_token = george_patton
+			ledger = army
+				allowed = {
+					original_tag = AEF
+				}
+				
+				traits = {
+					army_armored_3
+				}
+		}
+
+		corps_commander={
+			traits={ trait_reckless armor_officer war_hero trickster panzer_leader trickster organizer }
+			skill=6
+			attack_skill=8
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=0
+		}
+	}
+
+	AEF_omar_bradley={
+		name=USA_omar_bradley
+		portraits={
+			army={
+				small="GFX_idea_omar_bradley"
+			}
+			army={
+				large="gfx/leaders/AEF/Bradley.dds"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = high_command
+			idea_token = omar_bradley
+			ledger = army
+			allowed = {
+				original_tag = AEF
+			}
+			
+			traits = {
+				army_infantry_2
+			}
+		}
+
+		corps_commander={
+			traits={ brilliant_strategist trait_cautious harsh_leader trait_engineer organizer urban_assault_specialist }
+			skill=6
+			attack_skill=6
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+
+	AEF_wladyslaw_anders={#exiled polish leader
+		name=AEF_wladyslaw_anders
+		portraits={
+			army={
+				large="gfx/leaders/AEF/Anders.dds"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer trait_engineer commando naval_invader}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=7
+			legacy_id=0
+		}
+	}
+
+AEF_robert_t_frederick={#Robert Frederick, Dragoon parachute commander
+		name=AEF_robert_t_frederick
+		portraits={
+			army={
+				large="gfx/leaders/AEF/Frederick.dds"
+			}
+		}
+		corps_commander={
+			traits={ commando urban_assault_specialist paratrooper }
+			skill=5
+			attack_skill=6
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=0
+	visible = { has_country_flag = operation_dragoon_launched }
+		}
+	}
+AEF_allied_rock={
+		name=AEF_allied_rock
+		portraits={
+			army={
+				large="gfx/leaders/AEF/allied_rock.dds"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			visible = { is_historical_focus_on = no }
+	
+		}
+	}
+AEF_mark_clark={
+		name=USA_mark_clark
+		portraits={
+			army={
+				small="GFX_idea_mark_clark"
+			}
+			army={
+				large="gfx/leaders/AEF/Clark.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = mark_clark
+			ledger = army
+				allowed = {
+					original_tag = AEF
+				}
+				traits = {
+					army_infantry_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		
+		corps_commander={
+			traits={ trait_reckless infantry_officer }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	AEF_lucian_truscott={#op dragoon
+		name=USA_lucian_truscott
+		portraits={
+			army={
+				large=GFX_portrait_USA_lucian_truscott
+				small=GFX_portrait_USA_lucian_truscott_small
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer trait_engineer commando }
+			skill=5
+			attack_skill=7
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=5
+	
+			visible = { has_country_flag = operation_dragoon_launched }
+		}
+	}
+
+	AEF_harry_crerar={
+		name=CAN_harry_crerar
+		portraits={
+			army={
+				small="GFX_idea_CAN_harry_crerar" 
+				#small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	corps_commander={
+			traits={ old_guard }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			
+		}
+		advisor={	
+			slot = high_command
+			idea_token = CAN_harry_crerar
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				army_chief_old_guard
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	AEF_guy_simonds={
+		name=CAN_guy_simonds
+		portraits={
+			army={
+				small="GFX_idea_CAN_guy_simonds"
+				large="gfx/leaders/AEF/Simonds.dds"
+			}
+		}
+corps_commander={
+			traits={ bearer_of_artillery trait_engineer infantry_leader cavalry_officer}
+			skill=5
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		
+		}
+		advisor={	
+			slot = high_command
+			idea_token = CAN_guy_simonds
+			ledger = army
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				army_artillery_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	AEF_leslie_mcnair={
+		name=USA_leslie_mcnair
+		portraits={
+			army={
+				large=GFX_portrait_USA_leslie_mcnair
+				small=GFX_portrait_USA_leslie_mcnair_small
+			}
+		}
+		corps_commander={
+			traits={ old_guard career_officer armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	
+
+	AEF_russell_hartle={
+		name=USA_russell_hartle
+		portraits={
+			army={
+				large=GFX_portrait_USA_russell_hartle
+				small=GFX_portrait_USA_russell_hartle_small
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer commando naval_invader hill_fighter}
+			skill=5
+			attack_skill=6
+			defense_skill=5
+			planning_skill=8
+			logistics_skill=7
+			legacy_id=0
+		}
+		advisor={
+			slot = high_command
+			idea_token = russel_hartle
+			ledger = army
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				army_commando_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	AEF_percy_hobart={
+		name=ENG_percy_hobart
+		portraits={
+			army={
+				large="gfx/leaders/AEF/Hobart.dds"
+			
+			}
+		}
+		corps_commander={
+			traits={ armor_officer panzer_leader naval_invader commando trickster trait_engineer}
+			skill=5
+			attack_skill=6
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+		advisor={
+			slot = theorist
+			idea_token = percy_hobart #tank guy ampihibious
+			ledger = army
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				floating_tank_specialist
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	AEF_leonard_gerow={
+		name=USA_leonard_gerow
+		portraits={
+			army={
+				large=GFX_portrait_USA_leonard_gerow
+				small=GFX_portrait_USA_leonard_gerow_small
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			#legacy_id=0
+		}
+	}
+
+	AEF_edward_brooks={
+		name=USA_edward_brooks
+		portraits={
+			army={
+				large=GFX_portrait_USA_edward_brooks
+				small=GFX_portrait_USA_edward_brooks_small
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			#legacy_id=0
+		}
+	}
+
+	AEF_clarence_huebner={ #commander of big red one
+		name=USA_clarence_huebner
+		portraits={
+			army={
+				large=GFX_portrait_USA_clarence_huebner
+				small=GFX_portrait_USA_clarence_huebner_small
+			}
+		}
+		corps_commander={
+			traits={ old_guard harsh_leader }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			#legacy_id=0
+		}
+	}
+
+	AEF_alexander_patch={#op dragoon
+		name=USA_alexander_patch
+		portraits={
+			army={
+				large=GFX_portrait_USA_alexander_patch
+				small=GFX_portrait_USA_alexander_patch_small
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer commando }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			#legacy_id=0
+			visible = { has_country_flag = operation_dragoon_launched }
+		}
+	}
+AEF_jacob_l_devers={#op dragoon commander
+		name=AEF_jacob_devers
+		portraits={
+			army={
+				large="gfx/leaders/AEF/Devers.dds"
+			
+			}
+		}
+		field_marshal={
+			traits={ infantry_officer commando }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			#legacy_id=0
+			visible = { has_country_flag = operation_dragoon_launched }
+		}
+	}
+AEF_edgard_de_larminat={#french op dragoon boy
+		name=AEF_edgard_de_larminat
+		portraits={
+			army={
+				large="gfx/leaders/AEF/Larminat.dds"
+			
+			}
+		}
+		field_marshal={
+			traits={ infantry_officer  }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			#legacy_id=0
+			visible = { has_country_flag = operation_dragoon_launched }
+		}
+	}
+AEF_joseph_de_monsabert={#french op dragoon boy
+		name=AEF_joseph_de_monsabert
+		portraits={
+			army={
+				large="gfx/leaders/AEF/Monsabert.dds"
+			
+			}
+		}
+		field_marshal={
+			traits={ infantry_officer  }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			#legacy_id=0
+			visible = { has_country_flag = operation_dragoon_launched }
+		}
+	}
+	AEF_william_simpson={
+		name=USA_william_simpson
+		portraits={
+			army={
+				large=GFX_portrait_USA_william_simpson
+				small=GFX_portrait_USA_william_simpson_small
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			#legacy_id=0
+		}
+	}
+
+	AEF_j_lawton_collins={
+		name=USA_j_lawton_collins
+		portraits={
+			army={
+				large=GFX_portrait_USA_j_lawton_collins
+				small=GFX_portrait_USA_j_lawton_collins_small
+			}
+		}
+		corps_commander={
+			traits={ career_officer trickster }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			#legacy_id=0
+		}
+	}
+
+	AEF_courtney_hodges={
+		name=USA_courtney_hodges
+		portraits={
+			army={
+				small="GFX_idea_courtney_hodges"
+				large=GFX_portrait_USA_courtney_hodges
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = courtney_hodges
+			ledger = army
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits={ career_officer infantry_officer panzer_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			#legacy_id=0
+		}
+	}
+
+
+	AEF_maurice_rose={
+		name=USA_maurice_rose
+		portraits={
+			army={
+				large=GFX_portrait_USA_maurice_rose
+				small=GFX_portrait_USA_maurice_rose_small
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist trait_reckless armor_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			
+		}
+	}
+
+	
+	
+
+AEF_gerald_bucknall={
+		name=ENG_gerald_bucknall
+		portraits={
+			army={
+				large="gfx/leaders/AEF/Bucknall.dds"
+				small=GFX_portrait_ENG_richard_oconnor_small
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			
+		}
+	}
+AEF_john_crocker={
+		name=ENG_john_crocker
+		portraits={
+			army={
+				large="gfx/leaders/AEF/Crocker.dds"
+				small=GFX_portrait_ENG_richard_oconnor_small
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			
+		}
+	}
+
+	
+	
+	AEF_harold_alexander={
+		name=ENG_harold_alexander
+		portraits={
+			army={
+				small="GFX_idea_harold_alexander"
+			}
+			army={
+				large=GFX_portrait_ENG_harold_alexander
+			}
+		}
+		advisor={
+			cost = 100
+			slot = army_chief
+			idea_token = harold_alexander
+			ledger = army
+			allowed = {
+				original_tag = AEF
+			}
+			
+			traits = {
+				army_chief_old_guard
+			}
+			ai_will_do = {
+				factor = 2.000
+				
+			}
+		}
+		
+		corps_commander={
+			traits={ politically_connected }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=5
+			
+		}
+	}
+
+	AEF_miles_dempsey={
+		name=ENG_miles_dempsey
+		portraits={
+			army={
+				large=GFX_portrait_ENG_miles_dempsey
+				small=GFX_portrait_ENG_miles_dempsey_small
+			}
+		}
+advisor={
+			slot = high_command
+			idea_token = miles_dempsey
+			ledger = army
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				combined_arms_expert
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.700
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist career_officer infantry_officer }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	AEF_brian_horrocks={
+		name=ENG_brian_horrocks
+		portraits={
+			army={
+				large=GFX_portrait_ENG_brian_horrocks
+				small=GFX_portrait_ENG_brian_horrocks_small
+			}
+		}
+		corps_commander={
+			traits={ career_officer armor_officer war_hero }
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			#legacy_id=0
+		}
+	}
+
+	
+
+	
+
+	AEF_henry_harwood={
+		name=ENG_henry_harwood
+		portraits={
+			navy={
+				small="GFX_idea_henry_harwood"
+			}
+			army={
+				large=GFX_portrait_ENG_henry_harwood
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = henry_harwood
+			ledger = navy
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				navy_screen_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.700
+			}
+		}
+		
+		navy_leader={
+			traits={ old_guard_navy bold }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			#legacy_id=984
+		}
+	}
+
+	
+
+
+	AEF_john_tovey={
+		name=ENG_john_tovey
+		portraits={
+			army={
+				large=GFX_portrait_ENG_john_tovey
+				small=GFX_portrait_ENG_john_tovey_small
+			}
+		}
+		navy_leader={
+			traits={ gentlemanly naval_lineage superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=2
+			coordination_skill=5
+			#legacy_id=987
+		}
+	}
+AEF_alan_kirk={
+		name=AEF_alan_kirk
+		portraits={
+			army={
+				large="gfx/leaders/AEF/Kirk.dds"
+				
+			}
+		}
+		navy_leader={
+			traits={}
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=5
+			
+		}
+	}
+
+		AEF_phillip_vian={
+		name=ENG_phillip_vian
+		portraits={
+			army={
+				large="gfx/leaders/AEF/Vian.dds"
+				#small=GFX_portrait_ENG_john_tovey_small
+			}
+		}
+advisor={
+			cost = 100
+			slot = theorist
+			idea_token = phillip_vian
+			ledger = navy
+			allowed = {
+				original_tag = AEF
+			}
+			traits = { naval_theorist }
+		}
+		navy_leader={
+			traits={ gentlemanly naval_lineage superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=2
+			coordination_skill=5
+			#legacy_id=987
+		}
+	}
+		AEF_frederick_d_hamilton={
+		name=ENG_frederick_d_hamilton
+		portraits={
+			army={
+				large=GFX_portrait_ENG_john_tovey
+				small=GFX_portrait_ENG_john_tovey_small
+			}
+		}
+		navy_leader={
+			traits={ gentlemanly naval_lineage superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=2
+			coordination_skill=5
+			#legacy_id=987
+		}
+	}
+AEF_wilfred_pattinson={
+		name=ENG_wilfred_pattinson
+		portraits={
+			army={
+				large=GFX_portrait_ENG_john_tovey
+				small=GFX_portrait_ENG_john_tovey_small
+			}
+		}
+		navy_leader={
+			traits={ gentlemanly naval_lineage superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=2
+			coordination_skill=5
+			#legacy_id=987
+		}
+	}
+	AEF_john_cunningham={
+		name=ENG_john_cunningham
+		portraits={
+			army={
+				large=GFX_portrait_ENG_john_cunningham
+				small=GFX_portrait_ENG_john_cunningham_small
+			}
+		}
+		navy_leader={
+			traits={ navy_career_officer green_water_expert }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			maneuvering_skill=4
+			coordination_skill=3
+			#legacy_id=989
+		}
+	}
+AEF_Robert_jaujard={
+		name=FRA_robert_jaujard
+		portraits={
+			army={
+				large="gfx/leaders/AEF/Jaujard.dds"
+			
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			maneuvering_skill=4
+			coordination_skill=3
+			#legacy_id=989
+		}
+	}
+	AEF_charles_forbes={
+		name=ENG_charles_forbes
+		portraits={
+			army={
+				large=GFX_portrait_ENG_charles_forbes
+				small=GFX_portrait_ENG_charles_forbes_small
+			}
+		}
+		navy_leader={
+			traits={ gunnery_expert fly_swatter }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=3
+			#legacy_id=990
+		}
+	}
+
+	
+	AEF_neil_ritchie={
+		name=ENG_neil_ritchie
+		portraits={
+			army={
+				large=GFX_portrait_ENG_neil_ritchie
+				small=GFX_portrait_ENG_neil_ritchie_small
+			}
+		}
+		corps_commander={
+			traits={ inflexible_strategist armor_officer politically_connected }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			#legacy_id=0
+		}
+	}
+AEF_richard_oconnor={
+		name=ENG_richard_oconnor
+		portraits={
+			army={
+				large=GFX_portrait_ENG_richard_oconnor
+				small=GFX_portrait_ENG_richard_oconnor_small
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			#legacy_id=999
+		}
+	}
+
+	AEF_harold_rainsford_stark={
+		name=USA_harold_rainsford_stark
+		portraits={
+			army={
+				large=GFX_portrait_USA_harold_rainsford_stark
+				small=GFX_portrait_USA_harold_rainsford_stark_small
+			}
+		}
+		navy_leader={
+			traits={ cuts_corners blockade_runner spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			#legacy_id=0
+		}
+	}
+
+	
+
+	AEF_charles_m_cooke_jr={
+		name=USA_charles_m_cooke_jr
+		portraits={
+			army={
+				large=GFX_portrait_USA_charles_m_cooke_jr
+				small=GFX_portrait_USA_charles_m_cooke_jr_small
+			}
+		}
+		navy_leader={
+			traits={ career_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=3
+			#legacy_id=0
+		}
+	}
+AEF_bertram_ramsey ={
+		name=ENG_bertram_ramsey
+		portraits={
+			army={
+				large="gfx/leaders/AEF/Ramsay.dds"
+				small=GFX_portrait_bertram_ramsey
+			}
+		}
+		navy_leader={
+			traits={ career_officer }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			maneuvering_skill=3
+			coordination_skill=3
+			
+		}
+advisor={
+			slot = navy_chief
+			idea_token = bertram_ramsay
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost =  50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+AEF_charles_portal={
+		name=ENG_charles_portal
+		portraits={
+			army={
+				small="GFX_idea_charles_portal"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = charles_portal
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				air_strategic_bombing_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	
+	
+	
+	#AEF_marc_mitscher={
+	#	name=USA_marc_mitscher
+	#	portraits={
+	#		army={
+	#			small="GFX_idea_marc_mitscher"
+	#		}
+	#	}
+	#	advisor={
+	#		cost = 150
+	#		slot = theorist
+	#		idea_token = marc_mitscher
+	#		ledger = navy
+	#		allowed = {
+	#			original_tag = AEF
+	#		}
+	#		traits = {
+	#			naval_aviation_pioneer
+	#		}
+	#	}
+	#}
+
+	AEF_curtis_lemay={
+		name=USA_curtis_lemay
+		portraits={
+			army={
+				small="GFX_idea_curtis_lemay"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = curtis_lemay
+			ledger = air
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				victory_through_airpower
+			}
+		}
+	}
+
+
+	AEF_harold_mcclelland={
+		name=USA_harold_mcclelland
+		portraits={
+			army={
+				small="GFX_idea_harold_mcclelland"
+			}
+		}
+		advisor={
+			cost = 100	
+			slot = theorist
+			idea_token = harold_mcclelland
+			ledger = air
+			allowed = {
+				original_tag = AEF
+			}
+			traits = { air_warfare_theorist }
+		}
+	}
+
+	AEF_robert_oppenheimer={
+		name=USA_robert_oppenheimer
+		portraits={
+			army={
+				small="GFX_idea_robert_oppenheimer"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = robert_oppenheimer
+			ledger = army
+			allowed = {
+				original_tag = AEF
+			}
+			research_bonus = {
+				nuclear = 0.150
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+	}
+AEF_trafford_leigh_mallory={
+		name=ENG_trafford_leigh_mallory
+		portraits={
+			army={
+				small="GFX_idea_trafford_leigh_mallory"
+			}
+		}
+		advisor={	
+			slot = air_chief
+			idea_token = trafford_leigh_mallory
+			ledger = air
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				air_air_superiority_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+AEF_arthur_harris={
+		name=ENG_arthur_harris
+		portraits={
+			army={
+				small="GFX_idea_arthur_harris"
+			}
+		}
+		advisor={	
+			slot = air_chief
+			idea_token = arthur_harris_idea
+			ledger = air
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				air_strategic_bombing_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	AEF_robert_goddard={
+		name=USA_robert_goddard
+		portraits={
+			army={
+				small="GFX_idea_robert_goddard"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = robert_goddard
+			ledger = air
+			allowed = {
+				original_tag = AEF
+			}
+			research_bonus = {
+				rocketry = 0.150
+			}
+			traits = {
+				rocket_scientist
+			}
+		}
+	}
+
+
+	### ARMY CHIEFS ###
+
+		AEF_james_stagg ={
+		name=ENG_james_stagg
+		portraits={
+			army={
+				small="gfx/interface/ideas/Stagg_Advisor.dds"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = idea_james_stagg
+			ledger = air
+			available = { has_country_flag = allow_james_stagg }
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				weather_expert
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	AEF_george_marshall={
+		name=USA_george_marshall
+		portraits={
+			army={
+				small="GFX_idea_george_marshall"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = george_marshall
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	
+	### NAVY CHIEFS ###
+
+	# King up there
+
+	# Nimitz up there
+
+
+	### AIR CHIEFS
+AEF_arthur_tedder={
+		name=ENG_arthur_tedder
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_tedder.dds"
+			}
+		}
+		available = { NOT = { has_idea = arthur_tedder_political } } 
+		advisor={
+			slot = air_chief
+			idea_token = arthur_tedder
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				air_chief_reform_3
+			}
+			cost = 125
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+		available = { NOT = { has_idea = arthur_tedder } } 
+			idea_token = arthur_tedder_political
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				deputy_supreme_commander
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+
+	AEF_carl_spaatz={
+		name=USA_carl_spaatz
+		portraits={
+			army={
+				small="GFX_idea_carl_spaatz"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = carl_spaatz
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				air_chief_night_operations_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	AEF_george_kenney={
+		name=USA_george_kenney
+		portraits={
+			army={
+				small="GFX_idea_george_kenney"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = george_kenney
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				air_chief_safety_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+
+
+	### MILITARY HIGH COMMAND ###
+
+	# Clark up there
+
+	# Hodges up there
+
+	# Stilwell up there
+
+	# Fletcher up there
+
+	AEF_jimmy_doolittle={
+		name=USA_jimmy_doolittle
+		portraits={
+			army={
+				small="GFX_idea_jimmy_doolittle"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = jimmy_doolittle
+			ledger = air
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				air_strategic_bombing_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	AEF_john_cannon={
+		name=USA_john_cannon
+		portraits={
+			army={
+				small="GFX_idea_john_cannon"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = john_cannon
+			ledger = air
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				air_close_air_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	AEF_claire_lee_chennault={
+		name=USA_claire_lee_chennault
+		portraits={
+			army={
+				small="GFX_idea_claire_lee_chennault"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = claire_lee_chennault
+			ledger = air
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				air_tactical_bombing_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	AEF_thomas_kinkaid={
+		name=USA_thomas_kinkaid
+		portraits={
+			army={
+				small="GFX_idea_thomas_kinkaid"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = thomas_kinkaid
+			ledger = army
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				navy_amphibious_assault_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	### POLITICAL ADVISORS ###
+AEF_franklin_delano_roosevelt={
+		name=USA_franklin_delano_roosevelt
+		portraits={
+			civilian={
+				large=GFX_portrait_USA_franklin_delano_roosevelt
+				small="gfx/interface/ideas/RooseveltSmall.dds"
+			}
+		army={
+				small="gfx/interface/ideas/RooseveltSmall.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = roosevelt_advisor
+			allowed  = {
+				original_tag  = AEF
+			}
+			available  = {
+				
+			}
+			
+			traits  = {
+				leader_of_free_world
+			}
+			cost  = 150.000
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}
+		
+		AEF_winston_churchill={
+		name=ENG_winston_churchill
+		portraits={
+			civilian={
+				large=GFX_portrait_ENG_winston_churchill
+				small="GFX_idea_ENG_winston_churchill"
+			}
+			army={
+				small="GFX_idea_ENG_winston_churchill"
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = winston_churchill
+			allowed  = {
+				original_tag  = AEF
+			}
+			available  = {
+				
+			}
+			
+			traits  = {
+				british_bulldog
+			}
+			cost  = 150.000
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+
+	}
+
+AEF_mackenzie_king={
+		name=CAN_mackenzie_king
+		portraits={
+			civilian={
+				large=GFX_portrait_CAN_mackenzie_king
+				small="gfx/interface/ideas/mackenziekingidea.dds"
+			}
+			army={
+				small="gfx/interface/ideas/mackenziekingidea.dds"
+			}
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = mackenzie_king
+			allowed  = {
+				original_tag  = AEF
+			}
+			available  = {
+				
+			}
+			
+			traits  = {
+				popular_figurehead
+			}
+			cost  = 150.000
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+
+	}
+	
+	AEF_andrew_higgins={
+		name=AEF_andrew_higgins
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_1.dds"
+				#small="gfx/interface/ideas/higgins.dds"
+			}
+			
+			
+			army = {small="gfx/interface/ideas/idea_generic_political_advisor_europe_1.dds"}
+		
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = andrew_higgins
+			allowed  = {
+				original_tag  = AEF
+			}
+			available  = {
+				
+			}
+			
+			traits  = {
+				landing_craft_expert
+			}
+			cost  = 100.000
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+
+	}
+		AEF_a_man_who_is_not_montgomery={
+		name=ENG_bernard_montgomery
+		portraits={
+			army={
+				small="GFX_idea_bernard_montgomery"
+			}
+			#army={
+			#	large=GFX_portrait_ENG_harold_alexander
+			#}
+		}
+		advisor={
+			cost = 100
+			slot = army_chief
+			idea_token = bernard_monty_chief
+			ledger = army
+			allowed = {
+				original_tag = AEF
+			}
+			
+			traits = {
+				cautious_yet_careful
+			}
+			ai_will_do = {
+				factor = 2.000
+				
+			}
+		}
+		}
+		AEF_bernard_montgomery={
+		name=ENG_bernard_montgomery
+		portraits={
+			army={
+				small="GFX_idea_bernard_montgomery"
+
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = bernard_monty
+			ledger = army
+			allowed = {
+				original_tag = AEF
+			}
+			traits = {
+				cautious_yet_careful
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 5.000
+			}
+		}
+		}
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+}

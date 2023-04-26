@@ -1,0 +1,413 @@
+air_wings = {
+###Air unit variants required - FIGHTER 2, SPITFIRE V, P-47. STRAT BOMBER 2, B-24. TAC BOMBER, A-26.
+###OOB FOR COMBINED ALLIED AIR FORCES AS OF 1943-1944. AVERAGE 12 PER SQUADRON.
+###Due to simplicity, adn the fact I don't have absolutely every plane used in D-day I have given some units an equivalent plane EG B-24 Liberators are B-17s and early Spitifres are replaced with Mustangs or Hurricanes.
+
+	28 = {
+		
+		tac_bomber_equipment_1 =  { owner = "AEF"  amount = 36
+		} 
+		name = "No. 137 Wing, RAF"
+tac_bomber_equipment_1 =  { owner = "AEF"  amount = 36
+		} 
+		name = "No. 138 Wing, RAF"
+		
+tac_bomber_equipment_2 =  { owner = "AEF"  amount = 36
+		} 
+		name = "No. 139 Wing, RAF"
+heavy_fighter_equipment_2 =  { owner = "AEF"  amount = 36
+		} 
+		name = "No. 140 Wing, RAAF"
+scout_plane_equipment_2 =  { owner = "AEF"  amount = 48
+		} 
+		name = "No. 39 Reconnaisance Wing, RCAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 48
+		} 
+		name = "No. 122 Wing, RAF"
+cas_equipment_1 =  { owner = "AEF"  amount = 48
+		} 
+		name = "No. 124 Wing, RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 48
+		} 
+		name = "No. 125 Wing, RAAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 48
+		} 
+		name = "No. 126 Wing, RCAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 48
+		} 
+		name = "No. 127 Wing, RCAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 129 Wing, RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 143 Wing, RCAF"
+scout_plane_equipment_2 =  { owner = "AEF"  amount = 36
+		} 
+		name = "No. 39 Reconnaisance Wing, RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 24
+		} 
+		name = "No. 123 Wing, RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 24
+		} 
+		name = "No. 123 Wing, RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 24
+		} 
+		name = "No. 131 Wing (Poland), RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 36
+		} 
+		name = "No. 132 Wing (Norway), RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 36
+		} 
+		name = "No. 133 Wing (Poland), RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 222 Squadron (Belgium), RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 349 Squadron (Belgium), RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 485 Squadron, RNZAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 12
+		} 
+		name = "'Firmes Volamos' Squadron"
+fighter_equipment_1 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 183 Squadron, RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 145 Wing (France), RAF"
+cas_equipment_1 =  { owner = "AEF"  amount = 48
+		} 
+		name = "No. 146 Wing, RAF"
+fighter_equipment_2 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 91 Squadron, RAF"
+fighter_equipment_2 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 124 Squadron, RAF"
+fighter_equipment_2 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 322 Squadron, (Holland) RAF"
+heavy_fighter_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "No. 142 Wing, RAF"
+heavy_fighter_equipment_2 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 147 Wing, RAF"
+heavy_fighter_equipment_2 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 409 Squadron, RCAF"
+heavy_fighter_equipment_2 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 410 Squadron, RCAF"
+heavy_fighter_equipment_2 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 488 Squadron, RNZAF"
+cas_equipment_1 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 150 Wing, RAF"
+scout_plane_equipment_2 =  { owner = "AEF"  amount = 36
+		} 
+		name = "No. 34 Reconnaisance Wing, RAF"
+scout_plane_equipment_2 =  { owner = "AEF"  amount = 36
+		} 
+		name = "No. 34 Reconnaisance Wing, RAF"
+
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 12 Squadron, RAF"
+
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 100 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 101 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 103 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 166 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 300 Squadron (Poland), RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 460 Squadron, RAAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 550 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 576 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 625 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 626 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 15 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 75 Squadron, RNZAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 90 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 115 Squadron, RAF"
+
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 138 Squadron, RAF"
+
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 149 Squadron, RAF"
+
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 161 Squadron, RAF"
+
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 218 Squadron, RAF"
+
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 514 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 622 Squadron, RAF"
+
+strat_bomber_equipment_1 =  { owner = "AEF"  amount = 72
+		} 
+		name = "No. 6 Group, RCAF"
+strat_bomber_equipment_1 =  { owner = "AEF"  amount = 90
+		} 
+		name = "No. 5 Group, RAF"
+strat_bomber_equipment_1 =  { owner = "AEF"  amount = 90
+		} 
+		name = "No. 8 Pathfinder Group, RAF"
+strat_bomber_equipment_1 =  { owner = "AEF"  amount = 67
+		} 
+		name = "No. 9 Pathfinder Group, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 67
+		} 
+		name = "No. 100 (Bomb Squadron) Group, RAF"
+transport_plane_equipment_1 =  { owner = "AEF"  amount = 120
+		} 
+		name = "No. 38 Group, RAF"
+transport_plane_equipment_1 =  { owner = "AEF"  amount = 60
+		} 
+		name = "No. 46 Group, RAF"
+}
+26= { 
+
+
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "91st Bombardment Group, USAF"
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "381st Bombardment Group, USAF"
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "92nd Bombardment Group, USAF"
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "398th Bombardment Group, USAF"
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "305th Bombardment Group, USAF"
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "303rd Bombardment Group, USAF"
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "306th Bombardment Group, USAF"
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "399th Bombardment Group, USAF"
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "371st Bombardment Group, USAF"
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "384th Bombardment Group, USAF"
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "351st Bombardment Group, USAF"
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "401st Bombardment Group, USAF"
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "457th Bombardment Group, USAF"
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "379th Bombardment Group, USAF"
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "339th Bombardment Group, USAF"
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 48
+		} 
+		name = "445th Bombardment Group, USAF"
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "453rd Bombardment Group, USAF" #b24
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "44th Bombardment Group, USAF"
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24 #b24
+		} 
+		name = "392nd Bombardment Group, USAF"
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "492nd Bombardment Group, USAF"##b24. 14TH COMBAT BOMARD WING HAS B-24s.
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "93rd Bombardment Group, USAF"##b24. 14TH COMBAT BOMARD WING HAS B-24s.
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "446th Bombardment Group, USAF"##b24. 14TH COMBAT BOMARD WING HAS B-24s.
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "489th Bombardment Group, USAF"##b24. 14TH COMBAT BOMARD WING HAS B-24s.
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "491st Bombardment Group, USAF"##b24. 14TH COMBAT BOMARD WING HAS B-24s.
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "458th Bombardment Group, USAF"##b24. 14TH COMBAT BOMARD WING HAS B-24s.
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "466th Bombardment Group, USAF"##b24. 14TH COMBAT BOMARD WING HAS B-24s.
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "467th Bombardment Group, USAF"##b24. 14TH COMBAT BOMBARD WING HAS B-24s.
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 72
+		} 
+		name = "4th Bombardment Wing, USAF"##b24. 14TH COMBAT BOMBARD WING HAS B-24s.
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 72
+		} 
+		name = "13th Bombardment Wing, USAF"##b24. 14TH COMBAT BOMBARD WING HAS B-24s.
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 72
+		} 
+		name = "45th Bombardment Wing, USAF"
+
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 72
+		} 
+		name = "92nd Bombardment Wing, USAF"
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 72
+		} 
+		name = "93rd Bombardment Wing, USAF"
+strat_bomber_equipment_2 =  { owner = "AEF"  amount = 72
+		} 
+		name = "94th Bombardment Wing, USAF"
+
+cas_equipment_2 =  { owner = "AEF"  amount = 180
+		} 
+		name = "65th Fighter Wing, USAF"
+fighter_equipment_2 =  { owner = "AEF"  amount = 180
+		} 
+		name = "66th Fighter Wing, USAF"
+
+cas_equipment_2 =  { owner = "AEF"  amount = 180
+		} 
+		name = "67th Fighter Wing, USAF"
+
+cas_equipment_2 =  { owner = "AEF"  amount = 36
+		} 
+		name = "48th Fighter Group, USAF"
+
+
+cas_equipment_2 =  { owner = "AEF"  amount = 36
+		} 
+		name = "371st Fighter Group, USAF"
+
+heavy_fighter_equipment_1 =  { owner = "AEF"  amount = 36
+		} 
+		name = "367th Fighter Group, USAF"
+heavy_fighter_equipment_1 =  { owner = "AEF"  amount = 36
+		} 
+		name = "474th Fighter Group, USAF"
+
+cas_equipment_2 =  { owner = "AEF"  amount = 36
+		} 
+		name = "366th Fighter Group, USAF"
+
+cas_equipment_2 =  { owner = "AEF"  amount = 36
+		} 
+		name = "368th Fighter Group, USAF"
+}
+123 = { 
+heavy_fighter_equipment_1 =  { owner = "AEF"  amount = 36
+		} 
+		name = "370th Fighter Group, USAF"
+
+
+cas_equipment_2 =  { owner = "AEF"  amount = 144
+		} 
+		name = "84th Fighter Wing, USAF"
+		
+scout_plane_equipment_2 =  { owner = "AEF"  amount = 72
+		} 
+			name = "67th Recon Group, USAF"
+transport_plane_equipment_1 =  { owner = "AEF"  amount = 192
+		} 
+		name = "50th Troop Carrier Wing, USAF"
+transport_plane_equipment_1 =  { owner = "AEF"  amount = 240
+		} 
+		name = "52nd Troop Carrier Wing, USAF"
+transport_plane_equipment_1 =  { owner = "AEF"  amount = 240
+		} 
+		name = "53rd Troop Carrier Wing, USAF"
+tac_bomber_equipment_1 =  { owner = "AEF"  amount = 36
+		} 
+		name = "97th Combat Bomb Wing, USAF"
+tac_bomber_equipment_1 =  { owner = "AEF"  amount = 48
+		} 
+		name = "98th Combat Bomb Wing, USAF"
+tac_bomber_equipment_1 =  { owner = "AEF"  amount = 48
+		} 
+		name = "97th Combat Bomb Wing, USAF"
+tac_bomber_equipment_1 =  { owner = "AEF"  amount = 48
+		} 
+		name = "98th Combat Bomb Wing, USAF"
+tac_bomber_equipment_1 =  { owner = "AEF"  amount = 48
+		} 
+		name = "99th Combat Bomb Wing, USAF"
+fighter_equipment_2 =  { owner = "AEF"  amount = 48
+		} 
+		name = "100th Fighter Wing, USAF"
+fighter_equipment_2 =  { owner = "AEF"  amount = 36
+		} 
+		name = "303rd Fighter Wing, USAF"
+}
+
+ }

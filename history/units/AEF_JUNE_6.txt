@@ -1,0 +1,3172 @@
+﻿####1943 SCENARIO, ALLIES TEMPLATES (STARTING)
+
+division_template = {
+	name = "Home Guard" #British garrison units, had a non-standard organisaion (based on location). So I've opted for a generic HOI4 garrison unit.
+template_counter = 66
+	division_names_group = AEF_INF_01
+is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	
+	support = {
+       military_police = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "British Infantry Battalion" #Roughly speaking there were 3 regiments (aka Battalions) to a brigade, and 3 brigades to a division. Around 1000 men.
+
+	division_names_group = AEF_INF_02
+template_counter = 67
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+	}
+	
+	support = {
+		
+	  artillery = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	 anti_tank = { x = 0 y = 2 }
+    
+	}
+}
+division_template = {
+	name = "British Parachute Battalion"	##Brit para bats consist of 3 100-men companies. Around 300 men or so.
+	division_names_group = AEF_PARA_01
+	template_counter = 81
+	regiments = {
+		paratrooper = { x = 0 y = 0 } 
+		paratrooper = { x = 0 y = 1 } 
+		paratrooper = { x = 0 y = 2 } 
+		}
+support = {
+	engineer = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	  recon = { x = 0 y = 2 }
+	 maintenance_company = { x = 0 y = 3 }
+	 artillery = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Canadian Infantry Battalion" ######SIMILAR, IF NOT THE SAME AS BRITISH.
+
+	division_names_group = AEF_CAN_01
+template_counter = 75
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+	}
+	
+	support = {
+		
+	  artillery = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	 anti_tank = { x = 0 y = 2 }
+    
+	}
+}
+
+division_template = {
+	name = "British Armoured Regiment" 
+	######Battalions(aka REGIMENT) form part of brigades, and brigades form divisions. Battalion had around 60 tanks.
+
+	division_names_group = AEF_TANK_01
+template_counter = 76
+	regiments = {
+        	medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		medium_armor = { x = 0 y = 4 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }
+		medium_armor = { x = 1 y = 4 }
+		medium_armor = { x = 2 y = 0 }
+       		medium_armor = { x = 2 y = 1 }	
+		motorized  = { x = 2 y = 2 }
+		motorized  = { x = 2 y = 3 }
+		mechanized  = { x = 2 y = 4 }
+	}
+
+	support = {
+      	maintenance_company = { x = 0 y = 3 }
+        engineer = { x = 0 y = 1 }
+        recon = { x = 0 y = 2 } 
+	signal_company = { x = 0 y = 4 }
+	anti_air = { x = 0 y = 0 }
+	}
+}
+
+	#CANADIANS USE SAME LAYOUT. WILL ADD ANOTHER NAME SET FOR CANADIAN UNITS.
+division_template = {
+	name = "Commandos" #British elite units, akin to Royal Marines, formed part of the Special Service Brigades (effectively the pre-SAS)
+
+	division_names_group = AEF_COM_01
+template_counter = 68
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+	
+	support = {
+   	 signal_company = { x = 0 y = 0 }
+		 recon = { x = 0 y = 1 } 
+	 engineer = { x = 0 y = 2 }
+	anti_tank = { x = 0 y = 3 }	
+	}
+}
+division_template = {
+	name = "US Infantry Battalion" #Roughly speaking there were 3 regiments (aka Battalions) to a brigade, and 3 brigades to a division. Around 1000 men.
+
+	division_names_group = AEF_USA_1
+template_counter = 65
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 3 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	
+	support = {
+		
+	 field_hospital = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	 anti_tank = { x = 0 y = 2 }
+    	engineer = { x = 0 y = 3 }
+	}
+}
+
+###armoured infantry,  x3, 2x tank battalions with 70 tanks each
+division_template = {
+	name = "US Armor Battalion" 
+	##### 3 regiments make up a div. 2 Armor, one inf. 
+template_counter = 69
+	division_names_group = AEF_TANK_02
+
+	regiments = {
+        	medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		medium_armor = { x = 0 y = 4 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }
+		medium_armor = { x = 1 y = 4 }
+		medium_armor = { x = 2 y = 0 }
+       		motorized  = { x = 2 y = 1 }	
+		mechanized   = { x = 2 y = 2 }
+		mechanized   = { x = 2 y = 3 }
+		mechanized  = { x = 2 y = 4 }
+       
+	}
+
+	support = {
+      	maintenance_company = { x = 0 y = 3 }
+        engineer = { x = 0 y = 1 }
+        recon = { x = 0 y = 2 } 
+	signal_company = { x = 0 y = 4 }
+	anti_air = { x = 0 y = 0 }
+	}
+}
+###armoured infantry,  x3, 2x tank battalions with 70 tanks each. WOLVERINES OR HELLCATS.
+division_template = {
+	name = "US Tank Destroyer Battalion" 
+	##### 3 regiments make up a div. 2 Armor, one inf. 
+template_counter = 69
+	division_names_group = AEF_TANK_03
+
+	regiments = {
+        	medium_tank_destroyer_brigade = { x = 0 y = 0 }
+		medium_tank_destroyer_brigade = { x = 0 y = 1 }
+		medium_tank_destroyer_brigade = { x = 0 y = 2 }
+		medium_tank_destroyer_brigade = { x = 0 y = 3 }
+		medium_tank_destroyer_brigade = { x = 0 y = 4 }
+		medium_tank_destroyer_brigade = { x = 1 y = 0 }
+		medium_tank_destroyer_brigade = { x = 1 y = 1 }
+		medium_tank_destroyer_brigade = { x = 1 y = 2 }
+		medium_tank_destroyer_brigade = { x = 1 y = 3 }
+		medium_tank_destroyer_brigade = { x = 1 y = 4 }
+		medium_tank_destroyer_brigade = { x = 2 y = 0 }
+       		motorized  = { x = 2 y = 1 }	
+		mechanized   = { x = 2 y = 2 }
+		mechanized   = { x = 2 y = 3 }
+		mechanized  = { x = 2 y = 4 }
+       
+	}
+
+	support = {
+      	maintenance_company = { x = 0 y = 3 }
+        engineer = { x = 0 y = 1 }
+        recon = { x = 0 y = 2 } 
+	signal_company = { x = 0 y = 4 }
+	anti_air = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "US Armoured Infantry Battalion"
+template_counter = 69
+	division_names_group = AEF_USA_MECH ##These guys were organised slightly different to others. 3ish companies of 200 men in M3 half tracks.
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		mechanized = { x = 0 y = 4 }
+	}
+	
+	support = {
+	field_hospital= { x = 0 y = 2 }
+	  artillery = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+    
+	}
+}
+division_template = {
+	name = "US Army Rangers"		# US army Ranger Battalion, small elite units. around 700 men each. So for gameplay I've buffed em to 20w.
+	division_names_group = AEF_RAN_01
+template_counter = 77
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+	  	mountaineers = { x = 0 y = 1 } 
+		mountaineers = { x = 0 y = 2 }
+	  	mountaineers = { x = 0 y = 3 } 
+		mountaineers = { x = 0 y = 4 } 
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+	}
+support = {
+	engineer = { x = 0 y = 3 }
+        recon = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 2 }
+	field_hospital= { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "US Parachute Rifle Company"		# I decided to break paratroopers down into company-sized units just because I figured it would be better for the player. Also allows you to directly spawn Easy company and such.
+	division_names_group = AEF_PARA_01
+	template_counter = 70
+	regiments = {
+		paratrooper = { x = 0 y = 0 } 
+		}
+support = {
+	engineer = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	  recon = { x = 0 y = 2 }
+	 maintenance_company = { x = 0 y = 3 }
+	 artillery = { x = 0 y = 4 }
+	}
+}
+
+
+
+division_template = {
+	name = "French Light Tank Battalion" 
+	######in french tank divisions, you had something of a mix of light (mainly M3 stuart) and medium (shermans). They also had more, smaller regiments. Due to lack of soldi info, I've gone for a roughly accurate "generic" template for French armoured regiments.
+template_counter = 71
+
+	division_names_group = AEF_TANK_04
+
+	regiments = {
+        	light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		light_armor = { x = 0 y = 4 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 1 y = 3 }
+		light_armor = { x = 1 y = 4 }
+		motorized = { x = 2 y = 0 }
+       		motorized  = { x = 2 y = 1 }	
+		mechanized   = { x = 2 y = 2 }
+		mechanized   = { x = 2 y = 3 }
+		mechanized  = { x = 2 y = 4 }
+	}
+
+	support = {
+      	maintenance_company = { x = 0 y = 2 }
+        engineer = { x = 0 y = 0 }
+       light_tank_recon = { x = 0 y = 1 } 
+	signal_company = { x = 0 y = 3 }
+	
+	}
+}
+
+division_template = {
+	name = "French Medium Tank Battalion" #DUE TO LACK OF SOLLD INFO I'VE GIVEN THE FRENCH AN AMERICAN STYLE BATTALION TEMPLATE.
+	######in french tank divisions, you had something of a mix of light (mainly M3 stuart) and medium (shermans). They also had more, smaller regiments. Due to lack of soldi info, I've gone for a roughly accurate "generic" template for French armoured regiments.
+
+template_counter = 71
+	division_names_group = AEF_TANK_04
+
+	regiments = {
+        	medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		medium_armor = { x = 0 y = 4 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }
+		medium_armor = { x = 1 y = 4 }
+		motorized = { x = 2 y = 0 }
+       		motorized  = { x = 2 y = 1 }	
+		mechanized   = { x = 2 y = 2 }
+		mechanized   = { x = 2 y = 3 }
+		mechanized  = { x = 2 y = 4 }
+       
+	}
+
+	support = {
+      	maintenance_company = { x = 0 y = 3 }
+        engineer = { x = 0 y = 0 }
+     	  light_tank_recon = { x = 0 y = 1 } 
+	signal_company = { x = 0 y = 2 }
+	
+	}
+}
+
+division_template = {
+	name = "French Mechanized Regiment" 			# ##1000 men each, M3 HALFTRACKS.
+	division_names_group = AEF_TANK_04
+template_counter = 71
+	regiments = {
+		mechanized  = { x = 0 y = 0 }
+	   mechanized  = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		
+		mechanized  = { x = 1 y = 0 }
+		mechanized  = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		
+		mechanized  = { x = 2 y = 0 }
+	   mechanized  = { x = 2 y = 1 }
+		mechanized  = { x = 2 y = 2 }
+		mechanized  = { x = 0 y = 3 }
+	}
+	support = {
+        anti_air = { x = 0 y = 0 }
+	 anti_tank = { x = 0 y = 3 }
+	 engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Parachute Chasseur Regiment"		# French "commandos", , basically SAS. 600 man battalion sized unit.
+	division_names_group = AEF_FRA_PARA_01
+template_counter = 71
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 2 y = 0 } 
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 3 y = 0 } 
+}
+support = {
+	engineer = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	  recon = { x = 0 y = 2 }
+	 maintenance_company = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "French TD Battalion" ###generalised version of a Tank Destroyer battalion. Utilising M10 wolverines.
+
+	division_names_group = FRA_TDB_01
+
+	regiments = {
+		medium_tank_destroyer_brigade = { x = 0 y = 0 }
+		medium_tank_destroyer_brigade = { x = 0 y = 1 }
+	}
+	
+	support = {
+		maintenance_company = { x = 0 y = 3 }
+        engineer = { x = 0 y = 1 }
+     	  light_tank_recon = { x = 0 y = 2 } 
+	signal_company = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "French SPA Battalion" ###generalised version of French Self PRopelled Arty battalion. Utilising M7 Priest.
+
+	division_names_group = FRA_SPA_01
+
+	regiments = {
+		medium_sp_artillery_brigade = { x = 0 y = 0 }
+		medium_sp_artillery_brigade = { x = 0 y = 1 }
+	}
+	
+	support = {
+		maintenance_company = { x = 0 y = 3 }
+        engineer = { x = 0 y = 1 }
+     	  light_tank_recon = { x = 0 y = 2 } 
+	signal_company = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "French Infantry Battalion" ######1300 men. 
+template_counter = 71
+	division_names_group = AEF_FRA_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+	}
+	
+	support = {
+		
+	  artillery = { x = 0 y = 0 }
+	recon = { x = 0 y = 1 }
+	
+    
+	}
+}
+division_template = {
+	name = "French Cavalry Regiment" #####
+template_counter = 71
+	division_names_group = AEF_FRA_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 2 y = 0 }
+	}
+	
+	support = {
+		
+	  artillery = { x = 0 y = 0 }
+	light_tank_recon = { x = 0 y = 1 }
+	
+    
+	}
+}
+units = {
+##### IN 1943, ALLIES STILL HAVE UNITS IN OTHER PLACEs. SO ONLY HOME GUARD FOR NOW.
+division = { 
+	name = "I/8th Infantry Regiment"
+		location = 2738
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/8th Infantry Regiment"
+		location = 2738
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/8th Infantry Regiment"
+		location = 2738
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+division = { 
+	name = "I/12th Infantry Regiment"
+		location = 2738
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+division = { 
+	name = "II/12th Infantry Regiment"
+		location = 2738
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+division = { 
+	name = "III/12th Infantry Regiment"
+		location = 2738
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "A Company, 1-325 PIR"
+		location = 4908
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+division = { 
+	name = "B Company, 1-325 PIR"
+		location = 4908
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+division = { 
+	name = "C Company, 1-325 PIR"
+		location = 4908
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+division = { 
+	name = "D Company, 2-325 PIR"
+		location = 4908
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+division = { 
+	name = "E Company, 2-325 PIR"
+		location = 4908
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+division = { 
+	name = "F Company, 2-325 PIR"
+		location = 4908
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+division = { 
+	name = "A Company, 1-506 PIR"
+		location = 9764
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+division = { 
+	name = "B Company, 1-506 PIR"
+		location = 9764
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+division = { 
+	name = "C Company, 1/506 PIR"
+		location = 9764
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+division = { 
+	name = "D Company, 2-506 PIR"
+		location = 9764
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+division = { 
+	name = "E Company, 2-506 PIR"
+		location = 9764
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+division = { 
+	name = "F Company, 2-506 PIR"
+		location = 9764
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+division = { 
+	name = "A Company, 1-501 PIR"
+		location = 9764
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+division = { 
+	name = "B Company, 1-501 PIR"
+		location = 9764
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+division = { 
+	name = "C Company, 1/501 PIR"
+		location = 9764
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+division = { 
+	name = "D Company, 2-501 PIR"
+		location = 9764
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+division = { 
+	name = "E Company, 2-501 PIR"
+		location = 9764
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+division = { 
+	name = "F Company, 2-501 PIR"
+		location = 9764
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+###1st INFANTRY DIV OMAHA
+
+division = { 
+	name = "I/16th Infantry Regiment"
+		location = 220
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.6
+	}
+division = { 
+	name = "II/16th Infantry Regiment"
+		location = 220
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "III/16th Infantry Regiment"
+		location = 220
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.8
+	}
+division = { 
+	name = "I/18th Infantry Regiment"
+		location = 220
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "II/18th Infantry Regiment"
+		location = 220
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+division = { 
+	name = "III/18th Infantry Regiment"
+		location = 220
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "I/26th Infantry Regiment"
+		location = 220
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "II/26th Infantry Regiment"
+		location = 220
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+	}
+division = { 
+	name = "III/26th Infantry Regiment"
+		location = 220
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "745th Tank Battalion"
+		location = 220
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "634th Tank Destroyer Bn."
+		location = 220
+		division_template = "US Tank Destroyer Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "635th Tank Destroyer Bn."
+		location = 220
+		division_template = "US Tank Destroyer Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
+	}
+###29th INF DIV OMAHA
+division = { 
+	name = "I/115th Infantry Regiment"
+		location = 220
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "II/115th Infantry Regiment"
+		location = 220
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+	}
+division = { 
+	name = "III/115th Infantry Regiment"
+		location = 220
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "I/116th Infantry Regiment"
+		location = 220
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "II/116th Infantry Regiment"
+		location = 220
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+division = { 
+	name = "III/116th Infantry Regiment"
+		location = 220
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "I/117th Infantry Regiment"
+		location = 220
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "II/117th Infantry Regiment"
+		location = 220
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+	}
+division = { 
+	name = "2nd Ranger Battalion"
+		location = 220
+		division_template = "US Army Rangers"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+
+division = { 
+	name = "III/117th Infantry Regiment"
+		location = 220
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+
+###GOLD BEACH, 50th BRITISH INFANTRY DIV
+division = { 
+	name = "5th Bn, East Yorkshire Regiment"
+		location = 3554
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "6th Bn, Green Howards"
+		location = 3554
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "7th Bn, Green Howards"
+		location = 3554
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "6th Bn, Durham Light Infantry"
+		location = 3554
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "8th Bn, Durham Light Infantry"
+		location = 3554
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "9th Bn, Durham Light Infantry"
+		location = 3554
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "2nd Bn, Devonshire Regiment"
+		location = 3554
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "1st Bn, Dorsetshire Regiment"
+		location = 3554
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "2nd Bn, Devonshire Regiment"
+		location = 3554
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "2nd Bn, Hampshire Regiment"
+		location = 3554
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "2nd Bn, South Wales Borderers"
+		location = 3554
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "2nd Bn, Gloucestershire Regiment"
+		location = 3554
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "2nd Bn, Essex Regiment"
+		location = 3554
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "Westminister Dragoons"
+		location = 3554
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+	}
+division = { 
+	name = "141st Royal Tank Regiment"
+		location = 3554
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+	}
+###JUNO BEACh. CANADA.
+
+division = { 
+	name = "1st Bn, The Royal Winnipeg Rifles"
+		location = 4147
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "1st Bn, The Regina Rifle Regiment"
+		location = 4147
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "1st Bn, The Canadian Scottish Regiment"
+		location = 4147
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "7th Infantry Brigade, Lorne Scots"
+		location = 4147
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "1st Bn, The Queen's Own Rifles of Canada"
+		location = 4147
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "1st Bn, Le Régiment de la Chaudière"
+		location = 4147
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "1st Bn,  The North Shore (New Brunswick) Regiment"
+		location = 4147
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "8th Infantry Brigade, Lorne Scots"
+		location = 4147
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "1st Bn, The Highland Light Infantry of Canada"
+		location = 4147
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "1st Bn, The Stormont, Dundas and Glengarry Highlanders"
+		location = 4147
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "1st Bn, The North Nova Scotia Highlanders"
+		location = 4147
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "9th Infantry Brigade, Lorne Scots"
+		location = 4147
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "1st Bn, The Cameron Highlanders of Ottawa "
+		location = 4147
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+
+####SWORD BEACH, BRIT.
+
+division = { 
+	name = "1st Bn Suffolk Regiment"
+		location = 4386
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "2nd Bn East Yorkshire Regiment"
+		location = 4386
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "1st Bn, South Lancashire Regiment"
+		location = 4386
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "2nd Bn, Lincolnshire Regiment"
+		location = 4386
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "1st Bn King’s Own Scottish Borderers Regiment"
+		location = 4386
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "2nd Bn Royal Ulster Rifles Regiment"
+		location = 4386
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "1st Bn, Royal Warwickshire Regiment"
+		location = 4927
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "2nd Bn, King’s Shropshire Light Infantry Regiment"
+		location = 4927
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "1st Bn, Royal Norfolk Regiment"
+		location = 4927
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+
+division = { 
+	name = "No. 3 Commando"
+		location = 3659
+		division_template = "Commandos"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+	force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "No. 4 Commando"
+		location = 3659
+		division_template = "Commandos"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+	force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "1er Bataillon Fusiliers Marins Commando"
+		location = 3659
+		division_template = "Commandos"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "No. 6 Commando"
+		location = 3659
+		division_template = "Commandos"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "No. 45 Royal Marine Commando"
+		location = 3659
+		division_template = "Commandos"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "No. 41 Royal Marine Commando"
+		location = 3659
+		division_template = "Commandos"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "No. 46 Royal Marine Commando"
+		location = 3659
+		division_template = "Commandos"
+		start_experience_factor = 1
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+		start_equipment_factor = 0.9
+	}
+####6TH AIRBORNE DIV
+division = { 
+	name = "8th Bn Parachute Regiment"
+		location = 3659
+		division_template = "British Parachute Battalion"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "9th Bn Parachute Regiment"
+		location = 3659
+		division_template = "British Parachute Battalion"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "1st Canadian Parachute Battalion"
+		location = 3659
+		division_template = "British Parachute Battalion"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "7th Bn Parachute Regiment"
+		location = 2843
+		division_template = "British Parachute Battalion"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "12th Yorkshire Bn Parachute Regiment"
+		location = 2843
+		division_template = "British Parachute Battalion"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "13th Bn Parachute Regiment"
+		location = 2843
+		division_template = "British Parachute Battalion"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "12th Bn Devonshire Regiment"
+		location = 2161
+		division_template = "British Parachute Battalion"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "2nd Bn Oxfordshire and Buckinghamshire Light Infantry"
+		location = 2161
+		division_template = "British Parachute Battalion"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "1st Bn Royal Ulster Rifles"
+		location = 2161
+		division_template = "British Parachute Battalion"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+####HOME  BASED UNITS, THAT ARRIVE ADFTER THE INITIAL LANDING.
+##BRadley, USA - 468
+##dempsey, BRIT/CAN - 4666
+
+##2ND INFANTRY DIV
+division = { 
+	name = "I/9th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/9th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/9th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/23rd Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/23rd Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/23rd Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/38th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/38th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/38th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "741st Tank Battalion"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+###5TH INFANTRY DIV
+division = { 
+	name = "I/2nd Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/2nd Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/2nd Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/10th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/10th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/10th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/11th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/11th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/11th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+##8TH INF DIV
+division = { 
+	name = "I/13th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/13th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/13th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/28th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/28th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/28th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/121st Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/121st Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/121st Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+#####9th INF DIV
+division = { 
+	name = "I/39th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/39th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/39th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/47th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/47th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/47th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/60th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/60th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/60th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+##28TH INF DIV
+division = { 
+	name = "I/109th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/109th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/109th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/110th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/110th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/110th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/112th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/112th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/112th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+###30th INF DIV
+division = { 
+	name = "I/117th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/117th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/117th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/119th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/119th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/119th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/120th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/120th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/120th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+#########35th INF DIV
+division = { 
+	name = "I/134th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/134th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/134th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/137th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/137th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/137th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/320th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/320th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/320th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+#############79th INF DIV
+division = { 
+	name = "I/313th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/313th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/313th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/314th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/314th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/314th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/315th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/315th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/315th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/313th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/313th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/313th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+division = { 
+	name = "I/314th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/314th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/314th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/315th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/315th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/315th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+#######83rd inf
+division = { 
+	name = "I/329th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/329th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/329th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/330th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/330th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/330th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/331st Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/331st Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/331st Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+######90th INF DIV
+division = { 
+	name = "I/357th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/357th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/357th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/358th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/358th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/358th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/359th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/359th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/359th Infantry Regiment"
+		location = 468
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+##armoured units
+###2ND ARMOUR DIV
+division = { 
+	name = "I/66th Armor Regiment"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "II/66th Armor Regiment"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "II/66th Armor Regiment"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "I/67th Armor Regiment"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "II/67th Armored Infantry Regiment"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "III/67th Armored Infantry Regiment"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "I/41st Armoured Infantry Regiment"
+		location = 468
+		division_template = "US Armoured Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "II/41st Armoured Infantry Battalion"
+		location = 468
+		division_template = "US Armoured Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "III/41st Armoured Infantry Battalion"
+		location = 468
+		division_template = "US Armoured Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+##3rd ARMOUR DIV
+division = { 
+	name = "I/32nd Armor Regiment"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "II/32nd Armor Regiment"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "II/32nd Armor Regiment"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "I/33rd Armor Regiment"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "II/33rd Armor Regiment"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "III/33rd Armor Regiment"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "I/36th Armoured Infantry Regiment"
+		location = 468
+		division_template = "US Armoured Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "II/36th Armoured Infantry Regiment"
+		location = 468
+		division_template = "US Armoured Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "III/36th Armoured Infantry Regiment"
+		location = 468
+		division_template = "US Armoured Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+########4th ARMOURED
+division = { 
+	name = "8th Tank Battalion"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "35th Tank Battalion"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "37th Tank Battalion"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+
+division = { 
+	name = "10th Armoured Infantry Battalion"
+		location = 468
+		division_template = "US Armoured Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "51st Armoured Infantry Battalion"
+		location = 468
+		division_template = "US Armoured Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+
+division = { 
+	name = "53rd Armoured Infantry Battalion"
+		location = 468
+		division_template = "US Armoured Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+####5th armoured div
+
+division = { 
+	name = "10st Tank Battalion"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "34th Tank Battalion"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "81st Tank Battalion"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+
+division = { 
+	name = "15th Armoured Infantry Battalion"
+		location = 468
+		division_template = "US Armoured Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "46th Armoured Infantry Battalion"
+		location = 468
+		division_template = "US Armoured Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+
+division = { 
+	name = "47th Armoured Infantry Battalion"
+		location = 468
+		division_template = "US Armoured Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+#####6th armour
+division = { 
+	name = "15th Tank Battalion"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "68th Tank Battalion"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "69th Tank Battalion"
+		location = 468
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+
+division = { 
+	name = "9th Armoured Infantry Battalion"
+		location = 468
+		division_template = "US Armoured Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+division = { 
+	name = "44th Armoured Infantry Battalion"
+		location = 468
+		division_template = "US Armoured Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+
+division = { 
+	name = "50th Armoured Infantry Battalion"
+		location = 468
+		division_template = "US Armoured Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+
+
+division = { 
+	name = "5th Ranger Battalion"
+		location = 468
+		division_template = "US Army Rangers"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+########BOURNEMOUTH, BRITISH AND COMMONWEALTH
+###15TH DIV, BRITAIn
+division = { 
+	name = "8th Bn, Royal Scots"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "6th Bn, Royal Scots Fusiliers"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "6th Bn, King's Own Borderers"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "9th Bn, Cameronians (Scottish Rifles)"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "2nd Bn, Glasgow Highlanders"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "7th Bn, Seaforth Highlanders"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "2nd Bn, Argyll & Sutherland Highlanders"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "10th Bn, Highland Light Infantry"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+
+division = { 
+	name = "2nd Bn, Gordon Highlanders"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+##43RD DIV, BRITAIN
+division = { 
+	name = "7th Bn, Hampshire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "4th Bn, Dorsetshire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "5th Bn, Dorsetshire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "7th Bn, Somerset Light Infantry"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "1st Bn, Worcestershire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "5th Bn, Duke of Cornwall’s Light Infantry"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "4th Bn, Somerset Light Infantry"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "4th Bn, Wiltshire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+
+division = { 
+	name = "5th Bn, Wiltshire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+##49TH WEST RIDING, DIV, BRITAIN
+division = { 
+	name = "4th Bn, Lincolnshire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "1/4th Bn, King's Own Yorkshire Light Infantry"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "Hallamshire Bn, York and Lancaster Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "1/6th Bn, Duke of Wellington's Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "1/7th Bn, Duke of Wellington's Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "5th Bn, Duke of Cornwall’s Light Infantry"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "11th Bn, Royal Scots Fusiliers"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "10th Bn, Durham Light Infantry"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+
+division = { 
+	name = "11th Bn, Durham Light Infantry"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "12th Bn, Durham Light Infantry"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+###50th INFANTRY DIV
+division = { 
+	name = "5th Bn, East Yorkshire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "6th Bn, Green Howards Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "7th Bn, Green Howards Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "6th Bn, Durham Light Infantry"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "8th Bn, Durham Light Infantry"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "9th Bn, Durham Light Infantry"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "2nd Battalion Devonshire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = " 1st Battalion Hampshire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+
+division = { 
+	name = "1st Battalion Dorsetshire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "2nd Battalion Cheshire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "61st Recce Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "6th Bn, Border Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "47 Royal Marine Commando"
+		location = 4666
+		division_template = "Commandos"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+###51st HIGHLERNAD INF DIV
+division = { 
+	name = "2nd Bn, The Seaforth Highlanders"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "5th Bn, The Seaforth Highlanders"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "5th Bn, The Queen’s Own Cameron Highlanders"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "5th Bn, The Black Watch"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "1st Bn, The Gordon Highlanders"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "5/7th Bn, The Gordon Highlanders"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "1st Bn, The Black Watch"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "7th (Fife) Bn, The Black Watch"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+
+division = { 
+	name = "7th Bn, The Argyll and Sutherland Highlanders"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "2nd Derbyshire Yeomanry, RAC"
+		location = 4666
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		 }
+
+
+division = { 
+	name = "144th Regiment, RAC"
+		location = 4666
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		 }
+division = { 
+	name = "148th Regiment, RAC"
+		location = 4666
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		 }
+####53 DIV, WELSH
+division = { 
+	name = "1st Bn, East Lancashire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "1st Bn, Oxford and Buckinghamshire Light Infantry"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "4th Bn, Royal Welch Fusiliers"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "5th Bn, The Black Watch"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "6th Bn, The Black Watch"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "7th Bn, The Royal Welch Fusiliers"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "2nd Bn, Monmouthshire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "4th Bn, Welch Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+
+division = { 
+	name = "1/5th Bn, The Welch Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "1st Bn, Manchester Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "53rd Regiment, RC"
+		location = 4666
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		 }
+######59th DIVISION
+division = { 
+	name = "59th Reconnaisance Regiment, RC"
+		location = 4666
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		 }
+division = { 
+	name = "6th Bn, The North Staffordshire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "7th Bn, The Royal Norfolk Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "7th Bn, The South Staffordshire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "5th Bn, The South Staffordshire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "1st/6th Bn, The South Staffordshire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "2nd/6th Bn, The South Staffordshire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "5th Bn, The East Lancashire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "2nd/5th Bn, The Lancashire Fusiliers"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+
+division = { 
+	name = "1st/7th Bn, The Royal Warwickshire Regimen"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "1st Bn, Manchester Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "7th Bn, The Royal Northumberland Fusiliers"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+##########7th ARMOURED DIV
+
+division = { 
+	name = "1st Royal Tank Regiment"
+		location = 4666
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		 }
+
+division = { 
+	name = "5th Royal Tank Regiment"
+		location = 4666
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		 }
+
+division = { 
+	name = "4th County of London Yeomanry"
+		location = 4666
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		 }
+division = { 
+	name = "1st Bn, Rifle Brigade(The Prince Consort's Own)"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "1/5th Bn, The Queen’s Royal Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "1/5th The Queen’s Royal Regiment (West Surrey)"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "1/6th (Bermondsey) Bn, The Queen’s Royal Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "1/7th (Southwark) Bn, The Queen’s Royal Regiment (West Surrey)"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+##11th ARMOURED DIV
+division = { 
+	name = "3rd Royal Tank Regiment"
+		location = 4666
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		 }
+
+division = { 
+	name = "23rd Hussars"
+		location = 4666
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		 }
+
+division = { 
+	name = "2nd Fife and Forfar Yeomanry"
+		location = 4666
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		 }
+division = { 
+	name = "4th Bn The King’s Shropshire Light Infantry"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "1st Bn The Herefordshire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "3rd Bn The Monmouthshire Regiment"
+		location = 4666
+		division_template = "British Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "2nd Northamptonshire Yeomanry"
+		location = 4666
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		 }
+division = { 
+	name = "15th/19th The King’s Royal Hussars"
+		location = 4666
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		 }
+###79th ARMOURED NEEDED, MAKE IT PART OF THE FOCUS!
+#
+
+###3RD CANADIAN DIVISDION
+
+division = { 
+	name = "The Royal Regiment of Canada"
+		location = 4666
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "The Royal Hamilton Light Infantry"
+		location = 4666
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "The Essex Scottish Regiment"
+		location = 4666
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "4th Infantry Brigade Ground Defence Platoon"
+		location = 4666
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "The Black Watch of Canada"
+		location = 4666
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "Le Régiment de Maisonneuve"
+		location = 4666
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "The Calgary Highlanders"
+		location = 4666
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "5th Infantry Brigade Ground Defence Platoon"
+		location = 4666
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "Les Fusiliers Mont Royal"
+		location = 4666
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "The Queen’s Own Cameron Highlanders of Canada"
+		location = 4666
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "6th Infantry Brigade Ground Defence Platoon"
+		location = 4666
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "6th Canadian Armoured Regiment (1st Hussars)"
+		location = 4666
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		 }
+division = { 
+	name = "10th Canadian Armoured Regiment (The Fort Garry Horse)"
+		location = 4666
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		 }
+
+division = { 
+	name = "27th Canadian Armoured Regiment (The Sherbrooke Fusilier Regiment)"
+		location = 4666
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		 }
+division = { 
+	name = "21st Canadian Armoured Regiment  (The Governor General’s Foot Guards)"
+		location = 4666
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		 }
+division = { 
+	name = "22nd Armoured Regiment (The Grenadier Guards)"
+		location = 4666
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		 }
+
+division = { 
+	name = "28th Armoured Regiment (The British Columbia Regiment)"
+		location = 4666
+		division_template = "British Armoured Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		 }
+division = { 
+	name = "The Argyll and Sutherland Highlanders of Canada"
+		location = 4666
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division = { 
+	name = "The Algonquin Regiment"
+		location = 4666
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+division = { 
+	name = "The Lincoln and Welland Regiment"
+		location = 4666
+		division_template = "Canadian Infantry Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	
+
+}
+
+#####################

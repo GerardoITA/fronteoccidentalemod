@@ -1,0 +1,33 @@
+﻿capital = 132
+1918.1.1 = { 
+
+#declare_war_on = {
+#    target = ENT
+#    type = annex_everything
+#}
+set_politics = {
+	ruling_party = neutrality
+	#last_election = "1871.11.8"
+	#election_frequency = 48
+	#elections_allowed = n
+}
+set_popularities = {
+	neutrality = 100
+	communism = 0
+}
+
+create_country_leader = {
+	name = "Erich Ludendorff"
+	desc = ""
+	picture = Ludendorff.dds
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+}
+}
+1943.3.1 = { 
+
+}

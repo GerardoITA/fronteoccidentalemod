@@ -1,0 +1,1064 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# contain
+# area_priority
+# building_target
+
+
+OKW_unit_production = {
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 4
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 2
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = -100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 0 #because doctrine this = 2
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = -5 #because doctrine this = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = -17 #because doctrine this = 3
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 75 #88 to 70
+	}
+
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 15
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = -50 #because doctrine this = 50
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 20
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -50
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 5 #30 to 50
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_tank
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_air
+		value = 25
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 100 #20 to 40
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = -10
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = motorized
+		value = -10
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories #Build these up over time, don't stall
+		id = anti_air
+		value = 2
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = artillery
+		value = 4
+	}
+
+	ai_strategy = { #added to railway gun define (set to 0 by default, increased in default strategies)
+		type = railway_gun_divisions_ratio
+		value = 1
+	}
+
+}
+
+GER_anti_armor = {
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		ai_wants_divisions > 5 #Decreasing the amount of motorized the AI wants
+
+		any_enemy_country = {
+			ROOT = {
+				estimated_intel_max_armor = {
+					tag = PREV
+					value > 25
+				}
+			}
+		}
+	}
+	abort = {
+		ai_wants_divisions < 6 #Decreasing the amount of motorized the AI wants
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 15
+	}
+}
+
+GER_armored_production = {
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		date > 1938.8.1
+		ai_wants_divisions > 10 #Decreasing the amount of tanks the AI wants
+	}
+	abort = {
+		ai_wants_divisions < 10 #Decreasing the amount of tanks the AI wants
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 4
+	}
+}
+
+
+GER_highered_armored_production = {
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		num_of_military_factories > 109
+	}
+	abort = {
+		num_of_military_factories < 110
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 10
+	}
+}
+
+
+GER_super_boost_light_for_med_armor = {
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		OR = {
+			has_tech = basic_medium_tank
+			has_tech = basic_medium_tank_chassis
+		}
+		NOT = { has_template_ai_majority_unit = medium_armor }
+	}
+
+	abort = {
+		has_template_ai_majority_unit = medium_armor
+	}
+
+	# lets do changes more often during this period too
+	ai_strategy = {
+		type = land_xp_spend_priority
+		id = division_template
+		value = 100
+	}
+
+	# this is gateway
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = 100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 150
+	}
+
+	# Germany is set up to change their SS division into medium armor.
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = 200
+	}
+}
+
+GER_super_boost_light_for_modern_armor = {
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		OR = {
+			has_tech = main_battle_tank
+			has_tech = main_battle_tank_chassis
+		}
+		NOT = { has_template_ai_majority_unit = modern_armor }
+	}
+
+	abort = {
+		has_template_ai_majority_unit = modern_armor
+	}
+
+	# lets do changes more often during this period too
+	ai_strategy = {
+		type = land_xp_spend_priority
+		id = division_template
+		value = 100
+	}
+
+	# this is gateway
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = modern_armor
+		value = 150
+	}
+}
+
+
+GER_template_design = {
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		date < 1940.1.1
+	}
+	abort = {
+		date > 1940.1.1
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = 20
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = artillery
+		value = 20
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = -50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = 30
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = -50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -50
+	}
+}
+
+
+
+dont_die_in_mountains = {
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		date < 1942.5.1
+		country_exists = SWI
+		is_historical_focus_on = yes
+	}
+	abort = {
+		NOT = { country_exists = FRA }
+		date > 1942.5.1
+	}
+
+	ai_strategy = {
+		type = ignore
+		id = "SWI"
+		value = 1000
+	}
+}
+
+
+
+
+
+
+
+
+GER_naval_role_ratios_historical = {
+	allowed = {
+		original_tag = OKW
+		has_dlc = "Man the Guns"
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bc
+		value = -100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = -50
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value = 200
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = submarine
+		value = 200
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = 100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = 50
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_heavy
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_sweeper
+		value = 15
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = 10
+	}
+}
+
+
+
+
+
+axis_stay_away_from_the_royal_navy = {
+	enable = {
+		has_war_with = ENG
+		date < 1942.1.1
+
+		OR = {
+			OKW = {
+				naval_strength_ratio = {
+					tag = AEF
+  					ratio < 0.5
+  				}
+  			}
+
+			# if we manage to get a foothold in UK we must do what we can to exploit it! (checks coastal states)
+			divisions_in_state = { state = 29 size < 1 }
+			divisions_in_state = { state = 30 size < 1 }
+			divisions_in_state = { state = 33 size < 1 }
+			divisions_in_state = { state = 41 size < 1 }
+			divisions_in_state = { state = 42 size < 1 }
+			divisions_in_state = { state = 25 size < 1 }
+			divisions_in_state = { state = 24 size < 1 }
+			divisions_in_state = { state = 31 size < 1 }
+			
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 49 #english channel
+		value = 600 # avoid doing missions as well
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 38 #around UK
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 43 #around UK
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 40 #around UK
+		value = 100
+	}
+}
+
+
+
+
+
+GER_industry_we_are_the_baddies = {
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		date > 1937.8.1
+	}
+	abort={
+		date > 1940.1.1
+	}
+
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = 50
+	}
+	ai_strategy = {
+		type = air_factory_balance
+		value = 100
+	}
+}
+
+GER_industry_we_are_the_baddies_2 = {
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		date > 1940.1.1
+	}
+
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = 20
+	}
+}
+
+GER_industry_we_are_the_baddies_but_not_yet = {
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		date < 1937.8.1
+	}
+	abort={
+		date > 1937.8.1
+	}
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = 110
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = -50 #because doctrine this = 3
+	}
+}
+
+Axis_care_less_about_making_friends = {
+
+	enable = {
+		has_government = fascism
+		is_in_faction = yes
+		manpower_per_military_factory < 3000
+		has_war = yes
+	}
+	abort = {
+		OR = {
+			NOT = { has_government = fascism }
+			is_in_faction = no
+			manpower_per_military_factory > 3000
+			has_war = no
+		}
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = -9999
+	}
+}
+
+GER_wants_civ = {
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		has_government = fascism
+		date < 1937.9.15
+		has_war = no
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 59
+	}
+}
+GER_wants_synth = {
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		has_government = fascism
+		date > 1937.10.20
+		has_war = no
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = building_target
+		id = synthetic_refinery
+		value = 8
+	}
+}
+
+
+
+
+GER_we_are_bad_at_espionage_because_it_is_expensive_and_not_tanks = {
+	allowed = {
+		original_tag = OKW
+		has_dlc = "La Resistance"
+	}
+	enable = {
+		has_government = fascism
+		num_of_civilian_factories < 90
+		num_of_civilian_factories > 30
+	}
+	abort = {
+		OR = {
+			num_of_civilian_factories > 90
+		}
+	}
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = -20
+	}
+}
+
+
+
+
+
+
+
+# AI are not willing to invade if it is at war at its home against another country's home location
+# lets force invade NOR for GER & ITA
+
+
+# focus armor units on low countries
+# and ignore mighty lux until they fall
+
+GER_have_some_train_production = {
+	allowed = {
+		always = no #replace if needed
+	}
+
+	enable = {
+		date > 1936.7.1
+		num_of_military_factories > 50
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_min_factories # This does not seem to work
+		id = train
+		value = 4
+	}
+}
+
+
+GER_xp_upgrade_spending_land = {
+	allowed = {
+		original_tag = OKW
+	}
+
+	enable = {
+		date < 1941.6.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = land_xp_spend_priority
+		id = upgrade_xp_cutoff
+		value = 100
+	}
+}
+
+
+
+GER_dont_upgrade_to_weapons_3_too_early = {
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		is_historical_focus_on = yes
+		has_equipment = { infantry_equipment < 60000 }
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = production_upgrade_desire_offset
+		id = infantry_equipment_3
+		value = -100
+	}
+}
+
+
+
+
+
+
+
+
+
+#GER_invasion_buffer = {
+#	allowed = {
+#		original_tag = OKW
+#	}
+#	enable = {
+#		is_historical_focus_on = yes
+#		
+#		date > 1943.1.1
+#	}
+#	abort_when_not_enabled = yes
+#
+#	ai_strategy = {
+#		type = put_unit_buffers
+#		states = {
+#			15
+#			14
+#			23
+#			29
+#			6
+#		}
+#		ratio = 0.20
+#		area = normandy_landing_zone
+#		subtract_invasions_from_need = no
+#		subtract_fronts_from_need = yes
+#	}
+#	ai_strategy = {
+#		type = role_ratio
+#		id = garrison
+#		value = 10
+#	}
+#}
+
+GER_build_more_cas_to_invade_russia = {
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		is_historical_focus_on = yes
+		FRA = {
+			has_capitulated = yes
+		}
+		date > 1940.1.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 45
+	}
+}
+
+
+
+
+
+GER_make_some_radar_4 = {
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		has_tech = radio_detection
+		90 = {
+			free_building_slots = {
+				building = radar_station
+				size > 0
+				include_locked = yes
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = build_building
+		id = radar_station
+		target = 90 #Kielce
+		value = 2000
+	}
+}
+
+GER_make_some_radar_5 = {
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		has_tech = radio_detection
+		763 = {
+			free_building_slots = {
+				building = radar_station
+				size > 0
+				include_locked = yes
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = build_building
+		id = radar_station
+		target = 763 #Konigsberg
+		value = 2000
+	}
+}
+
+GER_make_some_radar_6 = {
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		has_tech = radio_detection
+		36 = {
+			free_building_slots = {
+				building = radar_station
+				size > 0
+				include_locked = yes
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = build_building
+		id = radar_station
+		target = 36 #Holland
+		value = 2000
+	}
+}
+
+GER_make_some_radar_7 = {
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		has_tech = radio_detection
+		42 = {
+			free_building_slots = {
+				building = radar_station
+				size > 0
+				include_locked = yes
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = build_building
+		id = radar_station
+		target = 42 #Moselland
+		value = 2000
+	}
+}
+
+
+
+
+
+bba_air_prod_1 = {
+	# TODO BFW:
+	allowed = { original_tag = OKW }
+	enable = {
+		date < 1940.1.1
+	}
+
+	abort_when_not_enabled = yes
+
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 300
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 200
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = fighter
+		value = 10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 10 #because doctrine this = 15
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = 10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 0
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = cas
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = 0
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = large_plane_airframe
+		value = 0
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = heavy_fighter
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = heavy_fighter
+		value = 5
+	}
+
+}
+
+bba_air_prod_2 = {
+	# TODO BFW:
+	allowed = { original_tag = OKW }
+	enable = {
+		date > 1940.1.1
+	}
+
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 300
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 0 #because doctrine this = 15
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = -80
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = -60
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 220
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 5
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -70
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = fighter
+		value = 4
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = heavy_fighter
+		value = -70
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = heavy_fighter
+		value = -70
+	}
+
+}

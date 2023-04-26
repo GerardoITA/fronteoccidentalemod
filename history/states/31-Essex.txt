@@ -1,0 +1,30 @@
+state={
+	id=31
+	name="STATE_31"
+history={
+		 1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+}
+ 1943.3.1.12 = {
+		owner = AEF
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+		victory_points = {
+			3433 5
+		}
+		victory_points = {
+			967 3
+		}
+buildings = { infrastructure = 4 industrial_complex = 3 dockyard = 2 air_base = 4 967 = { naval_base = 6 } }
+	}
+
+	provinces={
+		8244 8161 7277 8470 6935 276 277 452 619 745 967 1282 1310 1397 1668 1795 1866 1887 1914 2130 2287 2686 2936 2994 3014 3433 3493 3496 3704 3758 4125 4164 4208 4420 4429 4433 4439 4457 4460 4468 4484 
+	}
+	manpower=1104204
+	state_category = large_city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

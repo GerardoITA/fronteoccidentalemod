@@ -1,0 +1,35 @@
+
+state={
+	id=119
+	name="STATE_119"
+
+	history={
+		1918.3.20.12 = {
+		owner = DKR
+		add_core_of = DKR
+		}
+ 	1943.3.1.12 = {
+		owner = OKW
+		add_core_of = OKW
+		remove_core_of = DKR
+		}
+
+	buildings = { infrastructure = 2 } 
+
+victory_points = { 5283 5 } #Freiburg im Breisgau
+victory_points = { 3560 2 }
+victory_points = { 1478 2 } #Waldkirch
+victory_points = { 5259 2 } #Villingen-Schwenningen
+victory_points = { 53 2 } #Rotweil
+victory_points = { 2526 2 } #Schrarnberg
+victory_points = { 476 2 } #Achern
+	}
+
+	provinces={
+		53 129 191 249 343 407 456 472 476 734 830 841 998 1007 1091 1111 1141 1268 1272 1326 1341 1346 1478 1567 1578 1589 1606 1669 1769 1834 1891 1948 2010 2023 2077 2099 2105 2115 2150 2155 2191 2199 2219 2266 2273 2294 2334 2343 2526 2527 2557 2606 2634 2707 2718 2784 2809 2828 2915 2941 2961 2992 3031 3074 3105 3158 3202 3257 3308 3394 3560 3587 3627 3689 3740 3754 3883 4001 4090 4097 4103 4123 4138 4210 4305 4331 4343 4357 4358 4397 5127 5169 5231 5240 5255 5259 5260 5275 5278 5283 5284 5286 5292 5304 5328 5332 5337 5338 5398 8232 9562 9564 
+	}
+	manpower=1753231
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

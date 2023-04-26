@@ -1,0 +1,32 @@
+
+state={
+	id=81
+	name="STATE_81"
+	provinces={
+		33 223 1309 2914 2930 4182 5365 
+	}
+	manpower=50694
+	state_category = pastoral
+	history= { 	
+1918.3.20.12 = {
+		owner = DKR
+		add_core_of = DKR
+		}
+ 	1943.3.1.12 = {
+		owner = OKW
+		add_core_of = OKW
+		remove_core_of = DKR
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+
+
+buildings = { infrastructure = 2 }
+victory_points = { 2930 4 } #Belfort
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=6
+	name="STATE_6"
+	history = { buildings = { 4447 = { naval_base = 2 coastal_bunker = 2 } rocket_site = 1 infrastructure = 2 } 
+1918.3.20.12 = {
+		owner = HOL
+		add_core_of = HOL
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = HOL
+		}
+
+victory_points = {4447 2 }  victory_points = { 1601 2 }  victory_points = { 4351 2}}
+	provinces={
+		725 1210 1601 4351 4447 4471 5409 5412 
+	}
+	manpower=22779
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

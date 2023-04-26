@@ -1,0 +1,684 @@
+﻿####standard scenario GERMANY TEMPLATES
+division_template = {
+	name = "Grenadier Regiment" ###generalised version of Wehrmacht infantry regiment1944, around 2000 men. ONLY TWO BATTALIONS. THIS WAS REDUCED DUE TO GER LATE WAR SHORTAGE AND DEFENSE FOCUS.
+template_counter = 72
+	division_names_group = GER_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+       		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+       		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		infantry = { x = 2 y = 4 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 3 y = 3 }
+		infantry = { x = 3 y = 4 }
+		
+	}
+	
+	support = {
+	engineer = { x = 0 y = 3 }
+        recon = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	anti_tank = { x = 0 y = 2 }
+	signal_company = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "Grenadier Battalion" ###generalised version of Wehrmacht infantry batalion 1944, around 1000 men
+
+	division_names_group = GER_INFBAT_01
+template_counter = 72
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+       		 infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+       		 infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+	
+	support = {
+        recon = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Fallschirmjäger Battalion" ###generalised version of Fallschirmjager Regiment, 853 men.
+template_counter = 73
+	division_names_group = GER_PARA_01
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+       		 paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+       		 paratrooper = { x = 2 y = 0 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	}
+	
+	support = {
+        recon = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Security Regiment" ###Landeschutzen, formed a big part of security divisions. Effectively a garrsion unit, based on a rough estimate of a generic unit of this kind present in german security divisions.
+template_counter = 78
+	division_names_group = GER_SEC_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	
+	support = {
+       military_police = { x = 0 y = 0 }
+	  artillery = { x = 0 y = 1 }
+	 engineer = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Ost Battalion" ###
+
+	division_names_group = GER_SEC_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	
+	support = {
+       military_police = { x = 0 y = 0 }
+	}
+}
+
+
+division_template = {
+	name = "Panzergrenadier Battalion" 			# ~1500 men, HANOMAGS. A PANZERGREN REGIMENT HAD ONE WITH HANOMAGS AND ONE MOTORIZED WITH TRUCKS.
+	division_names_group = GER_MEC_01
+template_counter = 79
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+	  	mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		mechanized = { x = 0 y = 4 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+	  	mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		mechanized = { x = 1 y = 4 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 2 y = 3 }
+		mot_artillery_brigade = { x = 3 y = 0 }
+		mot_artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+        anti_air = { x = 0 y = 0 }
+	 anti_tank = { x = 0 y = 3 }
+	 engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Infantry Battalion (mot.)" 			# ~1500 men, OPELS. TWO BATS PER REGIMENT. TWO ARTY ADDED TO MAKE IT A 40w.
+	division_names_group = GER_MOT_02
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	  	motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	  	motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		motorized = { x = 1 y = 4 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
+		mot_artillery_brigade = { x = 3 y = 0 }
+		mot_artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+        anti_air = { x = 0 y = 0 }
+	 anti_tank = { x = 0 y = 3 }
+	 engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Panzer Battalion" # TWO BATTALIONS OF TANKS PER PANZER DIV, 75 (ROUGHLY) TANKS EACH. PLUS A MECHANIZED REGIMENT AND A MOTORIZED INF REGIMENT. 
+template_counter = 80
+	division_names_group = GER_PANBAN_01
+
+	regiments = {
+        	medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		medium_armor = { x = 0 y = 4 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }
+		medium_armor = { x = 1 y = 4 }
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+		medium_armor = { x = 2 y = 3 }
+		medium_armor = { x = 2 y = 4 }
+		motorized = { x = 3 y = 0 }
+		motorized  = { x = 3 y = 1}
+		motorized  = { x = 3 y = 2 }
+		motorized = { x = 3 y = 3 }
+		 mechanized = { x = 3 y = 4 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	light_tank_recon  = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	maintenance_company = { x = 0 y = 3 }
+	signal_company = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "SS Heavy Panzer Battalion" # 45 TANKS PLUS A FEW OTHER BITS, SIGNIFIED BY A SINGLE MECHANIZED UNIT.
+template_counter = 74
+	division_names_group = GER_SSPANBAN_01
+
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }
+        	heavy_armor = { x = 0 y = 1 }
+		heavy_armor = { x = 0 y = 2 }
+		heavy_armor = { x = 0 y = 3 }
+        	heavy_armor = { x = 0 y = 4 }
+		heavy_armor = { x = 1 y = 0 }
+		heavy_armor = { x = 1 y = 1 }
+        	heavy_armor = { x = 1 y = 2 }
+		heavy_armor = { x = 1 y = 3 }
+		heavy_armor = { x = 1 y = 4 }
+       		 mechanized = { x = 2 y = 0 }
+		 mechanized = { x = 2 y = 1 }
+		 mechanized = { x = 2 y = 2 }
+		 mechanized = { x = 2 y = 3 }
+	}
+	support = {
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	maintenance_company = { x = 0 y = 3 }
+	signal_company = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "SPG Battalion" # In a number of instances, the panzer divisions were split and given to motorised infantry divisions.
+template_counter = 80
+	division_names_group = GER_SPG_01
+
+	regiments = {
+		medium_tank_destroyer_brigade = { x = 0 y = 0 }
+		medium_tank_destroyer_brigade = { x = 0 y = 1 }
+		medium_tank_destroyer_brigade = { x = 0 y = 2 }
+		medium_tank_destroyer_brigade = { x = 0 y = 3 }
+		medium_tank_destroyer_brigade = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		mechanized = { x = 1 y = 4 }
+}
+	support = {
+	light_tank_recon = { x = 0 y = 4 }
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	maintenance_company = { x = 0 y = 3 }
+	signal_company = { x = 0 y = 0 }
+	}
+}
+
+
+units = {
+#GENERIC ORDER OF BATTLE FOR 1943, MOSTLY SECURITY AND OST BATTALIONS. BUT A SINGLE PANZER DIVISION AND A COUPLE OF PANZERGRENS TOO.
+division= {	
+		
+		location = 5051
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		
+
+	}
+division= {	
+		
+		location = 5051
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		
+
+	}
+division= {	
+		
+		location = 5051
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		
+
+	}
+
+division= {	
+		
+		location = 5051
+		division_template = "Panzer Battalion"
+		start_experience_factor = 0.4
+		
+
+	}
+division= {	
+		
+		location = 5051
+		division_template = "Panzer Battalion"
+		start_experience_factor = 0.4
+		
+
+	}
+division= {	
+		
+		location = 4350
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 4408
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 3825
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 5238
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 5309
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 5458
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 5458
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 8129
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 9576
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 5059
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 5104
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 5144
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 5166
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 1811
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 5051
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 5440
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 2852
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 5051
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 5419
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 3713
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 4867
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 5437
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 5408
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 5408
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 4931
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 4920
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 4894
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 4894
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 4820
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 4820
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 3942
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 4669
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 4664
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 4604
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 4604
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 4623
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 4600
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 208
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 1801
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 4519
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 2437
+		division_template = "Security Regiment"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 2607
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 2607
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 2607
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0
+		
+
+	}
+division= {	
+		
+		location = 2607
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0
+		
+
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	
+
+}
+
+#####################

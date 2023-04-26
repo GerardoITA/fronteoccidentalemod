@@ -1,0 +1,44 @@
+
+state={
+	id=79
+	name="STATE_79"
+
+	history={
+buildings = { infrastructure = 3 } 
+	victory_points = {
+			884 5 #Forbach
+		}
+victory_points = {
+			4919 2 #Thionville
+		}
+	victory_points = {
+			3739 4 #North Metz 
+		}
+	victory_points = {
+			416 4 #South Metz 
+		}
+		1918.3.20.12 = {
+		owner = DKR
+		add_core_of = DKR
+		}
+ 		1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		add_core_of = OKW
+		remove_core_of = DKR
+	}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+	}
+
+	provinces={
+		202 253 320 326 342 416 458 525 601 633 706 722 735 774 777 814 858 884 916 1061 1105 1118 1121 1145 1356 1439 1490 1539 1574 1585 1738 1808 1862 1870 1922 1997 2016 2031 2073 2141 2301 2325 2448 2565 2767 2771 2777 2871 2939 2955 3060 3090 3113 3298 3387 3440 3660 3739 3776 3788 3826 3835 3880 3963 3977 4000 4012 4021 4228 4249 4270 4281 4285 4313 4407 4909 4919 4929 4934 4967 4972 4977 4978 4983 4994 5005 5011 5015 5039 5081 9569 9757 9758 
+	}
+	manpower=622145
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

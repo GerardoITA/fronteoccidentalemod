@@ -1,0 +1,188 @@
+﻿
+add_namespace = end
+news_event = {###HISTORICAL END, ALLIED VICTORY. IN
+	id = end.1
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = { play_song = alliedvictory }
+		 set_country_flag = ending1_event_flag 
+	}
+	
+	option = {
+		name = end.1.a
+	}
+		
+	option = {
+		name = end.1.b
+	}
+}
+news_event = {###AHISTORICAL END, GERMAN VICTORY. 
+	id = end.2
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = { play_song = allieddefeat }
+		 set_country_flag = ending2_event_flag 
+	}
+	
+	option = {
+		name = end.2.a
+	}
+		
+}
+news_event = {######AEF COLLAPSES.IN
+	id = end.3
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = { play_song = leavenomanbehind }
+		 set_country_flag = ending7_event_flag 
+	}
+	
+	option = {
+		name = end.3.a
+	}
+		option = {
+		name = end.3.b
+	}
+}
+news_event = {######JULY PLOT, GERMANY SURRENDERS. IN
+	id = end.4
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = { play_song = trizonesian }
+		 set_country_flag = ending3_event_flag 
+	}
+	
+	option = {
+		name = end.4.a
+	}
+		
+	option = {
+		name = end.4.b
+	}
+}
+news_event = {######SEALION IN
+	id = end.5
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = { play_song = zerstorer }
+		 set_country_flag = ending10_event_flag 
+	}
+	
+	option = {
+		name = end.4.a
+	}
+		
+	option = {
+		name = end.4.b
+	}
+}
+news_event = {######SOVIET VICTORY, ALLIES NOR SOV ATTACKS. IN
+	id = end.6
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = { play_song = sovietmarch }
+		 set_country_flag = ending4_event_flag
+	}
+	
+	option = {
+		name = end.4.a
+	}
+		
+	option = {
+		name = end.4.b
+	}
+}
+news_event = {######ADRIEN HILTON (WIP)
+	id = end.8
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = { play_song = zitadelle }
+		 set_country_flag = ending9_event_flag
+	}
+	
+	option = {
+		name = end.4.a
+	}
+		
+	option = {
+		name = end.4.b
+	}
+}
+news_event = {######GERMANY BEATS EVERYONE!
+	id = end.7
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = { play_song = zitadelle }
+		 set_country_flag = ending8_event_flag
+	}
+	
+	option = {
+		name = end.4.a
+	}
+		
+	option = {
+		name = end.4.b
+	}
+}
+
+news_event = {######TRUE ENDING
+	id = end.11
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = { play_song = trueendmusic}
+		set_country_flag = ending11_event_flag
+	}
+	
+	option = {
+		name = end.4.a
+	}
+		
+	option = {
+		name = end.4.b
+	}
+}

@@ -1,0 +1,63 @@
+air_wings = {
+###OOB FOR COMBINED ALLIED AIR FORCES AS OF 1943-1944. AVERAGE 12 PER SQUADRON.
+
+
+26 = { 
+##USAF
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-17E 'Flying Fortress'" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-17E 'Flying Fortress'" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-17E 'Flying Fortress'" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-17E 'Flying Fortress'" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-17E 'Flying Fortress'" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-17E 'Flying Fortress'" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-17E 'Flying Fortress'" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-17E 'Flying Fortress'" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-17E 'Flying Fortress'" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-17E 'Flying Fortress'" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-17E 'Flying Fortress'" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-17E 'Flying Fortress'" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-17E 'Flying Fortress'" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-17E 'Flying Fortress'" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-17E 'Flying Fortress'" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-24 Liberator" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-24 Liberator" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-24 Liberator" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-24 Liberator" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-24 Liberator" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-24 Liberator" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-24 Liberator" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-24 Liberator" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-24 Liberator" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-24 Liberator" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-24 Liberator" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-24 Liberator" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-24 Liberator" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-17E 'Flying Fortress'" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-17E 'Flying Fortress'" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-17E 'Flying Fortress'" }	
+large_plane_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "B-17E 'Flying Fortress'" }	
+}
+123 = { 
+small_plane_airframe_2 =  { owner = "AEF" 	amount = 100 creator = "AEF" version_name = "P-47D Thunderbolt" }
+small_plane_airframe_2 =  { owner = "AEF" 	amount = 100 creator = "AEF" version_name = "P-51D Mustang" }
+small_plane_airframe_2 =  { owner = "AEF" 	amount = 180 creator = "AEF" version_name = "P-47D Thunderbolt" }
+small_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "P-47D Thunderbolt" }
+small_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "P-47D Thunderbolt" }
+small_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "P-47D Thunderbolt" }
+small_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "P-47D Thunderbolt" }
+small_plane_airframe_2 =  { owner = "AEF" 	amount = 180 creator = "AEF" version_name = "P-47D Thunderbolt" }
+small_plane_airframe_2 =  { owner = "AEF" 	amount = 48 creator = "AEF" version_name = "P-51D Mustang" }
+small_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "P-51D Mustang" }
+medium_plane_fighter_airframe_1 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "P-38 Lightning" }
+medium_plane_fighter_airframe_1 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "P-38 Lightning" }
+medium_plane_fighter_airframe_1 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "P-38 Lightning" }
+medium_plane_airframe_1 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "A-20G 'Havoc'" }
+medium_plane_airframe_1 =  { owner = "AEF" 	amount = 46 creator = "AEF" version_name = "A-20G 'Havoc'" }
+medium_plane_airframe_1 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "A-20G 'Havoc'" }
+medium_plane_airframe_1 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "A-20G 'Havoc'" }
+medium_plane_airframe_1 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "A-20G 'Havoc'" }
+}
+
+
+
+}

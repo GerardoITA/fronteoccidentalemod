@@ -1,0 +1,16 @@
+load_1 = Hell let loose concept art
+load_2 = Graham Turner - british troops on D-Day
+load_3 = unknown - C47s over Normandy 
+load_4 = Southwick house, D-Day map
+load_5 = Bridge at Remagen, Robert Tayloer
+load_6 = Steve Noon, Ambush
+load_7 = COD WWII concept art
+load_8 = Medal of Honor: European ASsault concept art
+load_9 = Juno Beach, artist unknown 
+load_mtg = Company of Heroes 2 promo art
+load_mtg_2 = protivotankovaia-pushka-artilleriia-pak-40-wehrmacht-soldaty
+load_nsb = 
+load_nsb_2 = Medal of Honor: above and beyond concept art
+load_tiger = https://www.google.com/search?hl=en-GB&tbs=simg:CAQSrAIJo_1PAMwvdoG8aoAILEKjU2AQaAghCDAsQsIynCBo6CjgIBBIUvze9LtoF9Tu7E-4f6Q71GYgihDYaGuIToMFuF4bKoklb-LCjzIJn7AgXeYqLxoLNIAUwBAwLEI6u_1ggaCgoICAESBHTzIp4MCxCd7cEJGrUBChgKBmJhdHRsZdqliPYDCgoIL20vMDFidngKOwoobW9kdWxhciBpbnRlZ3JhdGVkIGNvbW11bmljYXRpb25zIGhlbG1ldNqliPYDCwoJL20vMDh0djNxCiMKEGJ1bGxldHByb29mIHZlc3TapYj2AwsKCS9tLzAxMzN0awoaCgZhY3Rpb27apYj2AwwKCi9tLzAya2R2NWwKGwoIZmlyZWFybXPapYj2AwsKCS9qLzExbmhuNww,isz:l&q=ww2+wallpaper+german&tbm=isch&sa=X&ved=2ahUKEwjKjqCCt5_0AhXjQkEAHYJrD-wQ2A4oBHoECAEQNg&biw=1280&bih=539&dpr=1.5
+load_bftb = Sherman Firefly "Zemsta", Unkwnon https://www.goodfon.com/wallpaper/sherman-firefly-ww2-war-tank.html
+load_dod = Ambush, Romain Leblouleux https://www.artstation.com/artwork/1n3vQK

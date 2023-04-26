@@ -1,0 +1,19 @@
+defined_text = { # Country
+	name = GetEconomyName
+	text = {
+		trigger = {
+			original_tag = AEF
+		}
+		localization_key = GER_economy_law
+	}
+	text = {
+		trigger = {
+			original_tag = AEF
+			
+		}
+		localization_key = AEF_economy_law
+	}
+	text = {
+		localization_key = economy
+	}
+}

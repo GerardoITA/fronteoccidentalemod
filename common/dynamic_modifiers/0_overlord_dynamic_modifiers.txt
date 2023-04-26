@@ -1,0 +1,37 @@
+fortification_focus = {
+icon = GFX_modifiers_division_attrition
+	enable = { always = yes }
+	production_speed_coastal_bunker_factor = 0.15
+}
+hedgerows = {
+	enable = { always = yes }
+
+	offence = -0.05
+}
+overlord_state_bonus = {
+icon = GFX_modifiers_division_attrition
+	enable = { always = yes }
+	offence = 0.05
+	supply_consumption_factor = -0.2
+}
+allied_nation_state_bonus = {
+icon = GFX_modifiers_division_attrition
+	enable = { always = yes }
+	army_defence_factor = 0.075
+	army_speed_factor = 0.05
+	supply_consumption_factor = -0.05
+}
+
+GER_hedgerows = {
+	enable = { always = yes }
+
+	offence = +0.05
+}
+
+AEF_dragoon_supply = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_invaders_must_die
+	supply_consumption_factor = -0.90
+	
+}

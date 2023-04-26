@@ -1,0 +1,41 @@
+state={
+	id=74
+	name="STATE_74"
+	history = { 
+buildings = { infrastructure = 2 } 
+victory_points = { 9792 5 }
+victory_points = { 4826 3 }
+victory_points = { 9793 5 }
+victory_points = { 995 3 }
+victory_points = { 4858 3 }
+victory_points = { 3374 3 }
+victory_points = { 131 5 }
+victory_points = { 4746 3 }
+victory_points = { 3259 3 }
+victory_points = { 3335 3 }
+victory_points = { 4791 5 }
+victory_points = { 935 3 }
+victory_points = { 396 3 }
+		1918.3.20.12 = {
+		owner = DKR
+		add_core_of = ENT
+		}
+ 		1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+}
+	provinces={
+		 9794 9793 9792 19 131 171 357 396 425 576 622 694 726 742 871 935 995 999 1137 1191 1656 1680 1712 1720 1722 1794 1802 1944 1966 2435 2489 2651 2719 2989 3127 3259 3262 3282 3335 3374 3510 3563 3661 3719 3857 3959 4108 4155 4188 4190 4256 4377 4746 4751 4761 4767 4771 4791 4797 4826 4832 4851 4858 
+	}
+	manpower=219638
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

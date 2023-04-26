@@ -1,0 +1,585 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+
+AEF_INF_01 = 
+{
+	name = "Home Guard Units"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d Home Guard"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		
+		# This list covers both the Citizens Military Force (CMF) and Australian Imperial Force (AIF) infantry divisions either extant during the interwar years or raised during the war.  It'd be possible to split the lists in two (CMF and AIF divisions having their own list, as CMF divisions only served in Australia and Australian territories (or thereabouts) but that's probably overkill, given they all had the same naming convention - probably makes more sense for the player in-game to have their militia and infantry divisions use the same name list, as far as I understand the system).
+		# Australia only raised 12 infantry divisions historically.  This list is longer to avoid things like the 22th Infantry Division for Australias that build lots of divisions.
+	}
+}
+AEF_DUMMY = 
+{
+	name = "Dummy Units"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d Battalion"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		
+	}
+}
+AEF_INF_02 = 
+{
+	name = "British Infantry Battalions"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%. Battalion"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+###3RD INFANTRY DIV
+#8th infantry brig
+		1 = { "1 Bn. The Suffolk Regiment" }
+		2 = { "2 Bn. The East Yorkshire Reg." }
+		3 = { "1 Bn. The South Lancashire Reg." }
+##9th infantry brig
+		4 = { "2 Bn. The Lincolnshire Reg." }
+		5 = { "1 Bn. The King's Own Scottish Borderers" }
+		6 = { "2 Bn.The Royal Ulster Rifles" }
+##185th Infantry Brig
+		7 = { "2 Bn. The Royal Warwickshire Regiment" }
+		8 = { "1 Bn. The Royal Norfolk Regiment" }
+		9 = { "2 Bn. The King’s Shropshire Light Infantry" }
+#####15th INF DIV
+#####44th inf brig
+		10 = { "8 Bn. The Royal Scots" }
+		11 = { "6 Bn. The Royal Scots Fusiliers" }
+		12 = { "6 Bn. The King’s Own Scottish Borderers" }
+######46th INF BRIG
+		13 = { "9 Bn. The Cameronians" }
+		14 = { "2 Bn. The Glasgow Highlanders" }
+		15 = { "7 Bn. The Seaforth Highlanders " }
+#####227 INF BRIG ##14 june
+		16 = { "10 Bn. The Highland Light Infantry" }
+		17 = { "2 Bn. Argyll and Sutherland Highlanders" }
+		18 = { "2 Bn. Gordon Highlanders" }
+####159th BRIG
+		19 = { "%dth Cavalry Division" }
+		20 = { "%dth Cavalry Division" }
+		21 = { "%dst Cavalry Division" }
+
+		
+	}
+}
+AEF_CAN_01 = 
+{
+	name = "Canadian Infantry Battalions"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d. Bn of Canada"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+
+
+		
+	}
+}
+AEF_TANK_01 = 
+{
+	name = "British Armoured Units"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d Royal Tank Regiment"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		
+		# This list covers both the Citizens Military Force (CMF) and Australian Imperial Force (AIF) infantry divisions either extant during the interwar years or raised during the war.  It'd be possible to split the lists in two (CMF and AIF divisions having their own list, as CMF divisions only served in Australia and Australian territories (or thereabouts) but that's probably overkill, given they all had the same naming convention - probably makes more sense for the player in-game to have their militia and infantry divisions use the same name list, as far as I understand the system).
+		# Australia only raised 12 infantry divisions historically.  This list is longer to avoid things like the 22th Infantry Division for Australias that build lots of divisions.
+	}
+}
+AEF_TANK_02 = 
+{
+	name = "US Armor Battalions"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d Tank Battalion"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		
+		# This list covers both the Citizens Military Force (CMF) and Australian Imperial Force (AIF) infantry divisions either extant during the interwar years or raised during the war.  It'd be possible to split the lists in two (CMF and AIF divisions having their own list, as CMF divisions only served in Australia and Australian territories (or thereabouts) but that's probably overkill, given they all had the same naming convention - probably makes more sense for the player in-game to have their militia and infantry divisions use the same name list, as far as I understand the system).
+		# Australia only raised 12 infantry divisions historically.  This list is longer to avoid things like the 22th Infantry Division for Australias that build lots of divisions.
+	}
+}
+AEF_TANK_03 = 
+{
+	name = "US Tank Destroyer Battalions"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d Tank Destroyer Battalion"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		
+		# This list covers both the Citizens Military Force (CMF) and Australian Imperial Force (AIF) infantry divisions either extant during the interwar years or raised during the war.  It'd be possible to split the lists in two (CMF and AIF divisions having their own list, as CMF divisions only served in Australia and Australian territories (or thereabouts) but that's probably overkill, given they all had the same naming convention - probably makes more sense for the player in-game to have their militia and infantry divisions use the same name list, as far as I understand the system).
+		# Australia only raised 12 infantry divisions historically.  This list is longer to avoid things like the 22th Infantry Division for Australias that build lots of divisions.
+	}
+}
+AEF_USA_MECH = 
+{
+	name = "US Armored Infantry Battalions"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d Armored Infantry Battalion"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		
+		# This list covers both the Citizens Military Force (CMF) and Australian Imperial Force (AIF) infantry divisions either extant during the interwar years or raised during the war.  It'd be possible to split the lists in two (CMF and AIF divisions having their own list, as CMF divisions only served in Australia and Australian territories (or thereabouts) but that's probably overkill, given they all had the same naming convention - probably makes more sense for the player in-game to have their militia and infantry divisions use the same name list, as far as I understand the system).
+		# Australia only raised 12 infantry divisions historically.  This list is longer to avoid things like the 22th Infantry Division for Australias that build lots of divisions.
+	}
+}
+AEF_RAN_01 = 
+{
+	name = "US Army Ranger Units"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d Ranger Battalion"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		
+		# This list covers both the Citizens Military Force (CMF) and Australian Imperial Force (AIF) infantry divisions either extant during the interwar years or raised during the war.  It'd be possible to split the lists in two (CMF and AIF divisions having their own list, as CMF divisions only served in Australia and Australian territories (or thereabouts) but that's probably overkill, given they all had the same naming convention - probably makes more sense for the player in-game to have their militia and infantry divisions use the same name list, as far as I understand the system).
+		# Australia only raised 12 infantry divisions historically.  This list is longer to avoid things like the 22th Infantry Division for Australias that build lots of divisions.
+	}
+}
+AEF_PARA_01 = 
+{
+	name = "US Parachute Rifle Companies"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "US Parachute Rifle Company"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		
+		# This list covers both the Citizens Military Force (CMF) and Australian Imperial Force (AIF) infantry divisions either extant during the interwar years or raised during the war.  It'd be possible to split the lists in two (CMF and AIF divisions having their own list, as CMF divisions only served in Australia and Australian territories (or thereabouts) but that's probably overkill, given they all had the same naming convention - probably makes more sense for the player in-game to have their militia and infantry divisions use the same name list, as far as I understand the system).
+		# Australia only raised 12 infantry divisions historically.  This list is longer to avoid things like the 22th Infantry Division for Australias that build lots of divisions.
+	}
+}
+AEF_USA_1 = 
+{
+	name = "US Infantry Regiments"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d Infantry Regiment"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+##1st INF DIV
+		16 = { "%dth Infantry Regiment" }
+		18 = { "%dth Infantry Regiment" }
+		26 = { "%dth Infantry Regiment" }
+##2nd INF DIV
+		9 = { "%dth Infantry Regiment" }
+		23 = { "%dth Infantry Regiment" }
+		38 = { "%dth Infantry Regiment" }
+##4th INF DIV
+		8 = { "%dth Infantry Regiment" }
+		12 = { "%dnd Infantry Regiment" }
+		22 = { "%dnd Infantry Regiment" }
+##5th INF DIV
+		2 = { "%dnd Infantry Regiment" }
+		10 = { "%dth Infantry Regiment" }
+		11 = { "%dth Infantry Regiment" }
+##8th INF DIV
+		13 = { "%dth Infantry Regiment" }
+		28 = { "%dth Infantry Regiment" }
+		121 = { "%dst Infantry Regiment" }
+##9th INF DIV
+		39 = { "%dth Infantry Regiment" }
+		47 = { "%dth Infantry Regiment" }
+		60 = { "%dth Infantry Regiment" }
+
+##28th INF DIV
+		109 = { "%dth Infantry Regiment" }
+		112 = { "%dth Infantry Regiment" }
+		110 = { "%dth Infantry Regiment" }	
+##29th INF DIV
+		115 = { "%dth Infantry Regiment" }
+		116 = { "%dth Infantry Regiment" }
+		175 = { "%dth Infantry Regiment" }
+##30th INF DIV
+	##UNKNOWN REGIMENTS AS OF 1944
+	##35th INF DIV
+		134 = { "%dth Infantry Regiment" }
+		137 = { "%dth Infantry Regiment" }
+		320 = { "%dth Infantry Regiment" }
+##79th INF DIV
+		313 = { "%dth Infantry Regiment" }
+		314 = { "%dth Infantry Regiment" }
+		315 = { "%dth Infantry Regiment" }
+##83th INF DIV
+		329 = { "%dth Infantry Regiment" }
+		330 = { "%dth Infantry Regiment" }
+		331 = { "%dth Infantry Regiment" }
+##90 INF DIV
+		357 = { "%dth Infantry Regiment" }
+		358 = { "%dth Infantry Regiment" }
+		359 = { "%dth Infantry Regiment" }
+	}
+}
+
+AEF_FRA_01 = 
+{
+	name = "French Infantry Regiments"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%de Régiment d'Infanterie"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		
+		# This list covers both the Citizens Military Force (CMF) and Australian Imperial Force (AIF) infantry divisions either extant during the interwar years or raised during the war.  It'd be possible to split the lists in two (CMF and AIF divisions having their own list, as CMF divisions only served in Australia and Australian territories (or thereabouts) but that's probably overkill, given they all had the same naming convention - probably makes more sense for the player in-game to have their militia and infantry divisions use the same name list, as far as I understand the system).
+		# Australia only raised 12 infantry divisions historically.  This list is longer to avoid things like the 22th Infantry Division for Australias that build lots of divisions.
+	}
+}
+AEF_TANK_04 = 
+{
+	name = "French Tank Battalions"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { AST_CAV_01 }
+
+	fallback_name = "%de Bataillon de Cuirassiers"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+	
+		
+
+		
+	}
+}
+AEF_FRA_PARA_01 = 
+{
+	name = "French Airborne Units"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { AST_CAV_01 }
+
+	fallback_name = "%de Bataillon de Chasseurs Parachutistes"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+	
+		
+
+		
+	}
+}
+AEF_FRA_INF_01 = 
+{
+	name = "French Airborne Units"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry"  }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { AST_CAV_01 }
+
+	fallback_name = "%de Bataillon d'Infanterie"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+	
+		
+
+		
+	}
+}
+
+FRA_SPA_01 = 
+{
+	name = "French SPA Regiments"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { AST_CAV_01 }
+
+	fallback_name = "%de Bataillon d'Artillerie"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+	
+		
+
+		
+	}
+}
+FRA_TDB_01 = 
+{
+	name = "French Tank Destroyer Regiments"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { AST_CAV_01 }
+
+	fallback_name = "%de Bataillon de Chasseurs de Chars"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+	
+
+		
+	}
+}
+AEF_FRA_CAV_01 = 
+{
+	name = "French Cavalry Units"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { AST_CAV_01 }
+
+	fallback_name = "%de Régiment de Spahis"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+	
+
+		
+	}
+}
+
+AEF_COM_01 = 
+{
+	name = "Commandos"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { AST_GAR_01 }
+
+	fallback_name = "No. %d Commando"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		3 = { "No. 3 Commando" }
+		4 = { "No. 4 Commando" }
+		6 = { "No. 6 Commando" }
+		10 = { "No. 10 (Inter-Allied) Commando" }
+		41 = { "No.41 (RM) Commando" }
+		45 = { "No.45 (RM) Commando" }
+		46 = { "No.46 (RM) Commando" }
+		47 = { "No.47 (RM) Commando" }
+		48 = { "No.48 (RM) Commando" }
+		
+
+		# AST didn't have any Marine divisions, these are all fictional.
+	}
+}
+
+
+
+
+

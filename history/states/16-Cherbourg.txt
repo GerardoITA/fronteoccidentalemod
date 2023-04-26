@@ -1,0 +1,27 @@
+state={
+	id=16
+	name="STATE_16"
+	history = { 
+1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+victory_points = { 3713 8 }victory_points = { 4867 8 } buildings = { anti_air_building = 2 infrastructure = 5 3713 = { naval_base = 5 coastal_bunker = 4 bunker = 3} 4867 = {  coastal_bunker = 2 bunker = 1} } }
+	provinces={
+		3713 4867 
+	}
+	manpower=40042
+	state_category = large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

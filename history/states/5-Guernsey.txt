@@ -1,0 +1,30 @@
+state={
+	id=5
+	name="STATE_5"
+	history = {
+1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+victory_points = { 4898 4 } #L'islet
+victory_points = { 2426 3 } #St Peter Port
+victory_points = { 3785 3 } #St. Sampson
+	buildings = { 3785 = { coastal_bunker = 8 } 
+2426 = { coastal_bunker = 7 naval_base = 4 } 
+	2869 = { coastal_bunker = 7  } 
+	4898 = { coastal_bunker = 8  naval_base = 3 } 
+}}
+	provinces={
+		2426 2869 3785 4898 
+	}
+	manpower=37854
+	impassable = yes
+	state_category = tiny_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

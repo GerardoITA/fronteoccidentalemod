@@ -1,0 +1,41 @@
+state={
+	id=7
+	name="STATE_7"
+	history = { 
+buildings = { infrastructure = 2  rocket_site = 2 
+	208 = { naval_base = 2 
+		coastal_bunker = 3 bunker = 2}
+3745 = {
+		coastal_bunker = 2 bunker = 1} 
+2037 = { naval_base = 2 
+		coastal_bunker = 2 bunker = 1}}
+
+
+1918.3.20.12 = {
+		owner = HOL
+		add_core_of = HOL
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = HOL
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+victory_points = { 2037 4 } #Missingen
+victory_points = { 3745 4 } #Westkapelle
+victory_points = { 4499 4 } #middleburg
+victory_points = { 7934 4 } #Goes
+victory_points = { 208 4 } # Domburg
+}
+	provinces={
+		7934 208 1003 1740 2037 2070 2257 2341 2375 3625 3745 3900 4191 4227 4487 4499 5414 
+	}
+	manpower=60784
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

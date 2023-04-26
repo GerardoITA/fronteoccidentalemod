@@ -1,0 +1,31 @@
+on_actions = {
+on_capitluation = { 
+effect = { 
+
+if = {
+				limit = {
+					ROOT = { tag = OKW } ####GER CARRIES OUT SEALION!
+					FROM = { 
+						tag = AEF
+					}
+				
+				}
+				news_event = end.5
+			}
+if = {
+				limit = {
+					ROOT = { tag = OKW } #####SOV BEATS GERMANY WITHOUT ALLIES INTERVENING.
+					FROM = { 
+						tag = SOV
+					}
+				NOT = { SOV = { has_war_with = AEF } } 
+				}
+				news_event = end.6
+			}
+
+}
+
+ }
+
+
+

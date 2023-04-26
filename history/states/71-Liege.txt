@@ -1,0 +1,31 @@
+
+state={
+	id=71
+	name="STATE_71"
+	history = { 
+
+1918.3.20.12 = {
+		owner = DKR
+		add_core_of = ENT
+		}
+ 		1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+			victory_points = { 9693 5 } #liege
+			buildings = { infrastructure = 2}
+}
+	provinces={
+		9692 9693 9691 9694 8306 4 169 238 394 569 682 741 775 790 796 985 1089 1114 1196 1211 1359 1399 1413 1458 1525 1569 1666 1697 1867 1908 1955 1972 2282 2539 2666 2782 3061 3092 3269 3441 3492 3532 3629 3715 3728 3818 3996 4119 4128 4136 4137 4238 4673 4675 4678 4698 4701 4708 4714 4718 4729 4734 4736 4740 
+	}
+	manpower=778430
+	state_category = large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

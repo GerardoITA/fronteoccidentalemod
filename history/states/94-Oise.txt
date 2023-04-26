@@ -1,0 +1,35 @@
+
+state={
+	id=94
+	name="STATE_94"
+
+	history={
+		1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+buildings = { infrastructure = 4 }
+victory_points = { 9761 4 }
+victory_points = { 9762 4 }
+victory_points = { 9763 4 }
+victory_points = { 9760 4 }
+	}
+
+	provinces={
+		9760 9761 9762 9763 56 59 242 268 364 379 408 420 486 538 605 610 666 750 825 854 861 934 970 1161 1223 1246 1354 1406 1473 1548 1653 1721 1754 1816 1898 1932 2009 2098 2145 2196 2243 2291 2416 2534 2544 2597 2736 2833 2853 2933 2945 2951 3050 3201 3244 3249 3364 3452 3502 3505 3594 3650 3705 3751 3755 3770 3870 3878 4093 4385 4398 4866 4873 4875 4899 4910 4933 4935 4936 4947 4959 9611 9612 
+	}
+	manpower=396724
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

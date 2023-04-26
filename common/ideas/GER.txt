@@ -1,0 +1,853 @@
+ideas = {
+
+	country = {
+berlin_support = {
+			
+			allowed = {
+				original_tag = OKW
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			#industrial_factory_donations = 40
+			#military_factory_donations = 40
+				
+				
+			}
+		}
+		prussian_military_spirit = {
+			
+			allowed = {
+				original_tag = OKW
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.1
+				conscription = 0.05
+				consumer_goods_factor = -0.08
+				war_support_factor = 0.15
+				war_support_weekly = 0.001
+			
+				
+			}
+		}
+eastern_front_prioritised = {
+			
+			allowed = {
+				original_tag = OKW
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = -0.08
+				consumer_goods_factor = 0.2
+				
+			
+				
+			}
+		}
+hitler_challenged = {
+			
+			allowed = {
+				original_tag = OKW
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.05
+				stability_weekly_factor = 0.005
+				consumer_goods_factor = -0.01
+				
+			}
+		}
+dday_launched_ger = { #P AEF intelligence and spy are VERY GOOD. IMPROVE NETWORK CONSTRUCTION AND MISSIONS. AS WELL AS RESISTANCE IN GERMAN TERRITORY.
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_intel
+			
+			modifier = {
+				army_speed_factor = -0.2
+				army_org_factor = -0.1
+			}
+		}
+zg1229_idea = { #BOOM. 
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_intel
+			
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				land_night_attack = 0.05
+			}
+		}
+		german_liberal_buff = {
+			
+			allowed = {
+				original_tag = OKW
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				defence = 0.1
+				stability_factor = 0.15
+				stability_weekly = 0.001
+				#army_speed_factor = -0.1
+				#planning_speed = -0.15
+				consumer_goods_factor = -0.08
+				#dig_in_speed_factor = -0.1
+				
+			}
+		}
+		confused_chain_of_command = {
+			
+			allowed = {
+				original_tag = OKW
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			research_speed_factor = -0.05
+				army_speed_factor = -0.1
+				planning_speed = -0.15
+				dig_in_speed_factor = -0.1
+				
+			}
+		}
+efficient_anti_air = {
+			
+			allowed = {
+				original_tag = OKW
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			static_anti_air_damage_factor = 0.1
+				static_anti_air_hit_chance_factor = 0.1
+				industry_air_damage_factor = -0.05
+				
+				
+			}
+		}
+field_marshal_called_away = {
+			
+			allowed = {
+				original_tag = OKW
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = chi_incompetent_officers
+			removal_cost = -1
+			
+			modifier = {
+
+				army_speed_factor = -0.05
+				army_org_factor = -0.03
+				
+			}
+		}
+auftragstaktik = {
+			
+			allowed = {
+				original_tag = OKW
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			army_org_factor = 0.05
+			army_org_regain = 0.01
+				
+			}
+		}
+auftragstaktik2 = {
+			picture = GFX_idea_auftragstaktik
+			allowed = {
+				original_tag = OKW
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			army_org_factor = 0.08
+			army_org_regain = 0.025
+				
+			}
+		}
+idea_asparagus = { 
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+				paratrooper_aa_defense = 0.15
+			}
+			
+		}
+idea_concrete_steel = { 
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			picture = FRA_fortification_focus
+			modifier = {
+				production_speed_bunker_factor = 0.1
+			}
+			
+		}
+mandate_unit_drills = { 
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			picture = generic_manpower_bonus
+			modifier = {
+				experience_gain_infantry_training_factor = 0.15
+				experience_gain_infantry_combat_factor = 0.2
+			}
+			
+		}
+reclaim_our_skies = { 
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			picture = generic_fighter_production_diverted
+			modifier = {
+				air_superiority_efficiency = 0.1	
+				air_intercept_efficiency = 0.1
+			}
+			
+		}
+v2_focus = { 
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+				production_speed_rocket_site_factor = 0.2
+			}
+			
+		}
+conceited_intelligence = { #GERMANS THINK THEIR INNTELIGENCE IS BEST. BECAUSE OF XX SYSTEM.
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+				local_intel_to_enemies = 0.25
+				#also cripples German counter-intelligence.A WAY TO GET RID OF THIS?
+			}
+			
+		}
+vanilla_conceited_intelligence = { #GERMANS THINK THEIR INNTELIGENCE IS BEST. BECAUSE OF XX SYSTEM. VERSION FOR NON LAR.
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+				encryption = -0.15
+				#also cripples German counter-intelligence.A WAY TO GET RID OF THIS?
+			}
+			
+		}
+salvage_local_equipment_idea = { 
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+				equipment_capture_factor = 0.1
+			}
+			
+		}
+
+		ost_truppen = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			picture = chi_army_corruption
+			modifier = {
+				non_core_manpower = 0.015
+				resistance_target = 0.15
+				army_morale_factor = -0.05
+			}
+			
+		}
+local_labourers = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+				resistance_activity = 0.1
+				local_intel_to_enemies = 0.1
+				production_speed_buildings_factor = 0.15
+				industry_repair_factor = 0.25
+				max_dig_in = -10
+			}
+			
+		}
+		atlantikwall_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+
+				production_speed_coastal_bunker_factor = 0.2
+			}
+			
+		}
+		atlantikwall_idea2 = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			picture = atlantikwall_idea
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.25
+			}
+			
+		}
+		GER_air_innovations_2_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_air_bonus
+			
+			modifier = {
+				cat_battlefield_support_cost_factor = -0.075
+			}
+			
+			research_bonus = {
+				jet_technology = 0.10
+			}
+
+		}	
+
+		GER_rocketry_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			research_bonus = {
+				rocketry = 0.15
+			}
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				production_speed_rocket_site_factor = 0.15
+			}
+	
+		}
+
+		GER_atlantikwall_idea = {
+		
+			allowed = {
+				original_tag = OKW
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fortify_the_borders
+
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.2
+			}
+		}
+
+		
+	}
+
+	# TECHNOLOGY
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+		porsche = {
+
+			
+			allowed = {
+				original_tag = OKW
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 10
+			}
+
+		}
+		
+		henschel = {
+
+			
+			allowed = {
+				original_tag = OKW
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		GER_MAN = {
+
+			picture = GER_MAN
+			
+			allowed = {
+				original_tag = OKW
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		germaniawerft = {
+
+			
+			allowed = {
+				original_tag = OKW
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+		}
+		
+		blohm_und_voss = {
+
+			
+			allowed = {
+				original_tag = OKW
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+		}	
+	}
+	
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		messerschmitt = {
+			
+			allowed = {
+				original_tag = OKW
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		junkers = { 
+			allowed = {
+				original_tag = OKW
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { CAS_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+
+		focke_wulf = { 
+
+			
+			allowed = {
+				original_tag = OKW
+			}
+			
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		heinkel = {
+
+			
+			allowed = {
+				original_tag = OKW
+			}
+			
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		dornier = {
+
+			allowed = {
+				original_tag = OKW
+			}
+			
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+
+
+	}
+	
+	industrial_concern = {
+		
+		ig_faben = {
+			
+			allowed = {
+				original_tag = OKW
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		krupp = {
+			
+			allowed = {
+				original_tag = OKW
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		siemens = {
+			
+			allowed = {
+				original_tag = OKW
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}		
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		rheinmetall = {
+			
+			allowed = {
+				original_tag = OKW
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+				# +10% arty/at/aa research speed
+			}
+		}
+		
+		mauser = {
+
+			
+			allowed = {
+				original_tag = OKW
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		
+
+		
+		opel = {
+			
+			allowed = {
+				original_tag = OKW
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+	}
+	
+	hidden_ideas = {
+
+		fascism_drift_ARG = {
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.2
+			}
+
+		}
+
+	}
+
+
+
+
+}

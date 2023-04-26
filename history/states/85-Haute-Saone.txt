@@ -1,0 +1,29 @@
+
+state={
+	id=85
+	name="STATE_85"
+	provinces={
+		34 134 261 361 481 579 736 744 859 890 901 966 1053 1243 1322 1492 1625 2110 2190 2210 2308 2312 2371 2377 2387 2481 2550 2561 2692 2749 2773 3028 3152 3293 3507 3623 3624 3814 3894 3956 3970 4005 4215 4312 5293 5297 5312 5325 5327 5334 5354 5355 5357 5364 5378 5391 5396 
+	}
+	manpower=78956
+	state_category = pastoral
+	history = { 
+buildings = { infrastructure = 2 } 
+1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+ }
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

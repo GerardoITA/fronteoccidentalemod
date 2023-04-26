@@ -1,0 +1,25 @@
+state={
+	id=15
+	name="STATE_15"
+	provinces={
+		8786 506 4423 4430 
+	}
+	manpower=143753
+	state_category = town
+	impassable=yes
+	history = { 
+buildings = { infrastructure = 4 } 
+1918.3.20.12 = {
+		owner = HOL
+		add_core_of = HOL
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = HOL
+		}
+}
+
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

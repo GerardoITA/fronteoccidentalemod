@@ -1,0 +1,76 @@
+on_actions = {
+on_monthly_AEF = { effect = { if = { limit = { has_idea = fractious_alliance } 
+		random_list = {
+			100 = { country_event = aef.6 }
+			100 = { country_event = aef.18 }
+			100 = { country_event = aef.19 }
+			100 = { country_event = aef.21 }
+			100 = { country_event = aef.20 }
+			100 = {  }
+			100 = {  }
+		}  }
+if = { limit = { NOT = { has_idea = fractious_alliance } } 
+		random_list = {
+			100 = { country_event = aef.7 }
+			100 = { country_event = aef.8 }
+			100 = { country_event = aef.9 }
+			100 = {  }
+			100 = { country_event = aef.39 }
+		}  }
+if = { limit = { has_idea = de_gaulle_issue } } ####FRENCH COHESION EVENTS, NEGATIVE
+		random_list = {
+			100 = { country_event ={ id = fre.1 days = 15 } }
+			100 = { country_event ={ id = fre.2 days = 15 } }
+			100 = { country_event ={ id = aef.13 days = 15 }}
+			100 = { country_event ={ id = fre.3 days = 15 }}
+			100 = {  }
+			100 = {  }
+			100 = { country_event = { id = fre.4 days = 15 }}
+		}  }
+
+
+
+
+} }
+##month events for fractious alliance (and non fractious).
+####Events for specififc levels of cohesion which confer buffs and debuffs.
+#Bad shit at 0 cohesion.
+#
+#	on_daily_AEF = { # DECREASE IN COHESION
+#			effect = {
+#
+#				
+#				if ={
+#					limit = {
+#						THIS = {
+#							has_state_flag = cohesion_system_enabled_flag #if this flag is active the thingy will tick up.
+#						}
+###					}
+#					clamp_variable = {
+#						var = cohesion_number # This is the numbers FROM and TO.
+#						min = 0
+#						max = 100
+#					}
+#					add_to_variable = {
+#						var = cohesion_number #this is how much it goes up by
+#						value = -5
+#					}
+#				}
+#				if ={
+#					limit  ={
+#						check_variable = { var = cohesion_number value = 100 compare = equals} #when it EQUALS 100, it does the effect.
+#					}
+#					ROOT  ={
+#						#transfer_state = PREV
+#					}
+#				}
+#			}
+#		
+#	}
+#}
+
+#IF YOU HAVE "FRACTIOUS ALLIANCE" or OTHER IDEAS, IE MONTY, YOu graduallY LOSE COHESION. 
+#ALSO, EVENTS WILL POP REGULARLY TO GET COHESION. 
+
+#CHECKS ON A MONTHLY BASIS FOR COHESION CHANGES. IF GOES BELOW THRESHOLD, NEW "BUFF" OR "DEBUFF" ADDED. 
+

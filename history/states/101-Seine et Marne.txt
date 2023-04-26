@@ -1,0 +1,60 @@
+
+state={
+	id=101
+	name="STATE_101"
+
+	history={
+		1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			310 3 
+		}
+		victory_points = {
+			335 3 
+		}
+		victory_points = {
+			160 3 
+		}
+		victory_points = {
+			9669 5 
+		}
+		victory_points = {
+			9667 5 
+		}
+		victory_points = {
+			1499 5 
+		}
+		victory_points = {
+			1459 5 
+		}
+		victory_points = {
+			3578 3 
+		}
+
+	}
+
+	provinces={
+		160 163 215 269 310 335 521 624 644 755 794 799 821 842 879 886 1063 1087 1185 1255 1279 1294 1405 1426 1459 1477 1499 1700 1727 1803 1819 1828 1896 1909 1935 2014 2212 2317 2422 2554 2622 2654 2741 2798 2934 2996 3053 3288 3315 3332 3521 3578 3596 3600 3606 3733 3742 3932 3934 3976 4265 4356 4411 4973 4986 4995 5006 5016 5018 5041 5078 5085 5126 5143 5167 5186 5196 5241 9104 9578 9585 9667 9669 9670 9752 9753 
+	}
+	manpower=407137
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

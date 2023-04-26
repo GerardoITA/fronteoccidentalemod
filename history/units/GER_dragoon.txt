@@ -1,0 +1,651 @@
+﻿###DRAGOON, GERMANY
+division_template = {
+	name = "Infantry Battalion (mot.)" 			# ~1500 men, OPELS. TWO BATS PER REGIMENT. TWO ARTY ADDED TO MAKE IT A 40w.
+	division_names_group = GER_MOT_02
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	  	motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	  	motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		motorized = { x = 1 y = 4 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
+		mot_artillery_brigade = { x = 3 y = 0 }
+		mot_artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+        anti_air = { x = 0 y = 0 }
+	 anti_tank = { x = 0 y = 3 }
+	 engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Panzer Battalion" # TWO BATTALIONS OF TANKS PER PANZER DIV, 75 (ROUGHLY) TANKS EACH. PLUS A MECHANIZED REGIMENT AND A MOTORIZED INF REGIMENT. 
+template_counter = 80
+	division_names_group = GER_PANBAN_01
+
+	regiments = {
+        	medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		medium_armor = { x = 0 y = 4 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }
+		medium_armor = { x = 1 y = 4 }
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+		medium_armor = { x = 2 y = 3 }
+		medium_armor = { x = 2 y = 4 }
+		motorized = { x = 3 y = 0 }
+		motorized  = { x = 3 y = 1}
+		motorized  = { x = 3 y = 2 }
+		motorized = { x = 3 y = 3 }
+		 mechanized = { x = 3 y = 4 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	light_tank_recon  = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	maintenance_company = { x = 0 y = 3 }
+	signal_company = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "Panzergrenadier Battalion" 			# ~1500 men, HANOMAGS. A PANZERGREN REGIMENT HAD ONE WITH HANOMAGS AND ONE MOTORIZED WITH TRUCKS.
+	division_names_group = GER_MEC_01
+template_counter = 79
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+	  	mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		mechanized = { x = 0 y = 4 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+	  	mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		mechanized = { x = 1 y = 4 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 2 y = 3 }
+		mot_artillery_brigade = { x = 3 y = 0 }
+		mot_artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+        anti_air = { x = 0 y = 0 }
+	 anti_tank = { x = 0 y = 3 }
+	 engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Ost Battalion" ###
+
+	division_names_group = GER_SEC_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	
+	support = {
+       military_police = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Grenadier Regiment" ###generalised version of Wehrmacht infantry regiment1944, around 2000 men. ONLY TWO BATTALIONS. THIS WAS REDUCED DUE TO GER LATE WAR SHORTAGE AND DEFENSE FOCUS.
+template_counter = 72
+	division_names_group = GER_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+       		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+       		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		infantry = { x = 2 y = 4 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 3 y = 3 }
+		infantry = { x = 3 y = 4 }
+		
+	}
+	
+	support = {
+	engineer = { x = 0 y = 3 }
+        recon = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	anti_tank = { x = 0 y = 2 }
+	signal_company = { x = 0 y = 4 }
+	}
+}
+#ARMY GROUP G, TO MEREG WITH ARMY GROUP B CUZ IT GOT WRECKED.
+##716 INFANTRY DIV
+units = {
+
+division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 726
+				}
+		location = 33
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+	
+}
+division = { 
+	
+division_name = {
+				is_name_ordered = yes
+				name_order = 736
+		}
+		location = 1309
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+
+}
+division = { 
+	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5357
+		}
+		location = 5366
+		division_template = "Ost Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	 
+}
+division = { 
+	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5366
+		}
+		location = 5366
+		division_template = "Ost Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+	
+}
+###198 inf div
+
+division = { 
+division_name = {
+				is_name_ordered = yes
+				name_order = 726
+		}
+		location = 5357
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+  
+}
+division = { 
+	
+division_name = {
+				is_name_ordered = yes
+				name_order = 736
+		}
+		location = 1053
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+}
+division = { 
+	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 736
+		}
+		location = 2561
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6
+
+}
+
+#######189th INF DIV
+
+
+division = { 
+division_name = {
+				is_name_ordered = yes
+				name_order = 1214
+		}
+		location = 966
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+  
+}
+division = { 
+	
+division_name = {
+				is_name_ordered = yes
+				name_order = 1212
+		}
+		location = 3970
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+}
+division = { 
+	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1213
+		}
+		location = 3028
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6
+
+}
+####338th inf
+division = { 
+division_name = {
+				is_name_ordered = yes
+				name_order = 758
+		}
+		location = 2190
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+  
+}
+division = { 
+	
+division_name = {
+				is_name_ordered = yes
+				name_order = 757
+		}
+		location = 901
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+}
+division = { 
+	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 759
+		}
+		location = 5364
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6
+
+}
+###244
+division = { 
+division_name = {
+				is_name_ordered = yes
+				name_order = 932
+		}
+		location = 134
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+  
+}
+division = { 
+	
+division_name = {
+				is_name_ordered = yes
+				name_order = 933
+		}
+		location = 5354
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+}
+division = { 
+	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 934
+		}
+		location = 2314
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6
+
+}
+####242
+division = { 
+division_name = {
+				is_name_ordered = yes
+				name_order = 917
+		}
+		location = 3928
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+  
+}
+division = { 
+	
+division_name = {
+				is_name_ordered = yes
+				name_order = 918
+		}
+		location = 4353
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+}
+division = { 
+	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 765
+		}
+		location = 792
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6
+
+}
+###reserve 144
+division = { 
+name = "Reserve-Grenadier-Regiment 8"
+		location = 3276
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.8
+  
+}
+division = { 
+	
+name = "Reserve-Grenadier-Regiment 28"
+		location = 3276
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+}
+division = { 
+	
+		name = "Reserve-Grenadier-Regiment 239"
+		location = 4246
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6
+
+}
+division = { 
+	
+		name = "Reserve-Infanterie-Bataillon 7"
+		location = 4246
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6
+
+}
+division = { 
+	
+		name = "Reserve-Infanterie-Bataillon 28"
+		location = 3147
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.6
+
+}
+
+division = { 
+	
+		name = "Reserve-Infanterie-Bataillon 38"
+		location = 3147
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.6
+
+}
+division = { 
+	
+		name = "Reserve-Infanterie-Bataillon 84"
+		location = 3356
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.6
+
+}
+
+
+division = { 
+	
+		name = "Reserve-Infanterie-Bataillon 164"
+		location = 3356
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.6
+
+}
+division = { 
+	
+		name = "Reserve-Infanterie-Bataillon 183"
+		location = 4387
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.6
+
+}
+
+division = { 
+	
+		name = "Reserve-Infanterie-Bataillon 327"
+		location = 4387
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.6
+
+}
+division = { 
+	
+		name = "Reserve-Infanterie-Bataillon 444"
+		location = 2592
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.6
+
+}
+
+
+division = { 
+	
+		name = "Reserve-Infanterie-Bataillon 452"
+		location = 2592
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.6
+
+}
+division = { 
+	
+		name = "Reserve-Infanterie-Bataillon 350"
+		location = 4033
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.6
+
+}
+division = { 
+	
+		name = "Reserve-Infanterie-Bataillon 461"
+		location = 4033
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.6
+
+}
+###159 RESERVE
+
+
+division = { 
+name = "Reserve-Grenadier-Regiment 9"
+		location = 1755
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.8
+  
+}
+division = { 
+	
+name = "Reserve-Grenadier-Regiment 251"
+		location = 503
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+}
+
+###11 PANZER
+division = { 
+	
+name = "Reserve-Panzer-Abteilungen 25"
+		location = 1711
+		division_template = "Panzer Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+}
+division = { 
+	
+name = "Reserve-Panzer-Abteilungen 35"
+		location = 4371
+		division_template = "Panzer Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+}
+division = { 
+	
+name = "Reserve-Panzer-Grenadier-Bataillon 12"
+		location = 3351
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+}
+division = { 
+	
+name = "Reserve-Grenadier-Bataillon (motorisiert) 20"
+		location = 1311
+		division_template = "Infantry Battalion (mot.)"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+}
+division = { 
+	
+name = "Reserve-Panzer-Grenadier-Bataillon 40"
+		location = 1204
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+}
+division = { 
+	
+name = "Reserve-Grenadier-Bataillon (motorisiert) 41"
+		location = 532
+		division_template = "Infantry Battalion (mot.)"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+}
+#####
+division = { 
+name = "Reserve-Grenadier-Regiment 7"
+		location = 1985
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.8
+  
+}
+division = { 
+	
+name = "Reserve-Grenadier-Regiment 157"
+		location = 1420
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+}
+####
+division = { 
+name = "Reserve-Grenadier-Regiment 18"
+		location = 3154
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.8
+  
+}
+division = { 
+	
+name = "Reserve-Grenadier-Regiment 213"
+		location = 2136
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+}
+division = { 
+	
+name = "Reserve-Grenadier-Regiment 221"
+		location = 5365
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+}
+
+
+}
+
+ }
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	
+
+}
+
+#####################

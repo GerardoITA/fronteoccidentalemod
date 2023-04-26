@@ -1,0 +1,37 @@
+bookmarks = {
+	bookmark = {
+		name = "ITB_NAME"
+		desc = "ITB_DESC"
+		date = 1944.6.6.7
+		picture = "GFX_select_date_ITB"
+		default_country = "AEF"
+		default = no
+		
+		
+		"AEF"={
+			history = "AEF_ITB_DESC"
+			ideology = democratic
+			
+			ideas = {
+				resistance_connections ultra_intercepts awoken_giant
+			}
+			focuses = {
+				
+			}
+		}
+		"OKW"={
+			history = "GER_ITB_DESC"
+			ideology = fascism
+			ideas = {
+				auftragstaktik conceited_intelligence confused_chain_of_command
+			}
+			focuses = {
+				
+			}
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

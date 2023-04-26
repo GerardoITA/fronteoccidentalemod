@@ -1,0 +1,331 @@
+
+music_station = "overlord_radio"
+
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+music = {
+	song = "frontline"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+music = {
+	song = "kstheme"
+	chance = {
+		modifier = {
+		date < 1920.1.1
+			factor = 1
+		}		
+	}
+}
+music = {
+	song = "buckinhospital"
+	chance = {
+		modifier = {
+		date > 1944.12.1
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "april1945"
+	chance = {
+		modifier = {
+		date > 1945.1.1
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "wartheme"
+	chance = {
+		modifier = {
+		date > 1944.12.1
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "arras"
+	chance = {
+		modifier = {
+ 			tag = OKW
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "usatheme"
+	chance = {
+		modifier = {
+ 			tag = AEF
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "oneman"
+	chance = {
+		modifier = {
+ 			tag = AEF
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "bandofbrothers"
+	chance = {
+		modifier = {
+ 			tag = AEF
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "honor"
+	chance = {
+		modifier = {
+ 			tag = AEF
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "turningtides1"
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "norman"
+	chance = {
+		modifier = {
+ 
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "1600men"
+	chance = {
+		modifier = {
+ 
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "allieddefeat"
+	chance = {
+		modifier = {
+ 
+			factor = 0
+		}		
+	}
+}
+music = {
+	song = "trizonesian"
+	chance = {
+		modifier = {
+ 
+			factor = 0
+		}		
+	}
+}
+music = {
+	song = "trueendmusic"
+	chance = {
+		modifier = {
+ 
+			factor = 0
+		}		
+	}
+}
+music = {
+	song = "sovietmarch"
+	chance = {
+		modifier = {
+ 
+			factor = 0
+		}		
+	}
+}
+music = {
+	song = "1600menshort"
+	chance = {
+		modifier = {
+ 
+			factor = 0
+		}		
+	}
+}
+music = {
+	song = "alliedassault"
+	chance = {
+		modifier = {
+ 
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "brotherhood"
+	chance = {
+		modifier = {
+ 
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "callofduty3"
+	chance = {
+		modifier = {
+ 
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "remagen"
+	chance = {
+		modifier = {
+ 
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "alliedvictory"
+	chance = {
+		modifier = {
+	OKW = { surrender_progress > 0.50 }
+ TAG = AEF
+
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "alliedstorm"
+	chance = {
+		modifier = {
+ TAG = AEF
+
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "heroicassault"
+	chance = {
+		modifier = {
+ TAG = AEF
+
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "johnny"
+	chance = {
+		modifier = {
+ TAG = AEF
+
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "ivowtothee"
+	chance = {
+		modifier = {
+ TAG = AEF
+
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "captainamerica"
+	chance = {
+		modifier = {
+ TAG = AEF
+
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "germantheme"
+	chance = {
+		modifier = {
+ TAG = OKW
+
+			factor = 1.5
+		}		
+	}
+}
+music = {
+	song = "tigerbattle"
+	chance = {
+		modifier = {
+		factor = 1.5	
+			OKW = { surrender_progress > 0.15}
+		}		
+	}
+}
+music = {
+	song = "lemarseillaise"
+	chance = {
+		modifier = {
+		factor = 1.5	
+			OKW = { surrender_progress > 0.15}
+		}		
+	}
+}
+music = {
+	song = "zitadelle"
+	chance = {
+		modifier = {
+		factor = 0	
+			
+		}		
+	}
+}
+music = {
+	song = "turningtides"
+	chance = {
+		modifier = {
+		factor = 1.5	
+			OKW = { surrender_progress > 0.05}
+		}		
+	}
+}
+music = {
+	song = "leavenomanbehind"
+	chance = {
+		modifier = {
+		factor = 1.5	
+			OKW = { surrender_progress > 0.05}
+		}		
+	}
+}
+music = {
+	song = "zerstorer"
+	chance = {
+		modifier = {
+		factor =0
+		}		
+	}
+}

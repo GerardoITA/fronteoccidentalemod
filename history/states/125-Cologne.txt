@@ -1,0 +1,41 @@
+
+state={
+	id=125
+	name="STATE_125"
+
+	history={
+		1918.3.20.12 = {
+		owner = DKR
+		add_core_of = DKR
+		}
+ 	1943.3.1.12 = {
+		owner = OKW
+		add_core_of = OKW
+		remove_core_of = DKR
+		}
+
+	victory_points = { 9722 6 } # REMAGEN
+	victory_points = { 9723 3 } # BRIDGE AT REMAGEN
+	victory_points = { 4619 5 } # ZOLLSTOCK
+	victory_points = { 2137 5 } # WEST COLOGNE
+	victory_points = { 9728 5 } # NORTH COLOGNE
+victory_points = { 3275 7 } # MULHEIM
+		buildings = {
+	fuel_silo = 1 
+	anti_air_building = 5 
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 5
+
+		}
+
+	}
+
+	provinces={
+		9723 12 60 89 122 145 256 272 289 345 400 490 496 588 642 718 719 760 849 873 918 981 1058 1138 1186 1280 1307 1352 1364 1368 1398 1451 1495 1581 1652 1801 1815 1854 1885 2033 2051 2076 2087 2137 2149 2172 2189 2204 2213 2270 2324 2329 2348 2351 2424 2477 2491 2587 2616 2656 2694 2740 2792 2935 3083 3233 3275 3296 3437 3449 3607 3613 3670 3682 3721 3762 3886 3991 3992 4075 4153 4277 4361 4570 4586 4587 4593 4599 4610 4612 4619 4620 4626 4628 4637 4653 4659 4661 4662 4663 4668 4684 4696 4713 4733 9572 9721 9722 9724 9725 9726 9727 9728 9729 9730 
+	}
+	manpower=3446158
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

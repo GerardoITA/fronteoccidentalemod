@@ -1,0 +1,224 @@
+#####################
+### ANTI AIRCRAFT ###
+#####################
+	
+
+#################
+### ARTILLERY ###
+#################
+
+
+##################
+### SMALL ARMS ###
+##################
+
+#################
+### ARGENTINA ###
+#################
+
+
+
+###############
+### BRITISH ###
+###############
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_ENG_infantry_weapon_rifle_SMLE_mesh"
+		file = "gfx/models/units/small_arms/weapon_ENG_rifle_SMLE.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_ENG_infantry_weapon_rifle_No4_mesh"
+		file = "gfx/models/units/small_arms/weapon_ENG_rifle_No4.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_ENG_infantry_weapon_rifle_No5_mesh"
+		file = "gfx/models/units/small_arms/weapon_ENG_rifle_No5.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_ENG_infantry_weapon_mg_Sten_mesh"
+		file = "gfx/models/units/small_arms/weapon_ENG_mg_Sten.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_ENG_infantry_weapon_mg_Stirling_mesh"
+		file = "gfx/models/units/small_arms/weapon_ENG_mg_Sten.mesh"
+	}
+}
+
+
+################
+### ESTONIAN ###
+################
+
+
+##############
+### FRENCH ###
+##############
+
+
+
+##############
+### GERMAN ###
+##############
+
+
+
+#################
+### HUNGARIAN ###
+#################
+
+
+##############
+### SOVIET ###
+##############
+
+
+
+
+##USA
+
+
+#####################
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_USA_infantry_weapon_rifle_M1903_mesh"
+		file = "gfx/models/units/small_arms/weapon_USA_rifle_M1903.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_USA_infantry_weapon_rifle_M1903A1_mesh"
+		file = "gfx/models/units/small_arms/weapon_USA_rifle_M1903A1.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_USA_infantry_weapon_rifle_M1_mesh"
+		file = "gfx/models/units/small_arms/weapon_USA_rifle_M1.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_USA_infantry_weapon_rifle_M41_mesh"
+		file = "gfx/models/units/small_arms/weapon_USA_rifle_M41.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_USA_infantry_weapon_rifle_M14_mesh"
+		file = "gfx/models/units/small_arms/weapon_USA_rifle_M14.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_USA_infantry_weapon_mg_thompson_mesh"
+		file = "gfx/models/units/small_arms/weapon_USA_mg_thompson.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_USA_infantry_weapon_mg_M1928_mesh"
+		file = "gfx/models/units/small_arms/weapon_USA_mg_M1928.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_USA_infantry_weapon_mg_M1_mesh"
+		file = "gfx/models/units/small_arms/weapon_USA_mg_M1.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_USA_infantry_weapon_mg_M3_mesh"
+		file = "gfx/models/units/small_arms/weapon_USA_mg_M3.mesh"
+	}
+}
+
+
+##############
+### GERMAN ###
+##############
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_GER_infantry_weapon_rifle_G98_mesh"
+		file = "gfx/models/units/small_arms/weapon_GER_rifle_G98.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_GER_infantry_weapon_rifle_98k_mesh"
+		file = "gfx/models/units/small_arms/weapon_GER_rifle_98k.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_GER_infantry_weapon_rifle_G43_mesh"
+		file = "gfx/models/units/small_arms/weapon_GER_rifle_G43.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_GER_infantry_weapon_rifle_FG42_mesh"
+		file = "gfx/models/units/small_arms/weapon_GER_rifle_FG42.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_GER_infantry_weapon_rifle_MP44_mesh"
+		file = "gfx/models/units/small_arms/weapon_GER_rifle_MP44.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_GER_infantry_weapon_mg_MP28_mesh"
+		file = "gfx/models/units/small_arms/weapon_GER_mg_MP28.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_GER_infantry_weapon_mg_MP35_mesh"
+		file = "gfx/models/units/small_arms/weapon_GER_mg_MP35.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_GER_infantry_weapon_mg_EMP_mesh"
+		file = "gfx/models/units/small_arms/weapon_GER_mg_EMP.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_GER_infantry_weapon_mg_MP38_mesh"
+		file = "gfx/models/units/small_arms/weapon_GER_mg_MP38.mesh"
+	}
+}

@@ -1,0 +1,953 @@
+guiTypes = {	
+	containerWindowType = {
+		name = "cohesion_gui_window"
+		#position = {x=0 y=0}
+		position = {x=0 y=0}
+		#size = { width=320 height=238 }
+		size = { width=100% height=52 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable=no
+		fade_type = linear
+		clipping = no
+		click_to_front = no
+		
+		#background = {
+		#	name = "Background"
+		#	spriteType = "GFX_tiled_window"
+		#}
+		
+		instantTextboxType = {
+			name = "points_number"
+			position = {x=80 y=5}
+			font = "hoi_18mbs"
+			text = "AEF_cohesion_level_text"
+			maxWidth = 340
+			maxHeight = 23
+			format = center
+		}
+		
+		
+		iconType = {
+			name ="cohesion_level_bar"
+			spriteType = "GFX_cohesion_level_bar"
+			position = { x= -120 y = 5 }
+			Orientation = "CENTER"
+		}
+	}
+###hitlers influence
+containerWindowType = {
+		name = "hitlers_influence_window"
+		#position = {x=0 y=0}
+		position = {x=0 y=0}
+		#size = { width=320 height=238 }
+		size = { width=100% height=52 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable=no
+		fade_type = linear
+		clipping = no
+		click_to_front = no
+		
+		#background = {
+		#	name = "Background"
+		#	spriteType = "GFX_tiled_window"
+		#}
+		
+		instantTextboxType = {
+			name = "points_number"
+			position = {x=80 y=5}
+			font = "hoi_18mbs"
+			text = "GER_influence_level_text"
+			maxWidth = 340
+			maxHeight = 23
+			format = center
+		}
+		
+		
+		iconType = {
+			name ="influence_level_bar"
+			spriteType = "GFX_influence_level_bar"
+			position = { x= -120 y = 5 }
+			Orientation = "CENTER"
+		}
+	}
+####EVENT ENDINGS
+containerWindowType = { # OVERLORD SUCCESS. ALLIED VICTORY.
+		name = "ending1_gui_window"
+		#position = {x=0 y=0}
+		position = {x=0 y=0}
+		size = { width=1000 height=500 }
+		
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable=yes
+		fade_type = linear
+		clipping = no
+		click_to_front = no
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window"
+		}
+		
+		
+		instantTextboxType = {
+			name = "ending_text_1"
+			position = {x= 530 y=30}
+			font = "hoi_20b"
+			text = "ending_overlord_success"
+			maxWidth = 440
+			maxHeight = 23
+			format = left
+		}
+		
+	
+		iconType = {
+			name ="cohesion_separator"
+			spriteType = "GFX_ending_separator"
+			position = { x=0 y =-250 }
+			Orientation = "CENTER"
+		}
+iconType = {
+			name ="image_el"
+			spriteType = "GFX_europe_liberated"
+			position = { x=20 y =50 }
+			Orientation = "LEFT"
+		}
+		buttonType = {
+			name ="accept_button"
+			spriteType = "GFX_close_button"
+			position = { x=460 y=-230 }
+			Orientation = "CENTER"
+		}
+		instantTextboxType = {
+			name = "ending_text_title"
+			position = {x=155 y=18}
+			font = "hoi_24header"
+			text = "ending_overlord_success_title"
+			maxWidth = 0
+			maxHeight = 0
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "image_quote"
+			position = {x=175 y=418}
+			font = "hoi_18mbs"
+			text = "image_quote_text_ending1"
+			maxWidth = 300
+			maxHeight = 0
+			format = right
+		}
+		
+		
+	}
+containerWindowType = { # OVERLORD FAILED. AXIS VICTORY.
+		name = "ending2_gui_window"
+		#position = {x=0 y=0}
+		position = {x=0 y=0}
+		size = { width=1000 height=500 }
+		
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable=yes
+		fade_type = linear
+		clipping = no
+		click_to_front = no
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window"
+		}
+		
+		
+		instantTextboxType = {
+			name = "ending_text_2"
+			position = {x= 530 y=30}
+			font = "hoi_20b"
+			text = "ending_overlord_failed"
+			maxWidth = 440
+			maxHeight = 23
+			format = left
+		}
+		
+	
+		iconType = {
+			name ="cohesion_separator"
+			spriteType = "GFX_ending_separator"
+			position = { x=0 y =-250 }
+			Orientation = "CENTER"
+		}
+iconType = {
+			name ="image_el"
+			spriteType = "GFX_axis_victory"
+			position = { x=20 y =50 }
+			Orientation = "LEFT"
+		}
+		buttonType = {
+			name ="accept_button"
+			spriteType = "GFX_close_button"
+			position = { x=460 y=-230 }
+			Orientation = "CENTER"
+		}
+		instantTextboxType = {
+			name = "ending_text_title"
+			position = {x=155 y=18}
+			font = "hoi_24header"
+			text = "ending_overlord_failed_title"
+			maxWidth = 0
+			maxHeight = 0
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "image_quote"
+			position = {x=175 y=410}
+			font = "hoi_18mbs"
+			text = "image_quote_text_ending2"
+			maxWidth = 300
+			maxHeight = 0
+			format = right
+		}
+		
+		
+	}
+containerWindowType = { # JULY PLOT SUCCESS ENDING. 
+		name = "ending3_gui_window"
+		#position = {x=0 y=0}
+		position = {x=0 y=0}
+		size = { width=1000 height=500 }
+		
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable=yes
+		fade_type = linear
+		clipping = no
+		click_to_front = no
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window"
+		}
+		
+		
+		instantTextboxType = {
+			name = "ending_text_2"
+			position = {x= 530 y=30}
+			font = "hoi_20b"
+			text = "ending_july_plot_success"
+			maxWidth = 440
+			maxHeight = 23
+			format = left
+		}
+		
+	
+		iconType = {
+			name ="cohesion_separator"
+			spriteType = "GFX_ending_separator"
+			position = { x=0 y =-250 }
+			Orientation = "CENTER"
+		}
+iconType = {
+			name ="image_el"
+			spriteType = "GFX_july_plot"
+			position = { x=20 y =50 }
+			Orientation = "LEFT"
+		}
+		buttonType = {
+			name ="accept_button"
+			spriteType = "GFX_close_button"
+			position = { x=460 y=-230 }
+			Orientation = "CENTER"
+		}
+		instantTextboxType = {
+			name = "ending_text_title"
+			position = {x=155 y=18}
+			font = "hoi_24header"
+			text = "ending_overlord_july_plot_title"
+			maxWidth = 0
+			maxHeight = 0
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "image_quote"
+			position = {x=175 y=410}
+			font = "hoi_18mbs"
+			text = "image_quote_text_ending3"
+			maxWidth = 315
+			maxHeight = 0
+			format = right
+		}
+		
+		
+	}
+containerWindowType = { # SOVIETS OCCUPY EUROPE. ALLIES DONT ACT.
+		name = "ending4_gui_window"
+		#position = {x=0 y=0}
+		position = {x=0 y=0}
+		size = { width=1000 height=500 }
+		
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable=yes
+		fade_type = linear
+		clipping = no
+		click_to_front = no
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window"
+		}
+		
+		
+		instantTextboxType = {
+			name = "ending_text_4"
+			position = {x= 530 y=30}
+			font = "hoi_20b"
+			text = "ending_allies_accept_soviet_europe"
+			maxWidth = 440
+			maxHeight = 23
+			format = left
+		}
+		
+	
+		iconType = {
+			name ="cohesion_separator"
+			spriteType = "GFX_ending_separator"
+			position = { x=0 y =-250 }
+			Orientation = "CENTER"
+		}
+iconType = {
+			name ="image_el"
+			spriteType = "GFX_soviet_europe"
+			position = { x=20 y =50 }
+			Orientation = "LEFT"
+		}
+		buttonType = {
+			name ="accept_button"
+			spriteType = "GFX_close_button"
+			position = { x=460 y=-230 }
+			Orientation = "CENTER"
+		}
+		instantTextboxType = {
+			name = "ending_text_title"
+			position = {x=155 y=18}
+			font = "hoi_24header"
+			text = "ending_overlord_soviet_europe_title"
+			maxWidth = 0
+			maxHeight = 0
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "image_quote"
+			position = {x=175 y=410}
+			font = "hoi_18mbs"
+			text = "image_quote_text_ending4"
+			maxWidth = 300
+			maxHeight = 0
+			format = right
+		}
+		
+		
+	}
+containerWindowType = { # UNTHINKABLE, ALLIED VICTORY
+		name = "ending5_gui_window"
+		#position = {x=0 y=0}
+		position = {x=0 y=0}
+		size = { width=1000 height=500 }
+		
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable=yes
+		fade_type = linear
+		clipping = no
+		click_to_front = no
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window"
+		}
+		
+		
+		instantTextboxType = {
+			name = "ending_text_5"
+			position = {x= 530 y=30}
+			font = "hoi_20b"
+			text = "ending_unthinkable_allied_victory"
+			maxWidth = 440
+			maxHeight = 23
+			format = left
+		}
+		
+	
+		iconType = {
+			name ="cohesion_separator"
+			spriteType = "GFX_ending_separator"
+			position = { x=0 y =-250 }
+			Orientation = "CENTER"
+		}
+iconType = {
+			name ="image_el"
+			spriteType = "GFX_europe_saved"
+			position = { x=20 y =50 }
+			Orientation = "LEFT"
+		}
+		buttonType = {
+			name ="accept_button"
+			spriteType = "GFX_close_button"
+			position = { x=460 y=-230 }
+			Orientation = "CENTER"
+		}
+		instantTextboxType = {
+			name = "ending_text_title"
+			position = {x=80 y=18}
+			font = "hoi_24header"
+			text = "ending_unthinkable_allied_victory_title"
+			maxWidth = 500
+			maxHeight = 0
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "image_quote"
+			position = {x=175 y=410}
+			font = "hoi_18mbs"
+			text = "image_quote_text_ending5"
+			maxWidth = 330
+			maxHeight = 0
+			format = left
+		}
+		
+		
+	}
+
+containerWindowType = { # UNTHINKABLE, SOVIET VICTORY
+		name = "ending6_gui_window"
+		#position = {x=0 y=0}
+		position = {x=0 y=0}
+		size = { width=1000 height=500 }
+		
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable=yes
+		fade_type = linear
+		clipping = no
+		click_to_front = no
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window"
+		}
+		
+		
+		instantTextboxType = {
+			name = "ending_text_6"
+			position = {x= 530 y=30}
+			font = "hoi_20b"
+			text = "ending_unthinkable_soviet_victory"
+			maxWidth = 440
+			maxHeight = 23
+			format = left
+		}
+		
+	
+		iconType = {
+			name ="cohesion_separator"
+			spriteType = "GFX_ending_separator"
+			position = { x=0 y =-250 }
+			Orientation = "CENTER"
+		}
+iconType = {
+			name ="image_el"
+			spriteType = "GFX_europe_conquered"
+			position = { x=20 y =50 }
+			Orientation = "LEFT"
+		}
+		buttonType = {
+			name ="accept_button"
+			spriteType = "GFX_close_button"
+			position = { x=460 y=-230 }
+			Orientation = "CENTER"
+		}
+		instantTextboxType = {
+			name = "ending_text_title"
+			position = {x=80 y=18}
+			font = "hoi_24header"
+			text = "ending_unthinkable_soviet_victory_title"
+			maxWidth = 500
+			maxHeight = 0
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "image_quote"
+			position = {x=175 y=410}
+			font = "hoi_18mbs"
+			text = "image_quote_text_ending6"
+			maxWidth = 320
+			maxHeight = 0
+			format = left
+		}
+		
+		
+	}
+
+
+containerWindowType = { # ALLIED COLLAPSE
+		name = "ending7_gui_window"
+		#position = {x=0 y=0}
+		position = {x=0 y=0}
+		size = { width=1000 height=500 }
+		
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable=yes
+		fade_type = linear
+		clipping = no
+		click_to_front = no
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window"
+		}
+		
+		
+		instantTextboxType = {
+			name = "ending_text_7"
+			position = {x= 530 y=30}
+			font = "hoi_20b"
+			text = "ending_allied_collapse_text"
+			maxWidth = 440
+			maxHeight = 23
+			format = left
+		}
+		
+	
+		iconType = {
+			name ="cohesion_separator"
+			spriteType = "GFX_ending_separator"
+			position = { x=0 y =-250 }
+			Orientation = "CENTER"
+		}
+iconType = {
+			name ="image_el"
+			spriteType = "GFX_europe_conquered"
+			position = { x=20 y =50 }
+			Orientation = "LEFT"
+		}
+		buttonType = {
+			name ="accept_button"
+			spriteType = "GFX_close_button"
+			position = { x=460 y=-230 }
+			Orientation = "CENTER"
+		}
+		instantTextboxType = {
+			name = "ending_text_title"
+			position = {x=80 y=18}
+			font = "hoi_24header"
+			text = "ending_allied_collapse_title"
+			maxWidth = 390
+			maxHeight = 0
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "image_quote"
+			position = {x=175 y=410}
+			font = "hoi_18mbs"
+			text = "image_quote_text_ending7"
+			maxWidth = 278
+			maxHeight = 0
+			format = right
+		}
+		
+		
+	}
+
+containerWindowType = { # GERMANS BEAT EVERYONE, SOVIETS AND ALLIES
+		name = "ending8_gui_window"
+		#position = {x=0 y=0}
+		position = {x=0 y=0}
+		size = { width=1000 height=500 }
+		
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable=yes
+		fade_type = linear
+		clipping = no
+		click_to_front = no
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window"
+		}
+		
+		
+		instantTextboxType = {
+			name = "ending_text_7"
+			position = {x= 530 y=30}
+			font = "hoi_20b"
+			text = "ending_germany_beats_everyone"
+			maxWidth = 440
+			maxHeight = 23
+			format = left
+		}
+		
+	
+		iconType = {
+			name ="cohesion_separator"
+			spriteType = "GFX_ending_separator"
+			position = { x=0 y =-250 }
+			Orientation = "CENTER"
+		}
+iconType = {
+			name ="image_el"
+			spriteType = "GFX_total_axis_victory"
+			position = { x=20 y =50 }
+			Orientation = "LEFT"
+		}
+		buttonType = {
+			name ="accept_button"
+			spriteType = "GFX_close_button"
+			position = { x=460 y=-230 }
+			Orientation = "CENTER"
+		}
+		instantTextboxType = {
+			name = "ending_text_title"
+			position = {x=80 y=18}
+			font = "hoi_24header"
+			text = "ending_germany_beats_everyone_title"
+			maxWidth = 390
+			maxHeight = 0
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "image_quote"
+			position = {x=175 y=410}
+			font = "hoi_18mbs"
+			text = "image_quote_text_ending8"
+			maxWidth = 300
+			maxHeight = 0
+			format = right
+		}
+		
+		
+	}
+containerWindowType = { # HILTON ENDING
+		name = "ending9_gui_window"
+		#position = {x=0 y=0}
+		position = {x=0 y=0}
+		size = { width=1000 height=500 }
+		
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable=yes
+		fade_type = linear
+		clipping = no
+		click_to_front = no
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window"
+		}
+		
+		
+		instantTextboxType = {
+			name = "ending_text_7"
+			position = {x= 530 y=30}
+			font = "hoi_20b"
+			text = "ending_adrien_hilton"
+			maxWidth = 440
+			maxHeight = 23
+			format = left
+		}
+		
+	
+		iconType = {
+			name ="cohesion_separator"
+			spriteType = "GFX_ending_separator"
+			position = { x=0 y =-250 }
+			Orientation = "CENTER"
+		}
+iconType = {
+			name ="image_el"
+			spriteType = "GFX_total_axis_victory"
+			position = { x=20 y =50 }
+			Orientation = "LEFT"
+		}
+		buttonType = {
+			name ="accept_button"
+			spriteType = "GFX_close_button"
+			position = { x=460 y=-230 }
+			Orientation = "CENTER"
+		}
+		instantTextboxType = {
+			name = "ending_text_title"
+			position = {x=80 y=18}
+			font = "hoi_24header"
+			text = "ending_adrien_hilton_title"
+			maxWidth = 390
+			maxHeight = 0
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "image_quote"
+			position = {x=175 y=410}
+			font = "hoi_18mbs"
+			text = "image_quote_text_ending9"
+			maxWidth = 278
+			maxHeight = 0
+			format = left
+		}
+		
+		
+	}
+
+
+containerWindowType = { #SEALION
+		name = "ending10_gui_window"
+		#position = {x=0 y=0}
+		position = {x=0 y=0}
+		size = { width=1000 height=500 }
+		
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable=yes
+		fade_type = linear
+		clipping = no
+		click_to_front = no
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window"
+		}
+		
+		
+		instantTextboxType = {
+			name = "ending_text_7"
+			position = {x= 530 y=30}
+			font = "hoi_20b"
+			text = "ending_sealion"
+			maxWidth = 440
+			maxHeight = 23
+			format = left
+		}
+		
+	
+		iconType = {
+			name ="cohesion_separator"
+			spriteType = "GFX_ending_separator"
+			position = { x=0 y =-250 }
+			Orientation = "CENTER"
+		}
+iconType = {
+			name ="image_el"
+			spriteType = "GFX_ending_sealion"
+			position = { x=20 y =50 }
+			Orientation = "LEFT"
+		}
+		buttonType = {
+			name ="accept_button"
+			spriteType = "GFX_close_button"
+			position = { x=460 y=-230 }
+			Orientation = "CENTER"
+		}
+		instantTextboxType = {
+			name = "ending_text_title"
+			position = {x=80 y=18}
+			font = "hoi_24header"
+			text = "ending_sealion_title"
+			maxWidth = 390
+			maxHeight = 0
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "image_quote"
+			position = {x=175 y=410}
+			font = "hoi_18mbs"
+			text = "image_quote_text_ending10"
+			maxWidth = 278
+			maxHeight = 0
+			format = right
+		}
+		
+		
+	}
+containerWindowType = { #TRUE ENDING
+		name = "ending11_gui_window"
+		#position = {x=0 y=0}
+		position = {x=0 y=0}
+		size = { width=1000 height=500 }
+		
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable=yes
+		fade_type = linear
+		clipping = no
+		click_to_front = no
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window"
+		}
+		
+		
+		instantTextboxType = {
+			name = "ending_text_7"
+			position = {x= 530 y=30}
+			font = "hoi_20b"
+			text = "ending_true_ending"
+			maxWidth = 440
+			maxHeight = 23
+			format = left
+		}
+		
+	
+		iconType = {
+			name ="cohesion_separator"
+			spriteType = "GFX_ending_separator"
+			position = { x=0 y =-250 }
+			Orientation = "CENTER"
+		}
+iconType = {
+			name ="image_el"
+			spriteType = "GFX_europe_saved"
+			position = { x=20 y =50 }
+			Orientation = "LEFT"
+		}
+		buttonType = {
+			name ="accept_button"
+			spriteType = "GFX_close_button"
+			position = { x=460 y=-230 }
+			Orientation = "CENTER"
+		}
+		instantTextboxType = {
+			name = "ending_text_title"
+			position = {x=80 y=18}
+			font = "hoi_24header"
+			text = "ending_true_title"
+			maxWidth = 390
+			maxHeight = 0
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "image_quote"
+			position = {x=175 y=410}
+			font = "hoi_18mbs"
+			text = "image_quote_text_ending11"
+			maxWidth = 310
+			maxHeight = 0
+			format = right
+		}
+		
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

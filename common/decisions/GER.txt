@@ -1,0 +1,1806 @@
+hitlers_influence = { 
+influence_rock_bottom_time_hitlers_rage = {
+    activation = {
+	
+ has_country_flag = nazi_party_disregarded
+}
+
+    
+    available = {
+       custom_trigger_tooltip = {
+    tooltip = influence_trigger_above_25		
+   check_variable = {
+  	influence_number > 24
+}
+}
+    }
+    cancel_trigger = {
+    	has_country_flag = july_plot_succeeded
+    }
+    icon = mission_icon     # For GFX_decision_mission_icon
+    is_good = yes
+    days_mission_timeout = 100
+    selectable_mission = yes
+    complete_effect = {
+        add_ideas = hitler_challenged
+    }
+    timeout_effect = {
+       	country_event = ger.35
+    }
+}
+influence_move_troops_random_state = {
+    activation = {
+	
+has_country_flag = hitler_mission_move_troops
+
+    }
+    available = {
+	OR = { 
+49 = { has_ROOT_at_least_1_div_in_current_state_scope =yes }
+95 = { has_ROOT_at_least_1_div_in_current_state_scope =yes }
+68 = { has_ROOT_at_least_1_div_in_current_state_scope =yes }
+112 = { has_ROOT_at_least_1_div_in_current_state_scope =yes }
+
+
+ }}
+# divisions_in_state = { type = infantry amount > 10 state = any_owned_state} 
+     
+    cancel_trigger = {#
+    }
+    icon = mission_icon     # For GFX_decision_mission_icon
+    is_good = yes
+    days_mission_timeout = 10
+    selectable_mission = yes
+    complete_effect = {
+	country_event = ger.39
+      custom_effect_tooltip = influence_gain_7 add_to_variable = {
+	var = influence_number
+	value = 7
+} 
+clr_country_flag = hitler_mission_move_troops
+    }
+    timeout_effect = {
+	country_event = ger.38
+        custom_effect_tooltip = influence_reduction_10 add_to_variable = {
+	var = influence_number
+	value = -10
+} 
+	clr_country_flag = hitler_mission_move_troops
+    }
+}
+influence_deploy_random_troops = {
+    activation = {
+	
+has_country_flag = hitler_mission_deploy_unit 
+
+    }
+    available = {
+if = { 
+limit = { 
+has_army_manpower = { size < 99999 }
+}
+has_army_manpower = { size > 99999 }
+}
+else_if = { 
+limit = {
+ has_army_manpower = { size > 99999 } has_army_manpower = { size < 174999 }
+}
+has_army_manpower = { size > 174999 }
+}
+else_if = { 
+limit = { has_army_manpower ={ size > 174999 } has_army_manpower = { size < 254999 } 
+}
+has_army_manpower = { size > 254999 }
+}
+else_if = { 
+limit = { has_army_manpower = { size > 254999 } has_army_manpower = { size < 404999 } 
+has_army_manpower = { size > 404999 }
+}
+else_if = { 
+limit = { has_army_manpower = { size > 404999} has_army_manpower = { size < 999999 }
+has_army_manpower = { size > 999999 }
+} } } }
+
+# divisions_in_state = { type = infantry amount > 10 state = any_owned_state} 
+     
+    cancel_trigger = {#
+    }
+    icon = mission_icon     # For GFX_decision_mission_icon
+    is_good = yes
+    days_mission_timeout = 90
+    selectable_mission = yes
+    complete_effect = {
+	country_event = ger.39
+      custom_effect_tooltip = influence_gain_10 add_to_variable = {
+	var = influence_number
+	value = 10
+} 
+clr_country_flag =  hitler_mission_deploy_unit 
+    }
+    timeout_effect = {
+	country_event = ger.38
+        custom_effect_tooltip = influence_reduction_8 add_to_variable = {
+	var = influence_number
+	value = -8
+} 
+	clr_country_flag =  hitler_mission_deploy_unit 
+    }
+}
+influence_continuous_focus = {
+    activation = {
+	
+has_country_flag =  hitler_mission_continuous_focus 
+
+    }
+    available = {
+	
+Or = {  has_idea = continuous_naval_production
+	has_idea = continuous_air_production
+}
+}
+# divisions_in_state = { type = infantry amount > 10 state = any_owned_state} 
+     
+    cancel_trigger = {#
+    }
+    icon = mission_icon     # For GFX_decision_mission_icon
+    is_good = yes
+    days_mission_timeout = 7
+    selectable_mission = yes
+    complete_effect = {
+	country_event = ger.39
+      custom_effect_tooltip = influence_gain_3 add_to_variable = {
+	var = influence_number
+	value = 3
+} 
+clr_country_flag =  hitler_mission_continuous_focus 
+    }
+    timeout_effect = {
+	country_event = ger.38
+        custom_effect_tooltip = influence_reduction_6 add_to_variable = {
+	var = influence_number
+	value = -6
+} 
+	clr_country_flag =  hitler_mission_continuous_focus 
+    }
+}
+influence_acquire_equipment = {
+    activation = {
+	
+has_country_flag =  hitler_mission_acquire_equipment
+
+    }
+    available = {
+if = { 
+limit = { has_equipment = {
+    infantry_equipment_1 < 10000
+} }
+has_equipment = {
+    infantry_equipment_1 > 10000
+} 
+
+}
+else_if = { 
+limit = { has_equipment = {
+    infantry_equipment_1 > 10000
+} has_equipment = {
+    infantry_equipment_1 < 40000
+}
+}
+has_equipment = {
+    infantry_equipment_1 > 40000
+} 
+
+}
+else_if = { 
+limit = { has_equipment = {
+    infantry_equipment_1 > 40000
+} has_equipment = {
+    infantry_equipment_1 < 100000
+}
+}
+has_equipment = {
+    infantry_equipment_1 > 100000
+} 
+
+}
+}
+     
+    cancel_trigger = {#
+    }
+    icon = mission_icon     # For GFX_decision_mission_icon
+    is_good = yes
+    days_mission_timeout = 7
+    selectable_mission = yes
+    complete_effect = {
+	country_event = ger.39
+      custom_effect_tooltip = influence_gain_3 add_to_variable = {
+	var = influence_number
+	value = 3
+} 
+clr_country_flag =  hitler_mission_acquire_equipment
+    }
+    timeout_effect = {
+	country_event = ger.38
+        custom_effect_tooltip = influence_reduction_6 add_to_variable = {
+	var = influence_number
+	value = -6
+} 
+	clr_country_flag =  hitler_mission_continuous_focus 
+    }
+}
+influence_build_buildings = {
+    activation = {
+	
+has_country_flag =  hitler_mission_build_buildings
+
+    }
+  available = {
+if = { 
+limit = { num_of_factories < 100 }
+num_of_factories > 100 } 
+
+else_if = { 
+limit = { num_of_factories > 100 num_of_factories < 115}
+num_of_factories < 160 } 
+else_if = { 
+limit = { num_of_factories > 115 num_of_factories < 130}
+num_of_factories < 130 } 
+else_if = { 
+limit = { num_of_factories > 130 num_of_factories < 155}
+num_of_factories < 155 } 
+
+
+
+}
+
+
+
+
+
+     
+    cancel_trigger = {#
+    }
+    icon = mission_icon     # For GFX_decision_mission_icon
+    is_good = yes
+    days_mission_timeout = 7
+    selectable_mission = yes
+    complete_effect = {
+	country_event = ger.39
+      custom_effect_tooltip = influence_gain_3 add_to_variable = {
+	var = influence_number
+	value = 3
+} 
+clr_country_flag =  hitler_mission_build_buildings
+    }
+    timeout_effect = {
+	country_event = ger.38
+        custom_effect_tooltip = influence_reduction_6 add_to_variable = {
+	var = influence_number
+	value = -6
+} 
+	clr_country_flag =  hitler_mission_continuous_focus 
+    }
+}
+beseech_the_fuhrer = { ##
+
+		icon = generic_decision
+
+		available = {
+#custom_trigger_tooltip = {
+#		 tooltip = influence_trigger_75		
+#   check_variable = {
+#   influence_number < 75
+#} 
+#}
+				 }
+
+		visible = {
+			
+		}
+
+		fire_only_once = no
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 25
+
+		complete_effect = { country_event = { id = ger.21  days = 1} }
+
+		days_remove = 90
+		remove_effect = { }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+pledge_loyalty = { ##
+
+		icon = generic_decision
+
+		available = {
+		#  custom_trigger_tooltip = {
+#    tooltip = influence_trigger_60		
+#   check_variable = {
+#  	influence_number < 60
+#}
+#}
+				 }
+
+		visible = {
+			NOT = { has_global_flag = KESSEL_start_trigger }
+		}
+
+		fire_only_once = no
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 35
+
+		remove_effect = { }
+
+		days_remove = 45
+		complete_effect = { custom_effect_tooltip = influence_gain_5 add_to_variable = {
+	var = influence_number
+	value = 5
+}  }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+report_anti_party_behaviour = { ##
+
+		icon = generic_decision
+
+		available = {
+		#  custom_trigger_tooltip = {
+#    tooltip = influence_trigger_60		
+#   check_variable = {
+#  	influence_number < 60
+#}
+#}
+				 }
+
+		visible = {
+			NOT = { has_global_flag = KESSEL_start_trigger }
+		}
+
+		fire_only_once = no
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 35
+
+		remove_effect = { }
+
+		days_remove = 45
+		complete_effect = { add_war_support = -0.05 add_stability = 0.05 custom_effect_tooltip = influence_gain_8 add_to_variable = {
+	var = influence_number
+	value = 8
+}  }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+argue_our_case = { ##
+
+		icon = generic_decision
+
+		available = {
+		 
+				 }
+
+		visible = {
+			#NOT = { has_global_flag = KESSEL_start_trigger }
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 30
+
+		complete_effect = { random_list = { 100 = { custom_effect_tooltip = influence_gain_5 add_to_variable = {
+	var = influence_number
+	value = 5
+} } 100 = { custom_effect_tooltip = influence_reduction_5 add_to_variable = {
+	var = influence_number
+	value = -5
+} }} }
+
+		days_remove = 3
+		remove_effect = {   }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+blame_colleagues = { ##
+
+		icon = generic_decision
+
+		available = {
+		    custom_trigger_tooltip = {
+    tooltip = influence_trigger_40		
+   check_variable = {
+  	influence_number < 40
+}
+				 } }
+
+		visible = {
+			NOT = { has_global_flag = KESSEL_start_trigger }
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 35
+		complete_effect = { }
+
+		days_remove = 2
+		remove_effect = {  custom_effect_tooltip = influence_gain_10 add_to_variable = {
+	var = influence_number
+	value = 10
+}  }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+resign_command = { ##
+
+		icon = generic_decision
+
+		available = {
+		   custom_trigger_tooltip = {
+    tooltip = influence_trigger_25		
+   check_variable = {
+  	influence_number < 25
+}
+				 } }
+
+		visible = {
+			NOT = { has_global_flag = KESSEL_start_trigger }
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 25
+		complete_effect = { }
+
+		days_remove = 3
+		remove_effect = { retire_country_leader = yes custom_effect_tooltip = influence_gain_75 add_to_variable = {
+	var = influence_number
+	value = 75
+}  }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	}
+demand_more_control = { ##
+
+		icon = generic_decision
+
+		available = {
+		#  custom_trigger_tooltip = {
+#    tooltip = influence_trigger_60		
+#   check_variable = {
+#  	influence_number < 60
+#}
+#}
+				 }
+
+		visible = {
+			NOT = { has_global_flag = KESSEL_start_trigger }
+		}
+
+		fire_only_once = no
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 30
+
+		remove_effect = { }
+
+		days_remove = 45
+		complete_effect = { custom_effect_tooltip = influence_reduction_5 add_to_variable = {
+	var = influence_number
+	value = -5
+}  }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+
+publicly_snub_hitler = { ##
+
+		icon = generic_decision
+
+		available = {
+		#  custom_trigger_tooltip = {
+#    tooltip = influence_trigger_60		
+#   check_variable = {
+#  	influence_number < 60
+#}
+#}
+				 }
+
+		visible = {
+			NOT = { has_global_flag = KESSEL_start_trigger }
+		}
+
+		fire_only_once = no
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 35
+
+		remove_effect = { }
+
+		days_remove = 45
+		complete_effect = { custom_effect_tooltip = influence_reduction_7 add_to_variable = {
+	var = influence_number
+	value = -7
+}  }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+slam_hitlers_leadership = { ##
+
+		icon = generic_decision
+
+		available = {
+		#  custom_trigger_tooltip = {
+#    tooltip = influence_trigger_60		
+#   check_variable = {
+#  	influence_number < 60
+#}
+#}
+				 }
+
+		visible = {
+			
+		}
+
+		fire_only_once = no
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 50
+		remove_effect = { }
+
+		days_remove = 45
+		complete_effect = { custom_effect_tooltip = influence_reduction_12 add_to_variable = {
+	var = influence_number
+	value = -12
+}  }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+disregard_nazi_party = { ##
+
+		icon = generic_decision
+
+		available = {
+		custom_trigger_tooltip = {
+  tooltip = influence_trigger_10		
+   check_variable = {
+  	influence_number < 10
+}
+}
+				 }
+
+		visible = {
+			NOT = { has_global_flag = KESSEL_start_trigger }
+		}
+
+		fire_only_once = no
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 125
+
+		remove_effect = { }
+
+		days_remove = 45
+		complete_effect = { custom_effect_tooltip = influence_reduction_10 add_to_variable = {
+	var = influence_number
+	value = -10
+}  custom_effect_tooltip = hitler_wont_like_this 
+	hidden_effect = { country_event = { id = ger.44 days = 3 random_days = 4 } }}
+
+		ai_will_do = {
+			base = 1
+			
+			
+		
+		}
+	} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+GER_situation_in_ostfront = { 
+transfer_stuff = { ##
+
+		icon = generic_decision
+
+		available = {
+		 
+}
+				 
+
+		visible = {
+			NOT = { has_global_flag = KESSEL_start_trigger }
+		}
+
+		fire_only_once = no
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 75
+
+		remove_effect = { }
+
+		days_remove = 45
+		complete_effect = { custom_effect_tooltip = influence_gain_5 add_to_variable = {
+	var = influence_number
+	value = 5
+}  }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	}} 
+
+
+scorched_earth = {
+
+GER_scorched_earth_north = {
+
+		icon = generic_scorched_earth
+		
+		available = {
+			has_war = yes
+			
+			has_equipment = {
+				support_equipment > 24
+			}
+	
+		}
+
+		cost = 50
+		fire_only_once = yes
+		visible = { 
+			OR = {
+			
+				controls_state = 19
+				controls_state = 17
+				controls_state = 57
+				controls_state = 58
+				controls_state = 59
+				controls_state = 61
+				controls_state = 62
+				controls_state = 97
+				controls_state = 59
+				controls_state = 61
+				controls_state = 63
+				controls_state = 105
+				controls_state = 108
+						
+			}}
+
+		
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = -25
+			}
+			every_controlled_state = {
+				limit = {
+					OR = {
+						#LIT
+						state = 19
+						state = 17
+						state = 62
+						state = 57
+						state = 58
+						state = 59
+						state = 61
+						state = 97
+						state = 96
+						state = 95
+						state = 63
+						state = 105
+						state = 108
+						
+						
+						
+					}
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 3
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+GER_scorched_earth_paris = {
+
+		icon = generic_scorched_earth
+		
+		available = {
+			has_war = yes
+			
+			has_equipment = {
+				support_equipment > 24
+			}
+	
+		}
+
+		cost = 50
+		fire_only_once = yes
+		visible = { 
+			OR = {
+			
+				controls_state = 20
+				controls_state = 22
+				controls_state = 21
+				controls_state = 23
+			}
+
+		}
+
+		complete_effect = {
+hidden_effect = { news_event = new.8 }
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = -25
+			}
+			every_controlled_state = {
+				limit = {
+					OR = {
+						#LIT
+						state = 22
+						state = 20
+						state = 21
+						state = 23
+						
+						
+					}
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 3
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+GER_scorched_earth_north_coast = {
+
+		icon = generic_scorched_earth
+		
+		available = {
+			has_war = yes
+			
+			has_equipment = {
+				support_equipment > 24
+			}
+	
+		}
+
+		cost = 50
+		fire_only_once = yes
+		visible = { 
+			OR = {
+			
+				controls_state = 92
+				controls_state = 93
+				controls_state = 91
+
+			}
+}
+		
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = -25
+			}
+			every_controlled_state = {
+				limit = {
+					OR = {
+						#LIT
+						state = 91
+						state = 92
+						state = 93
+						
+						
+						
+					}
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 3
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}}
+
+respond_to_the_allies = { 
+
+declare_victory_over_dday = { ##PUSH EM OUt. CLAIM VICTORY. 
+
+		icon = generic_decision
+
+		available = {
+
+   NOT = {  has_global_flag =   france_liberated  }   
+		has_country_flag = OKW_allies_launched_dday 
+			all_owned_state = {  is_fully_controlled_by = OKW }  
+				 }
+
+		visible = {
+		always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 0
+
+		complete_effect = { }
+
+		days_remove = 15
+		remove_effect = { AEF = { set_country_flag = overlord_failed_trigger } hidden_effect = { news_event = end.2 } }
+
+		ai_will_do = {
+			base = 10
+			
+			
+		
+		}
+	} 
+declare_total_victory = { ##BEAT EVERYONE!
+
+		icon = generic_decision
+
+		available = {
+OR = { AND = { 
+	AEF = { has_country_flag = overlord_failed_trigger }
+		SOV = {	has_capitulated = yes } } AND = {SOV = {	has_capitulated = yes }
+	AEF = { exists = no } } }
+			
+				 }
+
+		visible = {
+		always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 0
+
+		complete_effect = { }
+
+		days_remove = 3
+		remove_effect = { hidden_effect = { news_event = end.7 }}
+
+		ai_will_do = {
+			base = 10
+			
+			
+		
+		}
+	} 
+the_allies_have_landed = { ##WHEN ALLIES INITIALLY LAND. YOU GET SOME TROOPS TO HELP.
+
+		icon = generic_decision
+
+		available = {
+			any_state = { is_owned_by = OKW is_controlled_by = AEF }
+				 }
+
+		visible = {
+		always = yes
+		}
+
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 0
+
+		complete_effect = { }
+
+		days_remove = 2
+		remove_effect = {  
+set_country_flag = fifth_panzer_army_deployed
+###5TH PANZER ARMY DEPLOYED TO NORMANDY
+###LXVII ARMY CORPS
+####348 INF DIV
+custom_effect_tooltip = allies_have_landed_ger_effect
+hidden_effect = { 
+20 = {
+create_unit = {
+    division = "name = \"Grenadier-Regiment 863\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Grenadier-Regiment 864\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Grenadier-Regiment 1057\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} }
+capital_scope = { create_unit = {
+    division = "name = \"Grenadier-Regiment 1058\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+   division = "name = \"Grenadier-Regiment 1040\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+   division = "name = \"Grenadier-Regiment 1041\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+   division = "name = \"Grenadier-Regiment 1042\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+# 1040, 1041, 1042
+
+create_unit = {
+    division = "name = \"Sicherungs-Regiment 5\" division_template = \"Security Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+
+######LXXXVI ARMY CORPS
+###276 INF DIV
+create_unit = {
+    division = "name = \"Grenadier-Regiment 986\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Grenadier-Regiment 987\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Grenadier-Regiment 988\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+
+###159 INF DIV
+create_unit = {
+    division = "name = \"Grenadier-Regiment 1209\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Grenadier-Regiment 1210\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Grenadier-Regiment 1211\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+
+###346 INF
+create_unit = {
+    division = "name = \"Grenadier-Regiment 857\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Grenadier-Regiment 858\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+
+
+####744 INF
+create_unit = {
+    division = "name = \"Grenadier-Regiment 731\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Grenadier-Regiment 744\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Grenadier-Regiment 763\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+
+###1 SS PZ K
+##716
+
+create_unit = {
+    division = "name = \"Grenadier-Regiment 726\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Grenadier-Regiment 736\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+##Panzer lehr div
+
+create_unit = {
+    division = "name = \"I/Pzr-Lehr-Reg. 130\" division_template = \"Panzer Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"II/Pzr-Lehr-Reg. 130\" division_template = \"Panzer Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+
+} 
+create_unit = {
+    division = "name = \"I/PzGren-Lehr-Reg. 901\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"II/PzGren-Lehr-Reg. 902\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Pzr-Artillerie-Reg. 130\" division_template = \"SPG Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+###12 SS PZ
+create_unit = {
+    division = "name = \"SS-Panzerregiment 12\" division_template = \"Panzer Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+	
+} 
+create_unit = {
+    division = "name = \"SS-Panzergrenadierregiment 26\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"SS-Panzergrenadierregiment 25\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+	
+} 
+##21st PZ
+create_unit = {
+    division = "name = \"I/Panzer-Regiment 100\" division_template = \"Panzer Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+	
+} 
+create_unit = {
+    division = "name = \"II/Panzer-Regiment 100\" division_template = \"Panzer Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+	
+} 
+create_unit = {
+    division = "name = \"I/Panzergrenadier-Regiment 125\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"II/Panzergrenadier-Regiment 125\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+	
+} 
+create_unit = {
+    division = "name = \"Pzr-Artillerie-Reg. 155\" division_template = \"SPG Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"SS-PzGren-Regiment 35\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"SS-PzGren-Regiment 36\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+	
+} 
+####2SS PZ K
+#9 SS PZ
+create_unit = {
+    division = "name = \"SS-Panzerregiment 9\" division_template = \"Panzer Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+
+} 
+create_unit = {
+    division = "name = \"SS-Panzergrenadierregiment 19\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"SS-Panzergrenadierregiment 20\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+	
+} 
+
+create_unit = {
+    division = "name = \"Pzr-Artillerie-Reg. 9\" division_template = \"SPG Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+}
+
+
+}
+
+
+
+
+
+
+} }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+fall_of_paris = { ##WHEN ALLIES TAKE PARIS
+
+		icon = generic_decision
+
+		available = {
+			20 = {  is_controlled_by = AEF }
+				 }
+
+		visible = {
+		always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 0
+
+		complete_effect = {  }
+
+		days_remove = 2
+		remove_effect = { 
+###1FALLSCIRARMEE
+#II FALLSCHIRMARMEEKORPS, WHAT ISNT DEPLOYED NOW IS.
+capital_scope = { 
+##17SS PZGREN DV
+create_unit = {
+    division = "name = \"I/SS-PzGren-Reg. 37\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"II/SS-PzGren-Reg. 37\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"I/SS-PzGren-Reg. 38\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"II/SS-PzGren-Reg. 38\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+###352 inf
+create_unit = {
+    division = "name = \"Grenadier-Regiment 914\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Grenadier-Regiment 915\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Grenadier-Regiment 916\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+
+create_unit = {
+    division = "name = \"Grenadier-Regiment 984\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+}  
+###11 panzer
+create_unit = {
+    division = "name = \"I/Panzer-Regiment 15\" division_template = \"Panzer Battalion\" start_experience_factor = 0.3"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"II/Panzer-Regiment 15\" division_template = \"Panzer Battalion\" start_experience_factor = 0.3"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"I/Panzergrenadier-Regiment 110\" division_template = \"Infantry Battalion (mot.)\" start_experience_factor = 0.2"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"I/Panzergrenadier-Regiment 111\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"II/Panzergrenadier-Regiment 110\" division_template = \"Infantry Battalion (mot.)\" start_experience_factor = 0.2"
+    owner = OKW
+	
+} 
+create_unit = {
+    division = "name = \"II/Panzergrenadier-Regiment 111\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Pzr-Artillerie-Reg. 119\" division_template = \"SPG Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+###36 inf
+ create_unit = {
+    division = "name = \"Grenadier-Regiment 87\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Grenadier-Regiment 118\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+##48 inf
+ create_unit = {
+    division = "name = \"Grenadier-Regiment 126\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Grenadier-Regiment 127\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+}
+create_unit = {
+    division = "name = \"Grenadier-Regiment 128\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+}
+###fallschjirmjager div 
+create_unit = {
+    division = "name = \"I/Fallschirmjäger-Regiment 5\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.5"
+    owner = OKW
+	
+} 
+create_unit = {
+    division = "name = \"II/Fallschirmjäger-Regiment 5\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.5"
+    owner = OKW
+	
+} 
+create_unit = {
+    division = "name = \"III/Fallschirmjäger-Regiment 5\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.5"
+    owner = OKW
+	
+} 
+####regiment 8
+create_unit = {
+    division = "name = \"I/Fallschirmjäger-Regiment 8\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.5"
+    owner = OKW
+	
+} 
+create_unit = {
+    division = "name = \"II/Fallschirmjäger-Regiment 8\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.5"
+    owner = OKW
+	
+} 
+create_unit = {
+    division = "name = \"III/Fallschirmjäger-Regiment 8\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.5"
+    owner = GER
+	
+} 
+create_unit = {
+    division = "name = \"I/Fallschirmjäger-Regiment 9\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.5"
+    owner = OKW
+	
+} 
+create_unit = {
+    division = "name = \"II/Fallschirmjäger-Regiment 9\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.5"
+    owner = OKW
+	
+} 
+create_unit = {
+    division = "name = \"III/Fallschirmjäger-Regiment 9\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.5"
+    owner = OKW
+	
+} 
+###275
+create_unit = {
+    division = "name = \"Grenadier-Regiment 983\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Grenadier-Regiment 984\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Grenadier-Regiment 985\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+###344 INF DIV
+create_unit = {
+    division = "name = \"Grenadier-Regiment 1057\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+
+create_unit = {
+    division = "name = \"Grenadier-Regiment 1058\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+####226inf
+create_unit = {
+    division = "name = \"Grenadier-Regiment 1040\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+
+
+
+
+
+
+}
+
+}
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+
+
+fall_of_brussels = { ##WHEN ALLIES TAKE BRUSSELS 
+
+		icon = generic_decision
+
+		available = {
+			20 = {  is_controlled_by = AEF }
+				 }
+
+		visible = {
+		always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 0
+
+		complete_effect = { }
+
+		days_remove = 3
+		remove_effect = { capital_scope = {
+ create_unit = {
+    division = "name = \"Grenadier-Regiment 860\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Grenadier-Regiment 861\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+}
+create_unit = {
+    division = "name = \"Grenadier-Regiment 880\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+}
+###
+ create_unit = {
+    division = "name = \"Grenadier-Regiment 1125\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Grenadier-Regiment 1256\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+}
+create_unit = {
+    division = "name = \"Grenadier-Regiment 1127\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
+    owner = OKW
+}
+  } }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+
+
+crossing_the_rhine = { ##WHEN ALLIES CROSS THE RHINE
+
+		icon = generic_decision
+
+		available = {custom_trigger_tooltip = {
+    tooltip = allies_crossed_rhine		
+			OR = { 
+		 AEF = { controls_province = 2607 }
+			AEF = { controls_province = 9654 }
+	AEF = { controls_province = 2365 }
+		AEF = { controls_province = 9737 }
+	AEF = { controls_province = 9744 }
+	AEF = { controls_province = 3541 }
+				 } } }
+
+		visible = {
+		always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 0
+
+		complete_effect = { }
+
+		days_remove = 2
+		remove_effect = { 
+capital_scope = { 
+###6th panzearmee
+###I ss pz
+
+
+create_unit = {
+    division = "name = \"I/SS Pzr-Regiment 1\" division_template = \"Panzer Battalion\" start_experience_factor = 1"
+    owner = OKW 
+}
+
+create_unit = {
+    division = "name = \"II/SS Pzr-Regiment 1\" division_template = \"Panzer Battalion\" start_experience_factor = 1"
+    owner = OKW 
+}
+
+create_unit = {
+    division = "name = \"I/SS-PzGren-Reg. 1\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 1"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"II/SS-PzGren-Reg. 1\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 1"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"I/SS-PzGren-Reg. 2\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 1"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"II/SS-PzGren-Reg. 2\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 1"
+    owner = OKW
+} 
+create_unit = {
+    division = "name = \"Pzr-Artillerie-Reg. 119\" division_template = \"SPG Battalion\" start_experience_factor = 0.2"
+    owner = OKW
+} 
+  } }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+GER_wunderwaffen = { panzer_maus = { ##
+
+		icon = generic_decision
+
+		available = {
+has_political_power > 50
+has_army_experience > 100
+ has_completed_focus = GER_special_panzers 
+				 }
+
+		visible = {
+			
+		}
+
+		fire_only_once = no
+
+			
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 0
+
+		complete_effect = {set_technology = { super_heavy_tank_chassis = 1 } add_political_power = -50  army_experience = -99 
+create_equipment_variant = {
+			name = "Pzkpf. VIII 'Maus'"
+			type = super_heavy_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_super_heavy_cannon
+				turret_type_slot = tank_super_heavy_four_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_cast_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = secondary_turret_small_cannon
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 14
+				tank_nsb_armor_upgrade = 10
+			}
+			icon = "gfx/interface/technologies/GER_maus.dds"
+		}
+hidden_effect = { set_technology = {
+    GER_maus_tech = 1
+} }
+
+}
+
+		days_remove = 0
+		remove_effect = { }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	}
+panzer_kugelblitz = { ##kugelblitz
+
+		icon = generic_decision
+
+		available = {
+has_political_power > 35
+has_army_experience > 5
+ 
+ has_completed_focus = GER_special_panzers 
+				 }
+
+		visible = {
+			
+		}
+
+		fire_only_once = no
+
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 0
+
+		complete_effect = { add_political_power = -35  army_experience = -6 create_equipment_variant = {
+			name = "Flakpanzer 'Kugelblitz'"
+			type = medium_tank_aa_equipment_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_anti_air_cannon_3
+				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = empty
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 5
+				tank_nsb_armor_upgrade = 4
+			}
+			icon = "gfx/interface/technologies/ger_kugelblitz.dds"
+		}
+
+			
+}
+
+		days_remove = 0
+		remove_effect = { }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	 } 
+air_kolibri = { ##
+
+		icon = generic_decision
+
+		available = {
+has_political_power > 50
+has_air_experience > 50
+ 
+ has_completed_focus = GER_special_aircraft 
+				 }
+
+		visible = {
+			
+		}
+
+		fire_only_once = no
+
+			
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 0
+
+		complete_effect = {add_political_power = -50  air_experience = -50
+create_equipment_variant = {
+    name = "Fl 282 'Kolibri'"
+    type = scout_plane_equipment_2
+    obsolete = no
+    upgrades = {
+       
+        plane_engine_upgrade = 5
+	   plane_armor_upgrade = 5
+	   plane_reliability_upgrade = 5
+    }
+icon="gfx/interface/technologies/ger_kolibri.dds"
+}
+
+
+}
+
+		days_remove = 0
+		remove_effect = { }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	}
+land_zg1229 = { ##
+
+		icon = generic_decision
+
+		available = {
+has_political_power > 50
+has_army_experience > 30
+ 
+ has_completed_focus = GER_special_rifles
+				 }
+
+		visible = {
+			
+		}
+
+		fire_only_once = no
+
+			
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 0
+
+		complete_effect = {add_political_power = -50  army_experience = -30
+		add_ideas = zg1229_idea 
+create_equipment_variant = {
+			name = "ZG 1229"
+			type = infantry_equipment_3
+			parent_version = 0
+			icon="gfx/interface/technologies/ger_zg1229.dds"
+
+
+}
+}
+		days_remove = 0
+		remove_effect = { }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

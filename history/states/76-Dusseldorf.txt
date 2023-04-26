@@ -1,0 +1,74 @@
+
+state={
+	id=76
+	name="STATE_76"
+	resources={
+		oil=50.000
+		aluminium=150.000
+		rubber=40.000
+		tungsten=60.000
+		steel=120.000
+		chromium=70.000
+	}
+
+	history={
+		1918.3.20.12 = {
+		owner = DKR
+		add_core_of = DKR
+		}
+ 	1943.3.1.12 = {
+		owner = OKW
+		add_core_of = OKW
+		remove_core_of = DKR
+		}
+
+		buildings = {
+			fuel_silo = 1
+			anti_air_building = 5
+			infrastructure = 5
+			industrial_complex = 11
+			arms_factory = 9
+
+		}
+		victory_points = {
+			9743 5 
+		}
+		victory_points = {
+			4537 5 
+		}
+	
+		victory_points = {
+			9656 5 
+		}
+		victory_points = {
+			9655 5 
+		}
+		victory_points = {
+			9652 4 
+		}
+		victory_points = {
+			9657 4 
+		}
+		victory_points = {
+			9658 4 
+		}
+		victory_points = {
+			9654 4 
+		}
+		victory_points = {
+			9653 4 
+		}
+		victory_points = {
+			9661 6 
+		}
+
+	}
+
+	provinces={
+		159 211 267 281 373 403 414 445 501 541 631 643 872 940 1008 1047 1085 1100 1153 1198 1237 1299 1350 1355 1414 1440 1445 1482 1630 1684 1753 1774 1780 1792 1873 1936 1952 1959 2027 2046 2074 2114 2138 2183 2193 2264 2309 2347 2352 2365 2367 2412 2456 2497 2501 2513 2529 2611 2645 2646 2685 2687 2796 2836 2896 2932 3007 3035 3054 3072 3115 3130 3146 3167 3224 3243 3342 3380 3451 3453 3491 3528 3541 3548 3709 3793 3926 3980 3993 4028 4143 4161 4221 4268 4273 4286 4290 4344 4373 4424 4425 4426 4427 4432 4437 4441 4444 4478 4483 4493 4505 4517 4537 4550 4567 4568 4574 8377 8653 9574 9575 9651 9652 9653 9654 9655 9656 9657 9658 9659 9660 9661 9732 9733 9734 9735 9736 9737 9738 9739 9740 9741 9742 9743 9744 9745 9746 9747 
+	}
+	manpower=400469
+	buildings_max_level_factor=3.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

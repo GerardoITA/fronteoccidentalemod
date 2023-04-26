@@ -1,0 +1,31 @@
+
+state={
+	id=105
+	name="STATE_105"
+	history={
+buildings = { infrastructure = 4 } 
+victory_points = { 1786 4 }
+	1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+	}
+
+	provinces={
+		1786 5439 9600 
+	}
+	manpower=70240
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

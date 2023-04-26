@@ -1,0 +1,40 @@
+state={
+	id=116
+	name="STATE_116"
+	history = { 
+buildings = { infrastructure = 3 } 
+1918.3.20.12 = {
+		owner = HOL
+		add_core_of = HOL
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = HOL
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+victory_points = { 77 4  }
+victory_points = { 833 4  } 
+victory_points = { 8180 6  } #roosendaal
+victory_points = { 2864 7  } #breda
+victory_points = { 2568 4  }
+victory_points = { 8342 7  } #Tilburg
+victory_points = { 3556 8  } #Eindhoven
+victory_points = { 8869 4  } #Eindhoven
+victory_points = { 8068 3  } #Veldhoven
+victory_points = { 925 4  }#Sittard-Geleen
+victory_points = { 1001 4  }#Kerkrade
+
+}
+	provinces={
+		7981 6977 8861 8180 8342 8828 8068 8869 25 35 74 77 168 275 287 290 303 305 339 418 447 487 495 508 707 833 924 1011 1270 1361 1411 1447 1605 1622 1765 1937 1957 2056 2064 2067 2208 2211 2403 2506 2568 2679 2710 2864 2870 2969 3021 3046 3055 3108 3126 3187 3212 3248 3267 3317 3336 3432 3556 3662 3771 3888 3935 3939 4018 4059 4110 4141 4368 4435 4436 4445 4449 4450 4451 4456 4458 4463 4467 4470 4475 4480 4491 4494 4524 
+	}
+	manpower=1973176
+	state_category = city 
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

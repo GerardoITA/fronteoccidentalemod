@@ -1,0 +1,75 @@
+﻿add_namespace = fre
+
+#report_event_degaulle_churchill
+#report_event_degaulle_inspect_troops
+#report_event_france_parade
+country_event = { ##DISAGREEMENT BETWEEN FRENCH AND ALLIED CHIEFS!
+	id = fre.1
+	title = fre.1.t
+	desc = fre.1.d
+	picture = GFX_report_event_planning_overlord
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = fre.1.a
+custom_effect_tooltip = cohesion_loss_5
+	add_to_variable = {
+	var = cohesion_number
+	value = -5
+} 
+	}
+}
+country_event = { ##FRENCH ANGER AT BEING KEPT OUT OF OVERLORD
+	id = fre.2
+	title = fre.2.t
+	desc = fre.2.d
+	picture = GFX_report_event_degaulle_churchill
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = fre.2.a
+custom_effect_tooltip = cohesion_loss_6
+	add_to_variable = {
+	var = cohesion_number
+	value = -6
+} 
+	}
+}
+country_event = { #######American troops refusing to take orders from French officers
+	id = fre.3
+	title = fre.3.t
+	desc = fre.3.d
+	picture = GFX_report_event_degaulle_inspect_troops
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = fre.3.a
+custom_effect_tooltip = cohesion_loss_6
+	add_to_variable = {
+	var = cohesion_number
+	value = -5
+} 
+	}
+}
+country_event = { #####
+	id = fre.4
+	title = fre.4.t
+	desc = fre.4.d
+	picture = GFX_report_event_france_parade
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = fre.4.a
+custom_effect_tooltip = cohesion_loss_6
+	add_to_variable = {
+	var = cohesion_number
+	value = -6
+} 
+	}
+}
+
+#possible events:
+##French colonial troop and american have a fight 
+##growing mistrust between french and british command
+#####british commanders refusing to work with french counterparts
+###american troops refusing to take orders from french officers

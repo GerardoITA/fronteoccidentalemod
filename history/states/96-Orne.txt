@@ -1,0 +1,64 @@
+
+state={
+	id=96
+	name="STATE_96"
+
+	history={
+		1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+		victory_points = { #
+			9601 5 
+		}
+		victory_points = {#
+			9602 5 
+		}
+victory_points = {#
+			822 5 
+		}
+		victory_points = {#
+			2177 5 
+		}
+		victory_points = { #
+			9771 2 
+		}
+		victory_points = {#
+			9769 2 
+		}
+		victory_points = {#
+			9774 2 
+		}
+		victory_points = {#
+			9770 2 
+		}
+		victory_points = {
+			9773 2 
+		}
+		victory_points = {
+			3539 2 
+		}
+		victory_points = {
+			4381 2 
+		}
+
+	}
+
+	provinces={
+		23 184 314 319 398 412 451 473 592 688 720 770 791 822 839 845 867 1069 1163 1295 1318 1370 1371 1372 1378 1528 1545 1612 1663 1781 1799 1800 1926 2169 2177 2290 2394 2454 2458 2482 2499 2671 2874 2921 2953 2959 3011 3116 3168 3230 3235 3363 3539 3562 3576 3589 3614 3626 3795 3860 3897 3944 4156 4241 4299 4311 4338 4381 5034 5053 5076 5093 5102 5109 5119 5141 5145 5191 5199 9601 9602 9769 9770 9771 9772 9774 9776 
+	}
+	manpower=273181
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

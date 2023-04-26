@@ -1,0 +1,43 @@
+
+OKW_ostfront_situation = {
+	initial_value = 0.25
+	left_side = OKW_ostfront_collapse
+	right_side = OKW_ostfront_stability
+	decision_category = OKW_balance_of_power_decisions
+	range = {
+		id = mid_range
+		min = -0.1
+		max = 0.1
+		modifier = {
+			war_support_weekly = 0.5
+		}
+	}
+	side = {
+		id = OKW_ostfront_collapse
+		icon = GFX_idea_generic_agrarian_society
+		range = {
+			id = left_side_range
+			min = -1
+			max = -0.1
+			modifier = {
+				war_support_weekly = 0.1
+			}
+		}
+	}
+	side = {
+		id = OKW_ostfront_stability
+		icon = GFX_idea_generic_degauss_ship_hulls
+		range = {
+			id = right_side_range
+			min = 0.1
+			max = 1
+			modifier = {
+				war_support_weekly = 0.9
+			}
+		}
+	}
+}
+
+####ACTIVATION VIA SCRIPTED EFFECT
+###DEFINITION OF BOP, HERE VIA THIS FILE
+###DECISIONS THAT AFFECT BOP DEFINED IN CATEGORIES AND DECISIONS.

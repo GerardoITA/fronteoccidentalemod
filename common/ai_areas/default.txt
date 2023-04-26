@@ -1,0 +1,9 @@
+areas = {
+	
+	test_continent = {
+		continents = {
+			test_continent
+		}
+	}
+	
+}

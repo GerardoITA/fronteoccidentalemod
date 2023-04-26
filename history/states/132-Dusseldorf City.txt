@@ -1,0 +1,27 @@
+
+state={
+	id=132
+	name="STATE_132"
+	provinces={
+		2607 9731 9759 
+	}
+	history = { 
+ 1918.3.20.12 = {
+		owner = DKR
+		add_core_of = DKR
+}
+ 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = OKW
+		remove_core_of = DKR
+	}
+buildings = { anti_air_building = 5 infrastructure = 5 industrial_complex = 2 arms_factory = 1 } 	
+victory_points = {
+			9759 10 
+		}
+} 
+	manpower=435153
+	buildings_max_level_factor=1.000
+	state_Category = large_city
+	local_supplies=0.000
+}

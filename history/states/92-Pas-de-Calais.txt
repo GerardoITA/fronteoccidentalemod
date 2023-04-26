@@ -1,0 +1,57 @@
+
+state={
+	id=92
+	name="STATE_92"
+	history = { buildings = {  
+4735 = { naval_base = 1 coastal_bunker = 1 bunker = 1 }
+4669 = { naval_base = 2  coastal_bunker = 2 bunker = 1} 
+4664 = { coastal_bunker = 2 bunker = 1} 
+4644 = { coastal_bunker = 3 bunker = 1} 
+4623 = { coastal_bunker = 3 bunker = 1} 
+4615 = { coastal_bunker = 3 bunker = 1} 
+4614 = { coastal_bunker = 3 bunker = 1} 
+4621 = { coastal_bunker = 3 bunker = 1} 
+2530 = { coastal_bunker = 3 bunker = 1} 
+3852 = { coastal_bunker = 4 bunker = 2} 
+4644 = { coastal_bunker = 3 bunker = 1} 
+4655 = { coastal_bunker = 2 bunker = 1} 
+3942 = { naval_base = 2 coastal_bunker = 2 }
+ infrastructure = 3
+	anti_air_building = 2 
+ 4604 = { naval_base = 5 coastal_bunker = 5 bunker = 4}
+ } 
+ 1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+ 		1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+
+
+victory_points = { 264 8 } 
+ victory_points = { 1517 5 } 
+victory_points = { 3942 5 } 
+victory_points = { 4669 5 }
+victory_points = { 4664 5 }
+victory_points = { 4604 10 }
+victory_points = { 4623 2 }
+victory_points = { 4735 3 }
+victory_points = { 2635 3 }
+}
+	
+	provinces={
+		62 102 121 176 187 225 248 264 390 422 427 498 566 658 705 807 1028 1034 1070 1131 1183 1248 1267 1288 1344 1353 1417 1418 1437 1517 1550 1573 1654 1708 1764 1796 1809 1864 1942 1975 1987 1994 2000 2090 2109 2113 2241 2278 2463 2530 2594 2602 2635 2658 2702 2774 2783 2863 2909 2917 3047 3089 3093 3464 3526 3547 3699 3747 3852 3887 3942 4007 4071 4084 4201 4276 4355 4604 4614 4615 4621 4623 4627 4641 4644 4655 4664 4669 4672 4679 4694 4702 4709 4731 4735 4737 4741 4748 4753 4755 4769 4773 4783 9606 9607 9610  9623 9629 
+	}
+	manpower=1168545
+	state_category=large_city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,166 @@
+
+strategic_region={
+	id=10
+	name="STRATEGICREGION_10"
+	provinces={
+		2852 9764 9609 5418 3713 4867 16 41 45 51 83 88 170 220 228 265 270 273 288 324 399 423 436 440 441 627 680 698 708 747 757 838 863 877 914 1035 1042 1094 1109 1129 1132 1152 1189 1214 1228 1251 1376 1472 1475 1481 1487 1491 1502 1513 1544 1559 1607 1638 1675 1821 1831 1835 1900 1901 1954 1974 1999 2005 2035 2043 2050 2063 2068 2161 2170 2267 2276 2293 2295 2311 2361 2396 2415 2468 2475 2488 2502 2517 2520 2548 2705 2735 2738 2778 2793 2819 2843 2912 2918 2954 2972 2987 2988 2991 3045 3204 3211 3236 3255 3283 3294 3331 3381 3475 3503 3509 3537 3542 3554 3555 3569 3616 3631 3634 3659 3714 3743 3836 3902 3920 3957 4039 4077 4104 4147 4216 4266 4314 4330 4380 4386 4409 4859 4893 4896 4903 4908 4913 4915 4920 4925 4927 4931 4938 4943 4944 4954 4955 4956 4961 4964 4969 4970 4971 4976 4979 4980 4984 4989 4996 5001 5002 5004 5014 5023 5024 5026 5049 5080 5088 5096 5125 5153 5408 5419 5422 5432 5445 5451 9613 9614 9616 9625  9628 9662 
+	}
+	weather={
+	period={
+			between={ 0.0 30.0 }
+			temperature={ -9.0 11.0 }
+			no_phenomenon=0.500
+			rain_light=0.300
+			rain_heavy=0.100
+			snow=0.100
+			blizzard=0.000
+			arctic_water=0.000
+			mud=1.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.1 27.1 }
+			temperature={ -8.0 12.0 }
+			no_phenomenon=0.500
+			rain_light=0.300
+			rain_heavy=0.100
+			snow=0.100
+			blizzard=0.000
+			arctic_water=0.000
+			mud=1.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.2 30.2 }
+			temperature={ -2.0 15.0 }
+			no_phenomenon=0.500
+			rain_light=0.300
+			rain_heavy=0.100
+			snow=0.050
+			blizzard=0.000
+			arctic_water=0.000
+			mud=1.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.3 29.3 }
+			temperature={ 2.0 18.0 }
+			no_phenomenon=0.600
+			rain_light=0.400
+			rain_heavy=0.100
+			snow=0.000
+			blizzard=0.000
+			arctic_water=0.000
+			mud=1.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.4 30.4 }
+			temperature={ 5.0 21.0 }
+			no_phenomenon=0.600
+			rain_light=0.350
+			rain_heavy=0.100
+			snow=0.000
+			blizzard=0.000
+			arctic_water=0.000
+			mud=1.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.5 29.5 }
+			temperature={ 9.0 25.0 }
+			no_phenomenon=0.700
+			rain_light=0.250
+			rain_heavy=0.050
+			snow=0.000
+			blizzard=0.000
+			arctic_water=0.000
+			mud=1.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.6 30.6 }
+			temperature={ 11.0 27.0 }
+			no_phenomenon=0.700
+			rain_light=0.250
+			rain_heavy=0.050
+			snow=0.000
+			blizzard=0.000
+			arctic_water=0.000
+			mud=1.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.7 30.7 }
+			temperature={ 10.0 27.0 }
+			no_phenomenon=0.700
+			rain_light=0.250
+			rain_heavy=0.050
+			snow=0.000
+			blizzard=0.000
+			arctic_water=0.000
+			mud=1.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.8 29.8 }
+			temperature={ 6.0 25.0 }
+			no_phenomenon=0.700
+			rain_light=0.250
+			rain_heavy=0.150
+			snow=0.000
+			blizzard=0.000
+			arctic_water=0.000
+			mud=1.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.9 30.9 }
+			temperature={ 3.0 18.0 }
+			no_phenomenon=0.600
+			rain_light=0.350
+			rain_heavy=0.100
+			snow=0.000
+			blizzard=0.000
+			arctic_water=0.000
+			mud=1.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.10 29.10 }
+			temperature={ -1.0 14.0 }
+			no_phenomenon=0.500
+			rain_light=0.350
+			rain_heavy=0.150
+			snow=0.000
+			blizzard=0.000
+			arctic_water=0.000
+			mud=1.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.11 30.11 }
+			temperature={ -8.0 13.0 }
+			no_phenomenon=0.500
+			rain_light=0.300
+			rain_heavy=0.150
+			snow=0.050
+			blizzard=0.000
+			arctic_water=0.000
+			mud=1.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
+	}
+}

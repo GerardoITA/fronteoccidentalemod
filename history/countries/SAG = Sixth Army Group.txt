@@ -1,0 +1,21 @@
+﻿capital = 124
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 100
+	communism = 0
+}
+
+create_country_leader = {
+	name = "Jacob L. Devers"
+	desc = ""
+	picture = Devers.dds
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}

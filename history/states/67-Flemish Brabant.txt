@@ -1,0 +1,29 @@
+state={
+	id=67
+	name="STATE_67"
+	history = {
+buildings = { infrastructure = 2 } 
+ 1918.3.20.12 = {
+		owner = DKR
+		add_core_of = ENT
+		}
+ 		1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+	} 
+1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+	} 
+victory_points = { 8833 7 } 
+}
+	provinces={
+		 8833 43 771 875 883 1099 1104 1160 1349 1421 1556 1611 1655 2034 2364 2922 3171 3252 3466 3483 3565 3582 3702 4194 4267 4405 4630 4652 4658 
+	}
+	manpower=893583
+	state_category = large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

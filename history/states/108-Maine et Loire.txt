@@ -1,0 +1,31 @@
+
+state={
+	id=108
+	name="STATE_108"
+
+	history={
+buildings = { infrastructure = 2 } 
+		1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+	}
+
+	provinces={
+		5 18 103 295 329 578 612 672 824 1222 1345 1476 1520 1610 1731 1995 2084 2086 2159 2581 2891 3004 3012 3229 3318 3357 3511 3638 3850 3924 4109 4316 4325 5336 5344 5346 5347 5353 5361 5366 5389 5394 8690 9561 
+	}
+	manpower=109953
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

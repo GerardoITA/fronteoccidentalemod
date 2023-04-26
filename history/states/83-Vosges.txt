@@ -1,0 +1,31 @@
+
+state={
+	id=83
+	name="STATE_83"
+	provinces={
+		231 247 262 325 415 446 558 621 636 892 908 941 973 982 1037 1038 1257 1283 1316 1423 1699 1865 2061 2083 2120 2185 2284 2298 2378 2421 2478 2563 2567 2596 2676 2868 2901 2940 3029 3057 3062 3161 3306 3383 3405 3529 3538 3584 3601 3653 3656 3666 3698 3752 3782 3861 3953 4115 4233 4332 4400 4412 5183 5198 5205 5207 5214 5215 5216 5224 5228 5246 5253 5272 
+	}
+	manpower=342315
+	history= { 
+
+	1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+ 	1943.3.1.12 = {
+		owner = OKW
+		add_core_of = OKW
+		remove_core_of = DKR
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+buildings = { infrastructure = 2 }
+
+}
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,15 @@
+
+animation = {
+	name = "geo_sdkfz250_attack_animation"
+	file = "geo_sdkfz250_attack.anim"
+}
+
+animation = {
+	name = "geo_sdkfz250_idle_animation"
+	file = "geo_sdkfz250_idle.anim"
+}
+
+animation = {
+	name = "geo_sdkfz250_move_animation"
+	file = "geo_sdkfz250_move.anim"
+}

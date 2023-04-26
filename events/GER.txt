@@ -1,0 +1,1669 @@
+###########################
+# OKW events
+###########################
+
+add_namespace = ger
+
+country_event = { ##WELCOME, 1943 start date
+	id = ger.1
+	title = ger.1.t
+	desc = ger.1.d
+	picture = GFX_report_event_atlantic_wall
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	immediate = { hidden_effect = { set_fuel_ratio = 0.5 add_equipment_to_stockpile = {
+    type = train_equipment_3
+    amount = 25
+    producer = OKW
+}
+add_equipment_to_stockpile = {
+    type = convoy
+    amount = 15
+    producer = OKW
+}
+add_equipment_to_stockpile = {
+    type = train_equipment_2
+    amount = 75
+    producer = OKW
+}
+add_equipment_to_stockpile = {
+    type = train_equipment_1
+    amount = 50
+    producer = OKW
+} } }
+	option = {
+	name = aef.1.a
+	}
+}
+country_event = { ##DESIGNATED STRONGPOINTS
+	id = ger.2
+	title = ger.2.t
+	desc = ger.2.d
+	picture = GFX_report_event_german_bunker
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {##britanny
+	name = ger.2.a
+61 = { add_dynamic_modifier = { modifier = fortification_focus }  }
+59 = { add_dynamic_modifier = { modifier = fortification_focus }  }
+57 = { add_dynamic_modifier = { modifier = fortification_focus }  }
+		
+	}
+	option = {###normandy
+	name = ger.2.b
+17 = { add_dynamic_modifier = { modifier = fortification_focus }  }
+19 = { add_dynamic_modifier = { modifier = fortification_focus }  }
+62 = { add_dynamic_modifier = { modifier = fortification_focus }  }
+	}
+option = {#####Calais
+	name = ger.2.c
+91 = { add_dynamic_modifier = { modifier = fortification_focus }  }
+92 = { add_dynamic_modifier = { modifier = fortification_focus }  }
+93 = { add_dynamic_modifier = { modifier = fortification_focus }  }	
+	}
+	option = {#####low countries
+	name = ger.2.de
+10 = { add_dynamic_modifier = { modifier = fortification_focus }  }
+8 = { add_dynamic_modifier = { modifier = fortification_focus }  }
+7 = { add_dynamic_modifier = { modifier = fortification_focus }  }
+6 = { add_dynamic_modifier = { modifier = fortification_focus }  }	
+	}
+	
+}
+country_event = { ##APPOINT GENERAL INSPECTOR ROMMEL
+	id = ger.3
+	title = ger.3.t
+	desc = ger.3.d
+	picture = GFX_report_event_inspector_rommel
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.3.a
+	create_country_leader = {
+	name = "Erwin Rommel"
+	desc = "POLITCS_ROMMEL_DESC"
+	picture = "Rommel.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		general_inspector_of_western_defences
+	}
+} 
+	}
+	}
+
+country_event = { ##FIGHT FOR A NEW FATHERLAND
+	id = ger.4
+	title = ger.4.t
+	desc = ger.4.d
+	picture = GFX_report_event_germany_politician_handshake
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {###MAKE PEACE WITH ALLIES. WHATEVER IT MAY BE. FOCUS ON SOVIETS?
+	name = ger.4.a
+	#hidden_effect = {country_event = end.4 }
+	custom_effect_tooltip = germany_surrender_effect
+	AEF = { country_event = aef.40
+	} }
+option = {
+	name = ger.4.b###CONTINUE WAR! 
+	}
+}
+country_event = { ##ALLIES ACCEPT, BUT THEY WANT US TO BE THEIR PUPPET.
+	id = ger.15
+	title = ger.15.t
+	desc = ger.15.d
+	picture = GFX_report_event_germany_politician_handshake
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {###ACCEPT.
+		name = ger.15.a
+		white_peace = AEF	
+AEF = { country_event = aef.41 puppet = OKW }
+ }
+option = {
+name = ger.15.b###CONTINUE WAR! 
+AEF = { country_event = aef.42 }
+	}
+}
+country_event = { ##ROMMEL's PLAN
+	id = ger.5
+	title = ger.5.t
+	desc = ger.5.d
+	picture = GFX_report_event_inspector_rommel
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.5.a
+	}
+}
+country_event = { ##RUNSTEDT'S PLAN
+	id = ger.6
+	title = ger.6.t
+	desc = ger.6.d
+	picture = GFX_report_event_runstedt
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.6.a
+	}
+}
+country_event = { ##COMPROMISE
+	id = ger.7
+	title = ger.7.t
+	desc = ger.7.d
+	picture = GFX_report_event_german_reichstag_gathering
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.7.a
+	complete_national_focus = GER_rommels_asparagus
+	complete_national_focus = GER_priortise_the_wall
+	complete_national_focus = GER_mobilitt_feuerkraft
+	}
+}
+country_event = { ##SOVIET ARRIVAL! IF ALLIES DONT PUSH SOON ENOUGH...
+	id = ger.8
+	title = ger.8.t
+	desc = ger.8.d
+	immediate = {load_oob = GER_1945 hidden_effect = {  news_event = new.1 
+		115 = { add_core_of = SOV } 
+		SOV = { add_ideas = plunder_of_germany 
+add_offsite_building = { type = arms_factory level = 38 } add_offsite_building = { type = industrial_complex level = 30 } transfer_state = 115 country_event = { id = sov.1 days = 7 } add_equipment_to_stockpile = {
+    type = train_equipment_1
+    amount = 28
+    producer = SOV
+} }
+add_resource = {
+    type = oil
+    amount = 75
+    state = 131
+}
+add_resource = {
+    type = steel
+    amount = 200
+    state = 131
+}
+add_resource = {
+    type = rubber
+    amount = 50
+    state = 131
+}
+		131 = { add_core_of = SOV }
+		SOV = { transfer_state = 131 }
+		SOV = { transfer_state = 130 }
+		130 = { add_core_of = SOV }
+		SOV = { load_oob = SOV_1945
+				delete_unit_template_and_units = {
+    division_template = "Grenadier Regiment"
+    disband = yes #will refund equipment and manpower
+}
+	delete_unit_template_and_units = {
+    division_template = "Grenadier Battalion"
+    disband = yes #will refund equipment and manpower
+}
+delete_unit_template_and_units = {
+    division_template = "Grenadier Battalion"
+    disband = yes #will refund equipment and manpower
+}
+delete_unit_template_and_units = {
+    division_template = "Fallschirmjäger Battalion"
+    disband = yes #will refund equipment and manpower
+}
+delete_unit_template_and_units = {
+    division_template = "Security Regiment"
+    disband = yes #will refund equipment and manpower
+}
+delete_unit_template_and_units = {
+    division_template = "Ost Battalion"
+    disband = yes #will refund equipment and manpower
+}
+delete_unit_template_and_units = {
+    division_template = "Panzergrenadier Battalion"
+    disband = yes #will refund equipment and manpower
+}
+delete_unit_template_and_units = {
+    division_template = "Infantry Battalion (mot.)"
+    disband = yes #will refund equipment and manpower
+}
+delete_unit_template_and_units = {
+    division_template = "Panzer Battalion"
+    disband = yes #will refund equipment and manpower
+}
+delete_unit_template_and_units = {
+    division_template = "SS Heavy Panzer Battalion"
+    disband = yes #will refund equipment and manpower
+}
+delete_unit_template_and_units = {
+    division_template = "SPG Battalion"
+    disband = yes #will refund equipment and manpower
+} }
+ }
+	AEF = { country_event = aef.10 }} 
+	#is_triggered_only = yes
+	trigger = { tag = OKW country_exists = OKW date > 1945.4.1 AEF = { has_country_flag = overlord_failed_trigger }} 
+	mean_time_to_happen = { days = 30 }
+	picture = GFX_report_event_soviet_tanks
+	fire_only_once = yes 
+	timeout_days = 7
+	option = {
+	name = ger.8.a
+	 news_event = new.1 
+	
+	}
+}
+
+country_event = { ##CONCEITED INTELLIGENCE. ALLIES CURSE THE GERMAN INTELLIGENCE AND COUNTER INTE.
+	id = ger.9
+	title = ger.9.t
+	desc = ger.9.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.9.a
+	}
+}
+
+######HITLER ORDERS. ACCEPT TO GAIN INFLUENCE, REFUSE AND LOSE.
+
+country_event = { ##MOVE TROOPS TO A RANDOM STATE
+	id = ger.10
+	title = ger.10.t
+	desc = ger.10.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes 
+	immediate = {set_country_flag = hitler_mission_move_troops }
+	fire_only_once = yes 
+	option = {
+	name = ger.10.a
+	}
+}
+######
+
+country_event = { ##DEPLOY *RANDOM* DIVISION TYPES
+	id = ger.11
+	title = ger.10.t
+	desc = ger.11.d
+	picture = GFX_report_event_generic_sign_treaty1
+	immediate = {set_country_flag = hitler_mission_deploy_unit }
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.8.a
+	}
+}
+country_event = { ##DO A CONTINUOUS FOCUS
+	id = ger.12
+	title = ger.10.t
+	desc = ger.12.d
+	picture = GFX_report_event_generic_sign_treaty1
+	immediate = { set_country_flag = hitler_mission_continuous_focus }
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.8.a
+	}
+}
+country_event = { ##ATTEND A MEETING WITH THE FUHRER
+	id = ger.13
+	title = ger.10.t
+	desc = ger.13.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {##Yes. 
+	name = ger.13.a
+	add_timed_idea = { idea = field_marshal_called_away days = 7 }
+	 custom_effect_tooltip = influence_gain_6 add_to_variable = {
+	var = influence_number
+	value = 6
+} 
+	
+	}
+option = {###No, I'm too busy.
+	name = ger.13.b
+	country_event = { id = ger.38 days = 1 }
+	add_political_power = 50 
+	 custom_effect_tooltip = influence_reduction_7 add_to_variable = {
+	var = influence_number
+	value = -7
+} 
+	
+	}
+}
+country_event = { ##APPOINT (CRAPPY GENERAL) AS AN ARMY LEADER
+	id = ger.131
+	title = ger.10.t
+	desc = ger.131.d
+	picture = GFX_report_event_generic_sign_treaty1
+	#immediate = {  }
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = { ##accept, appoint the fool
+	name = ger.131.a
+custom_effect_tooltip = GER_appoint_leader_mission_desc
+		 custom_effect_tooltip = influence_gain_10 add_to_variable = {
+	var = influence_number
+	value = 10
+} 
+		 hidden_effect = { create_corps_commander = {
+	#name = "Jean de Lattre de Tassigny"
+	#picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	traits = { }
+	id = 999
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+} }
+	}
+option = { 
+name = ger.131.b
+custom_effect_tooltip = general_chin_hitler_off
+add_stability = -0.05
+add_political_power = -50
+ custom_effect_tooltip = influence_reduction_5 add_to_variable = {
+	var = influence_number
+	value = -5
+} 
+}
+}
+country_event = { ##HAVE *THIS* AMOUNT OF *UNIT/EQUIPMENT*
+	id = ger.20
+	title = ger.10.t
+	desc = ger.20.d
+	picture = GFX_report_event_generic_sign_treaty1
+	immediate ={ set_country_flag = hitler_mission_acquire_equipment }
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.20.a
+	}
+}
+country_event = { ##BUILD *RANDOM* SHIT
+	id = ger.29
+	title = ger.10.t
+	desc = ger.29.d
+	picture = GFX_report_event_generic_sign_treaty1
+	immediate ={ set_country_flag = hitler_mission_build_buildings }
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.8.a
+	}
+}
+
+#####JULY PLOT FAILs. HITLER ESCAPES. START OF ADAM HILT
+#country_event = { ##
+#	id = ger.40
+#	title = ger.40.t
+#	desc = ger.40.d
+#	picture = GFX_report_event_german_reichstag_bombed
+#	is_triggered_only = yes 
+#	fire_only_once = yes 
+#	option = {
+#	name = ger.40.a
+#
+#		set_politics = {
+#	ruling_party = neutrality
+ #   elections_allowed = no
+#}
+#create_country_leader = {
+#	name = "Erwin Rommel"
+#	desc = "POLITICS_ROMMEL_DESC"
+#	picture = "Rommel.dds"
+#	expire = "1965.1.1"
+#	ideology = despotism
+#	traits = {
+#		
+##	}
+#}##
+#set_country_flag = july_plot_succeeded 
+#set_global_flag = july_plot_hitler_escaped
+#	}
+#	
+#} 
+##WARNED ABOUT DRAGOON - LONG.
+country_event = { ##
+	id = ger.16
+	title = ger.16.t
+	desc = ger.16.d
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.8.a
+	}
+}
+##WARNED ABOUT DRAGOON - SHORT
+country_event = { ##
+	id = ger.17
+	title = ger.17.t
+	desc = ger.17.d
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.8.a
+	}
+}
+###DANGER, LOW INFLUENCE EVENT
+country_event = { ##
+	id = ger.18
+	title = ger.18.t
+	desc = ger.18.d
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.8.a
+	}
+}
+###0 INFLUENCE. HITLER TAKES DIRECT CONTROL.
+country_event = { ##
+	id = ger.19
+	title = ger.19.t
+	desc = ger.19.d
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes 
+	timeout_days = 6 
+
+fire_only_once = yes 
+option = {
+name = ger.19.a
+custom_effect_tooltip = hitler-takes_control
+create_country_leader = {
+	name = "Adolf Hitler"
+	#desc = "POLITICS_ADOLF_HITLER_LEADER"
+	picture = "gfx/leaders/GER/hitleroverlord.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+	
+	} 
+set_country_flag = hitler_taken_direct_control
+	custom_effect_tooltip = influence_gain_1000 add_to_variable = {
+	var = influence_number
+	value = 1000
+} }
+	}
+}
+
+
+
+#######INFLUENCE DECISIONS
+####BESEECH THE FUHRER
+country_event = { ##
+	id = ger.21
+	title = ger.21.t
+	desc = ger.21.d
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {####% chance of different effects. Some good, some bad.
+	name = ger.21.a
+		custom_effect_tooltip = random_hitler_response_affect_influence
+		random_list = { 
+50 = { #add 2 influence
+custom_effect_tooltip = influence_gain_2 add_to_variable = {
+	var = influence_number
+	value = 2
+}
+} 
+40 = { #add 4 influence 
+custom_effect_tooltip = influence_gain_4 add_to_variable = {
+	var = influence_number
+	value = 4
+}
+}
+9 = { #add 10 influence 
+custom_effect_tooltip = influence_gain_1 add_to_variable = {
+	var = influence_number
+	value = 1
+}
+
+}
+5 = { #lose 5 influence 
+custom_effect_tooltip = influence_reduction_5 add_to_variable = {
+	var = influence_number
+	value = -5
+}
+
+}
+	}
+} }
+###PLEDGE LOYALTY
+country_event = { ##
+	id = ger.22
+	title = ger.22.t
+	desc = ger.22.d
+	picture = GFX_report_event_hitler_handshake
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {####% chance of different effects. Some good, some bad.
+	name = ger.8.a
+		random_list = { 
+50 = { #add 2 influence
+custom_effect_tooltip = influence_gain_2 add_to_variable = {
+	var = influence_number
+	value = 2
+}
+} 
+40 = { #add 4 influence 
+custom_effect_tooltip = influence_gain_4 add_to_variable = {
+	var = influence_number
+	value = 4
+}
+}
+9 = { #add 10 influence 
+custom_effect_tooltip = influence_gain_1 add_to_variable = {
+	var = influence_number
+	value = 1
+}
+
+}
+5 = { #lose 5 influence 
+custom_effect_tooltip = influence_reduction_5 add_to_variable = {
+	var = influence_number
+	value = -5
+}
+
+}
+}}}
+####ARGUE OUR CASE
+country_event = { ##
+	id = ger.23
+	title = ger.23.t
+	desc = ger.23.d
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {####% chance of different effects. Some good, some bad.
+	name = ger.8.a
+		random_list = { 
+50 = { #add 1 influence
+custom_effect_tooltip = influence_gain_1 add_to_variable = {
+	var = influence_number
+	value = 1
+}
+} 
+40 = { #add 3 influence 
+custom_effect_tooltip = influence_gain_3 add_to_variable = {
+	var = influence_number
+	value = 3
+}
+}
+9 = { #add 10 influence 
+custom_effect_tooltip = influence_gain_10 add_to_variable = {
+	var = influence_number
+	value = 10
+}
+}
+5 = { #lose 5 influence 
+custom_effect_tooltip = influence_reduction_5 add_to_variable = {
+	var = influence_number
+	value = -5
+}
+}
+	}
+} }
+country_event = { ##BLAME COLLEAGIES
+	id = ger.24
+	title = ger.24.t
+	desc = ger.24.d
+	picture = GFX_report_event_hitler_parade
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {####% chance of different effects. Some good, some bad.
+	name = ger.24.a
+		random_list = { 
+50 = { #add 1 influence
+} 
+40 = { #add 3 influence 
+}
+9 = { #add 10 influence 
+
+}
+5 = { #lose 5 influence 
+
+}
+	}
+} }
+
+country_event = { ##WEHRMACHT COUP. 
+	id = ger.25
+	title = ger.25.t
+	desc = ger.25.d
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.25.a
+	hidden_effect = { set_variable = { influence_number = 5 
+}	set_politics = {
+	ruling_party = neutrality
+    elections_allowed = no
+}
+create_country_leader = { ##NO HITLER FLEE
+	name = "Erwin Rommel"
+	desc = "POLITICS_ROMMEL_DESC"
+	picture = "Rommel.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	} }
+		
+}
+
+set_country_flag = july_plot_succeeded 
+custom_effect_tooltip = july_plot_carried_out
+	}
+
+option = {
+	name = ger.25.b #HITLER FLEES TO OPEN DOOR TO ADAM HILT
+		hidden_effect = {set_variable = { influence_number = 5 
+}  set_politics = {
+	 ruling_party = neutrality
+    elections_allowed = no
+}
+create_country_leader = {
+	name = "Erwin Rommel"
+	desc = "POLITICS_ROMMEL_DESC"
+	picture = "Rommel.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+set_country_flag = july_plot_succeeded 
+set_country_flag = hitler_escaped_july_plot
+
+	} custom_effect_tooltip = july_plot_carried_out_hitler_fled }
+}
+
+country_event = { ##WEHRMACHT COUP.
+	id = ger.28
+	title = ger.28.t
+	desc = ger.28.d
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.28.a
+	hidden_effect = { country_event = { id = ger.25 days = 3 }  }
+
+}
+
+	
+}
+	
+country_event = {###INFORMED OF TRANSPORTATION PLAN
+	id = ger.31
+	title = ger.31.t
+	desc = ger.31.d
+	picture = GFX_report_event_generic_bomber
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.32.a
+		
+	}
+}
+#######COASTLINE SURVEYS
+country_event = {###BENELUX
+	id = ger.33
+	title = ger.33.t
+	desc = ger.32.d
+	picture = GFX_report_event_beach_survey
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.32.a
+		
+	}
+}
+country_event = {#####NORTH FRANCE
+	id = ger.32
+	title = ger.33.t
+	desc = ger.32.d
+	picture = GFX_report_event_beach_survey
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.32.a
+		
+	}
+}
+country_event = {###NORMANDY
+	id = ger.34
+	title = ger.33.t
+	desc = ger.34.d
+	picture = GFX_report_event_beach_survey
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.32.a
+		
+	}
+}
+country_event = {###BRITTANY
+	id = ger.341
+	title = ger.33.t
+	desc = ger.341.d
+	picture = GFX_report_event_beach_survey
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.32.a
+		
+	}
+}
+country_event = {###INFLUENCE 0 TIMER RUNS OUT. HITLER MAD.
+	id = ger.35
+	title = ger.35.t
+	desc = ger.35.d
+	picture = GFX_news_event_angry_hitler
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {##ok sorry hitler
+	name = ger.35.a
+news_event = new.9
+custom_effect_tooltip = hitler_takes_control_tt
+IF = { limit = { NOT = { has_idea = confused_chain_of_command } } add_ideas = confused_chain_of_command }
+IF = { limit = { NOT = { has_idea = under_his_thumb } } add_ideas = under_his_thumb }
+IF = { limit = { NOT = { has_idea = beholden_to_fuhrer }}  add_ideas = beholden_to_fuhrer }
+add_to_variable = {
+	var = influence_number
+	value = 100
+} 
+hidden_effect = { set_country_flag = hitler_taken_direct_control
+		retire_country_leader = yes
+	
+}
+	}
+	option = { ##resist hitler! Begin the civil war! join the allies!
+	name = ger.35.b
+set_country_flag = july_plot_succeeded
+custom_effect_tooltip = revolt_against_hitler_tt
+	hidden_effect = { remove_ideas = confused_chain_of_command add_popularity = {
+    ideology = neutrality
+    popularity = 1
+} 
+		start_civil_war = {
+    ruling_party = neutrality
+    ideology = ROOT
+    size = 0.5
+    #capital = 282
+    states = {
+        115 130 126 127 529 530 528
+    }
+  #  keep_unit_leaders = {
+   #     750 751 752
+    #}
+    keep_political_leader = no
+    keep_political_party_members = yes
+}
+	}}
+}
+country_event = {###VOLKSTURM.
+	id = ger.36
+	title = ger.36.t
+	desc = ger.36.d
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {##
+	name = ger.8.a
+		
+	}
+
+}
+country_event = {###Allies demand puppeting
+	id = ger.37
+	title = ger.37.t
+	desc = ger.37.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {##ok we surrender
+	name = ger.37.a
+		hidden_effect = { news_event = end.4 }
+		AEF = { country_event = aef.41 }
+	}
+	option = {##NEVER.
+	name = ger.37.b
+		AEF = { country_event = aef.42 }
+	}
+
+}
+country_event = {###VOLKSTURM.
+	id = ger.38
+	title = ger.38.t
+	desc = ger.38.d
+	picture = GFX_report_event_french_resistance_01
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {##ok sorry hitler
+	name = ger.8.a
+		
+	}
+
+}
+country_event = {#
+	id = ger.39
+	title = ger.39.t
+	desc = ger.39.d
+	picture = GFX_report_event_hitler_handshake
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {##ok sorry hitler
+	name = ger.39.a
+		
+	}
+
+}
+country_event = { ##PLAY AS SOVIETS IF ALLIES DONT WANNA.
+	id = ger.41
+	title = ger.41.t
+	desc = ger.41.d
+	picture = GFX_report_event_stalin_01
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = { 
+	#no
+	name = ger.41.a
+	custom_effect_tooltip = dont_play_as_sov_GER
+	}
+	option = {
+	# sure thing!
+	name = aef.11.b
+	
+	trigger = { SOV = { is_ai = yes } } 
+	#set_global_flag = europe_turned_red
+	hidden_effect = { SOV = { change_tag_from = ROOT } }
+	
+	}
+	
+}
+country_event = { ##ALLIES LAUNCH DDAY. GERMANY NOW HAS THE OPTION TO DECLARE VICTORY.
+	id = ger.42
+	title = ger.42.t
+	desc = ger.42.d
+	picture = GFX_report_event_stalin_01
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = { 
+	#no
+	name = ger.42.a
+	custom_effect_tooltip = OKW_launched_dday_tooltip
+	set_country_flag = OKW_allies_launched_dday
+	}
+	
+	
+}
+country_event = { ##### AI BOOST, IF THEY LOSE TOO MANY UNITS!
+	id = ger.43
+	title = ger.43.t
+	desc = ger.43.d
+	picture = GFX_report_event_major_konig
+	fire_only_once = yes
+	trigger = { is_ai = yes date > 1944.6.1 tag = OKW OR = { OKW = { num_divisions  < 75 } OKW = { surrender_progress > 0.45 }} }
+	mean_time_to_happen = { days = 1 }
+	option = {
+	name = sov.OKW.a
+	capital_scope = { create_unit = {
+  division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+ division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"SS Heavy Panzer Battalion\" division_template = \"SS Heavy Panzer Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"SS Panzer Battalion\" division_template = \"Panzer Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"SS SPG Battalion\" division_template = \"SPG Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"SS Panzer Battalion\" division_template = \"Panzer Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"SS SPG Battalion\" division_template = \"SPG Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"SS Panzer Battalion\" division_template = \"Panzer Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"SS SPG Battalion\" division_template = \"SPG Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"SS Panzer Battalion\" division_template = \"Panzer Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"SS SPG Battalion\" division_template = \"SPG Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Panzer Battalion\" division_template = \"Panzer Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"SPG Battalion\" division_template = \"SPG Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+} } } 
+
+country_event = { #########ARMY GROUP B ARRIVES
+	id = ger.30
+	title = ger.30.t
+	desc = ger.30.d
+	picture = GFX_report_event_lithuania_army
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = ger.30.a
+		132 = { 
+	create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+ division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Fallschirmjäger Battalion\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Volksgrenadier Regiment\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+create_unit = {
+    division = "name = \"SS Heavy Panzer Battalion\" division_template = \"SS Heavy Panzer Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"SS Panzer Battalion\" division_template = \"Panzer Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"SS SPG Battalion\" division_template = \"SPG Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"SS Panzer Battalion\" division_template = \"Panzer Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"SS SPG Battalion\" division_template = \"SPG Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"SS Panzer Battalion\" division_template = \"Panzer Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"SS SPG Battalion\" division_template = \"SPG Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"SS Panzer Battalion\" division_template = \"Panzer Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"SS SPG Battalion\" division_template = \"SPG Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Panzer Battalion\" division_template = \"Panzer Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"SPG Battalion\" division_template = \"SPG Battalion\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+create_unit = {
+    division = "name = \"Panzergrenadier Battalion\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+    owner = OKW }
+
+
+
+
+}
+
+} }
+###JULY PLOT OUTCOMES!
+country_event = { #
+	id = ger.26
+	title = ger.26.t
+	trigger = { 
+tag = OKW date > 1944.6.1 NOT = { has_completed_focus = GER_discount_the_hearsay }
+		}
+	mean_time_to_happen = { days = 30 }
+	desc = ger.26.d
+	picture = GFX_report_event_generic_sign_treaty2
+	fire_only_once = yes 
+	immediate = { set_country_flag = julyplot_failed }
+	option = {####Outcome of the July Plot.
+	name = ger.26.a
+	
+
+custom_effect_tooltip = julyplot_failed
+	news_event = new.2
+	hidden_effect = { country_event = { id = ger.27 days = 7 } }
+} }
+country_event = { ##ROMMEL IMPLICATED. YOU HAVE TO REPLACE THE COMMANDER.
+	id = ger.27
+	title = ger.27.t
+	desc = ger.27.d
+	picture = GFX_report_event_inspector_rommel
+	is_triggered_only = yes 
+	immediate = { news_event = new.4 }
+	fire_only_once = yes 
+	option = {###MODEL
+	name = ger.27.a
+	kill_country_leader = yes
+retire_character = GER_erwin_rommel
+create_country_leader = {
+	name = "Walter Model"
+	desc = "POLITICS_MODEL_DESC"
+	picture = "Model.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		
+	}
+}
+	} }
+
+country_event = { ##DISREGARD NAZI PARTY EVENT. HITLER IS MAD.
+	id = ger.44
+	title = ger.44.t
+	desc = ger.44.d
+	picture = GFX_news_event_angry_hitler
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = { 
+	#NO COST, BUT HITLER IS ANGRY! TRIGGERS RAGE EVENT.
+	name = ger.44.a
+	custom_effect_tooltip = GER_absolute_chinning_off
+	set_country_flag = nazi_party_disregarded
+	}
+	option = { 
+	#COST, BUT IT KEEPS HITLER OFF YOU.
+	name = ger.44.b
+	custom_effect_tooltip = GER_gentle_chinning_off
+	
+	}
+	
+}

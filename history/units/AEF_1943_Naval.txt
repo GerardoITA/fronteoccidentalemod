@@ -1,0 +1,135 @@
+﻿####### OOB #######
+units = {
+	##### NAVAL UNITS #####
+	### HOME COMMAND ###
+	fleet = {
+		name = "Allied Fleet"
+		naval_base = 3070 # Portsmouth
+		task_force = {				
+			name = "Allied Armada"					# Bertram Ramsey	
+			location = 3070 # Portsmouth
+			ship = { name = "USS Arksansas" definition = battleship start_experience_factor = 0.52 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AEF version_name = "Allied Battleship" } } }
+			ship = { name = "USS Nevada" definition = battleship start_experience_factor = 0.52 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AEF version_name = "Allied Battleship" } } }
+			ship = { name = "HMS Ramilles" definition = battleship start_experience_factor = 0.52 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AEF version_name = "Allied Battleship" } } }
+			ship = { name = "HMS Rodney" definition = battleship start_experience_factor = 0.52 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AEF version_name = "Allied Battleship" } } }
+			ship = { name = "USS Texas" definition = battleship start_experience_factor = 0.52 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AEF version_name = "Allied Battleship" } } }
+			ship = { name = "HMS Warspite" definition = battleship start_experience_factor = 0.52 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AEF version_name = "Allied Battleship" } } }
+			ship = { name = "USS Augusta" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Heavy Cruiser" } } }
+			ship = { name = "HMS Frobisher" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Heavy Cruiser" } } }
+			ship = { name = "HMS Hawkins" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Heavy Cruiser" } } }
+			ship = { name = "USS Quincy" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Heavy Cruiser" } } }
+			ship = { name = "USS Tuscaloosa" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Heavy Cruiser" } } }
+			ship = { name = "HMS Argonaut" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+			ship = { name = "HMS Ajax" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+			ship = { name = "HMS Arethusa" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+			ship = { name = "HMS Belfast" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+			ship = { name = "HMS Bellona" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+			ship = { name = "HMS Black Prince" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+			ship = { name = "HMS Cape Town" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+			ship = { name = "HMS Ceres" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+ship = { name = "HMS Danae" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+ship = { name = "HMS Diadem" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+ship = { name = "ORP Dragon" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+ship = { name = "HMS Emerald" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+ship = { name = "HMS Enterprise" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+ship = { name = "Georges Leygues" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+ship = { name = "HMS Glasgow" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+ship = { name = "HMS Mauritius" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+ship = { name = "Montcalm" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+ship = { name = "HMS Orion" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+ship = { name = "HMS Scylla" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+ship = { name = "HMS Sirius" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Allied Cruiser" } } }
+ship = { name = "HMCS Alberni" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }	
+ship = { name = "HMCS Algonquin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }					
+ship = { name = "USS Amesbury" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Baldwin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Barton" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Beagle" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Bleasdale" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "ORP Blyskawica" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Boadicae" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMCS Cape Breton" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Carmick" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Cattistock" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Chaudiere" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Corry" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Cottesmore" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Doyle" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Eglinton" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Emmons" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Faulknor" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Fitch" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Frankford" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Fury" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Glennon" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Hulbert" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HNoMS Glaisdale" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Grenville" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Harding" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Herndon" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Hobson" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }					
+ship = { name = "USS Jeffers" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Jervis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Kelvin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Kempenfelt" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "La Combattante" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "ORP Krakowiak" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Laffey" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Loyalty" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Maloy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS McCook" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Melbreak" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Middleton" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Murphy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS O'Brien" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Pytchley" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Pelican" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMCS Regina" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Rich" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Satterlee" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Saumarez" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Scorpion" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Scourge" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Serapis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Shubrick" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMCS Sioux" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "ORP Ślązak" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Stevenstone" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HNoMS Stord" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HNoMS Svenner" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Swift" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Talybont" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Tanatside" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "USS Thompson" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Ulster Carmick" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Ulysses" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Undaunted" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Undine" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Urania" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Urchin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Ursa" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Venus" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Verulam" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Vigilant" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Virago" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Wanderer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Wallflower" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Whimbrel" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "HMS Wrsteler" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "RHN Kriezis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "RHN Tombazis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "La Surprise" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "L'Escarmouche" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "La Découverte" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "L'Aventure" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "Aconit" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "La Reconcule" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "La Rosleys" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "d'Estienne d'Orves" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+ship = { name = "Benodet" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
+
+}
+}
+				
+		
+}

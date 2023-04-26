@@ -1,0 +1,18 @@
+air_wings = {
+###570 PLANES IN TOTAL. WITH 900 IN GERMANY.
+20 = { 
+small_plane_airframe_2 =  { owner = "OKW"	amount = 48 creator = "OKW" version_name = "Fw 190 A-8" }	
+
+small_plane_airframe_1 =  { owner = "OKW"	amount = 48 creator = "OKW" version_name = "Bf 109 G" }
+
+small_plane_airframe_2 =  { owner = "OKW"	amount = 48 creator = "OKW" version_name = "Fw 190 A-8" }
+
+small_plane_airframe_1 =  { owner = "OKW"	amount = 48 creator = "OKW" version_name = "Bf 109 G" }
+
+small_plane_airframe_2 =  { owner = "OKW"	amount = 48 creator = "OKW" version_name = "Fw 190 A-8" }
+
+small_plane_airframe_1 =  { owner = "OKW"	amount = 48 creator = "OKW" version_name = "Bf 109 G" }
+
+
+}
+ }

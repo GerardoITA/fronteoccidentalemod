@@ -1,0 +1,29 @@
+
+state={
+	id=64
+	name="STATE_64"
+	state_category= rural
+	history = {
+
+1918.3.20.12 = {
+		owner = DKR
+		add_core_of = ENT
+		}
+ 		1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+ 1944.12.23.12 = {
+		owner = AEF
+		add_core_of = AEF
+		}
+buildings = { infrastructure = 2 }
+}
+	provinces={
+		118 146 152 746 1218 1229 1254 1266 1496 1701 1903 1938 2066 2200 2277 2496 2604 3015 3016 3039 3132 3192 3266 3583 3695 3922 4096 4295 4322 4394  4553 4559 4589 4625 4645 
+	}
+	manpower=1115064
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

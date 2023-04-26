@@ -1,0 +1,48 @@
+
+state={
+	id=68
+	name="STATE_68"
+
+	history={
+buildings = { industrial_complex = 2
+	arms_factory = 1
+infrastructure = 3 4346 = { naval_base = 2 coastal_bunker = 1 } 4402 = { coastal_bunker = 1}4541 = { coastal_bunker = 1 } 9650 = { naval_base = 1 coastal_bunker = 1}2220  = { naval_base = 1 coastal_bunker = 1} 3086 = { coastal_bunker = 1 }}
+		 1918.3.20.12 = {
+		owner = DKR
+		add_core_of = ENT
+		}
+ 		1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+		victory_points = {
+			2467 9 
+		}
+		victory_points = {
+			895 4 
+		}#roeselare
+		victory_points = {
+			9650 4 
+		}#oostende
+victory_points = {
+			2721 4 
+		}#Veurne
+victory_points = {
+			9648 5
+		}#Koltrijk
+	}
+
+	provinces={
+		213 224 344 524 551 611 677 691 767 785 857 895 1052 1363 1380 1407 1434 1480 1586 1672 1743 1939 2220 2345 2399 2406 2467 2721 2744 2775 2830 2885 3086 3207 3260 3265 3344 3423 3467 3500 3765 4217 4254 4346 4348 4402 4530 4539 4541 4546 4597 4605 9647 9648 9649 9650 
+	}
+	manpower=896843
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,241 @@
+leader_traits = {
+	
+supreme_commander = {
+		random = no
+		training_time_army_factor = -0.25
+		ai_focus_defense_factor = 1
+		stability_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+deputy_supreme_commander = {
+		random = no
+		training_time_army_factor = -0.05
+		ai_focus_defense_factor = 1
+		stability_factor = 0.05
+		political_power_factor = 0.25
+		ai_will_do = {
+			factor = 1
+		}
+	}
+combined_arms_expert = {  # Air superiority impact on land units improved by 10%
+		sprite = 2
+		army_bonus_air_superiority_factor = 0.12	
+		experience_gain_air = 0.06
+		experience_gain_army = 0.06
+		command_cap = @tier3
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	
+	
+floating_tank_specialist = {
+		random = no
+		naval_invasion_capacity = 2
+		army_armor_attack_factor = 0.05
+		army_armor_speed_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+cautious_yet_careful = {
+		random = no
+		army_speed_factor = -0.1
+		army_org_factor = 0.05
+		dig_in_speed_factor = 0.05
+		max_dig_in_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+nazi_fanatic = {
+		random = no
+		war_support_factor = 0.15
+		fascism_drift = 0.12
+		conscription = 0.07
+		ai_will_do = {
+			factor = 1
+		}
+	}
+reichsfuhrer_ss = {
+		random = no
+		non_core_manpower = 0.3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+runstedt_army_chief_trait = {
+		random = no
+		training_time_army_factor = -0.25
+		ai_focus_defense_factor = 1
+		stability_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+july_plotter = {
+		random = no
+		neutrality_drift = 0.5
+		army_morale_factor = 0.05		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+supreme_commander2 = {
+		random = no
+		training_time_army_factor = -0.25
+		ai_focus_aggressive_factor = 0.75
+		stability_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		
+	monty = {
+		random = no
+		stability_weekly = -0.001
+		
+		army_morale_factor = 0.08
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	jet_scientist = {
+		random = no
+		research_speed_factor = 0.05
+		equipment_bonus = { jet_fighter_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				} }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	marshall = {
+		random = no
+		army_org_factor = 0.025
+		naval_invasion_prep_speed = -0.2
+		political_power_factor = 0.15
+		command_power_gain = 0.1
+		max_command_power = 10
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	cossac = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+cossac_advisor_trait = {
+		random = no
+		experience_gain_army = 0.33
+		experience_gain_air = 0.33
+		experience_gain_navy = 0.33
+	stability_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+general_inspector_of_western_defences = {
+		random = no
+		production_speed_coastal_bunker_factor = 0.15
+		production_speed_bunker_factor = 0.15
+		stability_weekly_factor = 0.001
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+the_great_asparagus = {
+		random = no
+		resistance_growth_on_our_occupied_states = 0.45
+		resistance_target_on_our_occupied_states = 0.3
+		compliance_growth_on_our_occupied_states = -0.30
+		army_morale_factor = 0.025	
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+trait_ob_west = {
+		random = no
+		training_time_army_factor = 2
+		naval_invasion_prep_speed = -999
+		ai_will_do = {
+			factor = 1
+		}
+	}
+leader_of_free_world = {
+		random = no
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		political_power_factor = 0.3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+landing_craft_expert = {
+		random = no
+		equipment_bonus = {
+				convoy = {
+					instant = yes
+					build_cost_ic = -0.8
+				}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+weather_expert = {
+		random = no
+		air_weather_penalty = -0.33
+		ai_will_do = {
+			factor = 1
+		}
+	}
+fallschirmajger = {
+		random = no
+		paradrop_organization_factor = 0.05
+		special_forces_cap = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	trait_cossac_leaderless = {
+		random = no
+		training_time_army_factor = 0.5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+leader_trait_british = {
+		random = no
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+leader_trait_french = {
+		random = no
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+leader_trait_american = {
+		random = no
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

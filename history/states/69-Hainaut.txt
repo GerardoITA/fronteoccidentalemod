@@ -1,0 +1,37 @@
+
+state={
+	id=69
+	name="STATE_69"
+	history = {
+1918.3.20.12 = {
+		owner = DKR
+		add_core_of = ENT
+		}
+ 		1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+buildings = { infrastructure = 4 }
+ victory_points = { 4721 3 } #WEST CHALEROI
+ victory_points = { 9765 3 } #EAST CHALEROI
+ victory_points = { 9766 3 } #La Louviere
+ victory_points = { 9767 3 } #Mons
+ victory_points = { 4686 3 } #Ath
+ victory_points = { 3456 2 } #BINCHE
+ victory_points = { 9768 2 } #Tournai
+
+}
+	provinces={
+		9768 9767 9766 9765 112 120 205 214 311 417 435 714 723 955 972 1048 1156 1250 1462 1463 1515 1797 1869 1884 2160 2205 2409 2443 2465 2643 2823 3151 3157 3234 3426 3456 3482 3821 3849 3907 3990 4076 4131 4139 4189 4674 4680 4683 4686 4699 4707 4721 4725 4732 4742 4745 4775 
+	}
+	state_category = large_town
+	manpower=1144241
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

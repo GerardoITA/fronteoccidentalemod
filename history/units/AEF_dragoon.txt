@@ -1,0 +1,1142 @@
+﻿####DRAGOON, US 7th ARMY OOB.
+###IN THE REAL DRAGOON, THE ALLIES ADVANCED UP TO SWITZERLAND. HOWEVER FOR SIMPLICITY AND BALANCE I WILL GIVE THEM A WIDER FRONT OF ADVANCE. 
+####PARACHUTE FORCES, 1ST AIRBORNE TASK FORCE - ROBERT T FREDERICK
+division_template = {
+	name = "Commandos" #British elite units, akin to Royal Marines, formed part of the Special Service Brigades (effectively the pre-SAS)
+
+	division_names_group = AEF_COM_01
+template_counter = 68
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+	
+	support = {
+   	 signal_company = { x = 0 y = 0 }
+		 recon = { x = 0 y = 1 } 
+	 engineer = { x = 0 y = 2 }
+	anti_tank = { x = 0 y = 3 }	
+	}
+}
+division_template = {
+	name = "US Infantry Battalion" #Roughly speaking there were 3 regiments (aka Battalions) to a brigade, and 3 brigades to a division. Around 1000 men.
+
+	division_names_group = AEF_USA_1
+template_counter = 65
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 3 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	
+	support = {
+		
+	 field_hospital = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	 anti_tank = { x = 0 y = 2 }
+    	engineer = { x = 0 y = 3 }
+	}
+}
+
+###armoured infantry,  x3, 2x tank battalions with 70 tanks each
+division_template = {
+	name = "US Armor Battalion" 
+	##### 3 regiments make up a div. 2 Armor, one inf. 
+template_counter = 69
+	division_names_group = AEF_TANK_02
+
+	regiments = {
+        	medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		medium_armor = { x = 0 y = 4 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }
+		medium_armor = { x = 1 y = 4 }
+		medium_armor = { x = 2 y = 0 }
+       		motorized  = { x = 2 y = 1 }	
+		mechanized   = { x = 2 y = 2 }
+		mechanized   = { x = 2 y = 3 }
+		mechanized  = { x = 2 y = 4 }
+       
+	}
+
+	support = {
+      	maintenance_company = { x = 0 y = 3 }
+        engineer = { x = 0 y = 1 }
+        recon = { x = 0 y = 2 } 
+	signal_company = { x = 0 y = 4 }
+	anti_air = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "US Parachute Rifle Company"		# I decided to break paratroopers down into company-sized units just because I figured it would be better for the player. Also allows you to directly spawn Easy company and such.
+	division_names_group = AEF_PARA_01
+	template_counter = 70
+	regiments = {
+		paratrooper = { x = 0 y = 0 } 
+		}
+support = {
+	engineer = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	  recon = { x = 0 y = 2 }
+	 maintenance_company = { x = 0 y = 3 }
+	 artillery = { x = 0 y = 4 }
+	}
+}
+
+
+
+division_template = {
+	name = "French Light Tank Battalion" 
+	######in french tank divisions, you had something of a mix of light (mainly M3 stuart) and medium (shermans). They also had more, smaller regiments. Due to lack of soldi info, I've gone for a roughly accurate "generic" template for French armoured regiments.
+template_counter = 71
+
+	division_names_group = AEF_TANK_04
+
+	regiments = {
+        	light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		light_armor = { x = 0 y = 4 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 1 y = 3 }
+		light_armor = { x = 1 y = 4 }
+		motorized = { x = 2 y = 0 }
+       		motorized  = { x = 2 y = 1 }	
+		mechanized   = { x = 2 y = 2 }
+		mechanized   = { x = 2 y = 3 }
+		mechanized  = { x = 2 y = 4 }
+	}
+
+	support = {
+      	maintenance_company = { x = 0 y = 2 }
+        engineer = { x = 0 y = 0 }
+       light_tank_recon = { x = 0 y = 1 } 
+	signal_company = { x = 0 y = 3 }
+	
+	}
+}
+
+division_template = {
+	name = "French Medium Tank Battalion" #DUE TO LACK OF SOLLD INFO I'VE GIVEN THE FRENCH AN AMERICAN STYLE BATTALION TEMPLATE.
+	######in french tank divisions, you had something of a mix of light (mainly M3 stuart) and medium (shermans). They also had more, smaller regiments. Due to lack of soldi info, I've gone for a roughly accurate "generic" template for French armoured regiments.
+
+template_counter = 71
+	division_names_group = AEF_TANK_04
+
+	regiments = {
+        	medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		medium_armor = { x = 0 y = 4 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }
+		medium_armor = { x = 1 y = 4 }
+		motorized = { x = 2 y = 0 }
+       		motorized  = { x = 2 y = 1 }	
+		mechanized   = { x = 2 y = 2 }
+		mechanized   = { x = 2 y = 3 }
+		mechanized  = { x = 2 y = 4 }
+       
+	}
+
+	support = {
+      	maintenance_company = { x = 0 y = 3 }
+        engineer = { x = 0 y = 0 }
+     	  light_tank_recon = { x = 0 y = 1 } 
+	signal_company = { x = 0 y = 2 }
+	
+	}
+}
+
+division_template = {
+	name = "French Mechanized Regiment" 			# ##1000 men each, M3 HALFTRACKS.
+	division_names_group = AEF_TANK_04
+template_counter = 71
+	regiments = {
+		mechanized  = { x = 0 y = 0 }
+	   mechanized  = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		
+		mechanized  = { x = 1 y = 0 }
+		mechanized  = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		
+		mechanized  = { x = 2 y = 0 }
+	   mechanized  = { x = 2 y = 1 }
+		mechanized  = { x = 2 y = 2 }
+		mechanized  = { x = 0 y = 3 }
+	}
+	support = {
+        anti_air = { x = 0 y = 0 }
+	 anti_tank = { x = 0 y = 3 }
+	 engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Parachute Chasseur Regiment"		# French "commandos", , basically SAS. 600 man battalion sized unit.
+	division_names_group = AEF_FRA_PARA_01
+template_counter = 71
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 2 y = 0 } 
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 3 y = 0 } 
+}
+support = {
+	engineer = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	  recon = { x = 0 y = 2 }
+	 maintenance_company = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "French TD Battalion" ###generalised version of a Tank Destroyer battalion. Utilising M10 wolverines.
+
+	division_names_group = FRA_TDB_01
+
+	regiments = {
+		medium_tank_destroyer_brigade = { x = 0 y = 0 }
+		medium_tank_destroyer_brigade = { x = 0 y = 1 }
+	}
+	
+	support = {
+		maintenance_company = { x = 0 y = 3 }
+        engineer = { x = 0 y = 1 }
+     	  light_tank_recon = { x = 0 y = 2 } 
+	signal_company = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "French SPA Battalion" ###generalised version of French Self PRopelled Arty battalion. Utilising M7 Priest.
+
+	division_names_group = FRA_SPA_01
+
+	regiments = {
+		medium_sp_artillery_brigade = { x = 0 y = 0 }
+		medium_sp_artillery_brigade = { x = 0 y = 1 }
+	}
+	
+	support = {
+		maintenance_company = { x = 0 y = 3 }
+        engineer = { x = 0 y = 1 }
+     	  light_tank_recon = { x = 0 y = 2 } 
+	signal_company = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "French Infantry Battalion" ######1300 men. 
+template_counter = 71
+	division_names_group = AEF_FRA_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+	}
+	
+	support = {
+		
+	  artillery = { x = 0 y = 0 }
+	recon = { x = 0 y = 1 }
+	
+    
+	}
+}
+division_template = {
+	name = "French Cavalry Regiment" #####
+template_counter = 71
+	division_names_group = AEF_FRA_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 2 y = 0 }
+	}
+	
+	support = {
+		
+	  artillery = { x = 0 y = 0 }
+	light_tank_recon = { x = 0 y = 1 }
+	
+    
+	}
+}
+###armoured infantry,  x3, 2x tank battalions with 70 tanks each. WOLVERINES OR HELLCATS.
+division_template = {
+	name = "US Tank Destroyer Battalion" 
+	##### 3 regiments make up a div. 2 Armor, one inf. 
+template_counter = 69
+	division_names_group = AEF_TANK_03
+
+	regiments = {
+        	medium_tank_destroyer_brigade = { x = 0 y = 0 }
+		medium_tank_destroyer_brigade = { x = 0 y = 1 }
+		medium_tank_destroyer_brigade = { x = 0 y = 2 }
+		medium_tank_destroyer_brigade = { x = 0 y = 3 }
+		medium_tank_destroyer_brigade = { x = 0 y = 4 }
+		medium_tank_destroyer_brigade = { x = 1 y = 0 }
+		medium_tank_destroyer_brigade = { x = 1 y = 1 }
+		medium_tank_destroyer_brigade = { x = 1 y = 2 }
+		medium_tank_destroyer_brigade = { x = 1 y = 3 }
+		medium_tank_destroyer_brigade = { x = 1 y = 4 }
+		medium_tank_destroyer_brigade = { x = 2 y = 0 }
+       		motorized  = { x = 2 y = 1 }	
+		mechanized   = { x = 2 y = 2 }
+		mechanized   = { x = 2 y = 3 }
+		mechanized  = { x = 2 y = 4 }
+       
+	}
+
+	support = {
+      	maintenance_company = { x = 0 y = 3 }
+        engineer = { x = 0 y = 1 }
+        recon = { x = 0 y = 2 } 
+	signal_company = { x = 0 y = 4 }
+	anti_air = { x = 0 y = 0 }
+	}
+}
+units = {
+
+division = { 
+	name = "A Company, 1/517 PIR"
+		location = 609
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+
+division = { 
+	name = "B Company, 1/517 PIR"
+		location = 609
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+	
+division = { 
+	name = "C Company, 1/517 PIR"
+		location = 609
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+  }
+	
+
+division = { 
+	name = "A Company, 2/517 PIR"
+		location = 609
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+  }
+	
+
+division = { 
+	name = "B Company, 2/517 PIR"
+		location = 609
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+  }
+	
+division = { 
+	name = "C Company, 2/517 PIR"
+		location = 609
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+	
+division = { 
+	name = "A Company, 3/517 PIR"
+		location = 3673
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+division = { 
+	name = "B Company, 3/517 PIR"
+		location = 3673
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+  }
+	
+
+division = { 
+	name = "C Company, 3/517 PIR"
+		location = 3673
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+  }
+	
+division = { 
+	name = "A Company, 509 PIB"
+		location = 3673
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+	
+division = { 
+	name = "B Company, 509 PIB"
+		location = 3673
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+	
+
+division = { 
+	name = "C Company, 509 PIB"
+		location = 3673
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+	
+division = { 
+	name = "A Company, 550 PIB"
+		location = 797
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+}
+	
+division = { 
+	name = "B Company, 550 PIB"
+		location = 797
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+	 
+
+division = { 
+	name = "C Company, 550 PIB"
+		location = 797
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+  }
+	
+division = { 
+	name = "A Company, 1/551 PIR"
+		location = 3717
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+	
+division = { 
+	name = "B Company, 1/551 PIR"
+		location = 3717
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+	
+
+division = { 
+	name = "C Company, 1/551 PIR"
+		location = 3717
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+  }
+
+division = { 
+	name = "A Company, 1/551 PIR"
+		location = 3717
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+division = { 
+	name = "B Company, 1/551 PIR"
+		location = 3717
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+ }
+	
+
+division = { 
+	name = "C Company, 1/551 PIR"
+		location = 3717
+		division_template = "US Parachute Rifle Company"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		 }
+
+division = { 
+	name = "US-Canadian 1st Special Service Force"
+		location = 1230
+		division_template = "Commandos"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		   }
+
+	
+
+
+division = { 
+	name = "Groupe de Commandos"
+		location = 481
+		division_template = "Commandos"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		   }
+
+##Documentation on the exact makeup of French Armoured regiments is very light. However I believe it is 2-3 bats per reg with a mix of light and medium so I've tried to create a believable "generic" amount.
+division = { 
+	name = "I/3e RCA"
+		location = 5378
+		division_template = "French Medium Tank Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/3e RCA"
+		location = 5378
+		division_template = "French Light Tank Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/9e RCA"
+		location = 261
+		division_template = "French Medium Tank Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/9e RCA"
+		location = 261
+		division_template = "French Light Tank Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/2e RC"
+		location = 1625
+		division_template = "French Medium Tank Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/2e RC"
+		location = 1625
+		division_template = "French Light Tank Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/2e RC"
+		location = 1625
+		division_template = "French Light Tank Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "2e Bataillon de Zouaves"
+		location = 2308
+		division_template = "French Mechanized Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+division = { 
+	name = "I/5e RCA"
+		location = 2312
+		division_template = "French Medium Tank Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/5e RCA"
+		location = 2312
+		division_template = "French Light Tank Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "2e Bataillon de Zouaves"
+		location = 2308
+		division_template = "French Mechanized Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+division = { 
+	name = "I/2e RCA"
+		location = 2060
+		division_template = "French Medium Tank Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/2e RCA"
+		location = 2060
+		division_template = "French Light Tank Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/2e RCA"
+		location = 2060
+		division_template = "French Light Tank Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "3e Bataillon de Zouaves"
+		location = 3152
+		division_template = "French Mechanized Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+division = { 
+	name = "191st Tank Battalion"
+		location = 1444
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "753rd Tank Battalion"
+		location = 519
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "756th Tank Battalion"
+		location = 4002
+		division_template = "US Armor Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "601st Tank Destroyer Battalion"
+		location = 245
+		division_template = "US Tank Destroyer Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "636th Tank Destroyer Battalion"
+		location = 245
+		division_template = "US Tank Destroyer Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "645th Tank Destroyer Battalion"
+		location = 245
+		division_template = "US Tank Destroyer Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+###3rd infantry div
+
+division = { 
+	name = "I/7th Infantry Regiment"
+		location = 5371
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/7th Infantry Regiment"
+		location = 5371
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/7th Infantry Regiment"
+		location = 5371
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/15th Infantry Regiment"
+		location = 3313
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/15th Infantry Regiment"
+		location = 3313
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/15th Infantry Regiment"
+		location = 3313
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/30th Infantry Regiment"
+		location = 3232
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/30th Infantry Regiment"
+		location = 3232
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/30th Infantry Regiment"
+		location = 3232
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+###36th INF DIV
+division = { 
+	name = "I/141st Infantry Regiment"
+		location = 5371
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/141st Infantry Regiment"
+		location = 5371
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/141st Infantry Regiment"
+		location = 5371
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/142nd Infantry Regiment"
+		location = 3313
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/142nd Infantry Regiment"
+		location = 3313
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/142nd Infantry Regiment"
+		location = 3313
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "143rd Infantry Regiment"
+		location = 1752
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "I/143rd Infantry Regiment"
+		location = 1752
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/143rd Infantry Regiment"
+		location = 1752
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/143rd Infantry Regiment"
+		location = 1752
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+###45th INF DIV
+division = { 
+	name = "I/157st Infantry Regiment"
+		location = 1149
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/157st Infantry Regiment"
+		location = 1149
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "III/157st Infantry Regiment"
+		location = 1149
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "179th Infantry Regiment"
+		location = 3784
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "180th Infantry Regiment"
+		location = 5358
+		division_template = "US Infantry Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+#####1st french infantry div
+division = { 
+	name = "I/13e DBLE"
+		location = 5369
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/13e DBLE"
+		location = 5369
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "22e Bataillon Nord-Africain"
+		location = 5369
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "4e Bataillon"
+		location = 549
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "5e Bataillon"
+		location = 549
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "11e Bataillon"
+		location = 939
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "21e Bataillon"
+		location = 939
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+
+division = { 
+	name = "24e Bataillon"
+		location = 1647
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "22e Bataillon Nord-Africain"
+		location = 1647
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "I/1er RFM"
+		location = 5385
+		division_template = "French Light Tank Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "II/1er RFM"
+		location = 5385
+		division_template = "French Light Tank Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "1er Régiment de Spahis Morocains"
+		location = 5385
+		division_template = "French Cavalry Regiment"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "No. 4 Batallion de Marche"
+		location = 2897
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "No. 5 Batallion de Marche"
+		location = 2897
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "No. 11 Batallion de Marche"
+		location = 5370
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "No. 21 Batallion de Marche"
+		location = 5370
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+division = { 
+	name = "1er Régiment d'Infanterie de Marine"
+		location = 3345
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "I/501e R.C.C"
+		location = 3345
+		division_template = "French Light Tank Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "III/501e R.C.C"
+		location = 2439
+		division_template = "French Medium Tank Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "I/11e RC"
+		location = 5362
+		division_template = "French Medium Tank Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "II/11e RC"
+		location = 5362
+		division_template = "French Medium Tank Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "I/3e Régiment de Tirailleurs Algériens"
+		location = 1143
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "II/3e Régiment de Tirailleurs Algériens"
+		location = 1143
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "I/4e Régiment de Tirailleurs Tunisiens"
+		location = 2231
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "II/4e Régiment de Tirailleurs Tunisiens"
+		location = 2231
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "I/47e Régiment de Tirailleurs Algériens"
+		location = 2231
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "II/47e Régiment de Tirailleurs Algériens"
+		location = 1143
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "I/4e Tirailleurs Sénégalais"
+		location = 1143
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "II/4e Tirailleurs Sénégalais"
+		location = 5462
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "I/6e Tirailleurs Sénégalais"
+		location = 5642
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "II/6e Tirailleurs Sénégalais"
+		location = 5462
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "I/13e Tirailleurs Sénégalais"
+		location = 2439
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "II/13e Tirailleurs Sénégalais"
+		location = 2439
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "Régiment d'Infanterie Coloniale du Maroc"
+		location = 2439
+		division_template = "French Cavalry Regiment"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "Régiment Colonial de Chasseurs de Chars"
+		location = 2439
+		division_template = "French TD Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "2ème Régiment de Spahis Algériens"
+		location = 3345
+		division_template = "French Cavalry Regiment"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "1er Groupe de Tabors Marocains"
+		location = 5462
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "3ème Groupe de Tabors Marocains"
+		location = 2439
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "4ème Groupe de Tabors Marocains"
+		location = 2439
+		division_template = "French Infantry Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "I/7ème Régiment de Chasseurs d'Afrique"
+		location = 5358
+		division_template = "French TD Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+division = { 
+	name = "I/7ème Régiment de Chasseurs d'Afrique"
+		location = 5358
+		division_template = "French TD Battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+}

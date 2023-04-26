@@ -1,0 +1,68 @@
+German_historical = {
+	name = "German historical plan"
+	desc = "Essentially historical behaviour for Germany"
+
+	allowed = {
+		original_tag = OKW
+	}
+	enable = {
+		OR = {
+		
+				is_historical_focus_on = yes
+				
+					has_game_rule = {
+						rule = GER_ai_behavior
+						option = DEFAULT
+					}
+				}	
+			}
+			
+	
+
+	ai_national_focuses = {
+		GER_armeegruppe_b
+		GER_compromise_the_strategies
+		GER_volksturm_focus
+		GER_fight_for_a_new_fatherland
+		GER_appoint_the_inspector_of_defences
+		GER_stifle_the_rumblings
+		GER_clamp_down_on_the_subversion
+		GER_reject_scorched_earth
+		GER_fuhrer_reigns_supreme
+		GER_reject_scorched_earth
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	
+
+	ai_strategy = {
+		type = conquer
+		id = "SOV"
+		value = 500
+	}
+}

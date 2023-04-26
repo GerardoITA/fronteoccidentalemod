@@ -1,0 +1,41 @@
+
+state={
+	id=95
+	name="STATE_95"
+
+	history={
+victory_points = { 3936 4 } #laval
+victory_points = { 4032 3 } #Mayenne
+victory_points = { 3476 3 }#Évron
+victory_points = { 2797 3 } #Chateau Gontier
+victory_points = { 1614 2 } #Saint Berthevin
+victory_points = { 5189 2 }#Gorron
+victory_points = { 3678 3 }#Lassay les chateau
+victory_points = { 5204 3 } #Villaines-les-Juhel
+victory_points = { 3514 2 } #Craon
+victory_points = { 9773 1 } 
+buildings = { air_base = 1 infrastructure = 2 } 
+		1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+	}
+
+	provinces={
+		71 126 137 217 356 397 483 540 699 888 1281 1289 1339 1454 1479 1614 1682 1880 2188 2253 2297 2304 2455 2457 2485 2578 2595 2612 2640 2797 2817 2845 2875 3025 3076 3120 3185 3239 3264 3271 3476 3514 3519 3558 3678 3707 3756 3905 3936 4025 4032 4140 4171 4303 5170 5182 5184 5189 5197 5204 5232 5256 5281 5308 5335 8286 9773 
+	}
+	manpower=256317
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

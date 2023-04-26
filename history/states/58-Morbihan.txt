@@ -1,0 +1,39 @@
+
+state={
+	id=58
+	name="STATE_58"
+
+	history={
+		1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.23.12 = {
+		owner = AEF
+		add_core_of = AEF
+		}
+		victory_points = {
+			1717 5 
+		}
+victory_points = {
+			4324 3 #Quiberon
+		}
+victory_points = {
+			3375 3 #Vannes
+		}
+buildings = { air_base = 1 infrastructure = 2 industrial_complex = 1 1717 = { naval_base = 2 coastal_bunker = 3 bunker = 2 } }
+	}
+
+	provinces={
+		9507 9513 38 90 96 197 234 346 461 475 657 693 880 885 938 994 1056 1134 1154 1155 1177 1236 1252 1286 1557 1615 1645 1696 1703 1717 1741 1863 1902 1947 2042 2079 2164 2232 2313 2444 2453 2519 2538 2659 2664 2699 2725 2754 2755 2838 2881 2948 2973 3023 3125 3134 3183 3223 3231 3347 3375 3397 3517 3694 3724 3967 4013 4026 4040 4052 4067 4160 4225 4226 4324 4337 4362 5244 5263 5270 5279 5288 5310 5316 5319 5333 5450 5452 5453 5454 5456 5459 9560 
+	}
+	manpower=506884
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

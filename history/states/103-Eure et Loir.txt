@@ -1,0 +1,35 @@
+
+state={
+	id=103
+	name="STATE_103"
+
+	history={
+buildings = { infrastructure = 2 } 
+		1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+		victory_points = {
+			9599 5 
+		}
+
+	}
+
+	provinces={
+		15 47 76 91 115 166 453 586 598 604 629 669 684 763 769 795 819 881 905 911 1023 1039 1057 1165 1387 1415 1428 1474 1688 1837 1907 2133 2157 2326 2484 2504 2549 2617 2639 2720 2733 2787 2840 2958 3081 3227 3277 3287 3384 3388 3506 3676 3882 3898 3965 4008 4010 4274 4302 5121 5122 5130 5136 5146 5157 5193 5195 5208 5229 5230 5239 5250 5251 5254 5280 9598 9599 9617 9619 9620 9621 9622 9624 
+	}
+	manpower=215854
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

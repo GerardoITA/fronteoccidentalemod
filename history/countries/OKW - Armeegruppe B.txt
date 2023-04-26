@@ -1,0 +1,573 @@
+﻿
+capital = 132
+
+#oob = "GER_1943"
+
+add_threat = 100
+set_convoys = 5 
+add_manpower = -200000
+complete_national_focus = reset_1918_borders_focus
+1918.1.1 = { 
+create_dynamic_country = {
+	    original_tag = DKR
+	   set_country_flag = OKW_ww1_start_tag 
+		set_politics = {
+			ruling_party = neutrality
+		}
+		set_cosmetic_tag = DKR_neutrality
+		set_research_slots = 0
+	    reserve_dynamic_country = yes
+	}
+
+
+
+}
+1943.1.1 = { clr_country_flag = OKW_ww1_start_tag
+set_cosmetic_tag = GER_OBWEST
+oob="debug_oob"
+#if = {
+#	limit = { has_dlc = "Man the Guns" }
+#		set_naval_oob = "AEF_1943_naval_mtg"
+#	else = {
+#		set_naval_oob = "AEF_1943_naval_legacy"
+#	}
+#}
+add_ideas = { no_influence_effect beholden_to_fuhrer confused_chain_of_command auftragstaktik efficient_anti_air }
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	  }create_intelligence_agency = {
+    name = "Abwehr"
+    icon = GFX_intelligence_agency_logo_ger
+}}
+declare_war_on = {
+		target = AEF
+		type = annex_everything
+	}
+add_offsite_building = { type = arms_factory level = 50 }
+add_offsite_building = { type = industrial_complex level = 66 }
+
+set_variable = { var = influence_number
+		value = 56 }
+set_research_slots = 4
+set_stability = 0.6
+set_war_support = 0.7
+add_command_power = 120
+
+recruit_character = GER_gerd_von_rundstedt
+recruit_character = GER_erwin_rommel
+recruit_character = GER_gunther_von_kluge
+recruit_character = GER_walter_model
+recruit_character = GER_erich_straube
+recruit_character = GER_erich_marcks
+recruit_character = GER_eugen_meindl
+recruit_character = GER_johannes_blaskowitz
+recruit_character = GER_wilhelm_fahrmbacher
+recruit_character = GER_paul_hausser
+recruit_character = GER_friedrich_dollmann
+recruit_character = GER_hans_von_salmuth
+recruit_character = GER_von_weikersthal
+recruit_character = GER_sepp_dietrich
+recruit_character = GER_hasso_von_manteuffel
+recruit_character = GER_karl_donitz
+recruit_character = GER_alfred_saalwachter
+recruit_character = GER_hermann_boehm
+recruit_character = GER_wilhelm_marschall
+recruit_character = GER_von_braun
+recruit_character = GER_heisenberg
+recruit_character = GER_wolfram_von_richthofen
+recruit_character = GER_walther_wever
+recruit_character = GER_ernst_udet
+recruit_character = GER_otto_ciliax
+recruit_character = GER_ludwig_beck
+recruit_character = GER_wilhelm_keitel
+recruit_character = GER_walter_warlimont
+recruit_character = GER_hermann_goring
+recruit_character = GER_ferdinand_schorner
+recruit_character = GER_werner_von_fritsch
+recruit_character = GER_hugo_sperrle
+recruit_character = GER_erhard_milch
+recruit_character = GER_erich_bey
+recruit_character = GER_viktor_schutze
+recruit_character = GER_albert_speer
+recruit_character = GER_joseph_goebbels
+recruit_character = GER_martin_bormann
+recruit_character = GER_claus_von_stauffenberg
+recruit_character = GER_henning_von_trecksow
+recruit_character = GER_hermann_fegelein
+recruit_character = GER_heinrich_himmler
+recruit_character = GER_rudolf_von_sturmgeist
+recruit_character = GER_german_rock
+recruit_character = GER_leo_geyr_von_schweppenburg
+recruit_character = GER_alfred_jodl
+recruit_character = GER_hasso_von_wedel
+recruit_character = GER_hans_speidel
+recruit_character = GER_hans_krebs
+set_politics = {
+	ruling_party = fascism
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 100
+	
+}
+
+set_technology = {
+radio_detection = 1
+	decimetric_radar = 1
+	tech_signal_company = 1
+	tech_signal_company2 = 1
+	tech_signal_company3 = 1
+	tech_logistics_company = 1
+	tech_logistics_company2 = 1 
+	tech_logistics_company3 = 1
+	tech_maintenance_company = 1
+	tech_maintenance_company2 = 1
+	tech_maintenance_company3 = 1
+	tech_field_hospital = 1
+	tech_field_hospital2 = 1
+	tech_field_hospital3 = 1
+	tech_military_police = 1 
+	tech_military_police2 = 1 
+	tech_engineers3 = 1
+	tech_recon2 = 1
+	tech_recon3 = 1
+	tech_engineers2 = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	improved_infantry_weapons_2 = 1
+	infantry_at = 1
+	infantry_at2 = 1
+	paratroopers = 1
+	paratroopers2 = 1
+	advanced_machine_tools = 1
+	tech_mountaineers = 1
+	tech_special_forces = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	support_weapons3 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_bomber = 1
+	mobile_warfare = 1 
+	delay = 1
+	elastic_defence = 1
+	armored_spearhead = 1
+	schwerpunk = 1 
+	blitzkrieg = 1
+	kampfgruppe = 1
+	base_strike = 1
+	motorised_infantry = 1
+	armored_car1 = 1 
+	armored_car2 = 1 
+	armored_car3 = 1
+	armored_car_at_upgrade = 1 
+	fuel_silos = 1
+	fuel_refining = 1
+	marines = 1
+	basic_train = 1
+	mechanised_infantry = 1 
+	mechanised_infantry2 = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	mechanical_computing = 1
+	computing_machine = 1
+	improved_computing_machine = 1
+	experimental_rockets = 1
+	rocket_engines = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	assembly_line_production = 1
+	improved_equipment_conversion = 1
+	dispersed_industry = 1
+	dispersed_industry2 = 1
+	dispersed_industry3 = 1
+	dispersed_industry4 = 1
+	fuel_refining2 = 1
+	fuel_refining3 = 1
+	synth_oil_experiments = 1
+	oil_processing = 1
+	improved_oil_processing = 1
+	construction1 = 1
+	construction2 = 1
+	construction3 = 1
+	construction4 = 1
+	interwar_artillery = 1
+	artillery1 = 1
+	artillery3 = 1
+	artillery2 = 1
+	artillery4 = 1
+	artillery5 = 1
+	interwar_antiair = 1
+	antiair1 = 1
+	antiair2 = 1
+	antiair3 = 1
+	antiair4 = 1
+	antiair5 = 1
+	interwar_antitank = 1
+	antitank1 = 1
+	antitank2 = 1
+	antitank3 = 1
+	antitank4 = 1
+	antitank5 = 1
+	rocket_artillery = 1
+	wartime_train = 1
+	armored_train = 1 	
+	
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		basic_light_td = 1
+		basic_light_art = 1
+		improved_light_tank = 1
+		basic_medium_tank = 1 #pz3
+		improved_medium_tank = 1 #Pz4
+		basic_medium_td = 1 #Stug3
+		basic_medium_art = 1
+		improved_medium_tank = 1
+		improved_medium_td = 1 #jagdpanzer 4
+		advanced_medium_tank_chassis = 1
+		improved_medium_art = 1 
+		improved_medium_spaa = 1 #wirbelwind/ostwind
+		advanced_medium_tank = 1 #panther
+		basic_heavy_tank = 1
+		improved_heavy_tank = 1 
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		advanced_light_tank_chassis = 1
+	basic_medium_tank_chassis  = 1
+	improved_medium_tank_chassis = 1
+	advanced_medium_tank_chassis = 1 
+	basic_heavy_tank_chassis = 1
+	improved_light_tank_chassis = 1 
+	armor_tech_1 = 1 
+	armor_tech_2 = 1 
+	armor_tech_3 = 1 
+	engine_tech_1 = 1
+		engine_tech_2 = 1
+		engine_tech_3 = 1
+	}
+create_equipment_variant = {
+			name = "Panzer II 'Luchs'"
+			type = light_tank_chassis_3
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon
+				turret_type_slot = tank_light_two_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 6
+				tank_nsb_armor_upgrade = 6
+			}
+			icon = "gfx/interface/technologies/ger_imp_light_tank.dds"
+		}
+	create_equipment_variant = {
+			name = "Panzer IV Ausf. H"
+			type = medium_tank_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon_2
+				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = armor_skirts
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 7
+				tank_nsb_armor_upgrade = 6
+			}
+			icon = "gfx/interface/technologies/ger_pzivh.dds"
+		}
+create_equipment_variant = {
+			name = "Panther Ausf. A"
+			type = medium_tank_chassis_3
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon_2
+				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_interleaved_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = empty
+				special_type_slot_4 = sloped_armor
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 9
+				tank_nsb_armor_upgrade = 8
+			}
+			icon = "gfx/interface/technologies/ger_panther.dds"
+		}
+	create_equipment_variant = {
+			name = "StuG III Ausf. G"
+			type = medium_tank_destroyer_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon_3
+				turret_type_slot = tank_medium_fixed_superstructure_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = armor_skirts
+			}
+			upgrades = {
+				tank_gun_upgrade = 9
+				tank_nsb_engine_upgrade = 7
+				tank_nsb_armor_upgrade = 5
+			}
+			icon = "gfx/interface/technologies/ger_stug.dds"
+		}
+			
+create_equipment_variant = {
+			name = "Tiger Ausf. E"
+			type = heavy_tank_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_heavy_cannon_2
+				turret_type_slot = tank_heavy_three_man_tank_turret
+				suspension_type_slot = tank_interleaved_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 4
+				tank_nsb_armor_upgrade = 6
+				tank_gun_upgrade = 6
+			}
+			icon = "gfx/interface/technologies/GER_tiger1e.dds"
+		}
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "GER_1943_air_bba"
+		set_technology = {
+			aa_lmg = 1
+			aa_hmg = 1
+			survivability_studies = 1
+			photo_reconnaisance = 1 
+	basic_large_airframe = 1 
+	improved_large_airframe = 1
+			aa_cannon_1 = 1
+			engines_1 = 1
+			engines_2 = 1
+			engines_3 = 1
+			engines_4 = 1
+			early_bombs = 1
+			range_improvements = 1 
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_medium_airframe = 1
+			iw_large_airframe = 1
+			improved_medium_airframe  = 1 
+			improved_small_airframe = 1
+}
+create_equipment_variant = {
+		name = "Bf 109 G"
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = aircraft_cannon_2_1x
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_GER_fighter1_medium"
+	}
+create_equipment_variant = {
+		name = "Fw 190 A-8"
+		type = small_plane_airframe_2
+		modules = {
+			fixed_main_weapon_slot = aircraft_cannon_2_2x
+			fixed_auxiliary_weapon_slot_1 =	aircraft_cannon_2_2x
+			fixed_auxiliary_weapon_slot_2 =	aircraft_cannon_1_2x
+			engine_type_slot = engine_4_1x
+			special_type_slot_1 = armor_plate_small
+		}
+		icon = "GFX_GER_light_plane_4_medium"
+	}
+create_equipment_variant = {
+			name = "Bf 110" 
+			type = medium_plane_fighter_airframe_1
+			modules = {
+				fixed_main_weapon_slot = aircraft_cannon_1_1x
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_2 = rocket_rails
+				engine_type_slot = engine_3_2x
+				special_type_slot_1 = empty
+				special_type_slot_2 = armor_plate_medium
+			}
+			icon = "GFX_GER_heavy_fighter1_medium"
+		}
+	create_equipment_variant = {
+		name = "Ju 87 'Stuka'"
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = dive_brakes_small
+		}
+		icon = "GFX_GER_CAS1_medium"
+	}
+create_equipment_variant = {
+			name = "He 177 Greif" 
+			type = large_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = large_bomb_bay
+				fixed_auxiliary_weapon_slot_1 =large_bomb_bay
+				fixed_auxiliary_weapon_slot_2 =large_bomb_bay
+				fixed_auxiliary_weapon_slot_3 =empty
+				engine_type_slot = engine_4_4x
+				special_type_slot_1 = cannon_defense_turret
+				special_type_slot_2 = armor_plate_large
+				special_type_slot_3 = cannon_defense_turret
+				special_type_slot_4 = hmg_defense_turret
+				special_type_slot_5 = hmg_defense_turret
+				special_type_slot_6 = lmg_defense_turret
+			}
+			icon = "GFX_GER_strategic_bomber3_medium"
+		}
+		
+	else = {
+		set_air_oob = "GER_1943_air_legacy"
+		set_technology = {
+		early_fighter = 1
+			cv_early_fighter = 1
+			cv_naval_bomber1 = 1
+			cv_CAS1 = 1
+			naval_bomber1 = 1
+			CAS1 = 1
+			fighter1 = 1
+			early_bomber = 1
+			tactical_bomber1 = 1
+			strategic_bomber1 = 1
+			CAS1 = 1
+			naval_bomber1 = 1
+			early_fighter = 1
+		cv_fighter1 = 1 
+		fighter2 = 1
+		fighter3 = 1
+		CAS2 = 1
+		CAS3 = 1
+		heavy_fighter1 = 1
+		heavy_fighter2 = 1 
+		heavy_fighter3 = 1 
+		scout_plane1 = 1
+		scout_plane2 = 1
+		tactical_bomber1 = 1
+		tactical_bomber2 = 1
+		strategic_bomber1 = 1 
+		strategic_bomber2 = 1 
+		}
+	}
+}
+}
+1944.6.6.7 = { drop_cosmetic_tag = yes 
+	remove_country_leader_role = {
+    character = GER_gerd_von_rundstedt
+    ideology = nazism
+}}
+1944.12.24.1 = { 
+	retire_character = GER_erwin_rommel
+	create_country_leader = {
+	name = "Walther Model"
+	desc = "POLITICS_MODEL_DESC"
+	picture = "gfx/leaders/GER/Model.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		
+	}
+}	
+
+
+
+ }
+
+
+
+
+

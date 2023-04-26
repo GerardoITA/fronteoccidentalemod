@@ -1,0 +1,13 @@
+
+GER_OBWEST = {
+  color = rgb { 80 80 80 }
+    color_ui = rgb { 40 40 40 }
+}
+GER_LIBERATED = {
+    color = rgb { 120 120 120 }
+    color_ui = rgb { 100 100 100 }
+}
+AEF_LIBERATED = {
+    color = rgb { 115 15 15 }
+    color_ui = rgb { 115 40 40 }
+}

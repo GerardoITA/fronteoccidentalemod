@@ -1,0 +1,28 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "bigben_mesh"
+		file = "gfx/models/map_objects/bigben/mesh_tower.mesh"
+		meshsettings = {
+			#texture_diffuse = "towerTexture.dds"
+			#texture_normal = "towerNormal.dds"
+			#texture_specular = "towerSpec.dds"
+			shader = PdxMeshAdvanced
+		}
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "eiffel_mesh"
+		file = "gfx/models/map_objects/eiffel/mesh_eiffel.mesh"
+		meshsettings = {
+			#texture_diffuse = "towerTexture.dds"
+			#texture_normal = "towerNormal.dds"
+			#texture_specular = "towerSpec.dds"
+			shader = PdxMeshAdvanced
+		}
+		scale = 1.0
+	}
+	
+	
+}

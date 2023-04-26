@@ -1,0 +1,25 @@
+
+state={
+	id=11
+	name="STATE_11"
+	history = { 
+buildings = { infrastructure = 1 } 
+1918.3.20.12 = {
+		owner = HOL
+		add_core_of = HOL
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = HOL
+		}
+}
+	provinces={
+		9558 4422 189 1192 1452 1511 2089 2140 2289 2662 2795 2904 5410 
+	}
+	manpower=30049
+	state_category = rural
+	impassable =yes
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,35 @@
+ideas = {
+country = { 
+		plunder_of_germany = {
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.2
+				army_morale_factor = 0.5
+				conscription = 0.08
+				consumer_goods_factor = -0.08
+				war_support_factor = 0.15
+				war_support_weekly = 0.15
+				supply_factor = 0.50
+				army_speed_factor = 0.3
+				army_attack_factor = 0.1
+				land_night_attack = 0.5
+				pocket_penalty = 0.3
+				ai_focus_aggressive_factor = 1
+				breakthrough_factor = 0.5
+				cas_damage_reduction = 0.3
+
+			
+				
+			}
+		}}
+}

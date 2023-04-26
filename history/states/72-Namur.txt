@@ -1,0 +1,32 @@
+
+state={
+	id=72
+	name="STATE_72"
+	provinces={
+		9687 9689 9690 9688 9584 20 21 48 193 482 533 536 573 696 1182 1256 1315 1342 1552 1734 1798 1822 1823 1845 2255 2360 2393 2512 2518 2665 2678 2788 2962 2979 3032 3150 3291 3368 3416 3439 3442 3484 3657 3749 3867 4019 4082 4102 4248 4326 4716 4728 4759 4770 5421 
+	}
+	manpower=380630
+	state_category = rural
+	history = {
+
+1918.3.20.12 = {
+		owner = DKR
+		add_core_of = ENT
+		}
+ 		1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+buildings = { infrastructure = 2 }
+	victory_points = { 4248 2 } #Dinant
+	victory_points = { 9689 7 } #Namur
+}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

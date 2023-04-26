@@ -1,0 +1,26 @@
+﻿capital = 20
+
+1918.1.1 = { 
+
+
+set_politics = {
+	ruling_party = democratic
+	#last_election = "1871.11.8"
+	#election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 100
+	communism = 0
+}
+
+create_country_leader = {
+	name = "Ferdinand Foch"
+	desc = ""
+	picture = Foch.dds
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+}

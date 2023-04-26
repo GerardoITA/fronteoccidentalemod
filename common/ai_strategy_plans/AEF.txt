@@ -1,0 +1,71 @@
+SOV_historical_plan = {
+	name = "Allied historical plan"
+	desc = ""
+
+	allowed = {
+		original_tag = AEF
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				
+			}
+			}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		####ASAP!!!
+		AEF_appoint_a_supreme_commander
+		AEF_shaef
+		AEF_in_case_of_disaster
+	#####################
+		AEF_g3_division
+		AEF_g4_division
+		AEF_g5_division
+		AEF_g2_division
+		AEF_g6_division
+		AEF_the_allied_nations
+		AEF_discussions_with_the_french
+		AEF_reject_the_apprentice_dictator
+		AEF_army_operations_branch
+		AEF_air_operations_branch
+		AEF_navy_operations_branch
+		AEF_operation_bodyguard
+		AEF_currahee
+		AEF_the_transportation_plan
+		AEF_reaffirm_pointblank_directive
+		AEF_lessons_of_dieppe
+		AEF_prioritise_landing_craft
+		AEF_contact_resistance_assets
+		AEF_utilise_the_xx_system
+		AEF_choose_a_landing_site
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+	traits = {
+		captain_of_industry = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

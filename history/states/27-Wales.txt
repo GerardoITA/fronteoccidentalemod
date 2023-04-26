@@ -1,0 +1,49 @@
+
+state={
+	id=27
+	name="STATE_27"
+	state_category = city
+	impassable=yes
+	resources={
+		steel=11 
+		aluminium=3 
+	}
+
+
+		
+	
+		
+	history={
+		 1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+}
+ 1943.3.1.12 = {
+		owner = AEF
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+buildings = {
+	fuel_silo = 1
+			infrastructure = 3
+			industrial_complex = 2
+			4510 = {
+				naval_base = 3
+			}
+		}
+		
+		victory_points = {
+			4510 7
+		}
+		
+
+	}
+
+	provinces={
+		14 140 172 259 328 474 535 613 667 717 765 802 837 950 959 964 974 1040 1080 1139 1158 1263 1340 1366 1408 1436 1649 1704 1718 1919 1951 2026 2028 2215 2286 2338 2385 2441 2486 2511 2555 2620 2660 2681 2861 2895 2908 2942 2965 3104 3136 3175 3184 3289 3303 3319 3346 3365 3410 3415 3434 3445 3462 3501 3522 3546 3617 3786 3884 4003 4029 4091 4113 4177 4206 4315 4349 4401 4413 4414 4415 4431 4434 4440 4446 4448 4454 4461 4462 4464 4476 4485 4489 4510 4512 4523 4526 5413 
+	}
+	manpower=2487033
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

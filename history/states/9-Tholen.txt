@@ -1,0 +1,30 @@
+
+state={
+	id=9
+	name="STATE_9"
+	history = { 
+buildings = { infrastructure = 1 } 
+1918.3.20.12 = {
+		owner = HOL
+		add_core_of = HOL
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = HOL
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+victory_points = { 3710 4 }
+}
+	provinces={
+		3710 4466 5407 
+	}
+	manpower= 17685
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

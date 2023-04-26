@@ -1,0 +1,24 @@
+
+state={
+	id=111
+	name="STATE_111"
+	history = { 	1918.3.20.12 = {
+		owner = DKR
+		add_core_of = DKR
+		}
+ 	1943.3.1.12 = {
+		owner = OKW
+		add_core_of = OKW
+		remove_core_of = DKR
+		}
+buildings = { infrastructure = 2 } 
+}
+	provinces={
+		1760 1915 2274 2391 2525 2605 2952 3588 3796 4229 5082 5129 5158 5173 5219 5237 
+	}
+	manpower=1437975
+	state_category = wasteland
+	impassable=yes
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

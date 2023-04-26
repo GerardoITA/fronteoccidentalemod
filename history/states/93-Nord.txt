@@ -1,0 +1,35 @@
+
+state={
+	id=93
+	name="STATE_93"
+	history = { buildings = { infrastructure = 2 4600 = { naval_base =2 coastal_bunker = 2 } } 
+
+
+ 1918.3.20.12 = {
+		owner = DKR
+		add_core_of = ENT
+		
+		}
+ 		1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+
+
+
+victory_points = {4600 8 }
+victory_points = {2514 8 }victory_points = {1375 5 }victory_points = {4187 3 }victory_points = {4654 5 }victory_points = {438 8 }}
+	provinces={
+		9 200 383 438 460 528 542 583 628 748 782 789 818 993 1030 1081 1213 1260 1293 1362 1375 1485 1583 1609 1629 1725 1748 1986 2017 2022 2081 2097 2117 2131 2254 2316 2318 2514 2533 2562 2621  2761 2814 2963 3013 3049 3087 3144 3163 3197 3218 3226 3489 3494 3508 3550 3590 3847 3896 4060 4081 4187 4199 4257 4304 4404 4585 4600 4622 4654 4677 4687 4700 4720 4722 4724 4744 4756 4779 4782 9603 9604 9605 
+	}
+	manpower=1917452
+	state_category = large_city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,95 @@
+air_wings = {
+###Air unit variants required - FIGHTER 2, SPITFIRE V, P-47. STRAT BOMBER 2, B-24. TAC BOMBER, A-26.
+###OOB FOR COMBINED ALLIED AIR FORCES AS OF 1943-1944. AVERAGE 12 PER SQUADRON.
+###Due to simplicity, adn the fact I don't have absolutely every plane used in D-day I have given some units an equivalent plane EG B-24 Liberators are B-17s and early Spitifres are replaced with Mustangs or Hurricanes.
+
+	28 = {
+		
+
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 12 Squadron, RAF"
+
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 100 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 101 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 103 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 166 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 300 Squadron (Poland), RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 460 Squadron, RAAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 550 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 576 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 625 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 626 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 15 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 75 Squadron, RNZAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 90 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 115 Squadron, RAF"
+
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 138 Squadron, RAF"
+
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 149 Squadron, RAF"
+
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 161 Squadron, RAF"
+
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 218 Squadron, RAF"
+
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 514 Squadron, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 622 Squadron, RAF"
+
+strat_bomber_equipment_1 =  { owner = "AEF"  amount = 72
+		} 
+		name = "No. 6 Group, RCAF"
+strat_bomber_equipment_1 =  { owner = "AEF"  amount = 90
+		} 
+		name = "No. 5 Group, RAF"
+strat_bomber_equipment_1 =  { owner = "AEF"  amount = 90
+		} 
+		name = "No. 8 Pathfinder Group, RAF"
+strat_bomber_equipment_1 =  { owner = "AEF"  amount = 67
+		} 
+		name = "No. 9 Pathfinder Group, RAF"
+strat_bomber_equipment_3 =  { owner = "AEF"  amount = 67
+		} 
+		name = "No. 100 (Bomb Squadron) Group, RAF"
+
+}

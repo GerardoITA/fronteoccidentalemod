@@ -1,0 +1,19 @@
+air_wings = {
+###570 PLANES IN TOTAL. WITH 900 IN GERMANY.
+20 = { 
+fighter_equipment_2 =  { owner = "OKW"  amount = 48 } #he111
+		name = "I./ Jagdgeschwader 2"
+fighter_equipment_2 =  { owner = "OKW"  amount = 48 } #he111
+		name = "II./ Jagdgeschwader 2"
+fighter_equipment_2 =  { owner = "OKW"  amount = 48 } #he111
+		name = "I./ Jagdgeschwader 26"	
+fighter_equipment_2 =  { owner = "OKW"  amount = 48 } #he111
+		name = "II./ Jagdgeschwader 26"	
+fighter_equipment_2 =  { owner = "OKW"  amount = 48 } #he111
+		name = "III./ Jagdgeschwader 26"	
+fighter_equipment_2 =  { owner = "OKW"  amount = 48 } #he111
+		name = "II./ Jagdgeschwader 26"
+
+
+}
+ }

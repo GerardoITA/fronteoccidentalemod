@@ -1,0 +1,593 @@
+units = {
+division = { 
+	
+name = "Grenadier-Regiment 'Schill' 1"
+		location = 9644
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+}
+
+
+division = { 
+	
+name = "Grenadier-Regiment 'Schill' 2"
+		location = 4518
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+}
+division = { 
+	
+name = "Grenadier-Regiment 'Scharnhorst' 1"
+		location = 1076
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+}
+
+division = { 
+	
+name = "Grenadier-Regiment 'Scharnhorst' 2"
+		location = 1698
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+}
+
+
+division = { 
+	
+name = "Grenadier-Regiment 'Scharnhorst' 3"
+		location = 616
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+}
+division = { 
+	
+name = "Grenadier-Regiment 'Körner' 1"
+		location = 1175
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+}
+
+division = { 
+	
+name = "Grenadier-Regiment 'Körner' 2"
+		location = 3729
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+}
+
+
+division = { 
+	
+name = "Grenadier-Regiment 'Körner' 3"
+		location = 8629
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+}
+division = { 
+	
+name = "Grenadier-Regiment 'Ulrich von Hutten' 1"
+		location = 866
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+}
+
+division = { 
+	
+name = "Grenadier-Regiment 'Ulrich von Hutten' 2"
+		location = 869
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+}
+
+
+division = { 
+	
+name = "Grenadier-Regiment 'Ulrich von Hutten' 3"
+		location = 2722
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+}
+division = { 
+	
+name = "Panzerjäger-Battalion 'Ulrich von Hutten'"
+		location = 2884
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+}
+division = { 
+	
+name = "Panzerjäger-Battalion 'Scharnhorst'"
+		location = 2584
+		division_template = "SPG Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+}
+
+division = { 
+	
+name = "Infantry-Regiment 341"
+		location = 4546
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+}
+
+
+division = { 
+	
+name = "Infantry-Regiment 345"
+		location = 493
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+}
+
+division = { 
+	
+name = "Infantry-Regiment 357"
+		location = 2430
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+}
+division = {
+name = "I/Panzergrenadier-Regiment 35"
+		location = 299
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.4
+
+}
+division = { 
+	
+name = "II/Panzergenadier-Regiment 35"
+		location = 850
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+
+}
+division = { 
+	
+name = "III/Panzergrenadier-Regiment 35"
+		location = 2825
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6
+
+}
+
+division = {
+name = "I/Panzergrenadier-Regiment 119"
+		location = 1953
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.2
+
+}
+division = { 
+	
+name = "II/Panzergenadier-Regiment 119"
+		location = 662
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+
+}
+division = { 
+	
+name = "III/Panzergrenadier-Regiment 119"
+		location = 2776
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.3
+
+}
+division = { 
+	
+name = "Panzerjäger-Battalion 125"
+		location = 3208
+		division_template = "SPG Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.4
+
+}
+
+division = { 
+	
+name = "Panzerjäger-Battalion 8"
+		location = 3413
+		division_template = "SPG Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+
+}
+
+division = { 
+	
+name = "Pioneer-Battalion 8"
+		location = 3320
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+
+}
+division = { 
+	
+name = "Signal-Battalion 25"
+		location = 1523
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+
+}
+division = { 
+	
+name = "Jäger Regiment 56"
+		location = 1584
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+
+}
+
+division = { 
+	
+name = "Jäger-Regiment 75"
+		location = 4900
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+
+}
+division = { 
+	
+name = "I/SS-PzGren-Reg. 7"
+		location = 3159
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+
+}
+division = { 
+	
+name = "II/SS-PzGren-Reg. 7"
+		location = 4900
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+
+}
+division = { 
+	
+name = "III/SS-PzGren-Reg. 7"
+		location = 1584
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+
+}
+division = { 
+	
+name = "I/SS-PzGren-Reg. 8"
+		location = 1523
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+
+}
+division = { 
+	
+name = "II/SS-PzGren-Reg. 8"
+		location = 3320
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+
+}
+division = { 
+	
+name = "III/SS-PzGren-Reg. 8"
+		location = 3413
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+
+}
+division = { 
+	
+name = "SS-Panzer-Battalion 4"
+		location = 3208
+		division_template = "Panzer Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.4
+
+}
+division = { 
+	
+name = "SS-Sturmgeschütz-Battalion"
+		location = 2447
+		division_template = "SPG Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.4
+
+}
+division = { 
+	
+name = "SS-Panzerjäger-Battalion"
+		location = 2776
+		division_template = "SPG Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+
+}
+division = { 
+	
+name = "SS-Heavy-Panzer-Battalion"
+		location = 662
+		division_template = "SS Heavy Panzer Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.3
+
+}
+division = { 
+	
+name = "I/SS-Panzer-Regiment"
+		location = 1953
+		division_template = "Panzer Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.4
+
+}
+division = { 
+	
+name = "II/SS-Panzer-Regiment"
+		location = 2825
+		division_template = "Panzer Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.4
+
+}
+division = { 
+	
+name = "III/SS-Panzer-Regiment"
+		location = 850
+		division_template = "Panzer Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.4
+
+}
+division = { 
+	
+name = "I/SS-PzGren-Reg. 23 'Norge'"
+		location = 299
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+
+}
+division = { 
+	
+name = "II/SS-PzGren-Reg. 23 'Norge'"
+		location = 2430
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+
+}
+division = { 
+	
+name = "III/SS-PzGren-Reg. 23 'Norge'"
+		location = 493
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+
+}
+division = { 
+	
+name = "I/SS-PzGren-Reg. 24 'Danmark'"
+		location = 4656
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+
+}
+division = { 
+	
+name = "II/SS-PzGren-Reg. 24 'Danmark'"
+		location = 2884
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+
+}
+division = { 
+	
+name = "III/SS-PzGren-Reg. 24 'Danmark'"
+		location = 2722
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+
+}
+division = { 
+	
+name = "SS Volunteer Grenadier-Regiment 45"
+		location = 2423
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+
+}
+division = { 
+	
+name = "SS-Volunteer-Grenadier-Regiment 46"
+		location = 2722
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+
+}
+division = { 
+	
+name = "SS-Volunteer-Grenadier-Regiment 47"
+		location = 2884
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+
+}
+division = { 
+	
+name = "I/SS-Waloon-Legion"
+		location = 2584
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.8
+
+}
+division = { 
+	
+name = "II/SS-Waloon-Legion"
+		location = 4656
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.6
+
+}
+division = { 
+	
+name = "SS-Sturmbrigade Langemarck"
+		location = 493
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.2
+
+}
+division = { 
+	
+name = "Grenadier-Regiment 'Friedrich Ludwig Jahn' 1"
+		location = 493
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+}
+
+
+division = { 
+	
+name = "Grenadier-Regiment 'Friedrich Ludwig Jahn' 2"
+		location = 4656
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+}
+division = { 
+	
+name = "Grenadier-Regiment 'Friedrich Ludwig Jahn' 3"
+		location = 2584
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+}
+division = { 
+	
+name = "Grenadier-Regiment 'Schlageter' 1"
+		location = 2884
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+}
+
+
+division = { 
+	
+name = "Grenadier-Regiment 'Schlageter' 2"
+		location = 2774
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+}
+division = { 
+	
+name = "Grenadier-Regiment 'Schlageter' 3"
+		location = 2423
+		division_template = "Grenadier Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+}
+division = { 
+	
+name = "Panzerjäger-Battalion 'Schlageter'"
+		location = 2722
+		division_template = "SPG Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+}
+division = { 
+	
+name = "Panzerjäger-Battalion 309"
+		location = 866
+		division_template = "SPG Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+}division = { 
+	
+name = "Grenadier-Regiment 652"
+		location = 2584
+		division_template = "SPG Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+}
+division = { 
+	
+name = "Grenadier-Regiment 653"
+		location = 850
+		division_template = "SPG Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+}
+division = { 
+	
+name = "Panzerjäger-Battalion 309"
+		location = 1953
+		division_template = "SPG Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.4
+}
+division = { 
+	
+name = "Sturmgeschützbrigade 1170"
+		location = 1076
+		division_template = "SPG Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+}
+division = { 
+	
+name = "Sturmgeschützbrigade 243"
+		location = 1698
+		division_template = "SPG Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+} 
+
+
+
+
+
+}
+

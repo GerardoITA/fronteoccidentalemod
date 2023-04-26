@@ -1,0 +1,22 @@
+technologies = {
+
+	
+	GER_maus_tech = {
+
+		research_cost = 1
+
+		# only from focus!!! ##### FOR THE GERMAN MAUS.
+		allow = {
+			always = no
+		}
+
+		super_heavy_armor = { 
+river = { 
+			attack = 0.5
+			movement = 0.2
+		}
+		}
+	}
+	
+		
+}

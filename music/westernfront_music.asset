@@ -1,0 +1,180 @@
+music = {
+	name = "april1945"
+	file = "april1945.ogg"
+	volume = 0.65
+}
+music = {
+	name = "callofduty3"
+	file = "callofduty3.ogg"
+	volume = 0.65
+}
+music = {
+	name = "allieddefeat"
+	file = "allieddefeat.ogg"
+	volume = 0.65
+}
+music = {
+	name = "wartheme"
+	file = "wartheme.ogg"
+	volume = 0.65
+}
+music = {
+	name = "buckinhospital"
+	file = "buckinhospital.ogg"
+	volume = 0.65
+}
+music = {
+	name = "zerstorer"
+	file = "zerstorer.ogg"
+	volume = 0.65
+}
+music = {
+	name = "frontline"
+	file = "frontline.ogg"
+	volume = 0.65
+}
+music = {
+	name = "kstheme"
+	file = "kstheme.ogg"
+	volume = 0.65
+}
+music = {
+	name = "sovietmarch"
+	file = "sovietmarch.ogg"
+	volume = 0.65
+}
+music = {
+	name = "remagen"
+	file = "remagen.ogg"
+	volume = 0.65
+}
+music = {
+	name = "alliedvictory"
+	file = "alliedvictory.ogg"
+	volume = 0.65
+}
+music = {
+	name = "usatheme"
+	file = "usatheme.ogg"
+	volume = 0.65
+}
+music = {
+	name = "norman"
+	file = "norman.ogg"
+	volume = 0.65
+}
+music = {
+	name = "storm"
+	file = "storm.ogg"
+	volume = 0.65
+}
+music = {
+	name = "zitadelle"
+	file = "zitadelle.ogg"
+	volume = 0.65
+}
+music = {
+	name = "heroicassault"
+	file = "heroicassault.ogg"
+	volume = 0.65
+}
+music = {
+	name = "tigerbattle"
+	file = "tigerbattle.ogg"
+	volume = 0.65
+}
+music = {
+	name = "johnny"
+	file = "johnnycomesmarchinghome.ogg"
+	volume = 0.65
+}
+music = {
+	name = "trizonesian"
+	file = "trizonesian.ogg"
+	volume = 0.65
+}
+music = {
+	name = "lemarseillaise"
+	file = "lemarseillaise.ogg"
+	volume = 0.65
+}
+music = {
+	name = "arras"
+	file = "arras.ogg"
+	volume = 0.65
+}
+music = {
+	name = "alliedassault"
+	file = "alliedassault.ogg"
+	volume = 0.65
+}
+music = {
+	name = "turningtides"
+	file = "turningtides.ogg"
+	volume = 0.65
+}
+music = {
+	name = "trueendmusic"
+	file = "trueendmusic.ogg"
+	volume = 0.65
+}
+music = {
+	name = "brotherhood"
+	file = "brotherhood.ogg"
+	volume = 0.65
+}
+music = {
+	name = "alliedstorm"
+	file = "storm.ogg"
+	volume = 0.65
+}
+music = {
+	name = "honor"
+	file = "honor.ogg"
+	volume = 0.65
+}
+music = {
+	name = "1600men"
+	file = "1600men.ogg"
+	volume = 0.65
+}
+music = {
+	name = "1600menshort"
+	file = "1600menshort.ogg"
+	volume = 0.65
+}
+music = {
+	name = "oneman"
+	file = "oneman.ogg"
+	volume = 0.65
+}
+music = {
+	name = "turningtides1"
+	file = "turningtides1.ogg"
+	volume = 0.65
+}
+music = {
+	name = "ivowtothee"
+	file = "ivowtothee.ogg"
+	volume = 0.65
+}
+music = {
+	name = "germantheme"
+	file = "germantheme.ogg"
+	volume = 0.65
+}
+music = {
+	name = "captainamerica"
+	file = "captainamerica.ogg"
+	volume = 0.65
+}
+music = {
+	name = "leavenomanbehind"
+	file = "leavenomanbehind.ogg"
+	volume = 0.65
+}
+music = {
+	name = "bandofbrothers"
+	file = "bandofbrothers.ogg"
+	volume = 0.65
+}

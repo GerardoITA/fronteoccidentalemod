@@ -1,0 +1,36 @@
+state={
+	id=90
+	name="STATE_90"
+	history = {	
+buildings = { infrastructure = 2 } 
+ 1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+ 		1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+ victory_points = { 9784 7 } 
+victory_points = { 365 4 } 
+victory_points = { 156 3 } 
+victory_points = { 2766 4 } 
+victory_points = { 1101 3 } #Bohain-en-Vermandois
+victory_points = { 3690 3 } #Guise
+victory_points = { 469 3 } #Hirson
+victory_points = { 2411 3 } #Vervins
+}
+	provinces={
+		9784 6237 46 136 149 156 237 251 285 321 340 365 382 385 443 469 478 526 614 675 703 709 793 874 953 960 984 996 1078 1082 1090 1101 1195 1637 1719 1847 1930 1977 2002 2053 2128 2209 2217 2340 2363 2411 2556 2591 2603 2667 2762 2766 2816 2820 2857 2859 2894 2905 2957 3008 3010 3101 3198 3250 3352 3412 3495 3630 3690 3774 3809 3855 3904 3929 4205 4300 4367 4812 4814 4816 4822 4830 4839 4845 4852 4864 4870 4891 4921 4939 4962 4993 
+	}
+	manpower=453411
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

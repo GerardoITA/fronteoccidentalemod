@@ -1,0 +1,24 @@
+state={
+	id=10
+	name="STATE_10"
+	state_category = rural
+	history = { 
+buildings = { infrastructure = 1 } 
+1918.3.20.12 = {
+		owner = HOL
+		add_core_of = HOL
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = HOL
+		}
+
+ victory_points = { 4421 4 } victory_points = {222 2 }victory_points = {4213 4 }victory_points = { 494 3 }}
+	provinces={
+		222 494 1626 4118 4213 4421 5406 
+	}
+	manpower=35611
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

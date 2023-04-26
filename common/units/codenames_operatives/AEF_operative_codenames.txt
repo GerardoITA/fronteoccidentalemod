@@ -1,0 +1,50 @@
+﻿#British Operative list
+ENG_OPERATIVE_CODENAME_HISTORICAL = {
+	name = ENG_HISTORICAL_OPERATIVES
+
+	# for all English countries
+	for_countries = { AEF }
+
+	type = codename
+
+	fallback_name = "Agent %d"
+
+	unique = {
+		"Helge"
+		"Lise"
+		"Snow"
+		"Rain"
+		"Tingling"
+		"Lahlum"
+		"Hansen"
+		"Archduke"
+		"Intrepid"
+		"Mr Fox"
+		"Fleming"
+		"Niven"
+		"Lazenby"
+		"Dalton"
+		"Moore"
+		"Brosnan"
+		"Connery"
+		"Craig"
+		"Sweep"
+		"Jean"
+		"Pierre"
+		"Charles"
+		"Jacques"
+		"André"
+		"Thomas"
+		"Michel"
+		"Maurice"
+		"Henri"
+		"Gilles"
+		"Olivier"
+		"Étienne"
+		"Nicolas"
+		"Francois"
+		"Mathieu"
+		"Gabriel"
+		"Baptiste"
+	}
+}

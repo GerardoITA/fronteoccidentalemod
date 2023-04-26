@@ -1,0 +1,40 @@
+air_wings = {
+###OOB FOR COMBINED ALLIED AIR FORCES AS OF 1943-1944. AVERAGE 12 PER SQUADRON.
+
+	28 = {
+		
+		
+		
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 12
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 100
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 101
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 103
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 166
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 300 poland
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 460
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 12
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 12
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 12
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 12
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 12
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 12
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 12
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 12
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 12
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 12
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 12
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 12
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 12
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 12
+		large_plane_airframe_1 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Handley Page Halifax" }		#no 12
+		large_plane_airframe_1 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Handley Page Halifax" }		#no 12
+		large_plane_airframe_1 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Handley Page Halifax" }		#no 12
+		large_plane_airframe_1 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Handley Page Halifax" }		#no 12
+		large_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Lancaster Mk I" }		#no 12
+		large_plane_airframe_1 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Handley Page Halifax" }		#no 12
+		large_plane_airframe_1 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Handley Page Halifax" }		#no 12
+		
+		}
+
+
+}

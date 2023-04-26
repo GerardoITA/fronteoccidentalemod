@@ -1,0 +1,24 @@
+
+state={
+	id=114
+	name="STATE_114"
+	history = {
+buildings = { infrastructure = 2 } 
+1918.3.20.12 = {
+		owner = DKR
+		add_core_of = DKR
+		}
+ 	1943.3.1.12 = {
+		owner = OKW
+		add_core_of = OKW
+		remove_core_of = DKR
+		}
+}
+	provinces={
+		257 315 376 663 779 852 1046 1130 1178 1258 1493 1841 2228 2242 2268 2269 2580 2600 2981 2998 3030 3172 3180 3215 3237 3411 3559 3669 3748 3966 4064 4151 4887 4914 4917 4949 4965 9565 
+	}
+	manpower=705843
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

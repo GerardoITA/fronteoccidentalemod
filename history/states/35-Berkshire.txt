@@ -1,0 +1,26 @@
+state={
+	id=35
+	name="STATE_35"
+history = { buildings = { infrastructure = 4 fuel_silo = 1 industrial_complex = 1 }
+
+ 1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+}
+ 1943.3.1.12 = {
+		owner = AEF
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+victory_points = {
+			2168 3 
+		}
+ }
+	provinces={
+		92 241 919 1253 1537 1538 2168 2271 2321 2331 2419 2559 2728 3242 3515 4027 4047 4133 4272 4496 4501 4507 4511 4535 
+	}
+	manpower=674604
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

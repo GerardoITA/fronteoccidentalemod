@@ -1,0 +1,19 @@
+state={
+	id=110
+	name="STATE_125"
+history={
+		owner = AEF
+		add_core_of = AEF
+		buildings = { infrastructure = 1 }
+		
+
+	}
+
+	provinces={
+		5411 
+	}
+	manpower=23
+	state_category = tiny_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

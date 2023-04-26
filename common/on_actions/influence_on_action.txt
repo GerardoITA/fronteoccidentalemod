@@ -1,0 +1,29 @@
+on_actions = {
+on_monthly_OKW = { 
+
+effect = { 
+
+if = { 
+limit = { 
+has_completed_focus = GER_armeegruppe_b NOT = { OR = { has_government = neutrality has_country_flag = hitler_taken_direct_control }} }
+		random_list = {
+			100 = { country_event = ger.11 }
+			100 = { }
+			100 = { country_event = ger.10 }
+			100 = { }
+			100 = { country_event = ger.12 }
+			100 = { }
+			100 = { country_event = ger.13  }
+			100 = { country_event = ger.131 }
+			100 = { country_event = ger.20 }
+			100 = { country_event = ger.29 }	
+		} 
+
+
+
+ }
+
+ }
+
+
+###HITLER ISSUES YOU RANDOM ORDERS. THEY ACTIVATE DECISION MISSIONS. IF YOU CARRY THEM OUT, YOU GET INFLUENCE. IF NOT YOU LOSE!

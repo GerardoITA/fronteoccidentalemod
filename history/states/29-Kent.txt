@@ -1,0 +1,42 @@
+state={
+	id=29
+	name="STATE_29"
+history={
+		 1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+}
+ 1943.3.1.12 = {
+		owner = AEF
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+		
+buildings = { air_base = 1 3071 = { naval_base =4 } 9791 = { naval_base =2 }9790 = { naval_base =2 }  9789 = { naval_base =2 }  3071 = { naval_base =3 } 2877 = { naval_base = 6}  infrastructure = 3 dockyard = 1 industrial_complex =2 }
+
+victory_points = { 9787 5 } #Canterbury
+victory_points = { 9789 3} #Margate
+victory_points = { 9791 3 } #Broadstairs
+victory_points = { 9790 3 } #Ramsgate
+victory_points = { 2877 5 } #Dover
+victory_points = { 2078 3 } #Folkstone
+victory_points = { 3071 2 } #Hythe
+victory_points = { 1338 3 } #Tenterden
+victory_points = { 715 3 } #Royal Tunbridge Wells
+victory_points = { 1714 3 } #Tonbridge
+victory_points = { 9786 4 } #Sevenoaks
+victory_points = { 392 3 } #Dartford
+victory_points = { 2366 3 } #Maidstone
+victory_points = { 2558 3 } #Faversham
+victory_points = { 3205 2 } #Whitstable
+victory_points = { 55 2 } #Heme Bay
+	}
+
+	provinces={
+		9790 9791 9789 9786 9787 9788 8248 55 201 278 387 392 582 670 715 932 969 1027 1051 1055 1096 1169 1338 1441 1464 1686 1693 1714 1771 1883 1993 2078 2153 2366 2450 2523 2558 2629 2701 2734 2747 2877 3071 3077 3196 3205 3261 3286 3404 3487 3675 3693 3865 3960 3975 3984 4017 4034 4212 4513 4531 4555 4560 4565 4575 4580 
+	}
+	manpower=1458643
+	state_category = large_town
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

@@ -1,0 +1,38 @@
+
+state={
+	id=91
+	name="STATE_91"
+
+	history={
+buildings = { infrastructure = 3 } 
+		victory_points = {
+			3791 8 
+		}
+victory_points = {
+			4780 2
+		}
+buildings = { 4780 = { coastal_bunker = 2 bunker = 2 } }
+		 1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+ 		1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+	}
+
+	provinces={
+		2729 9608 5642 7724 6697 6888 8290 9134 8 64 70 73 138 165 194 210 355 359 380 430 517 553 568 585 637 645 650 843 851 891 987 988 1017 1021 1113 1162 1321 1332 1334 1347 1358 1367 1394 1562 1681 1715 1818 1825 1871 1877 1998 2088 2163 2358 2440 2598 2609 2649 2827 2850 2865 2879 2928 2968 3051 3176 3188 3216 3395 3401 3424 3568 3605 3680 3712 3753 3791 3845 3879 3910 3918 3989 4038 4078 4114 4209 4223 4341 4739 4765 4780 4781 4786 4794 4795 4796 4803 4810 4829 4848 4853 4874 
+	}
+	manpower=441368
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

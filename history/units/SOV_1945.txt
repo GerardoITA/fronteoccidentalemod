@@ -1,0 +1,4411 @@
+﻿####1945, ROUGH SHAPE OF THE 1st UKRAINIAN FRONT. NO UNIT NAMES YET, AND THEY ARE ALL EVENLY SPREAD. BUT NUMBERS ARE ROUGHY ACCURATE. 
+#Rifle, Motorized Rifle Tank, SPG, Katyusha
+##RIFLE CORPS - 3 DIVS. 
+##RIFLE DIV - 3 REGIMENTS. 
+##RIFLE REG - 3 BATTALIONs.
+### ARTY DIV - 3 BRIGS
+##ARTY BRIG  = ROUGHLY 3 REGS OF MORTAR.
+####ARTY REG = 2 MORTAR BATS.
+###TANK CORPS = Three tank brigades, one motorized rifle brigade, six artillery regiments
+###TANK BRIG = 3 TANK BATS, 1 MOT INF BAT
+####TANK REG = IS BASICALLY A BATTALION. BUT WITH 4 SETS OF 5 TANKS. SO 3 REGS = 1 BAT. 
+##MECH CORPS = 3 MECH BRIG, 1 TANK BRIG, 3 ARTY REGs
+##MECH BRIG ## 1 MOTORIZED BRIG and 1 TANK UNIT
+####MOT BRIG = 3 MOT BATS
+###1ST UKRAINIAN FRONT    
+# 5th Guards Army 3 RIFLE CORPS(81 UNITS), 2 ARTIY DIVS(36), 2 ARTIY BRIGS(18), 4 ARTY REGS(24), 1 TANK CORPS(9), 1 TANK BRIG(3), (+1 heavy tank bat "regiment")
+   # 2nd Polish Army 5 INF DIVs(45 units), 3 ARTY BRIGS(18), 1 MORTAR REG(2), 1 TANK CORPS(9), 1 TANK BRIG(3), 1 HEAVY TANK REG, 1 SPG REG
+    #52nd Army 1 MECH CORPS, 9(81 units) INF DIVS, 1 TANK REG, TWO ARTY UNITS 
+    #4th Guards Tank Army - 2 MOTOR INF DIVS(12), 2 ARTY BRIGS(12)
+    #28th Army # 9 INF DIVS(81 units), 2 ARTY BRIGS AND 1 ARTY REG, 1 TANK UNIT
+    #31st Army## 9 INF DIVS(81 units), 5 ARTY UNITS, 2 SPG UNITS
+    #3rd Guards Army 3 TANK REGS, 1 RIFLE CORPS(27 units), 4 RIFLE DIVS(36), 2 SEPARATE RIFLE BRIGS(4 units), 1 MECH CORPS, 1 MOTOR RIFLE BRIG #36
+######TOTAL INFANTRY UNITS - 421
+####TOTAL ARTY UNITS = 122
+####TOTAL TANK UNITS == 48
+####TOTAL MOT UNITS == 36
+#######ARTY UNITS TOTAL 
+division_template = {
+	name = "Rifle Battalion" #Roughly speaking there were 3 Battalions to a regiment, and 3 regiments to a division. Around 600 men per brig. Given that the Soviets were heavily supported by arty units I also included that in their inf templates.
+
+	division_names_group = SOV_BAT_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
+	}
+	
+	support = {
+		
+	  artillery = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	 anti_tank = { x = 0 y = 2 }
+    
+	}
+}
+division_template = {
+	name = "Motor Rifle Battalion" #Roughly speaking there were 3 Battalions to a regiment, and 3 regiments to a division. Around 600 men per brig. Given that the Soviets were heavily supported by arty units I also included that in their inf templates.
+
+	division_names_group = SOV_BAT_01
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		mechanized= { x = 1 y = 3 }
+		mechanized= { x = 1 y = 4 }
+	}
+	
+	support = {
+		
+	  artillery = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	 anti_tank = { x = 0 y = 2 }
+    
+	}
+}
+
+division_template = {
+	name = "Mortar Battalion" # KATYUSHAS. EACH OF THESE BATTALIONS CONSISTS OF NEARlY 40 LAUNCHERS.
+	division_names_group = SOV_KAT_1
+	regiments = {
+		motorized_rocket_brigade = { x = 0 y = 0 }
+		motorized_rocket_brigade = { x = 0 y = 1 }
+		motorized_rocket_brigade = { x = 0 y = 2 }
+		motorized_rocket_brigade = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		motorized = { x = 1 y = 4 }
+	}
+	
+	support = {
+		
+	  artillery = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	 anti_tank = { x = 0 y = 2 }
+    
+	}
+}
+
+division_template = {
+	name = "Tank Battalion" 
+	######Battalions(aka REGIMENT) form part of brigades, and brigades form divisions. Battalion had around 60 tanks.
+
+	division_names_group = SOV_TANK_01
+	regiments = {
+        	medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		medium_armor = { x = 0 y = 4 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }
+		medium_armor = { x = 1 y = 4 }
+		medium_armor = { x = 2 y = 0 }
+       		medium_armor = { x = 2 y = 1 }	
+		motorized  = { x = 2 y = 2 }
+		motorized  = { x = 2 y = 3 }
+		mechanized  = { x = 2 y = 4 }
+	}
+
+	support = {
+      	maintenance_company = { x = 0 y = 3 }
+        engineer = { x = 0 y = 1 }
+        recon = { x = 0 y = 2 } 
+	signal_company = { x = 0 y = 4 }
+	anti_air = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Heavy Tank Battalion" 
+	######Battalions(aka REGIMENT) form part of brigades, and brigades form divisions. Battalion had around 60 tanks.
+
+	division_names_group = SOV_TANK_01
+	regiments = {
+        	medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		medium_armor = { x = 0 y = 4 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }
+		medium_armor = { x = 1 y = 4 }
+		medium_armor = { x = 2 y = 0 }
+       		medium_armor = { x = 2 y = 1 }	
+		motorized  = { x = 2 y = 2 }
+		motorized  = { x = 2 y = 3 }
+		mechanized  = { x = 2 y = 4 }
+	}
+
+	support = {
+      	maintenance_company = { x = 0 y = 3 }
+        engineer = { x = 0 y = 1 }
+        recon = { x = 0 y = 2 } 
+	signal_company = { x = 0 y = 4 }
+	anti_air = { x = 0 y = 0 }
+	}
+}
+
+
+units = {
+##1st UKRAINIAN FRONT, GENERIC UNITS NOT NAMED. AMOUNT IS CORRECT. BUT NOT NAMED.
+division = { 
+	
+		#name = "Test"
+		location = 1921
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1921
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1921
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4014
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4014
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4014
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2296
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2296
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2296
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2262
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2262
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2262
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4063
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4063
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4063
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1933
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1933
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1933
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1960
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1960
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1960
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3002
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3002
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3002
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1572
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1572
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1572
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4705
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4705
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4705
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1181
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1181
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1181
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1442
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1442
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1442
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4170
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4170
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4170
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3941
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3941
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3941
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4790
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4790
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4790
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1782
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1782
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1782
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2112
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2112
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2112
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 65
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 65
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 65
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1921
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1921
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1921
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4014
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4014
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4014
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2296
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2296
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2296
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2262
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2262
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2262
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4063
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4063
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4063
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1933
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1933
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1933
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1960
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1960
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1960
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3002
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3002
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3002
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1572
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1572
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1572
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4705
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4705
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4705
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1181
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1181
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1181
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1442
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1442
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1442
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4170
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4170
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4170
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3941
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3941
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3941
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4790
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4790
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4790
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1782
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1782
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1782
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2112
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2112
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2112
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 65
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 65
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 65
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1921
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1921
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1921
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4014
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4014
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4014
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2296
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2296
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2296
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2262
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2262
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2262
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4063
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4063
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4063
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1933
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1933
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1933
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1960
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1960
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1960
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3002
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3002
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3002
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1572
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1572
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1572
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4705
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4705
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4705
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1181
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1181
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1181
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1442
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1442
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1442
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4170
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4170
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4170
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3941
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3941
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3941
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4790
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4790
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4790
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1782
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1782
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1782
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2112
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2112
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2112
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 65
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 65
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 65
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1921
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1921
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1921
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4014
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4014
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4014
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2296
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2296
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2296
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2262
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2262
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2262
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4063
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4063
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4063
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1933
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1933
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1933
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1960
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1960
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1960
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3002
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3002
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3002
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1572
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1572
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1572
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2970
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4705
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4705
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4705
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1181
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1181
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1181
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1442
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1442
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1442
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4170
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4170
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4170
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3941
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3941
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3941
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4790
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4790
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4790
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1782
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1782
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1782
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4880
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2112
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2112
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2112
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 65
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 65
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 65
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 65
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 65
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 65
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 65
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3639
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3639
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3639
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3639
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3639
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3639
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3639
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3639
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3639
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3639
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3639
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3639
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3639
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3639
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3639
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3639
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3639
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3639
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 30
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 30
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 30
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 30
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 30
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 30
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 30
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 30
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Rifle Battalion"
+
+}
+#####
+
+division = { 
+	
+		#name = "Test"
+		location = 1921
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1921
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1921
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4014
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4014
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4014
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2296
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2296
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2296
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2262
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2262
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2262
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4063
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4063
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4063
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1970
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1970
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1970
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1933
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1933
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1933
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1960
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1960
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1960
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3002
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3002
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3002
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1572
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1572
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1572
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2970
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2970
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2970
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4705
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4705
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4705
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1181
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1181
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1181
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1442
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1442
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1442
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4170
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4170
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4170
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3941
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3941
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3941
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4790
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4790
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4790
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1782
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1782
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1782
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2880
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2880
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2880
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4880
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4880
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4880
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2112
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2112
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2112
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 65
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 65
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 65
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1442
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1442
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1442
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4170
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4170
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4170
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3941
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3941
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3941
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4790
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4790
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4790
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1782
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1782
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1782
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2880
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2880
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2880
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4880
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4880
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4880
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2112
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2112
+		division_template = "Mortar Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2112
+		division_template = "Mortar Battalion"
+
+}
+#############
+division = { 
+	
+		#name = "Test"
+		location = 1921
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1921
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1921
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4014
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4014
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4014
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2296
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2296
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2296
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2262
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2262
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2262
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4063
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4063
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4063
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1970
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1970
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1970
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1933
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1933
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1933
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1960
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1960
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1960
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3002
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3002
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 3002
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1572
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1572
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1572
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2970
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2970
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2970
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4705
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4705
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4705
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1181
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1181
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 1181
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 4719
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2975
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Tank Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2997
+		division_template = "Tank Battalion"
+
+}
+#####
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 30
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 30
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 30
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 30
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 30
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 30
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2251
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Motor Rifle Battalion"
+
+}
+division = { 
+	
+		#name = "Test"
+		location = 2125
+		division_template = "Motor Rifle Battalion"
+
+}
+
+
+}
+air_wings = {
+###Air unit variants required - FIGHTER 2, SPITFIRE V, P-47. STRAT BOMBER 2, B-24. TAC BOMBER, A-26.
+
+
+ }
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	
+
+}
+
+#####################

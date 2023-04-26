@@ -1,0 +1,32 @@
+
+state={
+	id=18
+	name="STATE_18"
+	history = { 
+buildings = { infrastructure = 4 } 
+	1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+ victory_points = { 5408 5 }
+ victory_points = { 9609 5 }
+ victory_points = { 5418 5 }
+}
+	provinces={
+		5408 5418 9609
+	}
+	manpower=110405
+	state_category = city 
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

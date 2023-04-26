@@ -1,0 +1,80 @@
+
+state={
+	id=59
+	name="STATE_59"
+
+	history={
+		1918.3.20.12 = {
+			owner = ENT
+			add_core_of = ENT
+
+		}
+		1943.3.1.12 = {
+			owner = OKW
+			add_core_of = AEF
+			remove_core_of = ENT
+
+		}
+		1944.12.23.12 = {
+			owner = AEF
+			add_core_of = AEF
+
+		}
+		victory_points = {
+			5065 2 
+		}
+		victory_points = {
+			5059 4 
+		}
+		victory_points = {
+			5104 3 
+		}
+		victory_points = {
+			5144 6 
+		}
+		victory_points = {
+			8360 3 
+		}
+		victory_points = {
+			1811 1 
+		}
+		
+		victory_points = {
+			4366 2 
+		}
+		victory_points = {
+			5166 3 
+		}
+		buildings = {
+			air_base = 2
+			infrastructure = 2
+			dockyard = 1
+			9627 = {
+				naval_base = 3
+				coastal_bunker = 2
+				bunker = 2
+
+			}
+			5065 = {
+				naval_base = 1
+
+			}
+			9627 = {
+				naval_base = 2
+				coastal_bunker = 2
+				bunker = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		27 101 206 239 243 280 323 371 448 455 471 557 559 591 690 758 786 909 944 961 1077 1172 1208 1271 1330 1393 1400 1422 1424 1429 1438 1507 1618 1664 1685 1739 1756 1811 1917 2018 2104 2207 2354 2382 2386 2402 2418 2425 2498 2505 2760 2763 2803 2900 2925 2966 3114 3173 3221 3228 3309 3382 3409 3531 3566 3572 3603 3687 3757 3761 3799 3801 3831 3856 3859 3969 4062 4146 4203 4222 4366 5056 5059 5065 5066 5075 5094 5104 5106 5107 5115 5138 5144 5149 5156 5160 5164 5166 5179 5180 5187 5192 5201 5209 5213 5226 5227 5248 5249 5435 8360 
+	}
+	manpower=526955
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

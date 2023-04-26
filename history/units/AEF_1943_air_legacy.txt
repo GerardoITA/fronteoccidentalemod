@@ -1,0 +1,125 @@
+air_wings = {
+
+	28 = {
+		
+		tac_bomber_equipment_1 =  { owner = "AEF"  amount = 36
+		} 
+		name = "No. 137 Wing, RAF"
+tac_bomber_equipment_1 =  { owner = "AEF"  amount = 36
+		} 
+		name = "No. 138 Wing, RAF"
+		
+tac_bomber_equipment_2 =  { owner = "AEF"  amount = 36
+		} 
+		name = "No. 139 Wing, RAF"
+heavy_fighter_equipment_2 =  { owner = "AEF"  amount = 36
+		} 
+		name = "No. 140 Wing, RAAF"
+scout_plane_equipment_2 =  { owner = "AEF"  amount = 48
+		} 
+		name = "No. 39 Reconnaisance Wing, RCAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 48
+		} 
+		name = "No. 122 Wing, RAF"
+cas_equipment_1 =  { owner = "AEF"  amount = 48
+		} 
+		name = "No. 124 Wing, RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 48
+		} 
+		name = "No. 125 Wing, RAAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 48
+		} 
+		name = "No. 126 Wing, RCAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 48
+		} 
+		name = "No. 127 Wing, RCAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 129 Wing, RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 143 Wing, RCAF"
+scout_plane_equipment_2 =  { owner = "AEF"  amount = 36
+		} 
+		name = "No. 39 Reconnaisance Wing, RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 24
+		} 
+		name = "No. 123 Wing, RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 24
+		} 
+		name = "No. 123 Wing, RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 24
+		} 
+		name = "No. 131 Wing (Poland), RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 36
+		} 
+		name = "No. 132 Wing (Norway), RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 36
+		} 
+		name = "No. 133 Wing (Poland), RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 222 Squadron (Belgium), RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 349 Squadron (Belgium), RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 485 Squadron, RNZAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 12
+		} 
+		name = "'Firmes Volamos' Squadron"
+fighter_equipment_1 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 183 Squadron, RAF"
+fighter_equipment_1 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 145 Wing (France), RAF"
+cas_equipment_1 =  { owner = "AEF"  amount = 48
+		} 
+		name = "No. 146 Wing, RAF"
+fighter_equipment_2 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 91 Squadron, RAF"
+fighter_equipment_2 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 124 Squadron, RAF"
+fighter_equipment_2 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 322 Squadron, (Holland) RAF"
+heavy_fighter_equipment_2 =  { owner = "AEF"  amount = 24
+		} 
+		name = "No. 142 Wing, RAF"
+heavy_fighter_equipment_2 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 147 Wing, RAF"
+heavy_fighter_equipment_2 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 409 Squadron, RCAF"
+heavy_fighter_equipment_2 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 410 Squadron, RCAF"
+heavy_fighter_equipment_2 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 488 Squadron, RNZAF"
+cas_equipment_1 =  { owner = "AEF"  amount = 12
+		} 
+		name = "No. 150 Wing, RAF"
+scout_plane_equipment_2 =  { owner = "AEF"  amount = 36
+		} 
+		name = "No. 34 Reconnaisance Wing, RAF"
+scout_plane_equipment_2 =  { owner = "AEF"  amount = 36
+		} 
+		name = "No. 34 Reconnaisance Wing, RAF"
+
+
+transport_plane_equipment_1 =  { owner = "AEF"  amount = 120
+		} 
+		name = "No. 38 Group, RAF"
+transport_plane_equipment_1 =  { owner = "AEF"  amount = 60
+		} 
+		name = "No. 46 Group, RAF"
+}
+
+
+ }

@@ -1,0 +1,32 @@
+
+state={
+	id=107
+	name="STATE_107"
+
+	history={
+		1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+buildings = {infrastructure =1 }
+
+	}
+
+	provinces={
+		162 550 937 1889 1981 2668 3278 4193 5379 
+	}
+	manpower=349685
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

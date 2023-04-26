@@ -1,0 +1,33 @@
+
+state={
+	id=37
+	name="STATE_37"
+
+	history={
+		buildings = {
+			infrastructure = 2
+
+		}
+		 1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+	}
+ 		1943.3.1.12 = {
+		owner = AEF
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+		victory_points = {
+			4204 3 
+		}
+
+	}
+
+	provinces={
+		307 378 437 529 623 732 1565 1595 1662 1728 2085 2178 2307 2397 2808 2907 3067 3311 3327 3513 3524 4204 4395 4416 4417 4442 4443 4452 8824 9563 
+	}
+	manpower=89684
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

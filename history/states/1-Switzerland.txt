@@ -1,0 +1,16 @@
+
+state={
+	id=1
+	name="STATE_1"
+
+	history = { owner = SWI add_core_of = SWI buildings = { infrastructure =1 } victory_points = { 348 10 } }
+#impassable=yes
+	provinces={
+		221 255 258 348 497 530 594 686 733 910 1140 1194 1832 1929 2048 2103 2197 2224 2408 2490 2633 2976 3100 3138 3199 3222 3389 3549 3807 3873 4094 4179 4364 5349 5363 5372 5374 5376 5390 5392 5393 5402 5405 9573 
+	}
+	manpower=1
+	state_category = rural
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

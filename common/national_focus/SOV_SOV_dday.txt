@@ -1,0 +1,52 @@
+focus_tree = {
+	id = SOV_dday
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	
+	focus = {
+		id = SOV_war_with_allies
+		icon = GFX_GER_support_rommels_plan-135904
+		x = 8
+		y = 0
+		cost = 2.8
+		available_if_capitulated = yes
+		completion_reward = { declare_war_on = {
+    target = AEF
+    type = annex_everything
+} }
+		mutually_exclusive = { 
+			focus =  SOV_peace_with_allies
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus = {
+		id = SOV_peace_with_allies
+		icon = GFX_GER_support_rommels_plan-135904
+		x = 6
+		y = 0
+		cost = 2.8
+		available_if_capitulated = yes
+		prerequisite = {  }
+		completion_reward = {  }
+		mutually_exclusive = { 
+			focus = SOV_war_with_allies
+		}
+		
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+#End of focuses 
+ }

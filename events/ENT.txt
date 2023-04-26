@@ -1,0 +1,120 @@
+###########################
+# OKW events
+###########################
+
+add_namespace = ent
+
+country_event = { ##WELCOME. PLUS BORDER CORRECTION.
+	id = ent.1
+	title = ent.1.t
+	desc = ent.1.d
+	picture = GFX_report_event_runstedt
+	is_triggered_only = yes 
+	immediate = { 
+ENT = { 
+set_province_controller = 4257 
+set_province_controller = 460
+set_province_controller = 4600
+set_province_controller = 200
+set_province_controller = 4585
+set_province_controller = 4597
+set_province_controller = 2721
+set_province_controller = 2220
+set_province_controller = 1480
+set_province_controller = 817
+set_province_controller = 3684
+set_province_controller = 3760
+set_province_controller = 3425
+set_province_controller = 4288
+set_province_controller = 1736
+set_province_controller = 1770
+set_province_controller = 3917
+set_province_controller = 4342
+set_province_controller = 551
+set_province_controller = 785
+set_province_controller = 224
+set_province_controller = 3423
+set_province_controller = 9647
+set_province_controller = 3550 
+set_province_controller = 2533
+set_province_controller = 4782
+
+ }
+
+DKR = { 
+set_province_controller = 498
+set_province_controller = 1994
+	set_province_controller = 3089
+set_province_controller = 3550 
+set_province_controller = 1034
+set_province_controller = 4741
+set_province_controller = 1573
+set_province_controller = 4276
+set_province_controller = 1353
+set_province_controller = 4755
+set_province_controller = 2002
+set_province_controller = 4816
+set_province_controller = 1637
+set_province_controller =3352
+set_province_controller =1195
+set_province_controller =2766
+set_province_controller =675
+set_province_controller =2762
+set_province_controller =2053
+set_province_controller =156
+set_province_controller =4891
+set_province_controller =2128
+set_province_controller =2217
+set_province_controller =124
+set_province_controller =2613
+set_province_controller =3958
+set_province_controller =4926
+set_province_controller =2714
+set_province_controller =4911
+set_province_controller =2910
+set_province_controller =1594
+set_province_controller =2336
+set_province_controller =1320
+set_province_controller =3747
+set_province_controller = 4922
+set_province_controller =727
+set_province_controller = 2288
+set_province_controller =2400
+#set_province_controller =4924
+#set_province_controller =1689
+#set_province_controller =132
+#set_province_controller =687
+set_province_controller =2599
+set_province_controller =3716
+set_province_controller =3512
+set_province_controller =730
+set_province_controller =5052
+set_province_controller =3400
+set_province_controller =513
+set_province_controller =826
+set_province_controller = 2152
+set_province_controller =2180
+set_province_controller =673
+set_province_controller =547
+set_province_controller =5058
+set_province_controller =2944
+set_province_controller =113
+#set_province_controller =983
+#set_province_controller =381
+set_province_controller =3792
+set_province_controller =40
+set_province_controller =2807
+set_province_controller =4888
+set_province_controller =1779
+set_province_controller =2362
+set_province_controller =1533
+set_province_controller =4085
+set_province_controller =3731
+set_province_controller =1127
+}
+}
+	fire_only_once = yes 
+	option = {
+	name = ent.1.a
+	}
+}

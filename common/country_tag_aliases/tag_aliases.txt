@@ -1,0 +1,4 @@
+DKR = {
+	original_tag = OKW
+	has_country_flag = OKW_ww1_start_tag
+}

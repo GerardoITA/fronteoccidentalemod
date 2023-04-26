@@ -1,0 +1,36 @@
+on_actions = {
+
+###welcome events
+on_startup = {	
+        effect = {
+             AEF = { 
+		if = {
+			limit = {
+		 has_global_flag = normal_start_trigger  NOT = {
+		 has_global_flag = ITB_start_trigger }
+}
+                       country_event = aef.1 
+}
+        AEF = { 
+		if = {
+			limit = {
+		 has_global_flag = ITB_start_trigger  NOT = {
+		 has_global_flag = normal_start_trigger }
+}
+                       country_event = aef.30 
+}
+OKW = { 
+		if = {
+			limit = {
+		 has_global_flag = ITB_start_trigger  NOT = {
+		 has_global_flag = normal_start_trigger }
+}
+                       country_event = ger.1 
+}
+     OKW = { if = { limit = { has_global_flag = normal_start_trigger 
+  } 
+		country_event = ger.1
+} }
+}
+ }
+

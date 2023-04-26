@@ -1,0 +1,55 @@
+
+state={
+	id=80
+	name="STATE_80"
+
+	history={
+buildings = { infrastructure = 2 } 
+		victory_points = {
+			5112 5 
+		}
+		victory_points = {
+			4390 5 
+		}
+	victory_points = {
+			5210 3
+		}
+	victory_points = {
+			1983 3
+		}
+victory_points = {
+			2315 3
+		}
+victory_points = {
+			3000 3
+		}
+victory_points = {
+			5025 3
+		}
+victory_points = {
+			986 2
+		}
+		1918.3.20.12 = {
+		owner = DKR
+		add_core_of = DKR
+		}
+ 	1943.3.1.12 = {
+		owner = OKW
+		add_core_of = OKW
+		remove_core_of = DKR
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+	}
+
+	provinces={
+		5152 32 63 331 640 856 943 986 1117 1124 1207 1300 1494 1568 1580 1805 1983 2049 2223 2246 2315 2359 2480 2493 2586 2588 2764 2804 2893 2937 3000 3003 3095 3098 3195 3297 3302 3435 3567 3703 3933 4165 4195 4390 4987 5021 5025 5029 5035 5045 5046 5057 5068 5077 5112 5114 5123 5150  5155 5181 5210 
+	}
+	manpower=985739
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

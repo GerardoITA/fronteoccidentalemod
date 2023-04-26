@@ -1,0 +1,23 @@
+state={
+	id=40
+	name="STATE_40"
+	history = { 
+ 1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+}
+ 1943.3.1.12 = {
+		owner = AEF
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+
+ buildings = { infrastructure =2 } }
+	provinces={
+		8795 68 94 157 363 463 567 1033 1133 1171 1603 1691 1750 1852 1879 2032 2167 2438 2524 2537 2551 2652 2674 2684 2746 2867 3033 3069 3182 3326 3427 3457 3527 3553 3592 3824 3834 3943 4041 4095 4122 4175 4459 4521 4552 4554 4569 4584 
+	}
+	manpower=504583
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

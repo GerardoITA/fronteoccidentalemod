@@ -1,0 +1,91 @@
+
+state={
+	id=57
+	name="STATE_57"
+
+	history={
+		buildings = {
+			infrastructure = 3
+			anti_air_building = 1
+			5458 = {
+				naval_base = 4
+				coastal_bunker = 3
+				bunker = 2
+
+			}
+			5556 = {
+				naval_base = 2
+				coastal_bunker = 2
+				bunker = 1
+
+			}
+			3825 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			5458 11 
+		}
+victory_points = {
+			3307 4
+		}
+	victory_points = {
+			3708 2 #Roscoff
+		}
+		victory_points = {
+			3825 3 
+		}
+		victory_points = {
+			5309 3 
+		}
+		victory_points = {
+			5106 3 
+		}
+		victory_points = {
+			8800 3 
+		}
+		victory_points = {
+			8129 8 
+		}
+		victory_points = {
+			5271 5 
+		}
+		
+	victory_points = {
+			9576 4 #Eastern Morlaix
+		}
+		victory_points = {
+			5556 5 
+		}
+	victory_points = {
+			3967 5 
+		}
+	victory_points = {
+			5238 5 
+		}
+		
+		 1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+		 1944.12.23.12 = {
+		owner = AEF
+		add_core_of = AEF
+		}
+	}
+
+	provinces={
+		7989 3 204 240 304 327 391 409 411 424 638 656 835 848 903 971 1026 1045 1116 1135 1144 1221 1259 1269 1313 1327 1448 1590 1593 1742 1758 1824 1830 1851 2021 2122 2143 2194 2368 2428 2437 2479 2507 2569 2638 2703 2708 2779 2811 2832 2846 2903 2938 2984 3042 3080 3091 3103 3110 3117 3174 3177 3272 3307 3360 3407 3430 3450 3533 3591 3692 3708 3773 3808 3820 3825 3876 3914 3999 4015 4053 4073 4080 4106 4159 4168 4197 4218 4242 4264 4306 4382 5099 5100 5101 5103 5117 5133 5171 5175 5178 5221 5238 5242 5261 5271 5303 5309 5437 5438 5458 5556 7646 8129 8800 9576 
+	}
+	manpower=724735
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

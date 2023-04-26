@@ -1,0 +1,724 @@
+﻿####1943 SCENARIO, ALLIES TEMPLATES (STARTING)
+
+division_template = {
+	name = "Home Guard" #British garrison units, had a non-standard organisaion (based on location). So I've opted for a generic HOI4 garrison unit.
+template_counter = 66
+	division_names_group = AEF_INF_01
+is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	
+	support = {
+       military_police = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "British Infantry Battalion" #Roughly speaking there were 3 regiments (aka Battalions) to a brigade, and 3 brigades to a division. Around 1000 men.
+
+	division_names_group = AEF_INF_02
+template_counter = 67
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+	}
+	
+	support = {
+		
+	  artillery = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	 anti_tank = { x = 0 y = 2 }
+    
+	}
+}
+division_template = {
+	name = "British Parachute Battalion"	##Brit para bats consist of 3 100-men companies. Around 300 men or so.
+	division_names_group = AEF_PARA_01
+	template_counter = 81
+	regiments = {
+		paratrooper = { x = 0 y = 0 } 
+		paratrooper = { x = 0 y = 1 } 
+		paratrooper = { x = 0 y = 2 } 
+		}
+support = {
+	engineer = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	  recon = { x = 0 y = 2 }
+	 maintenance_company = { x = 0 y = 3 }
+	 artillery = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Canadian Infantry Battalion" ######SIMILAR, IF NOT THE SAME AS BRITISH.
+
+	division_names_group = AEF_CAN_01
+template_counter = 75
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+	}
+	
+	support = {
+		
+	  artillery = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	 anti_tank = { x = 0 y = 2 }
+    
+	}
+}
+
+division_template = {
+	name = "British Armoured Regiment" 
+	######Battalions(aka REGIMENT) form part of brigades, and brigades form divisions. Battalion had around 60 tanks.
+
+	division_names_group = AEF_TANK_01
+template_counter = 76
+	regiments = {
+        	medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		medium_armor = { x = 0 y = 4 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }
+		medium_armor = { x = 1 y = 4 }
+		medium_armor = { x = 2 y = 0 }
+       		medium_armor = { x = 2 y = 1 }	
+		motorized  = { x = 2 y = 2 }
+		motorized  = { x = 2 y = 3 }
+		mechanized  = { x = 2 y = 4 }
+	}
+
+	support = {
+      	maintenance_company = { x = 0 y = 3 }
+        engineer = { x = 0 y = 1 }
+        recon = { x = 0 y = 2 } 
+	signal_company = { x = 0 y = 4 }
+	anti_air = { x = 0 y = 0 }
+	}
+}
+
+	#CANADIANS USE SAME LAYOUT. WILL ADD ANOTHER NAME SET FOR CANADIAN UNITS.
+division_template = {
+	name = "Commandos" #British elite units, akin to Royal Marines, formed part of the Special Service Brigades (effectively the pre-SAS)
+
+	division_names_group = AEF_COM_01
+template_counter = 68
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+	
+	support = {
+   	 signal_company = { x = 0 y = 0 }
+		 recon = { x = 0 y = 1 } 
+	 engineer = { x = 0 y = 2 }
+	anti_tank = { x = 0 y = 3 }	
+	}
+}
+division_template = {
+	name = "US Infantry Battalion" #Roughly speaking there were 3 regiments (aka Battalions) to a brigade, and 3 brigades to a division. Around 1000 men.
+
+	division_names_group = AEF_USA_1
+template_counter = 65
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 3 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	
+	support = {
+		
+	 field_hospital = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	 anti_tank = { x = 0 y = 2 }
+    	engineer = { x = 0 y = 3 }
+	}
+}
+
+###armoured infantry,  x3, 2x tank battalions with 70 tanks each
+division_template = {
+	name = "US Armor Battalion" 
+	##### 3 regiments make up a div. 2 Armor, one inf. 
+template_counter = 69
+	division_names_group = AEF_TANK_02
+
+	regiments = {
+        	medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		medium_armor = { x = 0 y = 4 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }
+		medium_armor = { x = 1 y = 4 }
+		medium_armor = { x = 2 y = 0 }
+       		motorized  = { x = 2 y = 1 }	
+		mechanized   = { x = 2 y = 2 }
+		mechanized   = { x = 2 y = 3 }
+		mechanized  = { x = 2 y = 4 }
+       
+	}
+
+	support = {
+      	maintenance_company = { x = 0 y = 3 }
+        engineer = { x = 0 y = 1 }
+        recon = { x = 0 y = 2 } 
+	signal_company = { x = 0 y = 4 }
+	anti_air = { x = 0 y = 0 }
+	}
+}
+###armoured infantry,  x3, 2x tank battalions with 70 tanks each. WOLVERINES OR HELLCATS.
+division_template = {
+	name = "US Tank Destroyer Battalion" 
+	##### 3 regiments make up a div. 2 Armor, one inf. 
+template_counter = 69
+	division_names_group = AEF_TANK_03
+
+	regiments = {
+        	medium_tank_destroyer_brigade = { x = 0 y = 0 }
+		medium_tank_destroyer_brigade = { x = 0 y = 1 }
+		medium_tank_destroyer_brigade = { x = 0 y = 2 }
+		medium_tank_destroyer_brigade = { x = 0 y = 3 }
+		medium_tank_destroyer_brigade = { x = 0 y = 4 }
+		medium_tank_destroyer_brigade = { x = 1 y = 0 }
+		medium_tank_destroyer_brigade = { x = 1 y = 1 }
+		medium_tank_destroyer_brigade = { x = 1 y = 2 }
+		medium_tank_destroyer_brigade = { x = 1 y = 3 }
+		medium_tank_destroyer_brigade = { x = 1 y = 4 }
+		medium_tank_destroyer_brigade = { x = 2 y = 0 }
+       		motorized  = { x = 2 y = 1 }	
+		mechanized   = { x = 2 y = 2 }
+		mechanized   = { x = 2 y = 3 }
+		mechanized  = { x = 2 y = 4 }
+       
+	}
+
+	support = {
+      	maintenance_company = { x = 0 y = 3 }
+        engineer = { x = 0 y = 1 }
+        recon = { x = 0 y = 2 } 
+	signal_company = { x = 0 y = 4 }
+	anti_air = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "US Armoured Infantry Battalion"
+template_counter = 69
+	division_names_group = AEF_USA_MECH ##These guys were organised slightly different to others. 3ish companies of 200 men in M3 half tracks.
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		mechanized = { x = 0 y = 4 }
+	}
+	
+	support = {
+	field_hospital= { x = 0 y = 2 }
+	  artillery = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+    
+	}
+}
+division_template = {
+	name = "US Army Rangers"		# US army Ranger Battalion, small elite units. around 700 men each. So for gameplay I've buffed em to 20w.
+	division_names_group = AEF_RAN_01
+template_counter = 77
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+	  	mountaineers = { x = 0 y = 1 } 
+		mountaineers = { x = 0 y = 2 }
+	  	mountaineers = { x = 0 y = 3 } 
+		mountaineers = { x = 0 y = 4 } 
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+	}
+support = {
+	engineer = { x = 0 y = 3 }
+        recon = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 2 }
+	field_hospital= { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "US Parachute Rifle Company"		# I decided to break paratroopers down into company-sized units just because I figured it would be better for the player. Also allows you to directly spawn Easy company and such.
+	division_names_group = AEF_PARA_01
+	template_counter = 70
+	regiments = {
+		paratrooper = { x = 0 y = 0 } 
+		}
+support = {
+	engineer = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	  recon = { x = 0 y = 2 }
+	 maintenance_company = { x = 0 y = 3 }
+	anti_tank = { x = 0 y = 4 }
+	}
+}
+
+
+
+division_template = {
+	name = "French Light Tank Battalion" 
+	######in french tank divisions, you had something of a mix of light (mainly M3 stuart) and medium (shermans). They also had more, smaller regiments. Due to lack of soldi info, I've gone for a roughly accurate "generic" template for French armoured regiments.
+template_counter = 71
+
+	division_names_group = AEF_TANK_04
+
+	regiments = {
+        	light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		light_armor = { x = 0 y = 4 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 1 y = 3 }
+		light_armor = { x = 1 y = 4 }
+		motorized = { x = 2 y = 0 }
+       		motorized  = { x = 2 y = 1 }	
+		mechanized   = { x = 2 y = 2 }
+		mechanized   = { x = 2 y = 3 }
+		mechanized  = { x = 2 y = 4 }
+	}
+
+	support = {
+      	maintenance_company = { x = 0 y = 2 }
+        engineer = { x = 0 y = 0 }
+       light_tank_recon = { x = 0 y = 1 } 
+	signal_company = { x = 0 y = 3 }
+	
+	}
+}
+
+division_template = {
+	name = "French Medium Tank Battalion" #DUE TO LACK OF SOLLD INFO I'VE GIVEN THE FRENCH AN AMERICAN STYLE BATTALION TEMPLATE.
+	######in french tank divisions, you had something of a mix of light (mainly M3 stuart) and medium (shermans). They also had more, smaller regiments. Due to lack of soldi info, I've gone for a roughly accurate "generic" template for French armoured regiments.
+
+template_counter = 71
+	division_names_group = AEF_TANK_04
+
+	regiments = {
+        	medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		medium_armor = { x = 0 y = 4 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }
+		medium_armor = { x = 1 y = 4 }
+		motorized = { x = 2 y = 0 }
+       		motorized  = { x = 2 y = 1 }	
+		mechanized   = { x = 2 y = 2 }
+		mechanized   = { x = 2 y = 3 }
+		mechanized  = { x = 2 y = 4 }
+       
+	}
+
+	support = {
+      	maintenance_company = { x = 0 y = 3 }
+        engineer = { x = 0 y = 0 }
+     	  light_tank_recon = { x = 0 y = 1 } 
+	signal_company = { x = 0 y = 2 }
+	
+	}
+}
+
+division_template = {
+	name = "French Mechanized Regiment" 			# ##1000 men each, M3 HALFTRACKS.
+	division_names_group = AEF_TANK_04
+template_counter = 71
+	regiments = {
+		mechanized  = { x = 0 y = 0 }
+	   mechanized  = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		
+		mechanized  = { x = 1 y = 0 }
+		mechanized  = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		
+		mechanized  = { x = 2 y = 0 }
+	   mechanized  = { x = 2 y = 1 }
+		mechanized  = { x = 2 y = 2 }
+		mechanized  = { x = 0 y = 3 }
+	}
+	support = {
+        anti_air = { x = 0 y = 0 }
+	 anti_tank = { x = 0 y = 3 }
+	 engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Parachute Chasseur Regiment"		# French "commandos", , basically SAS. 600 man battalion sized unit.
+	division_names_group = AEF_FRA_PARA_01
+template_counter = 71
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 2 y = 0 } 
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 3 y = 0 } 
+}
+support = {
+	engineer = { x = 0 y = 0 }
+	signal_company = { x = 0 y = 1 }
+	  recon = { x = 0 y = 2 }
+	 maintenance_company = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "French TD Battalion" ###generalised version of a Tank Destroyer battalion. Utilising M10 wolverines.
+
+	division_names_group = FRA_TDB_01
+
+	regiments = {
+		medium_tank_destroyer_brigade = { x = 0 y = 0 }
+		medium_tank_destroyer_brigade = { x = 0 y = 1 }
+	}
+	
+	support = {
+		maintenance_company = { x = 0 y = 3 }
+        engineer = { x = 0 y = 1 }
+     	  light_tank_recon = { x = 0 y = 2 } 
+	signal_company = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "French SPA Battalion" ###generalised version of French Self PRopelled Arty battalion. Utilising M7 Priest.
+
+	division_names_group = FRA_SPA_01
+
+	regiments = {
+		medium_sp_artillery_brigade = { x = 0 y = 0 }
+		medium_sp_artillery_brigade = { x = 0 y = 1 }
+	}
+	
+	support = {
+		maintenance_company = { x = 0 y = 3 }
+        engineer = { x = 0 y = 1 }
+     	  light_tank_recon = { x = 0 y = 2 } 
+	signal_company = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "French Infantry Battalion" ######1300 men. 
+template_counter = 71
+	division_names_group = AEF_FRA_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+	}
+	
+	support = {
+		
+	  artillery = { x = 0 y = 0 }
+	recon = { x = 0 y = 1 }
+	
+    
+	}
+}
+division_template = {
+	name = "French Cavalry Regiment" #####
+template_counter = 71
+	division_names_group = AEF_FRA_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 2 y = 0 }
+	}
+	
+	support = {
+		
+	  artillery = { x = 0 y = 0 }
+	light_tank_recon = { x = 0 y = 1 }
+	
+    
+	}
+}
+units = {
+##### IN 1943, ALLIES STILL HAVE UNITS IN OTHER PLACEs. SO ONLY HOME GUARD FOR NOW.
+division= {	
+		
+		location = 2655
+		division_template = "Home Guard"
+		start_experience_factor = 0
+			start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division= {	
+		
+		location = 3301
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+start_equipment_factor = 1
+	}
+
+division= {	
+		
+		location = 968
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+start_equipment_factor = 1
+	}
+
+division= {	
+		start_equipment_factor = 1
+		location = 4726
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		
+force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division= {	
+		start_equipment_factor = 1
+		location = 9596
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+
+	}
+
+division= {	
+		start_equipment_factor = 1
+		location = 9597
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+
+	}
+
+division= {	
+		start_equipment_factor = 1
+		location = 4660
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		
+force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division= {	
+		
+		location = 468
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+
+	}
+
+division= {	
+		
+		location = 7215
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+
+	}
+
+division= {	
+		
+		location = 7303
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+
+	}
+
+division= {	
+		
+		location = 3070
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+
+	}
+division= {	
+		
+		location = 401
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+
+	}
+division= {	
+		
+		location = 401
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		
+force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division= {	
+		
+		location = 4650
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		
+force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division= {	
+		
+		location = 9593
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		
+force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division= {	
+		
+		location = 4497
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		
+force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division= {	
+		
+		location = 4508
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		
+force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division= {	
+		
+		location = 4492
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+
+	}
+
+division= {	
+		
+		location = 4498
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+
+	}
+
+division= {	
+		
+		location = 4204
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		
+force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division= {	
+		
+		location = 2168
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		
+force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+	}
+
+division= {	
+		
+		location = 1538
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+
+	}
+
+division= {	
+		
+		location = 4510
+		division_template = "Home Guard"
+		start_experience_factor = 0
+		force_equipment_variants = { infantry_equipment_0 = { owner = AEF }  }
+
+	}
+
+
+
+
+
+
+
+
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	
+
+}
+
+#####################

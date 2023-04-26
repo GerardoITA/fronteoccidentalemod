@@ -1,0 +1,49 @@
+air_wings = {
+###OOB FOR COMBINED ALLIED AIR FORCES AS OF 1943-1944. AVERAGE 12 PER SQUADRON.
+
+	28 = {
+		
+		
+		#name = "No. 39 Reconnaisance Wing, RCAF", 48 scout planes
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 48 creator = "AEF" version_name = "Spitfire Mk V" }	#122
+		
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 48 creator = "AEF" version_name = "Spitfire Mk V" }	#125
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 48 creator = "AEF" version_name = "Spitfire Mk V" }	#126 RCAF
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 48 creator = "AEF" version_name = "Spitfire Mk V" }	#127 RCAF**
+		small_plane_airframe_1 =  { owner = "AEF" 	amount = 12 creator = "AEF" version_name = "Hawker Hurricane MkIIb" }	#129
+		small_plane_airframe_1 =  { owner = "AEF" 	amount = 12 creator = "AEF" version_name = "Hawker Hurricane MkIIb" }	#143 RCAF
+		small_plane_airframe_1 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "Hawker Hurricane MkIIb" }	#123
+		######39 recon RAF 36
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Spitfire Mk V" } ###131 Poland
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Spitfire Mk V" } ###132 Norway
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 12 creator = "AEF" version_name = "Spitfire Mk V" } ###133 poland
+		small_plane_airframe_1 =  { owner = "AEF" 	amount = 12  creator = "AEF" version_name = "Hawker Hurricane MkIIb" }	#222 Belgium
+		small_plane_airframe_1 =  { owner = "AEF" 	amount = 12  creator = "AEF" version_name = "Hawker Hurricane MkIIb" }	#349 Belgium
+		small_plane_airframe_1 =  { owner = "AEF" 	amount = 12  creator = "AEF" version_name = "Hawker Hurricane MkIIb" }	#485 RNZAF
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 12 creator = "AEF" version_name = "Spitfire Mk V" } ###Firmes volamos
+		small_plane_airframe_1 =  { owner = "AEF" 	amount = 12 creator = "AEF" version_name = "Hawker Hurricane MkIIb" }	#183
+		small_plane_airframe_1 =  { owner = "AEF" 	amount = 12 creator = "AEF" version_name = "Hawker Hurricane MkIIb" }	#145 France
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 12 creator = "AEF" version_name = "P-51D Mustang" } #91
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 12 creator = "AEF" version_name = "P-51D Mustang" } #125
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 12 creator = "AEF" version_name = "Spitfire Mk V" } #322 Holland
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 48 creator = "AEF" version_name = "Hawker Typhoon MkII" } #150
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 48 creator = "AEF" version_name = "Hawker Typhoon MkII" } #146
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 48 creator = "AEF" version_name = "Hawker Typhoon MkII" } #124
+		medium_plane_fighter_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "Mosquito B.IV Series II" }	#142
+		medium_plane_fighter_airframe_2 =  { owner = "AEF" 	amount = 12 creator = "AEF" version_name = "Mosquito B.IV Series II" }	#147
+		medium_plane_fighter_airframe_2 =  { owner = "AEF" 	amount = 12 creator = "AEF" version_name = "Mosquito B.IV Series II" }	#409 RCAF
+		medium_plane_fighter_airframe_2 =  { owner = "AEF" 	amount = 12 creator = "AEF" version_name = "Mosquito B.IV Series II" }	#410 RCAF
+		medium_plane_fighter_airframe_2 =  { owner = "AEF" 	amount = 24 creator = "AEF" version_name = "Mosquito B.IV Series II" }	#488 rnzaf
+		medium_plane_fighter_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "Mosquito B.IV Series II" }	#140
+		#no 34 recon wing RAF 36
+		#no 36 recon wing RAF 36
+		medium_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "B-25J Mitchell" }		# name = "No. 137 Wing, RAF"
+		medium_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "B-25J Mitchell" }		# No 138
+		medium_plane_airframe_2 =  { owner = "AEF" 	amount = 36 creator = "AEF" version_name = "B-25J Mitchell" }		#139
+		
+		}
+
+
+
+
+}

@@ -1,0 +1,35 @@
+
+state={
+	id=102
+	name="STATE_102"
+
+	history={
+		1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+buildings = { infrastructure = 2
+		}
+victory_points = { 599 5 } #Auxerre
+victory_points = { 1755 3 } #Tonerre
+victory_points = { 2339 3 } # Sens
+	}
+
+	provinces={
+		9671 9672 9673 230 334 395 431 503 532 549 597 599 625 671 710 803 813 939 946 1004 1065 1126 1143 1151 1176 1204 1233 1276 1311 1404 1420 1433 1461 1592 1647 1670 1673 1711 1730 1735 1755 1826 1853 1916 1985 2036 2121 2162 2233 2339 2405 2432 2439 2582 2858 2897 2902 3149 3156 3274 3304 3345 3351 3378 3564 3691 3784 3790 3794 3947 3983 4023 4033 4054 4083 4098 4148 4292 4339 4360 4371 4379 5202 5220 5233 5274 5302 5314 5322 5339 5358 5362 5369 5370 5382 5385 5387 5388 8616 9369 
+	}
+	manpower=266014
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

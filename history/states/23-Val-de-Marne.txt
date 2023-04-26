@@ -1,0 +1,35 @@
+
+state={
+	id=23
+	name="STATE_23"
+
+	history={
+		1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+				buildings = { infrastructure = 5 anti_air_building = 3 }
+		victory_points = {
+			3447 5 
+		}
+
+	}
+
+	provinces={
+		997 2860 3353 3655 4127 4236 5055 5064 7583 
+	}
+	manpower=672024
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,169 @@
+scripted_gui = {
+    cohesion_decisions_ui = {
+        window_name = "cohesion_gui_window"
+        context_type = decision_category
+	
+     properties = {
+          cohesion_level_bar = {
+               frame = cohesion_number
+           } }
+        
+     
+   
+}
+ hitlers_influence_ui = {
+        window_name = "hitlers_influence_window"
+        context_type = decision_category
+	
+     properties = {
+          cohesion_level_bar = {
+               frame = influence_number
+           } }
+        
+     
+   
+}
+  ending1_event_ui = { ###ALLIES WIN, HISTORICAL END "BFV Allied Victory" IN
+        window_name = "ending1_gui_window"
+	visible = { has_country_flag = ending1_event_flag }
+		effects = { accept_button_click = { clr_country_flag = ending1_event_flag 
+							set_country_flag = true_ending_available } }
+        context_type = player_context
+   #  properties = {
+	#
+     #     }
+        
+     
+   
+
+}
+ending2_event_ui = { ####AXIS WIN, AHISTORICAL END ##ALLIED DEFEAT THEME IN
+        window_name = "ending2_gui_window"
+	visible = { has_country_flag = ending2_event_flag }
+ context_type = player_context
+		effects = { accept_button_click = { clr_country_flag = ending2_event_flag } }
+       
+   #  properties = {
+	#
+      #    }
+        
+     
+   
+}
+  ending3_event_ui = { ###JULY PLOT, GERMANS SURRENDER TO THE ALLIES #TRIZONESIAN IN
+        window_name = "ending3_gui_window"
+	visible = { has_country_flag = ending3_event_flag }
+context_type = player_context
+		effects = { accept_button_click = { clr_country_flag = ending3_event_flag } }
+        
+   #  properties = {
+#	
+     #     }
+        
+     
+   
+}
+  ending4_event_ui = { ###SOVIETS OCCUPY EUROPE, ALLIES DO NOT INTERVENE# Red Alert Theme
+        window_name = "ending4_gui_window"
+	visible = { has_country_flag = ending4_event_flag }
+ context_type = player_context
+		effects = { accept_button_click = { clr_country_flag = ending4_event_flag } }
+       
+   #  properties = {
+	#
+      #    }
+        
+     
+   
+}
+ ending5_event_ui = { ###UNTHINKABLE, ALLIED VICTORY
+        window_name = "ending5_gui_window"
+	visible = { has_country_flag = ending5_event_flag }
+  context_type = player_context
+		effects = { accept_button_click = { clr_country_flag = ending5_event_flag } }
+      
+   #  properties = {
+	#
+    #      }
+        
+     
+   
+}
+ ending6_event_ui = { ###UNTHINKABLE, SOVIET VICTORY # Victory Day Red Army choir
+        window_name = "ending6_gui_window"
+	visible = { has_country_flag = ending6_event_flag }
+  context_type = player_context
+		effects = { accept_button_click = { clr_country_flag = ending6_event_flag } }
+    # properties = {
+	#
+    #      }
+        
+     
+   
+}
+ ending7_event_ui = { ###ALLIES COLLAPSE
+        window_name = "ending7_gui_window"
+	visible = { has_country_flag = ending7_event_flag }
+context_type = player_context
+		effects = { accept_button_click = { clr_country_flag = ending7_event_flag } }
+        
+   #  properties = {
+#	
+   #       }
+        
+     
+ 
+}
+ ending8_event_ui = { ###GERMANS BEAT EVERYONE! SOVIETS AND ALLIES!
+        window_name = "ending8_gui_window"
+	visible = { has_country_flag = ending8_event_flag }
+ context_type = player_context
+	effects = { accept_button_click = { clr_country_flag = ending8_event_flag } }
+       
+   #  properties = {
+#	
+   #       }
+        
+     
+   
+}
+ ending9_event_ui = { ###HILTON VICTORY #comrades the voices
+        window_name = "ending9_gui_window"
+	visible = { has_country_flag = ending9_event_flag }
+  context_type = player_context
+	effects = { accept_button_click = { clr_country_flag = ending9_event_flag } }
+      
+   #  properties = {
+#	
+    #      }
+        
+     
+   
+}
+ ending10_event_ui = { ###SEALION
+        window_name = "ending10_gui_window"
+	visible = { has_country_flag = ending10_event_flag }
+  context_type = player_context
+	effects = { accept_button_click = { clr_country_flag = ending10_event_flag } }
+        
+   #  properties = {
+#	
+    #      }
+        
+     
+   
+}
+  ending11_event_ui = { ###ALLIES WIN, HISTORICAL END "BFV Allied Victory" IN
+        window_name = "ending11_gui_window"
+	visible = { has_country_flag = ending11_event_flag }
+		effects = { accept_button_click = { clr_country_flag = ending11_event_flag 
+							 }}
+        context_type = player_context
+   #  properties = {
+	#
+     #     }
+        
+     
+   
+
+}

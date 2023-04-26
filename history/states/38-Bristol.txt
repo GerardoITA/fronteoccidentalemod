@@ -1,0 +1,25 @@
+state={
+	id=38
+	name="STATE_38"
+	history = { 
+ 1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+}
+ 1943.3.1.12 = {
+		owner = AEF
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+buildings = { infrastructure = 4 air_base = 5 industrial_complex = 1}
+victory_points = {
+			1159 3 
+		} }
+	provinces={
+		1159 3988 
+	}
+	state_category = town
+	manpower=329938
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

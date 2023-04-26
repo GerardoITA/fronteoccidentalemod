@@ -1,0 +1,1252 @@
+focus_tree = {
+	id = GER_dday
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = OKW
+		}
+	}
+	#Focus for Support Rommel's Plan
+	focus = {
+		id = GER_support_rommels_plan
+		icon = GFX_GER_support_rommels_plan-135904
+		x = 8
+		y = 1
+		cost = 2.8
+		available = { NOT = { has_country_flag = hitler_taken_direct_control } }
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_armeegruppe_b }
+		completion_reward = { country_event =ger.5 custom_effect_tooltip = influence_reduction_5 add_to_variable = {
+	var = influence_number
+	value = -5
+} set_country_flag = ger_strategy_chosen }
+		mutually_exclusive = { 
+			focus = GER_compromise_the_strategies 
+		}
+		mutually_exclusive = { 
+			focus = GER_support_runstedts_plan 
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Continue the Atlantic Wall
+	focus = {
+		id = GER_continue_the_atlantic_wall
+		icon = GFX_GER_continue_atlantik_wall
+		x = 2
+		y = 0
+		cost = 3.58
+		completion_reward = { add_ideas = atlantikwall_idea 
+#61 = { add_dynamic_modifier = { modifier = fortification_focus }  
+}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Support Runstedt's Plan
+	focus = {
+		id = GER_support_runstedts_plan
+		icon = GFX_GER_support_runstedts_plan-135905
+		available = { NOT = { has_country_flag = hitler_taken_direct_control }}
+		x = 20
+		y = 1
+		cost = 2.8
+		available_if_capitulated = yes
+		completion_reward = { country_event =ger.6 set_country_flag = ger_strategy_chosen custom_effect_tooltip = influence_reduction_5 add_to_variable = {
+	var = influence_number
+	value = -5
+}}
+		prerequisite = { focus = GER_armeegruppe_b }
+		mutually_exclusive = { focus = GER_support_rommels_plan }
+		mutually_exclusive = { 
+			focus = GER_compromise_the_strategies 
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Compromise The Strategies
+	focus = {
+		id = GER_compromise_the_strategies
+		icon = GFX_GER_compromise_the_strategies-135505
+		x = 14
+		y = 1
+		cost = 10.9
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_armeegruppe_b }
+		completion_reward = { country_event =ger.7 set_country_flag = ger_strategy_chosen custom_effect_tooltip = compromise_strats_desc }
+		mutually_exclusive = { focus = GER_support_rommels_plan }
+		
+		mutually_exclusive = { 
+			focus = GER_support_runstedts_plan 
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Designated Strongpoints
+	focus = {
+		id = GER_designated_strongpoints
+		icon = GFX_focus_usa_focus_on_europe
+		x = 1
+		y = 1
+		cost = 3.58
+		available_if_capitulated = yes
+		completion_reward = { custom_effect_tooltip = influence_reduction_5 add_to_variable = {
+	var = influence_number
+	value = -5
+} country_event = ger.2 custom_effect_tooltip = designated_strongpoints }
+		prerequisite = { focus = GER_continue_the_atlantic_wall }
+		mutually_exclusive = { focus = GER_fortify_the_coastline }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fortify The Coastline
+	focus = {
+		id = GER_fortify_the_coastline
+		
+		icon = GFX_GER_coastal_defences
+		x = 3
+		y = 1
+		cost = 3.58
+		available_if_capitulated = yes
+		completion_reward = { swap_ideas = { remove_idea = atlantikwall_idea add_idea = atlantikwall_idea2 } }
+		prerequisite = { focus = GER_continue_the_atlantic_wall }
+		mutually_exclusive = { focus = GER_designated_strongpoints }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Appoint The Inspector of Defences
+	focus = {
+		id = GER_appoint_the_inspector_of_defences
+		icon = GFX_GER_appoint_rommel
+		x = 2
+		y = 5
+		cost = 3.58
+		available_if_capitulated = yes
+		completion_reward = { country_event = ger.3 hidden_effect = { retire_country_leader = yes } add_ideas = slight_initiative }
+		prerequisite = { 
+			focus = GER_indoctrination_of_spirit 
+		}
+		prerequisite = { 
+			focus = GER_indoctrination_of_will 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Armeegruppe B
+	focus = {
+		id = GER_armeegruppe_b
+		icon = GFX_GER_armeegruppe_b-135899
+		x = 14
+		y = 0
+		cost = 3.14
+		available = { has_completed_focus = GER_appoint_the_inspector_of_defences }
+		available_if_capitulated = yes
+		completion_reward = { custom_effect_tooltip = army_group_b_tt drop_cosmetic_tag = yes 
+					country_event = ger.30
+add_offsite_building = { type = arms_factory level = 2 }
+}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strengthen the Panzer Divisions
+	focus = {
+		id = GER_strengthen_the_panzer_divisions
+		icon = GFX_focus_generic_army_tanks2
+		x = 0
+		y = 2
+		cost = 3.58
+		available_if_capitulated = yes#
+		completion_reward = { add_offsite_building = { type = arms_factory level = 2 } add_doctrine_cost_reduction = {
+	cost_reduction = 0.5
+	uses = 1
+	category = land_doctrine
+}  
+add_tech_bonus = {
+    bonus = 0.25
+    uses = 1
+    category = armor
+} }
+		prerequisite = { 
+			focus = GER_designated_strongpoints 
+			focus = GER_fortify_the_coastline 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tiger II 'Königstiger'
+	focus = {
+		id = GER_tiger_ii_knigstiger
+		icon = GFX_GER_tiger_2
+		x = 12
+		y = 4
+		cost = 2.8
+		available_if_capitulated = yes
+		completion_reward = { if= { limit = { has_dlc "No Step Back" } add_tech_bonus = {
+    bonus = 0.5
+    uses = 1
+    category = armor
+}  add_tech_bonus = {
+    bonus = 0.75
+    uses = 1
+    category = cat_heavy_armor
+} create_equipment_variant = {
+			name = "Tiger II 'Henschel'"
+			type = heavy_tank_chassis_3
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_heavy_cannon_2
+				turret_type_slot = tank_heavy_three_man_tank_turret
+				suspension_type_slot = tank_interleaved_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = sloped_armor
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 5
+				tank_nsb_armor_upgrade = 9
+				tank_gun_upgrade = 6
+			}
+			icon = "gfx/interface/technologies/GER_tiger2P.dds"
+		}
+
+create_equipment_variant = {
+			name = "Tiger II 'Porsche'"
+			type = heavy_tank_chassis_3
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_heavy_cannon_2
+				turret_type_slot = tank_heavy_three_man_tank_turret
+				suspension_type_slot = tank_interleaved_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = sloped_armor
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 5
+				tank_nsb_armor_upgrade = 9
+				tank_gun_upgrade = 6
+			}
+			icon = "gfx/interface/technologies/GER_tiger2H.dds"
+		}
+} else= { set_technology = { advanced_heavy_tank = 1 }
+create_equipment_variant = {
+	name = "Tiger II 'Porsche'"
+	type = heavy_tank_equipment_3
+	upgrades = {
+		tank_armor_upgrade = 1
+		tank_gun_upgrade = 0
+		tank_engine_upgrade = 0
+		tank_reliability_upgrade = 0
+	}
+	icon = "gfx/interface/technologies/GER_tiger2P.dds"
+	obsolete = no
+}
+}}
+		prerequisite = { 
+			focus = GER_declare_totaler_krieg 
+			focus = GER_reject_scorched_earth 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Prepare the Schnellboote
+	focus = {
+		id = GER_prepare_the_schnellboote
+		icon = GFX_GER_schellboote
+		x = 2
+		y = 2
+		cost = 3.58
+		available_if_capitulated = yes
+		completion_reward = { add_doctrine_cost_reduction = {
+	cost_reduction = 0.75
+	uses = 1
+	category = naval_doctrine
+}  add_offsite_building = { type = dockyard level = 3
+			} }
+		prerequisite = { 
+			focus = GER_designated_strongpoints 
+			focus = GER_fortify_the_coastline 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reawaken the Luftwaffe
+	focus = {
+		id = GER_reawaken_the_luftwaffe
+		icon = GFX_GER_reawaken_the_luftwaffe-135901
+		x = 4
+		y = 2
+		cost = 3.58
+		available_if_capitulated = yes
+		completion_reward = {custom_effect_tooltip = influence_reduction_5 add_to_variable = {
+	var = influence_number
+	value = -5
+} add_doctrine_cost_reduction = {
+	cost_reduction = 0.5
+	uses = 2
+	category = air_doctrine
+} } 
+		prerequisite = { 
+			focus = GER_designated_strongpoints 
+			focus = GER_fortify_the_coastline 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mobilität, Feuerkraft
+	focus = {
+		id = GER_mobilitt_feuerkraft
+		icon = GFX_GER_mobilitat
+		x = 18
+		y = 2
+		cost = 2.8
+		available_if_capitulated = yes
+		completion_reward = { add_doctrine_cost_reduction = {
+	cost_reduction = 0.5
+	uses = 2
+	category = land_doctrine
+} custom_effect_tooltip = influence_reduction_5 }
+		prerequisite = { focus = GER_support_runstedts_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Beton und Stahl
+	focus = {
+		id = GER_beton_und_stahl
+		icon = GFX_goal_generic_military_sphere
+		x = 6
+		y = 2
+		cost = 2.8
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_support_rommels_plan }
+		completion_reward = {  add_offsite_building = { type = industrial_complex level = 2 } add_offsite_building = { type = arms_factory level = 1 } add_timed_idea = { days = 30 idea = idea_concrete_steel }
+}		
+ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Allocate The Ost-Bataillone
+	focus = {
+		id = GER_allocate_the_ostbataillone
+		icon = GFX_GER_ost_front
+		x = 1
+		y = 3
+		cost = 3.58
+		available_if_capitulated = yes
+		completion_reward = { add_manpower = 50000 add_ideas = ost_truppen }
+		prerequisite = { 
+			focus = GER_strengthen_the_panzer_divisions 
+			focus = GER_reawaken_the_luftwaffe 
+			focus = GER_prepare_the_schnellboote 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Indoctrination of Spirit
+	focus = {
+		id = GER_indoctrination_of_spirit
+		icon = GFX_GER_indoctrination_focus
+		x = 1
+		y = 4
+		cost = 3.58
+		available_if_capitulated = yes
+		completion_reward = { add_stability = 0.15 add_offsite_building = { type = industrial_complex level = 2 }}
+		prerequisite = { 
+			focus = GER_allocate_the_ostbataillone 
+			focus = GER_utilise_local_labourers 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Indoctrination of Will
+	focus = {
+		id = GER_indoctrination_of_will
+		icon = GFX_GER_indoctrination_focus2
+		x = 3
+		y = 4
+		cost = 3.58
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_allocate_the_ostbataillone 
+			focus = GER_utilise_local_labourers 
+		}
+		completion_reward = { add_war_support = 0.15 add_offsite_building = { type = arms_factory level = 1 }}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Utilise 'Local' Labourers
+	focus = {
+		id = GER_utilise_local_labourers
+		icon = GFX_focus_CZE_german_puppet
+		x = 3
+		y = 3
+		cost = 3.58
+		available_if_capitulated = yes
+		completion_reward ={ add_offsite_building = { type = industrial_complex level = 3 }add_ideas = local_labourers }
+		prerequisite = { 
+			focus = GER_strengthen_the_panzer_divisions 
+			focus = GER_reawaken_the_luftwaffe 
+			focus = GER_prepare_the_schnellboote 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fast-Track The Me-262
+	focus = {
+		id = GER_fasttrack_the_me262
+		icon = GFX_GER_fasttrack_the_me262-135902
+		x = 5
+		y = 3
+		cost = 3.58
+		available_if_capitulated = yes
+		completion_reward = {custom_effect_tooltip = influence_reduction_10  add_tech_bonus = {
+    bonus = 0.75
+    uses = 1
+    category = jet_technology
+}} 
+		prerequisite = { focus = GER_reawaken_the_luftwaffe }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mandate Unit Drills
+	focus = {
+		id = GER_mandate_unit_drills
+		icon = GFX_focus_generic_military_mission
+		x = 20
+		y = 2
+		cost = 2.8
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_support_runstedts_plan }
+		completion_reward = { add_ideas = mandate_unit_drills custom_effect_tooltip = influence_reduction_5 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Priortise The Wall
+	focus = {
+		id = GER_priortise_the_wall
+		icon = GFX_goal_generic_fortify_city
+		x = 8
+		y = 2
+		cost = 2.8
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_support_rommels_plan }
+		completion_reward = { add_offsite_building = { type = industrial_complex level = 3 } }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rommel's Asparagus
+	focus = {
+		id = GER_rommels_asparagus
+		icon = GFX_goal_generic_position_armies
+		x = 10
+		y = 2
+		cost = 2.8
+		available_if_capitulated = yes
+		completion_reward = { add_ideas = idea_asparagus }
+		prerequisite = { focus = GER_support_rommels_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Devolve Unit Control
+	focus = {
+		id = GER_devolve_unit_control
+		icon = GFX_goal_generic_army_doctrines
+		x = 22
+		y = 2
+		cost = 2.8
+		available_if_capitulated = yes
+		completion_reward = { add_stability = -0.1 remove_ideas = confused_chain_of_command custom_effect_tooltip = influence_reduction_25 add_to_variable = {
+	var = influence_number
+	value = -25
+} }
+		prerequisite = { focus = GER_support_runstedts_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Prepare for Hedgerow Warfare
+	focus = {
+		id = GER_prepare_for_hedgerow_warfare
+		icon = GFX_GER_hedgerow
+		x = 16
+		y = 5
+		cost = 2.8
+		available_if_capitulated = yes
+		completion_reward = { custom_effect_tooltip = GER_hedgerow_bonus hidden_effect = { 19 ={ add_dynamic_modifier = {
+    modifier = GER_hedgerows
+    scope = GER
+} } 17 = { add_dynamic_modifier = {
+    modifier = GER_hedgerows
+    scope = GER
+} }  }
+add_doctrine_cost_reduction = {
+	cost_reduction = 0.5
+	uses = 1
+	category = land_doctrine
+}}
+		prerequisite = { 
+			focus = GER_tiger_ii_knigstiger 
+			focus = GER_salvage_local_equipment 
+			focus = GER_gis_letter_box_broadcast 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for GI's Letter Box Broadcast
+	focus = {
+		id = GER_gis_letter_box_broadcast
+		icon = GFX_goal_generic_propaganda
+		x = 16
+		y = 4
+		cost = 2.8
+		available_if_capitulated = yes
+		completion_reward = { news_event = new.13
+add_war_support = 0.05
+add_stability = 0.05
+AEF = { add_war_support = -0.05
+	add_stability =-0.05 }
+#custom_effect_tooltip = GI_letter_box_focus
+ }
+		prerequisite = { 
+			focus = GER_declare_totaler_krieg 
+			focus = GER_reject_scorched_earth 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fight For A New Fatherland
+	focus = {
+		id = GER_fight_for_a_new_fatherland
+		icon = GFX_GER_fight_for_new_fatherland_shine
+		prerequisite = { focus = GER_spirit_of_the_kaiserreich focus = GER_adopt_liberal_values}
+		
+		available = { has_country_flag = july_plot_succeeded has_civil_war = no }
+		x = 26
+		completion_reward = { country_event = ger.4 custom_effect_tooltip = julyplot_tt }
+		y = 6
+		cost = 2.8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus Volksturm
+	focus = {
+		id = GER_volksturm_focus
+		icon = GFX_GER_volksturm_focus
+		available = { OR = { casualties > 100000 has_global_flag = france_liberated AEF = { controls_state = 20 } } }
+		x = 22
+		completion_reward = { custom_effect_tooltip = volksturm_effect #hidden_effect = { country_event = ger.36 }
+
+ division_template = {
+    name = "Volksturm Detachment"
+    is_locked = yes
+    division_names_group = GER_VOLKSTURM
+    priority = 0
+    template_counter = 14
+   regiments = {
+		infantry = { x = 0 y = 0 }
+		
+	}
+	support = {
+#
+	}
+   
+}  
+
+hidden_effect = { 69 = { create_unit = {
+    division = "name = \"Volksturm Detachment\" division_template = \"Volksturm Detachment\" start_experience_factor = 0 start_equipment_factor = 0.1"
+    owner = OKW
+} }  capital_scope = { create_unit = {
+    division = "name = \"Volksturm Detachment\" division_template = \"Volksturm Detachment\" start_experience_factor = 0 start_equipment_factor = 0.1"
+    owner = OKW
+} } capital_scope = { create_unit = {
+    division = "name = \"Volksturm Detachment\" division_template = \"Volksturm Detachment\" start_experience_factor = 0 start_equipment_factor = 0.1"
+    owner = OKW
+} }  capital_scope= { create_unit = {
+    division = "name = \"Volksturm Detachment\" division_template = \"Volksturm Detachment\" start_experience_factor = 0 start_equipment_factor = 0.1"
+    owner = OKW
+} }  capital_scope = { create_unit = {
+    division = "name = \"Volksturm Detachment\" division_template = \"Volksturm Detachment\" start_experience_factor = 0 start_equipment_factor = 0.1"
+    owner = OKW
+} }  capital_scope = { create_unit = {
+    division = "name = \"Volksturm Detachment\" division_template = \"Volksturm Detachment\" start_experience_factor = 0 start_equipment_factor = 0.1"
+    owner = OKW
+} } capital_scope = { create_unit = {
+    division = "name = \"Volksturm Detachment\" division_template = \"Volksturm Detachment\" start_experience_factor = 0 start_equipment_factor = 0.1"
+    owner = OKW
+} }  capital_scope = { create_unit = {
+    division = "name = \"Volksturm Detachment\" division_template = \"Volksturm Detachment\" start_experience_factor = 0 start_equipment_factor = 0.1"
+    owner = OKW
+} }  capital_scope = { create_unit = {
+    division = "name = \"Volksturm Detachment\" division_template = \"Volksturm Detachment\" start_experience_factor = 0 start_equipment_factor = 0.1"
+    owner = OKW
+} }  capital_scope = { create_unit = {
+    division = "name = \"Volksturm Detachment\" division_template = \"Volksturm Detachment\" start_experience_factor = 0 start_equipment_factor = 0.1"
+    owner = OKW
+} }  capital_scope = { create_unit = {
+    division = "name = \"Volksturm Detachment\" division_template = \"Volksturm Detachment\" start_experience_factor = 0 start_equipment_factor = 0.1"
+    owner = OKW
+} }  } }
+
+
+
+		y = 0
+		cost = 2.8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reclaim Our Skies
+	focus = {
+		id = GER_reclaim_our_skies
+		icon = GFX_GER_reclaim_skies
+		x = 5
+		y = 6
+		cost = 2.8
+		available_if_capitulated = yes
+		available = { NOT = { has_country_flag = hitler_taken_direct_control } OR = { has_tech = jet_fighter1 has_tech = modern_medium_airframe }has_political_power > 100}
+		completion_reward = { air_experience = 50 add_political_power = -100 add_equipment_to_stockpile = {
+    type = jet_fighter_equipment_1
+    amount = 600
+    producer = GER
+}add_ideas = reclaim_our_skies  }
+		prerequisite = { 
+			focus = GER_fasttrack_the_me262 
+		}
+		prerequisite = { 
+			focus = GER_expand_the_wunderwaffe 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand The Wunderwaffe
+	focus = {
+		id = GER_expand_the_wunderwaffe
+		icon = GFX_goal_generic_secret_weapon
+		x = 12
+		y = 5
+		cost = 2.8
+		available_if_capitulated = yes
+		completion_reward = { add_tech_bonus = {
+    bonus = 0.6
+    uses = 2
+    category = electronics
+}  }
+		prerequisite = { 
+			focus = GER_tiger_ii_knigstiger 
+			focus = GER_salvage_local_equipment 
+			focus = GER_gis_letter_box_broadcast 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Salvage Local Equipment
+	focus = {
+		id = GER_salvage_local_equipment
+		icon = GFX_focus_generic_license_production
+		x = 14
+		y = 4
+		cost = 2.8
+		available_if_capitulated = yes
+		completion_reward = { add_ideas = salvage_local_equipment_idea }
+		prerequisite = { 
+			focus = GER_declare_totaler_krieg 
+			focus = GER_reject_scorched_earth 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Recall The Wolfpacks
+	focus = {
+		id = GER_recall_the_wolfpacks
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 18
+		y = 5
+		cost = 2.8
+		#available = { always = no }
+		available_if_capitulated = yes
+		#completion_reward = { custom_effect_tooltip = work_in_progress AEF = { add_timed_idea = { idea = trade_boom days = 90 } custom_effect_tooltip = recalling_submarines } }
+completion_reward = { add_offsite_building = { type = dockyard level = 5 } }		
+prerequisite = { 
+			focus = GER_tiger_ii_knigstiger 
+			focus = GER_salvage_local_equipment 
+			focus = GER_gis_letter_box_broadcast 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Terrorise The Channel
+	focus = {
+		id = GER_terrorise_the_channel
+		icon = GFX_goal_generic_CAS
+		x = 17
+		y = 6
+		cost = 2.8
+		available_if_capitulated = yes
+	completion_reward = { add_offsite_building = { type = dockyard level = 5 } }	
+		prerequisite = { focus = GER_recall_the_wolfpacks }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Deflate The Conceit
+	focus = {
+		id = GER_deflate_the_conceit
+		icon = GFX_focus_generic_military_academy
+		x = 14
+		y = 5
+		cost = 2.8
+		available = { has_political_power > 175 has_idea = conceited_intelligence  NOT = {  has_country_flag = hitler_taken_direct_control } } 
+		available_if_capitulated = yes
+		completion_reward = { 
+add_political_power = -175
+remove_ideas = conceited_intelligence
+ }
+		prerequisite = { 
+			focus = GER_tiger_ii_knigstiger 
+			focus = GER_salvage_local_equipment 
+			focus = GER_gis_letter_box_broadcast 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Disperse The V-2 Sites
+	focus = {
+		id = GER_disperse_the_v2_sites
+		icon = GFX_focus_rocketry
+		x = 11
+		y = 6
+		cost = 2.8
+		available_if_capitulated = yes
+		completion_reward = { add_ideas = v2_focus }
+		prerequisite = { focus = GER_expand_the_wunderwaffe }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#Focus for increase wunderwaffen funding
+	focus = {
+		id = GER_increase_wunderwaffen_funding
+		icon = GFX_goal_generic_secret_weapon
+		x = 13
+		y = 6
+		cost = 2.8
+		available_if_capitulated = yes
+		completion_reward = {  add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.75
+				uses = 2
+				category = nuclear
+				category = rocketry
+			}}
+		prerequisite = { focus = GER_expand_the_wunderwaffe }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#Focus for 
+	focus = {
+		id = GER_special_panzers
+		icon = GFX_focus_generic_license_production
+		x = 12
+		y = 7
+		cost = 2.8
+		available_if_capitulated = yes
+		completion_reward = { custom_effect_tooltip = ger_wunderwaffe_panzers set_country_flag = GER_wunderwaffe_panzers }
+		prerequisite = { focus = GER_increase_wunderwaffen_funding}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#Focus for 
+	focus = {
+		id = GER_special_aircraft
+		icon = GFX_goal_generic_air_fighter
+		x = 14
+		y = 7
+		cost = 2.8
+		available_if_capitulated = yes
+		completion_reward = { custom_effect_tooltip = ger_wunderwaffe_aircraft set_country_flag = GER_wunderwaffe_aircraft }
+		prerequisite = { focus = GER_increase_wunderwaffen_funding}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+focus = {
+		id = GER_special_rifles
+		icon = GFX_goal_generic_small_arms
+		x = 13
+		y = 8
+		cost = 2.8
+		available_if_capitulated = yes
+		completion_reward = { 
+custom_effect_tooltip = ger_wunderwaffe_rifle set_country_flag = GER_wunderwaffe_rifle }
+		prerequisite = { focus = GER_increase_wunderwaffen_funding}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Revive The Kriegsmarine
+	focus = {
+		id = GER_revive_the_kriegsmarine
+		icon = GFX_GER_revive_the_kriegsmarine-135903
+		x = 19
+		y = 6
+		cost = 2.8
+		available_if_capitulated = yes
+		completion_reward = { add_ideas = GER_revive_the_kriegsmarine  add_offsite_building = { type = dockyard level = 5 } } 
+		prerequisite = { focus = GER_recall_the_wolfpacks }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Declare Totaler Krieg
+	focus = {
+		id = GER_declare_totaler_krieg
+		icon = GFX_GER_total_war
+		x = 13
+		y = 3
+		cost = 2.8
+		available = { has_country_flag = ger_strategy_chosen }
+		completion_reward = { custom_effect_tooltip = GER_scorched_earth_focus }
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = GER_reject_scorched_earth }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reject Scorched Earth
+	focus = {
+		id = GER_reject_scorched_earth
+		available = { NOT = { has_country_flag = hitler_taken_direct_control }} 
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 15
+		y = 3
+		available = { has_country_flag = ger_strategy_chosen }
+		cost = 2.8
+		available_if_capitulated = yes
+		completion_reward = { custom_effect_tooltip = influence_reduction_10 add_to_variable = {
+	var = influence_number
+	value = -10
+}  add_stability = 0.075 }
+		mutually_exclusive = { focus = GER_declare_totaler_krieg }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#Focus for Stifle The Rumblings
+	focus = {
+		id = GER_stifle_the_rumblings
+		icon = GFX_GER_stifle_the_rumblings-147804
+		x = 30
+		y = 0
+		cost = 2
+		available = { has_completed_focus =  GER_appoint_the_inspector_of_defences }
+		available_if_capitulated = yes
+		completion_reward = { add_stability = 0.05 add_war_support = 0.05 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Clamp Down On The Subversion
+	focus = {
+		id = GER_clamp_down_on_the_subversion
+		icon = GFX_GER_clamp_down_on_the_subversion-147806
+		x = 34
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		completion_reward = { add_stability = -0.05 add_war_support = -0.05 }
+		prerequisite = { focus = GER_stifle_the_rumblings }
+		mutually_exclusive = { focus = GER_discount_the_hearsay }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Discount The Hearsay
+	focus = {
+		id = GER_discount_the_hearsay
+		icon = GFX_GER_discount_the_hearsay-147805
+		x = 26
+		y = 1
+		cost = 1
+		available = { NOT = { has_country_flag = julyplot_failed } }
+		available_if_capitulated = yes
+		completion_reward = { add_popularity = {
+    ideology = neutrality
+    popularity = 0.15
+} }
+		prerequisite = { focus = GER_stifle_the_rumblings }
+		mutually_exclusive = { focus = GER_clamp_down_on_the_subversion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Spirit of the Kaiserreich
+	focus = {
+		id = GER_spirit_of_the_kaiserreich
+		icon = GFX_GER_spirit_of_the_kaiserreich-147866
+		x = 27
+		y = 5
+		cost = 1
+		mutually_exclusive = { focus = GER_adopt_liberal_values }
+		available = { NOT = { has_government = fascism } has_civil_war = no }
+		completion_reward = {add_ideas = prussian_military_spirit set_party_name = {
+    ideology = neutrality
+    long_name = GER_ww1_command_party_long
+    name = GER_ww1_command_party
+}
+
+
+
+}
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_activate_operation_valkyrie }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Adopt Liberal Values
+	focus = {
+		id = GER_adopt_liberal_values
+		icon = GFX_GER_adopt_liberal_values-147814
+		x = 25
+		y = 5
+		cost = 1
+		mutually_exclusive = { focus = GER_spirit_of_the_kaiserreich }
+		available = { NOT = { has_government = fascism } has_civil_war = no }
+		available_if_capitulated = yes
+completion_reward = {hidden_effect = { set_popularities = {
+	democratic = 100
+} }set_politics = {
+	ruling_party = democratic
+    elections_allowed = no
+  #  last_election = "1935.12.17"
+  #  election_frequency = 48
+    long_name = GER_democrat_command_party_long
+    name = GER_democrat_command_party
+} add_ideas = german_liberal_buff create_country_leader = { ##NO HITLER FLEE
+	name = "Erwin Rommel"
+	desc = "POLITICS_ROMMEL_DESC"
+	picture = "Rommel.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		
+	} }}
+		prerequisite = { focus = GER_activate_operation_valkyrie }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fuhrer Reigns Supreme
+	focus = {
+		id = GER_fuhrer_reigns_supreme
+		icon = GFX_GER_fuhrer_reigns_supreme-147807
+		x = 32
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		completion_reward = {  custom_effect_tooltip = influence_gain_8 add_to_variable = {
+	var = influence_number
+	value = 8
+} custom_effect_tooltip = special_influence_idea_available }
+		prerequisite = { focus = GER_clamp_down_on_the_subversion }
+		mutually_exclusive = { focus = GER_reject_his_blunders }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reject His Blunders
+	focus = {
+		id = GER_reject_his_blunders
+		icon = GFX_focus_ger_oppose_hitler
+		x = 34
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		completion_reward = { add_stability = 0.1 custom_effect_tooltip = influence_reduction_8 add_to_variable = {
+	var = influence_number
+	value = -8
+} }
+		prerequisite = { focus = GER_clamp_down_on_the_subversion }
+		mutually_exclusive = { focus = GER_fuhrer_reigns_supreme }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand Auftragstaktik
+	focus = {
+		id = GER_expand_auftragstaktik
+		icon = GFX_GER_expand_auftragstaktik-147808
+		x = 34
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		completion_reward = { custom_effect_tooltip = influence_reduction_6 add_to_variable = {
+	var = influence_number
+	value = -6
+} swap_ideas = {add_idea = auftragstaktik2 remove_idea = auftragstaktik }}
+		prerequisite = { 
+			focus = GER_reject_his_blunders 
+			#focus = GER_fuhrer_reigns_supreme 
+		}
+		mutually_exclusive = { focus = GER_know_our_place }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Know Our Place
+	focus = {
+		id = GER_know_our_place
+		icon = GFX_GER_know_our_place-147811
+		x = 32
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		completion_reward = {  custom_effect_tooltip = influence_gain_8 add_to_variable = {
+	var = influence_number
+	value = 8
+}  custom_effect_tooltip = special_army_spirit_available }
+
+		prerequisite = { 
+			#focus = GER_reject_his_blunders 
+			focus = GER_fuhrer_reigns_supreme 
+		}
+		mutually_exclusive = { focus = GER_expand_auftragstaktik }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Centralise The Marshal's Power
+	focus = {
+		id = GER_centralise_the_marshals_power
+		icon = GFX_GER_centralise_the_marshals_power-147812
+		x = 34
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+prerequisite = { 
+			
+			focus = GER_expand_auftragstaktik 
+		}
+		completion_reward = { custom_effect_tooltip = influence_reduction_8 add_to_variable = {
+	var = influence_number
+	value = -8
+}  custom_effect_tooltip = special_influence_idea_low_available }
+		
+		mutually_exclusive = { focus = GER_accept_okws_primacy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Accept OKW's Primacy
+	focus = {
+		id = GER_accept_okws_primacy
+		icon = GFX_GER_accept_okws_primacy-147810
+		x = 32
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_know_our_place 
+			#focus = GER_expand_auftragstaktik 
+		}
+		mutually_exclusive = { 
+			focus = GER_centralise_the_marshals_power 
+			
+		}
+		completion_reward = { custom_effect_tooltip = influence_gain_8 add_to_variable = {
+	var = influence_number
+	value = 8
+}  custom_effect_tooltip = special_pol_advisors_available }  
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Appoint Trecksow and Stauffenberg
+	focus = {
+		id = GER_appoint_trecksow_and_stauffenberg
+		icon = GFX_goal_unknown
+		x = 26
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		completion_reward = { custom_effect_tooltip = influence_reduction_10 add_to_variable = {
+	var = influence_number
+	value = -10
+}custom_effect_tooltip = july_plotters_appointed }
+		prerequisite = { focus = GER_discount_the_hearsay }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Create a Stockpile
+	focus = {
+		id = GER_create_a_stockpile
+		icon = GFX_GER_create_a_stockpile-147867
+		x = 24
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		completion_reward = { add_manpower = 15000 add_offsite_building = { type = arms_factory level = 2 } }
+		prerequisite = { focus = GER_appoint_trecksow_and_stauffenberg }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Covert Conversion
+	focus = {
+		id = GER_covert_conversion
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 26
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		completion_reward = { add_popularity = {
+    ideology = neutrality
+    popularity = 0.05
+} } 
+		prerequisite = { focus = GER_appoint_trecksow_and_stauffenberg }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Activate Operation: Valkyrie
+	focus = {
+		id = GER_activate_operation_valkyrie
+		icon = GFX_GER_activate_operation_valkyrie-147813
+		x = 26
+		y = 4
+		cost = 1
+		available = { neutrality > 0.5  }
+		available_if_capitulated = yes
+		completion_reward = { country_event = ger.28 
+				 #custom_effect_tooltip = wehrmacht_coup_focus 
+}
+		prerequisite = { 
+			focus = GER_covert_conversion 
+		}
+		prerequisite = { 
+			focus = GER_whispers_of_discontent 
+		}
+		prerequisite = { 
+			focus = GER_create_a_stockpile 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Whispers of Discontent
+	focus = {
+		id = GER_whispers_of_discontent
+		icon = GFX_goal_generic_dangerous_deal
+		x = 28
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		completion_reward = { add_popularity = {
+    ideology = neutrality
+    popularity = 0.05
+} }
+		prerequisite = { focus = GER_appoint_trecksow_and_stauffenberg }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+#End of focuses 
+ }

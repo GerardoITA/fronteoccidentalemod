@@ -1,0 +1,51 @@
+
+state={
+	id=62
+	name="STATE_62"
+
+	history={
+	buildings = {
+
+		4820 = { naval_base = 3 coastal_bunker = 4 bunker = 3 } 
+		4890 = { coastal_bunker = 2 bunker = 1 } 
+		4894 = { naval_base = 5 coastal_bunker = 5 bunker = 3 } 
+
+178 = { coastal_bunker = 2 bunker = 2 } 
+	3727 = { coastal_bunker = 2 bunker = 1 } 
+	infrastructure = 3
+	anti_air_building = 3
+			}
+		1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.23.12 = {
+		owner = AEF
+		add_core_of = AEF
+		}
+		victory_points = {
+			4894 8 
+		}
+		victory_points = {
+			178 2
+		}
+		
+	victory_points = {
+			4820 8 ###Dieppe
+		}
+
+	}
+
+	provinces={
+		7948 10 17 44 178 218 263 266 308 510 571 632 648 756 798 862 902 979 1000 1079 1179 1205 1225 1242 1277 1296 1446 1604 1820 1827 1890 1895 1964 2040 2101 2106 2171 2179 2222 2227 2244 2275 2332 2380 2492 2560 2593 2650 2672 2726 2745 2757 2769 2791 2851 3124 3141 3189 3214 3217 3258 3391 3418 3498 3499 3628 3727 3736 3741 3778 3981 4024 4069 4154 4239 4334 4378 4383 4403 4792 4804 4807 4811 4813 4815 4820 4825 4827 4828 4833 4838 4847 4857 4869 4878 4882 4883 4886 4890 4892 4894 4897 4916 7586 9589 
+	}
+	manpower=743294
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

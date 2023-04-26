@@ -1,0 +1,40 @@
+
+state={
+	id=73
+	name="STATE_73"
+state_category = town
+	
+	manpower = 294748
+	resources={
+		steel=5
+	}
+
+	history=
+	{
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 3
+		}
+		1918.3.20.12 = {
+		owner = DKR
+		add_core_of = ENT
+		}
+ 		1943.3.1.12 = {
+		owner = OKW
+		add_core_of = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+	}
+	provinces={
+		81 125 317 737 878 1005 1054 1060 1287 1379 1396 1527 2020 2069 2237 2245 2462 2576 3034 3620 3683 3833 3872 3940 4129 4319 4384 4789 4802 4817 4834 4836 4849 4879 4885 4889 4904 9479 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

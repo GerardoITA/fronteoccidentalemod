@@ -1,0 +1,33 @@
+
+state={
+	id=34
+	name="STATE_34"
+
+	history={
+		 1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+}
+ 1943.3.1.12 = {
+		owner = AEF
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+		buildings = {
+		air_base = 2 
+			fuel_silo = 1
+			infrastructure = 4
+			industrial_complex = 2
+
+		}
+		
+}
+
+	provinces={
+		9783 186 282 384 1043 1086 1402 1432 1628 1761 1810 2173 2553 2689 2873 3143 3366 3490 3608 3664 3672 3696 4116 4163 4282 4410 4579 9777 
+	}
+	manpower=758464
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

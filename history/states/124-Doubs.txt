@@ -1,0 +1,29 @@
+state={
+	id=124
+	name="STATE_124"
+	history = { 
+1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+buildings = { infrastructure = 2 }
+	victory_points = { 3673 5 } # Montbéliard
+ }
+	provinces={
+		609 797 1230 3673 3717 5395 5404 
+	}
+	manpower=298255
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

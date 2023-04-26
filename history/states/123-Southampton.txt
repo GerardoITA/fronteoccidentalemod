@@ -1,0 +1,24 @@
+state={
+	id=123
+	name="STATE_123"
+	history = { 
+
+		 1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+}
+ 1943.3.1.12 = {
+		owner = AEF
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+		buildings = { fuel_silo = 1 air_base = 8 infrastructure = 3 industrial_complex = 1 dockyard = 1 7215 = { naval_base = 4 }7303 = { naval_base = 7 } } victory_points = { 7215 5 } add_core_of = AEF buildings = { infrastructure = 3 7303 = { naval_base = 5 } } }
+	provinces={
+		 7215 7702 7303
+	}
+	manpower=178965
+
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

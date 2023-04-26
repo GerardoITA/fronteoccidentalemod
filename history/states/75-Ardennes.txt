@@ -1,0 +1,34 @@
+
+state={
+	id=75
+	name="STATE_75"
+	history = {
+ 1918.3.20.12 = {
+		owner = DKR
+		add_core_of = ENT
+		}
+ 		1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+
+ buildings = { infrastructure = 2 }
+victory_points = { 1174 3 } #Vouziers
+victory_points = { 4902 4 } #Rethel
+victory_points = { 2750 4 } 
+victory_points = { 2971 4 } #Givet
+ }
+	provinces={
+		9679 9680 9686 9681 9682 9683 9685 9684 9580 9583 7 11 87 130 167 369 470 516 520 527 537 595 646 647 695 751 868 882 936 1016 1031 1067 1103 1174 1212 1301 1360 1365 1425 1470 1776 1859 1875 2003 2091 2118 2265 2327 2542 2723 2750 2813 2950 2971 3361 3422 3516 3523 3552 3598 3646 3647 3738 3909 3923 3968 4167 4294 4320 4374 4809 4819 4835 4868 4871 4876 4895 4902 4906 4918 4928 4940 5429 
+	}
+	manpower=245335	
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,75 @@
+
+state={
+	id=28
+	name="STATE_28"
+	resources={
+		oil=1150.000
+		aluminium=100.000
+		rubber=100.000
+		tungsten=75.000
+		steel=150.000
+		chromium=75.000
+	}
+
+	history={
+ 1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+}
+ 1943.3.1.12 = {
+		owner = AEF
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+		victory_points = {
+			9590 15 
+		}
+		victory_points = {
+			9582 5 
+		}
+		victory_points = {
+			4497 5 
+		}
+		victory_points = {
+			9591 5 
+		} #Greenwich
+		victory_points = {
+			2993 5  #Wembley
+		}
+victory_points = {
+			9782 5  #Kingston Upon Thames
+		}
+victory_points = {
+			545 5  #Harrow
+		}
+victory_points = {
+			1978 5  #Croydon
+		}
+victory_points = {
+			2186 5  #Romford
+		}
+victory_points = {
+			4482 5  #Ilford
+		}
+		buildings = {
+			fuel_silo = 1
+			infrastructure = 5
+			arms_factory = 5
+			industrial_complex = 15
+			air_base = 10
+
+		}
+		victory_points = {
+			9593 25 
+		}
+
+	}
+
+	provinces={
+		9785 107 182 404 545 1190 1297 1467 1978 2127 2186 2916 2993 3037 3273 3305 4224 4473 4482 4486 4490 4492 4497 4498 4502 4503 4508 4514 4515 4520 4525 6929 8647 8844 9582 9590 9591 9592 9593 9778 9779 9780 9781 9782 
+	}
+	manpower=9824296
+	buildings_max_level_factor=2.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

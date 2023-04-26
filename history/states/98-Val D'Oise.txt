@@ -1,0 +1,31 @@
+
+state={
+	id=98
+	name="STATE_98"
+
+	history={
+buildings = { infrastructure = 2 } 
+		1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+	}
+
+	provinces={
+		139 316 740 815 820 1084 1220 1292 1409 1787 2148 3018 3160 3225 3263 3403 3540 3597 4230 4370 4992 4998 5008 
+	}
+	manpower=344744
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,156 @@
+﻿
+add_namespace = new
+news_event = { ##SOVIET ARRIVAL
+	id = new.1
+	title = new.1.t
+	desc = new.1.d
+	picture = GFX_news_event_soviet_arrival
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = news.1.a
+	}
+}
+
+news_event = { ##JULY PLOT FAILED
+	id = new.2
+	title = new.2.t
+	desc = new.2.d
+	picture = GFX_news_event_jp_fail
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = news.1.a
+	}
+}
+
+news_event = { ##JULY PLOT SUCCESS!
+	id = new.3
+	title = new.3.t
+	desc = new.3.d
+	picture = GFX_news_event_jp_success
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = news.1.a
+	}
+}
+news_event = { ##ROMMEL'S DEATH
+	id = new.4
+	title = new.4.t
+	desc = new.4.d
+	picture = GFX_news_event_rommel_death
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = news.1.a
+	}
+}
+news_event = { ##FRANCE LIBERATED
+	id = new.5
+	title = new.5.t
+	desc = new.5.d
+	picture = GFX_news_event_paris_liberated
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = news.1.a
+	}
+}
+news_event = { ##BELGIUM LIBERATED
+	id = new.6
+	title = new.6.t
+	desc = new.6.d
+	picture = GFX_news_event_holland_liberated
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = news.1.a
+	}
+}
+news_event = { ##SUPREME COMMANDER - EISENHOWER APPOINTED
+	id = new.7
+	title = new.7.t
+	desc = new.7.d
+	picture = GFX_news_event_eisenhower
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = news.1.a
+	}
+}
+news_event = { ##PARIS BURNED!
+	id = new.8
+	title = new.8.t
+	desc = new.8.d
+	picture = GFX_news_event_paris_destroyed
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = news.1.a
+	}
+}
+news_event = { #HITLER TAKES DIRECT CONTROL OF ARMY GROUP B!
+	id = new.9
+	title = new.9.t
+	desc = new.9.d
+	picture = GFX_news_event_hitler
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = news.1.a
+	}
+}
+news_event = { #ALLIED TROOPS LIBERATE LUXEMBOURG
+	id = new.10
+	title = new.10.t
+	desc = new.10.d
+	picture = GFX_news_event_holland_liberated
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = news.1.a
+	}
+}
+news_event = { #SOVIET ADVANCE RESUMES
+	id = new.11
+	title = new.11.t
+	desc = new.11.d
+	picture = GFX_news_event_soviet_arrival
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = news.1.a
+	}
+}
+news_event = { #OPERATION DRAGOON
+	id = new.12
+	title = new.12.t
+	desc = new.12.d
+	picture = GFX_news_event_operation_dragoon
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = new.12.a
+	trigger = { has_government = fascism}
+	}
+	option = {
+	name = new.12.b
+	trigger = { has_government = democratic }
+	}
+	option = {
+	name = new.12.c
+	trigger = {  NOT = { has_government = fascism has_government = democratic } }
+	}
+}
+news_event = { #AXIS SALLY!
+	id = new.13
+	title = new.13.t
+	desc = new.13.d
+	picture = GFX_news_event_operation_dragoon
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = news.13.a
+	}
+}

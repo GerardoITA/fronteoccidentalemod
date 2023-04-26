@@ -1,0 +1,1746 @@
+﻿add_namespace = aef
+country_event = { ##WELCOME 1943 start date
+	id = aef.1
+	title = aef.1.t
+	desc = aef.1.d
+	picture = GFX_report_event_planning_overlord
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = aef.1.a
+	}
+}
+country_event = { ##MORGAN TAKES CHARGE
+	id = aef.2
+	title = aef.2.t
+	desc = aef.2.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = aef.2.a
+	
+	}
+}
+
+country_event = { ##INITIAL PLAN FOR OVERLORD. GET A BONUS FOR SPECIFIC SHIT.
+	id = aef.3
+	title = aef.3.t
+	desc = aef.3.d
+	picture = GFX_report_event_planning_overlord
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {#naval invasion
+	name = aef.3.a
+	add_tech_bonus = {
+    bonus = 0.5
+    uses = 1
+    category = para_tech
+}
+add_tech_bonus = {
+    bonus = 0.5
+    uses = 1
+    category = cat_special_forces_generic
+}
+	}
+#option = {###airborne invasion
+#	name = aef.3.b
+#	
+#	}
+#option = {###incite civil uprising in france
+#	name = aef.3.c
+#	
+#	}
+}
+country_event = { ###APPOINT SUPREME COMMANDER!
+	id = aef.4
+	title = aef.4.t
+	desc = aef.4.d
+	picture =  GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes 
+	fire_only_once = yes 
+option = {###IKE. The SAFE OPTION. IMPROVE COHESION!
+	name = aef.4.c
+	retire_character = AEF_frederick_morgan
+	remove_ideas = fractious_alliance
+	set_country_flag = SC_appointed
+	create_country_leader = {
+	name = "Dwight. D Eisenhower"
+	desc = "POLITICS_EISENHOWER_DESC"
+	picture = "eisenhower5.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		supreme_commander
+	}
+} 
+hidden_effect = { news_event = new.7 }
+	}
+option = {###MARSHALL, ORGANISATIONAL BONUSES
+	name = aef.4.b
+	retire_character = AEF_frederick_morgan
+	remove_ideas = fractious_alliance
+	set_country_flag = SC_appointed
+	create_country_leader = {
+	name = "George C. Marshall"
+	desc = "POLITICS_MARSHALL_DESC"
+	picture = "Marshall.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	supreme_commander marshall
+	}
+	
+} 
+hidden_effect = { news_event = new.7 }
+	}
+
+option = {###MONTGOMERY. MORALE++++ AND BUFFS BUT LOSS IN COHESION BECAUSE HE'S HARD TO WORK WITH.
+	name = aef.4.a
+	retire_character = AEF_frederick_morgan
+	set_country_flag = SC_appointed
+	create_country_leader = {
+	name = "Bernard Montgomery"
+	desc = "POLITICS_MONTY_DESC"
+	picture = "Montgomery.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		monty supreme_commander
+	}
+} 
+hidden_effect = { news_event = new.7 }
+	}
+
+}
+news_event = { ##STATEMENT NO 1 
+	id = aef.5
+	title = aef.5.t
+	desc = aef.5.d
+	picture =  GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	name = aef.5.a
+	add_stability = 0.01
+	}
+}
+
+###COHESION EVENTS
+#EVENTS CAN POP, AFFECTING YOUR COHESION.
+
+##FRACTIOUS ALLIANCE EVENTS
+
+country_event = { ##BAD- DISAGREEMENT BETWEEN OFFICERS
+	id = aef.6
+	title = aef.6.t
+	desc = aef.6.d
+	
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {##SIDE WITH OFFICER 1
+	name = aef.6.a
+	custom_effect_tooltip = cohesion_loss_6
+	add_to_variable = {
+	var = cohesion_number
+	value = -6
+} 
+	}
+option = {###SIDE WITH OFFICER 2
+	name = aef.6.b
+		custom_effect_tooltip = cohesion_loss_4
+	add_to_variable = {
+
+	var = cohesion_number
+	value = -4
+} 
+add_political_power = -50
+	}
+option = {###COMPROMISE
+	name = aef.6.c
+	random_list = {
+    50 = {
+	custom_effect_tooltip = cohesion_gain_1
+        add_stability = 0.05
+	 add_to_variable = {
+	var = cohesion_number
+	value = 1
+} 
+    }
+    50 = {
+	custom_effect_tooltip = cohesion_loss_4
+        add_to_variable = {
+	var = cohesion_number
+	value = -4
+} 
+    }
+
+}
+	}
+}
+
+##EMBARASSING MEMOIR
+country_event = { ##
+	id = aef.18
+	title = aef.18.t
+	desc = aef.18.d
+	picture = GFX_report_event_canada_treaty
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {# COVER IT UP
+	name = aef.18.a
+		random_list = {
+    25 = {
+	custom_effect_tooltip = cohesion_gain_1
+        add_stability = 0.05
+	 add_to_variable = {
+	var = cohesion_number
+	value = 1
+} 
+    }
+    75 = {
+	custom_effect_tooltip = cohesion_loss_7
+        add_to_variable = {
+	var = cohesion_number
+	value = -7
+} 
+    }
+
+}
+	}
+option = {## BE HONEST AND FORGIVE
+	name = aef.18.b
+	add_war_support = -0.05
+	custom_effect_tooltip = cohesion_loss_4
+        add_to_variable = {
+	var = cohesion_number
+	value = -4
+} 
+	}
+option = {## PUNISH, SEND HIM HOME
+	name = aef.18.c
+	add_manpower = -1
+	custom_effect_tooltip = cohesion_loss_6
+        add_to_variable = {
+	var = cohesion_number
+	value = -6
+} 
+
+	}
+}
+######INTELLIGENCE BLUNDER ( GUY DRUNKENLY TALKS ABOUT OVERLORD)
+country_event = { ##DISAGREEMENT BETWEEN OFFICERS
+	id = aef.19
+	title = aef.19.t
+	desc = aef.19.d
+
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {# SEND THE OFFICER BACK TO THE US. PUNISH.
+	name = aef.19.a
+	add_manpower = -1
+	custom_effect_tooltip = cohesion_loss_6
+        add_to_variable = {
+	var = cohesion_number
+	value = -6
+} 
+	}
+option = {## FORGIVE BUT MOVE HIM ELSEWHERE IN BRITAIN.
+	name = aef.19.b
+	add_manpower = -1
+	add_political_power = -75
+	custom_effect_tooltip = cohesion_loss_4
+        add_to_variable = {
+	var = cohesion_number
+	value = -4
+} 
+	}
+
+}
+######DISILLUSIONMENT WITH COMMANDER
+country_event = { ##
+	id = aef.20
+	title = aef.20.t
+	desc = aef.20.d
+	picture = GFX_report_event_bad_officer
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {# 
+	name = aef.20.a
+		random_list = {
+    24 = {
+	custom_effect_tooltip = cohesion_loss_1
+        add_stability = 0.05
+	 add_to_variable = {
+	var = cohesion_number
+	value = -1
+} 
+    }
+    75 = {
+	custom_effect_tooltip = cohesion_loss_6
+        add_to_variable = {
+	var = cohesion_number
+	value = -6
+} 
+    }
+
+}
+	}
+option = {## 
+	name = aef.20.b
+		random_list = {
+    90 = {
+	custom_effect_tooltip = cohesion_loss_6
+        add_stability = 0.05
+	 add_to_variable = {
+	var = cohesion_number
+	value = -6
+} 
+    }
+    10 = {
+	custom_effect_tooltip = cohesion_gain_3
+        add_to_variable = {
+	var = cohesion_number
+	value = 3
+} 
+    }
+
+}
+	}
+option = {## 
+	name = aef.20.c
+		random_list = {
+    25 = {
+	custom_effect_tooltip = cohesion_loss_1
+        add_stability = 0.05
+	 add_to_variable = {
+	var = cohesion_number
+	value = -1
+} 
+    }
+    75 = {
+	custom_effect_tooltip = cohesion_loss_4
+        add_to_variable = {
+	var = cohesion_number
+	value = -4
+} 
+    }
+
+}
+	}
+}
+
+######NCO MUTINY, THEY DONT LIKE THEIR OFFICER!
+country_event = { ##
+	id = aef.21
+	title = aef.21.t
+	desc = aef.21.d
+	picture = GFX_report_event_mutiny
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {# DEMOTE AND PUNISH, QUIETLY REASSIGN THEIR LEADER.
+	name = aef.21.a
+custom_effect_tooltip = cohesion_loss_6
+	 add_to_variable = {
+	var = cohesion_number
+	value = -6
+} 
+add_manpower = -2
+add_command_power = -25
+add_political_power = -50
+	}
+option = {## COURT-MARSHAL. FIRING SQUAD.
+	name = aef.21.b
+	custom_effect_tooltip = cohesion_loss_6
+	add_manpower = -10
+	 add_to_variable = {
+	var = cohesion_number
+	value = -10
+} 
+	}
+
+}
+
+##NICE INFLUENCE IDEAS. IF U HAVE NO FRACTIOUS ALLIANCE.
+##### 
+country_event = { ######AEF SENIOR LEADERSHIP WORKING WELL TOGETHER                                                    
+	id = aef.7
+	title = aef.7.t
+	desc = aef.7.d
+	picture = GFX_report_event_french_british_officers
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {# YAY!
+	name = aef.7.a
+	custom_effect_tooltip = cohesion_gain_5
+        add_stability = 0.01
+	 add_to_variable = {
+	var = cohesion_number
+	value = 5
+} 
+	}
+
+
+}
+
+country_event = { ##KNOWLEDGE SHARED DURING JOINT EXERCISE
+	id = aef.8
+	title = aef.8.t
+	desc = aef.8.d
+	picture = GFX_report_event_canada_army
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {# 
+	name = aef.8.a
+	custom_effect_tooltip = cohesion_gain_3
+      	add_tech_bonus = {
+    bonus = 0.1
+    uses = 1
+    category = infantry_weapons
+}
+	 add_to_variable = {
+	var = cohesion_number
+	value = 3
+} 
+	}
+
+
+}
+
+country_event = { ####DINING EVENT A GREAT SUCCESS.
+	id = aef.9
+	title = aef.9.t
+	desc = aef.9.d
+	picture = GFX_report_event_good_dinner
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {#TOAST THE MEN (AND WOMEN) WHO MADE THE AEF POSSIBLE
+	name = aef.9.a
+	add_war_support = 0.05
+	custom_effect_tooltip = cohesion_gain_3
+	add_to_variable = {
+	var = cohesion_number
+	value = 3
+} 
+	
+	}
+option = {## TOAST THE GREAT LEADERS OF THE AEF
+	name = aef.9.b
+custom_effect_tooltip = cohesion_gain_3
+	add_stability = 0.05
+	add_to_variable = {
+	var = cohesion_number
+	value = 3
+} 
+	}
+option = {# ## TOAST THE MEMBERS OF THE ALLIANCE
+	name = aef.9.a
+	custom_effect_tooltip = cohesion_gain_4
+	add_to_variable = {
+	var = cohesion_number
+	value = 4
+} 
+	}
+}
+
+#######SOVIET ARRIVAL
+country_event = { ##ALLIES ARE INFORMED SOVIETS ARE A COMIN.
+	id = aef.10
+	title = aef.10.t
+	desc = aef.10.d
+	picture = GFX_report_event_soviet_tanks
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {# issue a diplomatic objection!
+	name = aef.10.a
+		hidden_effect = { country_event = { id = aef.11 days = 3 }}
+} }
+
+country_event = { ##SOVIET RESPOND TO ALLIED OBJECTION.
+	id = aef.11
+	title = aef.11.t
+	desc = aef.11.d
+	picture = GFX_report_event_stalin_01
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {
+	# BUGGER.
+	name = aef.11.a
+	set_global_flag = europe_turned_red
+	custom_effect_tooltip = can_do_unthinkable
+	#hidden_effect = { OKW = { country_event = ger.40 } }
+	}
+	option = {
+	# BUGGER. IF GERMANY HASN'T, WE CAN PLAY AS THE SOVIETS!
+	name = aef.11.b
+
+	custom_effect_tooltip = can_do_unthinkable_sov
+	trigger = { SOV = { is_ai = yes } } 
+	set_global_flag = europe_turned_red
+	hidden_effect = { SOV = { change_tag_from = ROOT } }
+	
+	}
+	
+}
+
+
+country_event = { ##OPERATION DRAGOON
+	id = aef.12
+	title = aef.12.t
+	desc = aef.12.d
+	picture = GFX_report_event_ast_troops_landing
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {# 
+	name = aef.12.a
+custom_effect_tooltip = dragoon_event_tt
+
+hidden_effect = { 
+124 = { 
+   add_dynamic_modifier = { 
+                      modifier = AEF_dragoon_supply
+                      scope = SAG
+                    }
+
+ }
+81 = { 
+   add_dynamic_modifier = { 
+                      modifier = AEF_dragoon_supply
+                      scope = SAG
+                    }
+
+ }
+85 = { 
+   add_dynamic_modifier = { 
+                      modifier = AEF_dragoon_supply
+                      scope = SAG
+                    }
+
+ }
+86 = { 
+   add_dynamic_modifier = { 
+                      modifier = AEF_dragoon_supply
+                      scope = SAG
+                    }
+
+ }
+102 = { 
+   add_dynamic_modifier = { 
+                      modifier = AEF_dragoon_supply
+                      scope = SAG
+                    }
+
+ }
+}
+	 hidden_effect = { 
+ set_country_flag = operation_dragoon_launched 
+OKW = { set_country_flag = operation_dragoon_launched 
+load_oob = GER_dragoon }
+
+load_oob = AEF_dragoon 
+create_faction = AEF_faction_name
+AEF = { add_to_faction = SAG }
+
+SAG = { 
+
+transfer_state = 124 
+add_state_core = 124 
+set_province_controller = 481
+set_province_controller = 3293
+set_province_controller = 5378
+set_province_controller = 2550
+set_province_controller = 261
+set_province_controller = 1625
+set_province_controller = 2110
+set_province_controller = 2308
+set_province_controller = 2377
+set_province_controller = 2312
+set_province_controller = 3956
+set_province_controller = 4312
+set_province_controller = 34
+set_province_controller = 3624
+set_province_controller = 3152
+set_province_controller = 3784
+set_province_controller = 5377
+set_province_controller = 1444
+set_province_controller = 1249
+set_province_controller = 2060
+set_province_controller = 519
+set_province_controller = 2590
+set_province_controller = 2261
+set_province_controller = 4002
+set_province_controller = 245
+set_province_controller = 5371
+set_province_controller = 3313
+set_province_controller = 3232
+set_province_controller = 1752
+set_province_controller = 2794
+set_province_controller = 3816
+set_province_controller = 2575
+set_province_controller = 4336
+set_province_controller = 2855
+set_province_controller = 1540
+set_province_controller = 2306
+set_province_controller = 1535
+set_province_controller = 3220
+set_province_controller = 2675
+set_province_controller = 1149
+set_province_controller = 3220
+set_province_controller = 5375
+set_province_controller = 5401
+set_province_controller = 5391
+set_province_controller = 5396
+set_province_controller = 5401
+set_province_controller = 946
+set_province_controller = 5387
+set_province_controller = 5358
+set_province_controller = 5369
+set_province_controller = 1151
+set_province_controller = 4148
+set_province_controller = 549
+set_province_controller = 3274
+set_province_controller = 5382
+set_province_controller = 939
+set_province_controller = 5388
+set_province_controller = 1735
+set_province_controller = 1647
+set_province_controller = 5385
+set_province_controller = 2162
+set_province_controller = 2897
+set_province_controller = 5370
+set_province_controller = 3345
+set_province_controller = 2439
+set_province_controller = 5362
+set_province_controller = 1143
+set_province_controller = 2231
+set_province_controller = 457
+set_province_controller = 3697
+set_province_controller = 2405
+set_province_controller = 4054
+set_province_controller = 2432
+set_province_controller = 2121
+set_province_controller = 3790
+set_province_controller = 2162 }}
+SAG = { declare_war_on = {
+    target = OKW
+    type = annex_everything
+} }
+}
+} 
+
+
+#13,14,15,16 SPARE EVENTS!
+#####END OF SPARE EVENTS.
+
+country_event = { ##BOMB FRANCE, THEY DONT LIKE IT!
+	id = aef.13
+	title = aef.13.t
+	desc = aef.13.d
+	picture = GFX_report_event_generic_bombers
+		is_triggered_only = yes 	
+#	trigger = { tag = AEF 
+#OKW = { any_owned_state = { NOT = { is_core_of = GER } has_damaged_buildings = yes } }} 
+
+	#mean_time_to_happen = {
+	#	days = 20
+	#}
+	fire_only_once = no 
+	option = {#
+	name = aef.13.a
+	custom_effect_tooltip = cohesion_loss_6
+        add_stability = -0.02
+	add_manpower = -1000
+	 add_to_variable = {
+	var = cohesion_number
+	value = -6
+} 
+	}
+	
+}
+country_event = { ##PRESENTING FINAL PLAN TO COMMANDER.
+	id = aef.22
+	title = aef.22.t
+	desc = aef.22.d
+	picture = GFX_report_event_planning_overlord
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {#
+	name = aef.22.a
+	custom_effect_tooltip = overlord_is_approved
+	set_country_flag = overlord_approved 
+	}
+}
+######CONSULT WEATHER EXPERT
+country_event = { ##
+	id = aef.23
+	title = aef.23.t
+	desc = aef.23.d
+	picture = GFX_report_event_james_stagg
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {#
+	name = aef.23.a
+			
+		set_country_flag = allow_james_stagg
+	}
+}
+
+country_event = { #GENERIC
+	id = aef.24
+	title = aef.24.t
+	desc = aef.24.d
+	picture = GFX_report_event_beach_survey
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {#
+	name = aef.24.a
+	}
+
+}
+country_event = { ##CHOOSE A LANDING SITE! WILL BUFF ONCE YOU LAUNCH OVERLORD.
+	id = aef.25
+	title = aef.25.t
+	desc = aef.25.d
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {#NORMANDY
+	name = aef.25.a
+	set_country_flag = normandy_landing_chosen
+	custom_effect_tooltip = beach_landing_chosen
+	}
+option = {#CALAIS
+	name = aef.25.b
+	set_country_flag = calais_landing_chosen
+custom_effect_tooltip = beach_landing_chosen
+	}
+option = {#DUTCH COAST
+	name = aef.25.c
+	set_country_flag = dutch_landing_chosen
+	custom_effect_tooltip = beach_landing_chosen
+	}
+option = {#BRITTANY
+	name = aef.25.de
+	set_country_flag = brittany_landing_chosen
+	custom_effect_tooltip = beach_landing_chosen
+	}
+
+}
+country_event = { ##OVERLORD LAUNCHED!
+	id = aef.26
+	title = aef.26.t
+	desc = aef.26.d
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes 
+	immediate = { hidden_effect = { if = {
+    limit = {
+       ROOT = {  is_ai = no }
+    }add_equipment_to_stockpile = {
+    type = convoy
+    amount = 100
+    producer = AEF
+} } } }
+	fire_only_once = yes 
+	option = {#NORMANDY
+	name = aef.26.a
+	trigger = { has_country_flag = normandy_landing_chosen} 
+	if = {
+    limit = {
+       ROOT = {  is_ai = yes }
+    }
+set_province_controller = 220
+set_province_controller = 2738
+set_province_controller = 4147
+set_province_controller = 9764
+set_province_controller = 3554
+set_province_controller = 4147
+set_province_controller = 4908
+set_province_controller = 2161
+set_province_controller = 4927
+set_province_controller = 4386
+set_province_controller = 3659
+set_province_controller = 2843
+17 = { add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 2738
+} }
+19 = { 
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 220
+}
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 3354
+}
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 4386
+}
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 3554
+}
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 4147
+}
+ }
+add_victory_points = {
+	province = 2738
+	value = 1 ##UTAH
+}
+add_victory_points = {
+	province = 220
+	value = 1 ##OMAHA
+}
+add_victory_points = {
+	province = 3554
+	value = 1 ##GOLD
+}
+add_victory_points = {
+	province = 4147
+	value = 1 ##JUNO
+}
+
+add_victory_points = {
+	province = 4386
+	value = 1 ##SWORD
+}
+load_oob = "AEF_NORMANDY_LANDING" 
+}
+
+
+
+
+	}
+option = {#CALAIS
+	trigger = { has_country_flag = calais_landing_chosen} 
+	name = aef.26.a
+	if = {
+    limit = {
+       ROOT = {  is_ai = yes }
+    }
+set_province_controller = 121
+set_province_controller = 3887
+set_province_controller = 4731
+set_province_controller = 2774
+set_province_controller = 4644
+set_province_controller = 4672
+set_province_controller = 4655
+set_province_controller = 2702
+
+92 = { add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 121
+} 
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 2774
+}
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 4672
+}
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 4655
+}
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 4644
+}
+
+ }
+
+load_oob = "AEF_CALAIS_LANDING" 
+}
+		92 = {
+                    add_dynamic_modifier = { 
+                      modifier = overlord_state_bonus
+                      scope = AEF
+                    } 
+	}}
+option = {#DUTCH COAST
+	name = aef.26.a
+	trigger = { has_country_flag = dutch_landing_chosen} 
+	if = {
+    limit = {
+       ROOT = {  is_ai = yes }
+    }
+set_province_controller = 3086
+set_province_controller = 3765
+set_province_controller = 4541
+set_province_controller = 4539
+set_province_controller = 344
+set_province_controller = 4546
+set_province_controller = 4402
+set_province_controller = 4529
+8 = { add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 4529
+} }
+68 = { 
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 3086
+}
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 4521
+}
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 4539
+}
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 4402
+}
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 4541
+}
+ }
+
+load_oob = "AEF_DUTCH_LANDING" 
+}
+	
+  10 = {
+                    add_dynamic_modifier = { 
+                      modifier = overlord_state_bonus
+                      scope = AEF
+                    }
+                }
+ 6 = {
+                    add_dynamic_modifier = { 
+                      modifier = overlord_state_bonus
+                      scope = AEF
+                    }
+                }
+8 = {
+                    add_dynamic_modifier = { 
+                      modifier = overlord_state_bonus
+                      scope = AEF
+                    } }
+ 7 = {
+                    add_dynamic_modifier = { 
+                      modifier = overlord_state_bonus
+                      scope = AEF
+                    } }
+68= {
+                    add_dynamic_modifier = { 
+                      modifier = overlord_state_bonus
+                      scope = AEF
+                    }
+                }
+	}
+option = {#BRITTANY
+	name = aef.26.a
+trigger = { has_country_flag = brittany_landing_chosen} 
+if = {  limit = {
+       ROOT = {  is_ai = yes }
+    }
+set_province_controller = 5099
+set_province_controller = 5103
+set_province_controller = 4264
+set_province_controller = 2479
+set_province_controller = 1259
+set_province_controller = 5101
+set_province_controller = 3
+set_province_controller = 4529
+57 = { 
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 1259
+}
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 2479
+}
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 4264
+}
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 5103
+}
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 5099
+} }
+load_oob = "AEF_BRITTANY_LANDING" 
+}
+ 57 = {
+                    add_dynamic_modifier = { 
+                      modifier = overlord_state_bonus
+                      scope = AEF
+                    }
+                }
+58 = {
+                    add_dynamic_modifier = { 
+                      modifier = overlord_state_bonus
+                      scope = AEF
+                    } }
+ 59 = {
+                    add_dynamic_modifier = { 
+                      modifier = overlord_state_bonus
+                      scope = AEF
+                    } }
+	
+
+} }
+country_event = { ##DRAGOON
+	id = aef.27
+	title = aef.27.t
+	desc = aef.27.d
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes 
+	fire_only_once = yes 
+option = {#sooner
+	name = aef.27.a
+	}
+option = {#later
+	name = aef.27.b
+	}
+
+}
+country_event = { ##ACES IN EXILE INFO
+	id = aef.28
+	title = aef.28.t
+	desc = aef.28.d
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes 
+	fire_only_once = yes 
+option = {#sooner
+	name = aef.28.a
+	}
+
+}
+country_event = { ##COASTLINE SURVEYS
+	id = aef.29
+	title = aef.29.t
+	desc = aef.29.d
+	picture = GFX_report_event_beach_survey
+	is_triggered_only = yes 
+	fire_only_once = yes 
+option = {#North France
+	name = aef.24.a
+	add_timed_idea = { idea = coast_surveyed days = 90 }
+	OKW = { country_event = ger.33 }
+	}
+option = {#Benelux
+	name = aef.24.b
+	OKW = { country_event = ger.32 } 
+	add_timed_idea = { idea = coast_surveyed days = 90 }
+	}
+option = {#Brittany
+	name = aef.24.dd
+	OKW = { country_event = ger.341 }
+	add_timed_idea = { idea = coast_surveyed days = 90 }
+	}
+option = {#South France
+	name = aef.24.c
+	OKW = { country_event = ger.34 }
+	add_timed_idea = { idea = coast_surveyed days = 90 }
+	}
+}
+country_event = { ##WELCOME 1944 ITB start date
+	id = aef.30
+	title = aef.30.t
+	desc = aef.30.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_report_event_german_troops
+	immediate = { 
+17 = { add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 2738
+} }
+19 = { 
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 220
+}
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 3354
+}
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 4386
+}
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 3554
+}
+add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 4147
+}
+ }
+add_victory_points = {
+	province = 2738
+	value = 1 ##UTAH
+}
+add_victory_points = {
+	province = 220
+	value = 1 ##OMAHA
+}
+add_victory_points = {
+	province = 3554
+	value = 1 ##GOLD
+}
+add_victory_points = {
+	province = 4147
+	value = 1 ##JUNO
+}
+
+add_victory_points = {
+	province = 4386
+	value = 1 ##SWORD
+}
+#load_oob = "AEF_NORMANDY_LANDING" 
+}
+	option = {
+	name = aef.30.a
+	} }
+country_event = { ##COMBINED CHIEFS MEETING
+	id = aef.31
+	title = aef.31.t
+	desc = aef.31.d
+	picture = GFX_report_event_good_dinner
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {###BRITAIN AND AMERICA ONLY.
+	name = aef.31.a
+	set_country_flag = meeting_none_invited
+	country_event = { id = aef.32 days = 1 }
+	}
+option = {###INVITE THE FRENCH
+	name = aef.31.b
+		set_country_flag = meeting_french_invited
+	country_event = { id = aef.32 days = 1 }
+	}
+option = {###INVITE AS MANY OF THE ALLIED NATIONS AS POSSIBLE.
+	name = aef.31.c
+		set_country_flag = meeting_everyone_invited
+	country_event = { id = aef.32 days = 1 }
+	}
+}
+country_event = { ###MEETING
+	id = aef.32
+	title = aef.32.t
+	desc = aef.32.d
+	picture = GFX_report_event_french_british_officers
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	option = {###BRITAIN AND AMERICA ONLY.
+
+	name = aef.32.a
+	#trigger = { has_country_flag = meeting_none_invited }
+	add_stability = -0.05
+	add_political_power = -25
+	add_ideas = british_american_synergy
+	custom_effect_tooltip = cohesion_gain_5 add_to_variable = {
+	var = cohesion_number
+	value = 5
+} 
+custom_effect_tooltip = meeting_none_invited
+	}
+option = {###FRENCH INVITED
+	name = aef.32.b
+custom_effect_tooltip = cohesion_gain_7 add_to_variable = {
+	var = cohesion_number
+	value = 7
+} 
+add_stability = -0.1
+add_ideas = liberate_france
+	custom_effect_tooltip = meeting_french_invited
+	
+	#trigger = { has_country_flag = meeting_french_invited }
+	}
+option = {###EVERYYONE INVITED
+	name = aef.32.c
+	custom_effect_tooltip = cohesion_gain_15 
+	
+	add_war_support = -0.1
+custom_effect_tooltip = meeting_everyone_invited
+add_to_variable = {
+	var = cohesion_number
+	value = 15
+} 
+	#trigger = { has_country_flag = meeting_everyone_invited }
+	}
+
+option = {###GENERIC OPTION
+	name = aef.32.de
+	
+	custom_effect_tooltip = cohesion_gain_10
+custom_effect_tooltip = meeting_generic_option
+add_to_variable = {
+	var = cohesion_number
+	value = 10
+} 
+	#trigger = { has_country_flag = meeting_everyone_invited }
+	}
+}
+
+
+########PUBLIC OPINION EVENTS, REDUCING ALLIED EFFECTIVENESS.
+########## 
+###TAKING CASUALTIES (SURPRISE AT GERMAN DEFENCES)
+country_event = {
+	id = aef.33
+	title = aef.33.t
+	desc = aef.33.d
+	picture = GFX_report_event_crowd_in_prague
+timeout_days = 7
+	fire_only_once = yes	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	trigger = {
+		tag = AEF
+		has_war = yes
+		casualties > 20000
+		NOT = { has_idea = high_public_opinion has_global_flag = ITB_start_trigger has_global_flag = WAR_start_trigger}
+		}
+	option = {
+	name = aef.33.a
+	 swap_ideas = {
+    remove_idea = max_public_opinion
+    add_idea = high_public_opinion
+}
+		
+	}
+}
+###MORE CASUALTIES
+country_event = {
+	id = aef.34
+	fire_only_once = yes
+	title = aef.34.t
+	desc = aef.34.d
+		fire_only_once = yes
+	picture = GFX_report_event_crowd_in_prague
+	mean_time_to_happen = {
+		days = 1
+	}
+	timeout_days = 7
+	trigger = {
+		tag = AEF
+		has_war = yes
+		casualties > 50000
+		has_idea = high_public_opinion
+		NOT = { has_idea = so_so_morale has_global_flag = KESSEL_start_trigger }
+		}
+	option = {
+	 swap_ideas = {
+    remove_idea = high_public_opinion
+    add_idea = medium_public_opinion
+}	name = aef.34.a
+		
+	}
+}
+###MORE CASUALTIES
+country_event = {
+	id = aef.35
+	fire_only_once = yes
+	title = aef.35.t
+	desc = aef.35.d
+		fire_only_once = yes
+	picture = GFX_report_event_crowd_in_prague
+	mean_time_to_happen = {
+		days = 1
+	}
+	timeout_days = 7
+	trigger = {
+		tag = AEF
+		has_war = yes
+		casualties > 75000
+		has_idea = medium_public_opinion }
+	option = {
+	 swap_ideas = {
+    remove_idea = medium_public_opinion
+    add_idea = low_medium_public_opinion
+}
+	name = aef.35.a
+		
+	}
+}
+###CASUALTY LEVEL CRITICAL
+country_event = {
+	id = aef.36
+	title = aef.36.t
+	desc = aef.36.d
+	picture = GFX_report_event_generic_riot
+timeout_days = 7
+	fire_only_once = yes 
+	mean_time_to_happen = {
+		days = 1
+	}
+	trigger = {
+		tag = AEF
+		has_war = yes
+		has_idea = low_medium_public_opinion
+		casualties > 150000
+		}
+	option = {
+	 swap_ideas = {
+    remove_idea = low_medium_public_opinion
+    add_idea = low_public_opinion
+}
+	name = ger.7.a
+		
+	}
+}
+#####EXTREME CASUALTIES
+country_event = {
+	id = aef.37
+	title = aef.37.t
+	desc = aef.37.d
+	picture = GFX_report_event_generic_riot
+	fire_only_once = yes 
+	mean_time_to_happen = {
+		days = 1
+	}
+	timeout_days = 7
+	trigger = {
+		tag = AEF
+		has_war = yes
+		has_idea = low_public_opinion
+		casualties > 250000
+		}
+	option = {
+	name = ger.8.a
+	 swap_ideas = {
+    remove_idea = low_public_opinion
+    add_idea = outrage_public_opinion
+}
+		
+	}
+}
+######DEVASTATING CASUALTIES
+country_event = {
+	id = aef.38
+	title = aef.38.t
+	desc = aef.38.d
+	picture = GFX_report_event_generic_riot
+	fire_only_once = yes 
+mean_time_to_happen = {
+		days = 1
+	}
+	timeout_days = 7
+	trigger = {
+		tag = AEF
+		has_war = yes
+		has_idea = outrage_public_opinion
+		casualties > 400000
+		}
+	option = {
+	name = ger.37.a
+	 swap_ideas = {
+    remove_idea = outrage_public_opinion
+    add_idea = rioting_public_opinion
+}
+		
+	}
+}
+country_event = { #######FINAL POSITIVE COHESION EVENT. HIGH MORALE!
+	id = aef.39
+	title = aef.39.t
+	desc = aef.39.d
+	picture = GFX_report_event_soldiers_in_france
+	fire_only_once = yes 
+	is_triggered_only = yes
+	timeout_days = 7
+	
+	option = {
+	name = aef.39.a
+	add_stability = 0.1
+	custom_effect_tooltip = cohesion_gain_2
+	add_to_variable = {
+	var = cohesion_number
+	value = 2
+} 
+		
+	}
+}
+country_event = { #######GERMANY ASKS FOR PEACE!
+	id = aef.40
+	title = aef.40.t
+	desc = aef.40.d
+	picture = GFX_report_event_generic_sign_treaty3
+	fire_only_once = yes 
+	is_triggered_only = yes
+	timeout_days = 7
+	
+
+	option = {#We accept, but you must be occupied by us.
+		name = aef.40.a
+		OKW = { country_event = { id = ger.15 days = 1 } } 
+	}
+	option = {#WE REFUSE. WAR.
+		name = aef.40.b
+	}
+}
+
+country_event = { #######INFORMED GERMANY ACCEPTS. THEY OUR PUPPET NOW.
+	id = aef.41
+	title = aef.41.t
+	desc = aef.41.d
+	picture = GFX_report_event_generic_sign_treaty3
+	fire_only_once = yes 
+	is_triggered_only = yes
+	timeout_days = 7
+	
+
+	option = {#We accept, but you must be occupied by us.
+		name = aef.40.b
+		hidden_effect = {country_event = end.4 }
+	}
+
+
+
+}
+country_event = { #######INFORMED WAR CONTINUES
+	id = aef.42
+	title = aef.42.t
+	desc = aef.42.d
+	picture = GFX_report_event_generic_sign_treaty3
+	fire_only_once = yes 
+	is_triggered_only = yes
+	timeout_days = 7
+	
+	option = {#WE REFUSE. WAR.
+		name = aef.42.a
+	}
+}
+country_event = { #######AEF GETS BOMBERS FOR TRANSPORT PLAN!
+	id = aef.43
+	title = aef.43.t
+	desc = aef.43.d
+	picture = GFX_report_generic_bombers
+	fire_only_once = yes 
+	is_triggered_only = yes
+	timeout_days = 7
+	
+	option = {# GET THE BOMBAS!
+		name = aef.43.a
+	custom_effect_tooltip = raf_bomber_command_acquired
+hidden_effect = { if = {
+	limit = { has_dlc = "By Blood Alone" }
+load_oob = "AEF_BOMBER_COMMAND_BBA" }
+else = { load_oob = "AEF_BOMBER_COMMAND_LEGACY" }
+	}}
+}
+
+
+###SLAPPED LIKE PATTON IN SICILY! COHESION REDUCE!
+country_event = { 
+	id = aef.47
+	title = aef.47.t
+	desc = aef.47.d
+	picture = GFX_report_event_patton
+	fire_only_once = yes 
+	is_triggered_only = no
+	trigger = { tag = AEF date > 1943.7.15 }
+	mean_time_to_happen = { days = 30 } 
+	timeout_days = 7
+	
+
+	option = {#Keep atton cuz hes a G
+		name = aef.47.a
+		custom_effect_tooltip = cohesion_loss_15
+	add_to_variable = {
+	var = cohesion_number
+	value = -10
+} 
+	}
+	option = {#Fire patton from D-Day!
+		name = aef.47.b
+retire_character = AEF_george_s_patton
+add_war_support = -0.1
+custom_effect_tooltip = cohesion_gain_5
+	add_to_variable = {
+	var = cohesion_number
+	value = 5
+} 
+	}
+}
+country_event = { #######BELGIUM EVENT
+	id = aef.48
+	title = aef.48.t
+	desc = aef.48.d
+	picture = GFX_report_event_royal_parade
+	fire_only_once = yes 
+	is_triggered_only = yes
+	timeout_days = 7
+	
+
+	option = {#French demand this. Accept. 
+		name = aef.48.a
+		
+	}
+	
+}
+country_event = { #######DUTCH EVENT
+	id = aef.49
+	title = aef.49.t
+	desc = aef.49.d
+	picture = GFX_report_event_casualties
+	fire_only_once = yes 
+	is_triggered_only = yes
+	timeout_days = 7
+	
+
+	option = {# 
+		name = aef.49.a
+		
+	}
+	
+}
+country_event = { #######POLAND EVENT
+	id = aef.50
+	title = aef.50.t
+	desc = aef.50.d
+	picture = GFX_report_event_polish_tanks
+	fire_only_once = yes 
+	is_triggered_only = yes
+	timeout_days = 7
+	
+
+	option = {#
+		name = aef.50.a
+		
+	}
+	
+}
+country_event = { #######NORWEGIAN EVENT
+	id = aef.51
+	title = aef.51.t
+	desc = aef.51.d
+	picture = GFX_report_event_usa_destroyers
+	fire_only_once = yes 
+	is_triggered_only = yes
+	timeout_days = 7
+	
+
+	option = {#
+		name = aef.51.a
+		
+	}
+	
+}
+######FRENCH EVENTS
+country_event = { #######Discussions With The French INITIAL. DECIDES DIRECTION. + FRENCH OR - FRENCH.
+	id = aef.44
+	title = aef.44.t
+	desc = aef.44.d
+	picture = GFX_report_event_degaulle_churchill
+	fire_only_once = yes 
+	is_triggered_only = yes
+	timeout_days = 7
+	
+
+	option = {#Bring French closer to the planning process. OPENS UP SOME FRENCH ADVISORS? CHANCE TO GIVE ENEMY A BUFF.
+		name = aef.44.a
+		add_political_power = 50 
+		custom_effect_tooltip = cohesion_gain_3
+	add_to_variable = {
+	var = cohesion_number
+	value = 3
+} 
+set_country_flag = french_accepted_initial
+	}
+option = {#Keep French distance. We don't trust De Gaulle or their codes. 
+		name = aef.44.b
+		add_stability = 0.05
+		add_political_power = 100
+		set_country_flag = french_rejected_initial
+		custom_effect_tooltip = cohesion_loss_5
+	add_to_variable = {
+	var = cohesion_number
+	value = -5
+} 
+	}
+	
+}
+country_event = { #######Approach the Great Asparagus
+	id = aef.45
+	title = aef.45.t
+	desc = aef.45.d
+	picture = GFX_report_event_casualties
+	fire_only_once = yes 
+	is_triggered_only = yes
+	timeout_days = 7
+	
+
+	option = {#DE GAULLE IS UNTRUSTWORTHY. AND CAUSES PROBLEMS. CAUSES COHESION LOSS.
+		name = aef.45.a
+		custom_effect_tooltip = cohesion_loss_6
+	add_to_variable = {
+	var = cohesion_number
+	value = -6
+} 
+	}
+	
+}
+country_event = { #######Reject the dictator
+	id = aef.46
+	title = aef.46.t
+	desc = aef.46.d
+	picture = GFX_report_event_casualties
+	fire_only_once = yes 
+	is_triggered_only = yes
+	timeout_days = 7
+	
+
+	option = {#He's UNELECTED. HOWEVER HE STILL NBECOMES LEADER CUZ OF POPULAR SUPPORT! BUT HES A TROUBLE MAKER? SO NO EFFECT ON COHESION.
+		name = aef.46.a
+		
+	}
+	
+}
+country_event = { #######CFLN FORMATION, BAD
+	id = aef.52
+	title = aef.52.t
+	desc = aef.52.d
+	picture = GFX_report_event_casualties
+	fire_only_once = yes 
+	is_triggered_only = yes
+	timeout_days = 7
+	
+
+	option = {#
+		name = aef.52.a
+		set_country_flag = cfln_formed_good
+	}
+	
+}
+country_event = { #######CFLN FORMATION, GOOD
+	id = aef.53
+	title = aef.52.t
+	desc = aef.53.d
+	picture = GFX_report_event_casualties
+	fire_only_once = yes 
+	is_triggered_only = yes
+	timeout_days = 7
+	
+
+	option = {#NICE VERSION. 
+		name = aef.53.a
+		set_country_flag = cfln_formed_bad
+	}
+
+	
+}
+country_event = { #######LEADER OF THE FREE FRENCH! WHO'S IT GONNA BE?!
+	id = aef.54
+	title = aef.54.t
+	desc = aef.54.d
+	picture = GFX_report_event_casualties
+	fire_only_once = yes 
+	is_triggered_only = yes
+	timeout_days = 7
+	
+
+	option = {#NICE VERSION. DEGAULLE
+		name = aef.54.a
+		trigger = { has_completed_focus = AEF_approach_the_great_asparagus }
+	}
+	option = {#BAD VERSION. DEGAULLE
+		name = aef.54.ab
+		trigger = { has_completed_focus = AEF_reject_the_apprentice_dictator }
+	}
+option = {#HENRY GIRAUD
+		name = aef.54.ab
+		trigger = { has_completed_focus = AEF_reject_the_apprentice_dictator }
+	}
+option = {#TASSIGNY
+		name = aef.54.ab
+		trigger = { has_completed_focus = AEF_reject_the_apprentice_dictator }
+	}
+}
+
+country_event = { #######GPRF FORMATION! AFTER A LEADER IS SELECETD
+	id = aef.55
+	title = aef.55.t
+	desc = aef.55.d
+	picture = GFX_report_event_casualties
+	fire_only_once = yes 
+	is_triggered_only = yes
+	timeout_days = 7
+	
+
+	option = {#NICE VERSION.DE GAULLE AND CHURCHILL ARGUE CUZ THEY MISTRUST EACH OTHER STILL. BUT ROOSEVELT SMOOTHS OVER. 
+		name = aef.53.a
+		trigger = { has_country_flag = cfln_formed_good }
+	}
+option = {#BAD VERSION. THEY ALL ARGUE. ALLIES DISLIKE ETHIS "PROV" GOVERNMENT THAT'S UNELECTED!
+		name = aef.53.a
+		trigger = { has_country_flag = cfln_formed_bad }
+	}
+	
+}
+###PUBLIC OPINION - Max, High, Medium, Semi-Medium, Low, Calamitous

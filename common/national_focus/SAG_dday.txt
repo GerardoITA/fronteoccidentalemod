@@ -1,0 +1,14 @@
+﻿focus_tree = {
+	id = SAG_dday
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SAG
+		}
+	}
+
+
+	
+	
+}

@@ -1,0 +1,83 @@
+#####FIREFLY
+
+
+animation = {
+	name = "ENG_british_sherman_tank_firefly_attack"
+	file = "ENG_british_sherman_tank_firefly_attack.anim"
+}
+
+animation = {
+	name = "ENG_british_sherman_tank_firefly_idle"
+	file = "ENG_british_sherman_tank_firefly_idle.anim"
+}
+
+animation = {
+	name = "ENG_british_sherman_tank_firefly_moving"
+	file = "ENG_british_sherman_tank_firefly_moving.anim"
+}
+
+##CROMWELL
+animation = {
+	name = "ENG_medium_armor_2_moving"
+	file = "ENG_medium_armor_2_moving.anim"
+}
+
+animation = {
+	name = "ENG_medium_armor_2_idle"
+	file = "ENG_medium_armor_2_idle.anim"
+}
+
+animation = {
+	name = "ENG_medium_armor_2_attack"
+	file = "ENG_medium_armor_2_attack.anim"
+}
+
+animation = {
+	name = "geo_panther_idle_animation"
+	file = "geo_panther_idle.anim"
+}
+
+animation = {
+	name = "geo_panther_move_animation"
+	file = "geo_panther_move.anim"
+}
+
+animation = {
+	name = "geo_panther_attack_animation"
+	file = "geo_panther_attack.anim"
+}
+
+animation = {
+	name = "geo_panzer2_attack_animation"
+	file = "geo_panzer2_attack.anim"
+}
+
+animation = {
+	name = "geo_38t_idle_animation"
+	file = "geo_38t_idle.anim"
+}
+
+animation = {
+	name = "geo_38t_move_animation"
+	file = "geo_38t_move.anim"
+}
+
+animation = {
+	name = "geo_38t_attack_animation"
+	file = "geo_38t_attack.anim"
+}
+
+animation = {
+	name = "geo_tiger_idle_animation"
+	file = "geo_tiger_idle.anim"
+}
+
+animation = {
+	name = "geo_tiger_move_animation"
+	file = "geo_tiger_move.anim"
+}
+
+animation = {
+	name = "geo_tiger_attack_animation"
+	file = "geo_tiger_attack.anim"
+}

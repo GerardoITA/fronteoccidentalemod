@@ -1,0 +1,46 @@
+state={
+	id=24
+	name="STATE_24"
+	history = {
+ 1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+}
+ 1943.3.1.12 = {
+		owner = AEF
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+victory_points = { 2655 3 } 
+victory_points = { 3520 3 } #Helston
+victory_points = { 1579 3 } #Mullion
+victory_points = { 1019 3 } #Lizard
+victory_points = { 4774 3 } #Serinen
+victory_points = { 1275 3 } #Porthcumo
+victory_points = { 1285 3 } #St. Ives
+victory_points = { 4763 3 } #Hayle
+victory_points = { 3334 3 } #Redruth
+victory_points = { 4778 3 } #Falmouth
+victory_points = { 4638 3 } #Bude
+victory_points = { 1219 3 } #Launceton
+victory_points = { 2353 3 } #Liskeard
+victory_points = { 1806 3 } #Saltash
+victory_points = { 4030 3 } #Bodmin
+victory_points = { 504 3 } #Looe
+victory_points = { 2206 3 } #Fowey
+victory_points = { 2144 3 } #St Austell
+victory_points = { 4307 3 } #Newquay
+victory_points = { 4670 3 } #Truro
+buildings = {
+			infrastructure = 1
+			2655 = { naval_base = 4 } 
+			
+		}}
+	provinces={
+		8757 9100 8063 6121 188 226 232 292 309 333 467 504 543 827 893 991 1019 1150 1219 1239 1275 1285 1386 1431 1579 1784 1806 1876 1899 2126 2144 2201 2206 2330 2353 2398 2648 2655 2824 3301 3334 3428 3444 3520 3573 3663 3874 3950 4030 4031 4181 4183 4278 4307 4638 4676 4697 4723 4727 4738 4743 4754 4760 4762 4763 4774 4778 
+	}
+	manpower=345442
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

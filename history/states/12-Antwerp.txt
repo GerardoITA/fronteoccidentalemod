@@ -1,0 +1,39 @@
+
+state={
+	id=12
+	name="STATE_12"
+	history = { 
+buildings = { infrastructure = 4 } 
+1918.3.20.12 = {
+		owner = DKR
+		add_core_of = ENT
+		}
+ 		1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+ 
+victory_points = { 7756 9 } #antwerpen
+victory_points = { 4120 4 } #merksem
+victory_points = { 6192 4 } #kruibeke
+victory_points = { 1651 4 } #Zwijndrecht
+victory_points = { 4532 2 } #Kalmthout
+victory_points = { 4558 2  } #grobbendonk
+victory_points = { 7926 4  } #Geel
+victory_points = { 2102 4  }#Mol
+victory_points = { 3181 4  }#Meerhout
+}
+	provinces={
+		9674 9675 9676 9677 9678 8694 5980 2102 7926 7756 8111 6862 6192 5930 116 143 173 227 252 302 322 808 980 1012 1062 1146 1206 1410 1468 1619 1651 1783 1918 1920 2572 2608 3181 3354 3912 4120 4245 4269 4359 4522 4532 4536 4540 4543 4547 4549 4558 4564 4590 4596 
+	}
+	state_category = city
+	manpower=1557986
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

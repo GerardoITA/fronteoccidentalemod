@@ -1,0 +1,79 @@
+
+state={
+	id=17
+	name="STATE_17"
+
+	history={
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_dynamic_modifier = {
+			modifier = hedgerows
+
+		}
+		1918.3.20.12 = {
+			owner = ENT
+			add_core_of = ENT
+
+		}
+		1943.3.1.12 = {
+			owner = OKW
+			add_core_of = AEF
+			remove_core_of = ENT
+
+		}
+		1944.12.20.1 = {
+			owner = AEF
+			add_core_of = AEF
+
+		}
+		victory_points = {
+			4896 5 
+		}
+		victory_points = {
+			3204 3 
+		}
+		victory_points = {
+			2735 5 
+		}
+		victory_points = {
+			680 2 
+		}
+		victory_points = {
+			2548 5 
+		}
+		victory_points = {
+			1481 5 
+		}
+		victory_points = {
+			5419 3 
+		}
+		victory_points = {
+			3294 3 
+		}
+		buildings = {
+			3294 = {
+				naval_base = 1
+				coastal_bunker = 2
+				bunker = 2
+
+			}
+			2548 = {
+				naval_base = 1
+				coastal_bunker = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		41 83 88 228 265 270 273 399 423 627 680 708 747 757 838 914 1094 1129 1132 1214 1228 1472 1475 1481 1487 1513 1559 1607 1638 1675 1821 1831 1835 2005 2035 2043 2050 2267 2396 2415 2475 2517 2520 2548 2705 2735 2738 2793 2819 2852 2912 2918 2972 2987 2988 2991 3045 3204 3236 3283 3294 3542 3555 3569 3634 3714 3743 3902 3920 3957 4077 4104 4266 4314 4409 4859 4893 4896 4903 4908 4938 4944 4955 4956 4971 4976 5023 5080 5088 5096 5125 5153 5419 5422 5445 9614 9625 9628 9764 
+	}
+	manpower=395468
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

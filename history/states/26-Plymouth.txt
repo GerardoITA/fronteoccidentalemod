@@ -1,0 +1,23 @@
+state={
+	id=26
+	name="STATE_26"
+	history = { 
+		 1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+ 		1943.3.1.12 = {
+		owner = AEF
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+
+ buildings = { air_base = 7 infrastructure = 3 968 = { naval_base = 6 } }} 
+	provinces={
+		968 2974 4726 
+	}
+	manpower=260584
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

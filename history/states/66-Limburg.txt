@@ -1,0 +1,34 @@
+
+state={
+	id=66
+	name="STATE_66"
+	history = {
+buildings = { infrastructure = 2 } 
+1918.3.20.12 = {
+		owner = DKR
+		add_core_of = ENT
+		}
+ 		1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+victory_points = { 2474 5 } #Hasselt
+victory_points = { 870 5 }#Genk
+victory_points = { 1427 5 }#Lommel
+victory_points = { 3330 5 }#Pelt
+
+} 
+	provinces={
+		9697 7315 29 61 154 362 465 511 555 602 870 1036 1202 1331 1427 1514 1613 1749 1989 2310 2344 2474 2682 2789 3006 3241 3330 3460 3804 3819 4101 4297 4571 4581 4609 4631 4639 4648 
+	}
+	manpower=674048
+	state_category = large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

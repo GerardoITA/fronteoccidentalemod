@@ -1,0 +1,30 @@
+
+state={
+	id=63
+	name="STATE_63"
+
+	history={
+		1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.23.12 = {
+		owner = AEF
+		add_core_of = AEF
+		}
+buildings = { infrastructure = 1 }
+	}
+
+	provinces={
+		9775 1 377 439 626 641 738 906 1022 1226 1302 1336 1348 1657 1906 2370 2503 2516 2759 2821 2890 3461 3781 3842 3891 3938 4011 4166 5351 5352 5367 5373 5386 5397 5399 5403 
+	}
+	manpower=665064
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

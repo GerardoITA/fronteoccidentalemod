@@ -1,0 +1,27 @@
+
+state={
+	id=127
+	name="STATE_127"
+
+	history={
+		1918.3.20.12 = {
+		owner = DKR
+		add_core_of = DKR
+		}
+ 	1943.3.1.12 = {
+		owner = OKW
+		add_core_of = OKW
+		remove_core_of = DKR
+		}
+
+	}
+
+	provinces={
+		539 721 759 912 1333 1643 1648 1747 1813 1886 1965 2417 2711 3066 3153 3649 3822 3832 4157 4196 4259 4428 4438 4455 4465 4500 
+	}
+	manpower=2021033
+	impassable = yes
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

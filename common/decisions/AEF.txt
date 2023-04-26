@@ -1,0 +1,1464 @@
+AEF_cohesion = { 
+hold_a_stirring_speech = { ##REINFORCEMENTS FOR GERMAN
+
+		icon = generic_decision
+
+		available = {
+		custom_trigger_tooltip = {
+    tooltip = call_for_unity_trigger_40		
+   check_variable = {
+   cohesion_number < 40
+}
+}
+				 }
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 50
+		complete_effect = { custom_effect_tooltip = cohesion_gain_5 add_to_variable = {
+	var = cohesion_number
+	value = 5
+} }
+
+		remove_effect = {   }
+		days_remove = 90 
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+AEF_collapse_decision = {
+    activation = {
+	
+   check_variable = {
+   cohesion_number < 1
+}
+
+    }
+    available = {
+       custom_trigger_tooltip = {
+    tooltip = call_for_unity_trigger_above_25		
+   check_variable = {
+   cohesion_number > 25
+}
+}
+    }
+    cancel_trigger = {
+       custom_trigger_tooltip = {
+    tooltip = call_for_unity_trigger_above_40	
+   check_variable = {
+   cohesion_number > 40
+}}
+    }
+    icon = mission_icon     # For GFX_decision_mission_icon
+    is_good = yes
+    days_mission_timeout = 100
+    selectable_mission = yes
+    complete_effect = {
+       custom_effect_tooltip = cohesion_gain_15 add_to_variable = {
+	var = cohesion_number
+	value = 15
+}
+    }
+    timeout_effect = {
+     custom_effect_tooltip = allies_collapse_tt
+	hidden_effect = { country_event = end.3 }
+    }
+}
+call_for_unity = { ##PLS BE FRIENDS U GUYS
+
+		icon = generic_decision
+
+		available = {
+		custom_trigger_tooltip = {
+    tooltip = call_for_unity_trigger_50			
+   check_variable = {
+   cohesion_number < 50
+}
+}
+				 }
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = no # Will not re-enable after being removed
+		cost = 50
+
+		complete_effect = { custom_effect_tooltip = cohesion_gain_4 add_to_variable = {
+	var = cohesion_number
+	value = 4
+} }
+
+		remove_effect = {   }
+		days_remove = 90 
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+
+issue_statement_to_troops = { ##GENERIC INCREASE COHESION
+
+		icon = generic_decision
+
+		available = {
+		
+
+				 }
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 100
+		complete_effect = { custom_effect_tooltip = cohesion_gain_4 add_to_variable = {
+	var = cohesion_number
+	value = 4
+} }
+
+		remove_effect = {   }
+		days_remove = 90 
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+grant_additional_leave = { ##GENERIC INCREASE COHESION
+
+		icon = generic_decision
+
+		available = {
+		
+
+				 }
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 100
+		complete_effect = { custom_effect_tooltip = cohesion_gain_4 add_to_variable = {
+	var = cohesion_number
+	value = 4
+} }
+
+		remove_effect = {   }
+		days_remove = 90 
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+reshuffle_command_positions = { ##GENERIC INCREASE COHESION
+
+		icon = generic_decision
+
+		available = {
+		
+
+				 }
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 100
+		complete_effect = { custom_effect_tooltip = cohesion_gain_4 add_to_variable = {
+	var = cohesion_number
+	value = 4
+} }
+
+		remove_effect = {   }
+		days_remove = 90 
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+hold_a_combined_chiefs_meeting = { ##REINFORCEMENTS FOR GERMAN
+
+		icon = generic_decision
+
+		available = {
+	
+ has_completed_focus = AEF_shaef 
+ has_completed_focus = AEF_the_allied_nations
+				 }
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 90
+
+		complete_effect = { country_event = aef.31 custom_effect_tooltip = combined_chiefs_event  }
+
+		remove_effect = {   }
+		days_remove = 45
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+replace_leaders = { ##REINFORCEMENTS FOR GERMAN
+
+		icon = generic_decision
+
+		available = {
+		custom_trigger_tooltip = {
+    tooltip = call_for_unity_trigger_30		
+   check_variable = {
+   cohesion_number < 30
+}
+}
+				 }
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 30
+
+		complete_effect = { add_command_power = -100 custom_effect_tooltip = cohesion_gain_5 add_to_variable = {
+	var = cohesion_number
+	value = 5
+} }
+
+		remove_effect = {   }
+		days_remove = 90 
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+absorb_sag = { ##ONCE U MEET IWTH SAG, ANNEX HIM
+
+		icon = generic_decision
+
+		available = {
+		SAG = { exists = yes 
+}
+has_country_flag =   france_liberated 
+
+				 }
+
+		visible = {
+		SAG = { exists = yes }
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 25
+
+		complete_effect = {  }
+
+		remove_effect = { annex_country = { target = SAG transfer_troops = yes }custom_effect_tooltip = cohesion_loss_5 add_to_variable = {
+	var = cohesion_number
+	value = -5
+}  }
+		days_remove = 3
+		ai_will_do = {
+			base = 10
+			
+			
+		
+		}
+	} 
+}
+AEF_free_france_dealing_with = {
+
+forming_cfln = { ##
+
+		icon = generic_decision
+
+		available = {
+		has_completed_focus = AEF_discussions_with_the_french date > 1943.6.1}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 0
+
+		complete_effect = { set_country_flag = aef_cfln_formed 
+
+		IF = { LIMIT = { has_country_flag = french_rejected_initial } country_event = aef.52  } 
+		ELSE_IF = { LIMIT = { has_country_flag = french_accepted_initial } country_event = aef.53  } 
+		ELSE = { custom_effect_tooltip = attitude_to_french_needed  } 
+}
+
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+forming_pgfr = { ##
+
+		icon = generic_decision
+
+		available = {
+		has_completed_focus = AEF_leader_of_the_free_french }
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 0
+
+		complete_effect = { }
+
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	}
+
+}
+AEF_preparing_overlord = { 
+present_final_plan = { ##
+
+		icon = generic_decision
+
+		available = {
+		OR = {
+			AND = { has_country_flag = overlord_planned
+			date > 1944.1.1 }
+			AND = { has_country_flag = shaef_streamlined  has_completed_focus = AEF_choose_a_landing_site has_completed_focus = AEF_air_operations_branch has_completed_focus = AEF_army_operations_branch has_completed_focus = AEF_navy_operations_branch}
+				 } }
+
+		visible = {
+			 has_global_flag = normal_start_trigger
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 1
+
+		complete_effect = { country_event = { id = aef.22 days = 1} set_country_flag = overlord_approved remove_ideas = { overlord_not_approved } }
+
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+
+usaf_arrival = { ##
+
+		icon = generic_decision
+
+		available = {
+		
+			AND = { has_completed_focus = AEF_the_transportation_plan has_completed_focus = AEF_shaef }  }
+
+		visible = {
+			 has_global_flag = normal_start_trigger
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 50
+
+		complete_effect = {  if = {
+	limit = { has_dlc = "By Blood Alone" }
+load_oob = "AEF_USAF_BBA" }
+else = { load_oob = "AEF_USAF_LEGACY" }
+	}
+
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	}
+negate_submarine_menace = { ##
+
+		icon = generic_decision
+
+		available = {
+		OR = {
+			OKW = { has_completed_focus = GER_recall_the_wolfpacks
+			}date > 1943.6.1
+				  } }
+
+		visible = {
+			 has_global_flag = normal_start_trigger
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 125
+
+		complete_effect = { add_manpower = 250000 remove_ideas = submarine_menace add_offsite_building = { type = arms_factory level = 2 }
+add_offsite_building = { type = industrial_complex level = 2 }
+add_ideas = awoken_giant }
+
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+combine_SHAEF_idea = { ##
+
+		icon = generic_decision
+
+		available = {
+		AND = { has_completed_focus = AEF_g3_division 
+			 has_completed_focus = AEF_g2_division 
+			 has_completed_focus = AEF_g4_division 
+			 has_completed_focus = AEF_g5_division 
+			 has_completed_focus = AEF_g6_division 
+				 } }
+
+		visible = {
+		 has_global_flag = normal_start_trigger	 
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 25
+
+		complete_effect = { set_country_flag = shaef_streamlined custom_effect_tooltip = SHAEF_streamlined hidden_effect = { remove_ideas = { SHAEF_G2 SHAEF_G3 SHAEF_G4 SHAEF_G5 SHAEF_G6 } swap_ideas = { remove_idea = SHAEF_org_idea add_idea = SHAEF_org_idea2 } } }
+
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+requisition_landing_craft = { ##
+
+		icon = generic_decision
+
+		available = {
+			has_completed_focus = AEF_shaef 
+	has_country_flag = submarine_menace_negated 
+				 }
+
+		visible = {
+			 has_global_flag = normal_start_trigger
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 50
+days_remove = 90
+
+		complete_effect = {  
+
+add_equipment_to_stockpile = {
+    type = convoy
+    amount = 10
+    producer = AEF
+}
+custom_effect_tooltip = convoys_reduced_by_submarines 
+} 
+
+		
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+
+consult_weather_expert = { ##
+
+		icon = generic_decision
+
+		available = {
+	has_completed_focus = AEF_shaef 
+				 }
+
+		visible = {
+		 has_global_flag = normal_start_trigger
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 15
+
+		complete_effect = { country_event = aef.23 }
+
+	
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+
+
+
+
+
+
+}
+AEF_declare_liberation = { liberate_france = { #ONCE YOU HAVE PARIS, YOU CAN LIBERATE FRANCE.
+
+		icon = generic_decision
+
+		available = { controls_state = 20 }
+
+		visible = {
+
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 0
+
+		complete_effect = { hidden_effect = { news_event = end.1 } set_global_flag = france_liberated news_event = new.5 add_to_variable = {
+	var = cohesion_number
+	value = 5
+} }
+
+		#days_remove = 3
+		#remove_effect = {  }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	}
+ liberate_luxembourg = { #ONCE YOU HAVE PARIS, YOU CAN LIBERATE FRANCE.
+
+		icon = generic_decision
+
+		available = { controls_state = 73 }
+
+		visible = {
+
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 0
+
+		complete_effect = {  set_global_flag = lux_liberated news_event = new.10 add_to_variable = {
+	var = cohesion_number
+	value = 3
+} }
+
+		#days_remove = 3
+		#remove_effect = {  }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	}
+
+liberate_belgium = { #ONCE YOU HAVE PARIS, YOU CAN LIBERATE FRANCE.
+
+		icon = generic_decision
+
+		available = { controls_state = 12 controls_state = 66 controls_state = 71 }
+
+		visible = {
+
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 0
+
+		complete_effect = { set_global_flag = belgium_liberated  news_event = new.6 add_to_variable = {
+	var = cohesion_number
+	value = 3
+}}
+
+		#days_remove = 3
+		#remove_effect = {  }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	}
+liberate_europe = { #IF YOU BEAT GERMANY YOU CAN GET THE TRUE ENDING
+
+		icon = generic_decision
+
+		available = { 
+
+has_country_flag = true_ending_available
+ OR = {OKW = { has_government = democratic }  OKW = { exists = no }   }  SOV = { exists = NO }    custom_trigger_tooltip = {
+    tooltip = soviets_have_not_been_here		 NOT = { has_global_flag = europe_turned_red }} }
+
+		visible = {
+
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 0
+
+		complete_effect = { set_global_flag = europe_liberated 
+					custom_effect_tooltip = true_ending_tooltip 
+					hidden_effect = { news_event = { id = end.11 days = 1 } }
+
+hidden_effect = { LUX = { transfer_state = 73 add_state_core = 73 }
+	#73 = { set_state_owner_to = LUX add_core_of = LUX}  
+BEL = { transfer_state = 68 add_state_core = 68 }
+BEL = { transfer_state = 64 add_state_core = 64 }
+BEL = { transfer_state = 12 add_state_core = 12 }
+BEL = { transfer_state = 67 add_state_core = 67 }
+BEL = { transfer_state = 13 add_state_core = 13 }
+BEL = { transfer_state = 65 add_state_core = 65 }
+BEL = { transfer_state = 70 add_state_core = 70 }
+BEL = { transfer_state = 66 add_state_core = 66 }
+BEL = { transfer_state = 71 add_state_core = 71 }
+BEL = { transfer_state = 74 add_state_core = 71 }
+BEL = { transfer_state = 72 add_state_core = 72 }
+BEL = { transfer_state = 69 add_state_core = 69 }
+BEL = { transfer_state = 74 add_state_core = 74 } 
+HOL = { transfer_state = 8 add_state_core = 8 } 
+HOL = { transfer_state = 7 add_state_core = 7 } 
+HOL = { transfer_state = 6 add_state_core = 6 } 
+HOL = { transfer_state = 10 add_state_core = 10 } 
+HOL = { transfer_state = 11 add_state_core = 11 } 
+HOL = { transfer_state = 116 add_state_core = 116 } 
+HOL = { transfer_state = 15 add_state_core = 15 } 
+HOL = { transfer_state = 14 add_state_core = 14 } 
+HOL = { transfer_state = 9 add_state_core = 9 } 
+FRA = { transfer_state = 4 add_state_core = 4 
+ transfer_state = 16 add_state_core = 16 
+ transfer_state = 17 add_state_core = 17 
+ transfer_state = 18 add_state_core = 18 
+ transfer_state = 19 add_state_core = 19 
+ transfer_state = 120 add_state_core = 120
+ transfer_state = 122 add_state_core = 122 
+FRA = { transfer_state = 20 add_state_core = 20 } 
+FRA = { transfer_state = 21 add_state_core = 21 } 
+FRA = { transfer_state = 22 add_state_core = 22 } 
+FRA = { transfer_state = 23 add_state_core = 23 } 
+FRA = { transfer_state = 50 add_state_core = 50 } 
+FRA = { transfer_state = 51 add_state_core = 51 } 
+FRA = { transfer_state = 52 add_state_core = 52 } 
+FRA = { transfer_state = 53 add_state_core = 53 } 
+FRA = { transfer_state = 54 add_state_core = 54 } 
+FRA = { transfer_state = 55 add_state_core = 55 } 
+FRA = { transfer_state = 56 add_state_core = 56 } 
+FRA = { transfer_state = 57 add_state_core = 57 } 
+FRA = { transfer_state = 58 add_state_core = 58 } 
+FRA = { transfer_state = 59 add_state_core = 59 } 
+FRA = { transfer_state = 60 add_state_core = 60 } 
+FRA = { transfer_state = 61 add_state_core = 61 } 
+FRA = { transfer_state = 62 add_state_core = 62 } 
+FRA = { transfer_state = 63 add_state_core = 63 } 
+FRA = { transfer_state = 75 add_state_core = 75 } 
+FRA = { transfer_state = 77 add_state_core = 77 }
+FRA = { transfer_state = 78 add_state_core = 78 }  
+FRA = { transfer_state = 79 add_state_core = 79 } 
+FRA = { transfer_state = 80 add_state_core = 80 } 
+FRA = { transfer_state = 81 add_state_core = 81 } 
+FRA = { transfer_state = 82 add_state_core = 82 } 
+FRA = { transfer_state = 83 add_state_core = 83 } 
+FRA = { transfer_state = 84 add_state_core = 84 } 
+FRA = { transfer_state = 85 add_state_core = 85 } 
+FRA = { transfer_state = 86 add_state_core = 86 } 
+FRA = { transfer_state = 87 add_state_core = 87 } 
+FRA = { transfer_state = 88 add_state_core = 88 } 
+FRA = { transfer_state = 89 add_state_core = 89 } 
+FRA = { transfer_state = 90 add_state_core = 90 } 
+FRA = { transfer_state = 91 add_state_core = 91 }
+FRA = { transfer_state = 92 add_state_core = 92 }  
+FRA = { transfer_state = 93 add_state_core = 93 } 
+FRA = { transfer_state = 94 add_state_core = 94 } 
+FRA = { transfer_state = 95 add_state_core = 95 } 
+FRA = { transfer_state = 96 add_state_core = 96 } 
+FRA = { transfer_state = 97 add_state_core = 97 } 
+FRA = { transfer_state = 98 add_state_core = 98 } 
+FRA = { transfer_state = 99 add_state_core = 99 } 
+FRA = { transfer_state = 100 add_state_core = 100 } 
+FRA = { transfer_state = 101 add_state_core = 101 } 
+FRA = { transfer_state = 102 add_state_core = 102 } 
+FRA = { transfer_state = 103 add_state_core = 103 } 
+FRA = { transfer_state = 104 add_state_core = 104 } 
+FRA = { transfer_state = 105 add_state_core = 105 } 
+FRA = { transfer_state = 106 add_state_core = 106 } 
+FRA = { transfer_state = 107 add_state_core = 107 
+ transfer_state = 108 add_state_core = 108 
+transfer_state = 118 add_state_core = 118 
+ transfer_state = 109 add_state_core = 109 
+transfer_state = 124 add_state_core = 124 
+ 	transfer_state = 118 add_state_core = 118 }  
+AEF = { transfer_state = 5 transfer_state = 3  transfer_state = 49 transfer_state = 48 }  
+					}
+ }hidden_effect = {  OKW = { remove_state_core = 20  set_politics = {
+	ruling_party = democratic } set_cosmetic_tag = GER_LIBERATED } 
+	release = OKW
+set_cosmetic_tag = ENG_democratic }}
+		days_remove = 7
+		remove_effect = { 
+
+
+}
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	}
+ }
+AEF_operations = { 
+
+commence_overlord = { ##COMMENCE OVERLORD. PUT INTO EFFECT THE OPERATION YOU HAVE BUILT.
+
+		icon = generic_decision
+
+		available = { has_country_flag = overlord_approved }
+
+		visible = {
+		NOT = { has_global_flag = ITB_start_trigger }
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 1
+
+		complete_effect = { }
+
+		days_remove = 2
+		remove_effect = { complete_national_focus = AEF_operation_neptune OKW = { country_event = { id = ger.42 hours = 3 } } }
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				date > 1944.6.1
+			}
+			modifier = {
+				add = 200
+				date > 1944.6.2
+			}
+			modifier = {
+				add = 500
+				date > 1944.6.4
+			}
+		modifier = {
+				add = 1000 
+				date > 1944.6.5
+			}
+		}
+	} 
+operation_dragoon_cheaper = { ##We can deploy rapido for emergency invasion into Germany!
+
+		icon = generic_decision
+
+		available = { date > 1944.6.6 has_political_power > 150 }
+
+		visible = {
+	NOT = { has_global_flag = ITB_start_trigger }
+ NOT = { has_country_flag = operation_dragoon_launched }
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 150
+
+		complete_effect = {news_event = new.12 set_country_flag = operation_dragoon_launched hidden_effect = { OKW = { country_event = ger.17 } } custom_effect_tooltip = dragoon_event_short hidden_effect = { country_event = { id = aef.12 days = 30 }} }
+
+		#days_remove = 3
+		#remove_effect = {  }
+
+		ai_will_do = {
+			base = 0
+			
+			
+		
+		}
+	} 
+operation_dragoon_longer = { ##We can deploy rapido for emergency invasion into Germany!
+
+		icon = generic_decision
+
+		available = { has_country_flag = overlord_approved has_political_power > 100 }
+
+		visible = {
+	NOT = { has_global_flag = ITB_start_trigger }
+NOT = { has_Country_flag = operation_dragoon_launched }
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 100
+
+		complete_effect = {news_event = new.12 set_country_flag = operation_dragoon_launched  hidden_effect = { OKW = { country_event = ger.16 }} custom_effect_tooltip = dragoon_event_long hidden_effect = { country_event = { id = aef.12 days = 75 } }}
+
+		#days_remove = 3
+		#remove_effect = {  }
+
+		ai_will_do = {
+			base = 200
+			
+			
+		
+		}
+	} 
+#operation_rankin = { ##We can deploy rapido for emergency invasion into Germany!
+#
+#		icon = generic_decision
+#
+#		available = { has_completed_focus = AEF_plan_operation_rankin OKW = { has_country_flag = july_plot_succeeded } }
+#
+#		visible = {
+#
+#		}
+#
+#		fire_only_once = yes
+##
+#		modifier = {
+#		
+#		}	
+#		fire_only_once = yes # Will not re-enable after being removed
+#		cost = 0
+#
+#		complete_effect = { set_country_flag = overlord_planned  add_ideas = op_rankin }
+#
+#		#days_remove = 3
+#		#remove_effect = {  }
+#
+#		ai_will_do = {
+#			base = 100
+#			
+#			
+#		
+#		}
+#	} 
+#
+
+#operation_cobra = { ##24/7 BOMBING OF GERMANY
+#
+#		icon = generic_decision
+#
+#		available = { has_completed_focus = AEF_plan_operation_cockade }
+#
+#		visible = {
+#
+#		}
+#
+#		fire_only_once = yes
+#
+#		modifier = {
+#		
+#		}	
+#		fire_only_once = yes # Will not re-enable after being removed
+#		cost = 0
+#
+#		complete_effect = { }
+#
+#		#days_remove = 3
+#		#remove_effect = {  }
+#
+#		ai_will_do = {
+#			base = 100
+#			
+#			
+#		
+#		}
+#	} 
+}
+AEF_operation_bodyguard_decisions = { 
+
+
+
+#false_radio_chatter = { ##24/7 BOMBING OF GERMANY
+#			icon = generic_decision
+#
+#		available = { }
+#
+#		visible = {
+#
+##		}
+#
+#		fire_only_once = yes
+#
+#		modifier = {
+#		
+#		}	
+#		fire_only_once = yes # Will not re-enable after being removed
+#		cost = 0
+#
+#		complete_effect = { }
+#		#days_remove = 3
+#		#remove_effect = {  }
+#
+#		ai_will_do = {
+#			base = 100
+#			
+#			
+#		
+#		}
+#	} 
+dummy_units = { ##24/7 BOMBING OF GERMANY
+			icon = generic_decision
+
+		available = { }
+
+		visible = {
+
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 10
+
+		complete_effect = { custom_effect_tooltip =  allied_fake_units division_template = {
+    name = "Dummy Unit"
+    is_locked = no
+    division_names_group = AEF_DUMMY
+    priority = 0
+    template_counter = 1
+    regiments = {
+       fake_intel_unit = { x = 0 y = 0 }
+       fake_intel_unit = { x = 0 y = 1 }
+    }
+   
+}   
+hidden_effect = {
+capital_scope = { create_unit = {
+    division = "name = \"Dummy Unit\" division_template = \"Dummy Unit\" start_experience_factor = 0.4 start_equipment_factor = 0.3"
+    owner = AEF }
+
+create_unit = {
+    division = "name = \"Dummy Unit\" division_template = \"Dummy Unit\" start_experience_factor = 0.4 start_equipment_factor = 0.3"
+    owner = AEF }
+}}
+}
+
+		days_remove = 45
+		remove_effect = { }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+#feed_false_coordinates = { ##24/7 BOMBING OF GERMANY
+#			icon = generic_decision
+#
+#		available = { date > 1944.1.1 has_country_flag = overlord_planned }
+#
+#		visible = {
+#
+#		}
+#
+#		fire_only_once = yes
+#
+#		modifier = {
+#		
+##		}	
+#		fire_only_once = yes # Will not re-enable after being removed
+#		cost = 0
+#
+#		complete_effect = { }
+#
+#		#days_remove = 3
+#		#remove_effect = {  }
+#
+#		ai_will_do = {
+##			base = 100
+#			
+##			
+##		
+#		}
+#	} 
+carry_out_coastline_survey = { ###SURVEY COAST, MAKE GERMANS THINK WE ARE PREPARING TO LAND SOMEWHERE. OR GIVE US A BOOST WHEN WE DO LAND.
+			icon = generic_decision
+
+		available = { }
+
+		visible = {
+
+		}
+
+		fire_only_once = no
+
+		modifier = {
+		
+		}	
+		fire_only_once = no # Will not re-enable after being removed
+		cost = 10
+
+		complete_effect = { country_event = aef.29 }
+
+		days_remove = 90
+		remove_effect = {  }
+
+		ai_will_do = {
+			base = 200
+			
+			
+		
+		}
+	} 
+#training_exercise_north_coast = { ##TRAINING IN SCOTLAND, MAKE GERMANS THINK WE WILL LAND IN NORWAY.
+#			icon = generic_decision
+#
+#		available = { }
+#
+##
+#		}
+#
+#
+#		modifier = {
+#
+#		}	
+#		fire_only_once = yes # Will not re-enable after being removed
+#		cost = 0
+##
+#		complete_effect = { }
+#
+#		#days_remove = 3
+#		#remove_effect = {  }
+#
+###		ai_will_do = {
+#			base = 100
+#			
+#		
+#		}
+#	} 
+
+
+
+
+
+
+}
+
+
+AEF_transportation_plan = { 
+
+
+
+tp_normandy = { ##BOMB NORMANDY'S INFRASTRUCTURE
+			icon = generic_decision
+
+		available = { }
+
+		visible = {
+
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 70
+
+		complete_effect = { 19 = { damage_building = {
+    type = infrastructure
+    damage = 2
+}damage_building = {
+    type = rail_way
+    damage = 3
+} } 17 = { damage_building = {
+    type = infrastructure
+    damage = 2
+}damage_building = {
+    type = rail_way
+    damage = 3
+} }}
+
+		#days_remove = 3
+		#remove_effect = {  }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+tp_brittany = { ##BOMB NORMANDY'S INFRASTRUCTURE
+			icon = generic_decision
+
+		available = { }
+
+		visible = {
+
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 70
+
+		complete_effect = {57  = { damage_building = {
+    type = infrastructure
+    damage = 2
+}damage_building = {
+    type = rail_way
+    damage = 3
+} } 59 = { damage_building = {
+    type = infrastructure
+    damage = 2
+}damage_building = {
+    type = rail_way
+    damage = 3
+} }61 = { damage_building = {
+    type = infrastructure
+    damage = 2
+}damage_building = {
+    type = rail_way
+    damage = 3
+} }}
+
+		#days_remove = 3
+		#remove_effect = {  }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+tp_upper_normandy = { ##BOMB NORMANDY'S INFRASTRUCTURE
+			icon = generic_decision
+
+		available = { }
+
+		visible = {
+
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 70
+
+		complete_effect = { 62 = { damage_building = {
+    type = infrastructure
+    damage = 2
+}damage_building = {
+    type = rail_way
+    damage = 3
+} }97 = { damage_building = {
+    type = infrastructure
+    damage = 2
+}damage_building = {
+    type = rail_way
+    damage = 3
+} }}
+
+		#days_remove = 3
+		#remove_effect = {  }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+tp_somme = { ##BOMB NORMANDY'S INFRASTRUCTURE
+			icon = generic_decision
+
+		available = { }
+
+		visible = {
+
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 70
+
+		complete_effect = { 91 = { damage_building = {
+    type = infrastructure
+    damage = 3
+}damage_building = {
+    type = rail_way
+    damage = 3
+} }}
+
+		#days_remove = 3
+		#remove_effect = {  }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+tp_pas_de_calais = { ##BOMB NORMANDY'S INFRASTRUCTURE
+			icon = generic_decision
+
+		available = { }
+
+		visible = {
+
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 70
+
+		complete_effect = { 19 = { damage_building = {
+    type = infrastructure
+    damage = 2
+}damage_building = {
+    type = rail_way
+    damage = 3
+} } }
+
+		#days_remove = 3
+		#remove_effect = {  }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+tp_netherlands = { ##BOMB NORMANDY'S INFRASTRUCTURE
+			icon = generic_decision
+
+		available = { }
+
+		visible = {
+
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 70
+
+		complete_effect = {116 = { damage_building = {
+    type = infrastructure
+    damage = 2
+}damage_building = {
+    type = rail_way
+    damage = 3
+} } }
+
+		#days_remove = 3
+		#remove_effect = {  }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+tp_belgium = { ##BOMB NORMANDY'S INFRASTRUCTURE
+			icon = generic_decision
+
+		available = { }
+
+		visible = {
+
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 70
+
+		complete_effect = {68 = { damage_building = {
+    type = infrastructure
+    damage = 2
+}damage_building = {
+    type = rail_way
+    damage = 3
+} } 64 = { damage_building = {
+    type = infrastructure
+    damage = 2
+}damage_building = {
+    type = rail_way
+    damage = 3
+} }}
+
+		#days_remove = 3
+		#remove_effect = {  }
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
+
+]

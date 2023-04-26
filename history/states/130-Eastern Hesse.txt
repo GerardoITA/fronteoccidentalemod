@@ -1,0 +1,26 @@
+
+state={
+	id=130
+	name="STATE_130"
+
+	history={
+	 1918.3.20.12 = {
+		owner = DKR
+		add_core_of = DKR
+		}
+ 	1943.3.1.12 = {
+		owner = OKW
+		add_core_of = OKW
+		remove_core_of = DKR
+		}
+	}
+
+	provinces={
+		454 1049 1088 1209 1234 1412 1555 2251 2392 2862 2899 3128 3194 3292 3436 3448 3718 3811 3866 4335 4354 4670 4711 4730 4844 4855 4905 8082 
+	}
+	manpower=1
+	impassable=yes
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

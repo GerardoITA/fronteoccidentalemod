@@ -1,0 +1,419 @@
+
+#AEF_pre_overlord_planning = { ##BUILD UP PRE D-DAY.
+#	allowed = {
+#		tag = AEF
+#	}
+#	enable = {
+#		NOT = { has_country_flag = overlord_approved }
+#	}
+#
+#	abort_when_not_enabled = yes
+#
+#	ai_strategy = {
+#		type = put_unit_buffers
+#
+#		order_id = 2
+#
+#		# south england
+#		states = {
+#			24
+#			25
+#			42
+#			43
+#			41
+#			33
+##			30
+#			29
+#		}
+#
+#		ratio = 1.0
+#
+#		area = north_america
+#
+#		subtract_invasions_from_need = no
+#	}
+#
+#	
+#}
+#
+
+
+build_patrol_bombers = {
+
+	enable = {
+		has_dlc = "By Blood Alone"
+		has_navy_size = {
+			size > 1
+		}
+		tag = USA
+		date > 1940.6.6
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = maritime_patrol_plane
+		value = 1
+	}
+}
+
+
+
+AEF_template_design_1 = {
+	allowed = { original_tag = AEF }
+	enable = {
+		date < 1940.1.1
+	}
+	abort = {
+		date > 1940.1.1
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = 10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = 50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = -10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = -50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = 60
+	}
+}
+
+AEF_template_design_2 = {
+	allowed = { original_tag = AEF }
+	enable = {
+		date > 1940.1.1
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = mechanized
+		value = -20
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = 10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 20
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = modern_armor
+		value = 40
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = -20
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = 10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = marines
+		value = 100
+	}
+}
+
+USA_garrison_production = {
+	allowed = { original_tag = AEF }
+	enable = {
+		ai_wants_divisions >  12 #Massively decreasing the amount of paratroopers the AI wants
+	}
+	abort = {
+		ai_wants_divisions < 13 #Massively decreasing the amount of paratroopers the AI wants
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 3
+	}
+}
+
+
+USA_naval_role_ratios_historical = {
+	allowed = {
+		has_dlc = "Man the Guns"
+		original_tag = AEF
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = 10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bc
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = 25
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value = 25
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = 130
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 65
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = 40
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_heavy
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_sweeper
+		value = 15
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = 10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 1		 #1 to 2
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 100		 #1 to 2
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = -20		 #1 to 2
+	}
+}
+
+AEF_naval_role_ratios_anti_submarine = {
+	allowed = {
+		has_dlc = "Man the Guns"
+		original_tag = AEF
+	}
+	enable = {
+		anti_submarine_strategy_required_trigger = yes
+	}
+
+	abort = {
+		not = { anti_submarine_strategy_required_trigger = yes }
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = -20
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 50
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = 40
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_heavy
+		value = -15
+	}
+}
+
+
+AEF_pre_overlord_alt = { ###DONT LAUNCH INVASION TOO EARLY.
+	allowed = { original_tag = AEF }
+	enable = {
+		NOT = { has_country_flag = overlord_approved }
+	}
+	abort_when_not_enabled = yes
+
+
+	ai_strategy = {
+		type = garrison
+		value = 100
+	}
+}
+
+
+#AEF_onto_the_beaches = {###DDAY TIME! GO GO GO!
+#	allowed = {
+#		original_tag = AEF
+#	}
+#	enable = {
+#		has_country_flag = overlord_approved
+#		date > 1944.6.6
+#	}
+#	abort_when_not_enabled = yes
+#
+#	ai_strategy = {
+#		type = naval_invasion_focus
+#		value = 50
+#	}
+#}
+AEF_NOT_YET_BOYS = {###Dont do overlord too soon!
+	allowed = {
+		original_tag = AEF
+	}
+	enable = {
+		always = yes 
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = -200
+	}
+}
+USA_convoy_hungry = {
+	allowed = { original_tag = AEF }
+	enable = {
+		date > 1940.1.1
+		has_equipment = {
+  			convoy < 600
+  		}
+		convoy_threat < 0.2 # there are other strategies for this, so we dont want to double up
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 35
+	}
+}
+
+
+USA_produce_floating_harbors = {
+	allowed = {	original_tag = AEF}
+	enable = {
+		is_historical_focus_on = yes
+		date > 1941.1.1
+		has_war = yes
+		num_of_naval_factories > 25
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = unit_ratio
+		id = floating_harbor # for floating harbors, 'unit_ratio' is actually not a ratio but an absolute desired number
+		value = 10
+	}
+}
+
+
+
+AEF_srsly_mils_now = {
+	allowed = {
+		original_tag = AEF
+	}
+	enable = {
+		date > 1943.1.1
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 200
+	}
+}
+
+

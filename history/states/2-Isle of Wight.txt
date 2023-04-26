@@ -1,0 +1,27 @@
+state={
+	id=2
+	name="STATE_2"
+history={
+		 1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+}
+ 1943.3.1.12 = {
+		owner = AEF
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+		victory_points = {
+			401 5
+		}
+		buildings = { infrastructure = 2 industrial_complex = 1  }
+	}
+
+	provinces={
+		401 917 1278 2806 3474 3479 3543 3913 4682 
+	}
+	manpower=94053
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

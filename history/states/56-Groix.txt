@@ -1,0 +1,30 @@
+state={
+	id=56
+	name="STATE_56"
+	history = {
+
+1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+
+ }
+	state_category = tiny_island
+	provinces={
+		3828 
+	}
+	manpower=1284
+	impassable=yes
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

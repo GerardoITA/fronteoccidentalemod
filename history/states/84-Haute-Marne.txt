@@ -1,0 +1,33 @@
+
+state={
+	id=84
+	name="STATE_84"
+	history = {
+ 1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+ 1944.12.20.1 = {
+		owner = AEF
+		add_core_of = AEF
+
+		}
+		buildings = { anti_air_building = 1 infrastructure = 1 industrial_complex = 1 }
+
+ victory_points = {2947 5 } #Chaumont
+ victory_points = {1337 2 } #Langres
+
+}
+	provinces={
+		50 57 79 161 177 279 283 509 554 608 635 701 728 731 752 784 792 800 915 933 945 962 1312 1325 1337 1444 1488 1561 1597 1642 1674 1732 1838 1842 1943 1967 2060 2158 2221 2229 2239 2281 2314 2376 2570 2601 2724 2849 2947 3112 3142 3169 3254 3284 3362 3402 3557 3635 3641 3928 4056 4111 4135 4180 4186 4247 4262 4353 5128 5172 5188 5190 5217 5234 5243 5265 5285 5287 5296 5305 5318 5320 5330 9637 
+	}
+	manpower=181792
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

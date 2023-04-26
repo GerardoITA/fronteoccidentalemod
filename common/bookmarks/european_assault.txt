@@ -1,0 +1,38 @@
+bookmarks = {
+	bookmark = {
+		name = "EA_NAME"
+		desc = "EA_DESC"
+		date = 1943.3.1.12
+		picture = "GFX_select_date_EA"
+		default_country = "AEF"
+		default = yes
+		
+		
+		
+		"AEF"={
+			history = "AEF_EA_DESC"
+			ideology = democratic
+			
+			ideas = {
+				fractious_alliance de_gaulle_issue submarine_menace de_gaulle_issue
+			}
+			focuses = {
+				AEF_appoint_the_cossac AEF_shaef AEF_operation_neptune
+			}
+		}
+		"OKW"={
+			history = "GER_EA_DESC"
+			ideology = fascism
+			ideas = {
+				confused_chain_of_command auftragstaktik efficient_anti_air
+			}
+			focuses = {
+				GER_appoint_the_inspector_of_defences GER_armeegruppe_b GER_compromise_the_strategies
+			}
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

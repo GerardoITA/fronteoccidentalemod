@@ -1,0 +1,467 @@
+ideas = {
+
+	economy = { 
+		law = yes
+		
+		use_list_view = yes
+		loyal_to_the_end = {
+	allowed = { tag = OKW }
+			available = {
+			has_completed_focus = GER_appoint_the_inspector_of_defences 
+				 custom_trigger_tooltip = {
+    tooltip = influence_trigger_above_90		
+   check_variable = {
+  	influence_number > 90
+} }
+					has_government = fascism 
+					has_completed_focus = GER_fuhrer_reigns_supreme
+				
+			}
+			cost = 75
+			removal_cost = -1
+			on_add = { set_country_flag = locally_significant_selected }
+			modifier = {
+				consumer_goods_factor = 0.01
+				conscription = 0.01
+				non_core_manpower = 0.01
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.15
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 25
+
+   				
+				
+   			}
+		}
+no_influence_effect = {
+		allowed = { tag = OKW }
+			cost = 0
+			removal_cost = -1
+			available = {NOT = { has_completed_focus = GER_appoint_the_inspector_of_defences } }
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+			
+			default = yes
+			ai_will_do = {
+  factor = 1 } 
+			cancel_if_invalid = no
+		}
+			
+	
+		under_his_thumb = {
+		allowed = { tag = OKW }
+			cost = 150
+			removal_cost = -1
+			available = { custom_trigger_tooltip = {
+    tooltip = influence_trigger_above_81		
+   check_variable = {
+  	influence_number > 81
+}
+}}
+			modifier = {
+				consumer_goods_factor = 0.02
+				production_speed_buildings_factor = 0.08
+			}
+			
+			default = yes
+			ai_will_do = {
+  factor = 1 } 
+			cancel_if_invalid = no
+		}
+			
+		hitlers_lackey = {
+	allowed = { tag = OKW }
+			available = {  
+has_completed_focus = GER_appoint_the_inspector_of_defences    custom_trigger_tooltip = {
+    tooltip = influence_trigger_80		
+   check_variable = {
+  	influence_number < 80
+}
+}
+ custom_trigger_tooltip = {
+    tooltip = influence_trigger_above_61		
+   check_variable = {
+  	influence_number > 61
+}
+} 
+
+
+}
+			cost = 75
+			removal_cost = -1
+			on_add = { set_country_flag = locally_significant_selected }
+			modifier = {
+				consumer_goods_factor = 0.06
+				production_speed_buildings_factor = 0.04
+			
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 25
+
+   				
+				
+   			}
+		}
+		
+		slight_initiative = {
+			allowed = { tag = OKW }
+			available = {
+has_completed_focus = GER_appoint_the_inspector_of_defences 
+				   custom_trigger_tooltip = {
+    tooltip = influence_trigger_60		
+   check_variable = {
+  	influence_number < 60
+}
+}
+ custom_trigger_tooltip = {
+    tooltip = influence_trigger_above_51		
+   check_variable = {
+  	influence_number > 51
+}
+} 
+
+				
+			}
+
+			cost = 75
+			removal_cost = -1
+			on_add = { set_country_flag = strategic_interest_selected }
+			modifier = {
+				consumer_goods_factor = 0.1
+				army_org_factor = 0.01
+				army_core_defence_factor = 0.01
+				dig_in_speed_factor = 0.02
+				
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 25
+
+   				
+				
+   			}
+		}
+		
+		forging_our_own_path = {
+			
+			allowed = { tag = OKW }
+			available = {
+				has_completed_focus = GER_appoint_the_inspector_of_defences 
+				 custom_trigger_tooltip = {
+    tooltip = influence_trigger_50		
+   check_variable = {
+  	influence_number < 50
+}}
+ custom_trigger_tooltip = {
+    tooltip = influence_trigger_above_26		
+   check_variable = {
+  	influence_number > 26
+}} 
+			}
+		
+			cost = 75
+			removal_cost = -1
+			on_add = { set_country_flag = campaign_defining_selected }
+			modifier = {
+				consumer_goods_factor = 0.14
+				army_org_factor = 0.01
+				army_core_defence_factor = 0.025
+				dig_in_speed_factor = 0.05
+				planning_speed = 0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 25
+
+				
+				
+				
+   			}
+		}
+		
+		independent_command = {
+			allowed = { tag = OKW }
+			available = {
+has_completed_focus = GER_appoint_the_inspector_of_defences 
+custom_trigger_tooltip = {
+    tooltip = influence_trigger_25		
+   check_variable = {
+  	influence_number < 25
+}
+
+} 
+			}
+			
+			ai_will_do = {
+   				factor = 25
+
+				
+				
+				
+		
+			
+			
+			
+   			}
+			
+			cost = 75
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				army_org_factor = 0.025
+				army_core_defence_factor = 0.05
+				dig_in_speed_factor = 0.075
+				planning_speed = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+marshal_centralised_power = {
+			allowed = { tag = OKW }
+			available = {
+has_completed_focus = GER_appoint_the_inspector_of_defences 
+		has_completed_focus = GER_centralise_the_marshals_power 
+				 custom_trigger_tooltip = {
+    tooltip = influence_trigger_10		
+   check_variable = {
+  	influence_number < 10
+}} 
+			}
+			
+			ai_will_do = {
+   				factor = 25
+
+				
+				
+				
+		
+			
+			
+			
+   			}
+			
+			cost = 75
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.06
+				global_building_slots = 0.5
+				army_org_factor = 0.025
+				army_core_defence_factor = 0.05
+				dig_in_speed_factor = 0.075
+				planning_speed = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+	
+	trade_laws = { 
+		law = yes
+		
+		
+		aggressively_minded = { #ROMMEl
+		 available = { OR = {  has_completed_focus = GER_support_rommels_plan has_completed_focus = GER_compromise_the_strategies } }
+			allowed = { tag = OKW}
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				breakthrough_factor = 0.075
+				supply_consumption_factor = 0.05
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1000
+
+   			
+
+				
+			
+   			}
+		}
+		
+		defender_in_depth = {##RUNSTEDT
+			available = { OR = {  has_completed_focus = GER_support_runstedts_plan has_completed_focus = GER_compromise_the_strategies } }
+			allowed = { TAG = OKW}
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				max_dig_in_factor = 0.1
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+			
+   			}
+		}
+panzer_commander = {
+			
+			allowed = { TAG = OKW}
+			cost = 150
+			removal_cost = -1
+			available = { has_completed_focus = GER_appoint_the_inspector_of_defences }
+			modifier = {
+				army_armor_attack_factor = 0.05
+				army_armor_speed_factor = 0.05
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+			
+   			}
+		}
+air_power_buff = {
+			
+			allowed = { TAG = OKW}
+			cost = 150
+			removal_cost = -1
+			available = { has_completed_focus = GER_reclaim_our_skies }
+			modifier = {
+				enemy_army_bonus_air_superiority_factor = -0.05
+				cas_damage_reduction = 0.05
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+			
+   			}
+		}
+	beholden_to_fuhrer = {
+			
+			allowed = { TAG = OKW}
+			cost = 150
+			removal_cost = -1
+			on_add = { custom_effect_tooltip = beholden_to_fuhrer_cost_to_remove }
+			on_remove = { add_to_variable = {
+	var = influence_number
+	value = -5
+}}
+			modifier = {
+				
+			}
+			on_remove = { }
+			default = yes
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+			
+   			}
+		}
+fuhrers_representative = {
+			
+			allowed = { TAG = OKW}
+			cost = 150
+			removal_cost = -1
+available = {
+custom_trigger_tooltip = {
+    tooltip = influence_trigger_above_90		
+   check_variable = {
+  	influence_number > 90
+} }
+					has_government = fascism 
+					has_completed_focus = GER_know_our_place
+				
+			}
+			on_add = { add_to_variable = {
+	var = influence_number
+	value = 5
+} }
+			modifier = {
+				breakthrough_factor = 0.01
+				supply_consumption_factor = -0.01
+				industrial_capacity_dockyard = 0.01
+				enemy_army_bonus_air_superiority_factor = -0.01
+				cas_damage_reduction = 0.01
+				max_dig_in_factor = 0.01
+				fascism_drift = -0.01
+			}
+			on_remove = { }
+			default = yes
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+			
+   			}
+		}
+naval_resurgence = {
+			
+			allowed = { TAG = OKW}
+			cost = 150
+			removal_cost = -1
+			available = { has_completed_focus = GER_revive_the_kriegsmarine }
+			modifier = {
+				industrial_capacity_dockyard = 0.075
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+			
+   			}
+		}	
+		conspirator = {
+			
+			allowed = { TAG = OKW}
+			cost = 150
+			removal_cost = -1
+			available = { has_completed_focus = GER_discount_the_hearsay }
+			modifier = {
+				fascism_drift = -0.075
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+			
+   			}
+		}
+		
+		
+	}
+

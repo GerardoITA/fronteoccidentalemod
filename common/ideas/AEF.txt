@@ -1,0 +1,1629 @@
+ideas = {
+hidden_ideas = { 
+
+overlord_not_approved = { #HIDDEN. REMOVED WHEN OVERLORD IS APPROVED. CANT INVADE UNTIL YOU HAVE APPROVAL! THIS IS A DEMOCRATIC COUNTRY!
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_intel
+			
+			modifier = {
+				naval_invasion_prep_speed = -999
+			}
+		}
+
+aef_ai_invasion_reduction = { #ai_invasion_reduction
+			
+			allowed = {
+				AEF = { is_ai = yes }
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_intel
+			
+			modifier = {
+				naval_invasion_prep_speed = -2
+			}
+		}
+
+
+
+
+
+}
+	country = {
+	United_Commonwealth = {
+			
+			allowed = {
+				original_tag = OKW
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			industrial_factory_donations = 40
+			military_factory_donations = 40
+				
+				
+			}
+		}
+	
+		resistance_connections = { #P AEF intelligence and spy are VERY GOOD. IMPROVE NETWORK CONSTRUCTION AND MISSIONS. AS WELL AS RESISTANCE IN GERMAN TERRITORY.
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_intel
+			
+			modifier = {
+				operative_slot = 2
+				boost_resistance_factor = 0.25
+				operation_cost = -0.1
+			}
+		}
+vanilla_resistance_connections = { #P AEF intelligence and spy are VERY GOOD. IMPROVE NETWORK CONSTRUCTION AND MISSIONS. AS WELL AS RESISTANCE IN GERMAN TERRITORY.
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_intel
+			
+			modifier = {
+				encryption = 0.05
+				decryption = 0.1
+			}
+		}
+	dday_launched = { #P AEF intelligence and spy are VERY GOOD. IMPROVE NETWORK CONSTRUCTION AND MISSIONS. AS WELL AS RESISTANCE IN GERMAN TERRITORY.
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = eng_preparing_the_second_front
+			
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_speed_factor = 0.15
+
+			}
+		}
+coast_surveyed = { 
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_coastal_navy
+			
+			modifier = {
+			naval_invasion_prep_speed = 0.5
+			
+			}
+		}
+op_cobra = { ##P op cobra
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			#picture = generic_spy_intel
+			
+			modifier = {
+				breakthrough_factor = 0.1
+				offence = 0.1
+				supply_consumption_factor = 0.1
+			
+			}
+		}
+#op_rankin = { ##RAnkin boi.
+#			
+#			allowed = {
+#				always = no
+#			}
+#
+#			allowed_civil_war = {
+#				has_government = democratic
+#			}
+#
+#			removal_cost = -1
+#
+#			picture = generic_spy_intel
+#			
+#			modifier = {
+#				####REDUCE MINIMUM TRAINING EFFECT
+#			}
+#		}
+red_ball_express = { #P
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = FRA_motorized_focus
+			
+			modifier = {
+			
+				supply_consumption_factor = -0.1
+			
+			}
+		}
+training_regimen = { #P
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			picture = generic_infantry_bonus
+			modifier = {
+				experience_gain_infantry_training_factor = 0.15
+				experience_gain_infantry_combat_factor = 0.15
+				special_forces_cap = 0.15
+			}
+			
+		}
+landing_craft_priority = { #P LANDING CRAFT NEEDED
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+picture = generic_navy_bonus
+	
+			
+			modifier = {
+				industrial_capacity_dockyard=0.2
+			}
+		}
+de_gaulle_issue = { #DE GAULLE IS A PROBLEM FOR THE ALLIES. A DIVISIVE FIGURE YET PIVOTAL FOR THE FFI.
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_intel
+			
+			modifier = {
+				democratic_drift = -0.07
+				command_power_gain = -0.15
+				political_power_factor = -0.5
+			}
+		}
+de_gaulle_approached = { #DE GAULLE IS A PROBLEM FOR THE ALLIES. A DIVISIVE FIGURE YET PIVOTAL FOR THE FFI.
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			#picture = generic_spy_intel
+			
+			modifier = {
+				command_power_gain = -0.1
+				army_attack_factor = -0.05
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+de_gaulle_rejected = { #DE GAULLE IS A PROBLEM FOR THE ALLIES. A DIVISIVE FIGURE YET PIVOTAL FOR THE FFI.
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_intel
+			
+			modifier = {
+				democratic_drift = -0.02
+				command_power_gain = 0.25
+				stability_factor = -0.1
+				army_core_attack_factor = 0.05
+				
+			}
+		}
+pointblank_directive = { #24/7BOMBING ##USE EGNERIC BOMBER ICON
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = strategic_bombing_focus
+			
+			modifier = {
+				air_strategic_bomber_night_penalty=-0.15
+				air_strategic_bomber_bombing_factor=0.1
+				air_accidents=-0.25
+				
+			}
+		}
+free_world_defence = { #WE DEFEND!
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_intel
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.1
+				
+			}
+			modifier = {
+				defence = 0.1
+	
+				
+			}
+		}
+aces_in_exile = { #ACES FROM ALL COUNTRIES
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			#picture = generic_air_bonus
+			
+			modifier = {
+				air_ace_generation_chance_factor = 0.15
+				
+			}
+		}
+
+floating_harbour_buff = { #MAKE FLOATING HARBOURS GOOD
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_naval_manufacturer_3
+			
+			modifier = {
+				convoy_escort_efficiency = 0.05
+				no_supply_grace = 24
+			}
+		}
+trade_boom = { #IF GER REMOVES SUBS, ALLIES GET A TEMPORARY BONUS
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_political_support
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+british_american_synergy = { #BRITISH AND AMERICAN FRIENDS! WE DONT NEED NO FRENCHIES.
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_intel
+			
+			modifier = {
+				army_org_factor = 0.05
+	###maybe a naval buff too cuz naval power
+			}
+		}
+liberate_france = {
+
+			
+
+			allowed = {
+				always = no # Added via event
+			}
+			picture = FRA_undividable
+			modifier= { army_core_defence_factor = 0.15 }
+
+		}
+	submarine_menace = { #P AS OF MARCH 1943, GERMAN SUBS STILL TERRORISE THE ATLANTIC. REDUCED SHIPPING.
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			#picture = generic_spy_intel
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+	
+SHAEF_org_idea = { 
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+		
+			
+			modifier = {
+			command_power_gain = 0.2
+			}
+		}
+SHAEF_org_idea2 = { 
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+		picture = SHAEF_org_idea
+			removal_cost = -1
+
+		
+			
+			modifier = {
+			command_power_gain = 0.2
+			stability_factor = 0.11
+			civilian_intel_factor = 0.25
+			agency_upgrade_time = -0.12
+			research_speed_factor = 0.1
+			production_speed_buildings_factor = 0.15
+			political_power_gain = 0.15	
+			}
+		}
+
+SHAEF_G6 = { 
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+		picture = generic_disjointed_gov
+			
+			modifier = {
+			stability_factor = 0.1
+			
+			}
+		}
+SHAEF_G5 = { 
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+		
+			picture = generic_army_war_college
+			modifier = {
+			civilian_intel_factor = 0.33
+			
+			}
+		}
+SHAEF_G2 = { 
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+		picture = generic_spy_intel
+			
+			modifier = {
+			agency_upgrade_time = -0.1
+			
+			}
+		}
+SHAEF_G3 = { 
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+		picture = generic_manpower_bonus
+			
+			modifier = {
+			research_speed_factor = 0.1
+			
+			}
+		}
+SHAEF_G4 = { 
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+		
+			picture = generic_production_bonus
+			modifier = {
+			production_speed_infrastructure_factor = 0.15
+			
+			}
+		}
+		combined_staff_COSSAC = { 
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+		
+			picture = ETH_conservative_high_command
+			modifier = {
+			political_power_gain = 0.15	
+			}
+		}
+combined_staff_COSSAC2 = { 
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = ETH_conservative_high_command
+			
+			modifier = {
+			political_power_gain = 0.15	
+			experience_gain_navy = 0.15
+			experience_gain_army = 0.15
+			experience_gain_air = 0.15
+			}
+		}
+mulberry_harbours = { 
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+		picture = generic_coastal_navy
+			
+			modifier = {
+			political_power_gain = 0.15	
+			}
+		}
+		ultra_intercepts = { #ULTRA gives the allies a pretty much exact view of enemy disposition. PLUS INTELLIGENCE.
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			#picture = generic_spy_intel
+			
+			modifier = {
+				army_intel_factor = 1
+				navy_intel_factor = 1
+				airforce_intel_factor = 1
+				decryption_power_factor = 0.75
+				
+			}
+		}
+vanilla_ultra_intercepts = { #ULTRA gives the allies a pretty much exact view of enemy disposition. PLUS INTELLIGENCE.
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			#picture = generic_spy_intel
+			picture = ultra_intercepts
+			modifier = {
+				encryption = 5
+				decryption = 7.5
+				
+			}
+		}
+fractious_alliance = { #COUNTRIES ARNET USED TO WORKING TOGETHER. GRADUAL DECREASE IN COHESION.
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			on_add = { custom_effect_tooltip = fractious_alliance_tooltip  }
+			
+			modifier = {
+				
+			}
+		}
+awoken_giant = { #USA has godlike industry, supplies the allies.
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_intel
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				global_building_slots_factor = 0.35	
+			}
+		}
+#####PUBLIC OPINION MODIFIERS
+max_public_opinion = { #START. MAX OPINION. WAR GOING GOOD. YAHOO!
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			
+			modifier = {
+				political_power_factor = 0.25
+				stability_weekly = 0.001
+				democratic_drift = 0.05
+			}
+		}
+
+high_public_opinion = { #SLIGHT DROP.
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			
+			modifier = {
+				political_power_factor = 0.2
+				democratic_drift = 0.025
+			}
+		}
+
+medium_public_opinion = { #SO-SO.
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			
+			modifier = {
+			political_power_factor = 0.1
+			supply_consumption_factor = 0.01
+			}
+		}
+low_medium_public_opinion = { #STARTING TO FALL.
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			
+			modifier = {
+			political_power_factor = -0.15
+			democratic_drift = -0.01	
+			army_morale_factor = -0.01
+			supply_consumption_factor = 0.025
+			}
+		}
+
+low_public_opinion = { #OH NO. PEOPLE ARE GETTING TIRED!
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			
+			modifier = {
+				political_power_factor = -0.33
+				army_morale_factor = -0.025
+				democratic_drift = -0.02
+				supply_consumption_factor = 0.05
+			}
+		}
+
+outrage_public_opinion = { #PEOPLE ARE LIVID.
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			picture = chi_war_of_resistance
+			
+			modifier = {
+			political_power_factor = -0.5
+			army_morale_factor = -0.05
+			democratic_drift = -0.04	
+			supply_consumption_factor = 0.1
+			}
+		}
+rioting_public_opinion = { #ROCK BOTTOM. YOU'RE BUGGERED.
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			
+			modifier = {
+				political_power_factor = -1
+				stability_weekly = -0.01
+				democratic_drift = -0.06
+				army_morale_factor = -0.15
+				supply_consumption_factor = 0.2
+			}
+		}
+}
+	
+tank_manufacturer = { 
+	
+		designer = yes
+	
+		marmon_herrington = {
+			
+			
+			allowed = {
+				original_tag = AEF
+			}			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			equipment_bonus = {
+				
+				light_tank_chassis = {
+					build_cost_ic = -0.15
+				}
+			}
+			modifier = {
+			}
+		}
+		vickers_armstrong_eng = {
+			
+			allowed = {
+				original_TAG = AEF
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+			equipment_bonus = {
+				medium_tank_chassis = {
+					build_cost_ic = -0.075
+				}
+				light_tank_chassis = {
+					build_cost_ic = -0.125
+				}
+			}
+			modifier = {
+			}
+		}
+		chrysler = {
+			
+			
+			allowed = {
+				original_tag = AEF
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+			equipment_bonus = {
+				medium_tank_chassis = {
+					build_cost_ic = -0.15
+				}
+				
+			}
+			modifier = {
+			}
+		}
+		detroit_arsenal = {
+			
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = AEF
+			}
+			available = {
+			
+			}
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { }
+			
+			equipment_bonus = {
+				medium_tank_chassis = {
+					build_cost_ic = -0.1
+				}
+				light_tank_chassis = {
+					build_cost_ic = -0.1
+				}
+			}
+
+			modifier = {
+
+			}
+		}
+		tank_destroyer_board = {
+			
+			picture = usa_tank_destroyer_board
+			allowed = {
+				original_tag = AEF
+			}
+			available = {
+				#has_completed_focus = USA_tank_destroyer_doctrine
+			}
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { }
+			
+			equipment_bonus = {
+				light_tank_destroyer_chassis = {
+					build_cost_ic = -0.1
+					ap_attack = 0.1
+					hard_attack = 0.25
+				}
+				medium_tank_destroyer_chassis = {
+					build_cost_ic = -0.1
+					ap_attack = 0.1
+					hard_attack = 0.25
+				}
+				heavy_tank_destroyer_chassis = {
+					build_cost_ic = -0.1
+					ap_attack = 0.1
+					hard_attack = 0.25
+				}
+			}
+
+			modifier = {
+
+			}
+		}
+		
+		army_ordnance_department = {
+			
+			
+			allowed = {
+				original_tag = AEF
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			modifier = {
+			}
+		}	
+	}
+	
+	naval_manufacturer = { 
+	
+		designer = yes
+		
+		norfolk_naval_yard = {
+			
+			
+			allowed = {
+				original_tag = AEF
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { coastal_defence_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		electric_boat_company = {
+			
+			
+			allowed = {
+				original_tag = AEF
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		brooklyn_naval_yard = {
+			
+			
+			allowed = {
+				original_tag = AEF
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		yarrow_shipbuilders = {
+			
+			allowed = {
+				original_TAG = AEF
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+
+		}
+		
+		harland_wolff = {
+			
+			allowed = {
+				original_TAG = AEF
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { pacific_fleet_naval_manufacturer }
+		}
+		
+		cammell_laird = {
+			
+			allowed = {
+				original_TAG = AEF
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		john_brown_company = {
+			
+			allowed = {
+				original_TAG = AEF
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { coastal_defence_naval_manufacturer }
+		}
+		newport_news_shipbuilding = {
+			
+			
+			allowed = {
+				original_tag = AEF
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { pacific_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	aircraft_manufacturer = { 
+		
+		designer = yes
+		
+		north_american_aviation = {
+			
+			
+			allowed = {
+				original_tag = AEF
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		#bell = {
+		#	
+		#	
+		#	allowed = {
+		#		original_tag = AEF
+		#	}
+		#	
+		#
+		#	
+		#	research_bonus = {
+		#		air_equipment = 0.15
+		#	}
+		#	
+		#	traits = { light_aircraft_manufacturer }	#TODO, make different from north american
+		#	
+		#	modifier = {
+		#	}
+		#}	
+		
+		lockheed = {
+			
+			
+			allowed = {
+				original_tag = AEF
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		douglas_aircraft_company = {
+			
+			
+			allowed = {
+				original_tag = AEF
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { CAS_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		supermarine = {
+			
+			allowed = {
+				original_TAG = AEF
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		hawker = {
+			
+			allowed = {
+				original_TAG = AEF
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { CAS_manufacturer } 
+			
+			modifier = {
+			}
+		}	
+		de_havilland = {
+			
+			allowed = {
+				original_TAG = AEF
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		avro = {
+			
+			allowed = {
+				original_TAG = AEF
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		fairey_aviation = {
+			
+			allowed = {
+				original_TAG = AEF
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		boeing = {
+			
+			
+			allowed = {
+				original_tag = AEF
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		#consolidated_aircraft = {
+		#	
+		#	
+		#	allowed = {
+		#		original_tag = USA
+		#	}
+		#	
+		#
+		#	
+		#	research_bonus = {
+		#		air_equipment = 0.15
+		#	}
+		#	
+		#	traits = { heavy_aircraft_manufacturer } #TODO remove?
+		#	
+		#	modifier = {
+		#	}
+		#}
+		grumman = {
+			
+			
+			allowed = {
+				original_tag = AEF
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}		
+	}
+	
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+			
+		
+		rsaf_enfield = {
+			
+			allowed = {
+				original_TAG = AEF
+			}
+			
+
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		vauxhall = {
+			
+			allowed = {
+				original_TAG = AEF
+			}
+			
+
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		royal_arsenal = {
+			
+			allowed = {
+				original_TAG = AEF
+			}
+			
+
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+		springfield_armory = {
+			
+			
+			allowed = {
+				original_tag = AEF
+			}
+			
+
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		ford_motor_company = {
+			
+			
+			allowed = {
+				original_tag = AEF
+			}
+			
+
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+	
+		
+		rock_island_arsenal = {
+			
+			
+			allowed = {
+				original_tag = AEF
+			}
+			
+
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+
+	
+	industrial_concern = {
+			aioc = {
+			
+			allowed = {
+				original_TAG = AEF
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			}
+
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_idea_with_trait = silent_workhorse
+					factor = 10
+				}
+			}
+		}
+		
+		english_electric = {
+			
+			allowed = {
+				original_TAG = AEF
+			}
+			
+
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}		
+		
+		famh = {
+						
+			allowed = {
+				original_tag = AEF
+			}
+			available = { has_global_flag = france_liberated NOT = { has_idea = de_gaulle_issue }}		
+			research_bonus = {
+				industry = 0.18
+			}
+			
+			traits = { industrial_concern }
+
+			}
+			
+		general_electric = {
+			
+			
+			allowed = {
+				original_tag = AEF
+			}
+			
+
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+		USA_general_motors = {
+			
+			picture = usa_general_motors
+			allowed = {
+				original_tag = AEF
+			}
+			available = {
+				#has_completed_focus = USA_wartime_industry
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+	}
+
+
+
+
+
+
+
+}

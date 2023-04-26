@@ -1,0 +1,28 @@
+state={
+	id=3
+	name="STATE_3"
+	history = { victory_points = { 4408 5 }
+1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+		}
+		 1943.3.1.12 = {
+		owner = OKW
+		add_core_of = AEF
+		remove_core_of = ENT
+		}
+buildings = { 4408 = { naval_base = 3 coastal_bunker = 5 bunker = 4 } 1168 = { coastal_bunker = 4 } 
+1392  = { coastal_bunker = 5 }3604 = { coastal_bunker = 5 }3931 = { coastal_bunker = 5 } 
+4942 = { coastal_bunker = 5 } 4953 = { coastal_bunker = 5 } }
+
+
+}
+	provinces={
+		1168 1392 3604 3931 4408 4942 4953 
+	}
+	manpower=55244
+	impassable = yes
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

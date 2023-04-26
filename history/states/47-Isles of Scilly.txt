@@ -1,0 +1,26 @@
+
+state={
+	id=47
+	name="STATE_47"
+history={
+		 1918.3.20.12 = {
+		owner = ENT
+		add_core_of = ENT
+}
+ 1943.3.1.12 = {
+		owner = AEF
+		add_core_of = AEF
+		remove_core_of = ENT
+	}
+		buildings = { infrastructure = 1 }
+
+	}
+
+	provinces={
+		4132 5423 5425 5426 
+	}
+	manpower=1475
+	state_category = tiny_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
