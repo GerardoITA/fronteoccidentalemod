@@ -25,11 +25,11 @@ sub_units = {
 
 		manpower = 50
 		need = {
-			artillery_equipment = 4
+			artillery_equipment = 2
 		}
 		
 		max_strength = 0.6
-		max_organisation = 0
+		max_organisation = 40
 		default_morale = 0.1
 		training_time = 120
 		weight = 0.05
@@ -105,12 +105,12 @@ sub_units = {
 		}
 
 		need = {
-			artillery_equipment = 36
-			motorized_equipment = 36
+			artillery_equipment = 2
+			motorized_equipment = 3
 		}
 		
 		max_strength = 0.6
-		max_organisation = 0
+		max_organisation = 40
 		default_morale = 0.1
 		training_time = 120
 		weight = 0.05

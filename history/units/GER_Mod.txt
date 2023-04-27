@@ -1,0 +1,483 @@
+﻿####################################################################################################################### TEMPLATES
+## Infantry battalion ( 1k men with AT, ART and AA )
+
+division_template = {
+	name = "Grenadier Battalion" ###generalised version of Wehrmacht infantry batalion 1944, around 1300 men
+
+	division_names_group = GER_INFBAT_01
+    template_counter = "gfx/interface/counters/division_templates_large/custom_template_100"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+       	infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 1 y = 3 }
+       	infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+        infantry = { x = 2 y = 3 }
+		infantry = { x = 0 y = 3 }
+	}
+	
+	support = {
+        recon = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+        anti_air = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "Artillery Battalion" ###generalised version of Wehrmacht artillery battalion
+
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+       	artillery_brigade = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+       	artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+        anti_air = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Light Tank Destroyer Battalion" ###generalised version of light TD ( Marder ) battalion
+
+	regiments = {
+		light_tank_destroyer_brigade = { x = 0 y = 0 }
+		light_tank_destroyer_brigade = { x = 0 y = 1 }
+		light_tank_destroyer_brigade = { x = 0 y = 2 }
+       	light_tank_destroyer_brigade = { x = 1 y = 0 }
+		light_tank_destroyer_brigade = { x = 1 y = 1 }
+		light_tank_destroyer_brigade = { x = 1 y = 2 }
+        light_tank_destroyer_brigade = { x = 1 y = 3 }
+       	motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+        motorized = { x = 3 y = 0 }
+        motorized = { x = 3 y = 1 }
+	}
+	
+	support = {
+        armored_car_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+        anti_air = { x = 0 y = 2 }
+        maintenance_company = { x = 0 y = 3 }
+        signal_company = { x = 0 y = 4 }
+	}
+}
+
+
+
+
+###################################################################################################################### ARMY 
+units = {
+##################################################################################################### 7. Armee
+################################################################################### XXV. Armee-Korps - location: Pontivy - commanding general: Wilhelm Fahrmbacher
+############################ 265. Infanterie-Division - general: Walther Duevert
+division = { 
+	name = "I/Grenadier-Regiment 894/265. Inf."
+		location = 5238
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/Grenadier-Regiment 894/265. Inf."
+		location = 5238
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/Grenadier-Regiment 894/265. Inf."
+		location = 5238
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+
+division = { 
+	name = "I/Grenadier-Regiment 895/265. Inf."
+		location = 5238
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/Grenadier-Regiment 895/265. Inf."
+		location = 5238
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/Grenadier-Regiment 895/265. Inf."
+		location = 5238
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+
+division = { 
+	name = "I/Grenadier-Regiment 896/265. Inf."
+		location = 5238
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/Grenadier-Regiment 896/265. Inf."
+		location = 5238
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/Grenadier-Regiment 896/265. Inf."
+		location = 5238
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/Artillerie-Regiment 265/265. Inf."
+		location = 5238
+		division_template = "Artillery Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/Artillerie-Regiment 265/265. Inf."
+		location = 5238
+		division_template = "Artillery Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/Artillerie-Regiment 265/265. Inf."
+		location = 5238
+		division_template = "Artillery Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+############################ 275. Infanterie-Division - general: Hans Schmidt
+division = { 
+	name = "I/Grenadier-Regiment 983/275.    Inf."
+		location = 3375
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/Grenadier-Regiment 983/275.   Inf."
+		location = 3375
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/Grenadier-Regiment 983/275.  Inf."
+		location = 3375
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+
+division = { 
+	name = "I/Grenadier-Regiment 984/275.    Inf."
+		location = 3375
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/Grenadier-Regiment 984/275.   Inf."
+		location = 3375
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/Grenadier-Regiment 984/275.  Inf."
+		location = 3375
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+
+division = { 
+	name = "I/Grenadier-Regiment 985/275.    Inf."
+		location = 3375
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/Grenadier-Regiment 985/275.   Inf."
+		location = 3375
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/Grenadier-Regiment 985/275.  Inf."
+		location = 3375
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/Artillerie-Regiment 275/275. Inf."
+		location = 3375
+		division_template = "Artillery Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/Artillerie-Regiment 275/275. Inf."
+		location = 3375
+		division_template = "Artillery Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/Artillerie-Regiment 275/275. Inf."
+		location = 3375
+		division_template = "Artillery Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+############################ 343. Infanterie-Division - general: Erwin Rauch
+division = { 
+	name = "I/Grenadier-Regiment 851/343.    Inf."
+		location = 5556
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/Grenadier-Regiment 851/343.   Inf."
+		location = 5556
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/Grenadier-Regiment 851/343.  Inf."
+		location = 5556
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+
+division = { 
+	name = "I/Grenadier-Regiment 852/343.    Inf."
+		location = 5556
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/Grenadier-Regiment 852/343.   Inf."
+		location = 5556
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/Grenadier-Regiment 852/343.  Inf."
+		location = 5556
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+
+division = { 
+	name = "I/Grenadier-Regiment 898/343.    Inf."
+		location = 5556
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/Grenadier-Regiment 898/343.   Inf."
+		location = 5556
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/Grenadier-Regiment 898/343.  Inf."
+		location = 5556
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/Artillerie-Regiment 343/343. Inf."
+		location = 5556
+		division_template = "Artillery Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/Artillerie-Regiment 343/343. Inf."
+		location = 5556
+		division_template = "Artillery Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/Artillerie-Regiment 343/343. Inf."
+		location = 5556
+		division_template = "Artillery Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+############################ 353. Infanterie-Division - general: Paul Mahlmann
+division = { 
+	name = "I/Grenadier-Regiment 941/353.    Inf."
+		location = 3307
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/Grenadier-Regiment 941/353.   Inf."
+		location = 3307
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/Grenadier-Regiment 941/353.  Inf."
+		location = 3307
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+
+division = { 
+	name = "I/Grenadier-Regiment 942/353.    Inf."
+		location = 3307
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/Grenadier-Regiment 942/353.   Inf."
+		location = 3307
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/Grenadier-Regiment 942/353.  Inf."
+		location = 3307
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+
+division = { 
+	name = "I/Grenadier-Regiment 943/353.    Inf."
+		location = 3307
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/Grenadier-Regiment 943/353.   Inf."
+		location = 3307
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/Grenadier-Regiment 943/353.  Inf."
+		location = 3307
+		division_template = "Grenadier Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/Artillerie-Regiment 353/353. Inf."
+		location = 3307
+		division_template = "Artillery Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/Artillerie-Regiment 353/353. Inf."
+		location = 3307
+		division_template = "Artillery Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/Artillerie-Regiment 353/353. Inf."
+		location = 3307
+		division_template = "Artillery Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "Panzerjäger-Abteilung 353/353. Inf."
+		location = 3307
+		division_template = "Light Tank Destroyer Battalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -24,7 +24,7 @@ create_dynamic_country = {
 }
 1943.1.1 = { clr_country_flag = OKW_ww1_start_tag
 set_cosmetic_tag = GER_OBWEST
-oob="debug_oob"
+oob="GER_Mod"
 #if = {
 #	limit = { has_dlc = "Man the Guns" }
 #		set_naval_oob = "AEF_1943_naval_mtg"
@@ -39,17 +39,17 @@ if = {
 	  }create_intelligence_agency = {
     name = "Abwehr"
     icon = GFX_intelligence_agency_logo_ger
-}}
+}
 declare_war_on = {
 		target = AEF
 		type = annex_everything
 	}
-add_offsite_building = { type = arms_factory level = 50 }
-add_offsite_building = { type = industrial_complex level = 66 }
+add_offsite_building = { type = arms_factory level = 150 }
+add_offsite_building = { type = industrial_complex level = 75 }
 
 set_variable = { var = influence_number
 		value = 56 }
-set_research_slots = 4
+set_research_slots = 1
 set_stability = 0.6
 set_war_support = 0.7
 add_command_power = 120
@@ -285,6 +285,69 @@ create_equipment_variant = {
 			}
 			icon = "gfx/interface/technologies/GER_Luchs.dds"
 		}
+
+create_equipment_variant = {
+			name = "Flakpanzer IV Wirbelwind'"
+			type = medium_tank_aa_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_anti_air_cannon_2
+				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 6
+				tank_nsb_armor_upgrade = 2
+			}
+			icon = "gfx/interface/technologies/GER_Wirbelwind.dds"
+		}
+create_equipment_variant = {
+			name = "Hummel"
+			type = medium_tank_artillery_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_heavy_howitzer
+				turret_type_slot = tank_medium_fixed_superstructure_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 6
+			}
+			icon = "gfx/interface/technologies/GER_Hummel.dds"
+		}
+
+create_equipment_variant = {
+			name = "Wespe"
+			type = light_tank_artillery_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_medium_howitzer
+				turret_type_slot = tank_light_fixed_superstructure_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 6
+			}
+			icon = "gfx/interface/technologies/GER_Wespe.dds"
+		}
 	create_equipment_variant = {
 			name = "Marder II"
 			type = light_tank_destroyer_chassis_2
@@ -383,9 +446,8 @@ create_equipment_variant = {
 				special_type_slot_4 = armor_skirts
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 7
-				tank_nsb_armor_upgrade = 6
-				tank_nsb_hard_attack_upgrade = 10
+				tank_nsb_engine_upgrade = 8
+				tank_nsb_armor_upgrade = 5
 			}
 			icon = "gfx/interface/technologies/GER_Panzer4H.dds"
 		}
@@ -553,7 +615,7 @@ create_equipment_variant = {
 				special_type_slot_4 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 4
+				tank_nsb_engine_upgrade = 6
 			}
 			icon = "gfx/interface/technologies/GER_Nashorn.dds"
 		}
@@ -574,14 +636,14 @@ create_equipment_variant = {
 				special_type_slot_4 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 4
+				tank_nsb_engine_upgrade = 6
 				tank_nsb_armor_upgrade = 8
 			}
 			icon = "gfx/interface/technologies/GER_TigerE.dds"
 		}
 }
 create_equipment_variant = {
-			name = "King Tiger"
+			name = "Tiger Ausf. B"
 			type = heavy_tank_chassis_3
 			parent_version = 0
 			modules = {
@@ -596,8 +658,8 @@ create_equipment_variant = {
 				special_type_slot_4 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 5
-				tank_nsb_armor_upgrade = 12
+				tank_nsb_engine_upgrade = 8
+				tank_nsb_armor_upgrade = 14
 			}
 			icon = "gfx/interface/technologies/GER_KingTiger.dds"
 		}
@@ -782,7 +844,8 @@ create_equipment_variant = {
 	remove_country_leader_role = {
     character = GER_gerd_von_rundstedt
     ideology = nazism
-}}
+}
+}
 1944.12.24.1 = { 
 	retire_character = GER_erwin_rommel
 	create_country_leader = {
