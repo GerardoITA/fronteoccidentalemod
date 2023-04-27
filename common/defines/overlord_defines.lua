@@ -19,24 +19,24 @@ NDefines.NSupply.SUPPLY_POINTS_PER_TRAIN = 10.0  -- old default 1.25 -- Amount o
 NDefines.NSupply.NUM_RAILWAYS_TRAIN_FACTOR = 0.66
 	
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2					-- Global speed multiplier for airplanes (affects fe.transferring to another base)
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 4 	--Base cost to unlock a regiment slot,
+--[[ NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 4 	--Base cost to unlock a regiment slot,
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 1	--Base cost to change a regiment column.
-NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 2 	--Base cost to unlock a support slot
+NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 2 	--Base cost to unlock a support slot ]]
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 9999			
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 9999			
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 9999			
-NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.77
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 1;
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 1;
-NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 1;
+NDefines.NMilitary.LAND_SPEED_MODIFIER = 1.00
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 99;
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 99;
+NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 99;
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.0010
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0015
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 60		-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.CORPS_COMMANDER_ARMIES_CAP = -1				-- how many armies a corps commander is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 52			-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 0	
-NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.35
-NDefines.NProduction.BASE_FACTORY_EFFICIENCY_GAIN = 4.5
+NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0
+NDefines.NProduction.BASE_FACTORY_EFFICIENCY_GAIN = 8.5
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 2.5           
 NDefines.NNavy.NAVAL_SPEED_MODIFIER = 2.2	                    				-- basic speed control
 NDefines.NNavy.NAVAL_RANGE_TO_INGAME_DISTANCE = 2.64						-- Scale the ship stats "naval_range" to the ingame distance
@@ -71,4 +71,9 @@ NDefines.NOperatives.COUNTER_INTELLIGENCE_TO_DEFENSE_DIVISOR = 1.0				-- see abo
 NDefines.NOperatives.COUNTER_INTELLIGENCE_DAILY_XP_GAIN = 0.5
 
 
+
+-- Defines miei
+
+NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.25
+NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.3
 

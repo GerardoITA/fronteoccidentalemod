@@ -9,19 +9,8 @@ if = {
 	basic_heavy_tank = 1
 	improved_medium_tank = 1
 	basic_medium_tank = 1 
-	improved_heavy_tank = 1 }
-create_equipment_variant = {
-	name = "M4A4 Sherman"
-	type = medium_tank_equipment_2
-	upgrades = {
-		tank_armor_upgrade = 1
-		tank_gun_upgrade = 2
-		tank_engine_upgrade = 3
-		tank_reliability_upgrade = 3
-	}
-	obsolete = no
+	improved_heavy_tank = 1 
 }
-
 }
 1943.1.1 = { 
 
@@ -363,11 +352,11 @@ gwtank_chassis = 1
 		engine_tech_3 = 1
 	}
 	create_equipment_variant = {
-			name = "M4A4 Sherman"
+			name = "M4A3(76) Sherman"
 			type = medium_tank_chassis_2
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_medium_cannon
+				main_armament_slot = tank_high_velocity_cannon_2
 				turret_type_slot = tank_medium_three_man_tank_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_welded_armor
@@ -378,18 +367,86 @@ gwtank_chassis = 1
 				special_type_slot_4 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 11
-				tank_nsb_armor_upgrade = 1
+				tank_nsb_engine_upgrade = 8
+				tank_nsb_armor_upgrade = 3
 			}
-			icon = "gfx/interface/technologies/aef_sherman.dds"
-		}
-create_equipment_variant = {
-			name = "Churchill MkVII"
-			type = heavy_tank_chassis_2
+			icon = "gfx/interface/technologies/AEF_M4A376.dds"
+	}
+	create_equipment_variant = {
+			name = "M4A3E8 Sherman"
+			type = medium_tank_chassis_2
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_medium_cannon
+				main_armament_slot = tank_high_velocity_cannon_2
 				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 9
+				tank_nsb_armor_upgrade = 5
+			}
+			icon = "gfx/interface/technologies/AEF_M4A3E8.dds"
+	}
+
+
+	
+	create_equipment_variant = {
+			name = "M4A3(75)W Sherman"
+			type = medium_tank_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_medium_cannon_2
+				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 9
+				tank_nsb_armor_upgrade = 3
+			}
+			icon = "gfx/interface/technologies/AEF_M4A3.dds"
+	}
+
+	create_equipment_variant = {
+			name = "Cromwell Mk VII"
+			type = medium_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_medium_cannon_2
+				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 9
+				tank_nsb_armor_upgrade = 8
+			}
+			icon = "gfx/interface/technologies/AEF_Cromwell.dds"
+	}
+
+create_equipment_variant = {
+			name = "Churchill Mk VII"
+			type = heavy_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_medium_cannon_2
+				turret_type_slot = tank_heavy_three_man_tank_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_welded_armor
 				engine_type_slot = tank_gasoline_engine
@@ -399,17 +456,17 @@ create_equipment_variant = {
 				special_type_slot_4 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 4
-				tank_nsb_armor_upgrade = 10
+				tank_nsb_engine_upgrade = 11
+				tank_nsb_armor_upgrade = 30
 			}
-			icon = "gfx/interface/technologies/aef_churchill.dds"
+			icon = "gfx/interface/technologies/AEF_Churchill.dds"
 		}
 	create_equipment_variant = {
 			name = "M10 Wolverine"
-			type = medium_tank_destroyer_chassis_2
+			type = medium_tank_destroyer_chassis_1
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_high_velocity_cannon
+				main_armament_slot = tank_high_velocity_cannon_2
 				turret_type_slot = tank_medium_three_man_tank_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_welded_armor
@@ -417,18 +474,38 @@ create_equipment_variant = {
 				special_type_slot_1 = tank_radio_1
 				special_type_slot_2 = smoke_launchers
 				special_type_slot_3 = easy_maintenance
-				special_type_slot_4 = sloped_armor
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 7
+			}
+			icon = "gfx/interface/technologies/AEF_Wolverine.dds" 
+		}
+		create_equipment_variant = {
+			name = "Sherman Firefly"
+			type = medium_tank_destroyer_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon_3
+				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
 			}
 			upgrades = {
 				tank_nsb_engine_upgrade = 7
 				tank_nsb_armor_upgrade = 3
 			}
-			icon = "gfx/interface/technologies/aef_wolverine.dds"
+			icon = "gfx/interface/technologies/AEF_Firefly.dds" 
 		}
 
 create_equipment_variant = {
 		name = "M5 Stuart"
-		type = light_tank_chassis_1
+		type = light_tank_chassis_2
 		parent_version = 0
 		modules = {
 			main_armament_slot = tank_small_cannon_2
@@ -439,9 +516,8 @@ create_equipment_variant = {
 		}
 		upgrades = {
 			tank_nsb_engine_upgrade = 8
-			tank_nsb_armor_upgrade = 2
 		}
-		icon = "gfx/interface/technologies/aef_stuart.dds"
+		icon = "gfx/interface/technologies/AEF_Stuart.dds"
 	}
 }
 
@@ -649,25 +725,9 @@ if = {
 			naval_bomber2 = 1
 			naval_bomber3 = 1 
 		}
-	}}
+	}
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-
-create_equipment_variant = {
-			name = "Hawker Hurricane MkIIb" 
-			type = small_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = light_mg_4x
-				fixed_auxiliary_weapon_slot_1 = light_mg_4x
-				engine_type_slot = engine_2_1x
-				special_type_slot_1 = empty
-			}
-	upgrades = { 
-		plane_engine_upgrade = 5
-}
-			icon = "GFX_ENG_fighter1_medium"
-		}
-
 
 
 		create_equipment_variant = {
@@ -679,7 +739,7 @@ create_equipment_variant = {
 				engine_type_slot = engine_3_1x
 				special_type_slot_1 = empty
 			}
-			icon = "gfx/interface/technologies/aef_spitfirev.dds"
+			icon = "gfx/interface/technologies/AEF_SpitfireMk5.dds"
 		}
 create_equipment_variant = {
 			name = "P-51D Mustang" 
@@ -691,30 +751,19 @@ create_equipment_variant = {
 				special_type_slot_1 = drop_tanks
 				special_type_slot_2 = armor_plate_small
 			}
-			icon = "gfx/interface/technologies/aef_fighter2.dds"
+			icon = "gfx/interface/technologies/AEF_P51D.dds"
 		}
 create_equipment_variant = {
 			name = "P-47D Thunderbolt" 
 			type = small_plane_airframe_2
 			modules = {
 				fixed_main_weapon_slot = heavy_mg_4x
-				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_1 = rocket_rails
 				fixed_auxiliary_weapon_slot_2 = rocket_rails
 				engine_type_slot = engine_3_1x
 				special_type_slot_1 = armor_plate_small
 			}
-			icon = "gfx/interface/technologies/aef_p47.dds"
-		}
-create_equipment_variant = {
-			name = "P-38 Lightning" 
-			type = medium_plane_fighter_airframe_1
-			modules = {
-				fixed_main_weapon_slot = aircraft_cannon_1_1x
-				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
-				engine_type_slot = engine_3_2x
-				special_type_slot_1 = armor_plate_medium
-			}
-			icon = "gfx/interface/technologies/aef_p38.dds"
+			icon = "gfx/interface/technologies/AEF_P47D.dds"
 		}
 create_equipment_variant = {
 			name = "Mosquito B.IV Series II" 
@@ -725,7 +774,7 @@ create_equipment_variant = {
 				engine_type_slot = engine_4_2x
 				special_type_slot_1 = non_strategic_materials_medium
 			}
-			icon = "gfx/interface/technologies/mosquito.dds"
+			icon = "gfx/interface/technologies/AEF_Mosquito.dds"
 		}
 create_equipment_variant = {
 			name = "A-20G 'Havoc'" 
@@ -739,7 +788,7 @@ create_equipment_variant = {
 				special_type_slot_1 = hmg_defense_turret_2x
 				special_type_slot_2 = armor_plate_medium
 			}
-			icon = "gfx/interface/technologies/a20G.dds"
+			icon = "gfx/interface/technologies/AEF_Havoc.dds"
 		}
 create_equipment_variant = {
 			name = "B-26B Marauder" 
@@ -754,7 +803,7 @@ create_equipment_variant = {
 				special_type_slot_2 = hmg_defense_turret_2x
 				special_type_slot_3 = armor_plate_medium
 			}
-			icon = "GFX_USA_medium_plane_1_medium"
+			icon = "gfx/interface/technologies/AEF_Marauder.dds"
 		}
 create_equipment_variant = {
 			name = "B-25J Mitchell" 
@@ -768,7 +817,7 @@ create_equipment_variant = {
 				special_type_slot_2 = hmg_defense_turret_2x
 				special_type_slot_3 = armor_plate_medium
 			}
-			icon = "GFX_USA_medium_plane_1_medium"
+			icon = "gfx/interface/technologies/AEF_B25J.dds"
 		}
 create_equipment_variant = {
 			name = "Hawker Typhoon MkII" 
@@ -780,26 +829,11 @@ create_equipment_variant = {
 				engine_type_slot = engine_4_1x
 				special_type_slot_1 = non_strategic_materials_small
 			}
-			icon = "gfx/interface/technologies/typhoon.dds"
-		}
-create_equipment_variant = {
-			name = "P-61 'Black Widow'" 
-			type = medium_plane_fighter_airframe_2
-			modules = {
-				fixed_main_weapon_slot = aircraft_cannon_1_2x
-				fixed_auxiliary_weapon_slot_1 =	aircraft_cannon_1_2x
-				fixed_auxiliary_weapon_slot_2 = light_mg_4x
-				fixed_auxiliary_weapon_slot_3 = rocket_rails
-				engine_type_slot = engine_3_2x
-				special_type_slot_1 = non_strategic_materials_medium
-				special_type_slot_2 = armor_plate_medium
-				special_type_slot_3 = hmg_defense_turret
-			}
-			icon = "gfx/interface/technologies/aef_p61.dds"
+			icon = "gfx/interface/technologies/AEF_Typhoon.dds"
 		}
 create_equipment_variant = {
 			name = "B-17E 'Flying Fortress'" 
-			type = large_plane_airframe_2
+			type = large_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = large_bomb_bay
 				fixed_auxiliary_weapon_slot_1 =large_bomb_bay
@@ -812,10 +846,10 @@ create_equipment_variant = {
 				special_type_slot_5 = hmg_defense_turret
 				special_type_slot_6 = hmg_defense_turret
 			}
-			icon = "GFX_USA_strategic_bomber1_medium"
+			icon = "gfx/interface/technologies/AEF_B17.dds"
 		}
 create_equipment_variant = {
-			name = "Lancaster Mk I" 
+			name = "AVRO Lancaster" 
 			type = large_plane_airframe_2
 			modules = {
 				fixed_main_weapon_slot = large_bomb_bay
@@ -831,7 +865,7 @@ create_equipment_variant = {
 				special_type_slot_6 = lmg_defense_turret
 
 			}
-			icon = "GFX_ENG_strategic_bomber1_medium"
+			icon = "gfx/interface/technologies/AEF_Lancaster.dds"
 		}
 create_equipment_variant = {
 			name = "B-24 Liberator" 
@@ -847,22 +881,7 @@ create_equipment_variant = {
 				special_type_slot_4 = hmg_defense_turret
 
 			}
-			icon = "GFX_USA_strategic_bomber1_medium"
-		}
-create_equipment_variant = {
-			name = "Handley Page Halifax" 
-			type = large_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = large_bomb_bay
-				fixed_auxiliary_weapon_slot_1 =large_bomb_bay
-				fixed_auxiliary_weapon_slot_2 =large_bomb_bay
-				engine_type_slot = engine_3_4x
-				special_type_slot_1 = lmg_defense_turret
-				special_type_slot_2 = lmg_defense_turret
-				special_type_slot_3 = lmg_defense_turret
-
-			}
-			icon = "GFX_ENG_strategic_bomber1_medium"
+			icon = "gfx/interface/technologies/AEF_B24.dds"
 		}
 }
 

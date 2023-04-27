@@ -178,8 +178,6 @@ radio_detection = 1
 	mechanical_computing = 1
 	computing_machine = 1
 	improved_computing_machine = 1
-	experimental_rockets = 1
-	rocket_engines = 1
 	basic_machine_tools = 1
 	improved_machine_tools = 1
 	assembly_line_production = 1
@@ -256,6 +254,8 @@ if = {
 	improved_medium_tank_chassis = 1
 	advanced_medium_tank_chassis = 1 
 	basic_heavy_tank_chassis = 1
+	improved_heavy_tank_chassis = 1
+	advanced_heavy_tank_chassis = 1
 	improved_light_tank_chassis = 1 
 	armor_tech_1 = 1 
 	armor_tech_2 = 1 
@@ -269,7 +269,7 @@ create_equipment_variant = {
 			type = light_tank_chassis_3
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_high_velocity_cannon
+				main_armament_slot = tank_auto_cannon_2
 				turret_type_slot = tank_light_two_man_tank_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_riveted_armor
@@ -283,7 +283,89 @@ create_equipment_variant = {
 				tank_nsb_engine_upgrade = 6
 				tank_nsb_armor_upgrade = 6
 			}
-			icon = "gfx/interface/technologies/ger_imp_light_tank.dds"
+			icon = "gfx/interface/technologies/GER_Luchs.dds"
+		}
+	create_equipment_variant = {
+			name = "Marder II"
+			type = light_tank_destroyer_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon_2
+				turret_type_slot = tank_light_fixed_superstructure_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 4
+			}
+			icon = "gfx/interface/technologies/GER_Marder2.dds"
+		}
+	create_equipment_variant = {
+			name = "Marder III"
+			type = light_tank_destroyer_chassis_3
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon_2
+				turret_type_slot = tank_light_fixed_superstructure_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 4
+			}
+			icon = "gfx/interface/technologies/GER_Marder3.dds"
+		}
+	create_equipment_variant = {
+			name = "Panzer III Ausf. M"
+			type = medium_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon
+				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 7
+				tank_nsb_armor_upgrade = 0
+			}
+			icon = "gfx/interface/technologies/GER_Panzer3M.dds"
+		}
+	create_equipment_variant = {
+			name = "Panzer IV Ausf. G"
+			type = medium_tank_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon_2
+				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 7
+				tank_nsb_armor_upgrade = 1
+			}
+			icon = "gfx/interface/technologies/GER_Panzer4G.dds"
 		}
 	create_equipment_variant = {
 			name = "Panzer IV Ausf. H"
@@ -303,15 +385,16 @@ create_equipment_variant = {
 			upgrades = {
 				tank_nsb_engine_upgrade = 7
 				tank_nsb_armor_upgrade = 6
+				tank_nsb_hard_attack_upgrade = 10
 			}
-			icon = "gfx/interface/technologies/ger_pzivh.dds"
+			icon = "gfx/interface/technologies/GER_Panzer4H.dds"
 		}
-create_equipment_variant = {
+	create_equipment_variant = {
 			name = "Panther Ausf. A"
 			type = medium_tank_chassis_3
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_high_velocity_cannon_2
+				main_armament_slot = tank_high_velocity_cannon_3
 				turret_type_slot = tank_medium_three_man_tank_turret
 				suspension_type_slot = tank_interleaved_suspension
 				armor_type_slot = tank_welded_armor
@@ -325,11 +408,95 @@ create_equipment_variant = {
 				tank_nsb_engine_upgrade = 9
 				tank_nsb_armor_upgrade = 8
 			}
-			icon = "gfx/interface/technologies/ger_panther.dds"
+			icon = "gfx/interface/technologies/GER_PantherA.dds"
+		}
+	create_equipment_variant = {
+			name = "Panther Ausf. G"
+			type = medium_tank_chassis_3
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon_3
+				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_interleaved_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = empty
+				special_type_slot_4 = sloped_armor
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 9
+				tank_nsb_armor_upgrade = 10
+			}
+			icon = "gfx/interface/technologies/GER_PantherG.dds"
+		}
+	create_equipment_variant = {
+			name = "StuG III Ausf. F8"
+			type = medium_tank_destroyer_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon_2
+				turret_type_slot = tank_medium_fixed_superstructure_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 7
+				tank_nsb_armor_upgrade = 2
+			}
+			icon = "gfx/interface/technologies/GER_Stug3F8.dds"
 		}
 	create_equipment_variant = {
 			name = "StuG III Ausf. G"
+			type = medium_tank_destroyer_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon_2
+				turret_type_slot = tank_medium_fixed_superstructure_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = armor_skirts
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 7
+				tank_nsb_armor_upgrade = 5
+			}
+			icon = "gfx/interface/technologies/GER_Stug3G.dds"
+		}
+	create_equipment_variant = {
+			name = "StuG IV"
 			type = medium_tank_destroyer_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon_2
+				turret_type_slot = tank_medium_fixed_superstructure_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = armor_skirts
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 7
+				tank_nsb_armor_upgrade = 9
+			}
+			icon = "gfx/interface/technologies/GER_Stug4.dds"
+	}
+	create_equipment_variant = {
+			name = "Jagdpanzer IV/70"
+			type = medium_tank_destroyer_chassis_3
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_high_velocity_cannon_3
@@ -343,11 +510,52 @@ create_equipment_variant = {
 				special_type_slot_4 = armor_skirts
 			}
 			upgrades = {
-				tank_gun_upgrade = 9
 				tank_nsb_engine_upgrade = 7
-				tank_nsb_armor_upgrade = 5
+				tank_nsb_armor_upgrade = 9
+				tank_gun_upgrade = 6
 			}
-			icon = "gfx/interface/technologies/ger_stug.dds"
+			icon = "gfx/interface/technologies/GER_Jagdpanzer.dds"
+	}
+	create_equipment_variant = {
+			name = "Jagdpanzer V Jagdpanther"
+			type = heavy_tank_destroyer_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_heavy_cannon_3
+				turret_type_slot = tank_medium_fixed_superstructure_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = armor_skirts
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 7
+				tank_nsb_armor_upgrade = 6
+			}
+			icon = "gfx/interface/technologies/GER_Jagdpanther.dds"
+	}
+create_equipment_variant = {
+			name = "Nashorn"
+			type = heavy_tank_destroyer_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_heavy_cannon_3
+				turret_type_slot = tank_medium_fixed_superstructure_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 4
+			}
+			icon = "gfx/interface/technologies/GER_Nashorn.dds"
 		}
 			
 create_equipment_variant = {
@@ -362,15 +570,36 @@ create_equipment_variant = {
 				engine_type_slot = tank_gasoline_engine
 				special_type_slot_1 = tank_radio_1
 				special_type_slot_2 = smoke_launchers
-				special_type_slot_3 = empty
+				special_type_slot_3 = armor_skirts
 				special_type_slot_4 = empty
 			}
 			upgrades = {
 				tank_nsb_engine_upgrade = 4
 				tank_nsb_armor_upgrade = 6
-				tank_gun_upgrade = 6
 			}
-			icon = "gfx/interface/technologies/GER_tiger1e.dds"
+			icon = "gfx/interface/technologies/GER_TigerE.dds"
+		}
+}
+create_equipment_variant = {
+			name = "King Tiger Ausf. B"
+			type = heavy_tank_chassis_3
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_heavy_cannon_3
+				turret_type_slot = tank_heavy_three_man_tank_turret
+				suspension_type_slot = tank_interleaved_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = armor_skirts
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 5
+				tank_nsb_armor_upgrade = 12
+			}
+			icon = "gfx/interface/technologies/GER_KingTiger.dds"
 		}
 }
 
@@ -446,7 +675,7 @@ if = {
 			improved_small_airframe = 1
 }
 create_equipment_variant = {
-		name = "Bf 109 G"
+		name = "Bf 109G-2"
 		type = small_plane_airframe_1
 		modules = {
 			fixed_main_weapon_slot = aircraft_cannon_2_1x
@@ -454,10 +683,33 @@ create_equipment_variant = {
 			engine_type_slot = engine_3_1x
 			special_type_slot_1 = empty
 		}
-		icon = "GFX_GER_fighter1_medium"
+		icon = "gfx/interface/technologies/GER_Bf109G2.dds"
 	}
 create_equipment_variant = {
-		name = "Fw 190 A-8"
+		name = "Bf 109G-6"
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = aircraft_cannon_2_2x
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = empty
+		}
+		icon = "gfx/interface/technologies/GER_Bf109G6.dds"
+	}
+create_equipment_variant = {
+		name = "Fw 190A-5"
+		type = small_plane_airframe_2
+		modules = {
+			fixed_main_weapon_slot = aircraft_cannon_2_1x
+			fixed_auxiliary_weapon_slot_1 =	aircraft_cannon_2_2x
+			fixed_auxiliary_weapon_slot_2 =	aircraft_cannon_1_2x
+			engine_type_slot = engine_4_1x
+			special_type_slot_1 = armor_plate_small
+		}
+		icon = "gfx/interface/technologies/GER_Fw190A5.dds"
+	}
+create_equipment_variant = {
+		name = "Fw 190A-8"
 		type = small_plane_airframe_2
 		modules = {
 			fixed_main_weapon_slot = aircraft_cannon_2_2x
@@ -466,7 +718,7 @@ create_equipment_variant = {
 			engine_type_slot = engine_4_1x
 			special_type_slot_1 = armor_plate_small
 		}
-		icon = "GFX_GER_light_plane_4_medium"
+		icon = "gfx/interface/technologies/GER_Fw190A8.dds"
 	}
 create_equipment_variant = {
 			name = "Bf 110" 
@@ -479,10 +731,10 @@ create_equipment_variant = {
 				special_type_slot_1 = empty
 				special_type_slot_2 = armor_plate_medium
 			}
-			icon = "GFX_GER_heavy_fighter1_medium"
+			icon = "gfx/interface/technologies/GER_Bf110.dds"
 		}
 	create_equipment_variant = {
-		name = "Ju 87 'Stuka'"
+		name = "Ju 87D5 'Stuka'"
 		type = small_plane_cas_airframe_1
 		modules = {
 			fixed_main_weapon_slot = bomb_locks
@@ -490,27 +742,8 @@ create_equipment_variant = {
 			special_type_slot_1 = lmg_defense_turret
 			special_type_slot_2 = dive_brakes_small
 		}
-		icon = "GFX_GER_CAS1_medium"
+		icon = "gfx/interface/technologies/GER_Ju87D5.dds"
 	}
-create_equipment_variant = {
-			name = "He 177 Greif" 
-			type = large_plane_airframe_2
-			modules = {
-				fixed_main_weapon_slot = large_bomb_bay
-				fixed_auxiliary_weapon_slot_1 =large_bomb_bay
-				fixed_auxiliary_weapon_slot_2 =large_bomb_bay
-				fixed_auxiliary_weapon_slot_3 =empty
-				engine_type_slot = engine_4_4x
-				special_type_slot_1 = cannon_defense_turret
-				special_type_slot_2 = armor_plate_large
-				special_type_slot_3 = cannon_defense_turret
-				special_type_slot_4 = hmg_defense_turret
-				special_type_slot_5 = hmg_defense_turret
-				special_type_slot_6 = lmg_defense_turret
-			}
-			icon = "GFX_GER_strategic_bomber3_medium"
-		}
-		
 	else = {
 		set_air_oob = "GER_1943_air_legacy"
 		set_technology = {

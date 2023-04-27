@@ -298,7 +298,7 @@ division= {
 		
 		location = 5051
 		division_template = "Panzer Battalion"
-		start_experience_factor = 0.4
+		start_experience_factor = 0.8
 		
 
 	}
@@ -306,7 +306,23 @@ division= {
 		
 		location = 5051
 		division_template = "Panzer Battalion"
-		start_experience_factor = 0.4
+		start_experience_factor = 0.8
+		
+
+	}
+division= {	
+		
+		location = 5051
+		division_template = "Panzer Battalion"
+		start_experience_factor = 0.8
+		
+
+	}
+division= {	
+		
+		location = 5051
+		division_template = "Panzer Battalion"
+		start_experience_factor = 0.8
 		
 
 	}
@@ -666,7 +682,7 @@ division= {
 		
 		location = 2607
 		division_template = "Panzergrenadier Battalion"
-		start_experience_factor = 0
+		start_experience_factor = 1
 		
 
 	}
