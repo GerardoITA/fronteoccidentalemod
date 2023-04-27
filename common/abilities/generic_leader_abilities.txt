@@ -30,7 +30,7 @@ ability = {
 			}
 		}
 		
-		cost = 0.22
+		cost = 1000
 		duration = 168
 		
 		one_time_effect = {
@@ -62,7 +62,7 @@ ability = {
 			
 		}
 		
-		cost = 0.22
+		cost = 1000
 		duration = 168
 		
 		one_time_effect = {
@@ -109,7 +109,7 @@ ability = {
 			is_border_war = no
 		}
 		
-		cost = 0.12
+		cost = 1000
 		duration = 168
 		
 		unit_modifiers = {
@@ -151,7 +151,7 @@ ability = {
 			fortification_damage = 2.0
 			fortification_collateral_chance = 2.0
 		}
-		cost = 0.1
+		cost = 1000
 		duration = 168
 		
 		
@@ -208,7 +208,7 @@ ability = {
 			naval_invasion_prep_speed = 0.5
 		}
 		
-		cost = 0.1
+		cost = 1000
 		duration = 168
 	}
 	
@@ -287,7 +287,7 @@ ability = {
 			supply_units = 168
 		}
 		
-		cost = 0.2
+		cost = 1000
 		duration = 168
 		cooldown = 504
 	}
