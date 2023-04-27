@@ -25,7 +25,7 @@ NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 2 	--Base cost to unlock a 
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 9999			
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 9999			
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 9999			
-NDefines.NMilitary.LAND_SPEED_MODIFIER = 1.00
+NDefines.NMilitary.LAND_SPEED_MODIFIER = 1.0
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 99;
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 99;
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 99;
@@ -77,3 +77,62 @@ NDefines.NOperatives.COUNTER_INTELLIGENCE_DAILY_XP_GAIN = 0.5
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.25
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.3
 
+NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.4			                -- how to weight in highest armor & pen vs the division average
+NDefines.NMilitary.PEN_VS_AVERAGE = 0.4
+
+NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.4
+
+NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT							= 0.3  -- vanilla was 0.1 -- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier 
+NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT							= 0.15 -- vanilla was 0.05 -- light gun attack value is divided by this value * 100 and added to shore bombardment modifier 
+NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0	
+
+
+
+---------------------------	
+NDefines.NCountry.RESISTANCE_STRENGTH_FROM_VP = 0.0
+NDefines.NCountry.RESISTANCE_STRENGTH_FROM_NEIGHBORS = 0.0
+NDefines.NCountry.RESISTANCE_DECAY_WHEN_NO_GROWTH = 100.0
+NDefines.NResistance.INITIAL_STATE_RESISTANCE = 0.0
+NDefines.NResistance.RESISTANCE_TARGET_BASE = 0.0
+NDefines.NResistance.RESISTANCE_DECAY_BASE = 10.0
+NDefines.NResistance.RESISTANCE_DECAY_MIN = 9.0
+NDefines.NResistance.RESISTANCE_DECAY_MAX = 100.0
+NDefines.NResistance.RESISTANCE_GROWTH_BASE = -10.0
+NDefines.NResistance.RESISTANCE_GROWTH_MIN = -10.0
+NDefines.NResistance.RESISTANCE_GROWTH_MAX = -100.0
+NDefines.NResistance.COMPLIANCE_GROWTH_BASE = 20.0
+NDefines.NResistance.COMPLIANCE_GROWTH_MIN = 0.0
+NDefines.NResistance.COMPLIANCE_GROWTH_MAX = 100.0
+
+	
+NDefines.NResistance.INITIAL_STATE_RESISTANCE = 0
+NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_HAS_CLAIM = 0
+
+NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_PER_STABILITY_LOSS = 0
+NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_PER_COMPLIANCE = 0
+	
+NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_IS_AT_PEACE = 0
+	
+NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_STATE_VP = {					-- resistance target modifier pairs for vp. first entry is total vp in state and second entry is amount of target modifier that applies for that threshold
+		0,   0.0, -- 0 - 5
+		0,   0.0, -- 5 - 20
+		0,  0.0, -- 20 - 50
+		0,  0.0, -- 50 - ...
+	}
+
+NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_OCCUPIED_CAPITULATED = 0.0
+NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_OCCUPIED_IS_EXILE_MIN = 0.0
+NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_OCCUPIED_IS_EXILE_MAX = 0.0
+
+NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_POP_LOW = 0.0
+NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_POP_VERY_LOW = 0.0
+	
+
+
+NDefines.NCountry.BASE_MAX_COMMAND_POWER = 500.0
+NDefines.NCountry.BASE_COMMAND_POWER_GAIN = 0.0015	
+
+
+
+NDefines.NMilitary.LAND_EQUIPMENT_BASE_COST = 100
+NDefines.NMilitary.LAND_EQUIPMENT_RAMP_COST = 100
