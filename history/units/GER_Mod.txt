@@ -10,7 +10,6 @@ division_template = {
 	name = "Grenadier Battalion" ###generalised version of Wehrmacht infantry batalion 1944, around 1300 men
 
 	division_names_group = GER_INFBAT_01
-    template_counter = "gfx/interface/counters/division_templates_large/custom_template_100"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -165,7 +164,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Medium Tank Destroyer Battalion ( Nashorn )" 
+	name = "Heavy Tank Destroyer Battalion ( Nashorn )" 
 
 	regiments = {
 		heavy_tank_destroyer_brigade = { x = 0 y = 0 }
@@ -304,6 +303,26 @@ division_template = {
 		engineer = { x = 0 y = 1 }
         maintenance_company = { x = 0 y = 2 }
         signal_company = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "Assault Gun Battalion" 
+
+	regiments = {
+		medium_sp_artillery_brigade = { x = 0 y = 0 }
+		medium_sp_artillery_brigade = { x = 0 y = 1 }
+		medium_sp_artillery_brigade = { x = 0 y = 2 }
+       	medium_sp_artillery_brigade = { x = 1 y = 0 }
+		medium_sp_artillery_brigade = { x = 1 y = 1 }
+		medium_sp_artillery_brigade = { x = 1 y = 2 }
+	}
+	
+	support = {
+        mot_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+        maintenance_company = { x = 0 y = 2 }
+        signal_company = { x = 0 y = 3 }
+		anti_air = { x = 0 y = 4 }
 	}
 }
 ## Tanks
@@ -1814,7 +1833,7 @@ division = {
 		start_experience_factor = 0.8
 		start_equipment_factor = 0.01
 }
-15. Armee - general Hans von Salmuth
+###################################################################################################### 15. Armee - general Hans von Salmuth
 ################################################################################### LXVII Armee-Korps - location: Naours - commanding general: Walther Fischer von Weikersthal
 ############################ 344. Infanterie-Division - general: Felix Schwalbe
 division = { 
@@ -2509,7 +2528,7 @@ division = {
 		location = 9761
 		division_template = "Heavy Tank Destroyer Battalion ( Nashorn )"
 		start_experience_factor = 0.6
-		start_equipment_factor
+		start_equipment_factor = 0.01
 }
 ################################################################################### LXXXIX Armee-Korps - location: Anvers - commanding general: Adolf-Friedrich Kuntzen
 ############################ 48. Infanterie-Division - general: Karl Casper
@@ -3089,7 +3108,310 @@ division = {
 
 
 ##################################################################################################### Panzergruppe West
-################################################################################### LVIII. Reserve-Panzerkorps	 - location: Nogent-le-Rotrou- commanding general: Wilhelm Fahrmbacher
+################################################################################### I. SS-Panzerkorps   - location: Septeuil - commanding general: Josef "Sepp" Dietrich
+division = { 
+	name = "Schwere SS Panzer Abteilung 101"
+		location = 4504
+		division_template = "Heavy Tank Battalion ( Tiger E )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+############################ 1. SS Panzer-Division Leibstandarte Adolf Hitler - general: Theodor Wisch
+division = { 
+	name = "I/SS Panzer-Regiment 1 /1. SS-PZ"
+		location = 8103
+		division_template = "Medium Tank Battalion ( Panzer IV )"
+		start_experience_factor = 1
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/SS Panzer-Regiment 1 /1. SS-PZ"
+		location = 8103
+		division_template = "Medium Tank Battalion ( Panther )"
+		start_experience_factor = 1
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "schw. Panzer-Kompanie/SS Panzer-Regiment 1 /1. SS-PZ"
+		location = 8103
+		division_template = "Heavy Tank Battalion ( Tiger E )"
+		start_experience_factor = 1
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/SS-Panzergrenadier Regiment 1 Leibstandarte Adolf Hitler/1. SS-PZ"
+		location = 8103
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/SS-Panzergrenadier Regiment 1 Leibstandarte Adolf Hitler/1. SS-PZ"
+		location = 8103
+		division_template = "Grenadier Battalion ( mot. )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/SS-Panzergrenadier Regiment 1 Leibstandarte Adolf Hitler/1. SS-PZ"
+		location = 8103
+		division_template = "Grenadier Battalion ( mot. )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/SS-Panzergrenadier Regiment 2 Leibstandarte Adolf Hitler/1. SS-PZ"
+		location = 8103
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/SS-Panzergrenadier Regiment 2 Leibstandarte Adolf Hitler/1. SS-PZ"
+		location = 8103
+		division_template = "Grenadier Battalion ( mot. )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/SS-Panzergrenadier Regiment 2 Leibstandarte Adolf Hitler/1. SS-PZ"
+		location = 8103
+		division_template = "Grenadier Battalion ( mot. )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/SS Panzer-Artillerie-Regiment 1/1. SS-PZ"
+		location = 8103
+		division_template = "Light SPG Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/SS Panzer-Artillerie-Regiment 1/1. SS-PZ"
+		location = 8103
+		division_template = "Medium SPG Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/SS Panzer-Artillerie-Regiment 1/1. SS-PZ"
+		location = 8103
+		division_template = "Motorized Artillery Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "IV/SS Panzer-Artillerie-Regiment 1/1. SS-PZ"
+		location = 8103
+		division_template = "Motorized Artillery Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "SS Sturmgeschütz-Abteilung 1/1. SS-PZ"
+		location = 8103
+		division_template = "Medium Tank Destroyer Battalion ( StuG )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "SS Panzerjäger-Abteilung 1/1. SS-PZ"
+		location = 8103
+		division_template = "Light Tank Destroyer Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+############################ 12. SS Panzer-Division Hitlerjugend - general: Fritz Witt
+division = { 
+	name = "I/SS Panzer-Regiment 12 /12. SS-PZ"
+		location = 2913
+		division_template = "Medium Tank Battalion ( Panzer IV )"
+		start_experience_factor = 1
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/SS Panzer-Regiment 12 /12. SS-PZ"
+		location = 2913
+		division_template = "Medium Tank Battalion ( Panther )"
+		start_experience_factor = 1
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/SS-Panzergrenadier Regiment 25/12. SS-PZ"
+		location = 2913
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/SS-Panzergrenadier Regiment 25/12. SS-PZ"
+		location = 2913
+		division_template = "Grenadier Battalion ( mot. )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/SS-Panzergrenadier Regiment 25/12. SS-PZ"
+		location = 2913
+		division_template = "Grenadier Battalion ( mot. )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/SS-Panzergrenadier Regiment 26/12. SS-PZ"
+		location = 2913
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/SS-Panzergrenadier Regiment 26/12. SS-PZ"
+		location = 2913
+		division_template = "Grenadier Battalion ( mot. )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/SS-Panzergrenadier Regiment 26/12. SS-PZ"
+		location = 2913
+		division_template = "Grenadier Battalion ( mot. )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/SS Panzer-Artillerie-Regiment 12/12. SS-PZ"
+		location = 2913
+		division_template = "Light SPG Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/SS Panzer-Artillerie-Regiment 12/12. SS-PZ"
+		location = 2913
+		division_template = "Medium SPG Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/SS Panzer-Artillerie-Regiment 12/12. SS-PZ"
+		location = 2913
+		division_template = "Motorized Artillery Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "SS Panzerjäger-Abteilung 12/12. SS-PZ"
+		location = 2913
+		division_template = "Medium Tank Destroyer Battalion ( Jagdpanzer )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+############################ 17. SS Panzergrenadier-Division Götz von Berlichingen - general: Werner Ostendorff
+division = { 
+	name = "SS Panzer-Abteilung 17 /17. SS-PZ"
+		location = 2797
+		division_template = "Medium Tank Destroyer Battalion ( StuG )"
+		start_experience_factor = 1
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/SS-Panzergrenadier Regiment 37/17. SS-PZ"
+		location = 2797
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/SS-Panzergrenadier Regiment 37/17. SS-PZ"
+		location = 2797
+		division_template = "Grenadier Battalion ( mot. )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/SS-Panzergrenadier Regiment 37/17. SS-PZ"
+		location = 2797
+		division_template = "Grenadier Battalion ( mot. )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/SS-Panzergrenadier Regiment 38/17. SS-PZ"
+		location = 2797
+		division_template = "Panzergrenadier Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/SS-Panzergrenadier Regiment 38/17. SS-PZ"
+		location = 2797
+		division_template = "Grenadier Battalion ( mot. )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/SS-Panzergrenadier Regiment 38/17. SS-PZ"
+		location = 2797
+		division_template = "Grenadier Battalion ( mot. )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/SS Artillerie-Regiment 17/17. SS-PZ"
+		location = 2797
+		division_template = "Motorized Artillery Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/SS Artillerie-Regiment 17/17. SS-PZ"
+		location = 2797
+		division_template = "Motorized Artillery Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/SS Artillerie-Regiment 17/17. SS-PZ"
+		location = 2797
+		division_template = "Motorized Artillery Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "SS Panzerjäger-Abteilung 17/17. SS-PZ"
+		location = 2797
+		division_template = "Light Tank Destroyer Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "SS Sturmgeschütz-Abteilung 17/17. SS-PZ"
+		location = 2797
+		division_template = "Assault Gun Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+################################################################################### LVIII. Reserve-Panzerkorps	 - location: Nogent-le-Rotrou - commanding general: Wilhelm Fahrmbacher
 ############################ 130. Panzer-Lehr-Division - general: Fritz Bayerlein
 division = { 
 	name = "I/Panzer-Lehr-Regiment 130/130. PZ"
@@ -3408,7 +3730,7 @@ division = {
 division = { 
 	name = "SS-Sturmgeschütz-Abteilung 9/9. SS-PZ"
 		location = 9655
-		division_template = "Medium Tank Destroyer Battalion ( StuG )"
+		division_template = "Assault Gun Battalion"
 		start_experience_factor = 0.6
 		start_equipment_factor = 0.01
 }
@@ -3499,42 +3821,42 @@ division = {
 		start_equipment_factor = 0.01
 }
 division = { 
-	name = "I/SS-Panzergrenadier Regiment 3. "Deutschland"/2. SS-PZ"
+	name = "I/SS-Panzergrenadier Regiment 3. Deutschland/2. SS-PZ"
 		location = 9653
 		division_template = "Panzergrenadier Battalion"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.01
 }
 division = { 
-	name = "II/SS-Panzergrenadier Regiment 3. "Deutschland"/2. SS-PZ"
+	name = "II/SS-Panzergrenadier Regiment 3. Deutschland/2. SS-PZ"
 		location = 9653
 		division_template = "Grenadier Battalion ( mot. )"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.01
 }
 division = { 
-	name = "III/SS-Panzergrenadier Regiment 3. "Deutschland"/2. SS-PZ"
+	name = "III/SS-Panzergrenadier Regiment 3. Deutschland/2. SS-PZ"
 		location = 9653
 		division_template = "Grenadier Battalion ( mot. )"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.01
 }
 division = { 
-	name = "I/SS-Panzergrenadier Regiment 4. "Der Führer"/2. SS-PZ"
+	name = "I/SS-Panzergrenadier Regiment 4. Der Führer/2. SS-PZ"
 		location = 9653
 		division_template = "Panzergrenadier Battalion"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.01
 }
 division = { 
-	name = "II/SS-Panzergrenadier Regiment 4. "Der Führer"/2. SS-PZ"
+	name = "II/SS-Panzergrenadier Regiment 4. Der Führer/2. SS-PZ"
 		location = 9653
 		division_template = "Grenadier Battalion ( mot. )"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.01
 }
 division = { 
-	name = "III/SS-Panzergrenadier Regiment 4. "Der Führer"/2. SS-PZ"
+	name = "III/SS-Panzergrenadier Regiment 4. Der Führer/2. SS-PZ"
 		location = 9653
 		division_template = "Grenadier Battalion ( mot. )"
 		start_experience_factor = 0.9
@@ -3656,7 +3978,7 @@ division = {
 division = { 
 	name = "Sturmgeschütz Abteilung 50/9. PZ"
 		location = 4527
-		division_template = "Medium Tank Destroyer Battalion ( StuG )"
+		division_template = "Assault Gun Battalion"
 		start_experience_factor = 0.6
 		start_equipment_factor = 0.01
 }
