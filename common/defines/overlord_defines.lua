@@ -6,7 +6,7 @@ NDefines.NDeployment.BASE_DEPLOYMENT_TRAINING = 10
 NDefines.NGame.GAME_SPEED_SECONDS = { 9.0, 2.5, 0.9, 0.1 , 0.0 }  -- game speeds for each level. Must be 5 entries with last one 0 for unbound
 NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 3.00
 NDefines.NCountry.STARTING_COMMAND_POWER = 75.0					-- starting command power for every country	
-					-- minimum value of supply consumption that a unit can get	
+NDefines.NCountry.SCORCHED_EARTH_STATE_COST	= 150
 
 NDefines.NSupply.CAPITAL_STARTING_PENALTY_PER_PROVINCE = 0.023 -- starting penalty that will be added as supply moves away from its origin (modified by stuff like terrain)
 NDefines.NSupply.CAPITAL_ADDED_PENALTY_PER_PROVINCE = 0.05 -- added penalty as we move away from origin

@@ -24,7 +24,13 @@ create_dynamic_country = {
 }
 1943.1.1 = { clr_country_flag = OKW_ww1_start_tag
 set_cosmetic_tag = GER_OBWEST
+
 oob="GER_Mod"
+
+
+
+
+
 #if = {
 #	limit = { has_dlc = "Man the Guns" }
 #		set_naval_oob = "AEF_1943_naval_mtg"
@@ -636,7 +642,7 @@ create_equipment_variant = {
 				special_type_slot_4 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 6
+				tank_nsb_engine_upgrade = 8
 				tank_nsb_armor_upgrade = 8
 			}
 			icon = "gfx/interface/technologies/GER_TigerE.dds"
@@ -658,8 +664,8 @@ create_equipment_variant = {
 				special_type_slot_4 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 8
-				tank_nsb_armor_upgrade = 14
+				tank_nsb_engine_upgrade = 10
+				tank_nsb_armor_upgrade = 16
 			}
 			icon = "gfx/interface/technologies/GER_KingTiger.dds"
 		}

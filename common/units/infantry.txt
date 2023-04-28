@@ -29,7 +29,7 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 15
+		max_strength = 12
 		max_organisation = 40
 		default_morale = 0.3
 		manpower = 100
@@ -309,7 +309,7 @@ hard_attack = 0.1
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
+		max_strength = 9
 		max_organisation = 45
 		default_morale = 0.30
 		manpower = 120
@@ -383,8 +383,8 @@ hard_attack = 0.1
 		hard_attack = 4.1
 		
 		#Size Definitions
-		max_strength = 30
-		max_organisation = 60
+		max_strength = 5
+		max_organisation = 50
 		default_morale = 0.3
 		manpower = 120
 
