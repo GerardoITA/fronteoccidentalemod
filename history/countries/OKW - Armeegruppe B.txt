@@ -4,8 +4,8 @@ capital = 132
 #oob = "GER_1943"
 
 add_threat = 100
-set_convoys = 5 
-add_manpower = -200000
+add_manpower = 250000
+set_convoys = 25 
 complete_national_focus = reset_1918_borders_focus
 1918.1.1 = { 
 create_dynamic_country = {
@@ -293,7 +293,7 @@ create_equipment_variant = {
 		}
 
 create_equipment_variant = {
-			name = "Flakpanzer IV Wirbelwind'"
+			name = "Flakpanzer IV Wirbelwind"
 			type = medium_tank_aa_chassis_2
 			parent_version = 0
 			modules = {
@@ -414,6 +414,69 @@ create_equipment_variant = {
 				tank_nsb_armor_upgrade = 0
 			}
 			icon = "gfx/interface/technologies/GER_Panzer3M.dds"
+		}
+	create_equipment_variant = {
+			name = "Panzer III Ausf. N"
+			type = medium_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_close_support_gun
+				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 7
+				tank_nsb_armor_upgrade = 0
+			}
+			icon = "gfx/interface/technologies/GER_Panzer3N.dds"
+		}
+	create_equipment_variant = {
+			name = "Somua S35"
+			type = medium_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_small_cannon_2
+				turret_type_slot = tank_medium_two_man_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 3
+				tank_nsb_armor_upgrade = 0
+			}
+			icon = "gfx/interface/technologies/GER_S35.dds"
+		}
+	create_equipment_variant = {
+			name = "Hotchkiss H35/39"
+			type = light_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_small_cannon
+				turret_type_slot = tank_light_two_man_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_cast_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 10
+				tank_nsb_armor_upgrade = 25
+			}
+			icon = "gfx/interface/technologies/GER_H35.dds"
 		}
 	create_equipment_variant = {
 			name = "Panzer IV Ausf. G"
