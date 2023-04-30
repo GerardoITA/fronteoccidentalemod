@@ -1,6 +1,9 @@
 ideas = {
-
+	hidden_ideas = {
+		
+	}
 	country = {
+
 berlin_support = {
 			
 			allowed = {
@@ -198,6 +201,27 @@ field_marshal_called_away = {
 
 				army_speed_factor = -0.05
 				army_org_factor = -0.03
+				
+			}
+		}
+german_counterattack = {
+			picture = GFX_idea_auftragstaktik
+			allowed = {
+				original_tag = OKW
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.5
+				army_speed_factor = 0.1
+				army_morale_factor = 0.4
+				army_org_factor	= 0.2
+				initiative_factor = 0.5
 				
 			}
 		}

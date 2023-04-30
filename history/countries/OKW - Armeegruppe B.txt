@@ -5,6 +5,9 @@ capital = 132
 
 add_threat = 100
 add_manpower = 250000
+
+
+
 set_convoys = 25 
 complete_national_focus = reset_1918_borders_focus
 1918.1.1 = { 
@@ -26,9 +29,12 @@ create_dynamic_country = {
 set_cosmetic_tag = GER_OBWEST
 
 oob="GER_Mod"
-
-
-
+add_manpower = 250000
+add_timed_idea = {
+    idea = start_production
+    days = 10
+}
+add_ideas = no_change_production
 
 
 #if = {
@@ -50,7 +56,7 @@ declare_war_on = {
 		target = AEF
 		type = annex_everything
 	}
-add_offsite_building = { type = arms_factory level = 150 }
+add_offsite_building = { type = arms_factory level = 247 }
 add_offsite_building = { type = industrial_complex level = 75 }
 
 set_variable = { var = influence_number
@@ -59,6 +65,10 @@ set_research_slots = 1
 set_stability = 0.6
 set_war_support = 0.7
 add_command_power = 120
+
+
+
+
 
 recruit_character = GER_gerd_von_rundstedt
 recruit_character = GER_erwin_rommel
@@ -188,10 +198,12 @@ radio_detection = 1
 	improved_machine_tools = 1
 	assembly_line_production = 1
 	improved_equipment_conversion = 1
+	flexible_line = 1
 	dispersed_industry = 1
 	dispersed_industry2 = 1
 	dispersed_industry3 = 1
 	dispersed_industry4 = 1
+	dispersed_industry5 = 1
 	fuel_refining2 = 1
 	fuel_refining3 = 1
 	synth_oil_experiments = 1
@@ -201,6 +213,7 @@ radio_detection = 1
 	construction2 = 1
 	construction3 = 1
 	construction4 = 1
+	construction5 = 1
 	interwar_artillery = 1
 	artillery1 = 1
 	artillery3 = 1
@@ -222,6 +235,7 @@ radio_detection = 1
 	rocket_artillery = 1
 	wartime_train = 1
 	armored_train = 1 	
+	railway_gun = 1
 	
 }
 if = {
@@ -256,17 +270,17 @@ if = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
 		advanced_light_tank_chassis = 1
-	basic_medium_tank_chassis  = 1
-	improved_medium_tank_chassis = 1
-	advanced_medium_tank_chassis = 1 
-	basic_heavy_tank_chassis = 1
-	improved_heavy_tank_chassis = 1
-	advanced_heavy_tank_chassis = 1
-	improved_light_tank_chassis = 1 
-	armor_tech_1 = 1 
-	armor_tech_2 = 1 
-	armor_tech_3 = 1 
-	engine_tech_1 = 1
+		basic_medium_tank_chassis  = 1
+		improved_medium_tank_chassis = 1
+		advanced_medium_tank_chassis = 1 
+		basic_heavy_tank_chassis = 1
+		improved_heavy_tank_chassis = 1
+		advanced_heavy_tank_chassis = 1
+		improved_light_tank_chassis = 1 
+		armor_tech_1 = 1 
+		armor_tech_2 = 1 
+		armor_tech_3 = 1 
+		engine_tech_1 = 1
 		engine_tech_2 = 1
 		engine_tech_3 = 1
 	}
@@ -410,7 +424,7 @@ create_equipment_variant = {
 				special_type_slot_4 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 9
+				tank_nsb_engine_upgrade = 6
 				tank_nsb_armor_upgrade = 12
 			}
 			icon = "gfx/interface/technologies/GER_Hetzer.dds"
@@ -431,7 +445,7 @@ create_equipment_variant = {
 				special_type_slot_4 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 7
+				tank_nsb_engine_upgrade = 9
 				tank_nsb_armor_upgrade = 5
 			}
 			icon = "gfx/interface/technologies/GER_Stuh42.dds"
@@ -452,7 +466,7 @@ create_equipment_variant = {
 				special_type_slot_4 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 7
+				tank_nsb_engine_upgrade = 10
 				tank_nsb_armor_upgrade = 0
 			}
 			icon = "gfx/interface/technologies/GER_Panzer3M.dds"
@@ -473,7 +487,7 @@ create_equipment_variant = {
 				special_type_slot_4 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 7
+				tank_nsb_engine_upgrade = 10
 				tank_nsb_armor_upgrade = 0
 			}
 			icon = "gfx/interface/technologies/GER_Panzer3N.dds"
@@ -620,8 +634,8 @@ create_equipment_variant = {
 				special_type_slot_4 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 7
-				tank_nsb_armor_upgrade = 2
+				tank_nsb_engine_upgrade = 10
+				tank_nsb_armor_upgrade = 10
 			}
 			icon = "gfx/interface/technologies/GER_Stug3F8.dds"
 		}
@@ -641,8 +655,8 @@ create_equipment_variant = {
 				special_type_slot_4 = armor_skirts
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 7
-				tank_nsb_armor_upgrade = 5
+				tank_nsb_engine_upgrade = 11
+				tank_nsb_armor_upgrade = 12
 			}
 			icon = "gfx/interface/technologies/GER_Stug3G.dds"
 		}
@@ -663,7 +677,7 @@ create_equipment_variant = {
 			}
 			upgrades = {
 				tank_nsb_engine_upgrade = 7
-				tank_nsb_armor_upgrade = 9
+				tank_nsb_armor_upgrade = 6
 			}
 			icon = "gfx/interface/technologies/GER_Stug4.dds"
 	}
@@ -706,7 +720,7 @@ create_equipment_variant = {
 			}
 			upgrades = {
 				tank_nsb_engine_upgrade = 7
-				tank_nsb_armor_upgrade = 6
+				tank_nsb_armor_upgrade = 5
 			}
 			icon = "gfx/interface/technologies/GER_Jagdpanther.dds"
 	}
@@ -747,8 +761,8 @@ create_equipment_variant = {
 				special_type_slot_4 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 8
-				tank_nsb_armor_upgrade = 8
+				tank_nsb_engine_upgrade = 7
+				tank_nsb_armor_upgrade = 10
 			}
 			icon = "gfx/interface/technologies/GER_TigerE.dds"
 		}
@@ -769,7 +783,7 @@ create_equipment_variant = {
 				special_type_slot_4 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 10
+				tank_nsb_engine_upgrade = 7
 				tank_nsb_armor_upgrade = 16
 			}
 			icon = "gfx/interface/technologies/GER_KingTiger.dds"
@@ -917,6 +931,21 @@ create_equipment_variant = {
 		}
 		icon = "gfx/interface/technologies/GER_Ju87D5.dds"
 	}
+	create_equipment_variant = {
+			name = "He 111 H16" 
+			type = medium_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+				fixed_auxiliary_weapon_slot_2 = empty
+				engine_type_slot = engine_3_2x
+				special_type_slot_1 = hmg_defense_turret_2x
+				special_type_slot_2 = hmg_defense_turret_2x
+				special_type_slot_3 = empty
+			}
+			icon = "gfx/interface/technologies/GER_He111H16.dds"
+		}
+
 	else = {
 		set_air_oob = "GER_1943_air_legacy"
 		set_technology = {
@@ -950,6 +979,187 @@ create_equipment_variant = {
 		}
 	}
 }
+### EQUIPMENT VARIANTS
+create_equipment_variant = {
+			name = "Sd.Kfz. 222"
+			type = armored_car_equipment_1
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/GER_Sdkfz222.tga"
+		}
+create_equipment_variant = {
+			name = "Sd.Kfz. 231"
+			type = armored_car_equipment_2
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/GER_Sdkfz231.tga"
+		}
+create_equipment_variant = {
+			name = "Sd.Kfz. 234 Puma"
+			type = armored_car_at_equipment
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/GER_Puma.tga"
+		}
+create_equipment_variant = {
+			name = "Sd.Kfz. 250"
+			type = mechanized_equipment_1
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/GER_Sdkfz250.tga"
+		}
+create_equipment_variant = {
+			name = "Sd.Kfz. 251"
+			type = mechanized_equipment_2
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/GER_Sdkfz251.tga"
+		}
+
+
+create_equipment_variant = {
+			name = "10.5 cm leFH 18/40"
+			type = artillery_equipment_1
+			parent_version = 0
+	
+		
+			icon = "gfx/interface/technologies/GER_Lefh18M.tga"
+		}
+create_equipment_variant = {
+			name = "15 cm sFH 18/40"
+			type = artillery_equipment_2
+			parent_version = 0
+	
+		
+			icon = "gfx/interface/technologies/GER_Sfh18.tga"
+		}
+create_equipment_variant = {
+			name = "21 cm Mörser 18"
+			type = artillery_equipment_3
+			parent_version = 0
+	
+		
+			icon = "gfx/interface/technologies/GER_Morser.tga"
+		}
+create_equipment_variant = {
+			name = "Opel Blitz"
+			type = motorized_equipment_1
+			parent_version = 0
+
+			icon = "gfx/interface/technologies/GER_OpelBlitz.tga"
+		}
+
+create_equipment_variant = {
+			name = "2 cm Flakvierling 38"
+			type = anti_air_equipment_1 
+			parent_version = 0
+	
+		
+			icon = "gfx/interface/technologies/GER_Flak38.tga"
+		}
+create_equipment_variant = {
+			name = "3.7 cm Flak 37"
+			type = anti_air_equipment_2 
+			parent_version = 0
+	
+		
+			icon = "gfx/interface/technologies/GER_Flak43.tga"
+		}
+create_equipment_variant = {
+			name = "8.8 cm Flak 36"
+			type = anti_air_equipment_3 
+			parent_version = 0
+	
+		
+			icon = "gfx/interface/technologies/GER_88mm.tga"
+		}
+create_equipment_variant = {
+			name = "5 cm Pak 38"
+			type = anti_tank_equipment_1 
+			parent_version = 0
+	
+		
+			icon = "gfx/interface/technologies/GER_Pak38.tga"
+		}
+create_equipment_variant = {
+			name = "7.5 cm Pak 40"
+			type = anti_tank_equipment_2 
+			parent_version = 0
+	
+		
+			icon = "gfx/interface/technologies/GER_Pak40.tga"
+		}
+create_equipment_variant = {
+			name = "8.8 cm Pak 43"
+			type = anti_tank_equipment_3 
+			parent_version = 0
+	
+		
+			icon = "gfx/interface/technologies/GER_Pak43.tga"
+		}
+create_equipment_variant = {
+			name = "MG-42/Stielhandgranate 24/Panzerfaust"
+			type = support_equipment_1
+			parent_version = 0
+	
+		
+			icon = "gfx/interface/technologies/SupportEquipment.tga"
+		}
+create_equipment_variant = {
+			name = "Karabiner 98k"
+			type = infantry_equipment_1
+			parent_version = 0
+	
+		
+			icon = "gfx/interface/technologies/GER_K98.tga"
+		}
+create_equipment_variant = {
+			name = "Maschinenpistole 40"
+			type = infantry_equipment_2
+			parent_version = 0
+	
+		
+			icon = "gfx/interface/technologies/GER_MP40.tga"
+		}
+		
+### STOCKPILE 
+
+
+add_equipment_to_stockpile = { type = support_equipment_1   variant_name = "MG-42/Stielhandgranate 24/Panzerfaust"   amount = 4300 }
+add_equipment_to_stockpile = { type = motorized_equipment_1 	variant_name = "Opel Blitz" amount = 6900 }
+add_equipment_to_stockpile = { type = train_equipment_3      amount = 420 }
+add_equipment_to_stockpile = { type = train_equipment_2      amount = 590 }
+add_equipment_to_stockpile = { type = train_equipment_1     amount = 4975 }
+
+add_equipment_to_stockpile = { type = anti_air_equipment_1   variant_name = "2 cm Flakvierling 38" amount = 640 }
+add_equipment_to_stockpile = { type = anti_air_equipment_2   variant_name = "3.7 cm Flak 37" amount = 355 }
+add_equipment_to_stockpile = { type = anti_air_equipment_3   variant_name = "8.8 cm Flak 36" amount = 205 }
+
+
+add_equipment_to_stockpile = { type = anti_tank_equipment_1  variant_name = "5 cm Pak 38"  amount = 437 }
+add_equipment_to_stockpile = { type = anti_tank_equipment_2   variant_name = "7.5 cm Pak 40" amount = 838 }
+add_equipment_to_stockpile = { type = anti_tank_equipment_3  variant_name = "8.8 cm Pak 43"  amount = 38 }
+
+add_equipment_to_stockpile = { type = artillery_equipment_1  variant_name = "10.5 cm leFH 18/40"  amount = 1932 }
+add_equipment_to_stockpile = { type = artillery_equipment_2  variant_name = "15 cm sFH 18"  amount = 779 }
+add_equipment_to_stockpile = { type = artillery_equipment_3   variant_name = "21 cm Mörser 18" amount = 115 }
+
+add_equipment_to_stockpile = { type = infantry_equipment_1  variant_name = "Karabiner 98k"  amount = 59232 }
+add_equipment_to_stockpile = { type = infantry_equipment_2  variant_name = "Maschinenpistole 40"  amount = 14550 }
+
+add_equipment_to_stockpile = { type = armored_car_equipment_1  variant_name = "Sd.Kfz. 222"  amount = 238 }
+add_equipment_to_stockpile = { type = armored_car_equipment_2   variant_name = "Sd.Kfz. 231" amount = 132 }
+add_equipment_to_stockpile = { type = armored_car_at_equipment   variant_name = "Sd.Kfz. 234 Puma" amount = 84 }
+
+add_equipment_to_stockpile = { type = mechanized_equipment_1  variant_name = "Sd.Kfz. 250" amount = 327 }
+add_equipment_to_stockpile = { type = mechanized_equipment_2  variant_name = "Sd.Kfz. 251" amount = 922 }
+
+
 }
 1944.6.6.7 = { drop_cosmetic_tag = yes 
 	remove_country_leader_role = {

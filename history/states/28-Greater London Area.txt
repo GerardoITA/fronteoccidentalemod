@@ -4,11 +4,11 @@ state={
 	name="STATE_28"
 	resources={
 		oil=1150.000
-		aluminium=100.000
-		rubber=100.000
-		tungsten=75.000
-		steel=150.000
-		chromium=75.000
+		aluminium=3900.000
+		rubber=2400.000
+		tungsten=4075.000
+		steel=15000.000
+		chromium=7500.000
 	}
 
 	history={

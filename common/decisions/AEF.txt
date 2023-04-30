@@ -41,7 +41,7 @@ AEF_collapse_decision = {
 	
    check_variable = {
    cohesion_number < 1
-}
+	}
 
     }
     available = {
@@ -442,11 +442,8 @@ usaf_arrival = { ##
 		fire_only_once = yes # Will not re-enable after being removed
 		cost = 50
 
-		complete_effect = {  if = {
-	limit = { has_dlc = "By Blood Alone" }
-load_oob = "AEF_USAF_BBA" }
-else = { load_oob = "AEF_USAF_LEGACY" }
-	}
+		complete_effect = {  
+		}
 
 
 		ai_will_do = {
@@ -456,6 +453,71 @@ else = { load_oob = "AEF_USAF_LEGACY" }
 		
 		}
 	}
+develop_jackson = { ##
+
+		icon = generic_decision
+
+		available = {
+		
+			date > 1944.9.1
+		 
+		}
+
+		visible = {
+				always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 125
+
+		complete_effect = {
+			
+			create_equipment_variant = {
+				name = "M36 Jackson"
+				type = medium_tank_destroyer_chassis_2
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_heavy_cannon_2
+					turret_type_slot = tank_medium_fixed_superstructure_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_1
+					special_type_slot_2 = smoke_launchers
+					special_type_slot_3 = easy_maintenance
+					special_type_slot_4 = empty
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 2
+					tank_nsb_armor_upgrade = 17
+				}
+				icon = "gfx/interface/technologies/AEF_Jackson.dds"
+			}
+
+			add_offsite_building = { type = arms_factory level = 15 }
+			add_equipment_production = { equipment = { type = medium_tank_destroyer_chassis_2 creator = "AEF" version_name = "M36 Jackson" } requested_factories = 15 progress = 0.1 efficiency = 100 }
+			##add_timed_idea = {
+			##	idea = start_production
+			##	days = 3
+			##}
+
+
+
+		}
+
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	} 
 negate_submarine_menace = { ##
 
 		icon = generic_decision

@@ -48,6 +48,9 @@ if = {
 	} add_ideas = { vanilla_ultra_intercepts }
 }
 
+add_ideas = no_change_production
+
+
 
 upgrade_intelligence_agency = upgrade_economy_civilian
 upgrade_intelligence_agency = upgrade_army_department
@@ -275,7 +278,6 @@ set_popularities = {
 	antiair2 = 1
 	antiair3 = 1
 	antiair4 = 1
-	antiair5 = 1
 	interwar_antitank = 1
 	antitank1 = 1
 	antitank2 = 1
@@ -456,7 +458,7 @@ create_equipment_variant = {
 				special_type_slot_4 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 25
+				tank_nsb_engine_upgrade = 5
 				tank_nsb_armor_upgrade = 30
 			}
 			icon = "gfx/interface/technologies/AEF_Churchill.dds"
@@ -477,7 +479,7 @@ create_equipment_variant = {
 				special_type_slot_4 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 7
+				tank_nsb_engine_upgrade = 10
 			}
 			icon = "gfx/interface/technologies/AEF_Wolverine.dds" 
 		}
@@ -518,7 +520,7 @@ create_equipment_variant = {
 				special_type_slot_4 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 5
+				tank_nsb_engine_upgrade = 9
 			}
 			icon = "gfx/interface/technologies/AEF_Archer.dds" 
 		}
@@ -575,7 +577,7 @@ create_equipment_variant = {
 			engine_type_slot = tank_gasoline_engine
 		}
 		upgrades = {
-			tank_nsb_engine_upgrade = 8
+			tank_nsb_engine_upgrade = 5
 		}
 		icon = "gfx/interface/technologies/AEF_Stuart.dds"
 	}

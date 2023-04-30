@@ -19,7 +19,6 @@ overlord_not_approved = { #HIDDEN. REMOVED WHEN OVERLORD IS APPROVED. CANT INVAD
 				naval_invasion_prep_speed = -999
 			}
 		}
-
 aef_ai_invasion_reduction = { #ai_invasion_reduction
 			
 			allowed = {

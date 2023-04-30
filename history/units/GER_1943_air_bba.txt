@@ -1,18 +1,23 @@
 air_wings = {
 ###570 PLANES IN TOTAL. WITH 900 IN GERMANY.
 20 = { 
-small_plane_airframe_2 =  { owner = "OKW"	amount = 48 creator = "OKW" version_name = "Fw 190 A-8" }	
+small_plane_airframe_2 =  { owner = "OKW"	amount = 50 creator = "OKW" version_name = "Fw 190A-5"}	
+small_plane_airframe_2 =  { owner = "OKW"	amount = 50 creator = "OKW" version_name = "Fw 190A-5"}
+small_plane_airframe_2 =  { owner = "OKW"	amount = 50 creator = "OKW" version_name = "Fw 190A-8"}
+small_plane_airframe_2 =  { owner = "OKW"	amount = 50 creator = "OKW" version_name = "Fw 190A-8"}
 
-small_plane_airframe_1 =  { owner = "OKW"	amount = 48 creator = "OKW" version_name = "Bf 109 G" }
+small_plane_airframe_1 =  { owner = "OKW"	amount = 50 creator = "OKW" version_name = "Bf 109G-2" }
+small_plane_airframe_1 =  { owner = "OKW"	amount = 50 creator = "OKW" version_name = "Bf 109G-2" }
+small_plane_airframe_1 =  { owner = "OKW"	amount = 50 creator = "OKW" version_name = "Bf 109G-6" }
+small_plane_airframe_1 =  { owner = "OKW"	amount = 50 creator = "OKW" version_name = "Bf 109G-6" }
 
-small_plane_airframe_2 =  { owner = "OKW"	amount = 48 creator = "OKW" version_name = "Fw 190 A-8" }
+medium_plane_fighter_airframe_1 =  { owner = "OKW"	amount = 50 creator = "OKW" version_name = "Bf 110" }
 
-small_plane_airframe_1 =  { owner = "OKW"	amount = 48 creator = "OKW" version_name = "Bf 109 G" }
+small_plane_cas_airframe_1 =  { owner = "OKW"	amount = 50 creator = "OKW" version_name = "Ju 87D5" }
+small_plane_cas_airframe_1 =  { owner = "OKW"	amount = 50 creator = "OKW" version_name = "Ju 87D5" }
 
-small_plane_airframe_2 =  { owner = "OKW"	amount = 48 creator = "OKW" version_name = "Fw 190 A-8" }
-
-small_plane_airframe_1 =  { owner = "OKW"	amount = 48 creator = "OKW" version_name = "Bf 109 G" }
-
+medium_plane_airframe_1 =  { owner = "OKW"	amount = 50 creator = "OKW" version_name = "He 111 H16" }
+medium_plane_airframe_1 =  { owner = "OKW"	amount = 50 creator = "OKW" version_name = "He 111 H16" }
 
 }
  }

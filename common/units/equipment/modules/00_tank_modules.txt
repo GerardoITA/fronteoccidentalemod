@@ -234,7 +234,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 2
 			breakthrough = 7
-			defense = 5
+			defense = 2
 			
 		}
 		dismantle_cost_ic = 0.5
@@ -273,7 +273,7 @@ equipment_modules = {
 			build_cost_ic = 4
 			maximum_speed = -0.25
 			breakthrough = 14
-			defense = 10
+			defense = 8
 		}
 		dismantle_cost_ic = 0.5
 		xp_cost = 999 ## 2
@@ -358,7 +358,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 6
 			breakthrough = 16
-			defense = 12
+			defense = 10
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 999 ## 2
@@ -381,7 +381,7 @@ equipment_modules = {
 			build_cost_ic = 8
 			maximum_speed = -0.25
 			breakthrough = 24
-			defense = 16
+			defense = 11
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 999 ## 2
@@ -449,7 +449,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 20
 			breakthrough = 18
-			defense = 15
+			defense = 11
 		}
 
 		multiply_stats = {
@@ -476,7 +476,7 @@ equipment_modules = {
 			build_cost_ic = 22
 			maximum_speed = -0.25
 			breakthrough = 22
-			defense = 17
+			defense = 12
 		}
 
 		multiply_stats = {
@@ -537,7 +537,7 @@ equipment_modules = {
 			build_cost_ic = 32
 			reliability = -0.1
 			maximum_speed = -0.2
-			breakthrough = 24
+			breakthrough = 12
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 999 ## 2
@@ -1134,12 +1134,13 @@ equipment_modules = {
 		allow_equipment_type = anti_tank
 
 		add_stats = {
-			soft_attack = 35
-			hard_attack = 45
-			ap_attack = 225
-			build_cost_ic = 50
-			maximum_speed = -0.6
-			reliability = -0.35
+			soft_attack = 45
+			hard_attack = 80
+			ap_attack = 315
+			build_cost_ic = 32
+			maximum_speed = -0.5
+			reliability = -0.3
+			defense = 12
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 999 ## 1

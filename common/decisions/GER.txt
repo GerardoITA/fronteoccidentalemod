@@ -1,3 +1,6 @@
+
+
+
 hitlers_influence = { 
 influence_rock_bottom_time_hitlers_rage = {
     activation = {
@@ -997,7 +1000,7 @@ the_allies_have_landed = { ##WHEN ALLIES INITIALLY LAND. YOU GET SOME TROOPS TO 
 		icon = generic_decision
 
 		available = {
-			any_state = { is_owned_by = OKW is_controlled_by = AEF }
+			always = yes
 				 }
 
 		visible = {
@@ -1011,219 +1014,52 @@ the_allies_have_landed = { ##WHEN ALLIES INITIALLY LAND. YOU GET SOME TROOPS TO 
 		fire_only_once = yes # Will not re-enable after being removed
 		cost = 0
 
-		complete_effect = { }
+		complete_effect = {
+			##set_country_flag = fifth_panzer_army_deployed
+			## Railway Guns
+			create_railway_gun = {
+			    equipment = railway_gun_equipment_1
+				name = "28,3 cm Krupp K5 'Leopold'"
+				location = 4537
+			}
+			create_railway_gun = {
+			    equipment = railway_gun_equipment_1
+				name = "28,3 cm Krupp K5 'Wilhelm'"
+				location = 4537
+			}
 
-		days_remove = 2
+			##add_equipment_to_stockpile = { type = light_tank_chassis_3 variant_name = "Panzer II 'Luchs'" amount = 124 }
+			##add_equipment_to_stockpile = { type = medium_tank_aa_chassis_2 variant_name = "Flakpanzer IV Wirbelwind" amount = 164  }
+			##add_equipment_to_stockpile = { type = medium_tank_artillery_chassis_2 variant_name = "Hummel" amount = 138  }
+			##add_equipment_to_stockpile = { type = light_tank_artillery_chassis_2 variant_name = "Wespe" amount = 231 }
+			##add_equipment_to_stockpile = { type = light_tank_destroyer_chassis_1 variant_name = "Marder II" amount = 115 }
+			##add_equipment_to_stockpile = { type = light_tank_destroyer_chassis_2 variant_name = "Marder III" amount = 362 }
+			##add_equipment_to_stockpile = { type = medium_tank_artillery_chassis_1 variant_name = "Sturmhaubitze 42" amount = 74 }
+			##add_equipment_to_stockpile = { type = medium_tank_chassis_1 variant_name = "Panzer III Ausf. M" amount = 45  }
+			##add_equipment_to_stockpile = { type = medium_tank_chassis_1 variant_name = "Panzer III Ausf. N" amount = 49  }
+			##add_equipment_to_stockpile = { type = medium_tank_chassis_1 variant_name = "Somua S35" amount = 68  }
+			##add_equipment_to_stockpile = { type = light_tank_chassis_1 variant_name = "Hotchkiss H35/39" amount = 122 }
+			##add_equipment_to_stockpile = { type = medium_tank_chassis_2 variant_name = "Panzer IV Ausf. G" amount = 353 }
+			##add_equipment_to_stockpile = { type = medium_tank_chassis_2 variant_name = "Panzer IV Ausf. H" amount = 728 }	
+			##add_equipment_to_stockpile = { type = medium_tank_chassis_3 variant_name = "Panther Ausf. A" amount = 413 }
+			##add_equipment_to_stockpile = { type = medium_tank_destroyer_chassis_1 variant_name = "StuG III Ausf. F8" amount = 272 }
+			##add_equipment_to_stockpile = { type = medium_tank_destroyer_chassis_1 variant_name = "StuG III Ausf. G" amount = 344  }	
+			##add_equipment_to_stockpile = { type = medium_tank_destroyer_chassis_2 variant_name = "StuG IV" amount = 82 }
+			##add_equipment_to_stockpile = { type = medium_tank_destroyer_chassis_3 variant_name = "Jagdpanzer IV/70" amount = 129 }
+			##add_equipment_to_stockpile = { type = heavy_tank_destroyer_chassis_2 variant_name = "Jagdpanzer V Jagdpanther" amount = 33 }
+			##add_equipment_to_stockpile = { type = heavy_tank_destroyer_chassis_1 variant_name = "Nashorn" amount = 32 }
+			##add_equipment_to_stockpile = { type = heavy_tank_chassis_2 variant_name = "Tiger Ausf. E" amount = 127 }
+			##add_equipment_to_stockpile = { type = heavy_tank_chassis_3 variant_name = "Tiger Ausf. B" amount = 45 }
+		
+
+		 }	
+
+		days_remove = 1
 		remove_effect = {  
-set_country_flag = fifth_panzer_army_deployed
-###5TH PANZER ARMY DEPLOYED TO NORMANDY
-###LXVII ARMY CORPS
-####348 INF DIV
-custom_effect_tooltip = allies_have_landed_ger_effect
-hidden_effect = { 
-20 = {
-create_unit = {
-    division = "name = \"Grenadier-Regiment 863\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Grenadier-Regiment 864\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Grenadier-Regiment 1057\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} }
-capital_scope = { create_unit = {
-    division = "name = \"Grenadier-Regiment 1058\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-   division = "name = \"Grenadier-Regiment 1040\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-   division = "name = \"Grenadier-Regiment 1041\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-   division = "name = \"Grenadier-Regiment 1042\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-# 1040, 1041, 1042
+			##custom_effect_tooltip = allies_have_landed_ger_effect
 
-create_unit = {
-    division = "name = \"Sicherungs-Regiment 5\" division_template = \"Security Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-
-######LXXXVI ARMY CORPS
-###276 INF DIV
-create_unit = {
-    division = "name = \"Grenadier-Regiment 986\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Grenadier-Regiment 987\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Grenadier-Regiment 988\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-
-###159 INF DIV
-create_unit = {
-    division = "name = \"Grenadier-Regiment 1209\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Grenadier-Regiment 1210\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Grenadier-Regiment 1211\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-
-###346 INF
-create_unit = {
-    division = "name = \"Grenadier-Regiment 857\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Grenadier-Regiment 858\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-
-
-####744 INF
-create_unit = {
-    division = "name = \"Grenadier-Regiment 731\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Grenadier-Regiment 744\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Grenadier-Regiment 763\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-
-###1 SS PZ K
-##716
-
-create_unit = {
-    division = "name = \"Grenadier-Regiment 726\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Grenadier-Regiment 736\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-##Panzer lehr div
-
-create_unit = {
-    division = "name = \"I/Pzr-Lehr-Reg. 130\" division_template = \"Panzer Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"II/Pzr-Lehr-Reg. 130\" division_template = \"Panzer Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-
-} 
-create_unit = {
-    division = "name = \"I/PzGren-Lehr-Reg. 901\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"II/PzGren-Lehr-Reg. 902\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Pzr-Artillerie-Reg. 130\" division_template = \"SPG Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-###12 SS PZ
-create_unit = {
-    division = "name = \"SS-Panzerregiment 12\" division_template = \"Panzer Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-	
-} 
-create_unit = {
-    division = "name = \"SS-Panzergrenadierregiment 26\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"SS-Panzergrenadierregiment 25\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-	
-} 
-##21st PZ
-create_unit = {
-    division = "name = \"I/Panzer-Regiment 100\" division_template = \"Panzer Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-	
-} 
-create_unit = {
-    division = "name = \"II/Panzer-Regiment 100\" division_template = \"Panzer Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-	
-} 
-create_unit = {
-    division = "name = \"I/Panzergrenadier-Regiment 125\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"II/Panzergrenadier-Regiment 125\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-	
-} 
-create_unit = {
-    division = "name = \"Pzr-Artillerie-Reg. 155\" division_template = \"SPG Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"SS-PzGren-Regiment 35\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"SS-PzGren-Regiment 36\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-	
-} 
-####2SS PZ K
-#9 SS PZ
-create_unit = {
-    division = "name = \"SS-Panzerregiment 9\" division_template = \"Panzer Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-
-} 
-create_unit = {
-    division = "name = \"SS-Panzergrenadierregiment 19\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"SS-Panzergrenadierregiment 20\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-	
-} 
-
-create_unit = {
-    division = "name = \"Pzr-Artillerie-Reg. 9\" division_template = \"SPG Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-}
-
-
-}
-
-
-
-
-
-
-} }
+		
+		}
 
 		ai_will_do = {
 			base = 100
@@ -1232,13 +1068,145 @@ create_unit = {
 		
 		}
 	} 
+
+##OOB_1 = { 
+##
+##		icon = generic_decision
+##
+##		available = {
+##			always = yes
+##				 }
+##
+##		visible = {
+##		always = yes
+##		}
+##
+##
+##		modifier = {
+##		
+##		}	
+##		fire_only_once = yes # Will not re-enable after being removed
+##		cost = 0
+##
+##		complete_effect = {
+##
+##			add_equipment_to_stockpile = { type = medium_tank_chassis_3 variant_name = "Panther Ausf. G" amount = 85 }	
+##			##add_equipment_to_stockpile = { type = light_tank_chassis_3 variant_name = "Panzer II 'Luchs'" amount = 124 }
+##			##add_equipment_to_stockpile = { type = medium_tank_aa_chassis_2 variant_name = "Flakpanzer IV Wirbelwind" amount = 164  }
+##			##add_equipment_to_stockpile = { type = medium_tank_artillery_chassis_2 variant_name = "Hummel" amount = 138  }
+##			##add_equipment_to_stockpile = { type = light_tank_artillery_chassis_2 variant_name = "Wespe" amount = 231 }
+##			##add_equipment_to_stockpile = { type = light_tank_destroyer_chassis_1 variant_name = "Marder II" amount = 115 }
+##			##
+##			##add_equipment_to_stockpile = { type = medium_tank_artillery_chassis_1 variant_name = "Sturmhaubitze 42" amount = 74 }
+##			##
+##			##add_equipment_to_stockpile = { type = medium_tank_chassis_1 variant_name = "Panzer III Ausf. N" amount = 49  }
+##			##
+##			##add_equipment_to_stockpile = { type = light_tank_chassis_1 variant_name = "Hotchkiss H35/39" amount = 122 }
+##			##add_equipment_to_stockpile = { type = medium_tank_chassis_2 variant_name = "Panzer IV Ausf. G" amount = 353 }
+##			##	
+##			##add_equipment_to_stockpile = { type = medium_tank_chassis_3 variant_name = "Panther Ausf. A" amount = 413 }
+##			##	
+##			##add_equipment_to_stockpile = { type = medium_tank_destroyer_chassis_1 variant_name = "StuG III Ausf. F8" amount = 272 }
+##			##	
+##			##add_equipment_to_stockpile = { type = medium_tank_destroyer_chassis_3 variant_name = "Jagdpanzer IV/70" amount = 129 }
+##			##add_equipment_to_stockpile = { type = heavy_tank_destroyer_chassis_2 variant_name = "Jagdpanzer V Jagdpanther" amount = 33 }
+##			##add_equipment_to_stockpile = { type = heavy_tank_destroyer_chassis_1 variant_name = "Nashorn" amount = 32 }
+##			##add_equipment_to_stockpile = { type = heavy_tank_chassis_2 variant_name = "Tiger Ausf. E" amount = 127 }
+##			##add_equipment_to_stockpile = { type = heavy_tank_chassis_3 variant_name = "Tiger Ausf. B" amount = 45 }
+##		
+##
+##		 }	
+##
+##		remove_effect = {  
+##			}
+##
+##		ai_will_do = {
+##			base = 100
+##			
+##			
+##		
+##		}
+##	}
+##OOB_2 = { 
+##
+##		icon = generic_decision
+##
+##		available = {
+##			always = yes
+##				 }
+##
+##		visible = {
+##		always = yes
+##		}
+##
+##
+##		modifier = {
+##		
+##		}	
+##		fire_only_once = yes # Will not re-enable after being removed
+##		cost = 0
+##
+##		complete_effect = {
+##			
+##			add_equipment_to_stockpile = { type = light_tank_destroyer_chassis_2 variant_name = "Marder III" amount = 362 }
+##			add_equipment_to_stockpile = { type = medium_tank_chassis_1 variant_name = "Panzer III Ausf. M" amount = 45  }
+##			add_equipment_to_stockpile = { type = medium_tank_chassis_2 variant_name = "Panzer IV Ausf. H" amount = 728 }
+##		 }	
+##
+##		remove_effect = {  
+##			}
+##
+##		ai_will_do = {
+##			base = 100
+##			
+##			
+##		
+##		}
+##	}
+##OOB_3 = { 
+##
+##		icon = generic_decision
+##
+##		available = {
+##			always = yes
+##				 }
+##
+##		visible = {
+##		always = yes
+##		}
+##
+##
+##		modifier = {
+##		
+##		}	
+##		fire_only_once = yes # Will not re-enable after being removed
+##		cost = 0
+##
+##		complete_effect = {
+##			
+##			add_equipment_to_stockpile = { type = medium_tank_chassis_1 variant_name = "Somua S35" amount = 68  }
+##			add_equipment_to_stockpile = { type = medium_tank_chassis_3 variant_name = "Panther Ausf. G" amount = 85 }
+##			add_equipment_to_stockpile = { type = medium_tank_destroyer_chassis_1 variant_name = "StuG III Ausf. G" amount = 344  }
+##			add_equipment_to_stockpile = { type = medium_tank_destroyer_chassis_2 variant_name = "StuG IV" amount = 82 }
+##		 }	
+##
+##		remove_effect = {  
+##			}
+##
+##		ai_will_do = {
+##			base = 100
+##			
+##			
+##		
+##		}
+##	}
 fall_of_paris = { ##WHEN ALLIES TAKE PARIS
 
 		icon = generic_decision
 
 		available = {
 			20 = {  is_controlled_by = AEF }
-				 }
+		}
 
 		visible = {
 		always = yes
@@ -1250,187 +1218,14 @@ fall_of_paris = { ##WHEN ALLIES TAKE PARIS
 		
 		}	
 		fire_only_once = yes # Will not re-enable after being removed
-		cost = 0
+		cost = 100
 
-		complete_effect = {  }
-
-		days_remove = 2
-		remove_effect = { 
-###1FALLSCIRARMEE
-#II FALLSCHIRMARMEEKORPS, WHAT ISNT DEPLOYED NOW IS.
-capital_scope = { 
-##17SS PZGREN DV
-create_unit = {
-    division = "name = \"I/SS-PzGren-Reg. 37\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"II/SS-PzGren-Reg. 37\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"I/SS-PzGren-Reg. 38\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"II/SS-PzGren-Reg. 38\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-###352 inf
-create_unit = {
-    division = "name = \"Grenadier-Regiment 914\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Grenadier-Regiment 915\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Grenadier-Regiment 916\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-
-create_unit = {
-    division = "name = \"Grenadier-Regiment 984\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-}  
-###11 panzer
-create_unit = {
-    division = "name = \"I/Panzer-Regiment 15\" division_template = \"Panzer Battalion\" start_experience_factor = 0.3"
-    owner = OKW }
-
-create_unit = {
-    division = "name = \"II/Panzer-Regiment 15\" division_template = \"Panzer Battalion\" start_experience_factor = 0.3"
-    owner = OKW }
-
-create_unit = {
-    division = "name = \"I/Panzergrenadier-Regiment 110\" division_template = \"Infantry Battalion (mot.)\" start_experience_factor = 0.2"
-    owner = OKW }
-
-create_unit = {
-    division = "name = \"I/Panzergrenadier-Regiment 111\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"II/Panzergrenadier-Regiment 110\" division_template = \"Infantry Battalion (mot.)\" start_experience_factor = 0.2"
-    owner = OKW
-	
-} 
-create_unit = {
-    division = "name = \"II/Panzergrenadier-Regiment 111\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Pzr-Artillerie-Reg. 119\" division_template = \"SPG Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-###36 inf
- create_unit = {
-    division = "name = \"Grenadier-Regiment 87\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Grenadier-Regiment 118\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-##48 inf
- create_unit = {
-    division = "name = \"Grenadier-Regiment 126\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Grenadier-Regiment 127\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-}
-create_unit = {
-    division = "name = \"Grenadier-Regiment 128\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-}
-###fallschjirmjager div 
-create_unit = {
-    division = "name = \"I/Fallschirmjäger-Regiment 5\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.5"
-    owner = OKW
-	
-} 
-create_unit = {
-    division = "name = \"II/Fallschirmjäger-Regiment 5\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.5"
-    owner = OKW
-	
-} 
-create_unit = {
-    division = "name = \"III/Fallschirmjäger-Regiment 5\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.5"
-    owner = OKW
-	
-} 
-####regiment 8
-create_unit = {
-    division = "name = \"I/Fallschirmjäger-Regiment 8\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.5"
-    owner = OKW
-	
-} 
-create_unit = {
-    division = "name = \"II/Fallschirmjäger-Regiment 8\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.5"
-    owner = OKW
-	
-} 
-create_unit = {
-    division = "name = \"III/Fallschirmjäger-Regiment 8\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.5"
-    owner = GER
-	
-} 
-create_unit = {
-    division = "name = \"I/Fallschirmjäger-Regiment 9\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.5"
-    owner = OKW
-	
-} 
-create_unit = {
-    division = "name = \"II/Fallschirmjäger-Regiment 9\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.5"
-    owner = OKW
-	
-} 
-create_unit = {
-    division = "name = \"III/Fallschirmjäger-Regiment 9\" division_template = \"Fallschirmjäger Battalion\" start_experience_factor = 0.5"
-    owner = OKW
-	
-} 
-###275
-create_unit = {
-    division = "name = \"Grenadier-Regiment 983\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Grenadier-Regiment 984\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Grenadier-Regiment 985\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-###344 INF DIV
-create_unit = {
-    division = "name = \"Grenadier-Regiment 1057\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-
-create_unit = {
-    division = "name = \"Grenadier-Regiment 1058\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-####226inf
-create_unit = {
-    division = "name = \"Grenadier-Regiment 1040\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-
-
-
-
-
-
-}
-
-}
-
+		complete_effect = {  
+			add_timed_idea = {
+				idea = german_counterattack
+				days = 7
+			}	
+		}
 		ai_will_do = {
 			base = 100
 			
@@ -1443,10 +1238,14 @@ create_unit = {
 fall_of_brussels = { ##WHEN ALLIES TAKE BRUSSELS 
 
 		icon = generic_decision
-
 		available = {
-			20 = {  is_controlled_by = AEF }
-				 }
+			OR = {
+				13 = {  is_controlled_by = AEF }
+				75 = {  is_controlled_by = AEF }
+				79 = {  is_controlled_by = AEF }
+			}
+			
+		}
 
 		visible = {
 		always = yes
@@ -1458,38 +1257,14 @@ fall_of_brussels = { ##WHEN ALLIES TAKE BRUSSELS
 		
 		}	
 		fire_only_once = yes # Will not re-enable after being removed
-		cost = 0
+		cost = 100
 
-		complete_effect = { }
-
-		days_remove = 3
-		remove_effect = { capital_scope = {
- create_unit = {
-    division = "name = \"Grenadier-Regiment 860\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Grenadier-Regiment 861\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-}
-create_unit = {
-    division = "name = \"Grenadier-Regiment 880\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-}
-###
- create_unit = {
-    division = "name = \"Grenadier-Regiment 1125\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Grenadier-Regiment 1256\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-}
-create_unit = {
-    division = "name = \"Grenadier-Regiment 1127\" division_template = \"Grenadier Regiment\" start_experience_factor = 0.2"
-    owner = OKW
-}
-  } }
+		complete_effect = {
+			add_timed_idea = {
+				idea = german_counterattack
+				days = 14
+			}
+		 }
 
 		ai_will_do = {
 			base = 100
@@ -1504,19 +1279,12 @@ crossing_the_rhine = { ##WHEN ALLIES CROSS THE RHINE
 
 		icon = generic_decision
 
-		available = {custom_trigger_tooltip = {
-    tooltip = allies_crossed_rhine		
-			OR = { 
-		 AEF = { controls_province = 2607 }
-			AEF = { controls_province = 9654 }
-	AEF = { controls_province = 2365 }
-		AEF = { controls_province = 9737 }
-	AEF = { controls_province = 9744 }
-	AEF = { controls_province = 3541 }
-				 } } }
+		available = {
+			always = no
+		} 
 
 		visible = {
-		always = yes
+		always = no
 		}
 
 		fire_only_once = yes
@@ -1530,43 +1298,7 @@ crossing_the_rhine = { ##WHEN ALLIES CROSS THE RHINE
 		complete_effect = { }
 
 		days_remove = 2
-		remove_effect = { 
-capital_scope = { 
-###6th panzearmee
-###I ss pz
-
-
-create_unit = {
-    division = "name = \"I/SS Pzr-Regiment 1\" division_template = \"Panzer Battalion\" start_experience_factor = 1"
-    owner = OKW 
-}
-
-create_unit = {
-    division = "name = \"II/SS Pzr-Regiment 1\" division_template = \"Panzer Battalion\" start_experience_factor = 1"
-    owner = OKW 
-}
-
-create_unit = {
-    division = "name = \"I/SS-PzGren-Reg. 1\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 1"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"II/SS-PzGren-Reg. 1\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 1"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"I/SS-PzGren-Reg. 2\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 1"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"II/SS-PzGren-Reg. 2\" division_template = \"Panzergrenadier Battalion\" start_experience_factor = 1"
-    owner = OKW
-} 
-create_unit = {
-    division = "name = \"Pzr-Artillerie-Reg. 119\" division_template = \"SPG Battalion\" start_experience_factor = 0.2"
-    owner = OKW
-} 
-  } }
+		remove_effect = { }
 
 		ai_will_do = {
 			base = 100
@@ -1590,15 +1322,16 @@ create_unit = {
 
 
 }
-GER_wunderwaffen = { panzer_maus = { ##
+GER_wunderwaffen = { 
+develop_jagdtiger = { ##
 
 		icon = generic_decision
 
 		available = {
-has_political_power > 50
-has_army_experience > 100
- has_completed_focus = GER_special_panzers 
-				 }
+				
+		date > 1944.8.1
+
+		}
 
 		visible = {
 			
@@ -1610,33 +1343,56 @@ has_army_experience > 100
 		fire_only_once = yes # Will not re-enable after being removed
 		cost = 0
 
-		complete_effect = {set_technology = { super_heavy_tank_chassis = 1 } add_political_power = -50  army_experience = -99 
-create_equipment_variant = {
-			name = "Pzkpf. VIII 'Maus'"
-			type = super_heavy_tank_chassis_1
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_super_heavy_cannon
-				turret_type_slot = tank_super_heavy_four_man_tank_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_cast_armor
-				engine_type_slot = tank_gasoline_engine
-				special_type_slot_1 = tank_radio_2
-				special_type_slot_2 = smoke_launchers
-				special_type_slot_3 = secondary_turret_small_cannon
-				special_type_slot_4 = empty
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 14
-				tank_nsb_armor_upgrade = 10
-			}
-			icon = "gfx/interface/technologies/GER_maus.dds"
-		}
-hidden_effect = { set_technology = {
-    GER_maus_tech = 1
-} }
 
-}
+
+			complete_effect = {
+			
+			create_equipment_variant = {
+				name = "Jagdpanzer VI Jagdtiger"
+				type = heavy_tank_destroyer_chassis_3
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_super_heavy_cannon
+					turret_type_slot = tank_heavy_fixed_superstructure_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_1
+					special_type_slot_2 = smoke_launchers
+					special_type_slot_3 = easy_maintenance
+					special_type_slot_4 = empty
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 4
+					tank_nsb_armor_upgrade = 25
+				}
+				icon = "gfx/interface/technologies/GER_Jagdtiger.dds"
+			}
+
+			add_offsite_building = { type = arms_factory level = 5 }
+			add_equipment_production = { equipment = { type = heavy_tank_destroyer_chassis_3 creator = "OKW" version_name = "Jagdpanzer VI Jagdtiger" } requested_factories = 5 progress = 0.1 efficiency = 100 }
+
+			division_template = {
+				name = "Heavy Tank Destroyer Battalion ( Jagdtiger )" 
+
+				regiments = {
+					heavy_tank_destroyer_brigade = { x = 0 y = 0 }
+					heavy_tank_destroyer_brigade = { x = 0 y = 1 }
+					heavy_tank_destroyer_brigade = { x = 0 y = 2 }
+					heavy_tank_destroyer_brigade = { x = 1 y = 0 }
+					heavy_tank_destroyer_brigade = { x = 1 y = 1 }
+					heavy_tank_destroyer_brigade = { x = 1 y = 2 }
+				}
+				
+				support = {
+					armored_car_recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					anti_air = { x = 0 y = 2 }
+					maintenance_company = { x = 0 y = 3 }
+					signal_company = { x = 0 y = 4 }
+				}
+			}
+			}
 
 		days_remove = 0
 		remove_effect = { }
@@ -1648,71 +1404,15 @@ hidden_effect = { set_technology = {
 		
 		}
 	}
-panzer_kugelblitz = { ##kugelblitz
+develop_me262 = { ##
 
 		icon = generic_decision
 
 		available = {
-has_political_power > 35
-has_army_experience > 5
- 
- has_completed_focus = GER_special_panzers 
-				 }
+				
+		date > 1941.7.20
 
-		visible = {
-			
 		}
-
-		fire_only_once = no
-
-		fire_only_once = yes # Will not re-enable after being removed
-		cost = 0
-
-		complete_effect = { add_political_power = -35  army_experience = -6 create_equipment_variant = {
-			name = "Flakpanzer 'Kugelblitz'"
-			type = medium_tank_aa_equipment_2
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_anti_air_cannon_3
-				turret_type_slot = tank_medium_three_man_tank_turret
-				suspension_type_slot = tank_torsion_bar_suspension
-				armor_type_slot = tank_welded_armor
-				engine_type_slot = tank_gasoline_engine
-				special_type_slot_1 = tank_radio_2
-				special_type_slot_2 = empty
-				special_type_slot_3 = easy_maintenance
-				special_type_slot_4 = empty
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 5
-				tank_nsb_armor_upgrade = 4
-			}
-			icon = "gfx/interface/technologies/ger_kugelblitz.dds"
-		}
-
-			
-}
-
-		days_remove = 0
-		remove_effect = { }
-
-		ai_will_do = {
-			base = 100
-			
-			
-		
-		}
-	 } 
-air_kolibri = { ##
-
-		icon = generic_decision
-
-		available = {
-has_political_power > 50
-has_air_experience > 50
- 
- has_completed_focus = GER_special_aircraft 
-				 }
 
 		visible = {
 			
@@ -1724,22 +1424,35 @@ has_air_experience > 50
 		fire_only_once = yes # Will not re-enable after being removed
 		cost = 0
 
-		complete_effect = {add_political_power = -50  air_experience = -50
-create_equipment_variant = {
-    name = "Fl 282 'Kolibri'"
-    type = scout_plane_equipment_2
-    obsolete = no
-    upgrades = {
-       
-        plane_engine_upgrade = 5
-	   plane_armor_upgrade = 5
-	   plane_reliability_upgrade = 5
-    }
-icon="gfx/interface/technologies/ger_kolibri.dds"
-}
 
 
-}
+			complete_effect = {
+			
+			set_technology = {
+				jet_engines = 1
+				modern_small_airframe = 1
+
+			}		
+
+
+			create_equipment_variant = {
+				name = "Me 262 'Schwalbe'"
+				type = small_plane_airframe_4
+				modules = {
+					fixed_main_weapon_slot = aircraft_cannon_2_2x
+					fixed_auxiliary_weapon_slot_1 =	aircraft_cannon_2_2x
+					fixed_auxiliary_weapon_slot_2 =	aircraft_cannon_2_2x
+					engine_type_slot = jet_engine_2x
+					special_type_slot_1 = armor_plate_small
+
+				}
+				icon = "gfx/interface/technologies/GER_Me262.dds"
+			}
+
+			add_offsite_building = { type = arms_factory level = 12 }
+			add_equipment_production = { equipment = { type = small_plane_airframe_4 creator = "OKW" version_name = "Me 262 'Schwalbe'" } requested_factories = 15 progress = 0.1 efficiency = 100 }
+
+			}
 
 		days_remove = 0
 		remove_effect = { }
@@ -1751,48 +1464,7 @@ icon="gfx/interface/technologies/ger_kolibri.dds"
 		
 		}
 	}
-land_zg1229 = { ##
 
-		icon = generic_decision
-
-		available = {
-has_political_power > 50
-has_army_experience > 30
- 
- has_completed_focus = GER_special_rifles
-				 }
-
-		visible = {
-			
-		}
-
-		fire_only_once = no
-
-			
-		fire_only_once = yes # Will not re-enable after being removed
-		cost = 0
-
-		complete_effect = {add_political_power = -50  army_experience = -30
-		add_ideas = zg1229_idea 
-create_equipment_variant = {
-			name = "ZG 1229"
-			type = infantry_equipment_3
-			parent_version = 0
-			icon="gfx/interface/technologies/ger_zg1229.dds"
-
-
-}
-}
-		days_remove = 0
-		remove_effect = { }
-
-		ai_will_do = {
-			base = 100
-			
-			
-		
-		}
-	}
 }
 
 
