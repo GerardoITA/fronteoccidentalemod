@@ -1637,14 +1637,7 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
-		gridBoxType = {
-			name = "factories_grid"
-			position = { x = 317 y = 33 }
-			size = { width = 150  height = 90 }
-			slotsize = { width = 29 height = 23 }
-			max_slots = { x = 5 y = 3 }
-			format = "UPPER_LEFT"
-		}
+	
 
 		iconType = {
 			name = "prod_line_glow"
@@ -2501,14 +2494,7 @@ guiTypes = {
 			format = center
 		}
 
-		gridBoxType = {
-			name = "factories_grid"
-			position = { x = 314 y = 34 }
-			size = { width = 150  height = 90 }
-			slotsize = { width = 29 height = 23 }
-			max_slots = { x = 5 y = 3 }
-			format = "UPPER_LEFT"
-		}
+		
 
 		iconType = {
 			name = "prod_line_glow"
@@ -3035,14 +3021,7 @@ guiTypes = {
 			format = center
 		}
 
-		gridBoxType = {
-			name = "factories_grid"
-			position = { x = 314 y = 34 }
-			size = { width = 150  height = 90 }
-			slotsize = { width = 29 height = 23 }
-			max_slots = { x = 5 y = 3 }
-			format = "UPPER_LEFT"
-		}
+		
 
 		iconType = {
 			name = "prod_line_glow"
@@ -3298,14 +3277,7 @@ guiTypes = {
 			format = center
 		}
 
-		gridBoxType = {
-			name = "factories_grid"
-			position = { x = 317 y = 33 }
-			size = { width = 150  height = 90 }
-			slotsize = { width = 29 height = 23 }
-			max_slots = { x = 5 y = 3 }
-			format = "UPPER_LEFT"
-		}
+		
 
 		iconType = {
 			name = "prod_line_glow"
