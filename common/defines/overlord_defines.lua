@@ -36,7 +36,7 @@ NDefines.NMilitary.CORPS_COMMANDER_ARMIES_CAP = -1				-- how many armies a corps
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 52			-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 0	
 NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0
-NDefines.NProduction.BASE_FACTORY_EFFICIENCY_GAIN = 8.5
+NDefines.NProduction.BASE_FACTORY_EFFICIENCY_GAIN = 0
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 2.5           
 NDefines.NNavy.NAVAL_SPEED_MODIFIER = 2.2	                    				-- basic speed control
 NDefines.NNavy.NAVAL_RANGE_TO_INGAME_DISTANCE = 2.64						-- Scale the ship stats "naval_range" to the ingame distance

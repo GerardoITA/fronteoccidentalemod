@@ -9,7 +9,6 @@ ideas = {
 		}
 		no_change_production = {
 			modifier = {
-				production_factory_efficiency_gain_factor = -0.99
 				equipment_upgrade_xp_cost = 10
 				equipment_conversion_speed = -999
 				industrial_capacity_factory = 0.25
