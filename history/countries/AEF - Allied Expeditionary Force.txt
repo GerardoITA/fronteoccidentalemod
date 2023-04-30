@@ -21,12 +21,12 @@ if = {
 #		set_naval_oob = "AEF_1943_naval_legacy"
 #	}
 #}"
-oob = "AEF_1943"
+oob = "AEF_Mod"
 starting_train_buffer = 3
-add_manpower = 550000
+add_manpower = 950000
 add_equipment_to_stockpile = {
     type = train_equipment_2
-    amount = 100
+    amount = 11000
     producer = AEF
 }
 if = {
@@ -351,10 +351,12 @@ gwtank_chassis = 1
 	improved_light_tank_chassis = 1 
 	armor_tech_1 = 1 
 	armor_tech_2 = 1 
-	armor_tech_3 = 1 
+	armor_tech_3 = 1
+	armor_tech_4 = 1 
 	engine_tech_1 = 1
 		engine_tech_2 = 1
 		engine_tech_3 = 1
+		armor_tech_4 = 1
 	}
 	create_equipment_variant = {
 			name = "M4A3(76) Sherman"
@@ -422,7 +424,27 @@ gwtank_chassis = 1
 			}
 			icon = "gfx/interface/technologies/AEF_M4A3.dds"
 	}
-
+	create_equipment_variant = {
+			name = "M4A3E2 Sherman"
+			type = medium_tank_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_medium_cannon_2
+				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 9
+				tank_nsb_armor_upgrade = 25
+			}
+			icon = "gfx/interface/technologies/AEF_Jumbo.dds"
+	}
 	create_equipment_variant = {
 			name = "Cromwell Mk VII"
 			type = medium_tank_chassis_1
@@ -678,7 +700,7 @@ create_equipment_variant = {
 create_equipment_variant = {
 		name = "Northampton Class"
 		type = ship_hull_cruiser_1
-		name_group = AEF_CA_HISTORICAL
+		
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_medium_battery_2
@@ -697,7 +719,7 @@ create_equipment_variant = {
 create_equipment_variant = {
 		name = "Baltimore Class"
 		type = ship_hull_cruiser_2
-		name_group = AEF_CA_HISTORICAL
+		
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_medium_battery_2
@@ -716,7 +738,7 @@ create_equipment_variant = {
 create_equipment_variant = {
 		name = "Hawkins Class"
 		type = ship_hull_cruiser_1
-		name_group = AEF_CA_HISTORICAL
+		
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_medium_battery_2
@@ -735,7 +757,7 @@ create_equipment_variant = {
 create_equipment_variant = {
 		name = "Emerald Class"
 		type = ship_hull_cruiser_1
-		name_group = AEF_CA_HISTORICAL
+		
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -754,7 +776,7 @@ create_equipment_variant = {
 create_equipment_variant = {
 		name = "Leander Class"
 		type = ship_hull_cruiser_2
-		name_group = AEF_CA_HISTORICAL
+		
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_2
@@ -773,7 +795,7 @@ create_equipment_variant = {
 create_equipment_variant = {
 		name = "Belfast Class"
 		type = ship_hull_cruiser_2
-		name_group = AEF_CA_HISTORICAL
+		
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_2
@@ -830,7 +852,7 @@ create_equipment_variant = {
 create_equipment_variant = {
 		name = "New York Class"
 		type = ship_hull_heavy_1
-		name_group = AEF_BB_HISTORICAL
+		
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_heavy_battery_2
@@ -850,7 +872,7 @@ create_equipment_variant = {
 create_equipment_variant = {
 		name = "Wyoming Class"
 		type = ship_hull_heavy_1
-		name_group = AEF_BB_HISTORICAL
+		
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_heavy_battery_1
@@ -870,7 +892,7 @@ create_equipment_variant = {
 create_equipment_variant = {
 		name = "Nevada Class"
 		type = ship_hull_heavy_1
-		name_group = AEF_BB_HISTORICAL
+		
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_heavy_battery_2
@@ -890,7 +912,7 @@ create_equipment_variant = {
 create_equipment_variant = {
 		name = "Revenge Class"
 		type = ship_hull_heavy_1
-		name_group = AEF_BB_HISTORICAL
+		
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_heavy_battery_3
@@ -910,7 +932,7 @@ create_equipment_variant = {
 create_equipment_variant = {
 		name = "Queen Elizabeth Class"
 		type = ship_hull_heavy_1
-		name_group = AEF_BB_HISTORICAL
+		
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_heavy_battery_3
@@ -930,7 +952,7 @@ create_equipment_variant = {
 create_equipment_variant = {
 		name = "Nelson Class"
 		type = ship_hull_heavy_2
-		name_group = AEF_BB_HISTORICAL
+		
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_heavy_battery_4
@@ -950,25 +972,75 @@ create_equipment_variant = {
 
 
 create_equipment_variant = {
-			name = "Sten MkII"
-			type = infantry_equipment_2
-			parent_version = 0
-	
-			
-			icon = GFX_ENG_improved_infantry_weapons_medium
-		}
-
-create_equipment_variant = {
-			name = "M1 Carbine"
+			name = "Rifle No. 4 Mk I"
 			type = infantry_equipment_1
 			parent_version = 0
 	
 			
-			icon = GFX_USA_advanced_infantry_weapons_medium
+			icon = "gfx/interface/technologies/AEF_Enfield.tga"
+		}
+
+create_equipment_variant = {
+			name = "Sten Mk II"
+			type = infantry_equipment_2
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/AEF_Sten.tga"
 	}
+create_equipment_variant = {
+			name = "M1 Garand"
+			type = infantry_equipment_1
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/AEF_Garand.tga"
+		}
+
+create_equipment_variant = {
+			name = "Thompson M1928A1"
+			type = infantry_equipment_2
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/AEF_Thompson.tga"
+	}
+create_equipment_variant = {
+			name = "Browning M1919/Bren/Mk 2 grenade/PIAT/Bazooka"
+			type = support_equipment_1
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/SupportEquipment.tga"
+	}
+create_equipment_variant = {
+			name = "GMC CCKW 6×6"
+			type = motorized_equipment_1
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/AEF_USTruck.tga"
+	}	
+create_equipment_variant = {
+			name = "Bedford QL"
+			type = motorized_equipment_1
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/AEF_ENGTruck.tga"
+	}
+
+
+
+
+
+
+
+
+
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "AEF_1943_air_bba"
+		set_air_oob = "AEF_1943_air_mod"
 		set_technology = {
 			aa_lmg = 1
 			aa_hmg = 1

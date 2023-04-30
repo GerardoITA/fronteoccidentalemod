@@ -3938,13 +3938,7 @@ guiTypes = {
 		size = { width=342 height= 80 }
 		clipping = no
 
-		buttonType = {
-			name = "equipment_button"
-			position = { x=5 y=4 }
-			quadTextureSprite = "GFX_equipment_item_large_02"
-			clicksound = click_default
-			frame = 1
-		}
+		
 		
 		iconType = {
 			name ="outdated_equipment_overlay"
@@ -4101,13 +4095,6 @@ guiTypes = {
 		size = { width=461 height= 75 }
 		clipping = no
 
-		buttonType = {
-			name = "equipment_button"
-			position = { x=10 y=4 }
-			quadTextureSprite = "GFX_naval_equipment_item_large"
-			clicksound = click_default
-			frame = 1
-		}
 
 		iconType = {
 			name ="outdated_equipment_overlay"

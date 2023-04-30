@@ -56,7 +56,7 @@ declare_war_on = {
 		target = AEF
 		type = annex_everything
 	}
-add_offsite_building = { type = arms_factory level = 250 }
+add_offsite_building = { type = arms_factory level = 252 }
 add_offsite_building = { type = industrial_complex level = 75 }
 
 set_variable = { var = influence_number
@@ -278,11 +278,13 @@ if = {
 		advanced_heavy_tank_chassis = 1
 		improved_light_tank_chassis = 1 
 		armor_tech_1 = 1 
-		armor_tech_2 = 1 
-		armor_tech_3 = 1 
-		engine_tech_1 = 1
+	armor_tech_2 = 1 
+	armor_tech_3 = 1
+	armor_tech_4 = 1 
+	engine_tech_1 = 1
 		engine_tech_2 = 1
 		engine_tech_3 = 1
+		armor_tech_4 = 1
 	}
 create_equipment_variant = {
 			name = "Panzer II 'Luchs'"
@@ -1047,7 +1049,7 @@ create_equipment_variant = {
 			icon = "gfx/interface/technologies/GER_Morser.tga"
 		}
 create_equipment_variant = {
-			name = "Opel Blitz"
+			name = "Opel Blitz 3.6"
 			type = motorized_equipment_1
 			parent_version = 0
 
@@ -1119,7 +1121,7 @@ create_equipment_variant = {
 			icon = "gfx/interface/technologies/GER_K98.tga"
 		}
 create_equipment_variant = {
-			name = "Maschinenpistole 40"
+			name = "MP 40"
 			type = infantry_equipment_2
 			parent_version = 0
 	
@@ -1131,7 +1133,7 @@ create_equipment_variant = {
 
 
 add_equipment_to_stockpile = { type = support_equipment_1   variant_name = "MG-42/Stielhandgranate 24/Panzerfaust"   amount = 4300 }
-add_equipment_to_stockpile = { type = motorized_equipment_1 	variant_name = "Opel Blitz" amount = 6900 }
+add_equipment_to_stockpile = { type = motorized_equipment_1 	variant_name = "Opel Blitz 3.6" amount = 6900 }
 add_equipment_to_stockpile = { type = train_equipment_3      amount = 420 }
 add_equipment_to_stockpile = { type = train_equipment_2      amount = 590 }
 add_equipment_to_stockpile = { type = train_equipment_1     amount = 6975 }
@@ -1150,7 +1152,7 @@ add_equipment_to_stockpile = { type = artillery_equipment_2  variant_name = "15 
 add_equipment_to_stockpile = { type = artillery_equipment_3   variant_name = "21 cm Mörser 18" amount = 115 }
 
 add_equipment_to_stockpile = { type = infantry_equipment_1  variant_name = "Karabiner 98k"  amount = 59232 }
-add_equipment_to_stockpile = { type = infantry_equipment_2  variant_name = "Maschinenpistole 40"  amount = 14550 }
+add_equipment_to_stockpile = { type = infantry_equipment_2  variant_name = "MP 40"  amount = 14550 }
 
 add_equipment_to_stockpile = { type = armored_car_equipment_1  variant_name = "Sd.Kfz. 222"  amount = 238 }
 add_equipment_to_stockpile = { type = armored_car_equipment_2   variant_name = "Sd.Kfz. 231" amount = 132 }
