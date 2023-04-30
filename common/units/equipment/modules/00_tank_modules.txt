@@ -769,7 +769,7 @@ equipment_modules = {
 			ap_attack = 20
 			build_cost_ic = 6
 			maximum_speed = -0.15
-			breakthrough = -20
+			breakthrough = -5
 			reliability = -0.1
 		}
 		dismantle_cost_ic = 1
@@ -790,7 +790,7 @@ equipment_modules = {
 			hard_attack = 15
 			ap_attack = 40
 			build_cost_ic = 12
-			breakthrough = -20
+			breakthrough = 1
 			maximum_speed = -0.2
 			reliability = -0.1
 		}

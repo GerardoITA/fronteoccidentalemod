@@ -518,6 +518,95 @@ develop_jackson = { ##
 		
 		}
 	} 
+develop_pershing = { ##
+
+		icon = generic_decision
+
+		available = {
+		
+			date > 1942.1.1
+		 
+		}
+
+		visible = {
+				always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 125
+
+		complete_effect = {
+			
+
+			set_technology = { improved_heavy_tank_chassis = 1}
+			create_equipment_variant = {
+				name = "M26 Pershing"
+				type = heavy_tank_chassis_2
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_heavy_cannon_2
+					turret_type_slot = tank_heavy_three_man_tank_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_1
+					special_type_slot_2 = smoke_launchers
+					special_type_slot_3 = easy_maintenance
+					special_type_slot_4 = empty
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 8
+					tank_nsb_armor_upgrade = 14
+				}
+				icon = "gfx/interface/technologies/AEF_Pershing.dds"
+			}
+
+			add_offsite_building = { type = arms_factory level = 35 }
+			add_equipment_production = { equipment = { type = heavy_tank_chassis_2 creator = "AEF" version_name = "M26 Pershing" } requested_factories = 35 progress = 0.1 efficiency = 100 }
+			division_template = {
+				name = "Heavy Tank Battalion ( Pershing )" 
+
+				regiments = {
+					heavy_armor = { x = 0 y = 0 }
+					heavy_armor = { x = 0 y = 1 }
+					heavy_armor = { x = 0 y = 2 }
+					heavy_armor = { x = 0 y = 3 }
+					heavy_armor = { x = 1 y = 0 }
+					heavy_armor = { x = 1 y = 1 }
+					heavy_armor = { x = 1 y = 2 }
+					heavy_armor = { x = 1 y = 3 }
+					heavy_armor = { x = 2 y = 0 }
+					heavy_armor = { x = 2 y = 1 }
+					heavy_armor = { x = 2 y = 2 }
+					heavy_armor = { x = 2 y = 3 }
+				}
+				
+				support = {
+					armored_car_recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					anti_air = { x = 0 y = 2 }
+					maintenance_company = { x = 0 y = 3 }
+					signal_company = { x = 0 y = 4 }
+				}
+			}
+
+
+
+		}
+
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	}
 negate_submarine_menace = { ##
 
 		icon = generic_decision

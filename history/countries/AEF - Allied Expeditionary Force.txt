@@ -117,8 +117,8 @@ add_ideas = {de_gaulle_issue max_public_opinion #United_Commonwealth
 set_global_flag = normal_start_trigger
 set_variable = { var = cohesion_number
 		value = 55 }
-set_research_slots = 5
-set_stability = 0.5
+set_research_slots = 1
+set_stability = 1
 set_war_support = 0.8
 add_command_power = 20
 add_offsite_building = { type = arms_factory level = 68 }
@@ -316,10 +316,12 @@ set_popularities = {
 	improved_machine_tools = 1
 	assembly_line_production = 1
 	improved_equipment_conversion = 1
-	dispersed_industry = 1
-	dispersed_industry2 = 1
-	dispersed_industry3 = 1
-	dispersed_industry4 = 1
+	flexible_line = 1
+	concentrated_industry = 1
+	concentrated_industry2 = 1
+	concentrated_industry3 = 1
+	concentrated_industry4 = 1
+	concentrated_industry5 = 1
 	fuel_refining2 = 1
 	fuel_refining3 = 1
 	synth_oil_experiments = 1
@@ -329,6 +331,7 @@ set_popularities = {
 	construction2 = 1
 	construction3 = 1
 	construction4 = 1
+	construction5 = 1
 	
 }
 
@@ -458,7 +461,7 @@ create_equipment_variant = {
 				special_type_slot_4 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 5
+				tank_nsb_engine_upgrade = 4
 				tank_nsb_armor_upgrade = 30
 			}
 			icon = "gfx/interface/technologies/AEF_Churchill.dds"
