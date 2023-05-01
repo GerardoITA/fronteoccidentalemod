@@ -25,7 +25,7 @@ victory_points = { 3275 7 } # MULHEIM
 	anti_air_building = 5 
 			infrastructure = 4
 			industrial_complex = 3
-			arms_factory = 5
+			
 
 		}
 

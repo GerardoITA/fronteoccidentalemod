@@ -121,9 +121,9 @@ set_research_slots = 1
 set_stability = 1
 set_war_support = 0.8
 add_command_power = 20
-add_offsite_building = { type = arms_factory level = 68 }
-add_offsite_building = { type = industrial_complex level = 60 }
-
+add_offsite_building = { type = arms_factory level = 565 }
+add_offsite_building = { type = industrial_complex level = 260 }
+add_offsite_building = { type = dockyard level = 5 }
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
@@ -589,6 +589,26 @@ create_equipment_variant = {
 			}
 			icon = "gfx/interface/technologies/AEF_M12.dds" 
 		}
+		create_equipment_variant = {
+			name = "M16 Half-Track"
+			type = light_tank_aa_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_anti_air_cannon
+				turret_type_slot = tank_light_three_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 6
+			}
+			icon = "gfx/interface/technologies/AEF_M16.dds"
+		}
 
 create_equipment_variant = {
 		name = "M5 Stuart"
@@ -989,7 +1009,7 @@ create_equipment_variant = {
 			icon = "gfx/interface/technologies/AEF_Sten.tga"
 	}
 create_equipment_variant = {
-			name = "M1 Garand"
+			name = "M1 Garand Rifle"
 			type = infantry_equipment_1
 			parent_version = 0
 	
@@ -1029,6 +1049,120 @@ create_equipment_variant = {
 			
 			icon = "gfx/interface/technologies/AEF_ENGTruck.tga"
 	}
+create_equipment_variant = {
+			name = "Daimler AC"
+			type = armored_car_equipment_2
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/AEF_Daimler.tga"
+	}	
+create_equipment_variant = {
+			name = "M3A2 Scout Car"
+			type = armored_car_equipment_1
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/AEF_M3Scout.dds"
+	}
+create_equipment_variant = {
+			name = "M8 Greyhound AC"
+			type = armored_car_equipment_2
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/AEF_Greyhound.dds"
+	}
+create_equipment_variant = {
+			name = "M3A1 Half-Track"
+			type = mechanized_equipment_2
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/AEF_M3Half.dds"
+	}
+create_equipment_variant = {
+			name = "Bren Carrier"
+			type = mechanized_equipment_1
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/AEF_BrenCarrier.dds"
+	}	
+
+create_equipment_variant = {
+			name = "105 mm M101"
+			type = artillery_equipment_2
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/AEF_M101.dds"
+	}
+create_equipment_variant = {
+			name = "155 mm M1A2"
+			type = artillery_equipment_3
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/AEF_M1A2.dds"
+	}
+create_equipment_variant = {
+		name = "Ordnance QF 25-pounder"
+		type = artillery_equipment_1
+		parent_version = 0
+
+		
+		icon = "gfx/interface/technologies/AEF_25pdr.dds"
+}
+create_equipment_variant = {
+			name = "BL 4.5-inch"
+			type = artillery_equipment_2
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/AEF_Bl4.dds"
+	}
+create_equipment_variant = {
+			name = "Bofors 40mm"
+			type = anti_air_equipment_2
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/AEF_Bofors.dds"
+	}
+create_equipment_variant = {
+			name = "QF 6-pounder/57 mm Gun M1"
+			type = anti_tank_equipment_1
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/AEF_57mm.dds"
+	}
+create_equipment_variant = {
+			name = "3-inch Gun M5"
+			type = anti_tank_equipment_2
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/AEF_M576mm.dds"
+	}
+create_equipment_variant = {
+			name = "Ordnance QF 17-pounder"
+			type = anti_tank_equipment_3
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/AEF_17pdr.dds"
+	}
+create_equipment_variant = {
+			name = "Liberty ship"
+			type = convoy_1
+			parent_version = 0
+	
+			
+			icon = "gfx/interface/technologies/AEF_Liberty.tga"
+	}
+
 
 
 

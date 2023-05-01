@@ -21,7 +21,7 @@ buildings = { infrastructure = 5 }
 	 buildings = { 
 anti_air_building = 4 	
 industrial_complex = 3
-		arms_factory = 2 
+	 
 		air_base = 10 }
 		add_core_of = AEF victory_points = { 5048 10 } 
 		victory_points = { 5048 10 } victory_points = { 4350 10 } victory_points = { 5051 20 }}

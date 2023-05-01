@@ -32,9 +32,10 @@ sub_units = {
 		max_strength = 9
 		training_time = 180
 		weight = 1
-		supply_consumption = 0.2
+		supply_consumption = 0.5
 
-		breakthrough = -0.7
+		breakthrough = -0.5
+		soft_attack = -0.33
 
 		suppression = 1.0
 
@@ -99,10 +100,11 @@ sub_units = {
 		max_strength = 10
 		training_time = 180
 		weight = 1.25
-		supply_consumption = 0.22
+		supply_consumption = 0.75
 
-		breakthrough = -0.75
-		
+		breakthrough = -0.55
+		soft_attack = -0.33
+
 		suppression = 1.25
 
 		forest = {
@@ -169,9 +171,10 @@ sub_units = {
 		default_morale = 0.3
 		max_strength = 11
 		weight = 1.5
-		supply_consumption = 0.3
+		supply_consumption = 1
 
-		breakthrough = -0.75
+		breakthrough = -0.55
+		soft_attack = -0.33
 
 		suppression = 1.25
 		
@@ -244,6 +247,7 @@ sub_units = {
 		supply_consumption = 0.4
 
 		breakthrough = -0.25
+		soft_attack = -0.33
 
 		suppression = 1.25
 
@@ -317,6 +321,7 @@ sub_units = {
 		supply_consumption = 0.25
 		
 		breakthrough = -0.25
+soft_attack = -0.33
 
 		suppression = 1.25
 		

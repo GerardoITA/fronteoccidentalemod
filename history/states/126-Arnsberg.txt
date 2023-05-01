@@ -4,7 +4,7 @@ state={
 	name="STATE_126"
 	history = { 
 buildings = { anti_air_building = 5  }
-buildings = { infrastructure = 4 industrial_complex = 3 arms_factory = 2 }
+buildings = { infrastructure = 4 industrial_complex = 3  }
 	1918.3.20.12 = {
 		owner = DKR
 		add_core_of = DKR

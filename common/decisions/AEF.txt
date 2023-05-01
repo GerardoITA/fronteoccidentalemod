@@ -473,7 +473,7 @@ develop_jackson = { ##
 		
 		}	
 		fire_only_once = yes # Will not re-enable after being removed
-		cost = 125
+		cost = 50
 
 		complete_effect = {
 			
@@ -538,7 +538,7 @@ develop_pershing = { ##
 		
 		}	
 		fire_only_once = yes # Will not re-enable after being removed
-		cost = 125
+		cost = 50
 
 		complete_effect = {
 			
@@ -607,85 +607,18 @@ develop_pershing = { ##
 		
 		}
 	}
-negate_submarine_menace = { ##
+develop_chaffee = { ##
 
 		icon = generic_decision
 
 		available = {
-		OR = {
-			OKW = { has_completed_focus = GER_recall_the_wolfpacks
-			}date > 1943.6.1
-				  } }
+		
+			date > 1945.1.1
+		 
+		}
 
 		visible = {
-			 has_global_flag = normal_start_trigger
-		}
-
-		fire_only_once = yes
-
-		modifier = {
-		
-		}	
-		fire_only_once = yes # Will not re-enable after being removed
-		cost = 125
-
-		complete_effect = { add_manpower = 250000 remove_ideas = submarine_menace add_offsite_building = { type = arms_factory level = 2 }
-add_offsite_building = { type = industrial_complex level = 2 }
-add_ideas = awoken_giant }
-
-
-		ai_will_do = {
-			base = 100
-			
-			
-		
-		}
-	} 
-combine_SHAEF_idea = { ##
-
-		icon = generic_decision
-
-		available = {
-		AND = { has_completed_focus = AEF_g3_division 
-			 has_completed_focus = AEF_g2_division 
-			 has_completed_focus = AEF_g4_division 
-			 has_completed_focus = AEF_g5_division 
-			 has_completed_focus = AEF_g6_division 
-				 } }
-
-		visible = {
-		 has_global_flag = normal_start_trigger	 
-		}
-
-		fire_only_once = yes
-
-		modifier = {
-		
-		}	
-		fire_only_once = yes # Will not re-enable after being removed
-		cost = 25
-
-		complete_effect = { set_country_flag = shaef_streamlined custom_effect_tooltip = SHAEF_streamlined hidden_effect = { remove_ideas = { SHAEF_G2 SHAEF_G3 SHAEF_G4 SHAEF_G5 SHAEF_G6 } swap_ideas = { remove_idea = SHAEF_org_idea add_idea = SHAEF_org_idea2 } } }
-
-
-		ai_will_do = {
-			base = 100
-			
-			
-		
-		}
-	} 
-requisition_landing_craft = { ##
-
-		icon = generic_decision
-
-		available = {
-			has_completed_focus = AEF_shaef 
-	has_country_flag = submarine_menace_negated 
-				 }
-
-		visible = {
-			 has_global_flag = normal_start_trigger
+				always = yes
 		}
 
 		fire_only_once = yes
@@ -695,17 +628,247 @@ requisition_landing_craft = { ##
 		}	
 		fire_only_once = yes # Will not re-enable after being removed
 		cost = 50
-days_remove = 90
 
-		complete_effect = {  
+		complete_effect = {
+			
 
-add_equipment_to_stockpile = {
-    type = convoy
-    amount = 10
-    producer = AEF
+			create_equipment_variant = {
+				name = "M24 Chaffee"
+				type = light_tank_chassis_3
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_small_cannon_3
+					turret_type_slot = tank_light_three_man_tank_turret
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 5
+					tank_nsb_armor_upgrade = 5
+				}
+				icon = "gfx/interface/technologies/AEF_Chaffee.dds"
+			}
+
+			add_offsite_building = { type = arms_factory level = 25 }
+			add_equipment_production = { equipment = { type = light_tank_chassis_3 creator = "AEF" version_name = "M24 Chaffee" } requested_factories = 25 progress = 0.1 efficiency = 100 }
+
+		}
+
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	}
+consolidate_normandy = { ##
+
+		icon = generic_decision
+
+		available = {
+			
+			AND = {
+				19 = {  is_controlled_by = AEF }
+				17 = {  is_controlled_by = AEF }
+			}
+			
+			
+		 
+		}
+
+		visible = {
+				always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 50
+
+		complete_effect = {
+			
+			
+			add_offsite_building = { type = dockyard level = 15 }
+			add_equipment_production = {
+			equipment = {
+				type = convoy_1
+				creator = "AEF"
+				version_name = "Liberty ship"
+			}
+			requested_factories = 15
+			progress = 0.25
+			}
+
+
+		}
+
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	}
+	
 }
-custom_effect_tooltip = convoys_reduced_by_submarines 
-} 
+consolidate_normandy = { ##
+
+		icon = generic_decision
+
+		available = {
+			
+			AND = {
+				19 = {  is_controlled_by = AEF }
+				17 = {  is_controlled_by = AEF }
+			}
+			
+			
+		 
+		}
+
+		visible = {
+				always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}	
+		fire_only_once = yes # Will not re-enable after being removed
+		cost = 50
+
+		complete_effect = {
+			
+			
+			add_offsite_building = { type = dockyard level = 10 }
+			add_equipment_production = {
+			equipment = {
+				type = convoy_1
+				creator = "AEF"
+				version_name = "Liberty ship"
+			}
+			requested_factories = 10
+			progress = 0.25
+			}
+
+
+		}
+
+
+		ai_will_do = {
+			base = 100
+			
+			
+		
+		}
+	}
+}
+##negate_submarine_menace = { ##
+##
+##		icon = generic_decision
+##
+##		available = {
+##		OR = {
+##			OKW = { has_completed_focus = GER_recall_the_wolfpacks
+##			}date > 1943.6.1
+##				  } }
+##
+##		visible = {
+##			 has_global_flag = normal_start_trigger
+##		}
+##
+##		fire_only_once = yes
+##
+##		modifier = {
+##		
+##		}	
+##		fire_only_once = yes # Will not re-enable after being removed
+##		cost = 50
+##
+##		complete_effect = { add_manpower = 250000 remove_ideas = submarine_menace add_offsite_building = { type = arms_factory level = 2 }
+##add_offsite_building = { type = industrial_complex level = 2 }
+##add_ideas = awoken_giant }
+##
+##
+##		ai_will_do = {
+##			base = 100
+##			
+##			
+##		
+##		}
+##	} 
+##combine_SHAEF_idea = { ##
+##
+##		icon = generic_decision
+##
+##		available = {
+##		AND = { has_completed_focus = AEF_g3_division 
+##			 has_completed_focus = AEF_g2_division 
+##			 has_completed_focus = AEF_g4_division 
+##			 has_completed_focus = AEF_g5_division 
+##			 has_completed_focus = AEF_g6_division 
+##				 } }
+##
+##		visible = {
+##		 has_global_flag = normal_start_trigger	 
+##		}
+##
+##		fire_only_once = yes
+##
+##		modifier = {
+##		
+##		}	
+##		fire_only_once = yes # Will not re-enable after being removed
+##		cost = 25
+##
+##		complete_effect = { set_country_flag = shaef_streamlined custom_effect_tooltip = SHAEF_streamlined hidden_effect = { remove_ideas = { SHAEF_G2 SHAEF_G3 SHAEF_G4 SHAEF_G5 SHAEF_G6 } swap_ideas = { remove_idea = SHAEF_org_idea add_idea = SHAEF_org_idea2 } } }
+##
+##
+##		ai_will_do = {
+##			base = 100
+##			
+##			
+##		
+##		}
+##	} 
+##requisition_landing_craft = { ##
+##
+##		icon = generic_decision
+##
+##		available = {
+##			has_completed_focus = AEF_shaef 
+##	has_country_flag = submarine_menace_negated 
+##				 }
+##
+##		visible = {
+##			 has_global_flag = normal_start_trigger
+##		}
+##
+##		fire_only_once = yes
+##
+##		modifier = {
+##		
+##		}	
+##		fire_only_once = yes # Will not re-enable after being removed
+##		cost = 50
+##days_remove = 90
+##
+##		complete_effect = {  
+##
+##add_equipment_to_stockpile = {
+##    type = convoy
+##    amount = 10
+##    producer = AEF
+##}
+##custom_effect_tooltip = convoys_reduced_by_submarines 
+##} 
 
 		
 

@@ -4741,6 +4741,24 @@ division = {
 
 instant_effect = {
 
+	
+	add_equipment_production = { equipment = { type = infantry_equipment_1 creator = "OKW" version_name = "Karabiner 98k" } requested_factories = 5 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = infantry_equipment_2 creator = "OKW" version_name = "MP 40" } requested_factories = 5 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = support_equipment_1 creator = "OKW" version_name = "MG-42/Stielhandgranate 24/Panzerfaust" } requested_factories = 5 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = artillery_equipment_3 creator = "OKW" version_name = "21 cm Mörser 18" } requested_factories = 1 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = artillery_equipment_2 creator = "OKW" version_name = "15 cm sFH 18/40" } requested_factories = 2 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = artillery_equipment_1 creator = "OKW" version_name = "10.5 cm leFH 18/40" } requested_factories = 2 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = anti_air_equipment_3 creator = "OKW" version_name = "8.8 cm Flak 36" } requested_factories = 1 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = anti_air_equipment_2 creator = "OKW" version_name = "3.7 cm Flak 37" } requested_factories = 1 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = anti_air_equipment_1 creator = "OKW" version_name = "2 cm Flakvierling 38" } requested_factories = 1 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = anti_tank_equipment_3 creator = "OKW" version_name = "8.8 cm Pak 43" } requested_factories = 1 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = anti_tank_equipment_2 creator = "OKW" version_name = "7.5 cm Pak 40" } requested_factories = 2 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = motorized_equipment_1 creator = "OKW" version_name = "Opel Blitz 3.6" } requested_factories = 5 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = mechanized_equipment_2 creator = "OKW" version_name = "Sd.Kfz. 251" } requested_factories = 4 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = mechanized_equipment_1 creator = "OKW" version_name = "Sd.Kfz. 250" } requested_factories = 2 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = armored_car_at_equipment creator = "OKW" version_name = "Sd.Kfz. 234 Puma" } requested_factories = 1 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = armored_car_equipment_1 creator = "OKW" version_name = "Sd.Kfz. 222" } requested_factories = 1 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = armored_car_equipment_2 creator = "OKW" version_name = "Sd.Kfz. 231" } requested_factories = 1 progress = 0.1 efficiency = 100 }
 	add_equipment_production = { equipment = { type = heavy_tank_chassis_3 creator = "OKW" version_name = "Tiger Ausf. B" } requested_factories = 10 progress = 0.1 efficiency = 100 }
 	add_equipment_production = { equipment = { type = heavy_tank_chassis_2 creator = "OKW" version_name = "Tiger Ausf. E" } requested_factories = 10 progress = 0.1 efficiency = 100 }
 	add_equipment_production = { equipment = { type = medium_tank_chassis_3 creator = "OKW" version_name = "Panther Ausf. G" } requested_factories = 45 progress = 0.1 efficiency = 100 }
@@ -4758,22 +4776,6 @@ instant_effect = {
 	add_equipment_production = { equipment = { type = medium_tank_destroyer_chassis_3 creator = "OKW" version_name = "Jagdpanzer IV/70" } requested_factories = 7 progress = 0.1 efficiency = 100 }
 	add_equipment_production = { equipment = { type = medium_tank_destroyer_chassis_2 creator = "OKW" version_name = "StuG IV" } requested_factories = 5 progress = 0.1 efficiency = 100 }
 	add_equipment_production = { equipment = { type = medium_tank_destroyer_chassis_1 creator = "OKW" version_name = "StuG III Ausf. G" } requested_factories = 20 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = armored_car_at_equipment creator = "OKW" version_name = "Sd.Kfz. 234 Puma" } requested_factories = 1 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = armored_car_equipment_1 creator = "OKW" version_name = "Sd.Kfz. 222" } requested_factories = 1 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = infantry_equipment_1 creator = "OKW" version_name = "Karabiner 98k" } requested_factories = 5 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = infantry_equipment_2 creator = "OKW" version_name = "MP 40" } requested_factories = 5 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = support_equipment_1 creator = "OKW" version_name = "MG-42/Stielhandgranate 24/Panzerfaust" } requested_factories = 5 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = motorized_equipment_1 creator = "OKW" version_name = "Opel Blitz 3.6" } requested_factories = 5 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = mechanized_equipment_2 creator = "OKW" version_name = "Sd.Kfz. 251" } requested_factories = 4 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = mechanized_equipment_1 creator = "OKW" version_name = "Sd.Kfz. 250" } requested_factories = 2 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = artillery_equipment_3 creator = "OKW" version_name = "21 cm Mörser 18" } requested_factories = 1 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = artillery_equipment_2 creator = "OKW" version_name = "15 cm sFH 18/40" } requested_factories = 2 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = artillery_equipment_1 creator = "OKW" version_name = "10.5 cm leFH 18/40" } requested_factories = 2 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = anti_air_equipment_3 creator = "OKW" version_name = "8.8 cm Flak 36" } requested_factories = 1 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = anti_air_equipment_2 creator = "OKW" version_name = "3.7 cm Flak 37" } requested_factories = 1 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = anti_air_equipment_1 creator = "OKW" version_name = "2 cm Flakvierling 38" } requested_factories = 1 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = anti_tank_equipment_3 creator = "OKW" version_name = "8.8 cm Pak 43" } requested_factories = 1 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = anti_tank_equipment_2 creator = "OKW" version_name = "7.5 cm Pak 40" } requested_factories = 2 progress = 0.1 efficiency = 100 }
 	add_equipment_production = { equipment = { type = small_plane_airframe_2 creator = "OKW" version_name = "Fw 190A-8" } requested_factories = 18 progress = 0.1 efficiency = 100 }
 	add_equipment_production = { equipment = { type = small_plane_airframe_1 creator = "OKW" version_name = "Bf 109G-6" } requested_factories = 20 progress = 0.1 efficiency = 100 }
 	add_equipment_production = { equipment = { type = small_plane_cas_airframe_1 creator = "OKW" version_name = "Ju 87D5 'Stuka'" } requested_factories = 8 progress = 0.1 efficiency = 100 }

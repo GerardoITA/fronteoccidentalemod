@@ -72,13 +72,20 @@ NDefines.NOperatives.COUNTER_INTELLIGENCE_DAILY_XP_GAIN = 0.5
 
 
 
--- Defines miei
+-- Defines miei - combattimento è quello della GDU
 
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.25
-NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.65
+NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.75
+NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 2
 
 NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.4			                -- how to weight in highest armor & pen vs the division average
 NDefines.NMilitary.PEN_VS_AVERAGE = 0.4
+NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.1
+NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.49
+NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.12
+NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.04
+
+
 
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.5
 
@@ -86,6 +93,7 @@ NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT							= 0.4  -- vanilla was
 NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT							= 0.20 -- vanilla was 0.05 -- light gun attack value is divided by this value * 100 and added to shore bombardment modifier 
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0	
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2.0
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.2
 
 
 

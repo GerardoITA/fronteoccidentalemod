@@ -27,7 +27,6 @@ state={
 			anti_air_building = 5
 			infrastructure = 5
 			industrial_complex = 11
-			arms_factory = 9
 
 		}
 		victory_points = {

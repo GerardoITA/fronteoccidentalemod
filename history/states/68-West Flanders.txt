@@ -5,7 +5,7 @@ state={
 
 	history={
 buildings = { industrial_complex = 2
-	arms_factory = 1
+	
 infrastructure = 3 4346 = { naval_base = 2 coastal_bunker = 1 } 4402 = { coastal_bunker = 1}4541 = { coastal_bunker = 1 } 9650 = { naval_base = 1 coastal_bunker = 1}2220  = { naval_base = 1 coastal_bunker = 1} 3086 = { coastal_bunker = 1 }}
 		 1918.3.20.12 = {
 		owner = DKR
