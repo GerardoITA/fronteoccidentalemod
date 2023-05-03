@@ -1410,7 +1410,7 @@ develop_me262 = { ##
 
 		available = {
 				
-		date > 1941.7.20
+		date > 1944.7.20
 
 		}
 

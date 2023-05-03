@@ -45,10 +45,10 @@ instant_effect = {
     add_equipment_production = { equipment = { type = small_plane_airframe_2 creator = "AEF" version_name = "P-47D Thunderbolt" } requested_factories = 34 progress = 0.1 efficiency = 100 }
     add_equipment_production = { equipment = { type = small_plane_airframe_2 creator = "AEF" version_name = "Hawker Typhoon MkII" } requested_factories = 12 progress = 0.1 efficiency = 100 }
     add_equipment_production = { equipment = { type = medium_plane_fighter_airframe_2 creator = "AEF" version_name = "Mosquito B.IV Series II" } requested_factories = 8 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = medium_plane_airframe_1 creator = "AEF" version_name = "B-25J Mitchell" } requested_factories = 12 progress = 0.1 efficiency = 100 }
-    add_equipment_production = { equipment = { type = medium_plane_airframe_1 creator = "AEF" version_name = "B-26B Marauder" } requested_factories = 8 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = medium_plane_airframe_2 creator = "AEF" version_name = "B-25J Mitchell" } requested_factories = 12 progress = 0.1 efficiency = 100 }
+    add_equipment_production = { equipment = { type = medium_plane_airframe_2 creator = "AEF" version_name = "B-26B Marauder" } requested_factories = 8 progress = 0.1 efficiency = 100 }
     add_equipment_production = { equipment = { type = large_plane_airframe_2 creator = "AEF" version_name = "AVRO Lancaster" } requested_factories = 5 progress = 0.1 efficiency = 100 }
-    add_equipment_production = { equipment = { type = large_plane_airframe_1 creator = "AEF" version_name = "B-17E 'Flying Fortress'" } requested_factories = 5 progress = 0.1 efficiency = 100 }
+    add_equipment_production = { equipment = { type = large_plane_airframe_1 creator = "AEF" version_name = "B-17E 'Flying Fortress'" } requested_factories = 4 progress = 0.1 efficiency = 100 }
     add_equipment_production = { equipment = { type = large_plane_airframe_2 creator = "AEF" version_name = "B-24 Liberator" } requested_factories = 5 progress = 0.1 efficiency = 100 }
 
 
@@ -1296,7 +1296,7 @@ division = {
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.01
 }
-########### 3rd Armored Division - Leroy H. Watson
+########### 3rd US Armored Division - Leroy H. Watson
 division = { 
 	name = "I/32nd Armored Regiment/3rd US ARM"
 		location = 7303
@@ -1371,6 +1371,1042 @@ division = {
 	name = "703rd Tank Destroyer Battalion (SP)/3rd US ARM"
 		location = 7303
 		division_template = "Medium Tank Destroyer Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+
+
+######################## XIX Corps - Charles H. Corlett
+########### 28th Infantry Division - 
+division = { 
+	name = "I/109th Infantry Regiment/28th US INF"
+		location = 4726	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/109th Infantry Regiment/28th US INF"
+		location = 4726	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/109th Infantry Regiment/28th US INF"
+		location = 4726	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/110th Infantry Regiment/28th US INF"
+		location = 4726	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/110th Infantry Regiment/28th US INF"
+		location = 4726	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/110th Infantry Regiment/28th US INF"
+		location = 4726	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/112th Infantry Regiment/28th US INF"
+		location = 4726	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/112th Infantry Regiment/28th US INF"
+		location = 4726	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/112th Infantry Regiment/28th US INF"
+		location = 4726	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/28th Division Artillery/28th US INF"
+		location = 4726	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/28th Division Artillery/28th US INF"
+		location = 4726	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/28th Division Artillery/28th US INF"
+		location = 4726	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "IV/28th Division Artillery/28th US INF"
+		location = 4726	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "630th Tank Destroyer Battalion (SP)/28th US INF"
+		location = 4726	 
+		division_template = "Medium Tank Destroyer Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "744th Tank Battalion/28th US INF"
+		location = 4726	 
+		division_template = "Indipendent Armored Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+
+########### 29th Infantry Division - Charles H. Gerhardt
+division = { 
+	name = "I/115th Infantry Regiment/29th US INF"
+		location = 2974	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/115th Infantry Regiment/29th US INF"
+		location = 2974	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/115th Infantry Regiment/29th US INF"
+		location = 2974	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/116th Infantry Regiment/29th US INF"
+		location = 2974	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/116th Infantry Regiment/29th US INF"
+		location = 2974	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/116th Infantry Regiment/29th US INF"
+		location = 2974	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/175th Infantry Regiment/29th US INF"
+		location = 2974	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/175th Infantry Regiment/29th US INF"
+		location = 2974	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/175th Infantry Regiment/29th US INF"
+		location = 2974	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/29th Division Artillery/29th US INF"
+		location = 2974	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/29th Division Artillery/29th US INF"
+		location = 2974	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/29th Division Artillery/29th US INF"
+		location = 2974	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "IV/29th Division Artillery/29th US INF"
+		location = 2974	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+########### 6th US Armored Division -
+division = { 
+	name = "8th Tank Battalion/6th US ARM"
+		location = 968
+		division_template = "Armored Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "35th Tank Battalion/6th US ARM"
+		location = 968
+		division_template = "Armored Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "37th Tank Battalion/6th US ARM"
+		location = 968
+		division_template = "Armored Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/6th Armored Division Artillery/6th US ARM"
+		location = 968
+		division_template = "Medium SPG Battalion ( M7 )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/6th Armored Division Artillery/6th US ARM"
+		location = 968
+		division_template = "Medium SPG Battalion ( M7 )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/6th Armored Division Artillery/6th US ARM"
+		location = 968
+		division_template = "Medium SPG Battalion ( M12 )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "10th Armored Infantry Battalion/6th US ARM"
+		location = 968
+		division_template = "Armored Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "51st Armored Infantry Battalion/6th US ARM"
+		location = 968
+		division_template = "Armored Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "56th Armored Infantry Battalion/6th US ARM"
+		location = 968
+		division_template = "Armored Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+###################################### 3rd US Army - George Patton
+######################## VIII Corps - Troy H. Middleton
+########### 8th Infantry Division - William C. McMahon
+division = { 
+	name = "I/13th Infantry Regiment/8th US INF"
+		location = 468 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/13th Infantry Regiment/8th US INF"
+		location = 468 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/13th Infantry Regiment/8th US INF"
+		location = 468 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/28th Infantry Regiment/8th US INF"
+		location = 468 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/28th Infantry Regiment/8th US INF"
+		location = 468 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/28th Infantry Regiment/8th US INF"
+		location = 468 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/121st Infantry Regiment/8th US INF"
+		location = 468 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/121st Infantry Regiment/8th US INF"
+		location = 468 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/121st Infantry Regiment/8th US INF"
+		location = 468 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/8th Division Artillery/8th US INF"
+		location = 468 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/8th Division Artillery/8th US INF"
+		location = 468 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/8th Division Artillery/8th US INF"
+		location = 468 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "IV/8th Division Artillery/8th US INF"
+		location = 468 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "644th Tank Destroyer Battalion (SP)/8th US INF"
+		location = 468 
+		division_template = "Medium Tank Destroyer Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "709th Tank Battalion/8th US INF"
+		location = 468 
+		division_template = "Indipendent Armored Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+########### 9th Infantry Division - Manton S. Eddy
+division = { 
+	name = "I/39th Infantry Regiment/9th US INF"
+		location = 181	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/39th Infantry Regiment/9th US INF"
+		location = 181	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/39th Infantry Regiment/9th US INF"
+		location = 181	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/47th Infantry Regiment/9th US INF"
+		location = 181	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/47th Infantry Regiment/9th US INF"
+		location = 181	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/47th Infantry Regiment/9th US INF"
+		location = 181	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/60th Infantry Regiment/9th US INF"
+		location = 181	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/60th Infantry Regiment/9th US INF"
+		location = 181	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/60th Infantry Regiment/9th US INF"
+		location = 181	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/9th Division Artillery/9th US INF"
+		location = 181	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/9th Division Artillery/9th US INF"
+		location = 181	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/9th Division Artillery/9th US INF"
+		location = 181	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "IV/9th Division Artillery/9th US INF"
+		location = 181	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "899th Tank Destroyer Battalion (SP)/9th US INF"
+		location = 181	 
+		division_template = "Medium Tank Destroyer Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "746th Tank Battalion/9th US INF"
+		location = 181	 
+		division_template = "Indipendent Armored Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+########### 4th US Armored Division - John Shirley Wood
+division = { 
+	name = "8th Tank Battalion/4th US ARM"
+		location = 3612
+		division_template = "Armored Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "35th Tank Battalion/4th US ARM"
+		location = 3612
+		division_template = "Armored Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "37th Tank Battalion/4th US ARM"
+		location = 3612
+		division_template = "Armored Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/4th Armored Division Artillery/4th US ARM"
+		location = 3612
+		division_template = "Medium SPG Battalion ( M7 )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/4th Armored Division Artillery/4th US ARM"
+		location = 3612
+		division_template = "Medium SPG Battalion ( M7 )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/4th Armored Division Artillery/4th US ARM"
+		location = 3612
+		division_template = "Medium SPG Battalion ( M12 )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "10th Armored Infantry Battalion/4th US ARM"
+		location = 3612
+		division_template = "Armored Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "51st Armored Infantry Battalion/4th US ARM"
+		location = 3612
+		division_template = "Armored Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "53rd Armored Infantry Battalion/4th US ARM"
+		location = 3612
+		division_template = "Armored Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+######################## XV Corps - Wade H. Haislip 
+########### 90th Infantry Division - Raymond S. McLain
+division = { 
+	name = "I/357th Infantry Regiment/90th US INF"
+		location = 2655	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/357th Infantry Regiment/90th US INF"
+		location = 2655	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/357th Infantry Regiment/90th US INF"
+		location = 2655	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/358th Infantry Regiment/90th US INF"
+		location = 2655	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/358th Infantry Regiment/90th US INF"
+		location = 2655	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/358th Infantry Regiment/90th US INF"
+		location = 2655	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/359th Infantry Regiment/90th US INF"
+		location = 2655	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/359th Infantry Regiment/90th US INF"
+		location = 2655	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/359th Infantry Regiment/90th US INF"
+		location = 2655	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/90th Division Artillery/90th US INF"
+		location = 2655	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/90th Division Artillery/90th US INF"
+		location = 2655	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/90th Division Artillery/90th US INF"
+		location = 2655	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "IV/90th Division Artillery/90th US INF"
+		location = 2655	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "607th Tank Destroyer Batallion (SP)/90th US INF"
+		location = 2655	 
+		division_template = "Medium Tank Destroyer Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "712th Tank Battalion/90th US INF"
+		location = 2655	 
+		division_template = "Indipendent Armored Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+########### 83rd Infantry Division - Robert C. Macon
+division = { 
+	name = "I/329th Infantry Regiment/83rd US INF"
+		location = 4763	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/329th Infantry Regiment/83rd US INF"
+		location = 4763	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/329th Infantry Regiment/83rd US INF"
+		location = 4763	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/330th Infantry Regiment/83rd US INF"
+		location = 4763	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/330th Infantry Regiment/83rd US INF"
+		location = 4763	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/330th Infantry Regiment/83rd US INF"
+		location = 4763	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/321st Infantry Regiment/83rd US INF"
+		location = 4763	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/321st Infantry Regiment/83rd US INF"
+		location = 4763	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/321st Infantry Regiment/83rd US INF"
+		location = 4763	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/83rd Division Artillery/83rd US INF"
+		location = 4763	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/83rd Division Artillery/83rd US INF"
+		location = 4763	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/83rd Division Artillery/83rd US INF"
+		location = 4763	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "IV/83rd Division Artillery/83rd US INF"
+		location = 4763	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "802nd Tank Destroyer Battalion (SP)/83rd US INF"
+		location = 4763	 
+		division_template = "Medium Tank Destroyer Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "774th Tank Battalion/83rd US INF"
+		location = 4763	 
+		division_template = "Indipendent Armored Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+
+
+######################## XX Corps - Charles H. Corlett
+########### 5th Infantry Division - 
+division = { 
+	name = "I/2nd Infantry Regiment/5th US INF"
+		location = 9597	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/2nd Infantry Regiment/5th US INF"
+		location = 9597	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/2nd Infantry Regiment/5th US INF"
+		location = 9597	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/10th Infantry Regiment/5th US INF"
+		location = 9597	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/10th Infantry Regiment/5th US INF"
+		location = 9597	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/10th Infantry Regiment/5th US INF"
+		location = 9597	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/11th Infantry Regiment/5th US INF"
+		location = 9597	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/11th Infantry Regiment/5th US INF"
+		location = 9597	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/11th Infantry Regiment/5th US INF"
+		location = 9597	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/5th Division Artillery/5th US INF"
+		location = 9597	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/5th Division Artillery/5th US INF"
+		location = 9597	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/5th Division Artillery/5th US INF"
+		location = 9597	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "IV/5th Division Artillery/5th US INF"
+		location = 9597	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "818th Tank Destroyer Battalion (SP)/5th US INF"
+		location = 9597	 
+		division_template = "Medium Tank Destroyer Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "735th Tank Battalion/5th US INF"
+		location = 9597	 
+		division_template = "Indipendent Armored Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+########### 35th Infantry Division - 
+division = { 
+	name = "I/134th Infantry Regiment/35th US INF"
+		location = 3390	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/134th Infantry Regiment/35th US INF"
+		location = 3390	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/134th Infantry Regiment/35th US INF"
+		location = 3390	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/137th Infantry Regiment/35th US INF"
+		location = 3390	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/137th Infantry Regiment/35th US INF"
+		location = 3390	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/137th Infantry Regiment/35th US INF"
+		location = 3390	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/320th Infantry Regiment/35th US INF"
+		location = 3390	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/320th Infantry Regiment/35th US INF"
+		location = 3390	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/320th Infantry Regiment/35th US INF"
+		location = 3390	 
+		division_template = "Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/35th Division Artillery/35th US INF"
+		location = 3390	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/35th Division Artillery/35th US INF"
+		location = 3390	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/35th Division Artillery/35th US INF"
+		location = 3390	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "IV/35th Division Artillery/35th US INF"
+		location = 3390	 
+		division_template = "Artillery Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "654th Tank Destroyer Battalion (SP)/35th US INF"
+		location = 3390	 
+		division_template = "Medium Tank Destroyer Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "737th Tank Battalion/35th US INF"
+		location = 3390	 
+		division_template = "Indipendent Armored Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+########### 7th US Armored Division - Lindsay M. Silvester
+division = { 
+	name = "17th Tank Battalion/7th US ARM"
+		location = 9596
+		division_template = "Armored Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "31st Tank Battalion/7th US ARM"
+		location = 9596
+		division_template = "Armored Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "40th Tank Battalion/7th US ARM"
+		location = 9596
+		division_template = "Armored Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/7th Armored Division Artillery/7th US ARM"
+		location = 9596
+		division_template = "Medium SPG Battalion ( M7 )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/7th Armored Division Artillery/7th US ARM"
+		location = 9596
+		division_template = "Medium SPG Battalion ( M7 )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/7th Armored Division Artillery/7th US ARM"
+		location = 9596
+		division_template = "Medium SPG Battalion ( M12 )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "23rd Armored Infantry Battalion/7th US ARM"
+		location = 9596
+		division_template = "Armored Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "38th Armored Infantry Battalion/7th US ARM"
+		location = 9596
+		division_template = "Armored Infantry Battalion ( USA )"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "48th Armored Infantry Battalion/7th US ARM"
+		location = 9596
+		division_template = "Armored Infantry Battalion ( USA )"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.01
 }
