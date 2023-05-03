@@ -16,7 +16,7 @@ default = {
 	#	callsigns = { "Queen Of The Sky" "The Red Princess" }
 	#}
 	surnames = { "Smith" "Jones" "Taylor" "Brown" "Williams" "Wilson" "Evans" "Walker" "White" "Roberts" }
-	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Pebbles" "Sunshine" Demon}
+	callsigns = { "Big Chungus" "Based" "Redpilled" "Troll" "Peepo" "Le Ace" "Chad" "Gigachad" "Cringelord" "Memelord" "Zoomer" "Boomer" }
 }
  
 ###############################################################
@@ -36,7 +36,7 @@ OKW = {
 		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm 
 		Beisswenger Duttmann Wilbs Berglen Behrmann 
 		}
-	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+	callsigns = { "Big Chungus" "Based" "Redpilled" "Troll" "Peepo" "Le Ace" "Chad" "Gigachad" "Cringelord" "Memelord" "Zoomer" "Boomer" }
 }
 
 
@@ -77,7 +77,7 @@ AEF = {
 		Wells Holmgren 
 			
 		}
-	callsigns = { Stubborn Arrow "The King" Eagle Hangover Striker Chase "One Wing" Pickle Thief Thunder Lightning Storm Target Hawk Fox Dog Sparrow Sunrise "Night Owl" Butcher Cocky Hawkeye Killer Mick Brandy "The Baron" }
+	callsigns = { "Big Chungus" "Based" "Redpilled" "Troll" "Peepo" "Le Ace" "Chad" "Gigachad" "Cringelord" "Memelord" "Zoomer" "Boomer" }
 }
 
 SOV = {
@@ -164,7 +164,7 @@ SOV = {
 			Pashayeva
 		}
 	}
-	callsigns = { "The Colonist" "The Bell" Heine Duma Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
+	callsigns = { "Big Chungus" "Based" "Redpilled" "Troll" "Peepo" "Le Ace" "Chad" "Gigachad" "Cringelord" "Memelord" "Zoomer" "Boomer" }
 }
 
 

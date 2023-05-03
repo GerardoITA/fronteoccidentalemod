@@ -1410,7 +1410,7 @@ develop_me262 = { ##
 
 		available = {
 				
-		date > 1944.7.20
+		date > 1941.7.20
 
 		}
 
@@ -1449,7 +1449,7 @@ develop_me262 = { ##
 				icon = "gfx/interface/technologies/GER_Me262.dds"
 			}
 
-			add_offsite_building = { type = arms_factory level = 12 }
+			add_offsite_building = { type = arms_factory level = 15 }
 			add_equipment_production = { equipment = { type = small_plane_airframe_4 creator = "OKW" version_name = "Me 262 'Schwalbe'" } requested_factories = 15 progress = 0.1 efficiency = 100 }
 
 			}

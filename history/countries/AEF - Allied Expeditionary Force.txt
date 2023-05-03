@@ -295,7 +295,6 @@ set_popularities = {
 	armored_car1 = 1 
 	armored_car2 = 1 
 	armored_car3 = 1
-	armored_car_at_upgrade = 1 
 	fuel_silos = 1
 	fuel_refining = 1
 	marines = 1
@@ -359,6 +358,27 @@ gwtank_chassis = 1
 		armor_tech_4 = 1
 	}
 	create_equipment_variant = {
+			name = "M4A3 Sherman"
+			type = medium_tank_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_medium_cannon_2
+				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 9
+				tank_nsb_armor_upgrade = 3
+			}
+			icon = "gfx/interface/technologies/AEF_M4A3.dds"
+	}
+	create_equipment_variant = {
 			name = "M4A3(76) Sherman"
 			type = medium_tank_chassis_2
 			parent_version = 0
@@ -400,30 +420,6 @@ gwtank_chassis = 1
 			}
 			icon = "gfx/interface/technologies/AEF_M4A3E8.dds"
 	}
-
-
-	
-	create_equipment_variant = {
-			name = "M4A3(75)W Sherman"
-			type = medium_tank_chassis_2
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_medium_cannon_2
-				turret_type_slot = tank_medium_three_man_tank_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_welded_armor
-				engine_type_slot = tank_gasoline_engine
-				special_type_slot_1 = tank_radio_1
-				special_type_slot_2 = smoke_launchers
-				special_type_slot_3 = easy_maintenance
-				special_type_slot_4 = empty
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 9
-				tank_nsb_armor_upgrade = 3
-			}
-			icon = "gfx/interface/technologies/AEF_M4A3.dds"
-	}
 	create_equipment_variant = {
 			name = "M4A3E2 Sherman"
 			type = medium_tank_chassis_2
@@ -446,6 +442,27 @@ gwtank_chassis = 1
 			icon = "gfx/interface/technologies/AEF_Jumbo.dds"
 	}
 	create_equipment_variant = {
+			name = "Sherman Firefly"
+			type = medium_tank_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon_3
+				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 7
+				tank_nsb_armor_upgrade = 3
+			}
+			icon = "gfx/interface/technologies/AEF_Firefly.dds" 
+		}
+	create_equipment_variant = {
 			name = "Cromwell Mk VII"
 			type = medium_tank_chassis_1
 			parent_version = 0
@@ -461,12 +478,31 @@ gwtank_chassis = 1
 				special_type_slot_4 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 12
+				tank_nsb_engine_upgrade = 15
 				tank_nsb_armor_upgrade = 8
 			}
 			icon = "gfx/interface/technologies/AEF_Cromwell.dds"
 	}
-
+	create_equipment_variant = {
+			name = "Crusader AA"
+			type = medium_tank_aa_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_anti_air_cannon_2
+				turret_type_slot = tank_light_three_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 15
+			}
+			icon = "gfx/interface/technologies/AEF_CrusaderAA.dds"
+	}
 create_equipment_variant = {
 			name = "Churchill Mk VII"
 			type = heavy_tank_chassis_1
@@ -490,13 +526,13 @@ create_equipment_variant = {
 		}
 	create_equipment_variant = {
 			name = "M10 Wolverine"
-			type = medium_tank_destroyer_chassis_1
+			type = medium_tank_destroyer_chassis_2
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_high_velocity_cannon_2
 				turret_type_slot = tank_medium_three_man_tank_turret
 				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_welded_armor
+				armor_type_slot = tank_riveted_armor
 				engine_type_slot = tank_gasoline_engine
 				special_type_slot_1 = tank_radio_1
 				special_type_slot_2 = smoke_launchers
@@ -509,14 +545,14 @@ create_equipment_variant = {
 			icon = "gfx/interface/technologies/AEF_Wolverine.dds" 
 		}
 		create_equipment_variant = {
-			name = "Sherman Firefly"
+			name = "17pdr SP Achilles"
 			type = medium_tank_destroyer_chassis_2
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_high_velocity_cannon_3
 				turret_type_slot = tank_medium_three_man_tank_turret
 				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_welded_armor
+				armor_type_slot = tank_riveted_armor
 				engine_type_slot = tank_gasoline_engine
 				special_type_slot_1 = tank_radio_1
 				special_type_slot_2 = smoke_launchers
@@ -525,9 +561,8 @@ create_equipment_variant = {
 			}
 			upgrades = {
 				tank_nsb_engine_upgrade = 7
-				tank_nsb_armor_upgrade = 3
 			}
-			icon = "gfx/interface/technologies/AEF_Firefly.dds" 
+			icon = "gfx/interface/technologies/AEF_Achilles.dds" 
 		}
 		create_equipment_variant = {
 			name = "Archer"
@@ -557,7 +592,7 @@ create_equipment_variant = {
 				main_armament_slot = tank_medium_howitzer
 				turret_type_slot = tank_medium_fixed_superstructure_turret
 				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_welded_armor
+				armor_type_slot = tank_riveted_armor
 				engine_type_slot = tank_gasoline_engine
 				special_type_slot_1 = tank_radio_1
 				special_type_slot_2 = smoke_launchers
@@ -568,6 +603,26 @@ create_equipment_variant = {
 				tank_nsb_engine_upgrade = 5
 			}
 			icon = "gfx/interface/technologies/AEF_Priest.dds" 
+		}
+		create_equipment_variant = {
+			name = "Sexton"
+			type = medium_tank_artillery_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_medium_howitzer
+				turret_type_slot = tank_medium_fixed_superstructure_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 4
+			}
+			icon = "gfx/interface/technologies/AEF_Sexton.dds" 
 		}
 		create_equipment_variant = {
 			name = "M12 Gun Motor Carriage"

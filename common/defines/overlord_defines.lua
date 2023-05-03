@@ -81,9 +81,25 @@ NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 2
 NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.4			                -- how to weight in highest armor & pen vs the division average
 NDefines.NMilitary.PEN_VS_AVERAGE = 0.4
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.1
+NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.1
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.49
-NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.12
-NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.04
+NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.1
+NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.045
+
+
+
+NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.00
+NDefines.NMilitary.MAX_RELATIVE_COMBAT_DAMAGE_TO_MODIFY_XP = 0.0			-- you gain more XP if you are doing more damage relative to enemy, this is the max relative amount to gain following RATe
+NDefines.NMilitary.XP_DECAY_RATE_PER_HOUR_IN_COMBAT = 0.00				-- you get reduced XP as combat drags
+NDefines.NMilitary.MIN_XP_RATE_TO_DECAY = 0.0
+NDefines.NMilitary.XP_GAIN_FACTOR_FOR_MAX_RELATIVE_COMBAT_DAMAGE = 0.0	-- XP factor scaling for max relative combat damage
+NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.00
+NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.0
+NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0.00
+NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0.00
+NDefines.NMilitary.CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0.0 -- if there are multiple leaders in same combat, each one gets thisratio + (1-thisratio)/num leaders. amount of xp each general gets scales 1 0.75 0.66 etc for 1 2 3 generals
+NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 0.0
+NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.00
 
 
 
@@ -92,7 +108,7 @@ NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.5
 NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT							= 0.4  -- vanilla was 0.1 -- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier 
 NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT							= 0.20 -- vanilla was 0.05 -- light gun attack value is divided by this value * 100 and added to shore bombardment modifier 
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0	
-NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2.0
+NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.5
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.2
 
 
