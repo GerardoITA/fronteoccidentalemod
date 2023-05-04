@@ -36,15 +36,6 @@ country_leader={
 			}
 		}
 		
-		field_marshal={
-		    traits={ trait_reckless media_personality trickster trait_engineer panzer_leader desert_fox }
-			skill=8
-			attack_skill=8
-			defense_skill=6
-			planning_skill=8
-			logistics_skill=5
-            legacy_id=4
-		}
 	}
 
 	GER_gunther_von_kluge={
@@ -77,15 +68,7 @@ advisor={
 				factor = 1.500
 			}
 		}
-		field_marshal={
-			traits={ panzer_leader ranger offensive_doctrine }
-			skill=7
-			attack_skill=6
-			defense_skill=2
-			planning_skill=7
-			logistics_skill=3
-			#legacy_id=2
-		}
+
 	}
 	GER_gerd_von_rundstedt={
 		name=GER_gerd_von_rundstedt
@@ -101,15 +84,6 @@ country_leader={
 			traits={ trait_ob_west }
 			id=-1
 			desc=POLITICS_RUNSTEDT_DESC
-		}
-field_marshal={
-			traits={ old_guard inflexible_strategist defensive_doctrine }
-			skill=5
-			attack_skill=3
-			defense_skill=3
-			planning_skill=5
-			logistics_skill=4
-			#legacy_id=2
 		}
 		advisor={
 			slot = army_chief
@@ -181,15 +155,7 @@ field_marshal={
 			}
 		}
 		
-		field_marshal={
-			traits={ trait_tank_genius trickster trait_engineer panzer_leader ranger panzer_expert expert_improviser }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=3
-			#legacy_id=4
-		}
+		
 	}
 
 	
@@ -201,15 +167,6 @@ field_marshal={
 				#small=GFX_portrait_GER_gunther_von_kluge_small
 			}
 		}
-		corps_commander={
-			traits={ trickster trait_engineer panzer_leader ranger }
-			skill=8
-			attack_skill=8
-			defense_skill=6
-			planning_skill=8
-			logistics_skill=5
-			#legacy_id=2
-		}
 	}
 
 		GER_erich_marcks={
@@ -219,15 +176,6 @@ field_marshal={
 				large="gfx/leaders/GER/Marcks.dds"
 				#small=GFX_portrait_GER_gunther_von_kluge_small
 			}
-		}
-		corps_commander={
-			traits={ trickster panzer_leader hill_fighter }
-			skill=6
-			attack_skill=7
-			defense_skill=4
-			planning_skill=5
-			logistics_skill=4
-			#legacy_id=2
 		}
 	}
 
@@ -254,34 +202,6 @@ advisor={
 				factor = 1.500
 			}
 		}
-		corps_commander={
-			traits={ commando ranger }
-			skill=4
-			attack_skill=4
-			defense_skill=7
-			planning_skill=2
-			logistics_skill=8
-			#legacy_id=16
-		}
-	}
-
-GER_german_rock={
-		name=GER_german_rock
-		portraits={
-			army={
-				large="gfx/leaders/GER/evil_rock.dds"
-			}
-		}
-		corps_commander={
-			traits={  }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
-			visible = { is_historical_focus_on = no }
-	
-		}
 	}
 GER_claus_von_stauffenberg={
 		name=GER_claus_von_stauffenberg
@@ -307,16 +227,7 @@ advisor={
 				factor = 1.500
 			}
 		}
-		corps_commander={
-		visible = {  has_completed_focus = GER_appoint_trecksow_and_stauffenberg  }
-			traits={ infantry_leader skilled_staffer winter_specialist }
-			skill=4
-			attack_skill=3
-			defense_skill=7
-			planning_skill=3
-			logistics_skill=6
-			#legacy_id=16
-		}
+	
 	}	
 	
 GER_henning_von_trecksow={
@@ -343,16 +254,7 @@ advisor={
 				factor = 1.500
 			}
 		}
-		corps_commander={
-		visible = {  has_completed_focus = GER_appoint_trecksow_and_stauffenberg  }
-			traits={ infantry_leader trickster trait_engineer ranger }
-			skill=5
-			attack_skill=7
-			defense_skill=4
-			planning_skill=5
-			logistics_skill=3
-			#legacy_id=16
-		}
+
 	}	
 	
 GER_walter_model={
@@ -363,20 +265,10 @@ GER_walter_model={
 				small=GFX_portrait_GER_walter_model_small
 			}
 		}
-corps_commander={
-			traits={ politically_connected organizer infantry_leader trickster defensive_doctrine }
-			skill=7
-			attack_skill=4
-			defense_skill=8
-			planning_skill=4
-			logistics_skill=6
-			#legacy_id=10
-		}
 advisor={
 			slot = army_chief
 			idea_token = idea_model_army_chief
 			ledger = army
-		available = { has_country_flag = model_is_field_marshal }
 			allowed = {
 				original_tag = OKW
 			}
@@ -392,261 +284,8 @@ advisor={
 	}
 
 
-	#GER_walter_model={
-	##	name=GER_walter_model
-	#	portraits={
-	#		army={
-	##			large="gfx/leaders/GER/Model.dds"
-	#			small=GFX_portrait_GER_walter_model_small
-	#		}
-	##	}
-	##	advisor={
-	#		slot = army_chief
-	#		idea_token = walter_model
-	#		ledger = army
-	#	available = { GER_walter_model = { is_field_marshal = yes } } 
-	#		allowed = {
-	#			original_tag = GER
-	#		}
-	#		traits = {
-	#			army_chief_offensive_3
-	##		}
-	#		cost = 100
-	#		ai_will_do = {
-	#			factor = 1.000
-	#		}
-	#	}
-	#	corps_commander={
-	#		traits={ politically_connected organizer infantry_leader trickster defensive_doctrine }
-	#		skill=7
-	#		attack_skill=4
-	#		defense_skill=8
-	#		planning_skill=4
-	#		logistics_skill=6
-	#		#legacy_id=10
-	#	}
-	#}
-
-	GER_friedrich_wiese={
-		name=GER_friedrich_wiese
-		portraits={
-			army={
-				large="gfx/leaders/GER/Wiese.dds"
-	
-			}
-		}
-		corps_commander={
-			traits={ infantry_leader }
-			skill=4
-			attack_skill=2
-			defense_skill=6
-			planning_skill=3
-			logistics_skill=3
-			#legacy_id=10
-	visible = { has_country_flag = operation_dragoon_launched }
-		}
-	}
-GER_baptist_kniess={
-		name=GER_baptist_kniess
-		portraits={
-			army={
-			large="gfx/leaders/GER/Kniess.dds"	
-	
-			}
-		}
-		corps_commander={
-			traits={ organizer commando trait_mountaineer }
-			skill=6
-			attack_skill=5
-			defense_skill=7
-			planning_skill=4
-			logistics_skill=6
-			#legacy_id=10
-	visible = { has_country_flag = operation_dragoon_launched }
-		}
-	}
-
-	GER_ferdinand_neuling={
-		name=GER_ferdinand_neuling
-		portraits={
-			army={
-				#large=GFX_portrait_GER_kurt_student
-				#small="GFX_idea_kurt_student"
-			}
-		}
-		
-		
-		corps_commander={
-			traits={ trait_tank_genius trickster trait_engineer panzer_leader ranger panzer_expert expert_improviser }
-			skill=9
-			attack_skill=8
-			defense_skill=6
-			planning_skill=7
-			logistics_skill=5
-			#legacy_id=16
-		visible = { has_country_flag = operation_dragoon_launched }
-		}
-	}
-
-	
-
-	GER_johannes_blaskowitz={
-		name=GER_johannes_blaskowitz
-		portraits={
-			army={
-				large=GFX_portrait_GER_johannes_blaskowitz
-				small=GFX_portrait_GER_johannes_blaskowitz_small
-			}
-		}
-		field_marshal={
-			traits={ infantry_leader }
-			skill=4
-			attack_skill=2
-			defense_skill=6
-			planning_skill=3
-			logistics_skill=3
-			#legacy_id=19
-			visible = { has_country_flag = operation_dragoon_launched }
-		}
-	}
-GER_wilhelm_fahrmbacher={
-		name=GER_wilhelm_fahrmbacher
-		portraits={
-			army={
-				large="gfx/leaders/GER/Fahrmbacher.dds"
-				#small=GFX_portrait_GER_johannes_blaskowitz_small
-			}
-		}
-		corps_commander={
-			traits={ organizer infantry_leader trickster trait_engineer hill_fighter }
-			skill=5
-			attack_skill=4
-			defense_skill=9
-			planning_skill=4
-			logistics_skill=3
-			#legacy_id=19
-		}
-	}
 
 
-	GER_paul_hausser={
-		name=GER_paul_hausser
-		portraits={
-			army={
-				large=GFX_portrait_GER_paul_hausser
-				small=GFX_portrait_GER_paul_hausser_small
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer panzer_leader }
-			skill=5
-			attack_skill=6
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=6
-			#legacy_id=20
-		}
-	}
-GER_friedrich_dollmann={
-		name=GER_friedrich_dollman
-		portraits={
-			army={
-				large="gfx/leaders/GER/Dollman.dds"
-				#small=GFX_portrait_GER_paul_hausser_small
-			}
-		}
-		field_marshal={
-			traits={organizer skilled_staffer winter_specialist trickster}
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=3
-			#legacy_id=20
-		}
-	}
-	
-GER_hans_von_salmuth={
-		name=GER_hans_von_salmuth
-		portraits={
-			army={
-				large="gfx/leaders/GER/Salmuth.dds"
-				#small=GFX_portrait_GER_paul_hausser_small
-			}
-		}
-		field_marshal={
-			traits={ Adaptable }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=3
-			#legacy_id=20
-		}
-	}
-	
-GER_von_weikersthal={
-		name=GER_von_weikersthal
-		portraits={
-			army={
-				#large=GFX_portrait_GER_sepp_dietrich
-				large="gfx/leaders/GER/Weikersthal.dds"
-				#small=GFX_portrait_GER_sepp_dietrich_small
-			}
-		}
-		corps_commander={
-			traits={ brilliant_strategist trait_reckless armor_officer politically_connected }
-			skill=5
-			attack_skill=3
-			defense_skill=2
-			planning_skill=8
-			logistics_skill=2
-			#legacy_id=24
-		}
-	}
-
-	GER_sepp_dietrich={
-		name=GER_sepp_dietrich
-		portraits={
-			army={
-				large=GFX_portrait_GER_sepp_dietrich
-				small=GFX_portrait_GER_sepp_dietrich_small
-			}
-		}
-		corps_commander={
-			traits={ brilliant_strategist trait_reckless armor_officer politically_connected }
-			skill=4
-			skill=7
-			attack_skill=3
-			defense_skill=5
-			planning_skill=4
-			logistics_skill=7
-			#legacy_id=24
-		}
-	}
-
-	GER_hasso_von_manteuffel={
-		name=GER_hasso_von_manteuffel
-		portraits={
-			army={
-				large=GFX_portrait_GER_hasso_von_manteuffel
-				small=GFX_portrait_GER_hasso_von_manteuffel_small
-			}
-		}
-		corps_commander={
-			traits={ trickster panzer_leader ranger }
-			skill=7
-			attack_skill=7
-			defense_skill=6
-			planning_skill=5
-			logistics_skill=6
-			#legacy_id=25
-		}
-	}
-
-	
-
-	
 
 	
 
@@ -1299,15 +938,7 @@ GER_alfred_jodl={
 				factor = 0.500
 			}
 		}	
-		corps_commander={
-			traits={ career_officer politically_connected }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=23
-		}
+
 	}
 GER_hans_speidel={
 		name=GER_hans_speidel
@@ -1677,4 +1308,115 @@ GER_hermann_fegelein={
 			}
 		}		
 	}
+	### MY GENERALS 
+
+MOD_Sepp_Dietrich = {
+	name = MOD_Sepp_Dietrich
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Sepp_Dietrich.png"
+		}
+	}
+	field_marshal={
+
+		traits={ harsh_leader trickster panzer_leader war_hero armor_officer}
+
+		skill=7
+		attack_skill=9
+		defense_skill=6
+		planning_skill=6
+		logistics_skill=5
+
+
+	}
+}
+MOD_Paul_Hausser = {
+	name = MOD_Paul_Hausser
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Paul_Hausser.png"
+		}
+	}
+	field_marshal={
+
+		traits={ harsh_leader trickster panzer_leader war_hero armor_officer}
+
+		skill=8
+		attack_skill=8
+		defense_skill= 8
+		planning_skill=6
+		logistics_skill=8
+
+
+	}
+}
+MOD_Theodor_Wisch = {
+	name = MOD_Theodor_Wisch
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Theodor_Wisch.png"
+		}
+	}
+	corps_commander={
+
+		traits={ harsh_leader trickster panzer_leader war_hero armor_officer}
+
+		skill=5
+		attack_skill=6
+		defense_skill= 6
+		planning_skill=6
+		logistics_skill=6
+
+
+	}
+}
+MOD_Kurt_Myer = {
+	name = MOD_Kurt_Myer
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Kurt_Myer.png"
+		}
+	}
+	corps_commander={
+
+		traits={ harsh_leader trickster panzer_leader war_hero armor_officer}
+
+		skill=6
+		attack_skill=7
+		defense_skill= 6
+		planning_skill=6
+		logistics_skill=6
+
+
+	}
+}
+
+
+##GER_german_rock={
+##		name=GER_german_rock
+##		portraits={
+##			army={
+##				large="gfx/leaders/GER/evil_rock.dds"
+##			}
+##		}
+##		corps_commander={
+##			traits={  }
+##			skill=3
+##			attack_skill=3
+##			defense_skill=3
+##			planning_skill=2
+##			logistics_skill=2
+##			visible = { is_historical_focus_on = no }
+##	
+##		}
+##		field_marshal={
+##		    traits={ trickster trait_engineer panzer_leader }
+##			skill=8
+##			attack_skill=8
+##			defense_skill=6
+##			planning_skill=8
+##			logistics_skill=5
+##            legacy_id=4
+##		}
+##	}
 }

@@ -70,6 +70,45 @@ add_command_power = 120
 
 
 
+
+
+
+#### Waffen SS 
+# I SS Panzerkorps
+recruit_character = MOD_Sepp_Dietrich
+recruit_character = MOD_Theodor_Wisch
+recruit_character = MOD_Kurt_Myer
+# II SS Panzerkorps
+recruit_character = MOD_Paul_Hausser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+######################################################################### Legacy
 recruit_character = GER_gerd_von_rundstedt
 recruit_character = GER_erwin_rommel
 recruit_character = GER_gunther_von_kluge
@@ -839,7 +878,7 @@ if = {
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "GER_1943_air_bba"
+		set_air_oob = "GER_1943_Air_Mod"
 		set_technology = {
 			aa_lmg = 1
 			aa_hmg = 1

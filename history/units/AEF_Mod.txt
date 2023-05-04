@@ -13,7 +13,7 @@ instant_effect = {
 	add_equipment_production = { equipment = { type = anti_air_equipment_2 creator = "AEF" version_name = "Bofors 40mm" } requested_factories = 8 progress = 0.1 efficiency = 100 }
 	add_equipment_production = { equipment = { type = anti_tank_equipment_1 creator = "AEF" version_name = "QF 6-pounder/57 mm Gun M1" } requested_factories = 5 progress = 0.1 efficiency = 100 }
 	add_equipment_production = { equipment = { type = anti_tank_equipment_2 creator = "AEF" version_name = "3-inch Gun M5" } requested_factories = 3 progress = 0.1 efficiency = 100 }
-    add_equipment_production = { equipment = { type = anti_tank_equipment_3 creator = "AEF" version_name = "Ordnance QF 17-pounder" } requested_factories = 2 progress = 0.1 efficiency = 100 }
+    add_equipment_production = { equipment = { type = anti_tank_equipment_3 creator = "AEF" version_name = "Ordnance QF 17-pounder" } requested_factories = 1 progress = 0.1 efficiency = 100 }
 	add_equipment_production = { equipment = { type = motorized_equipment_1 creator = "AEF" version_name = "GMC CCKW 6×6" } requested_factories = 12 progress = 0.1 efficiency = 100 }
     add_equipment_production = { equipment = { type = motorized_equipment_1 creator = "AEF" version_name = "Bedford QL" } requested_factories = 7 progress = 0.1 efficiency = 100 }
     add_equipment_production = { equipment = { type = mechanized_equipment_2 creator = "AEF" version_name = "M3A1 Half-Track" } requested_factories = 15 progress = 0.1 efficiency = 100 }
@@ -24,11 +24,11 @@ instant_effect = {
 	add_equipment_production = { equipment = { type = light_tank_aa_chassis_1 creator = "AEF" version_name = "M16 Half-Track" } requested_factories = 10 progress = 0.1 efficiency = 100 }
 
 	add_equipment_production = { equipment = { type = light_tank_chassis_2 creator = "AEF" version_name = "M5 Stuart" } requested_factories = 30 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = medium_tank_chassis_2 creator = "AEF" version_name = "M4A3(76) Sherman" } requested_factories = 20 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = medium_tank_chassis_2 creator = "AEF" version_name = "M4A3E8 Sherman" } requested_factories = 15 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = medium_tank_chassis_2 creator = "AEF" version_name = "M4A3 Sherman" } requested_factories = 132 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = medium_tank_chassis_2 creator = "AEF" version_name = "M4A3(76) Sherman" } requested_factories = 12 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = medium_tank_chassis_2 creator = "AEF" version_name = "M4A3E8 Sherman" } requested_factories = 25 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = medium_tank_chassis_2 creator = "AEF" version_name = "M4A3 Sherman" } requested_factories = 130 progress = 0.1 efficiency = 100 }
 	add_equipment_production = { equipment = { type = medium_tank_chassis_2 creator = "AEF" version_name = "M4A3E2 Sherman" } requested_factories = 10 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = medium_tank_chassis_1 creator = "AEF" version_name = "Cromwell Mk VII" } requested_factories = 20 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = medium_tank_chassis_1 creator = "AEF" version_name = "Cromwell Mk VII" } requested_factories = 25 progress = 0.1 efficiency = 100 }
 	add_equipment_production = { equipment = { type = heavy_tank_chassis_1 creator = "AEF" version_name = "Churchill Mk VII" } requested_factories = 15 progress = 0.1 efficiency = 100 }
 	add_equipment_production = { equipment = { type = medium_tank_chassis_2 creator = "AEF" version_name = "Sherman Firefly" } requested_factories = 14 progress = 0.1 efficiency = 100 }
 	add_equipment_production = { equipment = { type = medium_tank_aa_chassis_1 creator = "AEF" version_name = "Crusader AA" } requested_factories = 9 progress = 0.1 efficiency = 100 }
@@ -41,15 +41,15 @@ instant_effect = {
 
 
 	add_equipment_production = { equipment = { type = small_plane_airframe_2 creator = "AEF" version_name = "Spitfire Mk V" } requested_factories = 12 progress = 0.1 efficiency = 100 }
-	add_equipment_production = { equipment = { type = small_plane_airframe_2 creator = "AEF" version_name = "P-51D Mustang" } requested_factories = 42 progress = 0.1 efficiency = 100 }
+	add_equipment_production = { equipment = { type = small_plane_airframe_2 creator = "AEF" version_name = "P-51D Mustang" } requested_factories = 40 progress = 0.1 efficiency = 100 }
     add_equipment_production = { equipment = { type = small_plane_airframe_2 creator = "AEF" version_name = "P-47D Thunderbolt" } requested_factories = 34 progress = 0.1 efficiency = 100 }
     add_equipment_production = { equipment = { type = small_plane_airframe_2 creator = "AEF" version_name = "Hawker Typhoon MkII" } requested_factories = 12 progress = 0.1 efficiency = 100 }
     add_equipment_production = { equipment = { type = medium_plane_fighter_airframe_2 creator = "AEF" version_name = "Mosquito B.IV Series II" } requested_factories = 8 progress = 0.1 efficiency = 100 }
 	add_equipment_production = { equipment = { type = medium_plane_airframe_2 creator = "AEF" version_name = "B-25J Mitchell" } requested_factories = 12 progress = 0.1 efficiency = 100 }
     add_equipment_production = { equipment = { type = medium_plane_airframe_2 creator = "AEF" version_name = "B-26B Marauder" } requested_factories = 8 progress = 0.1 efficiency = 100 }
-    add_equipment_production = { equipment = { type = large_plane_airframe_2 creator = "AEF" version_name = "AVRO Lancaster" } requested_factories = 5 progress = 0.1 efficiency = 100 }
+    add_equipment_production = { equipment = { type = large_plane_airframe_2 creator = "AEF" version_name = "AVRO Lancaster" } requested_factories = 4 progress = 0.1 efficiency = 100 }
     add_equipment_production = { equipment = { type = large_plane_airframe_1 creator = "AEF" version_name = "B-17E 'Flying Fortress'" } requested_factories = 4 progress = 0.1 efficiency = 100 }
-    add_equipment_production = { equipment = { type = large_plane_airframe_2 creator = "AEF" version_name = "B-24 Liberator" } requested_factories = 5 progress = 0.1 efficiency = 100 }
+    add_equipment_production = { equipment = { type = large_plane_airframe_2 creator = "AEF" version_name = "B-24 Liberator" } requested_factories = 4 progress = 0.1 efficiency = 100 }
 
 
 	add_equipment_production = {
@@ -540,6 +540,8 @@ division_template = {
 		medium_armor = { x = 2 y = 1 }
 		medium_armor = { x = 2 y = 2 }
         medium_armor = { x = 2 y = 3 }
+		medium_armor = { x = 3 y = 0 }
+		medium_armor = { x = 3 y = 1 }
 		medium_sp_anti_air_brigade = { x = 4 y = 0 }
 	}
 	
@@ -566,6 +568,8 @@ division_template = {
 		medium_armor = { x = 2 y = 1 }
 		medium_armor = { x = 2 y = 2 }
         medium_armor = { x = 2 y = 3 }
+		medium_armor = { x = 3 y = 0 }
+		medium_armor = { x = 3 y = 1 }
 		medium_sp_anti_air_brigade = { x = 4 y = 0 }
 	}
 	
@@ -2408,5 +2412,1429 @@ division = {
 		location = 9596
 		division_template = "Armored Infantry Battalion ( USA )"
 		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+################################################ 21st Army Group 
+###################################### 1st Canadian Army - Henry “Harry” Crerar 
+######################## I Corps - John Crocker
+########### 3rd UK Infantry Division - Tom G. Rennie
+division = { 
+	name = "I/8th Infantry Brigade/3rd UK INF"
+		location = 6690	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/8th Infantry Brigade/3rd UK INF"
+		location = 6690	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/8th Infantry Brigade/3rd UK INF"
+		location = 6690	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/9th Infantry Brigade/3rd UK INF"
+		location = 6690	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/9th Infantry Brigade/3rd UK INF"
+		location = 6690	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/9th Infantry Brigade/3rd UK INF"
+		location = 6690	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/185th Infantry Brigade/3rd UK INF"
+		location = 6690	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/185th Infantry Brigade/3rd UK INF"
+		location = 6690	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/185th Infantry Brigade/3rd UK INF"
+		location = 6690	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/3rd Division Artillery/3rd UK INF"
+		location = 6690	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/3rd Division Artillery/3rd UK INF"
+		location = 6690	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/3rd Division Artillery/3rd UK INF"
+		location = 6690	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "IV/3rd Division Artillery/3rd UK INF"
+		location = 6690	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "22nd Dragoons/3rd UK INF"
+		location = 6690	 
+		division_template = "Armored Battalion ( C/Sherman )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+########### 49th UK Infantry Division - Sir Evelyn W. Barker
+division = { 
+	name = "I/70th Infantry Brigade/49th UK INF"
+		location = 976	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/70th Infantry Brigade/49th UK INF"
+		location = 976	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/70th Infantry Brigade/49th UK INF"
+		location = 976	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/146th Infantry Brigade/49th UK INF"
+		location = 976	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/146th Infantry Brigade/49th UK INF"
+		location = 976	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/146th Infantry Brigade/49th UK INF"
+		location = 976	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/147th Infantry Brigade/49th UK INF"
+		location = 976	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/147th Infantry Brigade/49th UK INF"
+		location = 976	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/147th Infantry Brigade/49th UK INF"
+		location = 976	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/49th Division Artillery/49th UK INF"
+		location = 976	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/49th Division Artillery/49th UK INF"
+		location = 976	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/49th Division Artillery/49th UK INF"
+		location = 976	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "IV/49th Division Artillery/49th UK INF"
+		location = 976	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "55th Anti-Tank Regiment/49th UK INF"
+		location = 976	 
+		division_template = "Medium Tank Destroyer Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}	
+division = { 
+	name = "58th Anti-Tank Regiment/49th UK INF"
+		location = 976	 
+		division_template = "Medium Tank Destroyer Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+########### 59th UK Infantry Division - Lewis Lyne
+division = { 
+	name = "I/176th Infantry Brigade/59th UK INF"
+		location = 2670	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/176th Infantry Brigade/59th UK INF"
+		location = 2670	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/176th Infantry Brigade/59th UK INF"
+		location = 2670	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/177th Infantry Brigade/59th UK INF"
+		location = 2670	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/177th Infantry Brigade/59th UK INF"
+		location = 2670	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/177th Infantry Brigade/59th UK INF"
+		location = 2670	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/197th Infantry Brigade/59th UK INF"
+		location = 2670	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/197th Infantry Brigade/59th UK INF"
+		location = 2670	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/197th Infantry Brigade/59th UK INF"
+		location = 2670	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/59th Division Artillery/59th UK INF"
+		location = 2670	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/59th Division Artillery/59th UK INF"
+		location = 2670	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/59th Division Artillery/59th UK INF"
+		location = 2670	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "68th Anti-Tank Regiment/59th UK INF"
+		location = 2670	 
+		division_template = "Medium Tank Destroyer Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+
+
+######################## II  Corps - Guy Simonds
+########### 2nd CAN Infantry Division - Charles Foulkes	
+division = { 
+	name = "I/4th Canadian Infantry Brigade/2nd CAN INF"
+		location = 4650	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/4th Canadian Infantry Brigade/2nd CAN INF"
+		location = 4650	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/4th Canadian Infantry Brigade/2nd CAN INF"
+		location = 4650	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/5th Canadian Infantry Brigade/2nd CAN INF"
+		location = 4650	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/5th Canadian Infantry Brigade/2nd CAN INF"
+		location = 4650	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/5th Canadian Infantry Brigade/2nd CAN INF"
+		location = 4650	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/6th Canadian Infantry Brigade/2nd CAN INF"
+		location = 4650	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/6th Canadian Infantry Brigade/2nd CAN INF"
+		location = 4650	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/6th Canadian Infantry Brigade/2nd CAN INF"
+		location = 4650	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/2nd Division Artillery/2nd CAN INF"
+		location = 4650	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/2nd Division Artillery/2nd CAN INF"
+		location = 4650	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/2nd Division Artillery/2nd CAN INF"
+		location = 4650	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "2nd Anti-Tank Regiment/2nd CAN INF"
+		location = 4650	 
+		division_template = "Medium Tank Destroyer Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+########### 3rd CAN Infantry Division - Rodney Keller
+division = { 
+	name = "I/7th Canadian Infantry Brigade/3rd CAN INF"
+		location = 921	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/7th Canadian Infantry Brigade/3rd CAN INF"
+		location = 921	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/7th Canadian Infantry Brigade/3rd CAN INF"
+		location = 921	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/8th Canadian Infantry Brigade/3rd CAN INF"
+		location = 921	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/8th Canadian Infantry Brigade/3rd CAN INF"
+		location = 921	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/8th Canadian Infantry Brigade/3rd CAN INF"
+		location = 921	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/9th Canadian Infantry Brigade/3rd CAN INF"
+		location = 921	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/9th Canadian Infantry Brigade/3rd CAN INF"
+		location = 921	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/9th Canadian Infantry Brigade/3rd CAN INF"
+		location = 921	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/3rd Division Artillery/3rd CAN INF"
+		location = 921	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/3rd Division Artillery/3rd CAN INF"
+		location = 921	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/3rd Division Artillery/3rd CAN INF"
+		location = 921	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "IV/3rd Division Artillery/3rd CAN INF"
+		location = 921	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "3rd Anti-Tank Regiment/3rd CAN INF"
+		location = 921	 
+		division_template = "Medium Tank Destroyer Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/2nd Canadian Armoured Brigade/3rd CAN INF"
+		location = 921	 
+		division_template = "Armored Battalion ( C/Sherman )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/2nd Canadian Armoured Brigade/3rd CAN INF"
+		location = 921	 
+		division_template = "Armored Battalion ( C/Sherman )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/2nd Canadian Armoured Brigade/3rd CAN INF"
+		location = 921	 
+		division_template = "Armored Battalion ( C/Sherman )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+########### 4th CAN Armoured Division - George Kitching
+division = { 
+	name = "I/10th Canadian Infantry Brigade/4th CAN ARM"
+		location = 681	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/10th Canadian Infantry Brigade/4th CAN ARM"
+		location = 681	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/10th Canadian Infantry Brigade/4th CAN ARM"
+		location = 681	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/3rd Division Artillery/4th CAN ARM"
+		location = 681	 
+		division_template = "Motorized Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/3rd Division Artillery/4th CAN ARM"
+		location = 681	 
+		division_template = "Medium SPG Battalion ( Sexton )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "5th Anti-Tank Regiment/4th CAN ARM"
+		location = 681	 
+		division_template = "Medium Tank Destroyer Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/4th Canadian Armoured Brigade/4th CAN ARM"
+		location = 681	 
+		division_template = "Armored Battalion ( C/Sherman )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/4th Canadian Armoured Brigade/4th CAN ARM"
+		location = 681	 
+		division_template = "Armored Battalion ( C/Sherman )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/4th Canadian Armoured Brigade/4th CAN ARM"
+		location = 681	 
+		division_template = "Armored Battalion ( C/Sherman )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+###################################### 2nd British Army - Sir Miles C. Dempsey 
+######################## VIII Corps - Sir Richard O’Connor
+########### Guards Armoured Division - Allan Adair
+division = { 
+	name = "I/32nd Guards Brigade/GUARDS ARM"
+		location = 3766	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/32nd Guards Brigade/GUARDS ARM"
+		location = 3766	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/32nd Guards Brigade/GUARDS ARM"
+		location = 3766	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/5th Guards Brigade/GUARDS ARM"
+		location = 3766	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/5th Guards Brigade/GUARDS ARM"
+		location = 3766	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/5th Guards Brigade/GUARDS ARM"
+		location = 3766	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/Guards Division Artillery/GUARDS ARM"
+		location = 3766	 
+		division_template = "Medium SPG Battalion ( Sexton )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/Guards Division Artillery/GUARDS ARM"
+		location = 3766	 
+		division_template = "Medium SPG Battalion ( Sexton )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "Guards Anti-Tank Regiment/GUARDS ARM"
+		location = 3766	 
+		division_template = "Medium Tank Destroyer Battalion ( Commonwealth )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/6th Guards Armoured Brigade/GUARDS ARM"
+		location = 3766	 
+		division_template = "Armored Battalion ( C/Cromwell )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/6th Guards Armoured Brigade/GUARDS ARM"
+		location = 3766	 
+		division_template = "Armored Battalion ( C/Cromwell )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/6th Guards Armoured Brigade/GUARDS ARM"
+		location = 3766	 
+		division_template = "Armored Battalion ( C/Cromwell )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+########### 15th UK Infantry Division - Holmes MacMillan
+division = { 
+	name = "I/44th Infantry Brigade/15th UK INF"
+		location = 426	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/44th Infantry Brigade/15th UK INF"
+		location = 426	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/44th Infantry Brigade/15th UK INF"
+		location = 426	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/46th Infantry Brigade/15th UK INF"
+		location = 426	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/46th Infantry Brigade/15th UK INF"
+		location = 426	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/46th Infantry Brigade/15th UK INF"
+		location = 426	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/227th Infantry Brigade/15th UK INF"
+		location = 426	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/227th Infantry Brigade/15th UK INF"
+		location = 426	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/227th Infantry Brigade/15th UK INF"
+		location = 426	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/15th Division Artillery/15th UK INF"
+		location = 426	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/15th Division Artillery/15th UK INF"
+		location = 426	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/15th Division Artillery/15th UK INF"
+		location = 426	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "102nd Anti-Tank Regiment/15th UK INF"
+		location = 426	 
+		division_template = "Medium Tank Destroyer Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/31st Tank Brigade/15th UK INF"
+		location = 426	 
+		division_template = "Heavy Tank Battalion ( Churchill )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/31st Tank Brigade/15th UK INF"
+		location = 426	 
+		division_template = "Heavy Tank Battalion ( Churchill )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/31st Tank Brigade/15th UK INF"
+		location = 426	 
+		division_template = "Heavy Tank Battalion ( Churchill )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+########### 11th UK Armoured Division - George Roberts
+division = { 
+	name = "I/159th Infantry Brigade/11th UK ARM"
+		location = 105	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/159th Infantry Brigade/11th UK ARM"
+		location = 105	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/159th Infantry Brigade/11th UK ARM"
+		location = 105	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/5th Guards Brigade/11th UK ARM"
+		location = 105	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/5th Guards Brigade/11th UK ARM"
+		location = 105	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/5th Guards Brigade/11th UK ARM"
+		location = 105	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/11th Division Artillery/11th UK ARM"
+		location = 105	 
+		division_template = "Medium SPG Battalion ( Sexton )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/11th Division Artillery/11th UK ARM"
+		location = 105	 
+		division_template = "Medium SPG Battalion ( Sexton )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "75th Anti-Tank Regiment/11th UK ARM"
+		location = 105	 
+		division_template = "Medium Tank Destroyer Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/29th Armoured Brigade/11th UK ARM"
+		location = 105	 
+		division_template = "Armored Battalion ( C/Sherman )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/29th Armoured Brigade/11th UK ARM"
+		location = 105	 
+		division_template = "Armored Battalion ( C/Sherman )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/29th Armoured Brigade/11th UK ARM"
+		location = 105	 
+		division_template = "Armored Battalion ( C/Sherman )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+
+######################## XII  Corps - Neil Ritchie
+########### 43rd UK Infantry Division - Ivor Thomas
+division = { 
+	name = "I/129th Infantry Brigade/43rd UK INF"
+		location = 2078	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/129th Infantry Brigade/43rd UK INF"
+		location = 2078	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/129th Infantry Brigade/43rd UK INF"
+		location = 2078	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/130th Infantry Brigade/43rd UK INF"
+		location = 2078	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/130th Infantry Brigade/43rd UK INF"
+		location = 2078	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/130th Infantry Brigade/43rd UK INF"
+		location = 2078	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/214th Infantry Brigade/43rd UK INF"
+		location = 2078	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/214th Infantry Brigade/43rd UK INF"
+		location = 2078	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/214th Infantry Brigade/43rd UK INF"
+		location = 2078	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/43rd Division Artillery/43rd UK INF"
+		location = 2078	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/43rd Division Artillery/43rd UK INF"
+		location = 2078	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/43rd Division Artillery/43rd UK INF"
+		location = 2078	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "59th Anti-Tank Regiment/43rd UK INF"
+		location = 2078	 
+		division_template = "Medium Tank Destroyer Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+
+########### 53rd UK Infantry Division - R. K. Ross 
+division = { 
+	name = "I/71st Infantry Brigade/53rd UK INF"
+		location = 3286	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/71st Infantry Brigade/53rd UK INF"
+		location = 3286	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/71st Infantry Brigade/53rd UK INF"
+		location = 3286	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/158th Infantry Brigade/53rd UK INF"
+		location = 3286	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/158th Infantry Brigade/53rd UK INF"
+		location = 3286	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/158th Infantry Brigade/53rd UK INF"
+		location = 3286	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/160th Infantry Brigade/53rd UK INF"
+		location = 3286	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/160th Infantry Brigade/53rd UK INF"
+		location = 3286	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/160th Infantry Brigade/53rd UK INF"
+		location = 3286	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/53rd Division Artillery/53rd UK INF"
+		location = 3286	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/53rd Division Artillery/53rd UK INF"
+		location = 3286	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/53rd Division Artillery/53rd UK INF"
+		location = 3286	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "71st Anti-Tank Regiment/53rd UK INF"
+		location = 3286	 
+		division_template = "Medium Tank Destroyer Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+########### 1st POL Armoured Division - Stanislaw Maczek
+division = { 
+	name = "I/3rd Polish Infantry Brigade/1st POL ARM"
+		location = 4575	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/3rd Polish Infantry Brigade/1st POL ARM"
+		location = 4575	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/3rd Polish Infantry Brigade/1st POL ARM"
+		location = 4575	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/10th Armoured Cavalry Brigade/1st POL ARM"
+		location = 4575	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/10th Armoured Cavalry Brigade/1st POL ARM"
+		location = 4575	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/10th Armoured Cavalry Brigade/1st POL ARM"
+		location = 4575	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+
+division = { 
+	name = "I/1st Division Artillery/1st POL ARM"
+		location = 4575	 
+		division_template = "Motorized Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/1st Division Artillery/1st POL ARM"
+		location = 4575	 
+		division_template = "Motorized Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/29th Armoured Brigade/1st POL ARM"
+		location = 4575	 
+		division_template = "Armored Battalion ( C/Sherman )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/29th Armoured Brigade/1st POL ARM"
+		location = 4575	 
+		division_template = "Armored Battalion ( C/Sherman )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/29th Armoured Brigade/1st POL ARM"
+		location = 4575	 
+		division_template = "Armored Battalion ( C/Sherman )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+######################## XXX Corps - Gerard Bucknall
+########### 7th UK Armoured Division - Gerald Lloyd-Verney	
+division = { 
+	name = "I/131st Infantry Brigade/7th UK ARM"
+		location = 9789	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/131st Infantry Brigade/7th UK ARM"
+		location = 9789	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/131st Infantry Brigade/7th UK ARM"
+		location = 9789	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/22nd Armoured Brigade/7th UK ARM"
+		location = 9789	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/22nd Armoured Brigade/7th UK ARM"
+		location = 9789	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/22nd Armoured Brigade/7th UK ARM"
+		location = 9789	 
+		division_template = "Armored Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+
+division = { 
+	name = "I/7th Division Artillery/7th UK ARM"
+		location = 9789	 
+		division_template = "Medium SPG Battalion ( Sexton )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/7th Division Artillery/7th UK ARM"
+		location = 9789	 
+		division_template = "Medium SPG Battalion ( Sexton )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/22nd Armoured Brigade/7th UK ARM"
+		location = 9789	 
+		division_template = "Armored Battalion ( C/Cromwell )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/22nd Armoured Brigade/7th UK ARM"
+		location = 9789	 
+		division_template = "Armored Battalion ( C/Cromwell )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/22nd Armoured Brigade/7th UK ARM"
+		location = 9789	 
+		division_template = "Armored Battalion ( C/Cromwell )"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+}
+########### 51st UK Infantry Division - Charles David Bullen-Smith
+division = { 
+	name = "I/152nd Infantry Brigade/51st UK INF"
+		location = 9791	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/152nd Infantry Brigade/51st UK INF"
+		location = 9791	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/152nd Infantry Brigade/51st UK INF"
+		location = 9791	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/153rd Infantry Brigade/51st UK INF"
+		location = 9791	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/153rd Infantry Brigade/51st UK INF"
+		location = 9791	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/153rd Infantry Brigade/51st UK INF"
+		location = 9791	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/154th Infantry Brigade/51st UK INF"
+		location = 9791	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/154th Infantry Brigade/51st UK INF"
+		location = 9791	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/154th Infantry Brigade/51st UK INF"
+		location = 9791	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/51st Division Artillery/51st UK INF"
+		location = 9791	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/51st Division Artillery/51st UK INF"
+		location = 9791	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/51st Division Artillery/51st UK INF"
+		location = 9791	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "2nd Derbyshire Yeomanry/51st UK INF"
+		location = 9791	 
+		division_template = "Armored Battalion ( C/Cromwell )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "61st Anti-Tank Regiment/51st UK INF"
+		location = 9791	 
+		division_template = "Medium Tank Destroyer Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+########### 50th UK Infantry Division - D. A. H. Graham
+division = { 
+	name = "I/69th Infantry Brigade/50th UK INF"
+		location = 9790	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/69th Infantry Brigade/50th UK INF"
+		location = 9790	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/69th Infantry Brigade/50th UK INF"
+		location = 9790	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/151st Infantry Brigade/50th UK INF"
+		location = 9790	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/151st Infantry Brigade/50th UK INF"
+		location = 9790	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/151st Infantry Brigade/50th UK INF"
+		location = 9790	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/231st Infantry Brigade/50th UK INF"
+		location = 9790	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/231st Infantry Brigade/50th UK INF"
+		location = 9790	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/231st Infantry Brigade/50th UK INF"
+		location = 9790	 
+		division_template = "Infantry Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "I/50th Division Artillery/50th UK INF"
+		location = 9790	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "II/50th Division Artillery/50th UK INF"
+		location = 9790	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "III/50th Division Artillery/50th UK INF"
+		location = 9790	 
+		division_template = "Artillery Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+}
+division = { 
+	name = "102nd Anti-Tank Regiment/50th UK INF"
+		location = 9790	 
+		division_template = "Medium Tank Destroyer Battalion ( Commonwealth )"
+		start_experience_factor = 0.6
 		start_equipment_factor = 0.01
 }
