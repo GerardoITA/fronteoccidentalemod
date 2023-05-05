@@ -1,4 +1,305 @@
 characters={
+
+###GENERALS 
+## USA 
+MOD_Leonard_Gerow = {
+	name = MOD_Leonard_Gerow
+	portraits={
+		army={
+			large="gfx/ModPortraits/AEF/Leonard_Gerow.png"
+		}
+	}
+	field_marshal={
+
+		traits={ infantry_leader infantry_expert brilliant_strategist organizer career_officer}
+
+		skill=5
+		attack_skill=3
+		defense_skill=6
+		planning_skill=5
+		logistics_skill=8
+
+
+	}
+}
+	
+
+MOD_Lawton_Collins = {
+	name = MOD_Lawton_Collins
+	portraits={
+		army={
+			large="gfx/ModPortraits/AEF/Lawton_Collins.png"
+		}
+	}
+	field_marshal={
+
+		traits={ infantry_leader organizer career_officer}
+
+		skill=4
+		attack_skill=5
+		defense_skill=4
+		planning_skill=5
+		logistics_skill=8
+
+
+	}
+}
+
+
+
+MOD_Troy_Middleton = {
+	name = MOD_Troy_Middleton
+	portraits={
+		army={
+			large="gfx/ModPortraits/AEF/Troy_Middleton.png"
+		}
+	}
+	field_marshal={
+
+		traits={ infantry_leader organizer career_officer}
+
+		skill=4
+		attack_skill=5
+		defense_skill=4
+		planning_skill=3
+		logistics_skill=7
+
+
+	}
+}
+
+MOD_Charles_Corlett = {
+	name = MOD_Charles_Corlett
+	portraits={
+		army={
+			large="gfx/ModPortraits/AEF/Charles_Corlett.png"
+		}
+	}
+	field_marshal={
+
+		traits={ infantry_leader organizer career_officer}
+
+		skill=4
+		attack_skill=5
+		defense_skill=3
+		planning_skill=3
+		logistics_skill=7
+
+
+	}
+}
+
+MOD_Manton_Eddy = {
+	name = MOD_Manton_Eddy
+	portraits={
+		army={
+			large="gfx/ModPortraits/AEF/Manton_Eddy.png"
+		}
+	}
+	field_marshal={
+
+		traits={ bearer_of_artillery infantry_officer organizer career_officer}
+
+		skill=4
+		attack_skill=5
+		defense_skill=4
+		planning_skill=3
+		logistics_skill=7
+
+
+	}
+}
+
+MOD_Wade_Heislip = {
+	name = MOD_Wade_Heislip
+	portraits={
+		army={
+			large="gfx/ModPortraits/AEF/Wade_Heislip.png"
+		}
+	}
+	field_marshal={
+
+		traits={ bearer_of_artillery organizer career_officer}
+
+		skill=3
+		attack_skill=5
+		defense_skill=3
+		planning_skill=3
+		logistics_skill=7
+
+
+	}
+}
+
+
+MOD_Walton_Walker = {
+	name = MOD_Walton_Walker
+	portraits={
+		army={
+			large="gfx/ModPortraits/AEF/Walton_Walker.png"
+		}
+	}
+	field_marshal={
+
+		traits={ panzer_leader panzer_expert organizer career_officer}
+
+		skill=6
+		attack_skill=8
+		defense_skill=2
+		planning_skill=3
+		logistics_skill=7
+
+
+	}
+}
+
+MOD_John_Crocker = {
+	name = MOD_John_Crocker
+	portraits={
+		army={
+			large="gfx/ModPortraits/AEF/John_Crocker.png"
+		}
+	}
+	field_marshal={
+
+		traits={ infantry_expert bearer_of_artillery organizer career_officer}
+
+		skill=4
+		attack_skill=5
+		defense_skill=4
+		planning_skill=3
+		logistics_skill=5
+
+
+	}
+}
+MOD_Guy_Simonds = {
+	name = MOD_Guy_Simonds
+	portraits={
+		army={
+			large="gfx/ModPortraits/AEF/Guy_Simonds.png"
+		}
+	}
+	field_marshal={
+
+		traits={ panzer_expert panzer_leader organizer career_officer offensive_doctrine }
+
+		skill=5
+		attack_skill=6
+		defense_skill=3
+		planning_skill=5
+		logistics_skill=8
+
+
+	}
+}
+MOD_Richard_Connor = {
+	name = MOD_Richard_Connor
+	portraits={
+		army={
+			large="gfx/ModPortraits/AEF/Richard_Connor.png"
+		}
+	}
+	field_marshal={
+
+		traits={ panzer_expert panzer_leader organizer career_officer offensive_doctrine }
+
+		skill=5
+		attack_skill=5
+		defense_skill=4
+		planning_skill=6
+		logistics_skill=6
+
+
+	}
+}
+MOD_Neil_Ritchie = {
+	name = MOD_Neil_Ritchie
+	portraits={
+		army={
+			large="gfx/ModPortraits/AEF/Neil_Ritchie.png"
+		}
+	}
+	field_marshal={
+
+		traits={ infantry_leader infantry_expert bearer_of_artillery organizer career_officer offensive_doctrine }
+
+		skill=4
+		attack_skill=3
+		defense_skill=5
+		planning_skill=4
+		logistics_skill=4
+
+
+	}
+}
+MOD_Brian_Horrocks = {
+	name = MOD_Brian_Horrocks
+	portraits={
+		army={
+			large="gfx/ModPortraits/AEF/Brian_Horrocks.png"
+		}
+	}
+	field_marshal={
+
+		traits={ panzer_expert panzer_leader infantry_expert infantry_leader organizer career_officer offensive_doctrine }
+
+		skill=8
+		attack_skill=6
+		defense_skill=9
+		planning_skill=7
+		logistics_skill=7
+
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	AEF_COSSAC_organisation={
 		name=AEF_COSSAC_organisation
 		portraits={
@@ -35,15 +336,7 @@ country_leader={
 			id=-1
 			desc=POLITICS_EISENHOWER_DESC
 		} 
-		field_marshal={
-			traits={ trait_cautious armor_officer politically_connected organizer logistics_wizard offensive_doctrine }
-			skill=6
-			attack_skill=6
-			defense_skill=5
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=602
-		}
+	
 		advisor={
 			slot = army_chief
 			idea_token = dwight_eisenhower
@@ -131,33 +424,9 @@ advisor={
 				small=GFX_portrait_CAN_charles_foulkes_small
 			}
 		}
-		field_marshal={
-			traits = { organizer desert_fox infantry_leader naval_invader }
-			skill = 5
-			attack_skill = 3
-			defense_skill = 4
-			planning_skill = 2
-			logistics_skill = 6
-		}
+	
 	}
-	AEF_jean_de_lattre_de_tassigny={
-		name=FRA_jean_de_lattre_de_tassigny
-		portraits={
-			army={
-				large=GFX_portrait_FRA_jean_de_lattre_de_tassigny
-				small=GFX_portrait_FRA_jean_de_lattre_de_tassigny_small
-			}
-		}
-		field_marshal={
-			traits={ harsh_leader infantry_leader trickster inflexible_strategist }
-			skill=5
-			attack_skill=4
-			defense_skill=5
-			planning_skill=5
-			logistics_skill=2
-			legacy_id=0
-		}
-	}
+
 AEF_charles_de_gaulle={
 		name=FRA_charles_de_gaulle
 		portraits={
@@ -170,15 +439,6 @@ AEF_charles_de_gaulle={
 				large="gfx/leaders/AEF/de_Gaulle.dds"
 			}
 }
-field_marshal={
-			traits = { trickster desert_fox panzer_leader skilled_staffer }
-			skill = 6
-			attack_skill = 6
-			defense_skill = 6
-			planning_skill = 3
-			logistics_skill = 4
-			legacy_id=0
-		}
 		
 	
 		advisor={
@@ -226,15 +486,7 @@ AEF_philippe_leclerc={
 			}
 		}
 		
-		corps_commander={
-			traits={ organizer panzer_leader trickster  }
-			skill=5
-			attack_skill=5
-			defense_skill=5
-			planning_skill=6
-			logistics_skill=6
-			legacy_id=0
-		}
+		
 	}
 	AEF_george_s_patton={
 		name=USA_george_s_patton
@@ -261,15 +513,7 @@ AEF_philippe_leclerc={
 				}
 		}
 
-		corps_commander={
-			traits={ trait_reckless armor_officer war_hero trickster panzer_leader trickster organizer }
-			skill=6
-			attack_skill=8
-			defense_skill=4
-			planning_skill=5
-			logistics_skill=6
-			legacy_id=0
-		}
+
 	}
 
 	AEF_omar_bradley={
@@ -296,15 +540,7 @@ AEF_philippe_leclerc={
 			}
 		}
 
-		corps_commander={
-			traits={ brilliant_strategist trait_cautious harsh_leader trait_engineer organizer urban_assault_specialist }
-			skill=6
-			attack_skill=6
-			defense_skill=5
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=0
-		}
+
 	}
 
 	AEF_wladyslaw_anders={#exiled polish leader
@@ -313,15 +549,6 @@ AEF_philippe_leclerc={
 			army={
 				large="gfx/leaders/AEF/Anders.dds"
 			}
-		}
-		corps_commander={
-			traits={ cavalry_officer trait_engineer commando naval_invader}
-			skill=5
-			attack_skill=5
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=7
-			legacy_id=0
 		}
 	}
 
@@ -332,16 +559,7 @@ AEF_robert_t_frederick={#Robert Frederick, Dragoon parachute commander
 				large="gfx/leaders/AEF/Frederick.dds"
 			}
 		}
-		corps_commander={
-			traits={ commando urban_assault_specialist paratrooper }
-			skill=5
-			attack_skill=6
-			defense_skill=5
-			planning_skill=4
-			logistics_skill=5
-			legacy_id=0
-	visible = { has_country_flag = operation_dragoon_launched }
-		}
+		
 	}
 AEF_allied_rock={
 		name=AEF_allied_rock
@@ -350,16 +568,7 @@ AEF_allied_rock={
 				large="gfx/leaders/AEF/allied_rock.dds"
 			}
 		}
-		corps_commander={
-			traits={  }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
-			visible = { is_historical_focus_on = no }
-	
-		}
+		
 	}
 AEF_mark_clark={
 		name=USA_mark_clark
@@ -387,15 +596,6 @@ AEF_mark_clark={
 				}
 		}
 		
-		corps_commander={
-			traits={ trait_reckless infantry_officer }
-			skill=4
-			attack_skill=5
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=0
-		}
 	}
 
 	AEF_lucian_truscott={#op dragoon
@@ -406,16 +606,7 @@ AEF_mark_clark={
 				small=GFX_portrait_USA_lucian_truscott_small
 			}
 		}
-		corps_commander={
-			traits={ cavalry_officer trait_engineer commando }
-			skill=5
-			attack_skill=7
-			defense_skill=1
-			planning_skill=3
-			logistics_skill=5
-	
-			visible = { has_country_flag = operation_dragoon_launched }
-		}
+		
 	}
 
 	AEF_harry_crerar={
@@ -425,16 +616,7 @@ AEF_mark_clark={
 				small="GFX_idea_CAN_harry_crerar" 
 				#small="GFX_idea_generic_army_europe_4"
 			}
-		}
-	corps_commander={
-			traits={ old_guard }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
-			
-		}
+	
 		advisor={	
 			slot = high_command
 			idea_token = CAN_harry_crerar
@@ -458,15 +640,7 @@ AEF_mark_clark={
 				large="gfx/leaders/AEF/Simonds.dds"
 			}
 		}
-corps_commander={
-			traits={ bearer_of_artillery trait_engineer infantry_leader cavalry_officer}
-			skill=5
-			attack_skill=4
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-		
-		}
+
 		advisor={	
 			slot = high_command
 			idea_token = CAN_guy_simonds
@@ -492,15 +666,7 @@ corps_commander={
 				small=GFX_portrait_USA_leslie_mcnair_small
 			}
 		}
-		corps_commander={
-			traits={ old_guard career_officer armor_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=2
-			legacy_id=0
-		}
+
 	}
 
 	
@@ -513,15 +679,7 @@ corps_commander={
 				small=GFX_portrait_USA_russell_hartle_small
 			}
 		}
-		corps_commander={
-			traits={ infantry_officer commando naval_invader hill_fighter}
-			skill=5
-			attack_skill=6
-			defense_skill=5
-			planning_skill=8
-			logistics_skill=7
-			legacy_id=0
-		}
+
 		advisor={
 			slot = high_command
 			idea_token = russel_hartle
@@ -547,15 +705,7 @@ corps_commander={
 			
 			}
 		}
-		corps_commander={
-			traits={ armor_officer panzer_leader naval_invader commando trickster trait_engineer}
-			skill=5
-			attack_skill=6
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=0
-		}
+
 		advisor={
 			slot = theorist
 			idea_token = percy_hobart #tank guy ampihibious
@@ -581,15 +731,7 @@ corps_commander={
 				small=GFX_portrait_USA_leonard_gerow_small
 			}
 		}
-		corps_commander={
-			traits={ infantry_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
-			#legacy_id=0
-		}
+
 	}
 
 	AEF_edward_brooks={
@@ -600,15 +742,7 @@ corps_commander={
 				small=GFX_portrait_USA_edward_brooks_small
 			}
 		}
-		corps_commander={
-			traits={ trait_reckless armor_officer }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
-			#legacy_id=0
-		}
+	
 	}
 
 	AEF_clarence_huebner={ #commander of big red one
@@ -619,15 +753,7 @@ corps_commander={
 				small=GFX_portrait_USA_clarence_huebner_small
 			}
 		}
-		corps_commander={
-			traits={ old_guard harsh_leader }
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			#legacy_id=0
-		}
+	
 	}
 
 	AEF_alexander_patch={#op dragoon
@@ -638,16 +764,7 @@ corps_commander={
 				small=GFX_portrait_USA_alexander_patch_small
 			}
 		}
-		corps_commander={
-			traits={ infantry_officer commando }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
-			#legacy_id=0
-			visible = { has_country_flag = operation_dragoon_launched }
-		}
+	
 	}
 AEF_jacob_l_devers={#op dragoon commander
 		name=AEF_jacob_devers
@@ -657,16 +774,7 @@ AEF_jacob_l_devers={#op dragoon commander
 			
 			}
 		}
-		field_marshal={
-			traits={ infantry_officer commando }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
-			#legacy_id=0
-			visible = { has_country_flag = operation_dragoon_launched }
-		}
+	
 	}
 AEF_edgard_de_larminat={#french op dragoon boy
 		name=AEF_edgard_de_larminat
@@ -676,16 +784,7 @@ AEF_edgard_de_larminat={#french op dragoon boy
 			
 			}
 		}
-		field_marshal={
-			traits={ infantry_officer  }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
-			#legacy_id=0
-			visible = { has_country_flag = operation_dragoon_launched }
-		}
+	
 	}
 AEF_joseph_de_monsabert={#french op dragoon boy
 		name=AEF_joseph_de_monsabert
@@ -695,16 +794,7 @@ AEF_joseph_de_monsabert={#french op dragoon boy
 			
 			}
 		}
-		field_marshal={
-			traits={ infantry_officer  }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
-			#legacy_id=0
-			visible = { has_country_flag = operation_dragoon_launched }
-		}
+
 	}
 	AEF_william_simpson={
 		name=USA_william_simpson
@@ -714,15 +804,7 @@ AEF_joseph_de_monsabert={#french op dragoon boy
 				small=GFX_portrait_USA_william_simpson_small
 			}
 		}
-		corps_commander={
-			traits={ infantry_officer }
-			skill=3
-			attack_skill=2
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=2
-			#legacy_id=0
-		}
+	
 	}
 
 	AEF_j_lawton_collins={
@@ -733,15 +815,7 @@ AEF_joseph_de_monsabert={#french op dragoon boy
 				small=GFX_portrait_USA_j_lawton_collins_small
 			}
 		}
-		corps_commander={
-			traits={ career_officer trickster }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			#legacy_id=0
-		}
+	
 	}
 
 	AEF_courtney_hodges={
@@ -768,15 +842,7 @@ AEF_joseph_de_monsabert={#french op dragoon boy
 			}
 		}
 		
-		corps_commander={
-			traits={ career_officer infantry_officer panzer_leader }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=4
-			#legacy_id=0
-		}
+		
 	}
 
 
@@ -788,15 +854,7 @@ AEF_joseph_de_monsabert={#french op dragoon boy
 				small=GFX_portrait_USA_maurice_rose_small
 			}
 		}
-		corps_commander={
-			traits={ brilliant_strategist trait_reckless armor_officer }
-			skill=3
-			attack_skill=4
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=3
-			
-		}
+
 	}
 
 	
@@ -810,14 +868,7 @@ AEF_gerald_bucknall={
 				small=GFX_portrait_ENG_richard_oconnor_small
 			}
 		}
-		corps_commander={
-			skill=4
-			attack_skill=2
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=3
-			
-		}
+	
 	}
 AEF_john_crocker={
 		name=ENG_john_crocker
@@ -827,14 +878,7 @@ AEF_john_crocker={
 				small=GFX_portrait_ENG_richard_oconnor_small
 			}
 		}
-		corps_commander={
-			skill=4
-			attack_skill=2
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=3
-			
-		}
+
 	}
 
 	
@@ -867,15 +911,7 @@ AEF_john_crocker={
 			}
 		}
 		
-		corps_commander={
-			traits={ politically_connected }
-			skill=5
-			attack_skill=4
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=5
-			
-		}
+		
 	}
 
 	AEF_miles_dempsey={
@@ -901,15 +937,7 @@ advisor={
 				factor = 0.700
 			}
 		}
-		corps_commander={
-			traits={ brilliant_strategist career_officer infantry_officer }
-			skill=4
-			attack_skill=3
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=2
-			legacy_id=0
-		}
+		
 	}
 
 	AEF_brian_horrocks={
@@ -919,16 +947,7 @@ advisor={
 				large=GFX_portrait_ENG_brian_horrocks
 				small=GFX_portrait_ENG_brian_horrocks_small
 			}
-		}
-		corps_commander={
-			traits={ career_officer armor_officer war_hero }
-			skill=3
-			attack_skill=1
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			#legacy_id=0
-		}
+		
 	}
 
 	
@@ -1140,15 +1159,7 @@ AEF_Robert_jaujard={
 				small=GFX_portrait_ENG_neil_ritchie_small
 			}
 		}
-		corps_commander={
-			traits={ inflexible_strategist armor_officer politically_connected }
-			skill=4
-			attack_skill=3
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=3
-			#legacy_id=0
-		}
+
 	}
 AEF_richard_oconnor={
 		name=ENG_richard_oconnor
@@ -1158,14 +1169,7 @@ AEF_richard_oconnor={
 				small=GFX_portrait_ENG_richard_oconnor_small
 			}
 		}
-		corps_commander={
-			skill=4
-			attack_skill=2
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=3
-			#legacy_id=999
-		}
+		
 	}
 
 	AEF_harold_rainsford_stark={
@@ -1872,7 +1876,7 @@ AEF_mackenzie_king={
 		}
 	
 
-	
+
 
 	
 
@@ -1880,7 +1884,17 @@ AEF_mackenzie_king={
 
 	
 
-	
+
+
+
+
+
+
+
+
+
+
+
 
 	
 

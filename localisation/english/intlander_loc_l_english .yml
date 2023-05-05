@@ -4,31 +4,74 @@
 MOD_Sepp_Dietrich:0 "SS-Oberst-Gruppenführer Sepp Dietrich"
 MOD_Theodor_Wisch:0 "SS-Brigadeführer Theodor Wisch"
 MOD_Kurt_Myer:0 "SS-Brigadeführer Kurt Myer"
+MOD_Werner_Ostendorff:0 "SS-Brigadeführer Werner Ostendorff"
+
 
 MOD_Paul_Hausser:0 "	SS-Oberst-Gruppenführer Paul Hausser"
+MOD_Heinz_Lammerding:0 "SS-Gruppenführer Heinz Lammerding"
+MOD_Heinz_Harmel:0 "SS-Brigadeführer Heinz Harmel"
+MOD_Wilhelm_Bittrich:0 "SS-Gruppenführer Wilhelm Bittrich"
+
+
+MOD_Walter_Kruger:0 "General der Panzertruppe Walter Krüger"
+MOD_Edgar_Feuchtinger:0 "Generalleutnant Edgar Feuchtinger"
+MOD_Fritz_Bayerlein:0 "Generalleutnant Fritz Bayerlein"
 
 
 
 
 
+##AEF 
+#USA 
+MOD_Leonard_Gerow:0 "Lieutenant General Leonard Gerow"
+
+
+
+MOD_Lawton_Collins:0 "Major General J. Lawton Collins"
+
+
+
+
+MOD_Troy_Middleton:0 "Major General Troy H. Middleton"
+
+
+
+MOD_Charles_Corlett:0 "Major General Charles H. Corlett"
 
 
 
 
 
+MOD_Manton_Eddy:0 "Major General Manton S. Eddy"
 
 
 
 
 
+MOD_Wade_Haislip:0 "Lieutenant General Wade H. Haislip"
 
 
 
 
 
+MOD_Walton_Walker:0 "Major General Walton H. Walker"
 
 
 
+
+
+#UK 
+MOD_John_Crocker:0 "Lieutenant General John Crocker"
+
+
+MOD_Guy_Simonds:0 "Lieutenant General Guy Simonds"
+
+
+MOD_Richard_Connor:0 "Lieutenant General Richard O' Connor"
+
+MOD_Neil_Ritchie:0 "Lieutenant General Neil Ritchie"
+
+MOD_Brian_Horrocks:0 "Lieutenant General Brian Horrocks"
 
 
 

@@ -1319,10 +1319,10 @@ MOD_Sepp_Dietrich = {
 	}
 	field_marshal={
 
-		traits={ harsh_leader trickster panzer_leader war_hero armor_officer}
+		traits={ harsh_leader trickster panzer_leader war_hero armor_officer organizer aggressive_assaulter charismatic }
 
-		skill=7
-		attack_skill=9
+		skill=5
+		attack_skill=5
 		defense_skill=6
 		planning_skill=6
 		logistics_skill=5
@@ -1339,10 +1339,10 @@ MOD_Paul_Hausser = {
 	}
 	field_marshal={
 
-		traits={ harsh_leader trickster panzer_leader war_hero armor_officer}
+		traits={ harsh_leader trickster panzer_leader war_hero armor_officer organizer aggressive_assaulter offensive_doctrine }
 
-		skill=8
-		attack_skill=8
+		skill=7
+		attack_skill=7
 		defense_skill= 8
 		planning_skill=6
 		logistics_skill=8
@@ -1359,7 +1359,7 @@ MOD_Theodor_Wisch = {
 	}
 	corps_commander={
 
-		traits={ harsh_leader trickster panzer_leader war_hero armor_officer}
+		traits={ harsh_leader trickster panzer_leader panzer_expert war_hero armor_officer}
 
 		skill=5
 		attack_skill=6
@@ -1379,7 +1379,7 @@ MOD_Kurt_Myer = {
 	}
 	corps_commander={
 
-		traits={ harsh_leader trickster panzer_leader war_hero armor_officer}
+		traits={ harsh_leader trickster panzer_leader panzer_expert war_hero armor_officer}
 
 		skill=6
 		attack_skill=7
@@ -1390,6 +1390,151 @@ MOD_Kurt_Myer = {
 
 	}
 }
+MOD_Werner_Ostendorff = {
+	name = MOD_Werner_Ostendorff
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Werner_Ostendorff.png"
+		}
+	}
+	corps_commander={
+
+		traits={ harsh_leader panzer_leader combined_arms_expert infantry_leader infantry_expert ranger}
+
+		skill=5
+		attack_skill=5
+		defense_skill= 8
+		planning_skill=4
+		logistics_skill=5
+
+
+	}
+}
+
+MOD_Heinz_Lammerding = {
+	name = MOD_Heinz_Lammerding
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Heinz_Lammerding.png"
+		}
+	}
+	corps_commander={
+
+		traits={ harsh_leader panzer_leader combined_arms_expert }
+
+		skill=6
+		attack_skill=6
+		defense_skill= 5
+		planning_skill=4
+		logistics_skill=5
+
+
+	}
+}
+MOD_Heinz_Harmel = {
+	name = MOD_Heinz_Harmel
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Heinz_Harmel.png"
+		}
+	}
+	corps_commander={
+
+		traits={ harsh_leader panzer_leader panzer_expert ranger }
+
+		skill=6
+		attack_skill=7
+		defense_skill= 4
+		planning_skill=4
+		logistics_skill=5
+
+
+	}
+}
+MOD_Wilhelm_Bittrich = {
+	name = MOD_Wilhelm_Bittrich
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Wilhelm_Bittrich.png"
+		}
+	}
+	corps_commander={
+
+		traits={ harsh_leader panzer_leader combined_arms_expert trickster old_guard }
+
+		skill=6
+		attack_skill=6
+		defense_skill= 5
+		planning_skill=4
+		logistics_skill=5
+
+
+	}
+}
+MOD_Walter_Kruger = {
+	name = MOD_Walter_Kruger
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Walter_Krueger.png"
+		}
+	}
+	field_marshal={
+
+		traits={ trickster panzer_leader panzer_expert camouflage_expert expert_improviser unyielding_defender organizer defensive_doctrine }
+
+		skill=7
+		attack_skill=8
+		defense_skill= 5
+		planning_skill=4
+		logistics_skill=8
+
+
+	}
+}
+MOD_Edgar_Feuchtinger = {
+	name = MOD_Edgar_Feuchtinger
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Edgar_Feuchtinger.png"
+		}
+	}
+	corps_commander={
+
+		traits={ trickster panzer_leader panzer_expert ranger hill_fighter }
+
+		skill=5
+		attack_skill=6
+		defense_skill=8
+		planning_skill=4
+		logistics_skill=7
+
+
+	}
+}
+MOD_Fritz_Bayerlein = {
+	name = MOD_Fritz_Bayerlein
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Fritz_Bayerlein.png"
+		}
+	}
+	corps_commander={
+
+		traits={ trickster panzer_leader panzer_expert brilliant_strategist}
+
+		skill=7
+		attack_skill=8
+		defense_skill=9
+		planning_skill=4
+		logistics_skill=7
+
+
+	}
+}
+
+
+
+
 
 
 ##GER_german_rock={

@@ -78,12 +78,18 @@ add_command_power = 120
 recruit_character = MOD_Sepp_Dietrich
 recruit_character = MOD_Theodor_Wisch
 recruit_character = MOD_Kurt_Myer
+recruit_character = MOD_Werner_Ostendorff
+
 # II SS Panzerkorps
 recruit_character = MOD_Paul_Hausser
+recruit_character = MOD_Heinz_Lammerding
+recruit_character = MOD_Heinz_Harmel
+recruit_character = MOD_Wilhelm_Bittrich
 
-
-
-
+# 58. Panzerkorps 
+recruit_character = MOD_Walter_Kruger
+recruit_character = MOD_Edgar_Feuchtinger
+recruit_character = MOD_Fritz_Bayerlein
 
 
 

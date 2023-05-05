@@ -14,6 +14,50 @@ if = {
 }
 1943.1.1 = { 
 
+## USA
+# V Corps 
+recruit_character = MOD_Leonard_Gerow
+
+
+
+# VII Corps
+recruit_character = MOD_Lawton_Collins
+
+# VIII Corps
+recruit_character = MOD_Troy_Middleton
+
+# XIX Corps
+recruit_character = MOD_Charles_Corlett
+
+# XV Corps 
+recruit_character = MOD_Wade_Haislip
+
+# XII Corps
+recruit_character = MOD_Manton_Eddy
+
+# XX Corps 
+recruit_character = MOD_Walton_Walker
+
+## Commonwealth 
+# I Corps 
+recruit_character = MOD_John_Crocker
+
+# II Corps 
+recruit_character = MOD_Guy_Simonds
+
+# VIII Corps 
+recruit_character = MOD_Richard_Connor 
+
+# XII Corps
+recruit_character = MOD_Neil_Ritchie
+
+# XXX Corps
+recruit_character = MOD_Brian_Horrocks
+
+
+
+
+
 #if = {
 #	limit = { has_dlc = "Man the Guns" }
 #		set_naval_oob = "AEF_1943_naval_mtg"
@@ -134,17 +178,9 @@ if = {
 		set_naval_oob = "AEF_1943_Naval"
 	}
 }
-####3295 PLANES FOR ALLIES. 500 IN OPERATION FOR GERMANY. WITH MORE AVAILABLE (900) FROM GERMANY.
-create_field_marshal = {
-	name = "Bernard Montgomery"
-	picture = "Montgomery.dds"
-	traits = { inflexible_strategist trait_cautious media_personality organizer logistics_wizard offensive_doctrine}
-	skill = 5
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 4
-}
+
+
+
 
 recruit_character = AEF_COSSAC_organisation
 recruit_character = AEF_frederick_morgan
@@ -211,6 +247,19 @@ recruit_character = AEF_arthur_harris
 recruit_character = AEF_arthur_tedder
 recruit_character = AEF_a_man_who_is_not_montgomery
 #
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 set_politics = {
