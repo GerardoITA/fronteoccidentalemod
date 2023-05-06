@@ -1532,6 +1532,252 @@ MOD_Fritz_Bayerlein = {
 	}
 }
 
+MOD_Wilhelm_Fahrmbacher = {
+	name = MOD_Wilhelm_Fahrmbacher
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Wilhelm_Fahrmbacher.png"
+		}
+	}
+	field_marshal={
+
+		traits={ trickster infantry_leader bearer_of_artillery old_guard defensive_doctrine brilliant_strategist}
+
+		skill=6
+		attack_skill=5
+		defense_skill=6
+		planning_skill=5
+		logistics_skill=6
+
+
+	}
+}
+MOD_Erich_Straube = {
+	name = MOD_Erich_Straube
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Erich_Straube.png"
+		}
+	}
+	field_marshal={
+
+		traits={ trickster infantry_leader ambusher urban_assault_specialist old_guard defensive_doctrine brilliant_strategist}
+
+		skill=5
+		attack_skill=2
+		defense_skill=7
+		planning_skill=5
+		logistics_skill=6
+
+
+	}
+}
+
+
+
+MOD_Erich_Marcks = {
+	name = MOD_Erich_Marcks
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Erich_Marcks.png"
+		}
+	}
+	field_marshal={
+
+		traits={ trickster infantry_leader ambusher ranger old_guard defensive_doctrine unyielding_defender}
+
+		skill=5
+		attack_skill=4
+		defense_skill=5
+		planning_skill=5
+		logistics_skill=4
+
+
+	}
+}
+
+
+
+
+MOD_Walter_Weikersthal = {
+	name = MOD_Walter_Weikersthal
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Walther_Weikersthal.png"
+		}
+	}
+	field_marshal={
+
+		traits={ trickster infantry_leader infantry_expert ranger old_guard  }
+
+		skill=5
+		attack_skill=4
+		defense_skill=6
+		planning_skill=5
+		logistics_skill=6
+
+
+	}
+}
+MOD_Adolf_Kuntzen = {
+	name = MOD_Adolf_Kuntzen
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Adolf_Kuntzen.png"
+		}
+	}
+	field_marshal={
+
+		traits={ trickster infantry_leader armor_officer career_officer  }
+
+		skill=6
+		attack_skill=5
+		defense_skill=7
+		planning_skill=5
+		logistics_skill=4
+
+
+	}
+}
+
+MOD_Johann_Sinnhuber = {
+	name = MOD_Johann_Sinnhuber
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Johann_Sinnhuber.png"
+		}
+	}
+	field_marshal={
+
+		traits={ trickster infantry_leader infantry_expert ranger old_guard  }
+
+		skill=5
+		attack_skill=4
+		defense_skill=6
+		planning_skill=5
+		logistics_skill=6
+
+
+	}
+}
+
+MOD_Werner_Gilsa = {
+	name = MOD_Werner_Gilsa
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Werner_Gilsa.png"
+		}
+	}
+	field_marshal={
+
+		traits={ trickster infantry_leader infantry_expert urban_assault_specialist old_guard  }
+
+		skill=5
+		attack_skill=5
+		defense_skill=6
+		planning_skill=2
+		logistics_skill=3
+
+
+	}
+}
+MOD_Hasso_Manteuffel {
+	name = MOD_Hasso_Manteuffel
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Hasso_Manteuffel.png"
+		}
+	}
+	field_marshal={
+
+		traits={ trickster armor_officer brilliant_strategist offensive_doctrine organizer aggressive_assaulter panzer_expert  urban_assault_specialist ranger hill_fighter  }
+
+		skill=9
+		attack_skill=9
+		defense_skill=5
+		planning_skill=7
+		logistics_skill=8
+
+
+	}
+}
+MOD_Otto_Stapf {
+	name = MOD_Otto_Stapf
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Otto_Stapf.png"
+		}
+	}
+	field_marshal={
+
+		traits={  organizer infantry_leader unyielding_defender   }
+
+		skill=4
+		attack_skill=4
+		defense_skill=3
+		planning_skill=4
+		logistics_skill=5
+
+
+	}
+}
+
+MOD_Albert_Brandt = { name = MOD_Albert_Brandt portraits={ army={ large="gfx/ModPortraits/GER/9.png" } } corps_commander={ traits={ cavalry_leader inflexible_strategist } skill= 4 attack_skill= 4 defense_skill= 6 planning_skill= 3 logistics_skill= 2 } }
+MOD_Hermann_Klein = { name = MOD_Hermann_Klein portraits={ army={ large="gfx/ModPortraits/GER/6.png" } } corps_commander={ traits={ panzer_leader career_officer mountaineer} skill= 3 attack_skill= 3 defense_skill= 6 planning_skill= 6 logistics_skill= 3 } }
+MOD_Gustav_Krause = { name = MOD_Gustav_Krause portraits={ army={ large="gfx/ModPortraits/GER/10.png" } } corps_commander={ traits={ cavalry_leader old_guard mountaineer} skill= 4 attack_skill= 5 defense_skill= 3 planning_skill= 2 logistics_skill= 3 } }
+MOD_Wilhelm_Krause = { name = MOD_Wilhelm_Krause portraits={ army={ large="gfx/ModPortraits/GER/9.png" } } corps_commander={ traits={ cavalry_leader career_officer } skill= 5 attack_skill= 6 defense_skill= 6 planning_skill= 6 logistics_skill= 2 } }
+MOD_Anton_Schenk = { name = MOD_Anton_Schenk portraits={ army={ large="gfx/ModPortraits/GER/12.png" } } corps_commander={ traits={ infantry_leader inflexible_strategist } skill= 4 attack_skill= 3 defense_skill= 6 planning_skill= 3 logistics_skill= 4 } }
+MOD_Gerhard_Reich = { name = MOD_Gerhard_Reich portraits={ army={ large="gfx/ModPortraits/GER/9.png" } } corps_commander={ traits={ infantry_leader career_officer mountaineer} skill= 4 attack_skill= 3 defense_skill= 6 planning_skill= 5 logistics_skill= 4 } }
+MOD_Rainer_Krause = { name = MOD_Rainer_Krause portraits={ army={ large="gfx/ModPortraits/GER/12.png" } } corps_commander={ traits={ cavalry_leader old_guard mountaineer} skill= 4 attack_skill= 5 defense_skill= 6 planning_skill= 4 logistics_skill= 2 } }
+MOD_Manfred_Klein = { name = MOD_Manfred_Klein portraits={ army={ large="gfx/ModPortraits/GER/10.png" } } corps_commander={ traits={ bearer_of_artillery career_officer mountaineer} skill= 3 attack_skill= 6 defense_skill= 3 planning_skill= 4 logistics_skill= 3 } }
+MOD_Hagen_Schreiber = { name = MOD_Hagen_Schreiber portraits={ army={ large="gfx/ModPortraits/GER/2.png" } } corps_commander={ traits={ bearer_of_artillery war_hero } skill= 5 attack_skill= 5 defense_skill= 4 planning_skill= 4 logistics_skill= 2 } }
+MOD_Franz_Wenzel = { name = MOD_Franz_Wenzel portraits={ army={ large="gfx/ModPortraits/GER/8.png" } } corps_commander={ traits={ infantry_leader } skill= 4 attack_skill= 5 defense_skill= 3 planning_skill= 4 logistics_skill= 4 } }
+MOD_Timm_Gross = { name = MOD_Timm_Gross portraits={ army={ large="gfx/ModPortraits/GER/10.png" } } corps_commander={ traits={ cavalry_leader old_guard mountaineer} skill= 3 attack_skill= 6 defense_skill= 4 planning_skill= 5 logistics_skill= 4 } }
+MOD_Hermann_Sperling = { name = MOD_Hermann_Sperling portraits={ army={ large="gfx/ModPortraits/GER/12.png" } } corps_commander={ traits={ infantry_leader } skill= 4 attack_skill= 5 defense_skill= 4 planning_skill= 3 logistics_skill= 3 } }
+MOD_Konrad_Dietrich = { name = MOD_Konrad_Dietrich portraits={ army={ large="gfx/ModPortraits/GER/7.png" } } corps_commander={ traits={ bearer_of_artillery inflexible_strategist mountaineer} skill= 5 attack_skill= 4 defense_skill= 6 planning_skill= 6 logistics_skill= 3 } }
+MOD_Max_Vogel = { name = MOD_Max_Vogel portraits={ army={ large="gfx/ModPortraits/GER/6.png" } } corps_commander={ traits={ bearer_of_artillery old_guard } skill= 4 attack_skill= 5 defense_skill= 3 planning_skill= 2 logistics_skill= 4 } }
+MOD_Henning_Schaefer = { name = MOD_Henning_Schaefer portraits={ army={ large="gfx/ModPortraits/GER/9.png" } } corps_commander={ traits={ infantry_leader mountaineer} skill= 3 attack_skill= 4 defense_skill= 4 planning_skill= 5 logistics_skill= 2 } }
+MOD_Baldur_Klein = { name = MOD_Baldur_Klein portraits={ army={ large="gfx/ModPortraits/GER/1.png" } } corps_commander={ traits={ bearer_of_artillery } skill= 5 attack_skill= 5 defense_skill= 4 planning_skill= 5 logistics_skill= 2 } }
+MOD_Falk_Schneider = { name = MOD_Falk_Schneider portraits={ army={ large="gfx/ModPortraits/GER/10.png" } } corps_commander={ traits={ infantry_leader mountaineer} skill= 3 attack_skill= 6 defense_skill= 5 planning_skill= 3 logistics_skill= 4 } }
+MOD_Arnold_Ziegler = { name = MOD_Arnold_Ziegler portraits={ army={ large="gfx/ModPortraits/GER/5.png" } } corps_commander={ traits={ panzer_leader cautious ranger} skill= 3 attack_skill= 4 defense_skill= 4 planning_skill= 4 logistics_skill= 2 } }
+MOD_Rainer_Richter = { name = MOD_Rainer_Richter portraits={ army={ large="gfx/ModPortraits/GER/12.png" } } corps_commander={ traits={ bearer_of_artillery } skill= 3 attack_skill= 4 defense_skill= 6 planning_skill= 5 logistics_skill= 4 } }
+MOD_Erich_Wagner = { name = MOD_Erich_Wagner portraits={ army={ large="gfx/ModPortraits/GER/6.png" } } corps_commander={ traits={ cavalry_leader career_officer } skill= 4 attack_skill= 6 defense_skill= 6 planning_skill= 6 logistics_skill= 3 } }
+MOD_Joachim_Vogel = { name = MOD_Joachim_Vogel portraits={ army={ large="gfx/ModPortraits/GER/12.png" } } corps_commander={ traits={ infantry_leader } skill= 5 attack_skill= 6 defense_skill= 6 planning_skill= 6 logistics_skill= 4 } }
+MOD_Heinrich_Vogel = { name = MOD_Heinrich_Vogel portraits={ army={ large="gfx/ModPortraits/GER/10.png" } } corps_commander={ traits={ cavalry_leader career_officer swamp_fox} skill= 5 attack_skill= 6 defense_skill= 3 planning_skill= 5 logistics_skill= 4 } }
+MOD_Hans_Peters = { name = MOD_Hans_Peters portraits={ army={ large="gfx/ModPortraits/GER/11.png" } } corps_commander={ traits={ bearer_of_artillery war_hero mountaneer} skill= 3 attack_skill= 4 defense_skill= 5 planning_skill= 6 logistics_skill= 4 } }
+MOD_Hugo_Schaefer = { name = MOD_Hugo_Schaefer portraits={ army={ large="gfx/ModPortraits/GER/4.png" } } corps_commander={ traits={ panzer_leader old_guard } skill= 5 attack_skill= 5 defense_skill= 5 planning_skill= 6 logistics_skill= 2 } }
+MOD_Bernd_Walter = { name = MOD_Bernd_Walter portraits={ army={ large="gfx/ModPortraits/GER/2.png" } } corps_commander={ traits={ infantry_leader war_hero } skill= 3 attack_skill= 4 defense_skill= 4 planning_skill= 6 logistics_skill= 3 } }
+MOD_Armin_Klein = { name = MOD_Armin_Klein portraits={ army={ large="gfx/ModPortraits/GER/8.png" } } corps_commander={ traits={ infantry_leader urban_assault_specialist} skill= 5 attack_skill= 4 defense_skill= 4 planning_skill= 2 logistics_skill= 3 } }
+MOD_Erwin_Haas = { name = MOD_Erwin_Haas portraits={ army={ large="gfx/ModPortraits/GER/11.png" } } corps_commander={ traits={ infantry_leader swamp_fox} skill= 5 attack_skill= 6 defense_skill= 4 planning_skill= 3 logistics_skill= 3 } }
+MOD_Joachim_Eckert = { name = MOD_Joachim_Eckert portraits={ army={ large="gfx/ModPortraits/GER/3.png" } } corps_commander={ traits={ infantry_leader } skill= 4 attack_skill= 5 defense_skill= 4 planning_skill= 2 logistics_skill= 3 } }
+MOD_Egon_Braun = { name = MOD_Egon_Braun portraits={ army={ large="gfx/ModPortraits/GER/2.png" } } corps_commander={ traits={ infantry_leader ranger} skill= 3 attack_skill= 4 defense_skill= 3 planning_skill= 5 logistics_skill= 4 } }
+MOD_Hugo_Reich = { name = MOD_Hugo_Reich portraits={ army={ large="gfx/ModPortraits/GER/9.png" } } corps_commander={ traits={ bearer_of_artillery } skill= 3 attack_skill= 4 defense_skill= 3 planning_skill= 5 logistics_skill= 2 } }
+MOD_Alwin_Braun = { name = MOD_Alwin_Braun portraits={ army={ large="gfx/ModPortraits/GER/6.png" } } corps_commander={ traits={ bearer_of_artillery cautious } skill= 5 attack_skill= 3 defense_skill= 5 planning_skill= 6 logistics_skill= 2 } }
+MOD_Fritz_Vogelbaum = { name = MOD_Fritz_Vogelbaum portraits={ army={ large="gfx/ModPortraits/GER/8.png" } } corps_commander={ traits={ bearer_of_artillery war_hero ranger} skill= 5 attack_skill= 6 defense_skill= 4 planning_skill= 2 logistics_skill= 3 } }
+MOD_Alwin_Gross = { name = MOD_Alwin_Gross portraits={ army={ large="gfx/ModPortraits/GER/7.png" } } corps_commander={ traits={ infantry_leader cautious } skill= 3 attack_skill= 5 defense_skill= 5 planning_skill= 6 logistics_skill= 4 } }
+MOD_Leopold_Schneider = { name = MOD_Leopold_Schneider portraits={ army={ large="gfx/ModPortraits/GER/8.png" } } corps_commander={ traits={ infantry_leader } skill= 5 attack_skill= 4 defense_skill= 3 planning_skill= 4 logistics_skill= 3 } }
+MOD_Alwin_Wolf = { name = MOD_Alwin_Wolf portraits={ army={ large="gfx/ModPortraits/GER/11.png" } } corps_commander={ traits={ panzer_leader career_officer } skill= 5 attack_skill= 4 defense_skill= 5 planning_skill= 4 logistics_skill= 4 } }
+MOD_Leonhard_Vogel = { name = MOD_Leonhard_Vogel portraits={ army={ large="gfx/ModPortraits/GER/4.png" } } corps_commander={ traits={ infantry_leader cautious } skill= 3 attack_skill= 5 defense_skill= 6 planning_skill= 4 logistics_skill= 4 } }
+MOD_Theodor_Fischer = { name = MOD_Theodor_Fischer portraits={ army={ large="gfx/ModPortraits/GER/9.png" } } corps_commander={ traits={ bearer_of_artillery old_guard hill_fighter} skill= 4 attack_skill= 3 defense_skill= 6 planning_skill= 2 logistics_skill= 3 } }
+MOD_Hans_Ritter = { name = MOD_Hans_Ritter portraits={ army={ large="gfx/ModPortraits/GER/11.png" } } corps_commander={ traits={ infantry_leader old_guard } skill= 3 attack_skill= 5 defense_skill= 3 planning_skill= 6 logistics_skill= 4 } }
+MOD_Alfred_Schultz = { name = MOD_Alfred_Schultz portraits={ army={ large="gfx/ModPortraits/GER/3.png" } } corps_commander={ traits={ infantry_leader cautious } skill= 4 attack_skill= 3 defense_skill= 5 planning_skill= 5 logistics_skill= 4 } }
+MOD_Albert_Schwarz = { name = MOD_Albert_Schwarz portraits={ army={ large="gfx/ModPortraits/GER/6.png" } } corps_commander={ traits={ infantry_leader } skill= 5 attack_skill= 5 defense_skill= 5 planning_skill= 5 logistics_skill= 3 } }
+MOD_Gero_Brandt = { name = MOD_Gero_Brandt portraits={ army={ large="gfx/ModPortraits/GER/7.png" } } corps_commander={ traits={ panzer_leader mountaneer} skill= 3 attack_skill= 6 defense_skill= 5 planning_skill= 5 logistics_skill= 4 } }
+MOD_Knut_Walter = { name = MOD_Knut_Walter portraits={ army={ large="gfx/ModPortraits/GER/10.png" } } corps_commander={ traits={ bearer_of_artillery career_officer urban_assault_specialist} skill= 4 attack_skill= 5 defense_skill= 5 planning_skill= 2 logistics_skill= 2 } }
+MOD_Adolf_Baum = { name = MOD_Adolf_Baum portraits={ army={ large="gfx/ModPortraits/GER/9.png" } } corps_commander={ traits={ bearer_of_artillery old_guard mountaineer} skill= 4 attack_skill= 4 defense_skill= 3 planning_skill= 6 logistics_skill= 2 } }
+MOD_Bernd_Klein = { name = MOD_Bernd_Klein portraits={ army={ large="gfx/ModPortraits/GER/5.png" } } corps_commander={ traits={ bearer_of_artillery } skill= 5 attack_skill= 4 defense_skill= 3 planning_skill= 5 logistics_skill= 2 } }
+MOD_Hans_Walter = { name = MOD_Hans_Walter portraits={ army={ large="gfx/ModPortraits/GER/1.png" } } corps_commander={ traits={ infantry_leader } skill= 4 attack_skill= 4 defense_skill= 3 planning_skill= 2 logistics_skill= 4 } }
+MOD_Henning_Koch = { name = MOD_Henning_Koch portraits={ army={ large="gfx/ModPortraits/GER/8.png" } } corps_commander={ traits={ infantry_leader mountaneer} skill= 3 attack_skill= 4 defense_skill= 3 planning_skill= 5 logistics_skill= 2 } }
+MOD_Edgar_Gross = { name = MOD_Edgar_Gross portraits={ army={ large="gfx/ModPortraits/GER/8.png" } } corps_commander={ traits={ infantry_leader } skill= 4 attack_skill= 5 defense_skill= 5 planning_skill= 2 logistics_skill= 2 } }
+MOD_Konrad_Schneider = { name = MOD_Konrad_Schneider portraits={ army={ large="gfx/ModPortraits/GER/3.png" } } corps_commander={ traits={ panzer_leader } skill= 3 attack_skill= 3 defense_skill= 5 planning_skill= 3 logistics_skill= 3 } }
+MOD_Marco_Walter = { name = MOD_Marco_Walter portraits={ army={ large="gfx/ModPortraits/GER/9.png" } } corps_commander={ traits={ panzer_leader ranger} skill= 4 attack_skill= 3 defense_skill= 5 planning_skill= 3 logistics_skill= 2 } }
+MOD_Gero_Bauer = { name = MOD_Gero_Bauer portraits={ army={ large="gfx/ModPortraits/GER/3.png" } } corps_commander={ traits={ bearer_of_artillery } skill= 3 attack_skill= 6 defense_skill= 4 planning_skill= 4 logistics_skill= 4 } }
+
+
+
+
+
+
 
 
 

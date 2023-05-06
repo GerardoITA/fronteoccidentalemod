@@ -54,9 +54,60 @@ recruit_character = MOD_Neil_Ritchie
 # XXX Corps
 recruit_character = MOD_Brian_Horrocks
 
+# VI Corps
+recruit_character = MOD_Lucian_Truscott
 
-
-
+##SPAM 
+recruit_character = MOD_Hugh_Anderson
+recruit_character = MOD_Zachary_McCook
+recruit_character = MOD_Max_Williams
+recruit_character = MOD_Archibald_Anderson
+recruit_character = MOD_Bernard_Wheeler
+recruit_character = MOD_John0_Ewing
+recruit_character = MOD_Albert_Stewart
+recruit_character = MOD_Archibald_Williams
+recruit_character = MOD_Archibald_Floyd
+recruit_character = MOD_Percy_Butler
+recruit_character = MOD_Cyril_Atkins
+recruit_character = MOD_John0_Babcock
+recruit_character = MOD_Thomas_Buckner
+recruit_character = MOD_Arthur_Barstow
+recruit_character = MOD_Thomas_Loring
+recruit_character = MOD_Winston_Keyes
+recruit_character = MOD_Robert_Armstrong
+recruit_character = MOD_Archibald_Pillow
+recruit_character = MOD_Oswald_Wofford
+recruit_character = MOD_David_Jellicoe
+recruit_character = MOD_Archibald_Wilcox
+recruit_character = MOD_Edward_Morgan
+recruit_character = MOD_John0_Moresby
+recruit_character = MOD_Leopold_Gough
+recruit_character = MOD_Francis_Beatty
+recruit_character = MOD_Russell_Armistead
+recruit_character = MOD_Max_Custer
+recruit_character = MOD_James_Hood
+recruit_character = MOD_Jeremy_Ewing
+recruit_character = MOD_Wallace_McDowell
+recruit_character = MOD_Oswald_Armistead
+recruit_character = MOD_Oswald_McArthur
+recruit_character = MOD_Achille_Buckner
+recruit_character = MOD_Hubert_Hampton
+recruit_character = MOD_Ian_Polk
+recruit_character = MOD_Oswald_Williams
+recruit_character = MOD_Winston_Hope
+recruit_character = MOD_Fairfax_Robertson
+recruit_character = MOD_Donald_Pillow
+recruit_character = MOD_Charles_Mundy
+recruit_character = MOD_Stanley_Longstreet
+recruit_character = MOD_Francis_Madden
+recruit_character = MOD_Winston_Franklin
+recruit_character = MOD_Stanley_Benton
+recruit_character = MOD_Albert_Ewing
+recruit_character = MOD_Hubert_Abbott
+recruit_character = MOD_Percy_Porter
+recruit_character = MOD_Cyril_Sickles
+recruit_character = MOD_Douglas_Semmes
+recruit_character = MOD_Max_Walker
 
 #if = {
 #	limit = { has_dlc = "Man the Guns" }

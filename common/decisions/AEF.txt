@@ -663,15 +663,15 @@ develop_chaffee = { ##
 		
 		}
 	}
-consolidate_normandy = { ##
+launch_dragoon = { ##
 
 		icon = generic_decision
 
 		available = {
 			
 			AND = {
-				19 = {  is_controlled_by = AEF }
-				17 = {  is_controlled_by = AEF }
+				20 = {  is_controlled_by = AEF }
+				105 = {  is_controlled_by = AEF }
 			}
 			
 			
@@ -691,20 +691,7 @@ consolidate_normandy = { ##
 		cost = 50
 
 		complete_effect = {
-			
-			
-			add_offsite_building = { type = dockyard level = 15 }
-			add_equipment_production = {
-			equipment = {
-				type = convoy_1
-				creator = "AEF"
-				version_name = "Liberty ship"
-			}
-			requested_factories = 15
-			progress = 0.25
-			}
-
-
+			country_event = aef.12
 		}
 
 

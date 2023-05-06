@@ -18,6 +18,76 @@ MOD_Edgar_Feuchtinger:0 "Generalleutnant Edgar Feuchtinger"
 MOD_Fritz_Bayerlein:0 "Generalleutnant Fritz Bayerlein"
 
 
+MOD_Wilhelm_Fahrmbacher:0 "General der Artillerie Wilhelm_Fahrmbacher"
+
+MOD_Erich_Straube:0 "General der Infanterie Erich Straube"
+
+MOD_Erich_Marcks:0 "General der Artillerie Erich Marcks"
+
+MOD_Eugen_Meindl:0 "Generalleutnant Eugen Meindl"
+
+MOD_Walter_Weikersthal:0 "General der Infanterie Walther von Weikersthal"
+
+MOD_Adolf_Kuntzen:0 "General der Panzertruppe Adolf-Friedrich Kuntzen"
+
+MOD_Johann_Sinnhuber:0 "General der Artillerie Johann Sinnhuber"
+
+MOD_Werner_Gilsa:0 "General der Infanterie Werner von Gilsa"
+
+MOD_Hasso_Manteuffel:0 "General der Panzertruppe Hasso von Manteuffel"
+
+MOD_Otto_Stapf:0 "General der Infanterie Otto Stapf"
+
+MOD_Albert_Brandt:0 "Generalmajor Albert Brandt"
+MOD_Hermann_Klein:0 "Generalmajor Hermann Klein"
+MOD_Gustav_Krause:0 "Generalmajor Gustav Krause"
+MOD_Wilhelm_Krause:0 "Generalmajor Wilhelm Krause"
+MOD_Anton_Schenk:0 "Generalmajor Anton Schenk"
+MOD_Gerhard_Reich:0 "Generalmajor Gerhard Reich"
+MOD_Rainer_Krause:0 "Generalmajor Rainer Krause"
+MOD_Manfred_Klein:0 "Generalmajor Manfred Klein"
+MOD_Hagen_Schreiber:0 "Generalmajor Hagen Schreiber"
+MOD_Franz_Wenzel:0 "Generalmajor Franz Wenzel"
+MOD_Timm_Gross:0 "Generalmajor Timm Gross"
+MOD_Hermann_Sperling:0 "Generalmajor Hermann Sperling"
+MOD_Konrad_Dietrich:0 "Generalmajor Konrad Dietrich"
+MOD_Max_Vogel:0 "Generalmajor Max Vogel"
+MOD_Henning_Schaefer:0 "Generalmajor Henning Schaefer"
+MOD_Baldur_Klein:0 "Generalmajor Baldur Klein"
+MOD_Falk_Schneider:0 "Generalmajor Falk Schneider"
+MOD_Arnold_Ziegler:0 "Generalmajor Arnold Ziegler"
+MOD_Rainer_Richter:0 "Generalmajor Rainer Richter"
+MOD_Erich_Wagner:0 "Generalmajor Erich Wagner"
+MOD_Joachim_Vogel:0 "Generalmajor Joachim Vogel"
+MOD_Heinrich_Vogel:0 "Generalmajor Heinrich Vogel"
+MOD_Hans_Peters:0 "Generalmajor Hans Peters"
+MOD_Hugo_Schaefer:0 "Generalmajor Hugo Schaefer"
+MOD_Bernd_Walter:0 "Generalmajor Bernd Walter"
+MOD_Armin_Klein:0 "Generalmajor Armin Klein"
+MOD_Erwin_Haas:0 "Generalmajor Erwin Haas"
+MOD_Joachim_Eckert:0 "Generalmajor Joachim Eckert"
+MOD_Egon_Braun:0 "Generalmajor Egon Braun"
+MOD_Hugo_Reich:0 "Generalmajor Hugo Reich"
+MOD_Alwin_Braun:0 "Generalmajor Alwin Braun"
+MOD_Fritz_Vogelbaum:0 "Generalmajor Fritz Vogelbaum"
+MOD_Alwin_Gross:0 "Generalmajor Alwin Gross"
+MOD_Leopold_Schneider:0 "Generalmajor Leopold Schneider"
+MOD_Alwin_Wolf:0 "Generalmajor Alwin Wolf"
+MOD_Leonhard_Vogel:0 "Generalmajor Leonhard Vogel"
+MOD_Theodor_Fischer:0 "Generalmajor Theodor Fischer"
+MOD_Hans_Ritter:0 "Generalmajor Hans Ritter"
+MOD_Alfred_Schultz:0 "Generalmajor Alfred Schultz"
+MOD_Albert_Schwarz:0 "Generalmajor Albert Schwarz"
+MOD_Gero_Brandt:0 "Generalmajor Gero Brandt"
+MOD_Knut_Walter:0 "Generalmajor Knut Walter"
+MOD_Adolf_Baum:0 "Generalmajor Adolf Baum"
+MOD_Bernd_Klein:0 "Generalmajor Bernd Klein"
+MOD_Hans_Walter:0 "Generalmajor Hans Walter"
+MOD_Henning_Koch:0 "Generalmajor Henning Koch"
+MOD_Edgar_Gross:0 "Generalmajor Edgar Gross"
+MOD_Konrad_Schneider:0 "Generalmajor Konrad Schneider"
+MOD_Marco_Walter:0 "Generalmajor Marco Walter"
+MOD_Gero_Bauer:0 "Generalmajor Gero Bauer"
 
 
 
@@ -57,7 +127,7 @@ MOD_Wade_Haislip:0 "Lieutenant General Wade H. Haislip"
 MOD_Walton_Walker:0 "Major General Walton H. Walker"
 
 
-
+MOD_Lucian_Truscott:0 "Major General Lucian Truscott"
 
 
 #UK 
@@ -75,7 +145,57 @@ MOD_Brian_Horrocks:0 "Lieutenant General Brian Horrocks"
 
 
 
-
+#ALLIES SPAM
+MOD_Hugh_Anderson:0 "Major General Hugh Anderson"
+MOD_Zachary_McCook:0 "Major General Zachary McCook"
+MOD_Max_Williams:0 "Major General Max Williams"
+MOD_Archibald_Anderson:0 "Major General Archibald Anderson"
+MOD_Bernard_Wheeler:0 "Major General Bernard Wheeler"
+MOD_John0_Ewing:0 "Major General John0 Ewing"
+MOD_Albert_Stewart:0 "Major General Albert Stewart"
+MOD_Archibald_Williams:0 "Major General Archibald Williams"
+MOD_Archibald_Floyd:0 "Major General Archibald Floyd"
+MOD_Percy_Butler:0 "Major General Percy Butler"
+MOD_Cyril_Atkins:0 "Major General Cyril Atkins"
+MOD_John0_Babcock:0 "Major General John0 Babcock"
+MOD_Thomas_Buckner:0 "Major General Thomas Buckner"
+MOD_Arthur_Barstow:0 "Major General Arthur Barstow"
+MOD_Thomas_Loring:0 "Major General Thomas Loring"
+MOD_Winston_Keyes:0 "Major General Winston Keyes"
+MOD_Robert_Armstrong:0 "Major General Robert Armstrong"
+MOD_Archibald_Pillow:0 "Major General Archibald Pillow"
+MOD_Oswald_Wofford:0 "Major General Oswald Wofford"
+MOD_David_Jellicoe:0 "Major General David Jellicoe"
+MOD_Archibald_Wilcox:0 "Major General Archibald Wilcox"
+MOD_Edward_Morgan:0 "Major General Edward Morgan"
+MOD_John0_Moresby:0 "Major General John0 Moresby"
+MOD_Leopold_Gough:0 "Major General Leopold Gough"
+MOD_Francis_Beatty:0 "Major General Francis Beatty"
+MOD_Russell_Armistead:0 "Major General Russell Armistead"
+MOD_Max_Custer:0 "Major General Max Custer"
+MOD_James_Hood:0 "Major General James Hood"
+MOD_Jeremy_Ewing:0 "Major General Jeremy Ewing"
+MOD_Wallace_McDowell:0 "Major General Wallace McDowell"
+MOD_Oswald_Armistead:0 "Major General Oswald Armistead"
+MOD_Oswald_McArthur:0 "Major General Oswald McArthur"
+MOD_Achille_Buckner:0 "Major General Achille Buckner"
+MOD_Hubert_Hampton:0 "Major General Hubert Hampton"
+MOD_Ian_Polk:0 "Major General Ian Polk"
+MOD_Oswald_Williams:0 "Major General Oswald Williams"
+MOD_Winston_Hope:0 "Major General Winston Hope"
+MOD_Fairfax_Robertson:0 "Major General Fairfax Robertson"
+MOD_Donald_Pillow:0 "Major General Donald Pillow"
+MOD_Charles_Mundy:0 "Major General Charles Mundy"
+MOD_Stanley_Longstreet:0 "Major General Stanley Longstreet"
+MOD_Francis_Madden:0 "Major General Francis Madden"
+MOD_Winston_Franklin:0 "Major General Winston Franklin"
+MOD_Stanley_Benton:0 "Major General Stanley Benton"
+MOD_Albert_Ewing:0 "Major General Albert Ewing"
+MOD_Hubert_Abbott:0 "Major General Hubert Abbott"
+MOD_Percy_Porter:0 "Major General Percy Porter"
+MOD_Cyril_Sickles:0 "Major General Cyril Sickles"
+MOD_Douglas_Semmes:0 "Major General Douglas Semmes"
+MOD_Max_Walker:0 "Major General Max Walker"
 
 
 

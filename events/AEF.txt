@@ -495,55 +495,15 @@ country_event = { ##OPERATION DRAGOON
 	fire_only_once = yes 
 	option = {# 
 	name = aef.12.a
-custom_effect_tooltip = dragoon_event_tt
 
-hidden_effect = { 
-124 = { 
-   add_dynamic_modifier = { 
-                      modifier = AEF_dragoon_supply
-                      scope = SAG
-                    }
-
- }
-81 = { 
-   add_dynamic_modifier = { 
-                      modifier = AEF_dragoon_supply
-                      scope = SAG
-                    }
-
- }
-85 = { 
-   add_dynamic_modifier = { 
-                      modifier = AEF_dragoon_supply
-                      scope = SAG
-                    }
-
- }
-86 = { 
-   add_dynamic_modifier = { 
-                      modifier = AEF_dragoon_supply
-                      scope = SAG
-                    }
-
- }
-102 = { 
-   add_dynamic_modifier = { 
-                      modifier = AEF_dragoon_supply
-                      scope = SAG
-                    }
-
- }
-}
 	 hidden_effect = { 
  set_country_flag = operation_dragoon_launched 
 OKW = { set_country_flag = operation_dragoon_launched 
-load_oob = GER_dragoon }
+}
 
 load_oob = AEF_dragoon 
-create_faction = AEF_faction_name
-AEF = { add_to_faction = SAG }
 
-SAG = { 
+AEF = { 
 
 transfer_state = 124 
 add_state_core = 124 
@@ -623,10 +583,7 @@ set_province_controller = 2432
 set_province_controller = 2121
 set_province_controller = 3790
 set_province_controller = 2162 }}
-SAG = { declare_war_on = {
-    target = OKW
-    type = annex_everything
-} }
+
 }
 } 
 

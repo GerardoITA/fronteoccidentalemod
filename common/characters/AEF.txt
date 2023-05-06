@@ -256,8 +256,76 @@ MOD_Brian_Horrocks = {
 
 
 
+MOD_Lucian_Truscott = {
+	name = MOD_Lucian_Truscott
+	portraits={
+		army={
+			large="gfx/ModPortraits/AEF/Lucian_Truscott.png"
+		}
+	}
+	field_marshal={
+
+		traits={ infantry_leader infantry_expert organizer career_officer offensive_doctrine }
+
+		skill=5
+		attack_skill=4
+		defense_skill=5
+		planning_skill=6
+		logistics_skill=4
 
 
+	}
+}
+MOD_Hugh_Anderson = { name = MOD_Hugh_Anderson portraits={ army={ large="gfx/ModPortraits/AEF/4.png" } } corps_commander={ traits={ infantry_leader mountaineer} skill= 5 attack_skill= 5 defense_skill= 6 planning_skill= 2 logistics_skill= 2 } }
+MOD_Zachary_McCook = { name = MOD_Zachary_McCook portraits={ army={ large="gfx/ModPortraits/AEF/15.png" } } corps_commander={ traits={ cavalry_leader } skill= 2 attack_skill= 3 defense_skill= 5 planning_skill= 4 logistics_skill= 2 } }
+MOD_Max_Williams = { name = MOD_Max_Williams portraits={ army={ large="gfx/ModPortraits/AEF/17.png" } } corps_commander={ traits={ infantry_leader old_guard mountaneer} skill= 5 attack_skill= 5 defense_skill= 4 planning_skill= 2 logistics_skill= 3 } }
+MOD_Archibald_Anderson = { name = MOD_Archibald_Anderson portraits={ army={ large="gfx/ModPortraits/AEF/6.png" } } corps_commander={ traits={ cavalry_leader } skill= 2 attack_skill= 2 defense_skill= 2 planning_skill= 2 logistics_skill= 4 } }
+MOD_Bernard_Wheeler = { name = MOD_Bernard_Wheeler portraits={ army={ large="gfx/ModPortraits/AEF/6.png" } } corps_commander={ traits={ infantry_leader war_hero ranger} skill= 3 attack_skill= 4 defense_skill= 6 planning_skill= 3 logistics_skill= 3 } }
+MOD_John0_Ewing = { name = MOD_John0_Ewing portraits={ army={ large="gfx/ModPortraits/AEF/3.png" } } corps_commander={ traits={ infantry_leader urban_assault_specialist} skill= 2 attack_skill= 5 defense_skill= 3 planning_skill= 1 logistics_skill= 2 } }
+MOD_Albert_Stewart = { name = MOD_Albert_Stewart portraits={ army={ large="gfx/ModPortraits/AEF/1.png" } } corps_commander={ traits={ infantry_leader career_officer } skill= 4 attack_skill= 2 defense_skill= 5 planning_skill= 2 logistics_skill= 2 } }
+MOD_Archibald_Williams = { name = MOD_Archibald_Williams portraits={ army={ large="gfx/ModPortraits/AEF/18.png" } } corps_commander={ traits={ infantry_leader cautious swamp_fox} skill= 3 attack_skill= 5 defense_skill= 2 planning_skill= 5 logistics_skill= 1 } }
+MOD_Archibald_Floyd = { name = MOD_Archibald_Floyd portraits={ army={ large="gfx/ModPortraits/AEF/10.png" } } corps_commander={ traits={ infantry_leader mountaineer} skill= 4 attack_skill= 3 defense_skill= 6 planning_skill= 1 logistics_skill= 3 } }
+MOD_Percy_Butler = { name = MOD_Percy_Butler portraits={ army={ large="gfx/ModPortraits/AEF/2.png" } } corps_commander={ traits={ bearer_of_artillery career_officer } skill= 2 attack_skill= 5 defense_skill= 5 planning_skill= 1 logistics_skill= 4 } }
+MOD_Cyril_Atkins = { name = MOD_Cyril_Atkins portraits={ army={ large="gfx/ModPortraits/AEF/15.png" } } corps_commander={ traits={ bearer_of_artillery old_guard } skill= 2 attack_skill= 5 defense_skill= 6 planning_skill= 1 logistics_skill= 2 } }
+MOD_John0_Babcock = { name = MOD_John0_Babcock portraits={ army={ large="gfx/ModPortraits/AEF/6.png" } } corps_commander={ traits={ infantry_leader inflexible_strategist mountaneer} skill= 4 attack_skill= 3 defense_skill= 3 planning_skill= 6 logistics_skill= 4 } }
+MOD_Thomas_Buckner = { name = MOD_Thomas_Buckner portraits={ army={ large="gfx/ModPortraits/AEF/15.png" } } corps_commander={ traits={ cavalry_leader } skill= 5 attack_skill= 2 defense_skill= 4 planning_skill= 2 logistics_skill= 2 } }
+MOD_Arthur_Barstow = { name = MOD_Arthur_Barstow portraits={ army={ large="gfx/ModPortraits/AEF/14.png" } } corps_commander={ traits={ infantry_leader ranger} skill= 4 attack_skill= 2 defense_skill= 6 planning_skill= 5 logistics_skill= 1 } }
+MOD_Thomas_Loring = { name = MOD_Thomas_Loring portraits={ army={ large="gfx/ModPortraits/AEF/2.png" } } corps_commander={ traits={ panzer_leader urban_assault_specialist} skill= 5 attack_skill= 3 defense_skill= 3 planning_skill= 1 logistics_skill= 2 } }
+MOD_Winston_Keyes = { name = MOD_Winston_Keyes portraits={ army={ large="gfx/ModPortraits/AEF/14.png" } } corps_commander={ traits={ infantry_leader ranger} skill= 2 attack_skill= 2 defense_skill= 2 planning_skill= 3 logistics_skill= 2 } }
+MOD_Robert_Armstrong = { name = MOD_Robert_Armstrong portraits={ army={ large="gfx/ModPortraits/AEF/1.png" } } corps_commander={ traits={ panzer_leader cautious } skill= 2 attack_skill= 4 defense_skill= 6 planning_skill= 1 logistics_skill= 1 } }
+MOD_Archibald_Pillow = { name = MOD_Archibald_Pillow portraits={ army={ large="gfx/ModPortraits/AEF/16.png" } } corps_commander={ traits={ infantry_leader cautious swamp_fox} skill= 5 attack_skill= 2 defense_skill= 4 planning_skill= 1 logistics_skill= 3 } }
+MOD_Oswald_Wofford = { name = MOD_Oswald_Wofford portraits={ army={ large="gfx/ModPortraits/AEF/3.png" } } corps_commander={ traits={ infantry_leader inflexible_strategist mountaneer} skill= 3 attack_skill= 3 defense_skill= 3 planning_skill= 6 logistics_skill= 4 } }
+MOD_David_Jellicoe = { name = MOD_David_Jellicoe portraits={ army={ large="gfx/ModPortraits/AEF/3.png" } } corps_commander={ traits={ infantry_leader career_officer mountaneer} skill= 3 attack_skill= 3 defense_skill= 6 planning_skill= 1 logistics_skill= 4 } }
+MOD_Archibald_Wilcox = { name = MOD_Archibald_Wilcox portraits={ army={ large="gfx/ModPortraits/AEF/6.png" } } corps_commander={ traits={ cavalry_leader old_guard } skill= 5 attack_skill= 2 defense_skill= 6 planning_skill= 2 logistics_skill= 2 } }
+MOD_Edward_Morgan = { name = MOD_Edward_Morgan portraits={ army={ large="gfx/ModPortraits/AEF/10.png" } } corps_commander={ traits={ infantry_leader ranger} skill= 4 attack_skill= 5 defense_skill= 5 planning_skill= 2 logistics_skill= 4 } }
+MOD_John0_Moresby = { name = MOD_John0_Moresby portraits={ army={ large="gfx/ModPortraits/AEF/3.png" } } corps_commander={ traits={ cavalry_leader mountaneer} skill= 2 attack_skill= 3 defense_skill= 4 planning_skill= 1 logistics_skill= 4 } }
+MOD_Leopold_Gough = { name = MOD_Leopold_Gough portraits={ army={ large="gfx/ModPortraits/AEF/11.png" } } corps_commander={ traits={ infantry_leader mountaineer} skill= 3 attack_skill= 4 defense_skill= 4 planning_skill= 6 logistics_skill= 2 } }
+MOD_Francis_Beatty = { name = MOD_Francis_Beatty portraits={ army={ large="gfx/ModPortraits/AEF/2.png" } } corps_commander={ traits={ bearer_of_artillery cautious urban_assault_specialist} skill= 5 attack_skill= 2 defense_skill= 5 planning_skill= 6 logistics_skill= 1 } }
+MOD_Russell_Armistead = { name = MOD_Russell_Armistead portraits={ army={ large="gfx/ModPortraits/AEF/11.png" } } corps_commander={ traits={ panzer_leader inflexible_strategist mountaineer} skill= 5 attack_skill= 2 defense_skill= 4 planning_skill= 1 logistics_skill= 2 } }
+MOD_Max_Custer = { name = MOD_Max_Custer portraits={ army={ large="gfx/ModPortraits/AEF/3.png" } } corps_commander={ traits={ cavalry_leader inflexible_strategist ranger} skill= 2 attack_skill= 5 defense_skill= 6 planning_skill= 4 logistics_skill= 3 } }
+MOD_James_Hood = { name = MOD_James_Hood portraits={ army={ large="gfx/ModPortraits/AEF/5.png" } } corps_commander={ traits={ infantry_leader hill_fighter} skill= 4 attack_skill= 3 defense_skill= 3 planning_skill= 2 logistics_skill= 4 } }
+MOD_Jeremy_Ewing = { name = MOD_Jeremy_Ewing portraits={ army={ large="gfx/ModPortraits/AEF/11.png" } } corps_commander={ traits={ infantry_leader mountaneer} skill= 3 attack_skill= 5 defense_skill= 2 planning_skill= 2 logistics_skill= 3 } }
+MOD_Wallace_McDowell = { name = MOD_Wallace_McDowell portraits={ army={ large="gfx/ModPortraits/AEF/10.png" } } corps_commander={ traits={ panzer_leader urban_assault_specialist} skill= 4 attack_skill= 2 defense_skill= 4 planning_skill= 3 logistics_skill= 2 } }
+MOD_Oswald_Armistead = { name = MOD_Oswald_Armistead portraits={ army={ large="gfx/ModPortraits/AEF/3.png" } } corps_commander={ traits={ infantry_leader mountaneer} skill= 2 attack_skill= 2 defense_skill= 6 planning_skill= 3 logistics_skill= 2 } }
+MOD_Oswald_McArthur = { name = MOD_Oswald_McArthur portraits={ army={ large="gfx/ModPortraits/AEF/11.png" } } corps_commander={ traits={ panzer_leader war_hero } skill= 4 attack_skill= 5 defense_skill= 5 planning_skill= 1 logistics_skill= 3 } }
+MOD_Achille_Buckner = { name = MOD_Achille_Buckner portraits={ army={ large="gfx/ModPortraits/AEF/11.png" } } corps_commander={ traits={ cavalry_leader inflexible_strategist urban_assault_specialist} skill= 3 attack_skill= 3 defense_skill= 3 planning_skill= 1 logistics_skill= 4 } }
+MOD_Hubert_Hampton = { name = MOD_Hubert_Hampton portraits={ army={ large="gfx/ModPortraits/AEF/10.png" } } corps_commander={ traits={ bearer_of_artillery } skill= 4 attack_skill= 4 defense_skill= 5 planning_skill= 5 logistics_skill= 4 } }
+MOD_Ian_Polk = { name = MOD_Ian_Polk portraits={ army={ large="gfx/ModPortraits/AEF/8.png" } } corps_commander={ traits={ panzer_leader ranger} skill= 5 attack_skill= 6 defense_skill= 2 planning_skill= 3 logistics_skill= 3 } }
+MOD_Oswald_Williams = { name = MOD_Oswald_Williams portraits={ army={ large="gfx/ModPortraits/AEF/3.png" } } corps_commander={ traits={ bearer_of_artillery cautious hill_fighter} skill= 4 attack_skill= 3 defense_skill= 5 planning_skill= 3 logistics_skill= 4 } }
+MOD_Winston_Hope = { name = MOD_Winston_Hope portraits={ army={ large="gfx/ModPortraits/AEF/15.png" } } corps_commander={ traits={ infantry_leader } skill= 2 attack_skill= 2 defense_skill= 5 planning_skill= 2 logistics_skill= 3 } }
+MOD_Fairfax_Robertson = { name = MOD_Fairfax_Robertson portraits={ army={ large="gfx/ModPortraits/AEF/4.png" } } corps_commander={ traits={ infantry_leader cautious urban_assault_specialist} skill= 2 attack_skill= 4 defense_skill= 3 planning_skill= 4 logistics_skill= 3 } }
+MOD_Donald_Pillow = { name = MOD_Donald_Pillow portraits={ army={ large="gfx/ModPortraits/AEF/9.png" } } corps_commander={ traits={ infantry_leader } skill= 4 attack_skill= 4 defense_skill= 2 planning_skill= 6 logistics_skill= 2 } }
+MOD_Charles_Mundy = { name = MOD_Charles_Mundy portraits={ army={ large="gfx/ModPortraits/AEF/15.png" } } corps_commander={ traits={ infantry_leader career_officer swamp_fox} skill= 4 attack_skill= 5 defense_skill= 4 planning_skill= 2 logistics_skill= 2 } }
+MOD_Stanley_Longstreet = { name = MOD_Stanley_Longstreet portraits={ army={ large="gfx/ModPortraits/AEF/3.png" } } corps_commander={ traits={ cavalry_leader war_hero mountaneer} skill= 4 attack_skill= 2 defense_skill= 6 planning_skill= 2 logistics_skill= 3 } }
+MOD_Francis_Madden = { name = MOD_Francis_Madden portraits={ army={ large="gfx/ModPortraits/AEF/9.png" } } corps_commander={ traits={ infantry_leader inflexible_strategist mountaineer} skill= 5 attack_skill= 6 defense_skill= 5 planning_skill= 1 logistics_skill= 2 } }
+MOD_Winston_Franklin = { name = MOD_Winston_Franklin portraits={ army={ large="gfx/ModPortraits/AEF/15.png" } } corps_commander={ traits={ cavalry_leader old_guard } skill= 5 attack_skill= 4 defense_skill= 6 planning_skill= 2 logistics_skill= 2 } }
+MOD_Stanley_Benton = { name = MOD_Stanley_Benton portraits={ army={ large="gfx/ModPortraits/AEF/14.png" } } corps_commander={ traits={ infantry_leader inflexible_strategist hill_fighter} skill= 5 attack_skill= 2 defense_skill= 2 planning_skill= 2 logistics_skill= 3 } }
+MOD_Albert_Ewing = { name = MOD_Albert_Ewing portraits={ army={ large="gfx/ModPortraits/AEF/5.png" } } corps_commander={ traits={ infantry_leader cautious mountaneer} skill= 3 attack_skill= 2 defense_skill= 4 planning_skill= 1 logistics_skill= 4 } }
+MOD_Hubert_Abbott = { name = MOD_Hubert_Abbott portraits={ army={ large="gfx/ModPortraits/AEF/11.png" } } corps_commander={ traits={ bearer_of_artillery cautious mountaineer} skill= 5 attack_skill= 5 defense_skill= 2 planning_skill= 4 logistics_skill= 1 } }
+MOD_Percy_Porter = { name = MOD_Percy_Porter portraits={ army={ large="gfx/ModPortraits/AEF/1.png" } } corps_commander={ traits={ bearer_of_artillery war_hero mountaneer} skill= 5 attack_skill= 3 defense_skill= 4 planning_skill= 2 logistics_skill= 4 } }
+MOD_Cyril_Sickles = { name = MOD_Cyril_Sickles portraits={ army={ large="gfx/ModPortraits/AEF/1.png" } } corps_commander={ traits={ panzer_leader mountaneer} skill= 2 attack_skill= 4 defense_skill= 5 planning_skill= 1 logistics_skill= 2 } }
+MOD_Douglas_Semmes = { name = MOD_Douglas_Semmes portraits={ army={ large="gfx/ModPortraits/AEF/2.png" } } corps_commander={ traits={ panzer_leader inflexible_strategist hill_fighter} skill= 2 attack_skill= 3 defense_skill= 4 planning_skill= 3 logistics_skill= 1 } }
+MOD_Max_Walker = { name = MOD_Max_Walker portraits={ army={ large="gfx/ModPortraits/AEF/5.png" } } corps_commander={ traits={ infantry_leader } skill= 3 attack_skill= 2 defense_skill= 4 planning_skill= 2 logistics_skill= 2 } }
 
 
 
