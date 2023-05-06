@@ -1572,7 +1572,48 @@ create_equipment_variant = {
 		}
 }
 
+
+
+
 }
+
+### STOCKPILE 
+
+
+add_equipment_to_stockpile = { type = support_equipment_1   variant_name = "Browning M1919/Bren/Mk 2 grenade/PIAT/Bazooka"   amount = 4300 }
+add_equipment_to_stockpile = { type = motorized_equipment_1 	variant_name = "GMC CCKW 6×6" amount = 3900 }
+add_equipment_to_stockpile = { type = motorized_equipment_1 	variant_name = "Bedford QL" amount = 2900 }
+add_equipment_to_stockpile = { type = train_equipment_3      amount = 420 }
+add_equipment_to_stockpile = { type = train_equipment_2      amount = 590 }
+add_equipment_to_stockpile = { type = train_equipment_1     amount = 6975 }
+
+add_equipment_to_stockpile = { type = anti_air_equipment_2   variant_name = "Bofors 40mm" amount = 775 }
+
+
+add_equipment_to_stockpile = { type = anti_tank_equipment_1  variant_name = "QF 6-pounder/57 mm Gun M1"  amount = 637 }
+add_equipment_to_stockpile = { type = anti_tank_equipment_2   variant_name = "3-inch Gun M5" amount = 198 }
+add_equipment_to_stockpile = { type = anti_tank_equipment_3  variant_name = "Ordnance QF 17-pounder"  amount = 138 }
+
+add_equipment_to_stockpile = { type = artillery_equipment_1  variant_name = "Ordnance QF 25-pounder"  amount = 732 }
+add_equipment_to_stockpile = { type = artillery_equipment_2  variant_name = "BL 4.5-inch"  amount = 329 }
+add_equipment_to_stockpile = { type = artillery_equipment_2  variant_name = "105 mm M101"  amount = 779 }
+add_equipment_to_stockpile = { type = artillery_equipment_3   variant_name = "155 mm M1A2" amount = 315 }
+
+add_equipment_to_stockpile = { type = infantry_equipment_1  variant_name = "Rifle No. 4 Mk I"  amount = 29232 }
+add_equipment_to_stockpile = { type = infantry_equipment_2  variant_name = "Sten Mk II"  amount = 8550 }
+add_equipment_to_stockpile = { type = infantry_equipment_1  variant_name = "M1 Garand Rifle"  amount = 39232 }
+add_equipment_to_stockpile = { type = infantry_equipment_2  variant_name = "Thompson M1928A1"  amount = 9550 }
+
+add_equipment_to_stockpile = { type = armored_car_equipment_1  variant_name = "M3A2 Scout Car"  amount = 238 }
+add_equipment_to_stockpile = { type = armored_car_equipment_2   variant_name = "M8 Greyhound AC" amount = 122 }
+add_equipment_to_stockpile = { type = armored_car_equipment_2   variant_name = "Daimler AC" amount = 222 }
+
+add_equipment_to_stockpile = { type = mechanized_equipment_1  variant_name = "Bren Carrier" amount = 527 }
+add_equipment_to_stockpile = { type = mechanized_equipment_2  variant_name = "M3A1 Half-Track" amount = 1022 }
+
+add_equipment_to_stockpile = { type = convoy_1  variant_name = "Liberty ship" amount = 722 }
+
+
 1944.6.6 = { 
 complete_national_focus = AEF_appoint_the_cossac
 complete_national_focus = AEF_cossac_combined_staff
