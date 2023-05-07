@@ -24,8 +24,8 @@ state={
 
 		}
 		1943.3.1.12 = {
-			owner = AEF
-			add_core_of = AEF
+			owner = SBA
+			add_core_of = SBA
 			remove_core_of = DKR
 
 		}

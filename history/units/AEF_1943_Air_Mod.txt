@@ -27,7 +27,10 @@ air_wings = {
 		small_plane_airframe_2 =  { owner = "AEF" 	amount = 50 creator = "AEF" version_name = "P-51D Mustang" }
 		small_plane_airframe_2 =  { owner = "AEF" 	amount = 50 creator = "AEF" version_name = "P-51D Mustang" }
 		small_plane_airframe_2 =  { owner = "AEF" 	amount = 50 creator = "AEF" version_name = "P-51D Mustang" }
-
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 50 creator = "AEF" version_name = "P-51D Mustang" }
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 50 creator = "AEF" version_name = "P-51D Mustang" }
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 50 creator = "AEF" version_name = "P-51D Mustang" }
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 50 creator = "AEF" version_name = "P-51D Mustang" }
 
 
 	
@@ -115,6 +118,11 @@ air_wings = {
 	26 = {
 		
 		small_plane_airframe_2 =  { owner = "AEF" 	amount = 50 creator = "AEF" version_name = "P-47D Thunderbolt" } 
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 50 creator = "AEF" version_name = "P-47D Thunderbolt" }
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 50 creator = "AEF" version_name = "P-47D Thunderbolt" }
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 50 creator = "AEF" version_name = "P-47D Thunderbolt" }
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 50 creator = "AEF" version_name = "P-47D Thunderbolt" }
+		small_plane_airframe_2 =  { owner = "AEF" 	amount = 50 creator = "AEF" version_name = "P-47D Thunderbolt" }
 		small_plane_airframe_2 =  { owner = "AEF" 	amount = 50 creator = "AEF" version_name = "P-47D Thunderbolt" }
 		small_plane_airframe_2 =  { owner = "AEF" 	amount = 50 creator = "AEF" version_name = "P-47D Thunderbolt" }
 		small_plane_airframe_2 =  { owner = "AEF" 	amount = 50 creator = "AEF" version_name = "P-47D Thunderbolt" }

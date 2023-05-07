@@ -17,7 +17,7 @@ SAA = "countries/SeventhArmee.txt"
 FTA =  "countries/FifteenArmee.txt"
 
 
-FUA = "countries/Army.txt" 
-TUA = "countries/Army.txt" 
-FCA = "countries/Army.txt"
-SBA = "countries/Army.txt" 
+FUA = "countries/FirstUSArmy.txt" 
+TUA = "countries/ThirdUSArmy.txt" 
+FCA = "countries/FirstCANArmy.txt"
+SBA = "countries/SecondBRITArmy.txt" 

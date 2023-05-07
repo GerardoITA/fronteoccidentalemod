@@ -1839,7 +1839,23 @@ MOD_Gero_Bauer = { name = MOD_Gero_Bauer portraits={ army={ large="gfx/ModPortra
 
 
 
+ MOD_Hubert_Schenk = { name = MOD_Hubert_Schenk portraits={ army={ large="gfx/ModPortraits/GER/7.png" } } corps_commander={ traits={ infantry_leader career_officer hill_fighter} skill= 4 attack_skill= 5 defense_skill= 6 planning_skill= 4 logistics_skill= 2 } }
+MOD_Rupert_Haas = { name = MOD_Rupert_Haas portraits={ army={ large="gfx/ModPortraits/GER/9.png" } } corps_commander={ traits={ infantry_leader mountaineer} skill= 3 attack_skill= 6 defense_skill= 4 planning_skill= 3 logistics_skill= 3 } }
+MOD_Falk_Dietrich = { name = MOD_Falk_Dietrich portraits={ army={ large="gfx/ModPortraits/GER/10.png" } } corps_commander={ traits={ infantry_leader hill_fighter} skill= 5 attack_skill= 6 defense_skill= 3 planning_skill= 4 logistics_skill= 3 } }
+MOD_Otto_Schaefer = { name = MOD_Otto_Schaefer portraits={ army={ large="gfx/ModPortraits/GER/9.png" } } corps_commander={ traits={ infantry_leader mountaneer} skill= 5 attack_skill= 5 defense_skill= 3 planning_skill= 6 logistics_skill= 4 } }
+MOD_Maximilian_Maier = { name = MOD_Maximilian_Maier portraits={ army={ large="gfx/ModPortraits/GER/7.png" } } corps_commander={ traits={ bearer_of_artillery old_guard mountaineer} skill= 5 attack_skill= 3 defense_skill= 4 planning_skill= 6 logistics_skill= 3 } }
+MOD_Otto_Schultz = { name = MOD_Otto_Schultz portraits={ army={ large="gfx/ModPortraits/GER/10.png" } } corps_commander={ traits={ bearer_of_artillery war_hero ranger} skill= 5 attack_skill= 6 defense_skill= 5 planning_skill= 4 logistics_skill= 4 } }
+MOD_Henning_Schultz = { name = MOD_Henning_Schultz portraits={ army={ large="gfx/ModPortraits/GER/4.png" } } corps_commander={ traits={ infantry_leader cautious } skill= 4 attack_skill= 5 defense_skill= 5 planning_skill= 6 logistics_skill= 2 } }
+MOD_Friedrich_Reich = { name = MOD_Friedrich_Reich portraits={ army={ large="gfx/ModPortraits/GER/5.png" } } corps_commander={ traits={ infantry_leader cautious ranger} skill= 3 attack_skill= 4 defense_skill= 6 planning_skill= 4 logistics_skill= 4 } } 
 
+ MOD_Kuno_Schneider = { name = MOD_Kuno_Schneider portraits={ army={ large="gfx/ModPortraits/GER/11.png" } } corps_commander={ traits={ infantry_leader swamp_fox} skill= 3 attack_skill= 6 defense_skill= 4 planning_skill= 5 logistics_skill= 2 } }
+MOD_Joachim_Schaefer = { name = MOD_Joachim_Schaefer portraits={ army={ large="gfx/ModPortraits/GER/6.png" } } corps_commander={ traits={ infantry_leader career_officer ranger} skill= 5 attack_skill= 3 defense_skill= 5 planning_skill= 6 logistics_skill= 2 } }
+MOD_Franz_Schenk = { name = MOD_Franz_Schenk portraits={ army={ large="gfx/ModPortraits/GER/4.png" } } corps_commander={ traits={ infantry_leader cautious hill_fighter} skill= 3 attack_skill= 6 defense_skill= 5 planning_skill= 4 logistics_skill= 3 } }
+MOD_Roland_Wagner = { name = MOD_Roland_Wagner portraits={ army={ large="gfx/ModPortraits/GER/8.png" } } corps_commander={ traits={ infantry_leader cautious hill_fighter} skill= 3 attack_skill= 5 defense_skill= 6 planning_skill= 6 logistics_skill= 2 } }
+MOD_Manfred_Richter = { name = MOD_Manfred_Richter portraits={ army={ large="gfx/ModPortraits/GER/2.png" } } corps_commander={ traits={ bearer_of_artillery } skill= 4 attack_skill= 5 defense_skill= 3 planning_skill= 3 logistics_skill= 4 } }
+MOD_Harro_Hahn = { name = MOD_Harro_Hahn portraits={ army={ large="gfx/ModPortraits/GER/8.png" } } corps_commander={ traits={ infantry_leader mountaineer} skill= 3 attack_skill= 3 defense_skill= 4 planning_skill= 2 logistics_skill= 3 } }
+MOD_Rupert_Maier = { name = MOD_Rupert_Maier portraits={ army={ large="gfx/ModPortraits/GER/5.png" } } corps_commander={ traits={ bearer_of_artillery old_guard ranger} skill= 5 attack_skill= 3 defense_skill= 5 planning_skill= 3 logistics_skill= 3 } }
+MOD_Maximilian_Neumann = { name = MOD_Maximilian_Neumann portraits={ army={ large="gfx/ModPortraits/GER/5.png" } } corps_commander={ traits={ infantry_leader career_officer } skill= 5 attack_skill= 6 defense_skill= 6 planning_skill= 6 logistics_skill= 4 } } 
 
 
 

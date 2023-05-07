@@ -1,0 +1,182 @@
+﻿capital = 138
+1943.1.1 = { 
+
+
+
+##set_cosmetic_tag = GER_OBWEST
+
+add_ideas = no_change_production
+add_manpower = 1000000
+
+set_research_slots = 0
+set_stability = 1
+set_war_support = 1
+add_command_power = 150
+
+
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 100
+	communism = 0
+}
+
+	set_technology = {
+	radio_detection = 1
+	decimetric_radar = 1
+	tech_signal_company = 1
+	tech_signal_company2 = 1
+	tech_signal_company3 = 1
+	tech_logistics_company = 1
+	tech_logistics_company2 = 1 
+	tech_logistics_company3 = 1
+	tech_maintenance_company = 1
+	tech_maintenance_company2 = 1
+	tech_maintenance_company3 = 1
+	tech_field_hospital = 1
+	tech_field_hospital2 = 1
+	tech_field_hospital3 = 1
+	tech_military_police = 1 
+	tech_military_police2 = 1 
+	tech_engineers3 = 1
+	tech_recon2 = 1
+	tech_recon3 = 1
+	tech_engineers2 = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	improved_infantry_weapons_2 = 1
+	infantry_at = 1
+	infantry_at2 = 1
+	paratroopers = 1
+	paratroopers2 = 1
+	rocket_artillery = 1 
+	marines = 1
+	marines2 = 1
+	advanced_machine_tools = 1
+	tech_mountaineers2 = 1
+	tech_mountaineers = 1
+	tech_special_forces = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	support_weapons3 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_artillery = 1
+	artillery1 = 1
+	artillery3 = 1
+	artillery2 = 1
+	artillery4 = 1
+	artillery5 = 1
+	interwar_antiair = 1
+	antiair1 = 1
+	antiair2 = 1
+	antiair3 = 1
+	antiair4 = 1
+	interwar_antitank = 1
+	antitank1 = 1
+	antitank2 = 1
+	antitank3 = 1
+	antitank4 = 1
+	antitank5 = 1
+	superior_firepower = 1
+	sup_delay = 1
+	mobile_defence = 1
+	intergrated_support = 1
+	regimental_combat_teams = 1
+	sup_mechanized_offensive = 1
+	base_strike = 1
+	motorised_infantry = 1
+	armored_car1 = 1 
+	armored_car2 = 1 
+	armored_car3 = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	marines = 1
+	basic_train = 1
+	amphibious_mechanized_infantry = 1
+	mechanised_infantry = 1 
+	mechanised_infantry2 = 1
+	electronic_mechanical_engineering = 1
+	nuclear_reactor = 1
+	radio = 1
+	atomic_research = 1
+	wartime_train = 1
+	mechanical_computing = 1
+	computing_machine = 1
+	improved_computing_machine = 1
+	experimental_rockets = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	assembly_line_production = 1
+	improved_equipment_conversion = 1
+	flexible_line = 1
+	concentrated_industry = 1
+	concentrated_industry2 = 1
+	concentrated_industry3 = 1
+	concentrated_industry4 = 1
+	concentrated_industry5 = 1
+	fuel_refining2 = 1
+	fuel_refining3 = 1
+	synth_oil_experiments = 1
+	oil_processing = 1
+	improved_oil_processing = 1
+	construction1 = 1
+	construction2 = 1
+	construction3 = 1
+	construction4 = 1
+	construction5 = 1
+	
+}
+
+add_ideas = allied_army
+
+create_country_leader = {
+	name = "Guy Simonds"
+	desc = "General"
+	picture = "gfx/ModPortraits/AEF/Guy_Simonds.png"
+	expire = "1965.1.1"
+	ideology = liberalism
+}
+
+
+
+
+# I Corps 
+recruit_character = MOD_John_Crocker
+
+# II Corps 
+recruit_character = MOD_Guy_Simonds
+
+
+recruit_character = MOD_Arthur_Barstow
+recruit_character = MOD_Thomas_Loring
+recruit_character = MOD_Winston_Keyes
+recruit_character = MOD_Robert_Armstrong
+recruit_character = MOD_Archibald_Pillow
+recruit_character = MOD_Oswald_Wofford
+recruit_character = MOD_David_Jellicoe
+recruit_character = MOD_Archibald_Wilcox
+
+
+ recruit_character = MOD_Horatio_Longstreet
+recruit_character = MOD_Fairfax_Potter
+recruit_character = MOD_Jake_Longstreet
+recruit_character = MOD_Martin_Sprague
+recruit_character = MOD_Bernard_Windsor
+recruit_character = MOD_Charles_Forsyth
+recruit_character = MOD_Thomas_Ames 
+
+
+
+
+}

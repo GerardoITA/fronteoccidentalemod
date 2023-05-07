@@ -179,6 +179,14 @@ recruit_character = MOD_Hans_Walter
 recruit_character = MOD_Henning_Koch
 recruit_character = MOD_Rainer_Richter
 
+ recruit_character = MOD_Kuno_Schneider
+recruit_character = MOD_Joachim_Schaefer
+recruit_character = MOD_Franz_Schenk
+recruit_character = MOD_Roland_Wagner
+recruit_character = MOD_Manfred_Richter
+recruit_character = MOD_Harro_Hahn
+recruit_character = MOD_Rupert_Maier
+recruit_character = MOD_Maximilian_Neumann 
 
 create_country_leader = {
 	name = "Hans von Salmuth"

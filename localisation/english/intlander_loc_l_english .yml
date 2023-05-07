@@ -96,6 +96,23 @@ MOD_Marco_Walter:0 "Generalmajor Marco Walter"
 MOD_Gero_Bauer:0 "Generalmajor Gero Bauer"
 
 
+ MOD_Hubert_Schenk:0 "Generalmajor Hubert Schenk"
+MOD_Rupert_Haas:0 "Generalmajor Rupert Haas"
+MOD_Falk_Dietrich:0 "Generalmajor Falk Dietrich"
+MOD_Otto_Schaefer:0 "Generalmajor Otto Schaefer"
+MOD_Maximilian_Maier:0 "Generalmajor Maximilian Maier"
+MOD_Otto_Schultz:0 "Generalmajor Otto Schultz"
+MOD_Henning_Schultz:0 "Generalmajor Henning Schultz"
+MOD_Friedrich_Reich:0 "Generalmajor Friedrich Reich" 
+
+ MOD_Kuno_Schneider:0 "Generalmajor Kuno Schneider"
+MOD_Joachim_Schaefer:0 "Generalmajor Joachim Schaefer"
+MOD_Franz_Schenk:0 "Generalmajor Franz Schenk"
+MOD_Roland_Wagner:0 "Generalmajor Roland Wagner"
+MOD_Manfred_Richter:0 "Generalmajor Manfred Richter"
+MOD_Harro_Hahn:0 "Generalmajor Harro Hahn"
+MOD_Rupert_Maier:0 "Generalmajor Rupert Maier"
+MOD_Maximilian_Neumann:0 "Generalmajor Maximilian Neumann" 
 
 ##AEF 
 #USA 
@@ -204,6 +221,59 @@ MOD_Douglas_Semmes:0 "Major General Douglas Semmes"
 MOD_Max_Walker:0 "Major General Max Walker"
 
 
+ MOD_Horatio_Longstreet:0 "Major General Horatio Longstreet"
+MOD_Fairfax_Potter:0 "Major General Fairfax Potter"
+MOD_Jake_Longstreet:0 "Major General Jake Longstreet"
+MOD_Martin_Sprague:0 "Major General Martin Sprague"
+MOD_Bernard_Windsor:0 "Major General Bernard Windsor"
+MOD_Charles_Forsyth:0 "Major General Charles Forsyth"
+MOD_Thomas_Ames:0 "Major General Thomas Ames" 
+
+
+ MOD_Achille_Barstow:0 "Major General Achille Barstow"
+MOD_Herbert_Benning:0 "Major General Herbert Benning"
+MOD_Jake_McCook:0 "Major General Jake McCook"
+MOD_Percy_Chamberlain:0 "Major General Percy Chamberlain"
+MOD_Francis_Roberts:0 "Major General Francis Roberts"
+MOD_Thomas_Chapman:0 "Major General Thomas Chapman"
+MOD_Herbert_Pope:0 "Major General Herbert Pope" 
+
+ MOD_Alfred_Battemberg:0 "Major General Alfred Battemberg"
+MOD_Donald_Seaton:0 "Major General Donald Seaton"
+MOD_Edward_Wade:0 "Major General Edward Wade"
+MOD_William_Windsor:0 "Major General William Windsor"
+MOD_Robert_Sherman:0 "Major General Robert Sherman"
+MOD_Ian_Potter:0 "Major General Ian Potter"
+MOD_Stanley_Wood:0 "Major General Stanley Wood" 
+
+ MOD_Robert_Washington:0 "Major General Robert Washington"
+MOD_Thomas_Arthur:0 "Major General Thomas Arthur"
+MOD_Ian_Mosby:0 "Major General Ian Mosby"
+MOD_Alfred_Hampton:0 "Major General Alfred Hampton"
+MOD_George_Pickett:0 "Major General George Pickett"
+MOD_Alfred_Magruder:0 "Major General Alfred Magruder"
+MOD_Charles_Price:0 "Major General Charles Price" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## COUNTRIES
@@ -247,28 +317,31 @@ STATE_133:0 "5. Panzerarmee's HQ"
 STATE_134:0 "7. Armee's HQ"
 STATE_135:0 "15. Armee's HQ"
 
+STATE_137:0 "2nd British Army's HQ"
+STATE_138:0 "1st Canadian Army's HQ"
+STATE_139:0 "1st US Army's HQ"
+STATE_140:0 "3rd US Army's HQ"
 
 
 
 
 
-
-FUA_democratic:0 "Army"
-FUA_democratic_DEF:0 "Army"
-FUA_neutrality:0 " Army" 
-FUA_neutrality_DEF:0 "Army"
-TUA_democratic:0 "Army"
-TUA_democratic_DEF:0 "Army"
-TUA_neutrality:0 " Army" 
-TUA_neutrality_DEF:0 "Army"
-FCA_democratic:0 "Army"
-FCA_democratic_DEF:0 "Army"
-FCA_neutrality:0 " Army"
-FCA_neutrality_DEF:0 "Army"
-SBA_democratic:0 "Army"
-SBA_democratic_DEF:0 "Army"
-SBA_neutrality:0 " Army" 
-SBA_neutrality_DEF:0 "Army"
+FUA_democratic:0 "First US Army"
+FUA_democratic_DEF:0 "First US Army"
+FUA_neutrality:0 "First US Army" 
+FUA_neutrality_DEF:0 "First US Army"
+TUA_democratic:0 "Third US Army"
+TUA_democratic_DEF:0 "Third US Army"
+TUA_neutrality:0 " Third US Army" 
+TUA_neutrality_DEF:0 "Third US Army"
+FCA_democratic:0 "First Canadian Army"
+FCA_democratic_DEF:0 "First Canadian Army"
+FCA_neutrality:0 " First Canadian Army"
+FCA_neutrality_DEF:0 "First Canadian Army"
+SBA_democratic:0 "Second British Army"
+SBA_democratic_DEF:0 "Second British Army"
+SBA_neutrality:0 " Second British Army" 
+SBA_neutrality_DEF:0 "Second British Army"
 
 FUA_democratic_ADJ:0 "Allied"
 FUA_neutrality_ADJ:0 "Allied"

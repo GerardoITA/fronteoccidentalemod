@@ -173,6 +173,16 @@ recruit_character = MOD_Marco_Walter
 recruit_character = MOD_Gero_Bauer
 recruit_character = MOD_Edgar_Gross
 
+
+recruit_character = MOD_Hubert_Schenk
+recruit_character = MOD_Rupert_Haas
+recruit_character = MOD_Falk_Dietrich
+recruit_character = MOD_Otto_Schaefer
+recruit_character = MOD_Maximilian_Maier
+recruit_character = MOD_Otto_Schultz
+recruit_character = MOD_Henning_Schultz
+recruit_character = MOD_Friedrich_Reich 
+
 create_country_leader = {
 	name = "Friedrich Dollmann"
 	desc = "Generaloberst"

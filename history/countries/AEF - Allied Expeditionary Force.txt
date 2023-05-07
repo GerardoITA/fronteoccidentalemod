@@ -15,99 +15,32 @@ if = {
 1943.1.1 = { 
 
 ## USA
-# V Corps 
-recruit_character = MOD_Leonard_Gerow
-
-
-
-# VII Corps
-recruit_character = MOD_Lawton_Collins
-
-# VIII Corps
-recruit_character = MOD_Troy_Middleton
-
-# XIX Corps
-recruit_character = MOD_Charles_Corlett
-
-# XV Corps 
-recruit_character = MOD_Wade_Haislip
-
 # XII Corps
-recruit_character = MOD_Manton_Eddy
+##recruit_character = MOD_Manton_Eddy
 
-# XX Corps 
-recruit_character = MOD_Walton_Walker
+
+recruit_character = MOD_Charles_Price 
 
 ## Commonwealth 
-# I Corps 
-recruit_character = MOD_John_Crocker
 
-# II Corps 
-recruit_character = MOD_Guy_Simonds
 
-# VIII Corps 
-recruit_character = MOD_Richard_Connor 
 
-# XII Corps
-recruit_character = MOD_Neil_Ritchie
-
-# XXX Corps
-recruit_character = MOD_Brian_Horrocks
-
-# VI Corps
-recruit_character = MOD_Lucian_Truscott
 
 ##SPAM 
-recruit_character = MOD_Hugh_Anderson
-recruit_character = MOD_Zachary_McCook
-recruit_character = MOD_Max_Williams
-recruit_character = MOD_Archibald_Anderson
-recruit_character = MOD_Bernard_Wheeler
-recruit_character = MOD_John0_Ewing
-recruit_character = MOD_Albert_Stewart
-recruit_character = MOD_Archibald_Williams
-recruit_character = MOD_Archibald_Floyd
-recruit_character = MOD_Percy_Butler
-recruit_character = MOD_Cyril_Atkins
-recruit_character = MOD_John0_Babcock
-recruit_character = MOD_Thomas_Buckner
-recruit_character = MOD_Arthur_Barstow
-recruit_character = MOD_Thomas_Loring
-recruit_character = MOD_Winston_Keyes
-recruit_character = MOD_Robert_Armstrong
-recruit_character = MOD_Archibald_Pillow
-recruit_character = MOD_Oswald_Wofford
-recruit_character = MOD_David_Jellicoe
-recruit_character = MOD_Archibald_Wilcox
-recruit_character = MOD_Edward_Morgan
-recruit_character = MOD_John0_Moresby
-recruit_character = MOD_Leopold_Gough
-recruit_character = MOD_Francis_Beatty
-recruit_character = MOD_Russell_Armistead
-recruit_character = MOD_Max_Custer
-recruit_character = MOD_James_Hood
-recruit_character = MOD_Jeremy_Ewing
-recruit_character = MOD_Wallace_McDowell
-recruit_character = MOD_Oswald_Armistead
-recruit_character = MOD_Oswald_McArthur
-recruit_character = MOD_Achille_Buckner
-recruit_character = MOD_Hubert_Hampton
-recruit_character = MOD_Ian_Polk
-recruit_character = MOD_Oswald_Williams
-recruit_character = MOD_Winston_Hope
-recruit_character = MOD_Fairfax_Robertson
-recruit_character = MOD_Donald_Pillow
-recruit_character = MOD_Charles_Mundy
-recruit_character = MOD_Stanley_Longstreet
-recruit_character = MOD_Francis_Madden
-recruit_character = MOD_Winston_Franklin
-recruit_character = MOD_Stanley_Benton
-recruit_character = MOD_Albert_Ewing
-recruit_character = MOD_Hubert_Abbott
-recruit_character = MOD_Percy_Porter
-recruit_character = MOD_Cyril_Sickles
-recruit_character = MOD_Douglas_Semmes
-recruit_character = MOD_Max_Walker
+
+
+
+
+create_faction = Allies
+add_to_faction = FUA
+give_military_access = FUA
+add_to_faction = TUA
+give_military_access = TUA
+add_to_faction = FCA
+give_military_access = FCA
+add_to_faction = SBA
+give_military_access = SBA
+
 
 #if = {
 #	limit = { has_dlc = "Man the Guns" }
@@ -1675,22 +1608,7 @@ set_party_name = {
     long_name = AEF_SHAEF_party_long
     name = AEF_SHAEF_party
 }
-
-set_province_controller = 220
-set_province_controller = 2738
-set_province_controller = 4147
-set_province_controller = 9764
-set_province_controller = 3554
-set_province_controller = 4147
-set_province_controller = 4908
-set_province_controller = 2161
-set_province_controller = 4927
-set_province_controller = 4386
-set_province_controller = 3659
-set_province_controller = 2843
-oob = "AEF_JUNE_6"
  } 
 1944.12.1 = { 
 complete_national_focus = play_WAR_theme 
 
-}
