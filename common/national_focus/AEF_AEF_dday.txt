@@ -450,7 +450,20 @@ prerequisite = { focus = AEF_shaef }
 		}
 	}
 
-
+	#Focus for The Transportation Plan
+	focus = {
+		id = AEF_the_transportation_plan
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 16
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		completion_reward = {
+custom_effect_tooltip =  transportation_plan_focus   }
+		prerequisite = { focus = AEF_air_operations_branch }
+		ai_will_do = {
+			factor = 1
+		}
 	}
 
 	#Focus for Prioritise Landing Craft

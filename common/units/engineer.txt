@@ -44,7 +44,8 @@ sub_units = {
 
 		# Support nerfs to combat abilities
 		soft_attack = -0.5
-
+		supply_consumption_factor = -0.25
+		fuel_consumption_factor = -0.25
 		essential = {
 			support_equipment
 		}

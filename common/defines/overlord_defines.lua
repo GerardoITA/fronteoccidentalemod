@@ -98,7 +98,7 @@ NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.0
 NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0.00
 NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0.00
 NDefines.NMilitary.CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0.0 -- if there are multiple leaders in same combat, each one gets thisratio + (1-thisratio)/num leaders. amount of xp each general gets scales 1 0.75 0.66 etc for 1 2 3 generals
-NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 999.0
+NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 400.0
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.00
 
 
