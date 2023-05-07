@@ -7,6 +7,21 @@ ideas = {
 			}
 			removal_cost = -1
 		}
+
+		german_army = {
+			modifier = {
+				army_attack_factor = 0.25
+				army_org_factor	= 0.1
+			}
+			removal_cost = -1
+		}
+		allied_army = {
+			modifier = {
+				army_attack_factor = 0.15
+				army_morale_factor = 0.3
+			}
+			removal_cost = -1
+		}
 		no_change_production = {
 			modifier = {
 				equipment_upgrade_xp_cost = 10

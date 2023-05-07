@@ -26,14 +26,47 @@ create_dynamic_country = {
 
 }
 1943.1.1 = { clr_country_flag = OKW_ww1_start_tag
+
+
+
+
+	set_autonomy = {
+		target = SSS
+		autonomous_state = autonomy_reichskommissariat
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = FPZ
+		autonomous_state = autonomy_reichskommissariat
+		freedom_level = 0.4
+	}	
+	set_autonomy = {
+		target = SAA
+		autonomous_state = autonomy_reichskommissariat
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = FTA
+		autonomous_state = autonomy_reichskommissariat
+		freedom_level = 0.4
+	}	
+
+create_faction = Wehrmacht
+add_to_faction = SSS
+give_military_access = SSS
+add_to_faction = FPZ
+give_military_access = FPZ
+add_to_faction = FTA
+give_military_access = FTA
+add_to_faction = SAA
+give_military_access = SAA
+
+
 set_cosmetic_tag = GER_OBWEST
 
 oob="GER_Mod"
 add_manpower = 250000
-add_timed_idea = {
-    idea = start_production
-    days = 10
-}
+
 add_ideas = no_change_production
 set_convoys = 55 
 
@@ -74,107 +107,36 @@ add_command_power = 120
 
 
 #### Panzergruppe West
-# I SS Panzerkorps
-recruit_character = MOD_Sepp_Dietrich
-recruit_character = MOD_Theodor_Wisch
-recruit_character = MOD_Kurt_Myer
-recruit_character = MOD_Werner_Ostendorff
+### I SS Panzerkorps
+##recruit_character = MOD_Sepp_Dietrich
+##recruit_character = MOD_Theodor_Wisch
+##recruit_character = MOD_Kurt_Myer
+##recruit_character = MOD_Werner_Ostendorff
+##
+### II SS Panzerkorps
+##recruit_character = MOD_Paul_Hausser
+##recruit_character = MOD_Heinz_Lammerding
+##recruit_character = MOD_Heinz_Harmel
+##recruit_character = MOD_Wilhelm_Bittrich
 
-# II SS Panzerkorps
-recruit_character = MOD_Paul_Hausser
-recruit_character = MOD_Heinz_Lammerding
-recruit_character = MOD_Heinz_Harmel
-recruit_character = MOD_Wilhelm_Bittrich
+## 58. Panzerkorps 
+##recruit_character = MOD_Walter_Kruger
+##recruit_character = MOD_Edgar_Feuchtinger
+##recruit_character = MOD_Fritz_Bayerlein
 
-# 58. Panzerkorps 
-recruit_character = MOD_Walter_Kruger
-recruit_character = MOD_Edgar_Feuchtinger
-recruit_character = MOD_Fritz_Bayerlein
-
-#### 7. Armee
-# 25. Armeekorps
-recruit_character = MOD_Wilhelm_Fahrmbacher
-
-# 74. Armeekorps
-recruit_character = MOD_Erich_Straube
-
-# 84. Armeekorps
-recruit_character = MOD_Erich_Marcks
+## 57. Panzerkorps 
+##recruit_character = MOD_Gerhard_Schwerin
+##recruit_character = MOD_Heinrich_Luttwitz
+##recruit_character = MOD_Erwin_Jollasse
 
 
-# 2. Fallschirm-Korps
-recruit_character = MOD_Eugen_Meindl
-
-#### 15. Armee 
-# 67. Armeekorps 
-recruit_character = MOD_Walter_Weikersthal
-
-# 81. Armeekorps 
-recruit_character = MOD_Adolf_Kuntzen
-
-# 82. Armeekorps 
-recruit_character = MOD_Johann_Sinnhuber
-
-# 89. Armeekorps 
-recruit_character = MOD_Werner_Gilsa 
-
-# 57. Panzerkorps 
-recruit_character = MOD_Hasso_Manteuffel
-
-# 80. Armeekorps
+ 
+## 80. Armeekorps
 recruit_character = MOD_Otto_Stapf
 
 
-recruit_character = MOD_Albert_Brandt
-recruit_character = MOD_Hermann_Klein
-recruit_character = MOD_Gustav_Krause
-recruit_character = MOD_Wilhelm_Krause
-recruit_character = MOD_Anton_Schenk
-recruit_character = MOD_Gerhard_Reich
-recruit_character = MOD_Rainer_Krause
-recruit_character = MOD_Manfred_Klein
-recruit_character = MOD_Hagen_Schreiber
-recruit_character = MOD_Franz_Wenzel
-recruit_character = MOD_Timm_Gross
-recruit_character = MOD_Hermann_Sperling
-recruit_character = MOD_Konrad_Dietrich
-recruit_character = MOD_Max_Vogel
-recruit_character = MOD_Henning_Schaefer
-recruit_character = MOD_Baldur_Klein
-recruit_character = MOD_Falk_Schneider
-recruit_character = MOD_Arnold_Ziegler
-recruit_character = MOD_Rainer_Richter
-recruit_character = MOD_Erich_Wagner
-recruit_character = MOD_Joachim_Vogel
-recruit_character = MOD_Heinrich_Vogel
-recruit_character = MOD_Hans_Peters
-recruit_character = MOD_Hugo_Schaefer
-recruit_character = MOD_Bernd_Walter
-recruit_character = MOD_Armin_Klein
-recruit_character = MOD_Erwin_Haas
-recruit_character = MOD_Joachim_Eckert
-recruit_character = MOD_Egon_Braun
-recruit_character = MOD_Hugo_Reich
-recruit_character = MOD_Alwin_Braun
-recruit_character = MOD_Fritz_Vogelbaum
-recruit_character = MOD_Alwin_Gross
-recruit_character = MOD_Leopold_Schneider
-recruit_character = MOD_Alwin_Wolf
-recruit_character = MOD_Leonhard_Vogel
-recruit_character = MOD_Theodor_Fischer
-recruit_character = MOD_Hans_Ritter
-recruit_character = MOD_Alfred_Schultz
-recruit_character = MOD_Albert_Schwarz
-recruit_character = MOD_Gero_Brandt
-recruit_character = MOD_Knut_Walter
-recruit_character = MOD_Adolf_Baum
-recruit_character = MOD_Bernd_Klein
-recruit_character = MOD_Hans_Walter
-recruit_character = MOD_Henning_Koch
-recruit_character = MOD_Edgar_Gross
-recruit_character = MOD_Konrad_Schneider
-recruit_character = MOD_Marco_Walter
-recruit_character = MOD_Gero_Bauer
+
+
 
 
 
@@ -1275,7 +1237,9 @@ add_equipment_to_stockpile = { type = mechanized_equipment_1  variant_name = "Sd
 add_equipment_to_stockpile = { type = mechanized_equipment_2  variant_name = "Sd.Kfz. 251" amount = 922 }
 
 
+
 }
+
 1944.6.6.7 = { drop_cosmetic_tag = yes 
 	remove_country_leader_role = {
     character = GER_gerd_von_rundstedt

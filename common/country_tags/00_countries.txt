@@ -10,3 +10,14 @@ LUX	= "countries/Luxemburg.txt"
 SAG	= "countries/SixthArmyGroup.txt"
 DKR 	= "countries/GermanEmpireWW1.txt"
 ENT     = "countries/EntenteWW1.txt"
+
+SSS = "countries/SixthSSPanzer.txt"
+FPZ = "countries/FifthPanzer.txt"
+SAA = "countries/SeventhArmee.txt"
+FTA =  "countries/FifteenArmee.txt"
+
+
+FUA = "countries/Army.txt" 
+TUA = "countries/Army.txt" 
+FCA = "countries/Army.txt"
+SBA = "countries/Army.txt" 

@@ -17,6 +17,10 @@ MOD_Walter_Kruger:0 "General der Panzertruppe Walter Krüger"
 MOD_Edgar_Feuchtinger:0 "Generalleutnant Edgar Feuchtinger"
 MOD_Fritz_Bayerlein:0 "Generalleutnant Fritz Bayerlein"
 
+MOD_Erwin_Jollasse:0 "Generalmajor Erwin Jollasse"
+MOD_Heinrich_Luttwitz:0 "Generalmajor Heinrich Luttwitz"
+MOD_Gerhard_Schwerin:0 "Generalmajor Gerhard von Schwerin"
+
 
 MOD_Wilhelm_Fahrmbacher:0 "General der Artillerie Wilhelm_Fahrmbacher"
 
@@ -37,6 +41,8 @@ MOD_Werner_Gilsa:0 "General der Infanterie Werner von Gilsa"
 MOD_Hasso_Manteuffel:0 "General der Panzertruppe Hasso von Manteuffel"
 
 MOD_Otto_Stapf:0 "General der Infanterie Otto Stapf"
+
+
 
 MOD_Albert_Brandt:0 "Generalmajor Albert Brandt"
 MOD_Hermann_Klein:0 "Generalmajor Hermann Klein"
@@ -200,9 +206,86 @@ MOD_Max_Walker:0 "Major General Max Walker"
 
 
 
+## COUNTRIES
+SSS_fascism:0 "6. SS-Panzerarmee"
+SSS_fascism_DEF:0 "6. SS-Panzerarmee"
+SSS_democratic:0 "6. SS-Panzerarmee"
+SSS_democratic_DEF:0 "6. SS-Panzerarmee"
+SSS_neutrality:1 "6. SS-Panzerarmee"
+SSS_neutrality_DEF:1 "6. SS-Panzerarmee"
+SSS_communism:0 "6. SS-Panzerarmee"
+SSS_communism_DEF:0 "6. SS-Panzerarmee"
+SSS_fascism_ADJ:0 "SS"
+SSS_democratic_ADJ:0 "SS"
+SSS_neutrality_ADJ:0 "SS"
+SSS_communism_ADJ:0 "SS" 
+
+
+FPZ_fascism:0 "5. Panzerarmee"
+FPZ_fascism_DEF:0 "5. Panzerarmee"
+FPZ_democratic:0 "5. Panzerarmee"
+FPZ_democratic_DEF:0 "5. Panzerarmee"
+FPZ_neutrality:1 "5. Panzerarmee"
+FPZ_neutrality_DEF:1 "5. Panzerarmee"
+FPZ_communism:0 "5. Panzerarmee"
+FPZ_communism_DEF:0 "5. Panzerarmee"
+FPZ_fascism_ADJ:0 "Panzer"
+FPZ_democratic_ADJ:0 "Panzer"
+FPZ_neutrality_ADJ:0 "Panzer"
+FPZ_communism_ADJ:0 "Panzer" 
+
+SAA_fascism:0 "7. Armee"
+SAA_fascism_DEF:0 "7. Armee"
+SAA_fascism_ADJ:0 "German"
+
+FTA_fascism:0 "15. Armee"
+FTA_fascism_DEF:0 "15. Armee"
+FTA_fascism_ADJ:0 "German"
+
+STATE_136:0 "6. SS-Panzerarmee's HQ"
+STATE_133:0 "5. Panzerarmee's HQ"
+STATE_134:0 "7. Armee's HQ"
+STATE_135:0 "15. Armee's HQ"
 
 
 
+
+
+
+
+FUA_democratic:0 "Army"
+FUA_democratic_DEF:0 "Army"
+FUA_neutrality:0 " Army" 
+FUA_neutrality_DEF:0 "Army"
+TUA_democratic:0 "Army"
+TUA_democratic_DEF:0 "Army"
+TUA_neutrality:0 " Army" 
+TUA_neutrality_DEF:0 "Army"
+FCA_democratic:0 "Army"
+FCA_democratic_DEF:0 "Army"
+FCA_neutrality:0 " Army"
+FCA_neutrality_DEF:0 "Army"
+SBA_democratic:0 "Army"
+SBA_democratic_DEF:0 "Army"
+SBA_neutrality:0 " Army" 
+SBA_neutrality_DEF:0 "Army"
+
+FUA_democratic_ADJ:0 "Allied"
+FUA_neutrality_ADJ:0 "Allied"
+FUA_democratic_ADJ:0 "Allied"
+FUA_neutrality_ADJ:0 "Allied"
+TUA_democratic_ADJ:0 "Allied"
+TUA_neutrality_ADJ:0 "Allied"
+TUA_democratic_ADJ:0 "Allied"
+TUA_neutrality_ADJ:0 "Allied"
+FCA_democratic_ADJ:0 "Allied"
+FCA_neutrality_ADJ:0 "Allied"
+FCA_democratic_ADJ:0 "Allied"
+FCA_neutrality_ADJ:0 "Allied"
+SBA_democratic_ADJ:0 "Allied"
+SBA_neutrality_ADJ:0 "Allied"
+SBA_democratic_ADJ:0 "Allied"
+SBA_neutrality_ADJ:0 "Allied"
 
 
 

@@ -217,7 +217,7 @@ set_research_slots = 1
 set_stability = 1
 set_war_support = 0.8
 add_command_power = 20
-add_offsite_building = { type = arms_factory level = 585 }
+add_offsite_building = { type = arms_factory level = 515 }
 add_offsite_building = { type = industrial_complex level = 260 }
 add_offsite_building = { type = dockyard level = 5 }
 if = {

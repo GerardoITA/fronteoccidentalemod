@@ -61,30 +61,14 @@ focus = {		id = reset_1918_borders_focus
 		icon = GFX_goal_generic_small_arms
 		x = -1
 		y = 1
-		cost = 10
+		cost = 999
 
 	
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			OKW = { set_province_controller = 4257 
-set_province_controller = 460
-set_province_controller = 4600
-set_province_controller = 200
-set_province_controller = 4585
-set_province_controller = 4597
-set_province_controller = 2721
-set_province_controller = 2220
-set_province_controller = 1480
-set_province_controller = 551
-set_province_controller = 785
-set_province_controller = 224
-set_province_controller = 3423
-set_province_controller = 9647
-set_province_controller = 3550
-
-		}
+			
 	}
 
 

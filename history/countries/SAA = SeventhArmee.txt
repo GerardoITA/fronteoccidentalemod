@@ -1,0 +1,197 @@
+﻿capital = 134
+1943.1.1 = { 
+
+
+##set_cosmetic_tag = GER_OBWEST
+
+
+
+add_ideas = no_change_production
+add_manpower = 1000000
+
+set_research_slots = 0
+set_stability = 1
+set_war_support = 1
+add_command_power = 150
+
+
+set_politics = {
+	ruling_party = fascism
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 100
+	
+}
+set_technology = {
+radio_detection = 1
+	decimetric_radar = 1
+	tech_signal_company = 1
+	tech_signal_company2 = 1
+	tech_signal_company3 = 1
+	tech_logistics_company = 1
+	tech_logistics_company2 = 1 
+	tech_logistics_company3 = 1
+	tech_maintenance_company = 1
+	tech_maintenance_company2 = 1
+	tech_maintenance_company3 = 1
+	tech_field_hospital = 1
+	tech_field_hospital2 = 1
+	tech_field_hospital3 = 1
+	tech_military_police = 1 
+	tech_military_police2 = 1 
+	tech_engineers3 = 1
+	tech_recon2 = 1
+	tech_recon3 = 1
+	tech_engineers2 = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	improved_infantry_weapons_2 = 1
+	infantry_at = 1
+	infantry_at2 = 1
+	paratroopers = 1
+	paratroopers2 = 1
+	advanced_machine_tools = 1
+	tech_mountaineers = 1
+	tech_special_forces = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	support_weapons3 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_bomber = 1
+	mobile_warfare = 1 
+	delay = 1
+	elastic_defence = 1
+	armored_spearhead = 1
+	schwerpunk = 1 
+	blitzkrieg = 1
+	kampfgruppe = 1
+	base_strike = 1
+	motorised_infantry = 1
+	armored_car1 = 1 
+	armored_car2 = 1 
+	armored_car3 = 1
+	armored_car_at_upgrade = 1 
+	fuel_silos = 1
+	fuel_refining = 1
+	marines = 1
+	basic_train = 1
+	mechanised_infantry = 1 
+	mechanised_infantry2 = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	mechanical_computing = 1
+	computing_machine = 1
+	improved_computing_machine = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	assembly_line_production = 1
+	improved_equipment_conversion = 1
+	flexible_line = 1
+	dispersed_industry = 1
+	dispersed_industry2 = 1
+	dispersed_industry3 = 1
+	dispersed_industry4 = 1
+	dispersed_industry5 = 1
+	fuel_refining2 = 1
+	fuel_refining3 = 1
+	synth_oil_experiments = 1
+	oil_processing = 1
+	improved_oil_processing = 1
+	construction1 = 1
+	construction2 = 1
+	construction3 = 1
+	construction4 = 1
+	construction5 = 1
+	interwar_artillery = 1
+	artillery1 = 1
+	artillery3 = 1
+	artillery2 = 1
+	artillery4 = 1
+	artillery5 = 1
+	interwar_antiair = 1
+	antiair1 = 1
+	antiair2 = 1
+	antiair3 = 1
+	antiair4 = 1
+	antiair5 = 1
+	interwar_antitank = 1
+	antitank1 = 1
+	antitank2 = 1
+	antitank3 = 1
+	antitank4 = 1
+	antitank5 = 1
+	rocket_artillery = 1
+	wartime_train = 1
+	armored_train = 1 	
+	railway_gun = 1
+	
+}
+
+add_ideas = german_army
+
+
+#### 7. Armee
+## 25. Armeekorps
+recruit_character = MOD_Wilhelm_Fahrmbacher
+
+## 74. Armeekorps
+recruit_character = MOD_Erich_Straube
+
+## 84. Armeekorps
+recruit_character = MOD_Erich_Marcks
+
+## 2. Fallschirm-Korps
+recruit_character = MOD_Eugen_Meindl
+
+recruit_character = MOD_Albert_Brandt
+recruit_character = MOD_Hermann_Klein
+recruit_character = MOD_Gustav_Krause
+recruit_character = MOD_Wilhelm_Krause
+recruit_character = MOD_Anton_Schenk
+recruit_character = MOD_Gerhard_Reich
+recruit_character = MOD_Rainer_Krause
+recruit_character = MOD_Manfred_Klein
+recruit_character = MOD_Hagen_Schreiber
+recruit_character = MOD_Franz_Wenzel
+recruit_character = MOD_Timm_Gross
+recruit_character = MOD_Hermann_Sperling
+recruit_character = MOD_Konrad_Dietrich
+recruit_character = MOD_Max_Vogel
+recruit_character = MOD_Henning_Schaefer
+recruit_character = MOD_Baldur_Klein
+recruit_character = MOD_Falk_Schneider
+recruit_character = MOD_Arnold_Ziegler
+recruit_character = MOD_Konrad_Schneider
+recruit_character = MOD_Marco_Walter
+recruit_character = MOD_Gero_Bauer
+recruit_character = MOD_Edgar_Gross
+
+create_country_leader = {
+	name = "Friedrich Dollmann"
+	desc = "Generaloberst"
+	picture = "gfx/ModPortraits/GER/Friedrich_Dollmann.png"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		
+	}
+}	
+
+
+
+
+
+
+
+
+
+
+
+}

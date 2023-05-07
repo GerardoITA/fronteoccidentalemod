@@ -1471,6 +1471,66 @@ MOD_Wilhelm_Bittrich = {
 
 	}
 }
+MOD_Erwin_Jollasse = {
+	name = MOD_Erwin_Jollasse
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Erwin_Jollasse.png"
+		}
+	}
+	corps_commander={
+
+		traits={ panzer_leader panzer_expert trickster }
+
+		skill=5
+		attack_skill=6
+		defense_skill= 5
+		planning_skill=1
+		logistics_skill=5
+
+
+	}
+}
+MOD_Heinrich_Luttwitz = {
+	name = MOD_Heinrich_Luttwitz
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Heinrich_Luttwitz.png"
+		}
+	}
+	corps_commander={
+
+		traits={ panzer_leader panzer_expert trickster urban_assault_specialist }
+
+		skill=6
+		attack_skill=7
+		defense_skill= 3
+		planning_skill=3
+		logistics_skill=5
+
+
+	}
+}
+MOD_Gerhard_Schwerin = {
+	name = MOD_Gerhard_Schwerin
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Gerhard_Schwerin.png"
+		}
+	}
+	corps_commander={
+
+		traits={ panzer_leader panzer_expert trickster hill_fighter old_guard }
+
+		skill=5
+		attack_skill=6
+		defense_skill= 4
+		planning_skill=3
+		logistics_skill=5
+
+
+	}
+}
 MOD_Walter_Kruger = {
 	name = MOD_Walter_Kruger
 	portraits={
@@ -1721,6 +1781,7 @@ MOD_Otto_Stapf {
 
 	}
 }
+
 
 MOD_Albert_Brandt = { name = MOD_Albert_Brandt portraits={ army={ large="gfx/ModPortraits/GER/9.png" } } corps_commander={ traits={ cavalry_leader inflexible_strategist } skill= 4 attack_skill= 4 defense_skill= 6 planning_skill= 3 logistics_skill= 2 } }
 MOD_Hermann_Klein = { name = MOD_Hermann_Klein portraits={ army={ large="gfx/ModPortraits/GER/6.png" } } corps_commander={ traits={ panzer_leader career_officer mountaineer} skill= 3 attack_skill= 3 defense_skill= 6 planning_skill= 6 logistics_skill= 3 } }
