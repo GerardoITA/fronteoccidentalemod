@@ -35,11 +35,6 @@ autonomy_state = {
 
 	allowed = {
 		has_dlc = "Death or Dishonor"
-	OR = { 
-		OVERLORD = { original_tag = GER }
-		OVERLORD = { original_tag = ITA }
-		}
-		}
 	
 	can_take_level = {
 		always = no

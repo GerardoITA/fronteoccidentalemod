@@ -1,22 +1,43 @@
+
 state={
 	id=42
 	name="STATE_42"
-	history = { 
- 1918.3.20.12 = {
-		owner = ENT
-		add_core_of = ENT
-}
- 1943.3.1.12 = {
-		owner = AEF
-		add_core_of = AEF
-		remove_core_of = ENT
+
+	history={
+		1918.3.20.12 = {
+			owner = ENT
+			add_core_of = ENT
+
+		}
+		1943.3.1.12 = {
+			owner = AEF
+			add_core_of = AEF
+			remove_core_of = ENT
+
+		}
+		buildings = {
+			
+			4666 = {
+				naval_base = 7
+
+			}
+			dockyard = 1
+			infrastructure = 4
+			air_base = 3
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			4666 6 
+		}
+
 	}
-buildings = { 468 = { naval_base = 5 } 4666 = { naval_base = 7 } dockyard = 1 infrastructure = 4 air_base = 3 industrial_complex = 2 } victory_points = { 468 5 } victory_points = { 4666 6 } }
+
 	provinces={
-		9007 7881 78 80 181 354 358 468 697 804 805 836 928 1928 1963 2062 2384 2436 2460 2818 3193 3290 3488 3595 3610 3612 3802 3915 4068 4070 4301 4592 4608 4613 4629 4649 4657 4660 4666 4671 4689 5420 
+		78 80 181 354 358 697 804 805 836 928 1928 1963 2062 2384 2436 2460 2818 3193 3290 3488 3595 3610 3612 3802 3915 4068 4070 4301 4592 4608 4613 4629 4649 4657 4660 4666 4671 4689 5420 7881 9007 
 	}
 	manpower=214712
-	state_category = rural
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }

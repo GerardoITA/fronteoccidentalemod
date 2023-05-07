@@ -4,10 +4,10 @@ units = {
 	### HOME COMMAND ###
 	fleet = {
 		name = "Allied Armada"
-		naval_base = 3070 # Portsmouth
+		naval_base = 7215 # Portsmouth
 			task_force = {				
 				name = "Task Force A"					# Morton L. Deyo	
-				location = 3070 # Portsmouth
+				location = 7215 # Portsmouth
 				ship = { name = "USS Nevada" definition = battleship start_experience_factor = 0.52 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AEF version_name = "Nevada Class" } } }	
 				ship = { name = "USS Tuscaloosa" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AEF version_name = "Northampton Class" } } }
 				ship = { name = "USS Quincy" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Baltimore Class" } } }
@@ -23,7 +23,7 @@ units = {
 			}
 			task_force = {				
 				name = "Task Force C"					# Morton L. Deyo	
-				location = 3070 # Portsmouth
+				location = 7215 # Portsmouth
 				ship = { name = "USS Arkansas" definition = battleship start_experience_factor = 0.52 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AEF version_name = "Wyoming Class" } } }	
 				ship = { name = "USS Texas" definition = battleship start_experience_factor = 0.52 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AEF version_name = "New York Class" } } }
 				ship = { name = "HMS Cottesmore" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
@@ -39,7 +39,7 @@ units = {
 			}
 			task_force = {				
 				name = "Task Force K"					#  Frederick Dalrymple-Hamilton	
-				location = 3070 # Portsmouth
+				location = 7215 # Portsmouth
 				ship = { name = "HMS Frobisher" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AEF version_name = "Hawkins Class" } } }
 				ship = { name = "HMS Hawkins" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AEF version_name = "Hawkins Class" } } }
 				ship = { name = "HMS Ceres" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AEF version_name = "Emerald Class" } } }
@@ -55,7 +55,7 @@ units = {
 			}
 			task_force = {				
 				name = "Task Force E"					#  Frederick Dalrymple-Hamilton	
-				location = 3070 # Portsmouth
+				location = 7215 # Portsmouth
 				ship = { name = "HMS Rodney" definition = battleship start_experience_factor = 0.52 equipment = { ship_hull_heavy_2 = { amount = 1 owner = AEF version_name = "Nelson Class" } } }
 				ship = { name = "HMS Orion" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Leander Class" } } }
 				ship = { name = "HMS Scylla" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Leander Class" } } }
@@ -72,7 +72,7 @@ units = {
 			task_force = {
 
 				name = "Task Force D"
-				location = 3070
+				location = 7215
 				ship = { name = "HMS Ramilles" definition = battleship start_experience_factor = 0.52 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AEF version_name = "Revenge Class" } } }
 				ship = { name = "HMS Warspite" definition = battleship start_experience_factor = 0.52 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AEF version_name = "Queen Elizabeth Class" } } }
 				ship = { name = "HMS Belfast" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Belfast Class" } } }
@@ -92,7 +92,7 @@ units = {
 			task_force = {
 
 				name = "Task Force G"
-				location = 3070
+				location = 7215
 				ship = { name = "HMS Argonaut" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Leander Class" } } }
 				ship = { name = "HMS Ajax" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Leander Class" } } }
 				ship = { name = "HMS Arethusa" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AEF version_name = "Emerald Class" } } }
@@ -112,7 +112,7 @@ units = {
 			task_force = {
 
 				name = "Task Force J"
-				location = 3070
+				location = 7215
 				ship = { name = "ORP Dragon" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AEF version_name = "Emerald Class" } } }
 				ship = { name = "HMS Emerald" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AEF version_name = "Emerald Class" } } }
 				ship = { name = "HMCS Sioux" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
@@ -126,7 +126,7 @@ units = {
 			task_force = {
 
 				name = "Task Force S"
-				location = 3070
+				location = 7215
 				ship = { name = "HMS Cape Town" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AEF version_name = "Emerald Class" } } }
 				ship = { name = "HMS Enterprise" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AEF version_name = "Emerald Class" } } }
 				ship = { name = "Georges Leygues" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AEF version_name = "Emerald Class" } } }
@@ -139,7 +139,7 @@ units = {
 			task_force = {
 
 				name = "Task Force O"
-				location = 3070
+				location = 7215
 				ship = { name = "HMS Glasgow" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Belfast Class" } } }
 				ship = { name = "HMS Mauritius" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Leander Class" } } }
 				ship = { name = "Montcalm" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AEF version_name = "Belfast Class" } } }
@@ -154,7 +154,7 @@ units = {
 			task_force = {
 
 				name = "Task Force U"
-				location = 3070
+				location = 7215
 				ship = { name = "USS Augusta" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AEF version_name = "Northampton Class" } } }
 				ship = { name = "USS Rich" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			
 				ship = { name = "USS Satterlee" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AEF version_name = "Allied Destroyer" } } }			

@@ -32,22 +32,22 @@ create_dynamic_country = {
 
 	set_autonomy = {
 		target = SSS
-		autonomous_state = autonomy_reichskommissariat
+		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
 	}
 	set_autonomy = {
 		target = FPZ
-		autonomous_state = autonomy_reichskommissariat
+		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
 	}	
 	set_autonomy = {
 		target = SAA
-		autonomous_state = autonomy_reichskommissariat
+		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
 	}
 	set_autonomy = {
 		target = FTA
-		autonomous_state = autonomy_reichskommissariat
+		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
 	}	
 
