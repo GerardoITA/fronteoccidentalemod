@@ -31,9 +31,9 @@ NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 99;
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 99;
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.0010
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0015
-NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 60		-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 18		-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.CORPS_COMMANDER_ARMIES_CAP = -1				-- how many armies a corps commander is limited to. 0 = inf, < 0 = blocked
-NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 52			-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 6			-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 0	
 NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0
 NDefines.NProduction.BASE_FACTORY_EFFICIENCY_GAIN = 0
@@ -109,7 +109,7 @@ NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT							= 0.4  -- vanilla was
 NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT							= 0.20 -- vanilla was 0.05 -- light gun attack value is divided by this value * 100 and added to shore bombardment modifier 
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0	
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.5
-NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.2
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.175
 
 
 
@@ -164,8 +164,8 @@ NDefines.NMilitary.LAND_EQUIPMENT_BASE_COST = 1
 NDefines.NMilitary.LAND_EQUIPMENT_RAMP_COST = 0
 
 
-
-
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.04
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER	 = 0.02
 
 
 
