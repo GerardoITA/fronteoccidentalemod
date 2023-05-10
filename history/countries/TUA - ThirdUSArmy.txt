@@ -23,6 +23,10 @@ recruit_character = MOD_Manton_Eddy
 # XX Corps 
 recruit_character = MOD_Walton_Walker
 
+
+# XX Corps 
+recruit_character = MOD_Wade_Haislip
+
 recruit_character = MOD_John0_Moresby
 recruit_character = MOD_Leopold_Gough
 recruit_character = MOD_Francis_Beatty

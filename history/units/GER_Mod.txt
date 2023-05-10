@@ -6,7 +6,7 @@
 division_template = {
 	name = "Grenadier Battalion" ###generalised version of Wehrmacht infantry batalion 1944, around 1300 men
 
-	division_names_group = GER_INFBAT_01
+	division_names_group = GER_GRENBAT_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -33,7 +33,7 @@ division_template = {
 division_template = {
 	name = "Luftwaffe Battalion" ###generalised version of Wehrmacht infantry batalion 1944, around 1300 men
 
-	division_names_group = GER_INFBAT_01
+	division_names_group = GER_PARA_01
 	regiments = {
 		paratrooper = { x = 0 y = 0 }
 		paratrooper = { x = 0 y = 1 }
@@ -59,7 +59,7 @@ division_template = {
 }
 division_template = {
 	name = "Artillery Battalion" ###generalised version of Wehrmacht artillery battalion
-
+	division_names_group = GER_ART_01
 	regiments = {
 		artillery_brigade = { x = 0 y = 0 }
 		artillery_brigade = { x = 0 y = 1 }
@@ -83,6 +83,7 @@ division_template = {
 division_template = {
 	name = "Light Tank Destroyer Battalion" ###generalised version of light TD ( Marder ) battalion
 
+	division_names_group = GER_PZJAGER
 	regiments = {
 		light_tank_destroyer_brigade = { x = 0 y = 0 }
 		light_tank_destroyer_brigade = { x = 0 y = 1 }
@@ -102,7 +103,7 @@ division_template = {
 }
 division_template = {
 	name = "Medium Tank Destroyer Battalion ( StuG )" ###generalised version of medium TD ( StuG III/IV ) battalion
-
+	division_names_group = GER_STUG
 	regiments = {
 		medium_tank_destroyer_brigade = { x = 0 y = 0 }
 		medium_tank_destroyer_brigade = { x = 0 y = 1 }
@@ -122,7 +123,7 @@ division_template = {
 }
 division_template = {
 	name = "Medium Tank Destroyer Battalion ( Jagdpanzer )" ###generalised version of medium TD ( Panzer ) battalion
-
+	division_names_group = GER_PZJAGER
 	regiments = {
 		medium_tank_destroyer_brigade = { x = 0 y = 0 }
 		medium_tank_destroyer_brigade = { x = 0 y = 1 }
@@ -142,7 +143,7 @@ division_template = {
 }
 division_template = {
 	name = "Heavy Tank Destroyer Battalion ( Jagdpanther )" 
-
+	division_names_group = GER_HeavyPZJAGER
 	regiments = {
 		heavy_tank_destroyer_brigade = { x = 0 y = 0 }
 		heavy_tank_destroyer_brigade = { x = 0 y = 1 }
@@ -162,7 +163,7 @@ division_template = {
 }
 division_template = {
 	name = "Heavy Tank Destroyer Battalion ( Nashorn )" 
-
+	division_names_group = GER_HeavyPZJAGER
 	regiments = {
 		heavy_tank_destroyer_brigade = { x = 0 y = 0 }
 		heavy_tank_destroyer_brigade = { x = 0 y = 1 }
@@ -183,7 +184,7 @@ division_template = {
 ## Motorized 
 division_template = {
 	name = "Panzergrenadier Battalion" 
-
+	division_names_group = GER_MEC_01
 	regiments = {
 		mechanized = { x = 0 y = 0 }
 		mechanized = { x = 0 y = 1 }
@@ -209,7 +210,7 @@ division_template = {
 }
 division_template = {
 	name = "Grenadier Battalion ( mot. )" 
-
+	division_names_group = GER_MEC_01
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -237,6 +238,7 @@ division_template = {
 
 division_template = {
 	name = "Motorized Artillery Battalion" 
+	division_names_group = GER_PZART
 
 	regiments = {
 		mot_artillery_brigade = { x = 0 y = 0 }
@@ -258,7 +260,7 @@ division_template = {
 }
 division_template = {
 	name = "Light SPG Battalion" 
-
+	division_names_group = GER_PZART
 	regiments = {
 		light_sp_artillery_brigade = { x = 0 y = 0 }
 		light_sp_artillery_brigade = { x = 0 y = 1 }
@@ -281,7 +283,7 @@ division_template = {
 }
 division_template = {
 	name = "Medium SPG Battalion" 
-
+	division_names_group = GER_PZART
 	regiments = {
 		medium_sp_artillery_brigade = { x = 0 y = 0 }
 		medium_sp_artillery_brigade = { x = 0 y = 1 }
@@ -304,7 +306,7 @@ division_template = {
 }
 division_template = {
 	name = "Assault Gun Battalion" 
-
+	division_names_group = GER_STUG
 	regiments = {
 		medium_sp_artillery_brigade = { x = 0 y = 0 }
 		medium_sp_artillery_brigade = { x = 0 y = 1 }
@@ -325,7 +327,7 @@ division_template = {
 ## Tanks
 division_template = {
 	name = "Foreign Tank Battalion" 
-
+	division_names_group = GER_PANBAN_01
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
 		medium_armor = { x = 0 y = 1 }
@@ -352,7 +354,7 @@ division_template = {
 }
 division_template = {
 	name = "Medium Tank Battalion ( Panzer III )" 
-
+	division_names_group = GER_PANBAN_01
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
 		medium_armor = { x = 0 y = 1 }
@@ -382,7 +384,7 @@ division_template = {
 }
 division_template = {
 	name = "Medium Tank Battalion ( Panzer IV )" 
-
+	division_names_group = GER_PANBAN_01
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
 		medium_armor = { x = 0 y = 1 }
@@ -412,7 +414,7 @@ division_template = {
 }
 division_template = {
 	name = "Medium Tank Battalion ( Panther )" 
-
+	division_names_group = GER_PANBAN_01
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
 		medium_armor = { x = 0 y = 1 }
@@ -445,7 +447,7 @@ division_template = {
 
 division_template = {
 	name = "Heavy Tank Battalion ( King Tiger )" 
-
+	division_names_group = GER_HeavyPANBAT
 	regiments = {
 		heavy_armor = { x = 0 y = 0 }
 		heavy_armor = { x = 0 y = 1 }
@@ -473,7 +475,7 @@ division_template = {
 }
 division_template = {
 	name = "Heavy Tank Battalion ( Tiger E )" 
-
+	division_names_group = GER_HeavyPANBAT
 	regiments = {
 		heavy_armor = { x = 0 y = 0 }
 		heavy_armor = { x = 0 y = 1 }

@@ -566,11 +566,12 @@ develop_pershing = { ##
 				icon = "gfx/interface/technologies/AEF_Pershing.dds"
 			}
 
-			add_offsite_building = { type = arms_factory level = 35 }
-			add_equipment_production = { equipment = { type = heavy_tank_chassis_2 creator = "AEF" version_name = "M26 Pershing" } requested_factories = 35 progress = 0.1 efficiency = 100 }
+			add_offsite_building = { type = arms_factory level = 40 }
+			add_equipment_production = { equipment = { type = heavy_tank_chassis_2 creator = "AEF" version_name = "M26 Pershing" } requested_factories = 40 progress = 0.1 efficiency = 100 }
 			division_template = {
 				name = "Heavy Tank Battalion ( Pershing )" 
 
+				division_names_group = AEF_TANK_USA
 				regiments = {
 					heavy_armor = { x = 0 y = 0 }
 					heavy_armor = { x = 0 y = 1 }

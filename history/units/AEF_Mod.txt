@@ -69,7 +69,7 @@ instant_effect = {
 division_template = {
 	name = "Infantry Battalion ( Commonwealth )" 
 
-	division_names_group = AEF_INF_02
+	division_names_group = AEF_INF_ENG
 	##template_counter = 67
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -98,7 +98,7 @@ division_template = {
 division_template = {
 	name = "Infantry Battalion ( USA )" 
 
-	division_names_group = AEF_INF_02
+	division_names_group = AEF_INF_USA
 	##template_counter = 67
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -128,7 +128,7 @@ division_template = {
 division_template = {
 	name = "Ranger Battalion ( USA )" 
 
-	division_names_group = AEF_INF_02
+	division_names_group = AEF_INF_USA
 	##template_counter = 67
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
@@ -154,7 +154,7 @@ division_template = {
 division_template = {
 	name = "Airborne Battalion ( USA )" 
 
-	division_names_group = AEF_INF_02
+	division_names_group = AEF_PARA_USA
 	##template_counter = 67
 	regiments = {
 		paratrooper = { x = 0 y = 0 }
@@ -181,7 +181,7 @@ division_template = {
 division_template = {
 	name = "Airborne Battalion ( Commonwealth )" 
 
-	division_names_group = AEF_INF_02
+	division_names_group = AEF_PARA_USA
 	##template_counter = 67
 	regiments = {
 		paratrooper = { x = 0 y = 0 }
@@ -208,6 +208,7 @@ division_template = {
 division_template = {
 	name = "Artillery Battalion ( USA )"
 
+	division_names_group = AEF_ART
 	regiments = {
 		artillery_brigade = { x = 0 y = 0 }
 		artillery_brigade = { x = 0 y = 1 }
@@ -229,6 +230,7 @@ division_template = {
 division_template = {
 	name = "Artillery Battalion ( Commonwealth )"
 
+	division_names_group = AEF_ART
 	regiments = {
 		artillery_brigade = { x = 0 y = 0 }
 		artillery_brigade = { x = 0 y = 1 }
@@ -250,7 +252,7 @@ division_template = {
 ## TDs and SPGs
 division_template = {
 	name = "Medium Tank Destroyer Battalion ( USA )" 
-
+	division_names_group = AEF_ANTITANK_USA
 	regiments = {
 		medium_tank_destroyer_brigade = { x = 0 y = 0 }
 		medium_tank_destroyer_brigade = { x = 0 y = 1 }
@@ -271,7 +273,7 @@ division_template = {
 }
 division_template = {
 	name = "Medium Tank Destroyer Battalion ( Commonwealth )" 
-
+	division_names_group = AEF_ANTITANK_ENG 
 	regiments = {
 		medium_tank_destroyer_brigade = { x = 0 y = 0 }
 		medium_tank_destroyer_brigade = { x = 0 y = 1 }
@@ -292,7 +294,7 @@ division_template = {
 }
 division_template = {
 	name = "Medium SPG Battalion ( M7 )" 
-
+	division_names_group = AEF_ART
 	regiments = {
 		medium_sp_artillery_brigade = { x = 0 y = 0 }
 		medium_sp_artillery_brigade = { x = 0 y = 1 }
@@ -315,7 +317,7 @@ division_template = {
 }
 division_template = {
 	name = "Medium SPG Battalion ( Sexton )" 
-
+	division_names_group = AEF_ART 
 	regiments = {
 		medium_sp_artillery_brigade = { x = 0 y = 0 }
 		medium_sp_artillery_brigade = { x = 0 y = 1 }
@@ -338,7 +340,7 @@ division_template = {
 }
 division_template = {
 	name = "Medium SPG Battalion ( M12 )" 
-
+	division_names_group = AEF_ART
 	regiments = {
 		medium_sp_artillery_brigade = { x = 0 y = 0 }
 		medium_sp_artillery_brigade = { x = 0 y = 1 }
@@ -361,7 +363,7 @@ division_template = {
 }
 division_template = {
 	name = "Motorized Artillery Battalion ( Commonwealth )" 
-
+	division_names_group = AEF_ART 
 	regiments = {
 		mot_artillery_brigade = { x = 0 y = 0 }
 		mot_artillery_brigade = { x = 0 y = 1 }
@@ -384,6 +386,7 @@ division_template = {
 division_template = {
 	name = "Armored Infantry Battalion ( USA )" 
 
+	division_names_group = AEF_MECH_USA
 	regiments = {
 		mechanized = { x = 0 y = 0 }
 		mechanized = { x = 0 y = 1 }
@@ -410,6 +413,7 @@ division_template = {
 division_template = {
 	name = "Armored Infantry Battalion ( Commonwealth )" 
 
+	division_names_group = AEF_INF_ENG 
 	regiments = {
 		mechanized = { x = 0 y = 0 }
 		mechanized = { x = 0 y = 1 }
@@ -437,6 +441,7 @@ division_template = {
 division_template = {
 	name = "Heavy Tank Battalion ( Churchill )" 
 
+	division_names_group = AEF_TANK_ENG 
 	regiments = {
 		heavy_armor = { x = 0 y = 0 }
 		heavy_armor = { x = 0 y = 1 }
@@ -466,7 +471,7 @@ division_template = {
 }
 division_template = {
 	name = "Armored Battalion ( USA )" 
-
+	division_names_group = AEF_TANK_USA
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
 		medium_armor = { x = 0 y = 1 }
@@ -496,7 +501,7 @@ division_template = {
 }
 division_template = {
 	name = "Indipendent Armored Battalion ( USA )" 
-
+	division_names_group = AEF_TANK_USA
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
 		medium_armor = { x = 0 y = 1 }
@@ -526,7 +531,7 @@ division_template = {
 }
 division_template = {
 	name = "Armored Battalion ( C/Cromwell )" 
-
+	division_names_group = AEF_TANK_ENG 
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
 		medium_armor = { x = 0 y = 1 }
@@ -554,7 +559,7 @@ division_template = {
 }
 division_template = {
 	name = "Armored Battalion ( C/Sherman )" 
-
+	division_names_group = AEF_TANK_ENG 
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
 		medium_armor = { x = 0 y = 1 }

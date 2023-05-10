@@ -117,12 +117,11 @@ GER_INF_01 =
 	ordered =
 	{
 		
-		
 	}
 }
-GER_INFBAT_01 = 
+GER_ART_01 = 
 {
-	name = "Volksgrenadier Battalions"
+	name = "Foot Artillery Regiments"
 
 	for_countries = { OKW }
 
@@ -130,50 +129,422 @@ GER_INFBAT_01 =
 
 	division_types = { "infantry"  }
 
-	fallback_name = "%d. Volksgrenadier-Battalion"
+	fallback_name = "Artillerie-Abteilung %d "
+	
+	#link_numbering_with = { GER_Inf_01 }
+
+	# Names with numbers (only one number per entry)
+	ordered =
+	{
+		1 = {"I/Artillerie Regiment 700"}
+2 = {"II/Artillerie Regiment 700"}
+3 = {"III/Artillerie Regiment 700"}
+4 = {"I/Artillerie Regiment 701"}
+5 = {"II/Artillerie Regiment 701"}
+6 = {"III/Artillerie Regiment 701"}
+7 = {"I/Artillerie Regiment 702"}
+8 = {"II/Artillerie Regiment 702"}
+9 = {"III/Artillerie Regiment 702"}
+10 = {"I/Artillerie Regiment 703"}
+11 = {"II/Artillerie Regiment 703"}
+12 = {"III/Artillerie Regiment 703"}
+13 = {"I/Artillerie Regiment 704"}
+14 = {"II/Artillerie Regiment 704"}
+15 = {"III/Artillerie Regiment 704"}
+16 = {"I/Artillerie Regiment 705"}
+17 = {"II/Artillerie Regiment 705"}
+18 = {"III/Artillerie Regiment 705"}
+19 = {"I/Artillerie Regiment 706"}
+20 = {"II/Artillerie Regiment 706"}
+21 = {"III/Artillerie Regiment 706"}
+22 = {"I/Artillerie Regiment 707"}
+23 = {"II/Artillerie Regiment 707"}
+24 = {"III/Artillerie Regiment 707"}
+25 = {"I/Artillerie Regiment 708"}
+26 = {"II/Artillerie Regiment 708"}
+27 = {"III/Artillerie Regiment 708"}
+28 = {"I/Artillerie Regiment 709"}
+29 = {"II/Artillerie Regiment 709"}
+30 = {"III/Artillerie Regiment 709"}
+31 = {"I/Artillerie Regiment 710"}
+32 = {"II/Artillerie Regiment 710"}
+33 = {"III/Artillerie Regiment 710"}
+34 = {"I/Artillerie Regiment 711"}
+35 = {"II/Artillerie Regiment 711"}
+36 = {"III/Artillerie Regiment 711"}
+37 = {"I/Artillerie Regiment 712"}
+38 = {"II/Artillerie Regiment 712"}
+39 = {"III/Artillerie Regiment 712"}
+40 = {"I/Artillerie Regiment 713"}
+41 = {"II/Artillerie Regiment 713"}
+42 = {"III/Artillerie Regiment 713"}
+43 = {"I/Artillerie Regiment 714"}
+44 = {"II/Artillerie Regiment 714"}
+45 = {"III/Artillerie Regiment 714"}
+46 = {"I/Artillerie Regiment 715"}
+47 = {"II/Artillerie Regiment 715"}
+48 = {"III/Artillerie Regiment 715"}
+49 = {"I/Artillerie Regiment 716"}
+50 = {"II/Artillerie Regiment 716"}
+51 = {"III/Artillerie Regiment 716"}
+52 = {"I/Artillerie Regiment 717"}
+53 = {"II/Artillerie Regiment 717"}
+54 = {"III/Artillerie Regiment 717"}
+55 = {"I/Artillerie Regiment 718"}
+56 = {"II/Artillerie Regiment 718"}
+57 = {"III/Artillerie Regiment 718"}
+58 = {"I/Artillerie Regiment 719"}
+59 = {"II/Artillerie Regiment 719"}
+60 = {"III/Artillerie Regiment 719"}
+61 = {"I/Artillerie Regiment 720"}
+62 = {"II/Artillerie Regiment 720"}
+63 = {"III/Artillerie Regiment 720"}
+64 = {"I/Artillerie Regiment 721"}
+65 = {"II/Artillerie Regiment 721"}
+66 = {"III/Artillerie Regiment 721"}
+67 = {"I/Artillerie Regiment 722"}
+68 = {"II/Artillerie Regiment 722"}
+69 = {"III/Artillerie Regiment 722"}
+70 = {"I/Artillerie Regiment 723"}
+71 = {"II/Artillerie Regiment 723"}
+72 = {"III/Artillerie Regiment 723"}
+73 = {"I/Artillerie Regiment 724"}
+74 = {"II/Artillerie Regiment 724"}
+75 = {"III/Artillerie Regiment 724"}
+76 = {"I/Artillerie Regiment 725"}
+77 = {"II/Artillerie Regiment 725"}
+78 = {"III/Artillerie Regiment 725"}
+79 = {"I/Artillerie Regiment 726"}
+80 = {"II/Artillerie Regiment 726"}
+81 = {"III/Artillerie Regiment 726"}
+82 = {"I/Artillerie Regiment 727"}
+83 = {"II/Artillerie Regiment 727"}
+84 = {"III/Artillerie Regiment 727"}
+85 = {"I/Artillerie Regiment 728"}
+86 = {"II/Artillerie Regiment 728"}
+87 = {"III/Artillerie Regiment 728"}
+88 = {"I/Artillerie Regiment 729"}
+89 = {"II/Artillerie Regiment 729"}
+90 = {"III/Artillerie Regiment 729"}
+	}
+}
+GER_GRENBAT_01 = 
+{
+	name = "Grenadier Battalions"
+
+	for_countries = { OKW }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry"  }
+
+	fallback_name = "%d. Grenadier-Battalion"
 
 	#link_numbering_with = { GER_Inf_01 }
 
 	# Names with numbers (only one number per entry)
 	ordered =
 	{
-		
-		
-	}
-}
-
-
-GER_LTINF_01 = 
-{
-	name = "Light Infantry Divisions"
-
-	for_countries = { OKW }
-
-	can_use = { always = yes }
-
-	division_types = { "infantry"  }
-
-	fallback_name = "%d. Jäger-Division"
-
-	link_numbering_with = { GER_Inf_01 }
-
-	# Names with numbers (only one number per entry)
-	ordered =
-	{
-	    8 = { "%d. Jäger-Division" }
-		5 = { "%d. Jäger-Division" }
-		28 = { "%d. Jäger-Division" }
-		97 = { "%d. Jäger-Division" }
-		100 = { "%d. Jäger-Division" }
-		101 = { "%d. Jäger-Division" }
-		104 = { "%d. Jäger-Division" }
-		114 = { "%d. Jäger-Division" }
-		117 = { "%d. Jäger-Division" }
-		118 = { "%d. Jäger-Division" }
-		42 = { "%d. Jäger-Division" }
-		
-		# this was a small series of divisions raised/converted with only two regiments, reduced and decentralized heavy weapons and services for operating in rough terrain with bad roads. Not full mountain troops.
-		# some of these were renamed from leichte-Infanterie, some raised from scratch
+1 = {"I/Grenadier Regiment 655"}
+2 = {"II/Grenadier Regiment 655"}
+3 = {"III/Grenadier Regiment 655"}
+4 = {"I/Grenadier Regiment 656"}
+5 = {"II/Grenadier Regiment 656"}
+6 = {"III/Grenadier Regiment 656"}
+7 = {"I/Grenadier Regiment 657"}
+8 = {"II/Grenadier Regiment 657"}
+9 = {"III/Grenadier Regiment 657"}
+10 = {"I/Grenadier Regiment 658"}
+11 = {"II/Grenadier Regiment 658"}
+12 = {"III/Grenadier Regiment 658"}
+13 = {"I/Grenadier Regiment 659"}
+14 = {"II/Grenadier Regiment 659"}
+15 = {"III/Grenadier Regiment 659"}
+16 = {"I/Grenadier Regiment 660"}
+17 = {"II/Grenadier Regiment 660"}
+18 = {"III/Grenadier Regiment 660"}
+19 = {"I/Grenadier Regiment 661"}
+20 = {"II/Grenadier Regiment 661"}
+21 = {"III/Grenadier Regiment 661"}
+22 = {"I/Grenadier Regiment 662"}
+23 = {"II/Grenadier Regiment 662"}
+24 = {"III/Grenadier Regiment 662"}
+25 = {"I/Grenadier Regiment 663"}
+26 = {"II/Grenadier Regiment 663"}
+27 = {"III/Grenadier Regiment 663"}
+28 = {"I/Grenadier Regiment 664"}
+29 = {"II/Grenadier Regiment 664"}
+30 = {"III/Grenadier Regiment 664"}
+31 = {"I/Grenadier Regiment 665"}
+32 = {"II/Grenadier Regiment 665"}
+33 = {"III/Grenadier Regiment 665"}
+34 = {"I/Grenadier Regiment 666"}
+35 = {"II/Grenadier Regiment 666"}
+36 = {"III/Grenadier Regiment 666"}
+37 = {"I/Grenadier Regiment 667"}
+38 = {"II/Grenadier Regiment 667"}
+39 = {"III/Grenadier Regiment 667"}
+40 = {"I/Grenadier Regiment 668"}
+41 = {"II/Grenadier Regiment 668"}
+42 = {"III/Grenadier Regiment 668"}
+43 = {"I/Grenadier Regiment 669"}
+44 = {"II/Grenadier Regiment 669"}
+45 = {"III/Grenadier Regiment 669"}
+46 = {"I/Grenadier Regiment 670"}
+47 = {"II/Grenadier Regiment 670"}
+48 = {"III/Grenadier Regiment 670"}
+49 = {"I/Grenadier Regiment 671"}
+50 = {"II/Grenadier Regiment 671"}
+51 = {"III/Grenadier Regiment 671"}
+52 = {"I/Grenadier Regiment 672"}
+53 = {"II/Grenadier Regiment 672"}
+54 = {"III/Grenadier Regiment 672"}
+55 = {"I/Grenadier Regiment 673"}
+56 = {"II/Grenadier Regiment 673"}
+57 = {"III/Grenadier Regiment 673"}
+58 = {"I/Grenadier Regiment 674"}
+59 = {"II/Grenadier Regiment 674"}
+60 = {"III/Grenadier Regiment 674"}
+61 = {"I/Grenadier Regiment 675"}
+62 = {"II/Grenadier Regiment 675"}
+63 = {"III/Grenadier Regiment 675"}
+64 = {"I/Grenadier Regiment 676"}
+65 = {"II/Grenadier Regiment 676"}
+66 = {"III/Grenadier Regiment 676"}
+67 = {"I/Grenadier Regiment 677"}
+68 = {"II/Grenadier Regiment 677"}
+69 = {"III/Grenadier Regiment 677"}
+70 = {"I/Grenadier Regiment 678"}
+71 = {"II/Grenadier Regiment 678"}
+72 = {"III/Grenadier Regiment 678"}
+73 = {"I/Grenadier Regiment 679"}
+74 = {"II/Grenadier Regiment 679"}
+75 = {"III/Grenadier Regiment 679"}
+76 = {"I/Grenadier Regiment 680"}
+77 = {"II/Grenadier Regiment 680"}
+78 = {"III/Grenadier Regiment 680"}
+79 = {"I/Grenadier Regiment 681"}
+80 = {"II/Grenadier Regiment 681"}
+81 = {"III/Grenadier Regiment 681"}
+82 = {"I/Grenadier Regiment 682"}
+83 = {"II/Grenadier Regiment 682"}
+84 = {"III/Grenadier Regiment 682"}
+85 = {"I/Grenadier Regiment 683"}
+86 = {"II/Grenadier Regiment 683"}
+87 = {"III/Grenadier Regiment 683"}
+88 = {"I/Grenadier Regiment 684"}
+89 = {"II/Grenadier Regiment 684"}
+90 = {"III/Grenadier Regiment 684"}
+91 = {"I/Grenadier Regiment 685"}
+92 = {"II/Grenadier Regiment 685"}
+93 = {"III/Grenadier Regiment 685"}
+94 = {"I/Grenadier Regiment 686"}
+95 = {"II/Grenadier Regiment 686"}
+96 = {"III/Grenadier Regiment 686"}
+97 = {"I/Grenadier Regiment 687"}
+98 = {"II/Grenadier Regiment 687"}
+99 = {"III/Grenadier Regiment 687"}
+100 = {"I/Grenadier Regiment 688"}
+101 = {"II/Grenadier Regiment 688"}
+102 = {"III/Grenadier Regiment 688"}
+103 = {"I/Grenadier Regiment 689"}
+104 = {"II/Grenadier Regiment 689"}
+105 = {"III/Grenadier Regiment 689"}
+106 = {"I/Grenadier Regiment 690"}
+107 = {"II/Grenadier Regiment 690"}
+108 = {"III/Grenadier Regiment 690"}
+109 = {"I/Grenadier Regiment 691"}
+110 = {"II/Grenadier Regiment 691"}
+111 = {"III/Grenadier Regiment 691"}
+112 = {"I/Grenadier Regiment 692"}
+113 = {"II/Grenadier Regiment 692"}
+114 = {"III/Grenadier Regiment 692"}
+115 = {"I/Grenadier Regiment 693"}
+116 = {"II/Grenadier Regiment 693"}
+117 = {"III/Grenadier Regiment 693"}
+118 = {"I/Grenadier Regiment 694"}
+119 = {"II/Grenadier Regiment 694"}
+120 = {"III/Grenadier Regiment 694"}
+121 = {"I/Grenadier Regiment 695"}
+122 = {"II/Grenadier Regiment 695"}
+123 = {"III/Grenadier Regiment 695"}
+124 = {"I/Grenadier Regiment 696"}
+125 = {"II/Grenadier Regiment 696"}
+126 = {"III/Grenadier Regiment 696"}
+127 = {"I/Grenadier Regiment 697"}
+128 = {"II/Grenadier Regiment 697"}
+129 = {"III/Grenadier Regiment 697"}
+130 = {"I/Grenadier Regiment 698"}
+131 = {"II/Grenadier Regiment 698"}
+132 = {"III/Grenadier Regiment 698"}
+133 = {"I/Grenadier Regiment 699"}
+134 = {"II/Grenadier Regiment 699"}
+135 = {"III/Grenadier Regiment 699"}
+136 = {"I/Grenadier Regiment 700"}
+137 = {"II/Grenadier Regiment 700"}
+138 = {"III/Grenadier Regiment 700"}
+139 = {"I/Grenadier Regiment 701"}
+140 = {"II/Grenadier Regiment 701"}
+141 = {"III/Grenadier Regiment 701"}
+142 = {"I/Grenadier Regiment 702"}
+143 = {"II/Grenadier Regiment 702"}
+144 = {"III/Grenadier Regiment 702"}
+145 = {"I/Grenadier Regiment 703"}
+146 = {"II/Grenadier Regiment 703"}
+147 = {"III/Grenadier Regiment 703"}
+148 = {"I/Grenadier Regiment 704"}
+149 = {"II/Grenadier Regiment 704"}
+150 = {"III/Grenadier Regiment 704"}
+151 = {"I/Grenadier Regiment 705"}
+152 = {"II/Grenadier Regiment 705"}
+153 = {"III/Grenadier Regiment 705"}
+154 = {"I/Grenadier Regiment 706"}
+155 = {"II/Grenadier Regiment 706"}
+156 = {"III/Grenadier Regiment 706"}
+157 = {"I/Grenadier Regiment 707"}
+158 = {"II/Grenadier Regiment 707"}
+159 = {"III/Grenadier Regiment 707"}
+160 = {"I/Grenadier Regiment 708"}
+161 = {"II/Grenadier Regiment 708"}
+162 = {"III/Grenadier Regiment 708"}
+163 = {"I/Grenadier Regiment 709"}
+164 = {"II/Grenadier Regiment 709"}
+165 = {"III/Grenadier Regiment 709"}
+166 = {"I/Grenadier Regiment 710"}
+167 = {"II/Grenadier Regiment 710"}
+168 = {"III/Grenadier Regiment 710"}
+169 = {"I/Grenadier Regiment 711"}
+170 = {"II/Grenadier Regiment 711"}
+171 = {"III/Grenadier Regiment 711"}
+172 = {"I/Grenadier Regiment 712"}
+173 = {"II/Grenadier Regiment 712"}
+174 = {"III/Grenadier Regiment 712"}
+175 = {"I/Grenadier Regiment 713"}
+176 = {"II/Grenadier Regiment 713"}
+177 = {"III/Grenadier Regiment 713"}
+178 = {"I/Grenadier Regiment 714"}
+179 = {"II/Grenadier Regiment 714"}
+180 = {"III/Grenadier Regiment 714"}
+181 = {"I/Grenadier Regiment 715"}
+182 = {"II/Grenadier Regiment 715"}
+183 = {"III/Grenadier Regiment 715"}
+184 = {"I/Grenadier Regiment 716"}
+185 = {"II/Grenadier Regiment 716"}
+186 = {"III/Grenadier Regiment 716"}
+187 = {"I/Grenadier Regiment 717"}
+188 = {"II/Grenadier Regiment 717"}
+189 = {"III/Grenadier Regiment 717"}
+190 = {"I/Grenadier Regiment 718"}
+191 = {"II/Grenadier Regiment 718"}
+192 = {"III/Grenadier Regiment 718"}
+193 = {"I/Grenadier Regiment 719"}
+194 = {"II/Grenadier Regiment 719"}
+195 = {"III/Grenadier Regiment 719"}
+196 = {"I/Grenadier Regiment 720"}
+197 = {"II/Grenadier Regiment 720"}
+198 = {"III/Grenadier Regiment 720"}
+199 = {"I/Grenadier Regiment 721"}
+200 = {"II/Grenadier Regiment 721"}
+201 = {"III/Grenadier Regiment 721"}
+202 = {"I/Grenadier Regiment 722"}
+203 = {"II/Grenadier Regiment 722"}
+204 = {"III/Grenadier Regiment 722"}
+205 = {"I/Grenadier Regiment 723"}
+206 = {"II/Grenadier Regiment 723"}
+207 = {"III/Grenadier Regiment 723"}
+208 = {"I/Grenadier Regiment 724"}
+209 = {"II/Grenadier Regiment 724"}
+210 = {"III/Grenadier Regiment 724"}
+211 = {"I/Grenadier Regiment 725"}
+212 = {"II/Grenadier Regiment 725"}
+213 = {"III/Grenadier Regiment 725"}
+214 = {"I/Grenadier Regiment 726"}
+215 = {"II/Grenadier Regiment 726"}
+216 = {"III/Grenadier Regiment 726"}
+217 = {"I/Grenadier Regiment 727"}
+218 = {"II/Grenadier Regiment 727"}
+219 = {"III/Grenadier Regiment 727"}
+220 = {"I/Grenadier Regiment 728"}
+221 = {"II/Grenadier Regiment 728"}
+222 = {"III/Grenadier Regiment 728"}
+223 = {"I/Grenadier Regiment 729"}
+224 = {"II/Grenadier Regiment 729"}
+225 = {"III/Grenadier Regiment 729"}
+226 = {"I/Grenadier Regiment 730"}
+227 = {"II/Grenadier Regiment 730"}
+228 = {"III/Grenadier Regiment 730"}
+229 = {"I/Grenadier Regiment 731"}
+230 = {"II/Grenadier Regiment 731"}
+231 = {"III/Grenadier Regiment 731"}
+232 = {"I/Grenadier Regiment 732"}
+233 = {"II/Grenadier Regiment 732"}
+234 = {"III/Grenadier Regiment 732"}
+235 = {"I/Grenadier Regiment 733"}
+236 = {"II/Grenadier Regiment 733"}
+237 = {"III/Grenadier Regiment 733"}
+238 = {"I/Grenadier Regiment 734"}
+239 = {"II/Grenadier Regiment 734"}
+240 = {"III/Grenadier Regiment 734"}
+241 = {"I/Grenadier Regiment 735"}
+242 = {"II/Grenadier Regiment 735"}
+243 = {"III/Grenadier Regiment 735"}
+244 = {"I/Grenadier Regiment 736"}
+245 = {"II/Grenadier Regiment 736"}
+246 = {"III/Grenadier Regiment 736"}
+247 = {"I/Grenadier Regiment 737"}
+248 = {"II/Grenadier Regiment 737"}
+249 = {"III/Grenadier Regiment 737"}
+250 = {"I/Grenadier Regiment 738"}
+251 = {"II/Grenadier Regiment 738"}
+252 = {"III/Grenadier Regiment 738"}
+253 = {"I/Grenadier Regiment 739"}
+254 = {"II/Grenadier Regiment 739"}
+255 = {"III/Grenadier Regiment 739"}
+256 = {"I/Grenadier Regiment 740"}
+257 = {"II/Grenadier Regiment 740"}
+258 = {"III/Grenadier Regiment 740"}
+259 = {"I/Grenadier Regiment 741"}
+260 = {"II/Grenadier Regiment 741"}
+261 = {"III/Grenadier Regiment 741"}
+262 = {"I/Grenadier Regiment 742"}
+263 = {"II/Grenadier Regiment 742"}
+264 = {"III/Grenadier Regiment 742"}
+265 = {"I/Grenadier Regiment 743"}
+266 = {"II/Grenadier Regiment 743"}
+267 = {"III/Grenadier Regiment 743"}
+268 = {"I/Grenadier Regiment 744"}
+269 = {"II/Grenadier Regiment 744"}
+270 = {"III/Grenadier Regiment 744"}
+271 = {"I/Grenadier Regiment 745"}
+272 = {"II/Grenadier Regiment 745"}
+273 = {"III/Grenadier Regiment 745"}
+274 = {"I/Grenadier Regiment 746"}
+275 = {"II/Grenadier Regiment 746"}
+276 = {"III/Grenadier Regiment 746"}
+277 = {"I/Grenadier Regiment 747"}
+278 = {"II/Grenadier Regiment 747"}
+279 = {"III/Grenadier Regiment 747"}
+280 = {"I/Grenadier Regiment 748"}
+281 = {"II/Grenadier Regiment 748"}
+282 = {"III/Grenadier Regiment 748"}
+283 = {"I/Grenadier Regiment 749"}
+284 = {"II/Grenadier Regiment 749"}
+285 = {"III/Grenadier Regiment 749"}
+286 = {"I/Grenadier Regiment 750"}
+287 = {"II/Grenadier Regiment 750"}
+288 = {"III/Grenadier Regiment 750"}
+289 = {"I/Grenadier Regiment 751"}
+290 = {"II/Grenadier Regiment 751"}
+291 = {"III/Grenadier Regiment 751"}
+292 = {"I/Grenadier Regiment 752"}
+293 = {"II/Grenadier Regiment 752"}
+294 = {"III/Grenadier Regiment 752"}
+295 = {"I/Grenadier Regiment 753"}
+296 = {"II/Grenadier Regiment 753"}
+297 = {"III/Grenadier Regiment 753"}
+298 = {"I/Grenadier Regiment 754"}
+299 = {"II/Grenadier Regiment 754"}
+300 = {"III/Grenadier Regiment 754"}
 		
 	}
 }
@@ -198,10 +569,6 @@ GER_MOT_02 =
 	ordered =
 	{
 		
-		
-		# GD existed before 16.5.42 as a strong regiment, but this list is divisional sized units only so it was put in the raising order after it was upgraded to a full division.
-		# removed 'leichte Afrika' from the names of 90., 164. Divisions as their existence depends on historical events that may not occur in game
-		# surviving units of this type renamed to Panzergrenadier-Divisions in 1943
 	}
 }
 
@@ -222,7 +589,166 @@ GER_MEC_01 =
 	# Names with numbers (only one number per entry)
 	ordered =
 	{
-				
+1 = {"I/Panzergrenadier Regiment 352"}
+2 = {"II/Panzergrenadier Regiment 352"}
+3 = {"I/Panzergrenadier Regiment 353"}
+4 = {"II/Panzergrenadier Regiment 353"}
+5 = {"I/Panzergrenadier Regiment 354"}
+6 = {"II/Panzergrenadier Regiment 354"}
+7 = {"I/Panzergrenadier Regiment 355"}
+8 = {"II/Panzergrenadier Regiment 355"}
+9 = {"I/Panzergrenadier Regiment 356"}
+10 = {"II/Panzergrenadier Regiment 356"}
+11 = {"I/Panzergrenadier Regiment 357"}
+12 = {"II/Panzergrenadier Regiment 357"}
+13 = {"I/Panzergrenadier Regiment 358"}
+14 = {"II/Panzergrenadier Regiment 358"}
+15 = {"I/Panzergrenadier Regiment 359"}
+16 = {"II/Panzergrenadier Regiment 359"}
+17 = {"I/Panzergrenadier Regiment 360"}
+18 = {"II/Panzergrenadier Regiment 360"}
+19 = {"I/Panzergrenadier Regiment 361"}
+20 = {"II/Panzergrenadier Regiment 361"}
+21 = {"I/Panzergrenadier Regiment 362"}
+22 = {"II/Panzergrenadier Regiment 362"}
+23 = {"I/Panzergrenadier Regiment 363"}
+24 = {"II/Panzergrenadier Regiment 363"}
+25 = {"I/Panzergrenadier Regiment 364"}
+26 = {"II/Panzergrenadier Regiment 364"}
+27 = {"I/Panzergrenadier Regiment 365"}
+28 = {"II/Panzergrenadier Regiment 365"}
+29 = {"I/Panzergrenadier Regiment 366"}
+30 = {"II/Panzergrenadier Regiment 366"}
+31 = {"I/Panzergrenadier Regiment 367"}
+32 = {"II/Panzergrenadier Regiment 367"}
+33 = {"I/Panzergrenadier Regiment 368"}
+34 = {"II/Panzergrenadier Regiment 368"}
+35 = {"I/Panzergrenadier Regiment 369"}
+36 = {"II/Panzergrenadier Regiment 369"}
+37 = {"I/Panzergrenadier Regiment 370"}
+38 = {"II/Panzergrenadier Regiment 370"}
+39 = {"I/Panzergrenadier Regiment 371"}
+40 = {"II/Panzergrenadier Regiment 371"}
+41 = {"I/Panzergrenadier Regiment 372"}
+42 = {"II/Panzergrenadier Regiment 372"}
+43 = {"I/Panzergrenadier Regiment 373"}
+44 = {"II/Panzergrenadier Regiment 373"}
+45 = {"I/Panzergrenadier Regiment 374"}
+46 = {"II/Panzergrenadier Regiment 374"}
+47 = {"I/Panzergrenadier Regiment 375"}
+48 = {"II/Panzergrenadier Regiment 375"}
+49 = {"I/Panzergrenadier Regiment 376"}
+50 = {"II/Panzergrenadier Regiment 376"}
+51 = {"I/Panzergrenadier Regiment 377"}
+52 = {"II/Panzergrenadier Regiment 377"}
+53 = {"I/Panzergrenadier Regiment 378"}
+54 = {"II/Panzergrenadier Regiment 378"}
+55 = {"I/Panzergrenadier Regiment 379"}
+56 = {"II/Panzergrenadier Regiment 379"}
+57 = {"I/Panzergrenadier Regiment 380"}
+58 = {"II/Panzergrenadier Regiment 380"}
+59 = {"I/Panzergrenadier Regiment 381"}
+60 = {"II/Panzergrenadier Regiment 381"}
+61 = {"I/Panzergrenadier Regiment 382"}
+62 = {"II/Panzergrenadier Regiment 382"}
+63 = {"I/Panzergrenadier Regiment 383"}
+64 = {"II/Panzergrenadier Regiment 383"}
+65 = {"I/Panzergrenadier Regiment 384"}
+66 = {"II/Panzergrenadier Regiment 384"}
+67 = {"I/Panzergrenadier Regiment 385"}
+68 = {"II/Panzergrenadier Regiment 385"}
+69 = {"I/Panzergrenadier Regiment 386"}
+70 = {"II/Panzergrenadier Regiment 386"}
+71 = {"I/Panzergrenadier Regiment 387"}
+72 = {"II/Panzergrenadier Regiment 387"}
+73 = {"I/Panzergrenadier Regiment 388"}
+74 = {"II/Panzergrenadier Regiment 388"}
+75 = {"I/Panzergrenadier Regiment 389"}
+76 = {"II/Panzergrenadier Regiment 389"}
+77 = {"I/Panzergrenadier Regiment 390"}
+78 = {"II/Panzergrenadier Regiment 390"}
+79 = {"I/Panzergrenadier Regiment 391"}
+80 = {"II/Panzergrenadier Regiment 391"}
+81 = {"I/Panzergrenadier Regiment 392"}
+82 = {"II/Panzergrenadier Regiment 392"}
+83 = {"I/Panzergrenadier Regiment 393"}
+84 = {"II/Panzergrenadier Regiment 393"}
+85 = {"I/Panzergrenadier Regiment 394"}
+86 = {"II/Panzergrenadier Regiment 394"}
+87 = {"I/Panzergrenadier Regiment 395"}
+88 = {"II/Panzergrenadier Regiment 395"}
+89 = {"I/Panzergrenadier Regiment 396"}
+90 = {"II/Panzergrenadier Regiment 396"}
+91 = {"I/Panzergrenadier Regiment 397"}
+92 = {"II/Panzergrenadier Regiment 397"}
+93 = {"I/Panzergrenadier Regiment 398"}
+94 = {"II/Panzergrenadier Regiment 398"}
+95 = {"I/Panzergrenadier Regiment 399"}
+96 = {"II/Panzergrenadier Regiment 399"}
+97 = {"I/Panzergrenadier Regiment 400"}
+98 = {"II/Panzergrenadier Regiment 400"}
+99 = {"I/Panzergrenadier Regiment 401"}
+100 = {"II/Panzergrenadier Regiment 401"}
+101 = {"I/Panzergrenadier Regiment 402"}
+102 = {"II/Panzergrenadier Regiment 402"}
+103 = {"I/Panzergrenadier Regiment 403"}
+104 = {"II/Panzergrenadier Regiment 403"}
+105 = {"I/Panzergrenadier Regiment 404"}
+106 = {"II/Panzergrenadier Regiment 404"}
+107 = {"I/Panzergrenadier Regiment 405"}
+108 = {"II/Panzergrenadier Regiment 405"}
+109 = {"I/Panzergrenadier Regiment 406"}
+110 = {"II/Panzergrenadier Regiment 406"}
+111 = {"I/Panzergrenadier Regiment 407"}
+112 = {"II/Panzergrenadier Regiment 407"}
+113 = {"I/Panzergrenadier Regiment 408"}
+114 = {"II/Panzergrenadier Regiment 408"}
+115 = {"I/Panzergrenadier Regiment 409"}
+116 = {"II/Panzergrenadier Regiment 409"}
+117 = {"I/Panzergrenadier Regiment 410"}
+118 = {"II/Panzergrenadier Regiment 410"}
+119 = {"I/Panzergrenadier Regiment 411"}
+120 = {"II/Panzergrenadier Regiment 411"}
+121 = {"I/Panzergrenadier Regiment 412"}
+122 = {"II/Panzergrenadier Regiment 412"}
+123 = {"I/Panzergrenadier Regiment 413"}
+124 = {"II/Panzergrenadier Regiment 413"}
+125 = {"I/Panzergrenadier Regiment 414"}
+126 = {"II/Panzergrenadier Regiment 414"}
+127 = {"I/Panzergrenadier Regiment 415"}
+128 = {"II/Panzergrenadier Regiment 415"}
+129 = {"I/Panzergrenadier Regiment 416"}
+130 = {"II/Panzergrenadier Regiment 416"}
+131 = {"I/Panzergrenadier Regiment 417"}
+132 = {"II/Panzergrenadier Regiment 417"}
+133 = {"I/Panzergrenadier Regiment 418"}
+134 = {"II/Panzergrenadier Regiment 418"}
+135 = {"I/Panzergrenadier Regiment 419"}
+136 = {"II/Panzergrenadier Regiment 419"}
+137 = {"I/Panzergrenadier Regiment 420"}
+138 = {"II/Panzergrenadier Regiment 420"}
+139 = {"I/Panzergrenadier Regiment 421"}
+140 = {"II/Panzergrenadier Regiment 421"}
+141 = {"I/Panzergrenadier Regiment 422"}
+142 = {"II/Panzergrenadier Regiment 422"}
+143 = {"I/Panzergrenadier Regiment 423"}
+144 = {"II/Panzergrenadier Regiment 423"}
+145 = {"I/Panzergrenadier Regiment 424"}
+146 = {"II/Panzergrenadier Regiment 424"}
+147 = {"I/Panzergrenadier Regiment 425"}
+148 = {"II/Panzergrenadier Regiment 425"}
+149 = {"I/Panzergrenadier Regiment 426"}
+150 = {"II/Panzergrenadier Regiment 426"}
+151 = {"I/Panzergrenadier Regiment 427"}
+152 = {"II/Panzergrenadier Regiment 427"}
+153 = {"I/Panzergrenadier Regiment 428"}
+154 = {"II/Panzergrenadier Regiment 428"}
+155 = {"I/Panzergrenadier Regiment 429"}
+156 = {"II/Panzergrenadier Regiment 429"}
+157 = {"I/Panzergrenadier Regiment 430"}
+158 = {"II/Panzergrenadier Regiment 430"}
+159 = {"I/Panzergrenadier Regiment 431"}
+160 = {"II/Panzergrenadier Regiment 431"}
 	}
 }
 
@@ -243,7 +769,126 @@ GER_PARA_01 =
 	# Names with numbers (only one number per entry)
 	ordered =
 	{
-		
+1 = {"I/"Fallschirmjäger Regiment 152"}
+2 = {"II/"Fallschirmjäger Regiment 152"}
+3 = {"III/"Fallschirmjäger Regiment 152"}
+4 = {"I/"Fallschirmjäger Regiment 153"}
+5 = {"II/"Fallschirmjäger Regiment 153"}
+6 = {"III/"Fallschirmjäger Regiment 153"}
+7 = {"I/"Fallschirmjäger Regiment 154"}
+8 = {"II/"Fallschirmjäger Regiment 154"}
+9 = {"III/"Fallschirmjäger Regiment 154"}
+10 = {"I/"Fallschirmjäger Regiment 155"}
+11 = {"II/"Fallschirmjäger Regiment 155"}
+12 = {"III/"Fallschirmjäger Regiment 155"}
+13 = {"I/"Fallschirmjäger Regiment 156"}
+14 = {"II/"Fallschirmjäger Regiment 156"}
+15 = {"III/"Fallschirmjäger Regiment 156"}
+16 = {"I/"Fallschirmjäger Regiment 157"}
+17 = {"II/"Fallschirmjäger Regiment 157"}
+18 = {"III/"Fallschirmjäger Regiment 157"}
+19 = {"I/"Fallschirmjäger Regiment 158"}
+20 = {"II/"Fallschirmjäger Regiment 158"}
+21 = {"III/"Fallschirmjäger Regiment 158"}
+22 = {"I/"Fallschirmjäger Regiment 159"}
+23 = {"II/"Fallschirmjäger Regiment 159"}
+24 = {"III/"Fallschirmjäger Regiment 159"}
+25 = {"I/"Fallschirmjäger Regiment 160"}
+26 = {"II/"Fallschirmjäger Regiment 160"}
+27 = {"III/"Fallschirmjäger Regiment 160"}
+28 = {"I/"Fallschirmjäger Regiment 161"}
+29 = {"II/"Fallschirmjäger Regiment 161"}
+30 = {"III/"Fallschirmjäger Regiment 161"}
+31 = {"I/"Fallschirmjäger Regiment 162"}
+32 = {"II/"Fallschirmjäger Regiment 162"}
+33 = {"III/"Fallschirmjäger Regiment 162"}
+34 = {"I/"Fallschirmjäger Regiment 163"}
+35 = {"II/"Fallschirmjäger Regiment 163"}
+36 = {"III/"Fallschirmjäger Regiment 163"}
+37 = {"I/"Fallschirmjäger Regiment 164"}
+38 = {"II/"Fallschirmjäger Regiment 164"}
+39 = {"III/"Fallschirmjäger Regiment 164"}
+40 = {"I/"Fallschirmjäger Regiment 165"}
+41 = {"II/"Fallschirmjäger Regiment 165"}
+42 = {"III/"Fallschirmjäger Regiment 165"}
+43 = {"I/"Fallschirmjäger Regiment 166"}
+44 = {"II/"Fallschirmjäger Regiment 166"}
+45 = {"III/"Fallschirmjäger Regiment 166"}
+46 = {"I/"Fallschirmjäger Regiment 167"}
+47 = {"II/"Fallschirmjäger Regiment 167"}
+48 = {"III/"Fallschirmjäger Regiment 167"}
+49 = {"I/"Fallschirmjäger Regiment 168"}
+50 = {"II/"Fallschirmjäger Regiment 168"}
+51 = {"III/"Fallschirmjäger Regiment 168"}
+52 = {"I/"Fallschirmjäger Regiment 169"}
+53 = {"II/"Fallschirmjäger Regiment 169"}
+54 = {"III/"Fallschirmjäger Regiment 169"}
+55 = {"I/"Fallschirmjäger Regiment 170"}
+56 = {"II/"Fallschirmjäger Regiment 170"}
+57 = {"III/"Fallschirmjäger Regiment 170"}
+58 = {"I/"Fallschirmjäger Regiment 171"}
+59 = {"II/"Fallschirmjäger Regiment 171"}
+60 = {"III/"Fallschirmjäger Regiment 171"}
+61 = {"I/"Fallschirmjäger Regiment 172"}
+62 = {"II/"Fallschirmjäger Regiment 172"}
+63 = {"III/"Fallschirmjäger Regiment 172"}
+64 = {"I/"Fallschirmjäger Regiment 173"}
+65 = {"II/"Fallschirmjäger Regiment 173"}
+66 = {"III/"Fallschirmjäger Regiment 173"}
+67 = {"I/"Fallschirmjäger Regiment 174"}
+68 = {"II/"Fallschirmjäger Regiment 174"}
+69 = {"III/"Fallschirmjäger Regiment 174"}
+70 = {"I/"Fallschirmjäger Regiment 175"}
+71 = {"II/"Fallschirmjäger Regiment 175"}
+72 = {"III/"Fallschirmjäger Regiment 175"}
+73 = {"I/"Fallschirmjäger Regiment 176"}
+74 = {"II/"Fallschirmjäger Regiment 176"}
+75 = {"III/"Fallschirmjäger Regiment 176"}
+76 = {"I/"Fallschirmjäger Regiment 177"}
+77 = {"II/"Fallschirmjäger Regiment 177"}
+78 = {"III/"Fallschirmjäger Regiment 177"}
+79 = {"I/"Fallschirmjäger Regiment 178"}
+80 = {"II/"Fallschirmjäger Regiment 178"}
+81 = {"III/"Fallschirmjäger Regiment 178"}
+82 = {"I/"Fallschirmjäger Regiment 179"}
+83 = {"II/"Fallschirmjäger Regiment 179"}
+84 = {"III/"Fallschirmjäger Regiment 179"}
+85 = {"I/"Fallschirmjäger Regiment 180"}
+86 = {"II/"Fallschirmjäger Regiment 180"}
+87 = {"III/"Fallschirmjäger Regiment 180"}
+88 = {"I/"Fallschirmjäger Regiment 181"}
+89 = {"II/"Fallschirmjäger Regiment 181"}
+90 = {"III/"Fallschirmjäger Regiment 181"}
+91 = {"I/"Fallschirmjäger Regiment 182"}
+92 = {"II/"Fallschirmjäger Regiment 182"}
+93 = {"III/"Fallschirmjäger Regiment 182"}
+94 = {"I/"Fallschirmjäger Regiment 183"}
+95 = {"II/"Fallschirmjäger Regiment 183"}
+96 = {"III/"Fallschirmjäger Regiment 183"}
+97 = {"I/"Fallschirmjäger Regiment 184"}
+98 = {"II/"Fallschirmjäger Regiment 184"}
+99 = {"III/"Fallschirmjäger Regiment 184"}
+100 = {"I/"Fallschirmjäger Regiment 185"}
+101 = {"II/"Fallschirmjäger Regiment 185"}
+102 = {"III/"Fallschirmjäger Regiment 185"}
+103 = {"I/"Fallschirmjäger Regiment 186"}
+104 = {"II/"Fallschirmjäger Regiment 186"}
+105 = {"III/"Fallschirmjäger Regiment 186"}
+106 = {"I/"Fallschirmjäger Regiment 187"}
+107 = {"II/"Fallschirmjäger Regiment 187"}
+108 = {"III/"Fallschirmjäger Regiment 187"}
+109 = {"I/"Fallschirmjäger Regiment 188"}
+110 = {"II/"Fallschirmjäger Regiment 188"}
+111 = {"III/"Fallschirmjäger Regiment 188"}
+112 = {"I/"Fallschirmjäger Regiment 189"}
+113 = {"II/"Fallschirmjäger Regiment 189"}
+114 = {"III/"Fallschirmjäger Regiment 189"}
+115 = {"I/"Fallschirmjäger Regiment 190"}
+116 = {"II/"Fallschirmjäger Regiment 190"}
+117 = {"III/"Fallschirmjäger Regiment 190"}
+118 = {"I/"Fallschirmjäger Regiment 191"}
+119 = {"II/"Fallschirmjäger Regiment 191"}
+120 = {"III/"Fallschirmjäger Regiment 191"}
 		
 		# sadly had to leave out 7. Flieger-Division, the original name of 1. FJD, as it wouldn't be worth the interface clutter to have an alternate name list with one division in it. Put it first in the name list despite formally receiving the 1. FJD designation after 2. Fallschirm-Division was formed, so at least it gets built first. 
 		# considered making 5th Division and above actually part of the infantry list since historically they had almost no jump trained personnel, but since this would conflict with players who might invest in a larger than historical airborne arm, decided against this.
@@ -269,11 +914,90 @@ GER_PANBAN_01 =
 	# Names with numbers (only one number per entry)
 	ordered =
 	{
-		
+		1 = {"I/Panzer Regiment 65"}
+2 = {"II/Panzer Regiment 65"}
+3 = {"I/Panzer Regiment 66"}
+4 = {"II/Panzer Regiment 66"}
+5 = {"I/Panzer Regiment 67"}
+6 = {"II/Panzer Regiment 67"}
+7 = {"I/Panzer Regiment 68"}
+8 = {"II/Panzer Regiment 68"}
+9 = {"I/Panzer Regiment 69"}
+10 = {"II/Panzer Regiment 69"}
+11 = {"I/Panzer Regiment 70"}
+12 = {"II/Panzer Regiment 70"}
+13 = {"I/Panzer Regiment 71"}
+14 = {"II/Panzer Regiment 71"}
+15 = {"I/Panzer Regiment 72"}
+16 = {"II/Panzer Regiment 72"}
+17 = {"I/Panzer Regiment 73"}
+18 = {"II/Panzer Regiment 73"}
+19 = {"I/Panzer Regiment 74"}
+20 = {"II/Panzer Regiment 74"}
+21 = {"I/Panzer Regiment 75"}
+22 = {"II/Panzer Regiment 75"}
+23 = {"I/Panzer Regiment 76"}
+24 = {"II/Panzer Regiment 76"}
+25 = {"I/Panzer Regiment 77"}
+26 = {"II/Panzer Regiment 77"}
+27 = {"I/Panzer Regiment 78"}
+28 = {"II/Panzer Regiment 78"}
+29 = {"I/Panzer Regiment 79"}
+30 = {"II/Panzer Regiment 79"}
+31 = {"I/Panzer Regiment 80"}
+32 = {"II/Panzer Regiment 80"}
+33 = {"I/Panzer Regiment 81"}
+34 = {"II/Panzer Regiment 81"}
+35 = {"I/Panzer Regiment 82"}
+36 = {"II/Panzer Regiment 82"}
+37 = {"I/Panzer Regiment 83"}
+38 = {"II/Panzer Regiment 83"}
+39 = {"I/Panzer Regiment 84"}
+40 = {"II/Panzer Regiment 84"}
+41 = {"I/Panzer Regiment 85"}
+42 = {"II/Panzer Regiment 85"}
+43 = {"I/Panzer Regiment 86"}
+44 = {"II/Panzer Regiment 86"}
+45 = {"I/Panzer Regiment 87"}
+46 = {"II/Panzer Regiment 87"}
+47 = {"I/Panzer Regiment 88"}
+48 = {"II/Panzer Regiment 88"}
+49 = {"I/Panzer Regiment 89"}
+50 = {"II/Panzer Regiment 89"}
+51 = {"I/Panzer Regiment 90"}
+52 = {"II/Panzer Regiment 90"}
+53 = {"I/Panzer Regiment 91"}
+54 = {"II/Panzer Regiment 91"}
+55 = {"I/Panzer Regiment 92"}
+56 = {"II/Panzer Regiment 92"}
+57 = {"I/Panzer Regiment 93"}
+58 = {"II/Panzer Regiment 93"}
+59 = {"I/Panzer Regiment 94"}
+60 = {"II/Panzer Regiment 94"}
+61 = {"I/Panzer Regiment 95"}
+62 = {"II/Panzer Regiment 95"}
+63 = {"I/Panzer Regiment 96"}
+64 = {"II/Panzer Regiment 96"}
+65 = {"I/Panzer Regiment 97"}
+66 = {"II/Panzer Regiment 97"}
+67 = {"I/Panzer Regiment 98"}
+68 = {"II/Panzer Regiment 98"}
+69 = {"I/Panzer Regiment 99"}
+70 = {"II/Panzer Regiment 99"}
+71 = {"I/Panzer Regiment 100"}
+72 = {"II/Panzer Regiment 100"}
+73 = {"I/Panzer Regiment 101"}
+74 = {"II/Panzer Regiment 101"}
+75 = {"I/Panzer Regiment 102"}
+76 = {"II/Panzer Regiment 102"}
+77 = {"I/Panzer Regiment 103"}
+78 = {"II/Panzer Regiment 103"}
+79 = {"I/Panzer Regiment 104"}
+80 = {"II/Panzer Regiment 104"}
 
 	}
 }
-GER_SPG_01 = 
+GER_STUG = 
 {
 	name = "Panzer Artillery Battalions"
 
@@ -288,16 +1012,51 @@ GER_SPG_01 =
 	# Names with numbers (only one number per entry)
 	ordered =
 	{
-		
+1 = {"Sturmgeschütz-Abteilung 152"}
+2 = {"Sturmgeschütz-Abteilung 153"}
+3 = {"Sturmgeschütz-Abteilung 154"}
+4 = {"Sturmgeschütz-Abteilung 155"}
+5 = {"Sturmgeschütz-Abteilung 156"}
+6 = {"Sturmgeschütz-Abteilung 157"}
+7 = {"Sturmgeschütz-Abteilung 158"}
+8 = {"Sturmgeschütz-Abteilung 159"}
+9 = {"Sturmgeschütz-Abteilung 160"}
+10 = {"Sturmgeschütz-Abteilung 161"}
+11 = {"Sturmgeschütz-Abteilung 162"}
+12 = {"Sturmgeschütz-Abteilung 163"}
+13 = {"Sturmgeschütz-Abteilung 164"}
+14 = {"Sturmgeschütz-Abteilung 165"}
+15 = {"Sturmgeschütz-Abteilung 166"}
+16 = {"Sturmgeschütz-Abteilung 167"}
+17 = {"Sturmgeschütz-Abteilung 168"}
+18 = {"Sturmgeschütz-Abteilung 169"}
+19 = {"Sturmgeschütz-Abteilung 170"}
+20 = {"Sturmgeschütz-Abteilung 171"}
+21 = {"Sturmgeschütz-Abteilung 172"}
+22 = {"Sturmgeschütz-Abteilung 173"}
+23 = {"Sturmgeschütz-Abteilung 174"}
+24 = {"Sturmgeschütz-Abteilung 175"}
+25 = {"Sturmgeschütz-Abteilung 176"}
+26 = {"Sturmgeschütz-Abteilung 177"}
+27 = {"Sturmgeschütz-Abteilung 178"}
+28 = {"Sturmgeschütz-Abteilung 179"}
+29 = {"Sturmgeschütz-Abteilung 180"}
+30 = {"Sturmgeschütz-Abteilung 181"}
+31 = {"Sturmgeschütz-Abteilung 182"}
+32 = {"Sturmgeschütz-Abteilung 183"}
+33 = {"Sturmgeschütz-Abteilung 184"}
+34 = {"Sturmgeschütz-Abteilung 185"}
+35 = {"Sturmgeschütz-Abteilung 186"}
+36 = {"Sturmgeschütz-Abteilung 187"}
+37 = {"Sturmgeschütz-Abteilung 188"}
+38 = {"Sturmgeschütz-Abteilung 189"}
+39 = {"Sturmgeschütz-Abteilung 190"}
+40 = {"Sturmgeschütz-Abteilung 191"}
 
 	}
 }
-
-
-
-GER_SSPANBAN_01 = 
-{
-	name = "SS Panzer Battalions"
+GER_PZJAGER = {
+	name = "Panzer Artillery Battalions"
 
 	for_countries = { OKW }
 
@@ -305,41 +1064,262 @@ GER_SSPANBAN_01 =
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
-	fallback_name = "%d. SS schwere Panzerabteilung"
+	fallback_name = "Pzr-Artillerie-Reg. %"
 
-	# Names with numbers (only one number per entry)
-	ordered =
+	ordered = 
 	{
+		1 = {"Panzerjäger-Abteilung 152"}
+2 = {"Panzerjäger-Abteilung 153"}
+3 = {"Panzerjäger-Abteilung 154"}
+4 = {"Panzerjäger-Abteilung 155"}
+5 = {"Panzerjäger-Abteilung 156"}
+6 = {"Panzerjäger-Abteilung 157"}
+7 = {"Panzerjäger-Abteilung 158"}
+8 = {"Panzerjäger-Abteilung 159"}
+9 = {"Panzerjäger-Abteilung 160"}
+10 = {"Panzerjäger-Abteilung 161"}
+11 = {"Panzerjäger-Abteilung 162"}
+12 = {"Panzerjäger-Abteilung 163"}
+13 = {"Panzerjäger-Abteilung 164"}
+14 = {"Panzerjäger-Abteilung 165"}
+15 = {"Panzerjäger-Abteilung 166"}
+16 = {"Panzerjäger-Abteilung 167"}
+17 = {"Panzerjäger-Abteilung 168"}
+18 = {"Panzerjäger-Abteilung 169"}
+19 = {"Panzerjäger-Abteilung 170"}
+20 = {"Panzerjäger-Abteilung 171"}
+21 = {"Panzerjäger-Abteilung 172"}
+22 = {"Panzerjäger-Abteilung 173"}
+23 = {"Panzerjäger-Abteilung 174"}
+24 = {"Panzerjäger-Abteilung 175"}
+25 = {"Panzerjäger-Abteilung 176"}
+26 = {"Panzerjäger-Abteilung 177"}
+27 = {"Panzerjäger-Abteilung 178"}
+28 = {"Panzerjäger-Abteilung 179"}
+29 = {"Panzerjäger-Abteilung 180"}
+30 = {"Panzerjäger-Abteilung 181"}
+31 = {"Panzerjäger-Abteilung 182"}
+32 = {"Panzerjäger-Abteilung 183"}
+33 = {"Panzerjäger-Abteilung 184"}
+34 = {"Panzerjäger-Abteilung 185"}
+35 = {"Panzerjäger-Abteilung 186"}
+36 = {"Panzerjäger-Abteilung 187"}
+37 = {"Panzerjäger-Abteilung 188"}
+38 = {"Panzerjäger-Abteilung 189"}
+39 = {"Panzerjäger-Abteilung 190"}
+40 = {"Panzerjäger-Abteilung 191"}
 		
-
 	}
+
 }
 
-GER_Cav_01 = 
-{
-	name = "Cavalry Divisions"
+GER_HeavyPZJAGER = {
+	name = "Panzer Artillery Battalions"
 
 	for_countries = { OKW }
 
 	can_use = { always = yes }
 
-	division_types = { "cavalry"  }
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
-	fallback_name = "%d. Kavallerie-Division"
+	fallback_name = "Pzr-Artillerie-Reg. %"
+
+	ordered = 
+	{
+1 = {"Schwere Panzerjäger-Abteilung 404"}
+2 = {"Schwere Panzerjäger-Abteilung 405"}
+3 = {"Schwere Panzerjäger-Abteilung 406"}
+4 = {"Schwere Panzerjäger-Abteilung 407"}
+5 = {"Schwere Panzerjäger-Abteilung 408"}
+6 = {"Schwere Panzerjäger-Abteilung 409"}
+7 = {"Schwere Panzerjäger-Abteilung 410"}
+8 = {"Schwere Panzerjäger-Abteilung 411"}
+9 = {"Schwere Panzerjäger-Abteilung 412"}
+10 = {"Schwere Panzerjäger-Abteilung 413"}
+11 = {"Schwere Panzerjäger-Abteilung 414"}
+12 = {"Schwere Panzerjäger-Abteilung 415"}
+13 = {"Schwere Panzerjäger-Abteilung 416"}
+14 = {"Schwere Panzerjäger-Abteilung 417"}
+15 = {"Schwere Panzerjäger-Abteilung 418"}
+16 = {"Schwere Panzerjäger-Abteilung 419"}
+17 = {"Schwere Panzerjäger-Abteilung 420"}
+18 = {"Schwere Panzerjäger-Abteilung 421"}
+19 = {"Schwere Panzerjäger-Abteilung 422"}
+20 = {"Schwere Panzerjäger-Abteilung 423"}
+21 = {"Schwere Panzerjäger-Abteilung 424"}
+22 = {"Schwere Panzerjäger-Abteilung 425"}
+23 = {"Schwere Panzerjäger-Abteilung 426"}
+24 = {"Schwere Panzerjäger-Abteilung 427"}
+25 = {"Schwere Panzerjäger-Abteilung 428"}
+26 = {"Schwere Panzerjäger-Abteilung 429"}
+27 = {"Schwere Panzerjäger-Abteilung 430"}
+28 = {"Schwere Panzerjäger-Abteilung 431"}
+29 = {"Schwere Panzerjäger-Abteilung 432"}
+30 = {"Schwere Panzerjäger-Abteilung 433"}
+		
+	}
+
+}
+GER_PZART = {
+	name = "Panzer Artillery Battalions"
+
+	for_countries = { OKW }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "Pzr-Artillerie-Reg. %"
+
+	ordered = 
+	{
+1 = {"I/Panzer Artillerie Regiment 700"}
+2 = {"II/Panzer Artillerie Regiment 700"}
+3 = {"III/Panzer Artillerie Regiment 700"}
+4 = {"I/Panzer Artillerie Regiment 701"}
+5 = {"II/Panzer Artillerie Regiment 701"}
+6 = {"III/Panzer Artillerie Regiment 701"}
+7 = {"I/Panzer Artillerie Regiment 702"}
+8 = {"II/Panzer Artillerie Regiment 702"}
+9 = {"III/Panzer Artillerie Regiment 702"}
+10 = {"I/Panzer Artillerie Regiment 703"}
+11 = {"II/Panzer Artillerie Regiment 703"}
+12 = {"III/Panzer Artillerie Regiment 703"}
+13 = {"I/Panzer Artillerie Regiment 704"}
+14 = {"II/Panzer Artillerie Regiment 704"}
+15 = {"III/Panzer Artillerie Regiment 704"}
+16 = {"I/Panzer Artillerie Regiment 705"}
+17 = {"II/Panzer Artillerie Regiment 705"}
+18 = {"III/Panzer Artillerie Regiment 705"}
+19 = {"I/Panzer Artillerie Regiment 706"}
+20 = {"II/Panzer Artillerie Regiment 706"}
+21 = {"III/Panzer Artillerie Regiment 706"}
+22 = {"I/Panzer Artillerie Regiment 707"}
+23 = {"II/Panzer Artillerie Regiment 707"}
+24 = {"III/Panzer Artillerie Regiment 707"}
+25 = {"I/Panzer Artillerie Regiment 708"}
+26 = {"II/Panzer Artillerie Regiment 708"}
+27 = {"III/Panzer Artillerie Regiment 708"}
+28 = {"I/Panzer Artillerie Regiment 709"}
+29 = {"II/Panzer Artillerie Regiment 709"}
+30 = {"III/Panzer Artillerie Regiment 709"}
+31 = {"I/Panzer Artillerie Regiment 710"}
+32 = {"II/Panzer Artillerie Regiment 710"}
+33 = {"III/Panzer Artillerie Regiment 710"}
+34 = {"I/Panzer Artillerie Regiment 711"}
+35 = {"II/Panzer Artillerie Regiment 711"}
+36 = {"III/Panzer Artillerie Regiment 711"}
+37 = {"I/Panzer Artillerie Regiment 712"}
+38 = {"II/Panzer Artillerie Regiment 712"}
+39 = {"III/Panzer Artillerie Regiment 712"}
+40 = {"I/Panzer Artillerie Regiment 713"}
+41 = {"II/Panzer Artillerie Regiment 713"}
+42 = {"III/Panzer Artillerie Regiment 713"}
+43 = {"I/Panzer Artillerie Regiment 714"}
+44 = {"II/Panzer Artillerie Regiment 714"}
+45 = {"III/Panzer Artillerie Regiment 714"}
+46 = {"I/Panzer Artillerie Regiment 715"}
+47 = {"II/Panzer Artillerie Regiment 715"}
+48 = {"III/Panzer Artillerie Regiment 715"}
+49 = {"I/Panzer Artillerie Regiment 716"}
+50 = {"II/Panzer Artillerie Regiment 716"}
+51 = {"III/Panzer Artillerie Regiment 716"}
+52 = {"I/Panzer Artillerie Regiment 717"}
+53 = {"II/Panzer Artillerie Regiment 717"}
+54 = {"III/Panzer Artillerie Regiment 717"}
+55 = {"I/Panzer Artillerie Regiment 718"}
+56 = {"II/Panzer Artillerie Regiment 718"}
+57 = {"III/Panzer Artillerie Regiment 718"}
+58 = {"I/Panzer Artillerie Regiment 719"}
+59 = {"II/Panzer Artillerie Regiment 719"}
+60 = {"III/Panzer Artillerie Regiment 719"}
+61 = {"I/Panzer Artillerie Regiment 720"}
+62 = {"II/Panzer Artillerie Regiment 720"}
+63 = {"III/Panzer Artillerie Regiment 720"}
+64 = {"I/Panzer Artillerie Regiment 721"}
+65 = {"II/Panzer Artillerie Regiment 721"}
+66 = {"III/Panzer Artillerie Regiment 721"}
+67 = {"I/Panzer Artillerie Regiment 722"}
+68 = {"II/Panzer Artillerie Regiment 722"}
+69 = {"III/Panzer Artillerie Regiment 722"}
+70 = {"I/Panzer Artillerie Regiment 723"}
+71 = {"II/Panzer Artillerie Regiment 723"}
+72 = {"III/Panzer Artillerie Regiment 723"}
+73 = {"I/Panzer Artillerie Regiment 724"}
+74 = {"II/Panzer Artillerie Regiment 724"}
+75 = {"III/Panzer Artillerie Regiment 724"}
+76 = {"I/Panzer Artillerie Regiment 725"}
+77 = {"II/Panzer Artillerie Regiment 725"}
+78 = {"III/Panzer Artillerie Regiment 725"}
+79 = {"I/Panzer Artillerie Regiment 726"}
+80 = {"II/Panzer Artillerie Regiment 726"}
+81 = {"III/Panzer Artillerie Regiment 726"}
+82 = {"I/Panzer Artillerie Regiment 727"}
+83 = {"II/Panzer Artillerie Regiment 727"}
+84 = {"III/Panzer Artillerie Regiment 727"}
+85 = {"I/Panzer Artillerie Regiment 728"}
+86 = {"II/Panzer Artillerie Regiment 728"}
+87 = {"III/Panzer Artillerie Regiment 728"}
+88 = {"I/Panzer Artillerie Regiment 729"}
+89 = {"II/Panzer Artillerie Regiment 729"}
+90 = {"III/Panzer Artillerie Regiment 729"}
+
+	}
+
+}
+
+
+GER_HeavyPANBAT = 
+{
+	name = "Heavy Panzer Battalion"
+
+	for_countries = { OKW }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "%d. Panzerabteilung"
+
 
 	# Names with numbers (only one number per entry)
 	ordered =
 	{
-		1 = { "%d. Kavallerie-Division" }
-		900 = { "Kavallerie-Division 'Nord'" }
-		3 = { "%d. Kavallerie-Division" }
-		4 = { "%d. Kavallerie-Division" }
-		
-		# deleted Kosaken-Kavallerie-Divisions as they depend on a German occupation of Ukraine that may not occur
+		1 = {"Schwere Panzer-Abteilung 504"}
+2 = {"Schwere Panzer-Abteilung 505"}
+3 = {"Schwere Panzer-Abteilung 506"}
+4 = {"Schwere Panzer-Abteilung 507"}
+5 = {"Schwere Panzer-Abteilung 508"}
+6 = {"Schwere Panzer-Abteilung 509"}
+7 = {"Schwere Panzer-Abteilung 510"}
+8 = {"Schwere Panzer-Abteilung 511"}
+9 = {"Schwere Panzer-Abteilung 512"}
+10 = {"Schwere Panzer-Abteilung 513"}
+11 = {"Schwere Panzer-Abteilung 514"}
+12 = {"Schwere Panzer-Abteilung 515"}
+13 = {"Schwere Panzer-Abteilung 516"}
+14 = {"Schwere Panzer-Abteilung 517"}
+15 = {"Schwere Panzer-Abteilung 518"}
+16 = {"Schwere Panzer-Abteilung 519"}
+17 = {"Schwere Panzer-Abteilung 520"}
+18 = {"Schwere Panzer-Abteilung 521"}
+19 = {"Schwere Panzer-Abteilung 522"}
+20 = {"Schwere Panzer-Abteilung 523"}
+21 = {"Schwere Panzer-Abteilung 524"}
+22 = {"Schwere Panzer-Abteilung 525"}
+23 = {"Schwere Panzer-Abteilung 526"}
+24 = {"Schwere Panzer-Abteilung 527"}
+25 = {"Schwere Panzer-Abteilung 528"}
+26 = {"Schwere Panzer-Abteilung 529"}
+27 = {"Schwere Panzer-Abteilung 530"}
+28 = {"Schwere Panzer-Abteilung 531"}
+29 = {"Schwere Panzer-Abteilung 532"}
+30 = {"Schwere Panzer-Abteilung 533"}
 
 	}
 	
 }
+
 
 
 

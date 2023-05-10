@@ -1,4 +1,24 @@
 ﻿l_english:
+
+##Decisions and ideas
+
+german_counterattack:0 "Counterattack!"
+german_counterattack:0 "We have launched a powerful offensive against the Allies, one that will allows us to destroy our enemies and conquer back France just like in 1940"
+
+develop_jagdtiger:0 "Develop the Jagdpanzer VI Jagdtiger"
+develop_me262:0 "Develop the Me262 'Schwalbe'"
+
+develop_pershing:0 "Develop the M26 Pershing"
+develop_jackson:0 "Develop the M36 Jackson"
+develop_chaffee:0 "Develop the M24 Chaffee"
+
+divert_production:0 "Divert production from the Eastern Front"
+divert_production:0 "To assure our offensive succeeds, we will have to divert most of our production from the Eastern Front to the Western one"
+launch_dragoon:0 "Launch Operation Dragoon"
+
+no_change_production:0 "Scenario Setup"
+
+
 ######generals
 ##GER
 MOD_Sepp_Dietrich:0 "SS-Oberst-Gruppenführer Sepp Dietrich"
@@ -28,7 +48,7 @@ MOD_Erich_Straube:0 "General der Infanterie Erich Straube"
 
 MOD_Erich_Marcks:0 "General der Artillerie Erich Marcks"
 
-MOD_Eugen_Meindl:0 "Generalleutnant Eugen Meindl"
+MOD_Eugen_Meindl:0 "General der Fallschirmtruppe Eugen Meindl"
 
 MOD_Walter_Weikersthal:0 "General der Infanterie Walther von Weikersthal"
 

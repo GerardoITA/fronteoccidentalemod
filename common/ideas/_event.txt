@@ -3,9 +3,25 @@ ideas = {
 	country = {
 		start_production = {
 			modifier = {
-				production_factory_efficiency_gain_factor = 1
+				disable_strategic_redeployment = true
 			}
 			removal_cost = -1
+		}
+		divert_production = {
+			modifier = {
+				industrial_capacity_factory = 10
+				equipment_bonus = {	
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = 2
+				}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = 2
+				}
+								
+			}
+			}
 		}
 
 		german_army = {
@@ -27,6 +43,8 @@ ideas = {
 				equipment_upgrade_xp_cost = 10
 				equipment_conversion_speed = -999
 				industrial_capacity_factory = 0.25
+				sickness_chance	= -1			
+				wounded_chance_factor = -1
 			}
 			removal_cost = -1
 		}

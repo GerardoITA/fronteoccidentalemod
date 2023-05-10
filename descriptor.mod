@@ -41,6 +41,6 @@ replace_path="common/unit_leader"
 replace_path="common/characters"
 replace_path="common/national_focus"
 replace_path="common/units/names"
-
 name="FronteOccidentaleMod"
 supported_version="1.12.12"
+remote_file_id="2972574528"

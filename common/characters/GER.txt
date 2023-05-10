@@ -1632,7 +1632,26 @@ MOD_Erich_Straube = {
 
 	}
 }
+MOD_Eugen_Meindl = {
+	name = MOD_Eugen_Meindl
+	portraits={
+		army={
+			large="gfx/ModPortraits/GER/Eugen_Meindl.png"
+		}
+	}
+	field_marshal={
 
+		traits={ trickster commando infantry_leader infantry_expert ambusher offensive_doctrine brilliant_strategist}
+
+		skill=6
+		attack_skill=6
+		defense_skill=5
+		planning_skill=5
+		logistics_skill=5
+
+
+	}
+}
 
 
 MOD_Erich_Marcks = {

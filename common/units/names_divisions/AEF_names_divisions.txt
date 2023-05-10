@@ -77,7 +77,7 @@ AEF_DUMMY =
 		
 	}
 }
-AEF_INF_02 = 
+AEF_INF_ENG = 
 {
 	name = "British Infantry Battalions"
 
@@ -96,65 +96,310 @@ AEF_INF_02 =
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-###3RD INFANTRY DIV
-#8th infantry brig
-		1 = { "1 Bn. The Suffolk Regiment" }
-		2 = { "2 Bn. The East Yorkshire Reg." }
-		3 = { "1 Bn. The South Lancashire Reg." }
-##9th infantry brig
-		4 = { "2 Bn. The Lincolnshire Reg." }
-		5 = { "1 Bn. The King's Own Scottish Borderers" }
-		6 = { "2 Bn.The Royal Ulster Rifles" }
-##185th Infantry Brig
-		7 = { "2 Bn. The Royal Warwickshire Regiment" }
-		8 = { "1 Bn. The Royal Norfolk Regiment" }
-		9 = { "2 Bn. The King’s Shropshire Light Infantry" }
-#####15th INF DIV
-#####44th inf brig
-		10 = { "8 Bn. The Royal Scots" }
-		11 = { "6 Bn. The Royal Scots Fusiliers" }
-		12 = { "6 Bn. The King’s Own Scottish Borderers" }
-######46th INF BRIG
-		13 = { "9 Bn. The Cameronians" }
-		14 = { "2 Bn. The Glasgow Highlanders" }
-		15 = { "7 Bn. The Seaforth Highlanders " }
-#####227 INF BRIG ##14 june
-		16 = { "10 Bn. The Highland Light Infantry" }
-		17 = { "2 Bn. Argyll and Sutherland Highlanders" }
-		18 = { "2 Bn. Gordon Highlanders" }
-####159th BRIG
-		19 = { "%dth Cavalry Division" }
-		20 = { "%dth Cavalry Division" }
-		21 = { "%dst Cavalry Division" }
-
+		1 = {"I/123rd Infantry Brigade"}
+2 = {"II/123rd Infantry Brigade"}
+3 = {"III/123rd Infantry Brigade"}
+4 = {"I/124th Infantry Brigade"}
+5 = {"II/124th Infantry Brigade"}
+6 = {"III/124th Infantry Brigade"}
+7 = {"I/125th Infantry Brigade"}
+8 = {"II/125th Infantry Brigade"}
+9 = {"III/125th Infantry Brigade"}
+10 = {"I/126th Infantry Brigade"}
+11 = {"II/126th Infantry Brigade"}
+12 = {"III/126th Infantry Brigade"}
+13 = {"I/127th Infantry Brigade"}
+14 = {"II/127th Infantry Brigade"}
+15 = {"III/127th Infantry Brigade"}
+16 = {"I/128th Infantry Brigade"}
+17 = {"II/128th Infantry Brigade"}
+18 = {"III/128th Infantry Brigade"}
+19 = {"I/129th Infantry Brigade"}
+20 = {"II/129th Infantry Brigade"}
+21 = {"III/129th Infantry Brigade"}
+22 = {"I/130th Infantry Brigade"}
+23 = {"II/130th Infantry Brigade"}
+24 = {"III/130th Infantry Brigade"}
+25 = {"I/131st Infantry Brigade"}
+26 = {"II/131st Infantry Brigade"}
+27 = {"III/131st Infantry Brigade"}
+28 = {"I/132nd Infantry Brigade"}
+29 = {"II/132nd Infantry Brigade"}
+30 = {"III/132nd Infantry Brigade"}
+31 = {"I/133rd Infantry Brigade"}
+32 = {"II/133rd Infantry Brigade"}
+33 = {"III/133rd Infantry Brigade"}
+34 = {"I/134th Infantry Brigade"}
+35 = {"II/134th Infantry Brigade"}
+36 = {"III/134th Infantry Brigade"}
+37 = {"I/135th Infantry Brigade"}
+38 = {"II/135th Infantry Brigade"}
+39 = {"III/135th Infantry Brigade"}
+40 = {"I/136th Infantry Brigade"}
+41 = {"II/136th Infantry Brigade"}
+42 = {"III/136th Infantry Brigade"}
+43 = {"I/137th Infantry Brigade"}
+44 = {"II/137th Infantry Brigade"}
+45 = {"III/137th Infantry Brigade"}
+46 = {"I/138th Infantry Brigade"}
+47 = {"II/138th Infantry Brigade"}
+48 = {"III/138th Infantry Brigade"}
+49 = {"I/139th Infantry Brigade"}
+50 = {"II/139th Infantry Brigade"}
+51 = {"III/139th Infantry Brigade"}
+52 = {"I/140th Infantry Brigade"}
+53 = {"II/140th Infantry Brigade"}
+54 = {"III/140th Infantry Brigade"}
+55 = {"I/141st Infantry Brigade"}
+56 = {"II/141st Infantry Brigade"}
+57 = {"III/141st Infantry Brigade"}
+58 = {"I/142nd Infantry Brigade"}
+59 = {"II/142nd Infantry Brigade"}
+60 = {"III/142nd Infantry Brigade"}
+61 = {"I/143rd Infantry Brigade"}
+62 = {"II/143rd Infantry Brigade"}
+63 = {"III/143rd Infantry Brigade"}
+64 = {"I/144th Infantry Brigade"}
+65 = {"II/144th Infantry Brigade"}
+66 = {"III/144th Infantry Brigade"}
+67 = {"I/145th Infantry Brigade"}
+68 = {"II/145th Infantry Brigade"}
+69 = {"III/145th Infantry Brigade"}
+70 = {"I/146th Infantry Brigade"}
+71 = {"II/146th Infantry Brigade"}
+72 = {"III/146th Infantry Brigade"}
+73 = {"I/147th Infantry Brigade"}
+74 = {"II/147th Infantry Brigade"}
+75 = {"III/147th Infantry Brigade"}
+76 = {"I/148th Infantry Brigade"}
+77 = {"II/148th Infantry Brigade"}
+78 = {"III/148th Infantry Brigade"}
+79 = {"I/149th Infantry Brigade"}
+80 = {"II/149th Infantry Brigade"}
+81 = {"III/149th Infantry Brigade"}
+82 = {"I/150th Infantry Brigade"}
+83 = {"II/150th Infantry Brigade"}
+84 = {"III/150th Infantry Brigade"}
+85 = {"I/151st Infantry Brigade"}
+86 = {"II/151st Infantry Brigade"}
+87 = {"III/151st Infantry Brigade"}
+88 = {"I/152nd Infantry Brigade"}
+89 = {"II/152nd Infantry Brigade"}
+90 = {"III/152nd Infantry Brigade"}
+91 = {"I/153rd Infantry Brigade"}
+92 = {"II/153rd Infantry Brigade"}
+93 = {"III/153rd Infantry Brigade"}
+94 = {"I/154th Infantry Brigade"}
+95 = {"II/154th Infantry Brigade"}
+96 = {"III/154th Infantry Brigade"}
+97 = {"I/155th Infantry Brigade"}
+98 = {"II/155th Infantry Brigade"}
+99 = {"III/155th Infantry Brigade"}
+100 = {"I/156th Infantry Brigade"}
+101 = {"II/156th Infantry Brigade"}
+102 = {"III/156th Infantry Brigade"}
+103 = {"I/157th Infantry Brigade"}
+104 = {"II/157th Infantry Brigade"}
+105 = {"III/157th Infantry Brigade"}
+106 = {"I/158th Infantry Brigade"}
+107 = {"II/158th Infantry Brigade"}
+108 = {"III/158th Infantry Brigade"}
+109 = {"I/159th Infantry Brigade"}
+110 = {"II/159th Infantry Brigade"}
+111 = {"III/159th Infantry Brigade"}
+112 = {"I/160th Infantry Brigade"}
+113 = {"II/160th Infantry Brigade"}
+114 = {"III/160th Infantry Brigade"}
+115 = {"I/161st Infantry Brigade"}
+116 = {"II/161st Infantry Brigade"}
+117 = {"III/161st Infantry Brigade"}
+118 = {"I/162nd Infantry Brigade"}
+119 = {"II/162nd Infantry Brigade"}
+120 = {"III/162nd Infantry Brigade"}
+121 = {"I/163rd Infantry Brigade"}
+122 = {"II/163rd Infantry Brigade"}
+123 = {"III/163rd Infantry Brigade"}
+124 = {"I/164th Infantry Brigade"}
+125 = {"II/164th Infantry Brigade"}
+126 = {"III/164th Infantry Brigade"}
+127 = {"I/165th Infantry Brigade"}
+128 = {"II/165th Infantry Brigade"}
+129 = {"III/165th Infantry Brigade"}
+130 = {"I/166th Infantry Brigade"}
+131 = {"II/166th Infantry Brigade"}
+132 = {"III/166th Infantry Brigade"}
+133 = {"I/167th Infantry Brigade"}
+134 = {"II/167th Infantry Brigade"}
+135 = {"III/167th Infantry Brigade"}
+136 = {"I/168th Infantry Brigade"}
+137 = {"II/168th Infantry Brigade"}
+138 = {"III/168th Infantry Brigade"}
+139 = {"I/169th Infantry Brigade"}
+140 = {"II/169th Infantry Brigade"}
+141 = {"III/169th Infantry Brigade"}
+142 = {"I/170th Infantry Brigade"}
+143 = {"II/170th Infantry Brigade"}
+144 = {"III/170th Infantry Brigade"}
+145 = {"I/171st Infantry Brigade"}
+146 = {"II/171st Infantry Brigade"}
+147 = {"III/171st Infantry Brigade"}
+148 = {"I/172nd Infantry Brigade"}
+149 = {"II/172nd Infantry Brigade"}
+150 = {"III/172nd Infantry Brigade"}
+151 = {"I/173rd Infantry Brigade"}
+152 = {"II/173rd Infantry Brigade"}
+153 = {"III/173rd Infantry Brigade"}
+154 = {"I/174th Infantry Brigade"}
+155 = {"II/174th Infantry Brigade"}
+156 = {"III/174th Infantry Brigade"}
+157 = {"I/175th Infantry Brigade"}
+158 = {"II/175th Infantry Brigade"}
+159 = {"III/175th Infantry Brigade"}
+160 = {"I/176th Infantry Brigade"}
+161 = {"II/176th Infantry Brigade"}
+162 = {"III/176th Infantry Brigade"}
+163 = {"I/177th Infantry Brigade"}
+164 = {"II/177th Infantry Brigade"}
+165 = {"III/177th Infantry Brigade"}
+166 = {"I/178th Infantry Brigade"}
+167 = {"II/178th Infantry Brigade"}
+168 = {"III/178th Infantry Brigade"}
+169 = {"I/179th Infantry Brigade"}
+170 = {"II/179th Infantry Brigade"}
+171 = {"III/179th Infantry Brigade"}
+172 = {"I/180th Infantry Brigade"}
+173 = {"II/180th Infantry Brigade"}
+174 = {"III/180th Infantry Brigade"}
+175 = {"I/181st Infantry Brigade"}
+176 = {"II/181st Infantry Brigade"}
+177 = {"III/181st Infantry Brigade"}
+178 = {"I/182nd Infantry Brigade"}
+179 = {"II/182nd Infantry Brigade"}
+180 = {"III/182nd Infantry Brigade"}
+181 = {"I/183rd Infantry Brigade"}
+182 = {"II/183rd Infantry Brigade"}
+183 = {"III/183rd Infantry Brigade"}
+184 = {"I/184th Infantry Brigade"}
+185 = {"II/184th Infantry Brigade"}
+186 = {"III/184th Infantry Brigade"}
+187 = {"I/185th Infantry Brigade"}
+188 = {"II/185th Infantry Brigade"}
+189 = {"III/185th Infantry Brigade"}
+190 = {"I/186th Infantry Brigade"}
+191 = {"II/186th Infantry Brigade"}
+192 = {"III/186th Infantry Brigade"}
+193 = {"I/187th Infantry Brigade"}
+194 = {"II/187th Infantry Brigade"}
+195 = {"III/187th Infantry Brigade"}
+196 = {"I/188th Infantry Brigade"}
+197 = {"II/188th Infantry Brigade"}
+198 = {"III/188th Infantry Brigade"}
+199 = {"I/189th Infantry Brigade"}
+200 = {"II/189th Infantry Brigade"}
+201 = {"III/189th Infantry Brigade"}
+202 = {"I/190th Infantry Brigade"}
+203 = {"II/190th Infantry Brigade"}
+204 = {"III/190th Infantry Brigade"}
+205 = {"I/191st Infantry Brigade"}
+206 = {"II/191st Infantry Brigade"}
+207 = {"III/191st Infantry Brigade"}
+208 = {"I/192nd Infantry Brigade"}
+209 = {"II/192nd Infantry Brigade"}
+210 = {"III/192nd Infantry Brigade"}
+211 = {"I/193rd Infantry Brigade"}
+212 = {"II/193rd Infantry Brigade"}
+213 = {"III/193rd Infantry Brigade"}
+214 = {"I/194th Infantry Brigade"}
+215 = {"II/194th Infantry Brigade"}
+216 = {"III/194th Infantry Brigade"}
+217 = {"I/195th Infantry Brigade"}
+218 = {"II/195th Infantry Brigade"}
+219 = {"III/195th Infantry Brigade"}
+220 = {"I/196th Infantry Brigade"}
+221 = {"II/196th Infantry Brigade"}
+222 = {"III/196th Infantry Brigade"}
+223 = {"I/197th Infantry Brigade"}
+224 = {"II/197th Infantry Brigade"}
+225 = {"III/197th Infantry Brigade"}
+226 = {"I/198th Infantry Brigade"}
+227 = {"II/198th Infantry Brigade"}
+228 = {"III/198th Infantry Brigade"}
+229 = {"I/199th Infantry Brigade"}
+230 = {"II/199th Infantry Brigade"}
+231 = {"III/199th Infantry Brigade"}
+232 = {"I/200th Infantry Brigade"}
+233 = {"II/200th Infantry Brigade"}
+234 = {"III/200th Infantry Brigade"}
+235 = {"I/201st Infantry Brigade"}
+236 = {"II/201st Infantry Brigade"}
+237 = {"III/201st Infantry Brigade"}
+238 = {"I/202nd Infantry Brigade"}
+239 = {"II/202nd Infantry Brigade"}
+240 = {"III/202nd Infantry Brigade"}
+241 = {"I/203rd Infantry Brigade"}
+242 = {"II/203rd Infantry Brigade"}
+243 = {"III/203rd Infantry Brigade"}
+244 = {"I/204th Infantry Brigade"}
+245 = {"II/204th Infantry Brigade"}
+246 = {"III/204th Infantry Brigade"}
+247 = {"I/205th Infantry Brigade"}
+248 = {"II/205th Infantry Brigade"}
+249 = {"III/205th Infantry Brigade"}
+250 = {"I/206th Infantry Brigade"}
+251 = {"II/206th Infantry Brigade"}
+252 = {"III/206th Infantry Brigade"}
+253 = {"I/207th Infantry Brigade"}
+254 = {"II/207th Infantry Brigade"}
+255 = {"III/207th Infantry Brigade"}
+256 = {"I/208th Infantry Brigade"}
+257 = {"II/208th Infantry Brigade"}
+258 = {"III/208th Infantry Brigade"}
+259 = {"I/209th Infantry Brigade"}
+260 = {"II/209th Infantry Brigade"}
+261 = {"III/209th Infantry Brigade"}
+262 = {"I/210th Infantry Brigade"}
+263 = {"II/210th Infantry Brigade"}
+264 = {"III/210th Infantry Brigade"}
+265 = {"I/211st Infantry Brigade"}
+266 = {"II/211st Infantry Brigade"}
+267 = {"III/211st Infantry Brigade"}
+268 = {"I/212nd Infantry Brigade"}
+269 = {"II/212nd Infantry Brigade"}
+270 = {"III/212nd Infantry Brigade"}
+271 = {"I/213rd Infantry Brigade"}
+272 = {"II/213rd Infantry Brigade"}
+273 = {"III/213rd Infantry Brigade"}
+274 = {"I/214th Infantry Brigade"}
+275 = {"II/214th Infantry Brigade"}
+276 = {"III/214th Infantry Brigade"}
+277 = {"I/215th Infantry Brigade"}
+278 = {"II/215th Infantry Brigade"}
+279 = {"III/215th Infantry Brigade"}
+280 = {"I/216th Infantry Brigade"}
+281 = {"II/216th Infantry Brigade"}
+282 = {"III/216th Infantry Brigade"}
+283 = {"I/217th Infantry Brigade"}
+284 = {"II/217th Infantry Brigade"}
+285 = {"III/217th Infantry Brigade"}
+286 = {"I/218th Infantry Brigade"}
+287 = {"II/218th Infantry Brigade"}
+288 = {"III/218th Infantry Brigade"}
+289 = {"I/219th Infantry Brigade"}
+290 = {"II/219th Infantry Brigade"}
+291 = {"III/219th Infantry Brigade"}
+292 = {"I/220th Infantry Brigade"}
+293 = {"II/220th Infantry Brigade"}
+294 = {"III/220th Infantry Brigade"}
+295 = {"I/221st Infantry Brigade"}
+296 = {"II/221st Infantry Brigade"}
+297 = {"III/221st Infantry Brigade"}
+298 = {"I/222nd Infantry Brigade"}
+299 = {"II/222nd Infantry Brigade"}
+300 = {"III/222nd Infantry Brigade"}
 		
 	}
 }
-AEF_CAN_01 = 
-{
-	name = "Canadian Infantry Battalions"
-
-	for_countries = { AEF }
-
-	can_use = { always = yes }
-
-	division_types = { "infantry" }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { GER_Gar_01 }
-
-	fallback_name = "%d. Bn of Canada"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-
-
-		
-	}
-}
-AEF_TANK_01 = 
+AEF_TANK_ENG = 
 {
 	name = "British Armoured Units"
 
@@ -162,7 +407,7 @@ AEF_TANK_01 =
 
 	can_use = { always = yes }
 
-	division_types = { "infantry" }
+	division_types = { "medium_armor" }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { GER_Gar_01 }
@@ -174,11 +419,1330 @@ AEF_TANK_01 =
 	ordered =
 	{
 		
-		# This list covers both the Citizens Military Force (CMF) and Australian Imperial Force (AIF) infantry divisions either extant during the interwar years or raised during the war.  It'd be possible to split the lists in two (CMF and AIF divisions having their own list, as CMF divisions only served in Australia and Australian territories (or thereabouts) but that's probably overkill, given they all had the same naming convention - probably makes more sense for the player in-game to have their militia and infantry divisions use the same name list, as far as I understand the system).
-		# Australia only raised 12 infantry divisions historically.  This list is longer to avoid things like the 22th Infantry Division for Australias that build lots of divisions.
+		1 = {"I/45th Armoured Brigade"}
+2 = {"II/45th Armoured Brigade"}
+3 = {"III/45th Armoured Brigade"}
+4 = {"I/46th Armoured Brigade"}
+5 = {"II/46th Armoured Brigade"}
+6 = {"III/46th Armoured Brigade"}
+7 = {"I/47th Armoured Brigade"}
+8 = {"II/47th Armoured Brigade"}
+9 = {"III/47th Armoured Brigade"}
+10 = {"I/48th Armoured Brigade"}
+11 = {"II/48th Armoured Brigade"}
+12 = {"III/48th Armoured Brigade"}
+13 = {"I/49th Armoured Brigade"}
+14 = {"II/49th Armoured Brigade"}
+15 = {"III/49th Armoured Brigade"}
+16 = {"I/50th Armoured Brigade"}
+17 = {"II/50th Armoured Brigade"}
+18 = {"III/50th Armoured Brigade"}
+19 = {"I/51st Armoured Brigade"}
+20 = {"II/51st Armoured Brigade"}
+21 = {"III/51st Armoured Brigade"}
+22 = {"I/52nd Armoured Brigade"}
+23 = {"II/52nd Armoured Brigade"}
+24 = {"III/52nd Armoured Brigade"}
+25 = {"I/53rd Armoured Brigade"}
+26 = {"II/53rd Armoured Brigade"}
+27 = {"III/53rd Armoured Brigade"}
+28 = {"I/54th Armoured Brigade"}
+29 = {"II/54th Armoured Brigade"}
+30 = {"III/54th Armoured Brigade"}
+31 = {"I/55th Armoured Brigade"}
+32 = {"II/55th Armoured Brigade"}
+33 = {"III/55th Armoured Brigade"}
+34 = {"I/56th Armoured Brigade"}
+35 = {"II/56th Armoured Brigade"}
+36 = {"III/56th Armoured Brigade"}
+37 = {"I/57th Armoured Brigade"}
+38 = {"II/57th Armoured Brigade"}
+39 = {"III/57th Armoured Brigade"}
+40 = {"I/58th Armoured Brigade"}
+41 = {"II/58th Armoured Brigade"}
+42 = {"III/58th Armoured Brigade"}
+43 = {"I/59th Armoured Brigade"}
+44 = {"II/59th Armoured Brigade"}
+45 = {"III/59th Armoured Brigade"}
+46 = {"I/60th Armoured Brigade"}
+47 = {"II/60th Armoured Brigade"}
+48 = {"III/60th Armoured Brigade"}
+49 = {"I/61st Armoured Brigade"}
+50 = {"II/61st Armoured Brigade"}
+51 = {"III/61st Armoured Brigade"}
+52 = {"I/62nd Armoured Brigade"}
+53 = {"II/62nd Armoured Brigade"}
+54 = {"III/62nd Armoured Brigade"}
+55 = {"I/63rd Armoured Brigade"}
+56 = {"II/63rd Armoured Brigade"}
+57 = {"III/63rd Armoured Brigade"}
+58 = {"I/64th Armoured Brigade"}
+59 = {"II/64th Armoured Brigade"}
+60 = {"III/64th Armoured Brigade"}
 	}
 }
-AEF_TANK_02 = 
+AEF_ANTITANK_ENG = 
+{
+	name = "British AT Units"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "medium_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d Royal AT Tank Regiment"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = {"55th Anti-Tank Regiment"}
+2 = {"56th Anti-Tank Regiment"}
+3 = {"57th Anti-Tank Regiment"}
+4 = {"58th Anti-Tank Regiment"}
+5 = {"59th Anti-Tank Regiment"}
+6 = {"60th Anti-Tank Regiment"}
+7 = {"61st Anti-Tank Regiment"}
+8 = {"62nd Anti-Tank Regiment"}
+9 = {"63rd Anti-Tank Regiment"}
+10 = {"64th Anti-Tank Regiment"}
+11 = {"65th Anti-Tank Regiment"}
+12 = {"66th Anti-Tank Regiment"}
+13 = {"67th Anti-Tank Regiment"}
+14 = {"68th Anti-Tank Regiment"}
+15 = {"69th Anti-Tank Regiment"}
+16 = {"70th Anti-Tank Regiment"}
+17 = {"71st Anti-Tank Regiment"}
+18 = {"72nd Anti-Tank Regiment"}
+19 = {"73rd Anti-Tank Regiment"}
+20 = {"74th Anti-Tank Regiment"}
+21 = {"75th Anti-Tank Regiment"}
+22 = {"76th Anti-Tank Regiment"}
+23 = {"77th Anti-Tank Regiment"}
+24 = {"78th Anti-Tank Regiment"}
+25 = {"79th Anti-Tank Regiment"}
+26 = {"80th Anti-Tank Regiment"}
+27 = {"81st Anti-Tank Regiment"}
+28 = {"82nd Anti-Tank Regiment"}
+29 = {"83rd Anti-Tank Regiment"}
+30 = {"84th Anti-Tank Regiment"}
+31 = {"85th Anti-Tank Regiment"}
+32 = {"86th Anti-Tank Regiment"}
+33 = {"87th Anti-Tank Regiment"}
+34 = {"88th Anti-Tank Regiment"}
+35 = {"89th Anti-Tank Regiment"}
+36 = {"90th Anti-Tank Regiment"}
+37 = {"91st Anti-Tank Regiment"}
+38 = {"92nd Anti-Tank Regiment"}
+39 = {"93rd Anti-Tank Regiment"}
+40 = {"94th Anti-Tank Regiment"}
+
+	}
+}
+AEF_ART = 
+{
+	name = "General ART Units"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d Artillery Regiment"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = {"I/149th Artillery Regiment"}
+2 = {"II/149th Artillery Regiment"}
+3 = {"III/149th Artillery Regiment"}
+4 = {"I/150th Artillery Regiment"}
+5 = {"II/150th Artillery Regiment"}
+6 = {"III/150th Artillery Regiment"}
+7 = {"I/151st Artillery Regiment"}
+8 = {"II/151st Artillery Regiment"}
+9 = {"III/151st Artillery Regiment"}
+10 = {"I/152nd Artillery Regiment"}
+11 = {"II/152nd Artillery Regiment"}
+12 = {"III/152nd Artillery Regiment"}
+13 = {"I/153rd Artillery Regiment"}
+14 = {"II/153rd Artillery Regiment"}
+15 = {"III/153rd Artillery Regiment"}
+16 = {"I/154th Artillery Regiment"}
+17 = {"II/154th Artillery Regiment"}
+18 = {"III/154th Artillery Regiment"}
+19 = {"I/155th Artillery Regiment"}
+20 = {"II/155th Artillery Regiment"}
+21 = {"III/155th Artillery Regiment"}
+22 = {"I/156th Artillery Regiment"}
+23 = {"II/156th Artillery Regiment"}
+24 = {"III/156th Artillery Regiment"}
+25 = {"I/157th Artillery Regiment"}
+26 = {"II/157th Artillery Regiment"}
+27 = {"III/157th Artillery Regiment"}
+28 = {"I/158th Artillery Regiment"}
+29 = {"II/158th Artillery Regiment"}
+30 = {"III/158th Artillery Regiment"}
+31 = {"I/159th Artillery Regiment"}
+32 = {"II/159th Artillery Regiment"}
+33 = {"III/159th Artillery Regiment"}
+34 = {"I/160th Artillery Regiment"}
+35 = {"II/160th Artillery Regiment"}
+36 = {"III/160th Artillery Regiment"}
+37 = {"I/161st Artillery Regiment"}
+38 = {"II/161st Artillery Regiment"}
+39 = {"III/161st Artillery Regiment"}
+40 = {"I/162nd Artillery Regiment"}
+41 = {"II/162nd Artillery Regiment"}
+42 = {"III/162nd Artillery Regiment"}
+43 = {"I/163rd Artillery Regiment"}
+44 = {"II/163rd Artillery Regiment"}
+45 = {"III/163rd Artillery Regiment"}
+46 = {"I/164th Artillery Regiment"}
+47 = {"II/164th Artillery Regiment"}
+48 = {"III/164th Artillery Regiment"}
+49 = {"I/165th Artillery Regiment"}
+50 = {"II/165th Artillery Regiment"}
+51 = {"III/165th Artillery Regiment"}
+52 = {"I/166th Artillery Regiment"}
+53 = {"II/166th Artillery Regiment"}
+54 = {"III/166th Artillery Regiment"}
+55 = {"I/167th Artillery Regiment"}
+56 = {"II/167th Artillery Regiment"}
+57 = {"III/167th Artillery Regiment"}
+58 = {"I/168th Artillery Regiment"}
+59 = {"II/168th Artillery Regiment"}
+60 = {"III/168th Artillery Regiment"}
+61 = {"I/169th Artillery Regiment"}
+62 = {"II/169th Artillery Regiment"}
+63 = {"III/169th Artillery Regiment"}
+64 = {"I/170th Artillery Regiment"}
+65 = {"II/170th Artillery Regiment"}
+66 = {"III/170th Artillery Regiment"}
+67 = {"I/171st Artillery Regiment"}
+68 = {"II/171st Artillery Regiment"}
+69 = {"III/171st Artillery Regiment"}
+70 = {"I/172nd Artillery Regiment"}
+71 = {"II/172nd Artillery Regiment"}
+72 = {"III/172nd Artillery Regiment"}
+73 = {"I/173rd Artillery Regiment"}
+74 = {"II/173rd Artillery Regiment"}
+75 = {"III/173rd Artillery Regiment"}
+76 = {"I/174th Artillery Regiment"}
+77 = {"II/174th Artillery Regiment"}
+78 = {"III/174th Artillery Regiment"}
+79 = {"I/175th Artillery Regiment"}
+80 = {"II/175th Artillery Regiment"}
+81 = {"III/175th Artillery Regiment"}
+82 = {"I/176th Artillery Regiment"}
+83 = {"II/176th Artillery Regiment"}
+84 = {"III/176th Artillery Regiment"}
+85 = {"I/177th Artillery Regiment"}
+86 = {"II/177th Artillery Regiment"}
+87 = {"III/177th Artillery Regiment"}
+88 = {"I/178th Artillery Regiment"}
+89 = {"II/178th Artillery Regiment"}
+90 = {"III/178th Artillery Regiment"}
+91 = {"I/179th Artillery Regiment"}
+92 = {"II/179th Artillery Regiment"}
+93 = {"III/179th Artillery Regiment"}
+94 = {"I/180th Artillery Regiment"}
+95 = {"II/180th Artillery Regiment"}
+96 = {"III/180th Artillery Regiment"}
+97 = {"I/181st Artillery Regiment"}
+98 = {"II/181st Artillery Regiment"}
+99 = {"III/181st Artillery Regiment"}
+100 = {"I/182nd Artillery Regiment"}
+101 = {"II/182nd Artillery Regiment"}
+102 = {"III/182nd Artillery Regiment"}
+103 = {"I/183rd Artillery Regiment"}
+104 = {"II/183rd Artillery Regiment"}
+105 = {"III/183rd Artillery Regiment"}
+106 = {"I/184th Artillery Regiment"}
+107 = {"II/184th Artillery Regiment"}
+108 = {"III/184th Artillery Regiment"}
+109 = {"I/185th Artillery Regiment"}
+110 = {"II/185th Artillery Regiment"}
+111 = {"III/185th Artillery Regiment"}
+112 = {"I/186th Artillery Regiment"}
+113 = {"II/186th Artillery Regiment"}
+114 = {"III/186th Artillery Regiment"}
+115 = {"I/187th Artillery Regiment"}
+116 = {"II/187th Artillery Regiment"}
+117 = {"III/187th Artillery Regiment"}
+118 = {"I/188th Artillery Regiment"}
+119 = {"II/188th Artillery Regiment"}
+120 = {"III/188th Artillery Regiment"}
+121 = {"I/189th Artillery Regiment"}
+122 = {"II/189th Artillery Regiment"}
+123 = {"III/189th Artillery Regiment"}
+124 = {"I/190th Artillery Regiment"}
+125 = {"II/190th Artillery Regiment"}
+126 = {"III/190th Artillery Regiment"}
+127 = {"I/191st Artillery Regiment"}
+128 = {"II/191st Artillery Regiment"}
+129 = {"III/191st Artillery Regiment"}
+130 = {"I/192nd Artillery Regiment"}
+131 = {"II/192nd Artillery Regiment"}
+132 = {"III/192nd Artillery Regiment"}
+133 = {"I/193rd Artillery Regiment"}
+134 = {"II/193rd Artillery Regiment"}
+135 = {"III/193rd Artillery Regiment"}
+136 = {"I/194th Artillery Regiment"}
+137 = {"II/194th Artillery Regiment"}
+138 = {"III/194th Artillery Regiment"}
+139 = {"I/195th Artillery Regiment"}
+140 = {"II/195th Artillery Regiment"}
+141 = {"III/195th Artillery Regiment"}
+142 = {"I/196th Artillery Regiment"}
+143 = {"II/196th Artillery Regiment"}
+144 = {"III/196th Artillery Regiment"}
+145 = {"I/197th Artillery Regiment"}
+146 = {"II/197th Artillery Regiment"}
+147 = {"III/197th Artillery Regiment"}
+148 = {"I/198th Artillery Regiment"}
+149 = {"II/198th Artillery Regiment"}
+150 = {"III/198th Artillery Regiment"}
+151 = {"I/199th Artillery Regiment"}
+152 = {"II/199th Artillery Regiment"}
+153 = {"III/199th Artillery Regiment"}
+154 = {"I/200th Artillery Regiment"}
+155 = {"II/200th Artillery Regiment"}
+156 = {"III/200th Artillery Regiment"}
+157 = {"I/201st Artillery Regiment"}
+158 = {"II/201st Artillery Regiment"}
+159 = {"III/201st Artillery Regiment"}
+160 = {"I/202nd Artillery Regiment"}
+161 = {"II/202nd Artillery Regiment"}
+162 = {"III/202nd Artillery Regiment"}
+163 = {"I/203rd Artillery Regiment"}
+164 = {"II/203rd Artillery Regiment"}
+165 = {"III/203rd Artillery Regiment"}
+166 = {"I/204th Artillery Regiment"}
+167 = {"II/204th Artillery Regiment"}
+168 = {"III/204th Artillery Regiment"}
+169 = {"I/205th Artillery Regiment"}
+170 = {"II/205th Artillery Regiment"}
+171 = {"III/205th Artillery Regiment"}
+172 = {"I/206th Artillery Regiment"}
+173 = {"II/206th Artillery Regiment"}
+174 = {"III/206th Artillery Regiment"}
+175 = {"I/207th Artillery Regiment"}
+176 = {"II/207th Artillery Regiment"}
+177 = {"III/207th Artillery Regiment"}
+178 = {"I/208th Artillery Regiment"}
+179 = {"II/208th Artillery Regiment"}
+180 = {"III/208th Artillery Regiment"}
+181 = {"I/209th Artillery Regiment"}
+182 = {"II/209th Artillery Regiment"}
+183 = {"III/209th Artillery Regiment"}
+184 = {"I/210th Artillery Regiment"}
+185 = {"II/210th Artillery Regiment"}
+186 = {"III/210th Artillery Regiment"}
+187 = {"I/211st Artillery Regiment"}
+188 = {"II/211st Artillery Regiment"}
+189 = {"III/211st Artillery Regiment"}
+190 = {"I/212nd Artillery Regiment"}
+191 = {"II/212nd Artillery Regiment"}
+192 = {"III/212nd Artillery Regiment"}
+193 = {"I/213rd Artillery Regiment"}
+194 = {"II/213rd Artillery Regiment"}
+195 = {"III/213rd Artillery Regiment"}
+196 = {"I/214th Artillery Regiment"}
+197 = {"II/214th Artillery Regiment"}
+198 = {"III/214th Artillery Regiment"}
+199 = {"I/215th Artillery Regiment"}
+200 = {"II/215th Artillery Regiment"}
+201 = {"III/215th Artillery Regiment"}
+202 = {"I/216th Artillery Regiment"}
+203 = {"II/216th Artillery Regiment"}
+204 = {"III/216th Artillery Regiment"}
+205 = {"I/217th Artillery Regiment"}
+206 = {"II/217th Artillery Regiment"}
+207 = {"III/217th Artillery Regiment"}
+208 = {"I/218th Artillery Regiment"}
+209 = {"II/218th Artillery Regiment"}
+210 = {"III/218th Artillery Regiment"}
+211 = {"I/219th Artillery Regiment"}
+212 = {"II/219th Artillery Regiment"}
+213 = {"III/219th Artillery Regiment"}
+214 = {"I/220th Artillery Regiment"}
+215 = {"II/220th Artillery Regiment"}
+216 = {"III/220th Artillery Regiment"}
+217 = {"I/221st Artillery Regiment"}
+218 = {"II/221st Artillery Regiment"}
+219 = {"III/221st Artillery Regiment"}
+220 = {"I/222nd Artillery Regiment"}
+221 = {"II/222nd Artillery Regiment"}
+222 = {"III/222nd Artillery Regiment"}
+223 = {"I/223rd Artillery Regiment"}
+224 = {"II/223rd Artillery Regiment"}
+225 = {"III/223rd Artillery Regiment"}
+226 = {"I/224th Artillery Regiment"}
+227 = {"II/224th Artillery Regiment"}
+228 = {"III/224th Artillery Regiment"}
+229 = {"I/225th Artillery Regiment"}
+230 = {"II/225th Artillery Regiment"}
+231 = {"III/225th Artillery Regiment"}
+232 = {"I/226th Artillery Regiment"}
+233 = {"II/226th Artillery Regiment"}
+234 = {"III/226th Artillery Regiment"}
+235 = {"I/227th Artillery Regiment"}
+236 = {"II/227th Artillery Regiment"}
+237 = {"III/227th Artillery Regiment"}
+238 = {"I/228th Artillery Regiment"}
+239 = {"II/228th Artillery Regiment"}
+240 = {"III/228th Artillery Regiment"}
+
+	}
+}
+AEF_INF_USA = 
+{
+	name = "USA INF Units"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d Infantry Regiment"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+1 = {"I/249th Infantry Regiment"}
+2 = {"II/249th Infantry Regiment"}
+3 = {"III/249th Infantry Regiment"}
+4 = {"I/250th Infantry Regiment"}
+5 = {"II/250th Infantry Regiment"}
+6 = {"III/250th Infantry Regiment"}
+7 = {"I/251st Infantry Regiment"}
+8 = {"II/251st Infantry Regiment"}
+9 = {"III/251st Infantry Regiment"}
+10 = {"I/252nd Infantry Regiment"}
+11 = {"II/252nd Infantry Regiment"}
+12 = {"III/252nd Infantry Regiment"}
+13 = {"I/253rd Infantry Regiment"}
+14 = {"II/253rd Infantry Regiment"}
+15 = {"III/253rd Infantry Regiment"}
+16 = {"I/254th Infantry Regiment"}
+17 = {"II/254th Infantry Regiment"}
+18 = {"III/254th Infantry Regiment"}
+19 = {"I/255th Infantry Regiment"}
+20 = {"II/255th Infantry Regiment"}
+21 = {"III/255th Infantry Regiment"}
+22 = {"I/256th Infantry Regiment"}
+23 = {"II/256th Infantry Regiment"}
+24 = {"III/256th Infantry Regiment"}
+25 = {"I/257th Infantry Regiment"}
+26 = {"II/257th Infantry Regiment"}
+27 = {"III/257th Infantry Regiment"}
+28 = {"I/258th Infantry Regiment"}
+29 = {"II/258th Infantry Regiment"}
+30 = {"III/258th Infantry Regiment"}
+31 = {"I/259th Infantry Regiment"}
+32 = {"II/259th Infantry Regiment"}
+33 = {"III/259th Infantry Regiment"}
+34 = {"I/260th Infantry Regiment"}
+35 = {"II/260th Infantry Regiment"}
+36 = {"III/260th Infantry Regiment"}
+37 = {"I/261st Infantry Regiment"}
+38 = {"II/261st Infantry Regiment"}
+39 = {"III/261st Infantry Regiment"}
+40 = {"I/262nd Infantry Regiment"}
+41 = {"II/262nd Infantry Regiment"}
+42 = {"III/262nd Infantry Regiment"}
+43 = {"I/263rd Infantry Regiment"}
+44 = {"II/263rd Infantry Regiment"}
+45 = {"III/263rd Infantry Regiment"}
+46 = {"I/264th Infantry Regiment"}
+47 = {"II/264th Infantry Regiment"}
+48 = {"III/264th Infantry Regiment"}
+49 = {"I/265th Infantry Regiment"}
+50 = {"II/265th Infantry Regiment"}
+51 = {"III/265th Infantry Regiment"}
+52 = {"I/266th Infantry Regiment"}
+53 = {"II/266th Infantry Regiment"}
+54 = {"III/266th Infantry Regiment"}
+55 = {"I/267th Infantry Regiment"}
+56 = {"II/267th Infantry Regiment"}
+57 = {"III/267th Infantry Regiment"}
+58 = {"I/268th Infantry Regiment"}
+59 = {"II/268th Infantry Regiment"}
+60 = {"III/268th Infantry Regiment"}
+61 = {"I/269th Infantry Regiment"}
+62 = {"II/269th Infantry Regiment"}
+63 = {"III/269th Infantry Regiment"}
+64 = {"I/270th Infantry Regiment"}
+65 = {"II/270th Infantry Regiment"}
+66 = {"III/270th Infantry Regiment"}
+67 = {"I/271st Infantry Regiment"}
+68 = {"II/271st Infantry Regiment"}
+69 = {"III/271st Infantry Regiment"}
+70 = {"I/272nd Infantry Regiment"}
+71 = {"II/272nd Infantry Regiment"}
+72 = {"III/272nd Infantry Regiment"}
+73 = {"I/273rd Infantry Regiment"}
+74 = {"II/273rd Infantry Regiment"}
+75 = {"III/273rd Infantry Regiment"}
+76 = {"I/274th Infantry Regiment"}
+77 = {"II/274th Infantry Regiment"}
+78 = {"III/274th Infantry Regiment"}
+79 = {"I/275th Infantry Regiment"}
+80 = {"II/275th Infantry Regiment"}
+81 = {"III/275th Infantry Regiment"}
+82 = {"I/276th Infantry Regiment"}
+83 = {"II/276th Infantry Regiment"}
+84 = {"III/276th Infantry Regiment"}
+85 = {"I/277th Infantry Regiment"}
+86 = {"II/277th Infantry Regiment"}
+87 = {"III/277th Infantry Regiment"}
+88 = {"I/278th Infantry Regiment"}
+89 = {"II/278th Infantry Regiment"}
+90 = {"III/278th Infantry Regiment"}
+91 = {"I/279th Infantry Regiment"}
+92 = {"II/279th Infantry Regiment"}
+93 = {"III/279th Infantry Regiment"}
+94 = {"I/280th Infantry Regiment"}
+95 = {"II/280th Infantry Regiment"}
+96 = {"III/280th Infantry Regiment"}
+97 = {"I/281st Infantry Regiment"}
+98 = {"II/281st Infantry Regiment"}
+99 = {"III/281st Infantry Regiment"}
+100 = {"I/282nd Infantry Regiment"}
+101 = {"II/282nd Infantry Regiment"}
+102 = {"III/282nd Infantry Regiment"}
+103 = {"I/283rd Infantry Regiment"}
+104 = {"II/283rd Infantry Regiment"}
+105 = {"III/283rd Infantry Regiment"}
+106 = {"I/284th Infantry Regiment"}
+107 = {"II/284th Infantry Regiment"}
+108 = {"III/284th Infantry Regiment"}
+109 = {"I/285th Infantry Regiment"}
+110 = {"II/285th Infantry Regiment"}
+111 = {"III/285th Infantry Regiment"}
+112 = {"I/286th Infantry Regiment"}
+113 = {"II/286th Infantry Regiment"}
+114 = {"III/286th Infantry Regiment"}
+115 = {"I/287th Infantry Regiment"}
+116 = {"II/287th Infantry Regiment"}
+117 = {"III/287th Infantry Regiment"}
+118 = {"I/288th Infantry Regiment"}
+119 = {"II/288th Infantry Regiment"}
+120 = {"III/288th Infantry Regiment"}
+121 = {"I/289th Infantry Regiment"}
+122 = {"II/289th Infantry Regiment"}
+123 = {"III/289th Infantry Regiment"}
+124 = {"I/290th Infantry Regiment"}
+125 = {"II/290th Infantry Regiment"}
+126 = {"III/290th Infantry Regiment"}
+127 = {"I/291st Infantry Regiment"}
+128 = {"II/291st Infantry Regiment"}
+129 = {"III/291st Infantry Regiment"}
+130 = {"I/292nd Infantry Regiment"}
+131 = {"II/292nd Infantry Regiment"}
+132 = {"III/292nd Infantry Regiment"}
+133 = {"I/293rd Infantry Regiment"}
+134 = {"II/293rd Infantry Regiment"}
+135 = {"III/293rd Infantry Regiment"}
+136 = {"I/294th Infantry Regiment"}
+137 = {"II/294th Infantry Regiment"}
+138 = {"III/294th Infantry Regiment"}
+139 = {"I/295th Infantry Regiment"}
+140 = {"II/295th Infantry Regiment"}
+141 = {"III/295th Infantry Regiment"}
+142 = {"I/296th Infantry Regiment"}
+143 = {"II/296th Infantry Regiment"}
+144 = {"III/296th Infantry Regiment"}
+145 = {"I/297th Infantry Regiment"}
+146 = {"II/297th Infantry Regiment"}
+147 = {"III/297th Infantry Regiment"}
+148 = {"I/298th Infantry Regiment"}
+149 = {"II/298th Infantry Regiment"}
+150 = {"III/298th Infantry Regiment"}
+151 = {"I/299th Infantry Regiment"}
+152 = {"II/299th Infantry Regiment"}
+153 = {"III/299th Infantry Regiment"}
+154 = {"I/300th Infantry Regiment"}
+155 = {"II/300th Infantry Regiment"}
+156 = {"III/300th Infantry Regiment"}
+157 = {"I/301st Infantry Regiment"}
+158 = {"II/301st Infantry Regiment"}
+159 = {"III/301st Infantry Regiment"}
+160 = {"I/302nd Infantry Regiment"}
+161 = {"II/302nd Infantry Regiment"}
+162 = {"III/302nd Infantry Regiment"}
+163 = {"I/303rd Infantry Regiment"}
+164 = {"II/303rd Infantry Regiment"}
+165 = {"III/303rd Infantry Regiment"}
+166 = {"I/304th Infantry Regiment"}
+167 = {"II/304th Infantry Regiment"}
+168 = {"III/304th Infantry Regiment"}
+169 = {"I/305th Infantry Regiment"}
+170 = {"II/305th Infantry Regiment"}
+171 = {"III/305th Infantry Regiment"}
+172 = {"I/306th Infantry Regiment"}
+173 = {"II/306th Infantry Regiment"}
+174 = {"III/306th Infantry Regiment"}
+175 = {"I/307th Infantry Regiment"}
+176 = {"II/307th Infantry Regiment"}
+177 = {"III/307th Infantry Regiment"}
+178 = {"I/308th Infantry Regiment"}
+179 = {"II/308th Infantry Regiment"}
+180 = {"III/308th Infantry Regiment"}
+181 = {"I/309th Infantry Regiment"}
+182 = {"II/309th Infantry Regiment"}
+183 = {"III/309th Infantry Regiment"}
+184 = {"I/310th Infantry Regiment"}
+185 = {"II/310th Infantry Regiment"}
+186 = {"III/310th Infantry Regiment"}
+187 = {"I/311st Infantry Regiment"}
+188 = {"II/311st Infantry Regiment"}
+189 = {"III/311st Infantry Regiment"}
+190 = {"I/312nd Infantry Regiment"}
+191 = {"II/312nd Infantry Regiment"}
+192 = {"III/312nd Infantry Regiment"}
+193 = {"I/313rd Infantry Regiment"}
+194 = {"II/313rd Infantry Regiment"}
+195 = {"III/313rd Infantry Regiment"}
+196 = {"I/314th Infantry Regiment"}
+197 = {"II/314th Infantry Regiment"}
+198 = {"III/314th Infantry Regiment"}
+199 = {"I/315th Infantry Regiment"}
+200 = {"II/315th Infantry Regiment"}
+201 = {"III/315th Infantry Regiment"}
+202 = {"I/316th Infantry Regiment"}
+203 = {"II/316th Infantry Regiment"}
+204 = {"III/316th Infantry Regiment"}
+205 = {"I/317th Infantry Regiment"}
+206 = {"II/317th Infantry Regiment"}
+207 = {"III/317th Infantry Regiment"}
+208 = {"I/318th Infantry Regiment"}
+209 = {"II/318th Infantry Regiment"}
+210 = {"III/318th Infantry Regiment"}
+211 = {"I/319th Infantry Regiment"}
+212 = {"II/319th Infantry Regiment"}
+213 = {"III/319th Infantry Regiment"}
+214 = {"I/320th Infantry Regiment"}
+215 = {"II/320th Infantry Regiment"}
+216 = {"III/320th Infantry Regiment"}
+217 = {"I/321st Infantry Regiment"}
+218 = {"II/321st Infantry Regiment"}
+219 = {"III/321st Infantry Regiment"}
+220 = {"I/322nd Infantry Regiment"}
+221 = {"II/322nd Infantry Regiment"}
+222 = {"III/322nd Infantry Regiment"}
+223 = {"I/323rd Infantry Regiment"}
+224 = {"II/323rd Infantry Regiment"}
+225 = {"III/323rd Infantry Regiment"}
+226 = {"I/324th Infantry Regiment"}
+227 = {"II/324th Infantry Regiment"}
+228 = {"III/324th Infantry Regiment"}
+229 = {"I/325th Infantry Regiment"}
+230 = {"II/325th Infantry Regiment"}
+231 = {"III/325th Infantry Regiment"}
+232 = {"I/326th Infantry Regiment"}
+233 = {"II/326th Infantry Regiment"}
+234 = {"III/326th Infantry Regiment"}
+235 = {"I/327th Infantry Regiment"}
+236 = {"II/327th Infantry Regiment"}
+237 = {"III/327th Infantry Regiment"}
+238 = {"I/328th Infantry Regiment"}
+239 = {"II/328th Infantry Regiment"}
+240 = {"III/328th Infantry Regiment"}
+241 = {"I/329th Infantry Regiment"}
+242 = {"II/329th Infantry Regiment"}
+243 = {"III/329th Infantry Regiment"}
+244 = {"I/330th Infantry Regiment"}
+245 = {"II/330th Infantry Regiment"}
+246 = {"III/330th Infantry Regiment"}
+247 = {"I/331st Infantry Regiment"}
+248 = {"II/331st Infantry Regiment"}
+249 = {"III/331st Infantry Regiment"}
+250 = {"I/332nd Infantry Regiment"}
+251 = {"II/332nd Infantry Regiment"}
+252 = {"III/332nd Infantry Regiment"}
+253 = {"I/333rd Infantry Regiment"}
+254 = {"II/333rd Infantry Regiment"}
+255 = {"III/333rd Infantry Regiment"}
+256 = {"I/334th Infantry Regiment"}
+257 = {"II/334th Infantry Regiment"}
+258 = {"III/334th Infantry Regiment"}
+259 = {"I/335th Infantry Regiment"}
+260 = {"II/335th Infantry Regiment"}
+261 = {"III/335th Infantry Regiment"}
+262 = {"I/336th Infantry Regiment"}
+263 = {"II/336th Infantry Regiment"}
+264 = {"III/336th Infantry Regiment"}
+265 = {"I/337th Infantry Regiment"}
+266 = {"II/337th Infantry Regiment"}
+267 = {"III/337th Infantry Regiment"}
+268 = {"I/338th Infantry Regiment"}
+269 = {"II/338th Infantry Regiment"}
+270 = {"III/338th Infantry Regiment"}
+271 = {"I/339th Infantry Regiment"}
+272 = {"II/339th Infantry Regiment"}
+273 = {"III/339th Infantry Regiment"}
+274 = {"I/340th Infantry Regiment"}
+275 = {"II/340th Infantry Regiment"}
+276 = {"III/340th Infantry Regiment"}
+277 = {"I/341st Infantry Regiment"}
+278 = {"II/341st Infantry Regiment"}
+279 = {"III/341st Infantry Regiment"}
+280 = {"I/342nd Infantry Regiment"}
+281 = {"II/342nd Infantry Regiment"}
+282 = {"III/342nd Infantry Regiment"}
+283 = {"I/343rd Infantry Regiment"}
+284 = {"II/343rd Infantry Regiment"}
+285 = {"III/343rd Infantry Regiment"}
+286 = {"I/344th Infantry Regiment"}
+287 = {"II/344th Infantry Regiment"}
+288 = {"III/344th Infantry Regiment"}
+289 = {"I/345th Infantry Regiment"}
+290 = {"II/345th Infantry Regiment"}
+291 = {"III/345th Infantry Regiment"}
+292 = {"I/346th Infantry Regiment"}
+293 = {"II/346th Infantry Regiment"}
+294 = {"III/346th Infantry Regiment"}
+295 = {"I/347th Infantry Regiment"}
+296 = {"II/347th Infantry Regiment"}
+297 = {"III/347th Infantry Regiment"}
+298 = {"I/348th Infantry Regiment"}
+299 = {"II/348th Infantry Regiment"}
+300 = {"III/348th Infantry Regiment"}
+301 = {"I/349th Infantry Regiment"}
+302 = {"II/349th Infantry Regiment"}
+303 = {"III/349th Infantry Regiment"}
+304 = {"I/350th Infantry Regiment"}
+305 = {"II/350th Infantry Regiment"}
+306 = {"III/350th Infantry Regiment"}
+307 = {"I/351st Infantry Regiment"}
+308 = {"II/351st Infantry Regiment"}
+309 = {"III/351st Infantry Regiment"}
+310 = {"I/352nd Infantry Regiment"}
+311 = {"II/352nd Infantry Regiment"}
+312 = {"III/352nd Infantry Regiment"}
+313 = {"I/353rd Infantry Regiment"}
+314 = {"II/353rd Infantry Regiment"}
+315 = {"III/353rd Infantry Regiment"}
+316 = {"I/354th Infantry Regiment"}
+317 = {"II/354th Infantry Regiment"}
+318 = {"III/354th Infantry Regiment"}
+319 = {"I/355th Infantry Regiment"}
+320 = {"II/355th Infantry Regiment"}
+321 = {"III/355th Infantry Regiment"}
+322 = {"I/356th Infantry Regiment"}
+323 = {"II/356th Infantry Regiment"}
+324 = {"III/356th Infantry Regiment"}
+325 = {"I/357th Infantry Regiment"}
+326 = {"II/357th Infantry Regiment"}
+327 = {"III/357th Infantry Regiment"}
+328 = {"I/358th Infantry Regiment"}
+329 = {"II/358th Infantry Regiment"}
+330 = {"III/358th Infantry Regiment"}
+331 = {"I/359th Infantry Regiment"}
+332 = {"II/359th Infantry Regiment"}
+333 = {"III/359th Infantry Regiment"}
+334 = {"I/360th Infantry Regiment"}
+335 = {"II/360th Infantry Regiment"}
+336 = {"III/360th Infantry Regiment"}
+337 = {"I/361st Infantry Regiment"}
+338 = {"II/361st Infantry Regiment"}
+339 = {"III/361st Infantry Regiment"}
+340 = {"I/362nd Infantry Regiment"}
+341 = {"II/362nd Infantry Regiment"}
+342 = {"III/362nd Infantry Regiment"}
+343 = {"I/363rd Infantry Regiment"}
+344 = {"II/363rd Infantry Regiment"}
+345 = {"III/363rd Infantry Regiment"}
+346 = {"I/364th Infantry Regiment"}
+347 = {"II/364th Infantry Regiment"}
+348 = {"III/364th Infantry Regiment"}
+349 = {"I/365th Infantry Regiment"}
+350 = {"II/365th Infantry Regiment"}
+351 = {"III/365th Infantry Regiment"}
+352 = {"I/366th Infantry Regiment"}
+353 = {"II/366th Infantry Regiment"}
+354 = {"III/366th Infantry Regiment"}
+355 = {"I/367th Infantry Regiment"}
+356 = {"II/367th Infantry Regiment"}
+357 = {"III/367th Infantry Regiment"}
+358 = {"I/368th Infantry Regiment"}
+359 = {"II/368th Infantry Regiment"}
+360 = {"III/368th Infantry Regiment"}
+361 = {"I/369th Infantry Regiment"}
+362 = {"II/369th Infantry Regiment"}
+363 = {"III/369th Infantry Regiment"}
+364 = {"I/370th Infantry Regiment"}
+365 = {"II/370th Infantry Regiment"}
+366 = {"III/370th Infantry Regiment"}
+367 = {"I/371st Infantry Regiment"}
+368 = {"II/371st Infantry Regiment"}
+369 = {"III/371st Infantry Regiment"}
+370 = {"I/372nd Infantry Regiment"}
+371 = {"II/372nd Infantry Regiment"}
+372 = {"III/372nd Infantry Regiment"}
+373 = {"I/373rd Infantry Regiment"}
+374 = {"II/373rd Infantry Regiment"}
+375 = {"III/373rd Infantry Regiment"}
+376 = {"I/374th Infantry Regiment"}
+377 = {"II/374th Infantry Regiment"}
+378 = {"III/374th Infantry Regiment"}
+379 = {"I/375th Infantry Regiment"}
+380 = {"II/375th Infantry Regiment"}
+381 = {"III/375th Infantry Regiment"}
+382 = {"I/376th Infantry Regiment"}
+383 = {"II/376th Infantry Regiment"}
+384 = {"III/376th Infantry Regiment"}
+385 = {"I/377th Infantry Regiment"}
+386 = {"II/377th Infantry Regiment"}
+387 = {"III/377th Infantry Regiment"}
+388 = {"I/378th Infantry Regiment"}
+389 = {"II/378th Infantry Regiment"}
+390 = {"III/378th Infantry Regiment"}
+391 = {"I/379th Infantry Regiment"}
+392 = {"II/379th Infantry Regiment"}
+393 = {"III/379th Infantry Regiment"}
+394 = {"I/380th Infantry Regiment"}
+395 = {"II/380th Infantry Regiment"}
+396 = {"III/380th Infantry Regiment"}
+397 = {"I/381st Infantry Regiment"}
+398 = {"II/381st Infantry Regiment"}
+399 = {"III/381st Infantry Regiment"}
+400 = {"I/382nd Infantry Regiment"}
+401 = {"II/382nd Infantry Regiment"}
+402 = {"III/382nd Infantry Regiment"}
+403 = {"I/383rd Infantry Regiment"}
+404 = {"II/383rd Infantry Regiment"}
+405 = {"III/383rd Infantry Regiment"}
+406 = {"I/384th Infantry Regiment"}
+407 = {"II/384th Infantry Regiment"}
+408 = {"III/384th Infantry Regiment"}
+409 = {"I/385th Infantry Regiment"}
+410 = {"II/385th Infantry Regiment"}
+411 = {"III/385th Infantry Regiment"}
+412 = {"I/386th Infantry Regiment"}
+413 = {"II/386th Infantry Regiment"}
+414 = {"III/386th Infantry Regiment"}
+415 = {"I/387th Infantry Regiment"}
+416 = {"II/387th Infantry Regiment"}
+417 = {"III/387th Infantry Regiment"}
+418 = {"I/388th Infantry Regiment"}
+419 = {"II/388th Infantry Regiment"}
+420 = {"III/388th Infantry Regiment"}
+421 = {"I/389th Infantry Regiment"}
+422 = {"II/389th Infantry Regiment"}
+423 = {"III/389th Infantry Regiment"}
+424 = {"I/390th Infantry Regiment"}
+425 = {"II/390th Infantry Regiment"}
+426 = {"III/390th Infantry Regiment"}
+427 = {"I/391st Infantry Regiment"}
+428 = {"II/391st Infantry Regiment"}
+429 = {"III/391st Infantry Regiment"}
+430 = {"I/392nd Infantry Regiment"}
+431 = {"II/392nd Infantry Regiment"}
+432 = {"III/392nd Infantry Regiment"}
+433 = {"I/393rd Infantry Regiment"}
+434 = {"II/393rd Infantry Regiment"}
+435 = {"III/393rd Infantry Regiment"}
+436 = {"I/394th Infantry Regiment"}
+437 = {"II/394th Infantry Regiment"}
+438 = {"III/394th Infantry Regiment"}
+439 = {"I/395th Infantry Regiment"}
+440 = {"II/395th Infantry Regiment"}
+441 = {"III/395th Infantry Regiment"}
+442 = {"I/396th Infantry Regiment"}
+443 = {"II/396th Infantry Regiment"}
+444 = {"III/396th Infantry Regiment"}
+445 = {"I/397th Infantry Regiment"}
+446 = {"II/397th Infantry Regiment"}
+447 = {"III/397th Infantry Regiment"}
+448 = {"I/398th Infantry Regiment"}
+449 = {"II/398th Infantry Regiment"}
+450 = {"III/398th Infantry Regiment"}
+451 = {"I/399th Infantry Regiment"}
+452 = {"II/399th Infantry Regiment"}
+453 = {"III/399th Infantry Regiment"}
+454 = {"I/400th Infantry Regiment"}
+455 = {"II/400th Infantry Regiment"}
+456 = {"III/400th Infantry Regiment"}
+457 = {"I/401st Infantry Regiment"}
+458 = {"II/401st Infantry Regiment"}
+459 = {"III/401st Infantry Regiment"}
+460 = {"I/402nd Infantry Regiment"}
+461 = {"II/402nd Infantry Regiment"}
+462 = {"III/402nd Infantry Regiment"}
+463 = {"I/403rd Infantry Regiment"}
+464 = {"II/403rd Infantry Regiment"}
+465 = {"III/403rd Infantry Regiment"}
+466 = {"I/404th Infantry Regiment"}
+467 = {"II/404th Infantry Regiment"}
+468 = {"III/404th Infantry Regiment"}
+469 = {"I/405th Infantry Regiment"}
+470 = {"II/405th Infantry Regiment"}
+471 = {"III/405th Infantry Regiment"}
+472 = {"I/406th Infantry Regiment"}
+473 = {"II/406th Infantry Regiment"}
+474 = {"III/406th Infantry Regiment"}
+475 = {"I/407th Infantry Regiment"}
+476 = {"II/407th Infantry Regiment"}
+477 = {"III/407th Infantry Regiment"}
+478 = {"I/408th Infantry Regiment"}
+479 = {"II/408th Infantry Regiment"}
+480 = {"III/408th Infantry Regiment"}
+481 = {"I/409th Infantry Regiment"}
+482 = {"II/409th Infantry Regiment"}
+483 = {"III/409th Infantry Regiment"}
+484 = {"I/410th Infantry Regiment"}
+485 = {"II/410th Infantry Regiment"}
+486 = {"III/410th Infantry Regiment"}
+487 = {"I/411st Infantry Regiment"}
+488 = {"II/411st Infantry Regiment"}
+489 = {"III/411st Infantry Regiment"}
+490 = {"I/412nd Infantry Regiment"}
+491 = {"II/412nd Infantry Regiment"}
+492 = {"III/412nd Infantry Regiment"}
+493 = {"I/413rd Infantry Regiment"}
+494 = {"II/413rd Infantry Regiment"}
+495 = {"III/413rd Infantry Regiment"}
+496 = {"I/414th Infantry Regiment"}
+497 = {"II/414th Infantry Regiment"}
+498 = {"III/414th Infantry Regiment"}
+499 = {"I/415th Infantry Regiment"}
+500 = {"II/415th Infantry Regiment"}
+501 = {"III/415th Infantry Regiment"}
+502 = {"I/416th Infantry Regiment"}
+503 = {"II/416th Infantry Regiment"}
+504 = {"III/416th Infantry Regiment"}
+505 = {"I/417th Infantry Regiment"}
+506 = {"II/417th Infantry Regiment"}
+507 = {"III/417th Infantry Regiment"}
+508 = {"I/418th Infantry Regiment"}
+509 = {"II/418th Infantry Regiment"}
+510 = {"III/418th Infantry Regiment"}
+511 = {"I/419th Infantry Regiment"}
+512 = {"II/419th Infantry Regiment"}
+513 = {"III/419th Infantry Regiment"}
+514 = {"I/420th Infantry Regiment"}
+515 = {"II/420th Infantry Regiment"}
+516 = {"III/420th Infantry Regiment"}
+517 = {"I/421st Infantry Regiment"}
+518 = {"II/421st Infantry Regiment"}
+519 = {"III/421st Infantry Regiment"}
+520 = {"I/422nd Infantry Regiment"}
+521 = {"II/422nd Infantry Regiment"}
+522 = {"III/422nd Infantry Regiment"}
+523 = {"I/423rd Infantry Regiment"}
+524 = {"II/423rd Infantry Regiment"}
+525 = {"III/423rd Infantry Regiment"}
+526 = {"I/424th Infantry Regiment"}
+527 = {"II/424th Infantry Regiment"}
+528 = {"III/424th Infantry Regiment"}
+529 = {"I/425th Infantry Regiment"}
+530 = {"II/425th Infantry Regiment"}
+531 = {"III/425th Infantry Regiment"}
+532 = {"I/426th Infantry Regiment"}
+533 = {"II/426th Infantry Regiment"}
+534 = {"III/426th Infantry Regiment"}
+535 = {"I/427th Infantry Regiment"}
+536 = {"II/427th Infantry Regiment"}
+537 = {"III/427th Infantry Regiment"}
+538 = {"I/428th Infantry Regiment"}
+539 = {"II/428th Infantry Regiment"}
+540 = {"III/428th Infantry Regiment"}
+541 = {"I/429th Infantry Regiment"}
+542 = {"II/429th Infantry Regiment"}
+543 = {"III/429th Infantry Regiment"}
+544 = {"I/430th Infantry Regiment"}
+545 = {"II/430th Infantry Regiment"}
+546 = {"III/430th Infantry Regiment"}
+547 = {"I/431st Infantry Regiment"}
+548 = {"II/431st Infantry Regiment"}
+549 = {"III/431st Infantry Regiment"}
+550 = {"I/432nd Infantry Regiment"}
+551 = {"II/432nd Infantry Regiment"}
+552 = {"III/432nd Infantry Regiment"}
+553 = {"I/433rd Infantry Regiment"}
+554 = {"II/433rd Infantry Regiment"}
+555 = {"III/433rd Infantry Regiment"}
+556 = {"I/434th Infantry Regiment"}
+557 = {"II/434th Infantry Regiment"}
+558 = {"III/434th Infantry Regiment"}
+559 = {"I/435th Infantry Regiment"}
+560 = {"II/435th Infantry Regiment"}
+561 = {"III/435th Infantry Regiment"}
+562 = {"I/436th Infantry Regiment"}
+563 = {"II/436th Infantry Regiment"}
+564 = {"III/436th Infantry Regiment"}
+565 = {"I/437th Infantry Regiment"}
+566 = {"II/437th Infantry Regiment"}
+567 = {"III/437th Infantry Regiment"}
+568 = {"I/438th Infantry Regiment"}
+569 = {"II/438th Infantry Regiment"}
+570 = {"III/438th Infantry Regiment"}
+571 = {"I/439th Infantry Regiment"}
+572 = {"II/439th Infantry Regiment"}
+573 = {"III/439th Infantry Regiment"}
+574 = {"I/440th Infantry Regiment"}
+575 = {"II/440th Infantry Regiment"}
+576 = {"III/440th Infantry Regiment"}
+577 = {"I/441st Infantry Regiment"}
+578 = {"II/441st Infantry Regiment"}
+579 = {"III/441st Infantry Regiment"}
+580 = {"I/442nd Infantry Regiment"}
+581 = {"II/442nd Infantry Regiment"}
+582 = {"III/442nd Infantry Regiment"}
+583 = {"I/443rd Infantry Regiment"}
+584 = {"II/443rd Infantry Regiment"}
+585 = {"III/443rd Infantry Regiment"}
+586 = {"I/444th Infantry Regiment"}
+587 = {"II/444th Infantry Regiment"}
+588 = {"III/444th Infantry Regiment"}
+589 = {"I/445th Infantry Regiment"}
+590 = {"II/445th Infantry Regiment"}
+591 = {"III/445th Infantry Regiment"}
+592 = {"I/446th Infantry Regiment"}
+593 = {"II/446th Infantry Regiment"}
+594 = {"III/446th Infantry Regiment"}
+595 = {"I/447th Infantry Regiment"}
+596 = {"II/447th Infantry Regiment"}
+597 = {"III/447th Infantry Regiment"}
+598 = {"I/448th Infantry Regiment"}
+599 = {"II/448th Infantry Regiment"}
+600 = {"III/448th Infantry Regiment"}
+
+	}
+}
+AEF_PARA_ENG = 
+{
+	name = "BRIT PARA Units"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d Infantry Regiment"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = {"I/1st Airborne Brigade"}
+2 = {"II/1st Airborne Brigade"}
+3 = {"III/1st Airborne Brigade"}
+4 = {"I/2nd Airborne Brigade"}
+5 = {"II/2nd Airborne Brigade"}
+6 = {"III/2nd Airborne Brigade"}
+7 = {"I/3rd Airborne Brigade"}
+8 = {"II/3rd Airborne Brigade"}
+9 = {"III/3rd Airborne Brigade"}
+10 = {"I/4th Airborne Brigade"}
+11 = {"II/4th Airborne Brigade"}
+12 = {"III/4th Airborne Brigade"}
+13 = {"I/5th Airborne Brigade"}
+14 = {"II/5th Airborne Brigade"}
+15 = {"III/5th Airborne Brigade"}
+16 = {"I/6th Airborne Brigade"}
+17 = {"II/6th Airborne Brigade"}
+18 = {"III/6th Airborne Brigade"}
+19 = {"I/7th Airborne Brigade"}
+20 = {"II/7th Airborne Brigade"}
+21 = {"III/7th Airborne Brigade"}
+22 = {"I/8th Airborne Brigade"}
+23 = {"II/8th Airborne Brigade"}
+24 = {"III/8th Airborne Brigade"}
+25 = {"I/9th Airborne Brigade"}
+26 = {"II/9th Airborne Brigade"}
+27 = {"III/9th Airborne Brigade"}
+28 = {"I/10th Airborne Brigade"}
+29 = {"II/10th Airborne Brigade"}
+30 = {"III/10th Airborne Brigade"}
+31 = {"I/11st Airborne Brigade"}
+32 = {"II/11st Airborne Brigade"}
+33 = {"III/11st Airborne Brigade"}
+34 = {"I/12nd Airborne Brigade"}
+35 = {"II/12nd Airborne Brigade"}
+36 = {"III/12nd Airborne Brigade"}
+37 = {"I/13rd Airborne Brigade"}
+38 = {"II/13rd Airborne Brigade"}
+39 = {"III/13rd Airborne Brigade"}
+40 = {"I/14th Airborne Brigade"}
+41 = {"II/14th Airborne Brigade"}
+42 = {"III/14th Airborne Brigade"}
+43 = {"I/15th Airborne Brigade"}
+44 = {"II/15th Airborne Brigade"}
+45 = {"III/15th Airborne Brigade"}
+46 = {"I/16th Airborne Brigade"}
+47 = {"II/16th Airborne Brigade"}
+48 = {"III/16th Airborne Brigade"}
+49 = {"I/17th Airborne Brigade"}
+50 = {"II/17th Airborne Brigade"}
+51 = {"III/17th Airborne Brigade"}
+52 = {"I/18th Airborne Brigade"}
+53 = {"II/18th Airborne Brigade"}
+54 = {"III/18th Airborne Brigade"}
+55 = {"I/19th Airborne Brigade"}
+56 = {"II/19th Airborne Brigade"}
+57 = {"III/19th Airborne Brigade"}
+58 = {"I/20th Airborne Brigade"}
+59 = {"II/20th Airborne Brigade"}
+60 = {"III/20th Airborne Brigade"}
+61 = {"I/21st Airborne Brigade"}
+62 = {"II/21st Airborne Brigade"}
+63 = {"III/21st Airborne Brigade"}
+64 = {"I/22nd Airborne Brigade"}
+65 = {"II/22nd Airborne Brigade"}
+66 = {"III/22nd Airborne Brigade"}
+67 = {"I/23rd Airborne Brigade"}
+68 = {"II/23rd Airborne Brigade"}
+69 = {"III/23rd Airborne Brigade"}
+70 = {"I/24th Airborne Brigade"}
+71 = {"II/24th Airborne Brigade"}
+72 = {"III/24th Airborne Brigade"}
+73 = {"I/25th Airborne Brigade"}
+74 = {"II/25th Airborne Brigade"}
+75 = {"III/25th Airborne Brigade"}
+76 = {"I/26th Airborne Brigade"}
+77 = {"II/26th Airborne Brigade"}
+78 = {"III/26th Airborne Brigade"}
+79 = {"I/27th Airborne Brigade"}
+80 = {"II/27th Airborne Brigade"}
+81 = {"III/27th Airborne Brigade"}
+82 = {"I/28th Airborne Brigade"}
+83 = {"II/28th Airborne Brigade"}
+84 = {"III/28th Airborne Brigade"}
+85 = {"I/29th Airborne Brigade"}
+86 = {"II/29th Airborne Brigade"}
+87 = {"III/29th Airborne Brigade"}
+88 = {"I/30th Airborne Brigade"}
+89 = {"II/30th Airborne Brigade"}
+90 = {"III/30th Airborne Brigade"}
+91 = {"I/31st Airborne Brigade"}
+92 = {"II/31st Airborne Brigade"}
+93 = {"III/31st Airborne Brigade"}
+94 = {"I/32nd Airborne Brigade"}
+95 = {"II/32nd Airborne Brigade"}
+96 = {"III/32nd Airborne Brigade"}
+97 = {"I/33rd Airborne Brigade"}
+98 = {"II/33rd Airborne Brigade"}
+99 = {"III/33rd Airborne Brigade"}
+100 = {"I/34th Airborne Brigade"}
+101 = {"II/34th Airborne Brigade"}
+102 = {"III/34th Airborne Brigade"}
+103 = {"I/35th Airborne Brigade"}
+104 = {"II/35th Airborne Brigade"}
+105 = {"III/35th Airborne Brigade"}
+106 = {"I/36th Airborne Brigade"}
+107 = {"II/36th Airborne Brigade"}
+108 = {"III/36th Airborne Brigade"}
+109 = {"I/37th Airborne Brigade"}
+110 = {"II/37th Airborne Brigade"}
+111 = {"III/37th Airborne Brigade"}
+112 = {"I/38th Airborne Brigade"}
+113 = {"II/38th Airborne Brigade"}
+114 = {"III/38th Airborne Brigade"}
+115 = {"I/39th Airborne Brigade"}
+116 = {"II/39th Airborne Brigade"}
+117 = {"III/39th Airborne Brigade"}
+118 = {"I/40th Airborne Brigade"}
+119 = {"II/40th Airborne Brigade"}
+120 = {"III/40th Airborne Brigade"}
+
+	}
+}
+AEF_PARA_USA = 
+{
+	name = "USA PARA Units"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d Infantry Regiment"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = {"I/1st Airborne Regiment"}
+2 = {"II/1st Airborne Regiment"}
+3 = {"III/1st Airborne Regiment"}
+4 = {"I/2nd Airborne Regiment"}
+5 = {"II/2nd Airborne Regiment"}
+6 = {"III/2nd Airborne Regiment"}
+7 = {"I/3rd Airborne Regiment"}
+8 = {"II/3rd Airborne Regiment"}
+9 = {"III/3rd Airborne Regiment"}
+10 = {"I/4th Airborne Regiment"}
+11 = {"II/4th Airborne Regiment"}
+12 = {"III/4th Airborne Regiment"}
+13 = {"I/5th Airborne Regiment"}
+14 = {"II/5th Airborne Regiment"}
+15 = {"III/5th Airborne Regiment"}
+16 = {"I/6th Airborne Regiment"}
+17 = {"II/6th Airborne Regiment"}
+18 = {"III/6th Airborne Regiment"}
+19 = {"I/7th Airborne Regiment"}
+20 = {"II/7th Airborne Regiment"}
+21 = {"III/7th Airborne Regiment"}
+22 = {"I/8th Airborne Regiment"}
+23 = {"II/8th Airborne Regiment"}
+24 = {"III/8th Airborne Regiment"}
+25 = {"I/9th Airborne Regiment"}
+26 = {"II/9th Airborne Regiment"}
+27 = {"III/9th Airborne Regiment"}
+28 = {"I/10th Airborne Regiment"}
+29 = {"II/10th Airborne Regiment"}
+30 = {"III/10th Airborne Regiment"}
+31 = {"I/11st Airborne Regiment"}
+32 = {"II/11st Airborne Regiment"}
+33 = {"III/11st Airborne Regiment"}
+34 = {"I/12nd Airborne Regiment"}
+35 = {"II/12nd Airborne Regiment"}
+36 = {"III/12nd Airborne Regiment"}
+37 = {"I/13rd Airborne Regiment"}
+38 = {"II/13rd Airborne Regiment"}
+39 = {"III/13rd Airborne Regiment"}
+40 = {"I/14th Airborne Regiment"}
+41 = {"II/14th Airborne Regiment"}
+42 = {"III/14th Airborne Regiment"}
+43 = {"I/15th Airborne Regiment"}
+44 = {"II/15th Airborne Regiment"}
+45 = {"III/15th Airborne Regiment"}
+46 = {"I/16th Airborne Regiment"}
+47 = {"II/16th Airborne Regiment"}
+48 = {"III/16th Airborne Regiment"}
+49 = {"I/17th Airborne Regiment"}
+50 = {"II/17th Airborne Regiment"}
+51 = {"III/17th Airborne Regiment"}
+52 = {"I/18th Airborne Regiment"}
+53 = {"II/18th Airborne Regiment"}
+54 = {"III/18th Airborne Regiment"}
+55 = {"I/19th Airborne Regiment"}
+56 = {"II/19th Airborne Regiment"}
+57 = {"III/19th Airborne Regiment"}
+58 = {"I/20th Airborne Regiment"}
+59 = {"II/20th Airborne Regiment"}
+60 = {"III/20th Airborne Regiment"}
+61 = {"I/21st Airborne Regiment"}
+62 = {"II/21st Airborne Regiment"}
+63 = {"III/21st Airborne Regiment"}
+64 = {"I/22nd Airborne Regiment"}
+65 = {"II/22nd Airborne Regiment"}
+66 = {"III/22nd Airborne Regiment"}
+67 = {"I/23rd Airborne Regiment"}
+68 = {"II/23rd Airborne Regiment"}
+69 = {"III/23rd Airborne Regiment"}
+70 = {"I/24th Airborne Regiment"}
+71 = {"II/24th Airborne Regiment"}
+72 = {"III/24th Airborne Regiment"}
+73 = {"I/25th Airborne Regiment"}
+74 = {"II/25th Airborne Regiment"}
+75 = {"III/25th Airborne Regiment"}
+76 = {"I/26th Airborne Regiment"}
+77 = {"II/26th Airborne Regiment"}
+78 = {"III/26th Airborne Regiment"}
+79 = {"I/27th Airborne Regiment"}
+80 = {"II/27th Airborne Regiment"}
+81 = {"III/27th Airborne Regiment"}
+82 = {"I/28th Airborne Regiment"}
+83 = {"II/28th Airborne Regiment"}
+84 = {"III/28th Airborne Regiment"}
+85 = {"I/29th Airborne Regiment"}
+86 = {"II/29th Airborne Regiment"}
+87 = {"III/29th Airborne Regiment"}
+88 = {"I/30th Airborne Regiment"}
+89 = {"II/30th Airborne Regiment"}
+90 = {"III/30th Airborne Regiment"}
+91 = {"I/31st Airborne Regiment"}
+92 = {"II/31st Airborne Regiment"}
+93 = {"III/31st Airborne Regiment"}
+94 = {"I/32nd Airborne Regiment"}
+95 = {"II/32nd Airborne Regiment"}
+96 = {"III/32nd Airborne Regiment"}
+97 = {"I/33rd Airborne Regiment"}
+98 = {"II/33rd Airborne Regiment"}
+99 = {"III/33rd Airborne Regiment"}
+100 = {"I/34th Airborne Regiment"}
+101 = {"II/34th Airborne Regiment"}
+102 = {"III/34th Airborne Regiment"}
+103 = {"I/35th Airborne Regiment"}
+104 = {"II/35th Airborne Regiment"}
+105 = {"III/35th Airborne Regiment"}
+106 = {"I/36th Airborne Regiment"}
+107 = {"II/36th Airborne Regiment"}
+108 = {"III/36th Airborne Regiment"}
+109 = {"I/37th Airborne Regiment"}
+110 = {"II/37th Airborne Regiment"}
+111 = {"III/37th Airborne Regiment"}
+112 = {"I/38th Airborne Regiment"}
+113 = {"II/38th Airborne Regiment"}
+114 = {"III/38th Airborne Regiment"}
+115 = {"I/39th Airborne Regiment"}
+116 = {"II/39th Airborne Regiment"}
+117 = {"III/39th Airborne Regiment"}
+118 = {"I/40th Airborne Regiment"}
+119 = {"II/40th Airborne Regiment"}
+120 = {"III/40th Airborne Regiment"}
+121 = {"I/41st Airborne Regiment"}
+122 = {"II/41st Airborne Regiment"}
+123 = {"III/41st Airborne Regiment"}
+124 = {"I/42nd Airborne Regiment"}
+125 = {"II/42nd Airborne Regiment"}
+126 = {"III/42nd Airborne Regiment"}
+127 = {"I/43rd Airborne Regiment"}
+128 = {"II/43rd Airborne Regiment"}
+129 = {"III/43rd Airborne Regiment"}
+130 = {"I/44th Airborne Regiment"}
+131 = {"II/44th Airborne Regiment"}
+132 = {"III/44th Airborne Regiment"}
+133 = {"I/45th Airborne Regiment"}
+134 = {"II/45th Airborne Regiment"}
+135 = {"III/45th Airborne Regiment"}
+136 = {"I/46th Airborne Regiment"}
+137 = {"II/46th Airborne Regiment"}
+138 = {"III/46th Airborne Regiment"}
+139 = {"I/47th Airborne Regiment"}
+140 = {"II/47th Airborne Regiment"}
+141 = {"III/47th Airborne Regiment"}
+142 = {"I/48th Airborne Regiment"}
+143 = {"II/48th Airborne Regiment"}
+144 = {"III/48th Airborne Regiment"}
+145 = {"I/49th Airborne Regiment"}
+146 = {"II/49th Airborne Regiment"}
+147 = {"III/49th Airborne Regiment"}
+148 = {"I/50th Airborne Regiment"}
+149 = {"II/50th Airborne Regiment"}
+150 = {"III/50th Airborne Regiment"}
+
+	}
+}
+
+AEF_TANK_USA = 
 {
 	name = "US Armor Battalions"
 
@@ -198,19 +1762,387 @@ AEF_TANK_02 =
 	ordered =
 	{
 		
+		1 = {"149th Tank Battalion"}
+2 = {"150th Tank Battalion"}
+3 = {"151st Tank Battalion"}
+4 = {"152nd Tank Battalion"}
+5 = {"153rd Tank Battalion"}
+6 = {"154th Tank Battalion"}
+7 = {"155th Tank Battalion"}
+8 = {"156th Tank Battalion"}
+9 = {"157th Tank Battalion"}
+10 = {"158th Tank Battalion"}
+11 = {"159th Tank Battalion"}
+12 = {"160th Tank Battalion"}
+13 = {"161st Tank Battalion"}
+14 = {"162nd Tank Battalion"}
+15 = {"163rd Tank Battalion"}
+16 = {"164th Tank Battalion"}
+17 = {"165th Tank Battalion"}
+18 = {"166th Tank Battalion"}
+19 = {"167th Tank Battalion"}
+20 = {"168th Tank Battalion"}
+21 = {"169th Tank Battalion"}
+22 = {"170th Tank Battalion"}
+23 = {"171st Tank Battalion"}
+24 = {"172nd Tank Battalion"}
+25 = {"173rd Tank Battalion"}
+26 = {"174th Tank Battalion"}
+27 = {"175th Tank Battalion"}
+28 = {"176th Tank Battalion"}
+29 = {"177th Tank Battalion"}
+30 = {"178th Tank Battalion"}
+31 = {"179th Tank Battalion"}
+32 = {"180th Tank Battalion"}
+33 = {"181st Tank Battalion"}
+34 = {"182nd Tank Battalion"}
+35 = {"183rd Tank Battalion"}
+36 = {"184th Tank Battalion"}
+37 = {"185th Tank Battalion"}
+38 = {"186th Tank Battalion"}
+39 = {"187th Tank Battalion"}
+40 = {"188th Tank Battalion"}
+41 = {"189th Tank Battalion"}
+42 = {"190th Tank Battalion"}
+43 = {"191st Tank Battalion"}
+44 = {"192nd Tank Battalion"}
+45 = {"193rd Tank Battalion"}
+46 = {"194th Tank Battalion"}
+47 = {"195th Tank Battalion"}
+48 = {"196th Tank Battalion"}
+49 = {"197th Tank Battalion"}
+50 = {"198th Tank Battalion"}
+51 = {"199th Tank Battalion"}
+52 = {"200th Tank Battalion"}
+53 = {"201st Tank Battalion"}
+54 = {"202nd Tank Battalion"}
+55 = {"203rd Tank Battalion"}
+56 = {"204th Tank Battalion"}
+57 = {"205th Tank Battalion"}
+58 = {"206th Tank Battalion"}
+59 = {"207th Tank Battalion"}
+60 = {"208th Tank Battalion"}
+61 = {"209th Tank Battalion"}
+62 = {"210th Tank Battalion"}
+63 = {"211st Tank Battalion"}
+64 = {"212nd Tank Battalion"}
+65 = {"213rd Tank Battalion"}
+66 = {"214th Tank Battalion"}
+67 = {"215th Tank Battalion"}
+68 = {"216th Tank Battalion"}
+69 = {"217th Tank Battalion"}
+70 = {"218th Tank Battalion"}
+71 = {"219th Tank Battalion"}
+72 = {"220th Tank Battalion"}
+73 = {"221st Tank Battalion"}
+74 = {"222nd Tank Battalion"}
+75 = {"223rd Tank Battalion"}
+76 = {"224th Tank Battalion"}
+77 = {"225th Tank Battalion"}
+78 = {"226th Tank Battalion"}
+79 = {"227th Tank Battalion"}
+80 = {"228th Tank Battalion"}
+81 = {"229th Tank Battalion"}
+82 = {"230th Tank Battalion"}
+83 = {"231st Tank Battalion"}
+84 = {"232nd Tank Battalion"}
+85 = {"233rd Tank Battalion"}
+86 = {"234th Tank Battalion"}
+87 = {"235th Tank Battalion"}
+88 = {"236th Tank Battalion"}
+89 = {"237th Tank Battalion"}
+90 = {"238th Tank Battalion"}
+91 = {"239th Tank Battalion"}
+92 = {"240th Tank Battalion"}
+93 = {"241st Tank Battalion"}
+94 = {"242nd Tank Battalion"}
+95 = {"243rd Tank Battalion"}
+96 = {"244th Tank Battalion"}
+97 = {"245th Tank Battalion"}
+98 = {"246th Tank Battalion"}
+99 = {"247th Tank Battalion"}
+100 = {"248th Tank Battalion"}
+
 		# This list covers both the Citizens Military Force (CMF) and Australian Imperial Force (AIF) infantry divisions either extant during the interwar years or raised during the war.  It'd be possible to split the lists in two (CMF and AIF divisions having their own list, as CMF divisions only served in Australia and Australian territories (or thereabouts) but that's probably overkill, given they all had the same naming convention - probably makes more sense for the player in-game to have their militia and infantry divisions use the same name list, as far as I understand the system).
 		# Australia only raised 12 infantry divisions historically.  This list is longer to avoid things like the 22th Infantry Division for Australias that build lots of divisions.
 	}
 }
-AEF_TANK_03 = 
+
+AEF_MECH_USA = 
 {
-	name = "US Tank Destroyer Battalions"
+	name = "US Mechanized Battalions"
 
 	for_countries = { AEF }
 
 	can_use = { always = yes }
 
 	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d Tank Battalion"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		
+		1 = {"I/127th Armored Infantry Regiment"}
+2 = {"II/127th Armored Infantry Regiment"}
+3 = {"III/127th Armored Infantry Regiment"}
+4 = {"I/128th Armored Infantry Regiment"}
+5 = {"II/128th Armored Infantry Regiment"}
+6 = {"III/128th Armored Infantry Regiment"}
+7 = {"I/129th Armored Infantry Regiment"}
+8 = {"II/129th Armored Infantry Regiment"}
+9 = {"III/129th Armored Infantry Regiment"}
+10 = {"I/130th Armored Infantry Regiment"}
+11 = {"II/130th Armored Infantry Regiment"}
+12 = {"III/130th Armored Infantry Regiment"}
+13 = {"I/131st Armored Infantry Regiment"}
+14 = {"II/131st Armored Infantry Regiment"}
+15 = {"III/131st Armored Infantry Regiment"}
+16 = {"I/132nd Armored Infantry Regiment"}
+17 = {"II/132nd Armored Infantry Regiment"}
+18 = {"III/132nd Armored Infantry Regiment"}
+19 = {"I/133rd Armored Infantry Regiment"}
+20 = {"II/133rd Armored Infantry Regiment"}
+21 = {"III/133rd Armored Infantry Regiment"}
+22 = {"I/134th Armored Infantry Regiment"}
+23 = {"II/134th Armored Infantry Regiment"}
+24 = {"III/134th Armored Infantry Regiment"}
+25 = {"I/135th Armored Infantry Regiment"}
+26 = {"II/135th Armored Infantry Regiment"}
+27 = {"III/135th Armored Infantry Regiment"}
+28 = {"I/136th Armored Infantry Regiment"}
+29 = {"II/136th Armored Infantry Regiment"}
+30 = {"III/136th Armored Infantry Regiment"}
+31 = {"I/137th Armored Infantry Regiment"}
+32 = {"II/137th Armored Infantry Regiment"}
+33 = {"III/137th Armored Infantry Regiment"}
+34 = {"I/138th Armored Infantry Regiment"}
+35 = {"II/138th Armored Infantry Regiment"}
+36 = {"III/138th Armored Infantry Regiment"}
+37 = {"I/139th Armored Infantry Regiment"}
+38 = {"II/139th Armored Infantry Regiment"}
+39 = {"III/139th Armored Infantry Regiment"}
+40 = {"I/140th Armored Infantry Regiment"}
+41 = {"II/140th Armored Infantry Regiment"}
+42 = {"III/140th Armored Infantry Regiment"}
+43 = {"I/141st Armored Infantry Regiment"}
+44 = {"II/141st Armored Infantry Regiment"}
+45 = {"III/141st Armored Infantry Regiment"}
+46 = {"I/142nd Armored Infantry Regiment"}
+47 = {"II/142nd Armored Infantry Regiment"}
+48 = {"III/142nd Armored Infantry Regiment"}
+49 = {"I/143rd Armored Infantry Regiment"}
+50 = {"II/143rd Armored Infantry Regiment"}
+51 = {"III/143rd Armored Infantry Regiment"}
+52 = {"I/144th Armored Infantry Regiment"}
+53 = {"II/144th Armored Infantry Regiment"}
+54 = {"III/144th Armored Infantry Regiment"}
+55 = {"I/145th Armored Infantry Regiment"}
+56 = {"II/145th Armored Infantry Regiment"}
+57 = {"III/145th Armored Infantry Regiment"}
+58 = {"I/146th Armored Infantry Regiment"}
+59 = {"II/146th Armored Infantry Regiment"}
+60 = {"III/146th Armored Infantry Regiment"}
+61 = {"I/147th Armored Infantry Regiment"}
+62 = {"II/147th Armored Infantry Regiment"}
+63 = {"III/147th Armored Infantry Regiment"}
+64 = {"I/148th Armored Infantry Regiment"}
+65 = {"II/148th Armored Infantry Regiment"}
+66 = {"III/148th Armored Infantry Regiment"}
+67 = {"I/149th Armored Infantry Regiment"}
+68 = {"II/149th Armored Infantry Regiment"}
+69 = {"III/149th Armored Infantry Regiment"}
+70 = {"I/150th Armored Infantry Regiment"}
+71 = {"II/150th Armored Infantry Regiment"}
+72 = {"III/150th Armored Infantry Regiment"}
+73 = {"I/151st Armored Infantry Regiment"}
+74 = {"II/151st Armored Infantry Regiment"}
+75 = {"III/151st Armored Infantry Regiment"}
+76 = {"I/152nd Armored Infantry Regiment"}
+77 = {"II/152nd Armored Infantry Regiment"}
+78 = {"III/152nd Armored Infantry Regiment"}
+79 = {"I/153rd Armored Infantry Regiment"}
+80 = {"II/153rd Armored Infantry Regiment"}
+81 = {"III/153rd Armored Infantry Regiment"}
+82 = {"I/154th Armored Infantry Regiment"}
+83 = {"II/154th Armored Infantry Regiment"}
+84 = {"III/154th Armored Infantry Regiment"}
+85 = {"I/155th Armored Infantry Regiment"}
+86 = {"II/155th Armored Infantry Regiment"}
+87 = {"III/155th Armored Infantry Regiment"}
+88 = {"I/156th Armored Infantry Regiment"}
+89 = {"II/156th Armored Infantry Regiment"}
+90 = {"III/156th Armored Infantry Regiment"}
+91 = {"I/157th Armored Infantry Regiment"}
+92 = {"II/157th Armored Infantry Regiment"}
+93 = {"III/157th Armored Infantry Regiment"}
+94 = {"I/158th Armored Infantry Regiment"}
+95 = {"II/158th Armored Infantry Regiment"}
+96 = {"III/158th Armored Infantry Regiment"}
+97 = {"I/159th Armored Infantry Regiment"}
+98 = {"II/159th Armored Infantry Regiment"}
+99 = {"III/159th Armored Infantry Regiment"}
+100 = {"I/160th Armored Infantry Regiment"}
+101 = {"II/160th Armored Infantry Regiment"}
+102 = {"III/160th Armored Infantry Regiment"}
+103 = {"I/161st Armored Infantry Regiment"}
+104 = {"II/161st Armored Infantry Regiment"}
+105 = {"III/161st Armored Infantry Regiment"}
+106 = {"I/162nd Armored Infantry Regiment"}
+107 = {"II/162nd Armored Infantry Regiment"}
+108 = {"III/162nd Armored Infantry Regiment"}
+109 = {"I/163rd Armored Infantry Regiment"}
+110 = {"II/163rd Armored Infantry Regiment"}
+111 = {"III/163rd Armored Infantry Regiment"}
+112 = {"I/164th Armored Infantry Regiment"}
+113 = {"II/164th Armored Infantry Regiment"}
+114 = {"III/164th Armored Infantry Regiment"}
+115 = {"I/165th Armored Infantry Regiment"}
+116 = {"II/165th Armored Infantry Regiment"}
+117 = {"III/165th Armored Infantry Regiment"}
+118 = {"I/166th Armored Infantry Regiment"}
+119 = {"II/166th Armored Infantry Regiment"}
+120 = {"III/166th Armored Infantry Regiment"}
+121 = {"I/167th Armored Infantry Regiment"}
+122 = {"II/167th Armored Infantry Regiment"}
+123 = {"III/167th Armored Infantry Regiment"}
+124 = {"I/168th Armored Infantry Regiment"}
+125 = {"II/168th Armored Infantry Regiment"}
+126 = {"III/168th Armored Infantry Regiment"}
+127 = {"I/169th Armored Infantry Regiment"}
+128 = {"II/169th Armored Infantry Regiment"}
+129 = {"III/169th Armored Infantry Regiment"}
+130 = {"I/170th Armored Infantry Regiment"}
+131 = {"II/170th Armored Infantry Regiment"}
+132 = {"III/170th Armored Infantry Regiment"}
+133 = {"I/171st Armored Infantry Regiment"}
+134 = {"II/171st Armored Infantry Regiment"}
+135 = {"III/171st Armored Infantry Regiment"}
+136 = {"I/172nd Armored Infantry Regiment"}
+137 = {"II/172nd Armored Infantry Regiment"}
+138 = {"III/172nd Armored Infantry Regiment"}
+139 = {"I/173rd Armored Infantry Regiment"}
+140 = {"II/173rd Armored Infantry Regiment"}
+141 = {"III/173rd Armored Infantry Regiment"}
+142 = {"I/174th Armored Infantry Regiment"}
+143 = {"II/174th Armored Infantry Regiment"}
+144 = {"III/174th Armored Infantry Regiment"}
+145 = {"I/175th Armored Infantry Regiment"}
+146 = {"II/175th Armored Infantry Regiment"}
+147 = {"III/175th Armored Infantry Regiment"}
+148 = {"I/176th Armored Infantry Regiment"}
+149 = {"II/176th Armored Infantry Regiment"}
+150 = {"III/176th Armored Infantry Regiment"}
+151 = {"I/177th Armored Infantry Regiment"}
+152 = {"II/177th Armored Infantry Regiment"}
+153 = {"III/177th Armored Infantry Regiment"}
+154 = {"I/178th Armored Infantry Regiment"}
+155 = {"II/178th Armored Infantry Regiment"}
+156 = {"III/178th Armored Infantry Regiment"}
+157 = {"I/179th Armored Infantry Regiment"}
+158 = {"II/179th Armored Infantry Regiment"}
+159 = {"III/179th Armored Infantry Regiment"}
+160 = {"I/180th Armored Infantry Regiment"}
+161 = {"II/180th Armored Infantry Regiment"}
+162 = {"III/180th Armored Infantry Regiment"}
+163 = {"I/181st Armored Infantry Regiment"}
+164 = {"II/181st Armored Infantry Regiment"}
+165 = {"III/181st Armored Infantry Regiment"}
+166 = {"I/182nd Armored Infantry Regiment"}
+167 = {"II/182nd Armored Infantry Regiment"}
+168 = {"III/182nd Armored Infantry Regiment"}
+169 = {"I/183rd Armored Infantry Regiment"}
+170 = {"II/183rd Armored Infantry Regiment"}
+171 = {"III/183rd Armored Infantry Regiment"}
+172 = {"I/184th Armored Infantry Regiment"}
+173 = {"II/184th Armored Infantry Regiment"}
+174 = {"III/184th Armored Infantry Regiment"}
+175 = {"I/185th Armored Infantry Regiment"}
+176 = {"II/185th Armored Infantry Regiment"}
+177 = {"III/185th Armored Infantry Regiment"}
+178 = {"I/186th Armored Infantry Regiment"}
+179 = {"II/186th Armored Infantry Regiment"}
+180 = {"III/186th Armored Infantry Regiment"}
+181 = {"I/187th Armored Infantry Regiment"}
+182 = {"II/187th Armored Infantry Regiment"}
+183 = {"III/187th Armored Infantry Regiment"}
+184 = {"I/188th Armored Infantry Regiment"}
+185 = {"II/188th Armored Infantry Regiment"}
+186 = {"III/188th Armored Infantry Regiment"}
+187 = {"I/189th Armored Infantry Regiment"}
+188 = {"II/189th Armored Infantry Regiment"}
+189 = {"III/189th Armored Infantry Regiment"}
+190 = {"I/190th Armored Infantry Regiment"}
+191 = {"II/190th Armored Infantry Regiment"}
+192 = {"III/190th Armored Infantry Regiment"}
+193 = {"I/191st Armored Infantry Regiment"}
+194 = {"II/191st Armored Infantry Regiment"}
+195 = {"III/191st Armored Infantry Regiment"}
+196 = {"I/192nd Armored Infantry Regiment"}
+197 = {"II/192nd Armored Infantry Regiment"}
+198 = {"III/192nd Armored Infantry Regiment"}
+199 = {"I/193rd Armored Infantry Regiment"}
+200 = {"II/193rd Armored Infantry Regiment"}
+201 = {"III/193rd Armored Infantry Regiment"}
+202 = {"I/194th Armored Infantry Regiment"}
+203 = {"II/194th Armored Infantry Regiment"}
+204 = {"III/194th Armored Infantry Regiment"}
+205 = {"I/195th Armored Infantry Regiment"}
+206 = {"II/195th Armored Infantry Regiment"}
+207 = {"III/195th Armored Infantry Regiment"}
+208 = {"I/196th Armored Infantry Regiment"}
+209 = {"II/196th Armored Infantry Regiment"}
+210 = {"III/196th Armored Infantry Regiment"}
+211 = {"I/197th Armored Infantry Regiment"}
+212 = {"II/197th Armored Infantry Regiment"}
+213 = {"III/197th Armored Infantry Regiment"}
+214 = {"I/198th Armored Infantry Regiment"}
+215 = {"II/198th Armored Infantry Regiment"}
+216 = {"III/198th Armored Infantry Regiment"}
+217 = {"I/199th Armored Infantry Regiment"}
+218 = {"II/199th Armored Infantry Regiment"}
+219 = {"III/199th Armored Infantry Regiment"}
+220 = {"I/200th Armored Infantry Regiment"}
+221 = {"II/200th Armored Infantry Regiment"}
+222 = {"III/200th Armored Infantry Regiment"}
+223 = {"I/201st Armored Infantry Regiment"}
+224 = {"II/201st Armored Infantry Regiment"}
+225 = {"III/201st Armored Infantry Regiment"}
+226 = {"I/202nd Armored Infantry Regiment"}
+227 = {"II/202nd Armored Infantry Regiment"}
+228 = {"III/202nd Armored Infantry Regiment"}
+229 = {"I/203rd Armored Infantry Regiment"}
+230 = {"II/203rd Armored Infantry Regiment"}
+231 = {"III/203rd Armored Infantry Regiment"}
+232 = {"I/204th Armored Infantry Regiment"}
+233 = {"II/204th Armored Infantry Regiment"}
+234 = {"III/204th Armored Infantry Regiment"}
+235 = {"I/205th Armored Infantry Regiment"}
+236 = {"II/205th Armored Infantry Regiment"}
+237 = {"III/205th Armored Infantry Regiment"}
+238 = {"I/206th Armored Infantry Regiment"}
+239 = {"II/206th Armored Infantry Regiment"}
+240 = {"III/206th Armored Infantry Regiment"}
+
+ 
+	}
+}
+
+
+AEF_ANTITANK_USA = 
+{
+	name = "US AT Battalions"
+
+	for_countries = { AEF }
+
+	can_use = { always = yes }
+
+	division_types = { "medium_armor" }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { GER_Gar_01 }
@@ -222,364 +2154,69 @@ AEF_TANK_03 =
 	ordered =
 	{
 		
+		1 = {"995th Tank Destroyer Battalion"}
+2 = {"996th Tank Destroyer Battalion"}
+3 = {"997th Tank Destroyer Battalion"}
+4 = {"998th Tank Destroyer Battalion"}
+5 = {"999th Tank Destroyer Battalion"}
+6 = {"1000th Tank Destroyer Battalion"}
+7 = {"1001st Tank Destroyer Battalion"}
+8 = {"1002nd Tank Destroyer Battalion"}
+9 = {"1003rd Tank Destroyer Battalion"}
+10 = {"1004th Tank Destroyer Battalion"}
+11 = {"1005th Tank Destroyer Battalion"}
+12 = {"1006th Tank Destroyer Battalion"}
+13 = {"1007th Tank Destroyer Battalion"}
+14 = {"1008th Tank Destroyer Battalion"}
+15 = {"1009th Tank Destroyer Battalion"}
+16 = {"1010th Tank Destroyer Battalion"}
+17 = {"1011st Tank Destroyer Battalion"}
+18 = {"1012nd Tank Destroyer Battalion"}
+19 = {"1013rd Tank Destroyer Battalion"}
+20 = {"1014th Tank Destroyer Battalion"}
+21 = {"1015th Tank Destroyer Battalion"}
+22 = {"1016th Tank Destroyer Battalion"}
+23 = {"1017th Tank Destroyer Battalion"}
+24 = {"1018th Tank Destroyer Battalion"}
+25 = {"1019th Tank Destroyer Battalion"}
+26 = {"1020th Tank Destroyer Battalion"}
+27 = {"1021st Tank Destroyer Battalion"}
+28 = {"1022nd Tank Destroyer Battalion"}
+29 = {"1023rd Tank Destroyer Battalion"}
+30 = {"1024th Tank Destroyer Battalion"}
+31 = {"1025th Tank Destroyer Battalion"}
+32 = {"1026th Tank Destroyer Battalion"}
+33 = {"1027th Tank Destroyer Battalion"}
+34 = {"1028th Tank Destroyer Battalion"}
+35 = {"1029th Tank Destroyer Battalion"}
+36 = {"1030th Tank Destroyer Battalion"}
+37 = {"1031st Tank Destroyer Battalion"}
+38 = {"1032nd Tank Destroyer Battalion"}
+39 = {"1033rd Tank Destroyer Battalion"}
+40 = {"1034th Tank Destroyer Battalion"}
+41 = {"1035th Tank Destroyer Battalion"}
+42 = {"1036th Tank Destroyer Battalion"}
+43 = {"1037th Tank Destroyer Battalion"}
+44 = {"1038th Tank Destroyer Battalion"}
+45 = {"1039th Tank Destroyer Battalion"}
+46 = {"1040th Tank Destroyer Battalion"}
+47 = {"1041st Tank Destroyer Battalion"}
+48 = {"1042nd Tank Destroyer Battalion"}
+49 = {"1043rd Tank Destroyer Battalion"}
+50 = {"1044th Tank Destroyer Battalion"}
+51 = {"1045th Tank Destroyer Battalion"}
+52 = {"1046th Tank Destroyer Battalion"}
+53 = {"1047th Tank Destroyer Battalion"}
+54 = {"1048th Tank Destroyer Battalion"}
+55 = {"1049th Tank Destroyer Battalion"}
+56 = {"1050th Tank Destroyer Battalion"}
+57 = {"1051st Tank Destroyer Battalion"}
+58 = {"1052nd Tank Destroyer Battalion"}
+59 = {"1053rd Tank Destroyer Battalion"}
+60 = {"1054th Tank Destroyer Battalion"}
+
 		# This list covers both the Citizens Military Force (CMF) and Australian Imperial Force (AIF) infantry divisions either extant during the interwar years or raised during the war.  It'd be possible to split the lists in two (CMF and AIF divisions having their own list, as CMF divisions only served in Australia and Australian territories (or thereabouts) but that's probably overkill, given they all had the same naming convention - probably makes more sense for the player in-game to have their militia and infantry divisions use the same name list, as far as I understand the system).
 		# Australia only raised 12 infantry divisions historically.  This list is longer to avoid things like the 22th Infantry Division for Australias that build lots of divisions.
 	}
 }
-AEF_USA_MECH = 
-{
-	name = "US Armored Infantry Battalions"
-
-	for_countries = { AEF }
-
-	can_use = { always = yes }
-
-	division_types = { "infantry" }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { GER_Gar_01 }
-
-	fallback_name = "%d Armored Infantry Battalion"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		
-		# This list covers both the Citizens Military Force (CMF) and Australian Imperial Force (AIF) infantry divisions either extant during the interwar years or raised during the war.  It'd be possible to split the lists in two (CMF and AIF divisions having their own list, as CMF divisions only served in Australia and Australian territories (or thereabouts) but that's probably overkill, given they all had the same naming convention - probably makes more sense for the player in-game to have their militia and infantry divisions use the same name list, as far as I understand the system).
-		# Australia only raised 12 infantry divisions historically.  This list is longer to avoid things like the 22th Infantry Division for Australias that build lots of divisions.
-	}
-}
-AEF_RAN_01 = 
-{
-	name = "US Army Ranger Units"
-
-	for_countries = { AEF }
-
-	can_use = { always = yes }
-
-	division_types = { "infantry" }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { GER_Gar_01 }
-
-	fallback_name = "%d Ranger Battalion"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		
-		# This list covers both the Citizens Military Force (CMF) and Australian Imperial Force (AIF) infantry divisions either extant during the interwar years or raised during the war.  It'd be possible to split the lists in two (CMF and AIF divisions having their own list, as CMF divisions only served in Australia and Australian territories (or thereabouts) but that's probably overkill, given they all had the same naming convention - probably makes more sense for the player in-game to have their militia and infantry divisions use the same name list, as far as I understand the system).
-		# Australia only raised 12 infantry divisions historically.  This list is longer to avoid things like the 22th Infantry Division for Australias that build lots of divisions.
-	}
-}
-AEF_PARA_01 = 
-{
-	name = "US Parachute Rifle Companies"
-
-	for_countries = { AEF }
-
-	can_use = { always = yes }
-
-	division_types = { "infantry" }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { GER_Gar_01 }
-
-	fallback_name = "US Parachute Rifle Company"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		
-		# This list covers both the Citizens Military Force (CMF) and Australian Imperial Force (AIF) infantry divisions either extant during the interwar years or raised during the war.  It'd be possible to split the lists in two (CMF and AIF divisions having their own list, as CMF divisions only served in Australia and Australian territories (or thereabouts) but that's probably overkill, given they all had the same naming convention - probably makes more sense for the player in-game to have their militia and infantry divisions use the same name list, as far as I understand the system).
-		# Australia only raised 12 infantry divisions historically.  This list is longer to avoid things like the 22th Infantry Division for Australias that build lots of divisions.
-	}
-}
-AEF_USA_1 = 
-{
-	name = "US Infantry Regiments"
-
-	for_countries = { AEF }
-
-	can_use = { always = yes }
-
-	division_types = { "infantry" }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { GER_Gar_01 }
-
-	fallback_name = "%d Infantry Regiment"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-##1st INF DIV
-		16 = { "%dth Infantry Regiment" }
-		18 = { "%dth Infantry Regiment" }
-		26 = { "%dth Infantry Regiment" }
-##2nd INF DIV
-		9 = { "%dth Infantry Regiment" }
-		23 = { "%dth Infantry Regiment" }
-		38 = { "%dth Infantry Regiment" }
-##4th INF DIV
-		8 = { "%dth Infantry Regiment" }
-		12 = { "%dnd Infantry Regiment" }
-		22 = { "%dnd Infantry Regiment" }
-##5th INF DIV
-		2 = { "%dnd Infantry Regiment" }
-		10 = { "%dth Infantry Regiment" }
-		11 = { "%dth Infantry Regiment" }
-##8th INF DIV
-		13 = { "%dth Infantry Regiment" }
-		28 = { "%dth Infantry Regiment" }
-		121 = { "%dst Infantry Regiment" }
-##9th INF DIV
-		39 = { "%dth Infantry Regiment" }
-		47 = { "%dth Infantry Regiment" }
-		60 = { "%dth Infantry Regiment" }
-
-##28th INF DIV
-		109 = { "%dth Infantry Regiment" }
-		112 = { "%dth Infantry Regiment" }
-		110 = { "%dth Infantry Regiment" }	
-##29th INF DIV
-		115 = { "%dth Infantry Regiment" }
-		116 = { "%dth Infantry Regiment" }
-		175 = { "%dth Infantry Regiment" }
-##30th INF DIV
-	##UNKNOWN REGIMENTS AS OF 1944
-	##35th INF DIV
-		134 = { "%dth Infantry Regiment" }
-		137 = { "%dth Infantry Regiment" }
-		320 = { "%dth Infantry Regiment" }
-##79th INF DIV
-		313 = { "%dth Infantry Regiment" }
-		314 = { "%dth Infantry Regiment" }
-		315 = { "%dth Infantry Regiment" }
-##83th INF DIV
-		329 = { "%dth Infantry Regiment" }
-		330 = { "%dth Infantry Regiment" }
-		331 = { "%dth Infantry Regiment" }
-##90 INF DIV
-		357 = { "%dth Infantry Regiment" }
-		358 = { "%dth Infantry Regiment" }
-		359 = { "%dth Infantry Regiment" }
-	}
-}
-
-AEF_FRA_01 = 
-{
-	name = "French Infantry Regiments"
-
-	for_countries = { AEF }
-
-	can_use = { always = yes }
-
-	division_types = { "infantry" }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { GER_Gar_01 }
-
-	fallback_name = "%de Régiment d'Infanterie"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		
-		# This list covers both the Citizens Military Force (CMF) and Australian Imperial Force (AIF) infantry divisions either extant during the interwar years or raised during the war.  It'd be possible to split the lists in two (CMF and AIF divisions having their own list, as CMF divisions only served in Australia and Australian territories (or thereabouts) but that's probably overkill, given they all had the same naming convention - probably makes more sense for the player in-game to have their militia and infantry divisions use the same name list, as far as I understand the system).
-		# Australia only raised 12 infantry divisions historically.  This list is longer to avoid things like the 22th Infantry Division for Australias that build lots of divisions.
-	}
-}
-AEF_TANK_04 = 
-{
-	name = "French Tank Battalions"
-
-	for_countries = { AEF }
-
-	can_use = { always = yes }
-
-	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { AST_CAV_01 }
-
-	fallback_name = "%de Bataillon de Cuirassiers"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-	
-		
-
-		
-	}
-}
-AEF_FRA_PARA_01 = 
-{
-	name = "French Airborne Units"
-
-	for_countries = { AEF }
-
-	can_use = { always = yes }
-
-	division_types = { "infantry" }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { AST_CAV_01 }
-
-	fallback_name = "%de Bataillon de Chasseurs Parachutistes"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-	
-		
-
-		
-	}
-}
-AEF_FRA_INF_01 = 
-{
-	name = "French Airborne Units"
-
-	for_countries = { AEF }
-
-	can_use = { always = yes }
-
-	division_types = { "infantry"  }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { AST_CAV_01 }
-
-	fallback_name = "%de Bataillon d'Infanterie"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-	
-		
-
-		
-	}
-}
-
-FRA_SPA_01 = 
-{
-	name = "French SPA Regiments"
-
-	for_countries = { AEF }
-
-	can_use = { always = yes }
-
-	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { AST_CAV_01 }
-
-	fallback_name = "%de Bataillon d'Artillerie"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-	
-		
-
-		
-	}
-}
-FRA_TDB_01 = 
-{
-	name = "French Tank Destroyer Regiments"
-
-	for_countries = { AEF }
-
-	can_use = { always = yes }
-
-	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { AST_CAV_01 }
-
-	fallback_name = "%de Bataillon de Chasseurs de Chars"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-	
-
-		
-	}
-}
-AEF_FRA_CAV_01 = 
-{
-	name = "French Cavalry Units"
-
-	for_countries = { AEF }
-
-	can_use = { always = yes }
-
-	division_types = { "cavalry" }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { AST_CAV_01 }
-
-	fallback_name = "%de Régiment de Spahis"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-	
-
-		
-	}
-}
-
-AEF_COM_01 = 
-{
-	name = "Commandos"
-
-	for_countries = { AEF }
-
-	can_use = { always = yes }
-
-	division_types = { "marine" }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { AST_GAR_01 }
-
-	fallback_name = "No. %d Commando"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		3 = { "No. 3 Commando" }
-		4 = { "No. 4 Commando" }
-		6 = { "No. 6 Commando" }
-		10 = { "No. 10 (Inter-Allied) Commando" }
-		41 = { "No.41 (RM) Commando" }
-		45 = { "No.45 (RM) Commando" }
-		46 = { "No.46 (RM) Commando" }
-		47 = { "No.47 (RM) Commando" }
-		48 = { "No.48 (RM) Commando" }
-		
-
-		# AST didn't have any Marine divisions, these are all fictional.
-	}
-}
-
-
-
-
 

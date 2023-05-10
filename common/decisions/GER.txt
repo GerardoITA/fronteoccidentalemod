@@ -1239,11 +1239,12 @@ fall_of_brussels = { ##WHEN ALLIES TAKE BRUSSELS
 
 		icon = generic_decision
 		available = {
-			OR = {
-				13 = {  is_controlled_by = AEF }
-				75 = {  is_controlled_by = AEF }
-				79 = {  is_controlled_by = AEF }
-			}
+			always = yes
+			##OR = {
+			##	13 = {  is_controlled_by = AEF }
+			##	75 = {  is_controlled_by = AEF }
+			##	79 = {  is_controlled_by = AEF }
+			##}
 			
 		}
 
@@ -1261,10 +1262,46 @@ fall_of_brussels = { ##WHEN ALLIES TAKE BRUSSELS
 
 		complete_effect = {
 			add_timed_idea = {
-				idea = german_counterattack
-				days = 14
+				idea = divert_production
+				days = 21
 			}
 		 }
+
+
+		days_remove = 21
+		remove_effect = { 
+
+			add_timed_idea = {
+				idea = german_counterattack
+				days = 21
+			}
+
+			SSS = {
+				add_timed_idea = {
+				idea = german_counterattack
+				days = 21
+				}
+			}
+			FTA = {
+				add_timed_idea = {
+				idea = german_counterattack
+				days = 21
+				}
+			}
+			SAA = {
+				add_timed_idea = {
+				idea = german_counterattack
+				days = 21
+				}
+			}
+			FPZ = {
+				add_timed_idea = {
+				idea = german_counterattack
+				days = 21
+				}
+			}
+
+		}
 
 		ai_will_do = {
 			base = 100
