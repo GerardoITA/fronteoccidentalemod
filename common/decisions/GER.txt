@@ -1239,12 +1239,11 @@ fall_of_brussels = { ##WHEN ALLIES TAKE BRUSSELS
 
 		icon = generic_decision
 		available = {
-			always = yes
-			##OR = {
-			##	13 = {  is_controlled_by = AEF }
-			##	75 = {  is_controlled_by = AEF }
-			##	79 = {  is_controlled_by = AEF }
-			##}
+			OR = {
+				13 = {  is_controlled_by = AEF }
+				75 = {  is_controlled_by = AEF }
+				79 = {  is_controlled_by = AEF }
+			}
 			
 		}
 
