@@ -146,7 +146,7 @@ add_ideas = {de_gaulle_issue max_public_opinion #United_Commonwealth
 set_global_flag = normal_start_trigger
 set_variable = { var = cohesion_number
 		value = 55 }
-set_research_slots = 1
+set_research_slots = 0
 set_stability = 1
 set_war_support = 0.8
 add_command_power = 20
