@@ -161,7 +161,7 @@ focus_tree = {
 		available = { has_completed_focus = GER_appoint_the_inspector_of_defences }
 		available_if_capitulated = yes
 		completion_reward = { custom_effect_tooltip = army_group_b_tt drop_cosmetic_tag = yes 
-					country_event = ger.30
+				
 
 }
 		ai_will_do = {
